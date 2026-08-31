@@ -1,0 +1,1361 @@
+# Project History and Dissertation Record
+
+> Living technical record for the MSc Major Project. This file is intended to preserve the project rationale, implementation history, experimental results, failures, fixes, design decisions, limitations, and dissertation-ready interpretations so that the final report can be written from an auditable record rather than memory.
+
+## 1. Working project title
+
+**A Software-Only Deep Learning Pipeline for Multi-Modal Object Detection and Robotic Perception Using LiDAR and Camera Fusion Across Multiple Datasets**
+
+## 2. Core research idea
+
+The project investigates a software-only robotic perception pipeline that combines camera detections and LiDAR measurements, with emphasis on controlled comparison rather than simply running multiple models.
+
+The intended final system compares:
+
+- camera-only perception,
+- LiDAR-only perception,
+- camera + LiDAR fusion,
+- conventional closed-set camera detection,
+- open-vocabulary / multimodal camera perception,
+- multiple LiDAR detectors,
+- multiple fusion strategies,
+- cross-dataset generalization,
+- robustness and runtime.
+
+A central experimental principle is to **change one component at a time while holding the rest of the pipeline fixed**. In particular, YOLOv8x and Falcon Perception should be compared using the same KITTI frames, ground-truth matching rules, LiDAR projection, and downstream fusion rule wherever possible.
+
+---
+
+# 3. Current research questions
+
+## RQ1 — Multimodal fusion
+
+How much does camera–LiDAR fusion improve robotic perception compared with LiDAR-only or camera-only baselines?
+
+## RQ2 — Conventional vs open-vocabulary camera perception
+
+How does an open-vocabulary / multimodal detector such as Falcon Perception compare with a conventional detector such as YOLO when the LiDAR detector and fusion strategy are held fixed?
+
+## RQ3 — Cross-dataset behavior
+
+How well does the pipeline transfer from KITTI to a second autonomous-driving dataset such as nuScenes?
+
+## Optional RQ4 — Fusion strategy
+
+How do early association, late/candidate fusion, semantic point enrichment, and BEV-based fusion differ in accuracy, robustness, and runtime?
+
+---
+
+# 4. Planned model and framework stack
+
+The project deliberately reuses strong open-source implementations where appropriate and adds clearly attributable project-specific adapters, controlled evaluation, fusion experiments, robustness tests, and cross-dataset analysis.
+
+## Main repositories / frameworks
+
+1. **MMDetection3D — `open-mmlab/mmdetection3d`**
+   - Main 3D framework candidate.
+   - Dataset support, evaluation utilities, PointPillars and BEVFusion-related projects.
+
+2. **Azitt/Lidar-CameraFusion-3DobjectDetection**
+   - Initial KITTI camera–LiDAR baseline reference.
+   - YOLOv8 + PV-RCNN++.
+   - Includes early and late fusion ideas.
+
+3. **Falcon Perception — `tiiuae/Falcon-Perception`**
+   - Main open-vocabulary / multimodal camera experiment.
+   - MLX backend supports Apple Silicon.
+
+4. **OpenPCDet — `open-mmlab/OpenPCDet`**
+   - LiDAR-only detection framework.
+   - Candidate models: PV-RCNN++ and PointPillars.
+
+5. **BEVFusion — `ADLab-AutoDrive/BEVFusion`**
+   - Advanced fusion reference.
+   - Expected to require older Linux/CUDA environment.
+
+6. **MultiCorrupt — `ika-rwth-aachen/MultiCorrupt`**
+   - Planned robustness experiments.
+
+7. **NVIDIA Lidar AI Solution**
+   - Stretch goal for optimized inference if suitable NVIDIA hardware is available.
+
+## Additional technical references
+
+- CLOCs
+- PointPainting
+- TransFusion
+- YOLO–LiDAR fusion implementations
+
+## Academic transparency rule
+
+Any reused code or architecture must remain attributable to the original source and compatible with its license. The dissertation should clearly distinguish:
+
+- reproduced external baseline,
+- adapted external code,
+- project-specific integration,
+- project-specific evaluation,
+- project-specific experimental contributions.
+
+---
+
+# 5. Hardware and environment decisions
+
+## Development machine
+
+- Apple Silicon MacBook Pro, M1 Pro, arm64.
+- Primary local role: Python development, KITTI processing, calibration, projection, YOLO inference, Falcon MLX inference, adapter development, evaluation, plotting, and fusion logic.
+
+## Important environment decision
+
+CUDA-dependent frameworks must **not** be forced onto macOS. Docker on Apple Silicon does not provide an NVIDIA CUDA GPU.
+
+The project therefore keeps separate environments and communicates between components through ordinary files / arrays / JSON where necessary.
+
+### `azitt310`
+
+Used for:
+
+- Python 3.10,
+- Ultralytics / YOLOv8x,
+- KITTI camera–LiDAR baseline,
+- MPS inference,
+- fusion and evaluation scripts.
+
+### `falcon310`
+
+Used for:
+
+- Python 3.10,
+- Falcon Perception,
+- MLX inference on Apple Silicon.
+
+### CUDA-heavy work later
+
+Expected to require Linux + NVIDIA GPU for:
+
+- OpenPCDet,
+- PV-RCNN++,
+- some PointPillars configurations,
+- BEVFusion,
+- other `spconv`-dependent pipelines.
+
+---
+
+# 6. Repository organization
+
+Main project directory:
+
+```text
+~/Major_Project/
+├── multimodal-perception/       # this repository
+├── external/                    # cloned external repositories
+├── datasets/                    # datasets, not committed
+├── model_outputs/               # generated model outputs, normally not committed
+└── envs/                        # Python environments, not committed
+```
+
+Own repository structure includes:
+
+```text
+adapters/
+calibration/
+configs/
+evaluation/
+experiments/
+fusion/
+requirements/
+results/
+scripts/
+tests/
+visualization/
+README.md
+PROJECT_HISTORY.md
+```
+
+Large datasets, environments, model weights, and ordinary generated inference outputs should remain outside Git history. Small dissertation result CSVs and figures may be committed when they represent frozen experimental milestones.
+
+---
+
+# 7. KITTI dataset setup
+
+KITTI was selected as the primary development dataset.
+
+Local training data verified:
+
+- `training/calib`: 7,481 files
+- `training/label_2`: 7,481 files
+- `training/image_2`: 7,481 files
+- `training/velodyne`: 7,481 files
+
+Testing data verified:
+
+- `testing/calib`: 7,518 files
+- `testing/image_2`: 7,518 files
+- `testing/velodyne`: 7,518 files
+
+The original ZIP archives were removed after successful extraction to recover disk space.
+
+Frame `000149` became the main early debugging / visualization frame.
+
+---
+
+# 8. KITTI LiDAR-to-camera projection
+
+A reusable KITTI projection pipeline was implemented.
+
+Relevant calibration matrices:
+
+- `P2`
+- `R0_rect`
+- `Tr_velo_to_cam`
+
+The implementation:
+
+1. reads Velodyne points,
+2. converts points to homogeneous coordinates,
+3. transforms Velodyne coordinates into rectified camera coordinates,
+4. keeps points in front of the camera,
+5. projects them with `P2`,
+6. removes points outside the image,
+7. retains forward camera depth `z` for each projected point.
+
+Visual alignment on KITTI imagery was checked before using the projection in fusion experiments.
+
+Important early commit:
+
+- `3fef0bb` — **Add KITTI LiDAR to camera projection**
+
+---
+
+# 9. YOLOv8x + LiDAR fusion baseline
+
+The initial project-owned fusion baseline used YOLOv8x detections and projected LiDAR points.
+
+## Frozen V1 association method
+
+For each relevant 2D detection:
+
+1. project LiDAR points into the camera image,
+2. retain projected points whose image coordinates fall inside the 2D detection box,
+3. require at least three LiDAR returns,
+4. estimate object forward depth as the **median** of the LiDAR camera-coordinate depths inside the box.
+
+This method is intentionally simple and reproducible.
+
+The median was chosen rather than the mean because it is less sensitive to isolated background points.
+
+Initial visualization script:
+
+- `scripts/fuse_yolov8_lidar.py`
+
+Important commit:
+
+- `95d3221` — **Add YOLOv8x LiDAR fusion baseline and depth evaluation**
+
+---
+
+# 10. Depth estimator study: V1 vs V2 vs V3
+
+This became an important methodological sub-study. The aim was to determine whether a more complicated depth rule actually improved the original median-ROI estimator.
+
+## V1 — Median ROI
+
+Depth estimate:
+
+```text
+median(depth of projected LiDAR points inside the 2D detection box)
+```
+
+## V2 — Nearest substantial depth cluster
+
+Projected LiDAR depths were sorted and split when a depth gap exceeded approximately 1.5 m. The method then selected a substantial near cluster.
+
+Hypothesis:
+
+- a near cluster might remove background contamination when the detector box spans several depth layers.
+
+Result:
+
+- the hypothesis did not generalize well;
+- V2 often selected the wrong surface and created large underestimation errors.
+
+## V3 — Edge-aware hybrid
+
+Development-set error analysis showed severe failures for some heavily truncated edge detections.
+
+V3 rule:
+
+- if a detection box touched approximately the outer 2% of the image width, use V2;
+- otherwise use V1.
+
+This rule used only observable detection/image geometry and did not use ground-truth depth at inference time.
+
+The method improved development metrics slightly but failed to improve the independent holdout set overall.
+
+## Final decision
+
+**V1 Median ROI remains the frozen depth baseline.**
+
+This is a useful negative result: increasing algorithmic complexity did not automatically improve generalization.
+
+---
+
+# 11. Single-frame depth comparison
+
+On KITTI frame `000149`, 9 YOLO detections were matched to KITTI `Car` ground truth.
+
+Results:
+
+| Method | MAE |
+|---|---:|
+| V1 Median ROI | **1.825 m** |
+| V2 Nearest Cluster | 7.141 m |
+
+V1 was substantially better on this frame.
+
+---
+
+# 12. Multi-frame depth evaluation
+
+The experiment was then expanded beyond a single example.
+
+Ground-truth matching used a 2D IoU threshold of **0.30** for the exploratory depth study.
+
+## 10-frame development result
+
+45 matched detections.
+
+| Method | MAE | Median AE | RMSE |
+|---|---:|---:|---:|
+| V1 | **1.492 m** | **0.923 m** | **2.402 m** |
+| V2 | 2.930 m | 1.409 m | 4.930 m |
+
+## 50-frame development result
+
+180 matched detections.
+
+| Method | MAE | Median AE | RMSE |
+|---|---:|---:|---:|
+| V1 | **1.577 m** | **1.098 m** | **2.545 m** |
+| V2 | 3.423 m | 1.451 m | 6.368 m |
+
+## 100-frame development result
+
+360 matched detections.
+
+| Method | N | MAE | Median AE | RMSE |
+|---|---:|---:|---:|---:|
+| V1 | 360 | **1.898 m** | **1.265 m** | 3.750 m |
+| V2 | 359 | 3.986 m | 1.684 m | 6.675 m |
+| V3 | 360 | **1.862 m** | **1.265 m** | **3.656 m** |
+
+V3 appeared slightly better than V1 on development data, so an independent holdout test was required before adopting it.
+
+---
+
+# 13. Independent depth holdout validation
+
+A deterministic holdout was generated with random seed `42`, excluding the evenly spaced development indices.
+
+100 separate frames were evaluated.
+
+351 matched detections were available for V1/V3.
+
+| Method | N | MAE | Median AE | RMSE |
+|---|---:|---:|---:|---:|
+| V1 | 351 | **1.954 m** | 1.318 m | **3.925 m** |
+| V2 | 350 | 4.195 m | 1.631 m | 6.957 m |
+| V3 | 351 | 1.962 m | **1.285 m** | 3.948 m |
+
+## Decision
+
+V3 did not improve holdout MAE or RMSE compared with V1.
+
+Therefore:
+
+**V1 was retained as the final simple depth-association baseline.**
+
+This development-vs-holdout sequence should be emphasized in the dissertation as evidence that design choices were validated rather than selected solely from development performance.
+
+Important commit:
+
+- `28e01e3` — **Add edge-aware fusion ablation and holdout validation**
+
+---
+
+# 14. Depth error analysis
+
+For the 100-frame development experiment:
+
+## Mean signed error
+
+Estimated depth minus KITTI ground-truth object `z`:
+
+- V1 mean signed error: **-1.075 m**
+- V2 mean signed error: **-3.674 m**
+
+The negative bias is physically plausible because projected LiDAR points commonly lie on the visible front surface of a vehicle, whereas KITTI object location `z` represents the annotated 3D object location / center in camera coordinates.
+
+Therefore the LiDAR ROI estimate and KITTI center depth are related but not exactly the same physical quantity.
+
+## V1 distance-bin analysis
+
+| GT distance | N | MAE | Median AE | RMSE |
+|---|---:|---:|---:|---:|
+| 0–20 m | 143 | 1.474 | 0.780 | 2.674 |
+| 20–40 m | 144 | 1.878 | 1.407 | 2.999 |
+| 40–60 m | 59 | 2.176 | 1.713 | 3.446 |
+| 60+ m | 14 | 5.258 | 2.013 | 12.087 |
+
+Performance deteriorates at long range, where projected LiDAR support becomes increasingly sparse and individual association errors become more damaging.
+
+## V2 distance-bin analysis
+
+| GT distance | N | MAE | Median AE | RMSE |
+|---|---:|---:|---:|---:|
+| 0–20 m | 143 | 1.888 | 1.060 | 3.059 |
+| 20–40 m | 144 | 5.218 | 1.861 | 7.231 |
+| 40–60 m | 59 | 5.345 | 1.896 | 8.534 |
+| 60+ m | 14 | 7.234 | 2.020 | 14.757 |
+
+V2 was particularly unstable at medium and long range.
+
+---
+
+# 15. Important V1 failure cases
+
+Large errors from the 100-frame development analysis included:
+
+| Frame | GT z | V1 depth | Absolute error | 2D match IoU | LiDAR points |
+|---|---:|---:|---:|---:|---:|
+| 007404 | 62.91 | 18.97 | 43.94 | 0.734 | 40 |
+| 007102 | 49.76 | 30.73 | 19.03 | 0.338 | 58 |
+| 006497 | 35.14 | 19.77 | 15.37 | 0.720 | 95 |
+| 003173 | 3.31 | 17.43 | 14.12 | 0.713 | 713 |
+| 002568 | 2.76 | 15.09 | 12.33 | 0.829 | 1,216 |
+| 000755 | 29.08 | 17.29 | 11.79 | 0.887 | — |
+| 003097 | 26.87 | 15.39 | 11.48 | — | — |
+| 000831 | 1.65 | 11.21 | 9.56 | — | — |
+| 004004 | 29.20 | 20.06 | 9.14 | — | — |
+| 001435 | 40.58 | 31.49 | 9.09 | — | — |
+
+Visual inspection identified several recurring mechanisms:
+
+- multiple physical depth layers inside a rectangular detection ROI,
+- overlapping/crowded vehicles,
+- severe image-edge truncation,
+- background LiDAR contamination,
+- sparse distant LiDAR returns.
+
+A key lesson is that a high number of LiDAR points does **not** guarantee a good depth estimate if those points belong to several surfaces.
+
+---
+
+# 16. Visibility and occlusion analysis
+
+## Truncation bins — V1
+
+| Truncation | N | MAE | Median AE | RMSE |
+|---|---:|---:|---:|---:|
+| 0–0.15 | 306 | 1.834 | 1.302 | 3.707 |
+| >0.15–0.30 | 6 | 0.181 | 0.197 | 0.208 |
+| >0.30–0.50 | 9 | 0.632 | 0.527 | 0.750 |
+| >0.50 | 39 | 2.959 | 1.184 | 4.680 |
+
+The middle truncation bins contain too few samples for strong general conclusions.
+
+## Occlusion bins — V1
+
+| Occlusion | N | MAE | Median AE | RMSE |
+|---|---:|---:|---:|---:|
+| 0 — fully visible | 194 | 1.603 | 1.347 | 2.455 |
+| 1 — partly occluded | 97 | 1.676 | 0.904 | 4.807 |
+| 2 — largely occluded | 59 | 3.504 | 1.653 | 5.290 |
+| 3 — unknown | 10 | 0.296 | 0.217 | 0.367 |
+
+Occlusion level 2 was associated with materially larger V1 errors.
+
+---
+
+# 17. Frozen depth result artifact
+
+A dissertation-ready comparison artifact was generated:
+
+- `results/depth_method_comparison.csv`
+- `results/depth_method_comparison.png`
+
+Exact frozen table:
+
+| Split | Method | N | MAE | Median AE | RMSE |
+|---|---|---:|---:|---:|---:|
+| Development | V1 Median ROI | 360 | 1.8978453 | 1.2646964 | 3.75031997 |
+| Development | V2 Nearest Cluster | 359 | 3.9856579 | 1.6841375 | 6.67490273 |
+| Development | V3 Edge-Aware Hybrid | 360 | 1.8618330 | 1.2646964 | 3.65573772 |
+| Holdout | V1 Median ROI | 351 | 1.9538831 | 1.3175633 | 3.92486870 |
+| Holdout | V2 Nearest Cluster | 350 | 4.1945221 | 1.6313400 | 6.95719580 |
+| Holdout | V3 Edge-Aware Hybrid | 351 | 1.9618197 | 1.2846350 | 3.94787560 |
+
+Important commit:
+
+- `bc8b7cf` — **Add depth estimation comparison results**
+
+---
+
+# 18. Important methodological caveat for the depth study
+
+The reported depth errors are **conditional on camera detections that were matched to KITTI Car annotations** at the chosen 2D IoU threshold.
+
+They are not a complete object-detection metric.
+
+The dissertation must not present these MAE/RMSE values as overall detection accuracy.
+
+---
+
+# 19. Falcon Perception integration
+
+Falcon Perception was selected as the main open-vocabulary / multimodal camera component.
+
+## Why Falcon was useful for this project
+
+- It supports natural-language queries such as `car`.
+- It represents a different perception paradigm from a conventional fixed-taxonomy YOLO detector.
+- Its official repository includes an MLX path for Apple Silicon.
+- It therefore allowed meaningful local experimentation without CUDA.
+
+## Falcon environment
+
+Environment:
+
+```text
+~/Major_Project/envs/falcon310
+```
+
+Verified:
+
+- Python 3.10.21 arm64
+- Falcon Perception import
+- MLX import
+- editable Falcon installation
+
+---
+
+# 20. First Falcon KITTI run
+
+Official MLX detection was run on KITTI frame `000149` with query:
+
+```text
+car
+```
+
+The first run:
+
+- fetched 17 model files,
+- downloaded roughly 2.5 GB,
+- loaded the MLX perception model in float16,
+- produced 11 bounding boxes,
+- produced 0 masks for the detection task,
+- generated the annotated image `000149_car.jpg`.
+
+Measured first-run timing:
+
+- model loading: **124.94 s**
+- preprocessing: approximately **0.015 s**
+- generation: **4.98 s**
+- total: **129.98 s**
+
+The long first-run model load must not be interpreted as steady-state per-frame latency because it included initial model acquisition / initialization work.
+
+Later cached model loading was approximately **0.6 s**.
+
+---
+
+# 21. Falcon adapter
+
+Project-owned adapter:
+
+- `adapters/falcon_adapter.py`
+
+Purpose:
+
+1. load Falcon with MLX,
+2. execute a natural-language detection query,
+3. parse Falcon bounding-box entries,
+4. convert normalized center-format boxes to pixel `x1, y1, x2, y2`,
+5. export a project-friendly JSON representation.
+
+Important technical detail:
+
+Falcon's official output path used here does **not** expose a conventional confidence score per bounding box.
+
+Therefore the project must not invent scores or report confidence-ranked Falcon mAP without a supported scoring mechanism.
+
+---
+
+# 22. Falcon single-frame diagnostic
+
+On KITTI frame `000149`:
+
+- Falcon detections: 11
+- KITTI `Car` ground-truth boxes: 10
+
+Greedy one-to-one matching produced:
+
+| 2D IoU threshold | TP | FP | FN | Precision | Recall |
+|---|---:|---:|---:|---:|---:|
+| 0.30 | 10 | 1 | 0 | 0.909 | 1.000 |
+| 0.50 | 7 | 4 | 3 | 0.636 | 0.700 |
+| 0.70 | 4 | 7 | 6 | 0.364 | 0.400 |
+
+This was treated only as a diagnostic, not final accuracy.
+
+---
+
+# 23. Falcon 10-frame raw pilot
+
+Falcon was then evaluated on 10 evenly spaced KITTI training frames while loading the model once.
+
+Frames:
+
+```text
+000000
+000831
+001662
+002493
+003324
+004155
+004986
+005817
+006648
+007480
+```
+
+Total KITTI Car ground truth across the split: **48**.
+
+Raw Falcon produced **168** detections.
+
+## Raw aggregate results
+
+| IoU | TP | FP | FN | Precision | Recall | F1 | Mean matched IoU |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 0.30 | 41 | 127 | 7 | 0.244 | 0.854 | 0.380 | 0.678 |
+| 0.50 | 31 | 137 | 17 | 0.185 | 0.646 | 0.287 | 0.751 |
+| 0.70 | 21 | 147 | 27 | 0.125 | 0.438 | 0.194 | 0.821 |
+
+Mean Falcon generation time:
+
+- **6.416 s/frame**
+- approximate generation rate: **0.156 FPS**
+
+This number refers to the measured Falcon generation section, not a fully standardized end-to-end benchmark.
+
+---
+
+# 24. Major Falcon failure discovered: duplicate / redundant boxes
+
+Frame `006648` was an extreme failure case:
+
+```text
+KITTI GT cars = 9
+Raw Falcon boxes = 101
+Generation time = 25.97 s
+```
+
+The annotated image was inspected manually.
+
+The result showed:
+
+- many highly overlapping bounding boxes around the same vehicles,
+- multiple redundant boxes in the right half of the image,
+- several small questionable detections in background regions.
+
+Therefore the poor raw precision was not simply because Falcon failed to find cars. A substantial part of the problem was **redundant score-free output**.
+
+This was a critical diagnostic finding because it changed the correct next step from “discard Falcon” to “evaluate transparent score-free post-processing.”
+
+---
+
+# 25. Score-free Falcon deduplication
+
+Because no conventional per-box confidence score was available, confidence-ranked NMS was not appropriate.
+
+A project-owned score-free method was implemented:
+
+1. calculate IoU between Falcon boxes,
+2. build connected components where box pairs overlap above a selected threshold,
+3. treat each connected component as a duplicate cluster,
+4. replace the cluster with the coordinate-wise median bounding box.
+
+This keeps the procedure deterministic and does not invent model confidence.
+
+Three development thresholds were tested:
+
+- 0.50
+- 0.70
+- 0.80
+
+---
+
+# 26. Falcon deduplication development ablation
+
+## Raw Falcon
+
+| Evaluation IoU | Precision | Recall | F1 | FP |
+|---|---:|---:|---:|---:|
+| 0.30 | 0.244 | 0.854 | 0.380 | 127 |
+| 0.50 | 0.185 | 0.646 | 0.287 | 137 |
+| 0.70 | 0.125 | 0.438 | 0.194 | 147 |
+
+## Dedup threshold 0.50
+
+| Evaluation IoU | Precision | Recall | F1 | FP |
+|---|---:|---:|---:|---:|
+| 0.30 | **0.526** | 0.854 | **0.651** | **37** |
+| 0.50 | **0.397** | 0.646 | **0.492** | **47** |
+| 0.70 | **0.269** | 0.438 | **0.333** | **57** |
+
+## Dedup threshold 0.70
+
+| Evaluation IoU | Precision | Recall | F1 |
+|---|---:|---:|---:|
+| 0.30 | 0.506 | 0.854 | 0.636 |
+| 0.50 | 0.383 | 0.646 | 0.481 |
+| 0.70 | 0.259 | 0.438 | 0.326 |
+
+## Dedup threshold 0.80
+
+| Evaluation IoU | Precision | Recall | F1 |
+|---|---:|---:|---:|
+| 0.30 | 0.482 | 0.854 | 0.617 |
+| 0.50 | 0.365 | 0.646 | 0.466 |
+| 0.70 | 0.247 | 0.438 | 0.316 |
+
+## Development decision
+
+Threshold **0.50** was the best of the tested score-free deduplication thresholds.
+
+At evaluation IoU 0.30:
+
+```text
+raw FP: 127
+0.50 dedup FP: 37
+raw F1: 0.380
+0.50 dedup F1: 0.651
+```
+
+That is approximately a 71% relative increase in F1 on this development pilot.
+
+For extreme frame `006648`:
+
+```text
+raw boxes = 101
+0.50 deduplicated boxes = 17
+GT cars = 9
+```
+
+---
+
+# 27. Independent Falcon dedup holdout
+
+The dedup threshold was **not** accepted solely from development data.
+
+An independent 10-frame holdout was generated by excluding the development indices and sampling from the remaining KITTI training frames with deterministic random seed `42`.
+
+Holdout frames:
+
+```text
+000642
+000666
+000704
+001506
+003236
+003280
+004891
+005215
+005783
+006419
+```
+
+Total KITTI Car ground truth: **45**.
+
+## Raw Falcon holdout
+
+| IoU | TP | FP | FN | Precision | Recall | F1 | Mean matched IoU |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 0.30 | 42 | 33 | 3 | 0.560 | 0.933 | 0.700 | 0.754 |
+| 0.50 | 38 | 37 | 7 | 0.507 | 0.844 | 0.633 | 0.790 |
+| 0.70 | 30 | 45 | 15 | 0.400 | 0.667 | 0.500 | 0.836 |
+
+## Falcon + dedup 0.50 holdout
+
+| IoU | TP | FP | FN | Precision | Recall | F1 | Mean matched IoU |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 0.30 | 42 | 30 | 3 | **0.583** | 0.933 | **0.718** | 0.751 |
+| 0.50 | 38 | 34 | 7 | **0.528** | 0.844 | **0.650** | 0.787 |
+| 0.70 | 29 | 43 | 16 | 0.403 | 0.644 | 0.496 | 0.840 |
+
+## Decision
+
+The 0.50 dedup rule generalized in a qualified way:
+
+- precision and F1 improved at IoU 0.30,
+- precision and F1 improved at IoU 0.50,
+- recall was preserved at those thresholds,
+- strict IoU 0.70 F1 fell slightly from 0.500 to 0.496.
+
+Therefore:
+
+**Falcon raw output remains a baseline, while Falcon + score-free dedup 0.50 is the standardized downstream version.**
+
+The strict-IoU tradeoff must be reported rather than hidden.
+
+Important commit:
+
+- `48e50ed` — **Add Falcon Perception adapter and KITTI evaluation**
+
+---
+
+# 28. Controlled YOLOv8x camera evaluation
+
+YOLOv8x was evaluated on **exactly the same 10 development and 10 holdout frames** used for Falcon.
+
+YOLO settings:
+
+```text
+weights = yolov8x.pt
+confidence threshold = 0.25
+device = MPS
+class = car
+```
+
+The same greedy one-to-one matching implementation and the same evaluation IoU thresholds were used:
+
+- 0.30
+- 0.50
+- 0.70
+
+This was designed as a controlled fixed-operating-point pilot comparison.
+
+Important commit:
+
+- `ddd1aa2` — **Add controlled YOLOv8x KITTI camera evaluation**
+
+---
+
+# 29. YOLOv8x development pilot results
+
+| IoU | TP | FP | FN | Precision | Recall | F1 | Mean matched IoU |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 0.30 | 45 | 29 | 3 | 0.608 | 0.938 | 0.738 | 0.710 |
+| 0.50 | 40 | 34 | 8 | 0.541 | 0.833 | 0.656 | 0.746 |
+| 0.70 | 24 | 50 | 24 | 0.324 | 0.500 | 0.393 | 0.838 |
+
+Measured mean prediction time including the first warm-up-heavy frame:
+
+- **0.197 s/frame**
+- approximately **5.079 FPS**
+
+The first frame took 1.433 s while subsequent frames were approximately 0.06 s, so the raw development mean is not a representative steady-state runtime value.
+
+---
+
+# 30. YOLOv8x independent holdout results
+
+| IoU | TP | FP | FN | Precision | Recall | F1 | Mean matched IoU |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 0.30 | 41 | 21 | 4 | **0.661** | 0.911 | **0.766** | 0.767 |
+| 0.50 | 36 | 26 | 9 | **0.581** | 0.800 | **0.673** | 0.815 |
+| 0.70 | 30 | 32 | 15 | **0.484** | 0.667 | **0.561** | 0.856 |
+
+Mean prediction time on holdout:
+
+- **0.058 s/frame**
+- approximately **17.216 FPS**
+
+This is much more representative of warmed-up YOLO inference on this machine than the development average.
+
+---
+
+# 31. Controlled YOLOv8x vs Falcon camera finding
+
+For the fair pilot comparison, Falcon means **Falcon + score-free dedup 0.50**.
+
+## Holdout comparison
+
+| Metric | YOLOv8x | Falcon + Dedup | Better value |
+|---|---:|---:|---|
+| Precision @ IoU 0.30 | **0.661** | 0.583 | YOLOv8x |
+| Recall @ IoU 0.30 | 0.911 | **0.933** | Falcon |
+| F1 @ IoU 0.30 | **0.766** | 0.718 | YOLOv8x |
+| Precision @ IoU 0.50 | **0.581** | 0.528 | YOLOv8x |
+| Recall @ IoU 0.50 | 0.800 | **0.844** | Falcon |
+| F1 @ IoU 0.50 | **0.673** | 0.650 | YOLOv8x |
+| F1 @ IoU 0.70 | **0.561** | 0.496 | YOLOv8x |
+
+## Interpretation
+
+The current pilot suggests:
+
+- YOLOv8x is the stronger conventional KITTI car detector at this fixed operating point,
+- YOLOv8x has higher precision and overall F1,
+- Falcon has slightly higher recall at IoU 0.30 and 0.50 on the independent holdout,
+- Falcon offers open-vocabulary flexibility that YOLOv8x does not provide in the same way,
+- Falcon's raw output required explicit duplicate handling,
+- Falcon is substantially slower locally than YOLOv8x.
+
+The dissertation should **not** frame the goal as making Falcon win. The academically useful result is the tradeoff between conventional detector precision/efficiency and open-vocabulary flexibility/recall.
+
+---
+
+# 32. Camera comparison result artifact
+
+Frozen pilot artifacts:
+
+- `results/camera_detector_comparison.csv`
+- `results/camera_detector_comparison.png`
+
+Figure title:
+
+**KITTI Camera Detection Pilot: YOLOv8x vs Falcon Perception**
+
+Important commit:
+
+- `f63ea07` — **Add YOLOv8x and Falcon camera comparison results**
+
+---
+
+# 33. Critical camera-evaluation caveat
+
+The camera comparison is currently a **controlled fixed-threshold pilot** on:
+
+- 10 development frames,
+- 10 independent holdout frames.
+
+It is **not official KITTI AP/mAP**.
+
+The current matcher:
+
+- evaluates `Car`,
+- uses greedy one-to-one assignment,
+- uses chosen 2D IoU thresholds,
+- does not yet reproduce the full official KITTI evaluation protocol including official difficulty categories and `DontCare` handling.
+
+Recommended dissertation wording:
+
+> These results represent a controlled fixed-operating-point pilot evaluation on 10 development and 10 independent holdout KITTI frames; they are not official KITTI AP/mAP results.
+
+A larger and/or standardized evaluation should be added later where feasible.
+
+---
+
+# 34. Runtime caveat
+
+Do not report the current raw timing numbers as a perfectly standardized speed comparison.
+
+Current values include:
+
+- YOLO prediction timing,
+- Falcon generation timing,
+- different model execution structures,
+- warm-up effects.
+
+A later formal benchmark should:
+
+1. load each model once,
+2. perform one or more warm-up frames,
+3. time the same number of frames,
+4. clearly define preprocessing, inference/generation, post-processing, and end-to-end latency,
+5. report hardware and precision.
+
+Therefore statements such as “YOLO is exactly X times faster” should be avoided until standardized timing is complete.
+
+---
+
+# 35. Problems encountered and how they were resolved
+
+| Problem | Diagnosis | Action / fix | Final decision |
+|---|---|---|---|
+| Azitt requirements include CUDA-specific `spconv-cu114` | Full original stack is not compatible with Apple Silicon as-is | Use Mac for camera, projection, evaluation and software fusion; reserve CUDA-heavy LiDAR detector for Linux/NVIDIA | Do not force CUDA stack onto Mac |
+| Azitt code contains hard-coded `.cuda()` paths | GPU backend assumption in reference implementation | Reproduce camera/fusion logic independently where possible | Full unchanged PV-RCNN++ baseline remains future GPU work |
+| Simple 2D ROI can contain background LiDAR | Rectangular detector boxes span multiple surfaces | Tested V2 nearest-cluster estimator | V2 was worse; retain median ROI |
+| V3 edge-aware heuristic looked better on development data | Possible overfitting to observed failure cases | Created independent 100-frame holdout | V3 did not improve holdout MAE/RMSE; retain V1 |
+| Very large V1 depth errors | Crowding, truncation, mixed surfaces, sparse distant returns | Per-frame, distance, truncation and occlusion analyses | Record these as known baseline limitations |
+| Falcon first run very slow | Model download / initialization | Re-run after model cache | Separate model load from per-frame generation timing |
+| Falcon produced 101 boxes for 9 GT cars on frame 006648 | Visual inspection showed many duplicate/redundant boxes | Implemented score-free IoU clustering + median representative | Dedup 0.50 selected on development and checked on holdout |
+| Falcon has no conventional box confidence in the used output path | Cannot honestly apply confidence-ranked NMS or mAP ranking | Use score-free dedup and fixed-threshold metrics | Never invent Falcon confidence values |
+| Dedup 0.50 strong on development but could overfit | Development threshold selection bias | Independent 10-frame holdout | Keep dedup 0.50 with explicit strict-IoU tradeoff |
+| YOLO development mean runtime looked slow | First prediction was MPS warm-up outlier | Inspect per-frame timing and holdout steady state | Formal warm-up benchmark required later |
+| Camera pilot is only 20 frames total | Small sample and custom matcher | Treat result as pilot; scale/standardize later | Do not call it official KITTI performance |
+
+---
+
+# 36. Key design decisions now frozen
+
+Unless a later experiment provides strong evidence to change them:
+
+1. **KITTI remains the primary development dataset.**
+2. **nuScenes remains the planned secondary / cross-dataset dataset.**
+3. **YOLOv8x remains the reproduced conventional camera baseline.**
+4. **Falcon Perception remains the main open-vocabulary camera experiment.**
+5. **Falcon downstream boxes use score-free IoU deduplication at 0.50**, while raw Falcon is retained as an ablation baseline.
+6. **V1 Median ROI remains the frozen simple projected-LiDAR depth association method.**
+7. Fair YOLO-vs-Falcon multimodal comparison should hold LiDAR projection and association fixed.
+8. PointPillars is planned as an additional LiDAR baseline.
+9. PV-RCNN++ remains relevant because of the Azitt reference pipeline.
+10. BEVFusion remains the advanced fusion comparison target.
+11. Robustness should include sensor degradation / dropout, range, occlusion, lighting and/or calibration perturbation where feasible.
+
+---
+
+# 37. Planned controlled multimodal comparison
+
+The next core experiment should isolate the camera detector variable:
+
+```text
+YOLOv8x box
+   ↓
+same KITTI LiDAR projection
+   ↓
+same minimum-point rule
+   ↓
+same median-ROI depth association
+
+versus
+
+Falcon + dedup box
+   ↓
+same KITTI LiDAR projection
+   ↓
+same minimum-point rule
+   ↓
+same median-ROI depth association
+```
+
+This avoids confounding the camera-model comparison with a simultaneous change in the LiDAR association method.
+
+---
+
+# 38. Planned advanced experiments
+
+## Camera
+
+- YOLOv8x reproduced baseline
+- Falcon Perception
+- one verified current conventional YOLO-family model later, if useful
+
+## LiDAR
+
+- PV-RCNN++
+- PointPillars
+
+## Fusion
+
+- projected ROI early association
+- candidate / CLOCs-style fusion
+- PointPainting-style semantic point enrichment
+- BEVFusion
+
+## Datasets
+
+- KITTI primary
+- nuScenes secondary, beginning with mini / selected subset
+- Glasgow qualitative RGB-only material only if useful and clearly marked as lacking paired LiDAR/calibration
+- Waymo only as a stretch goal
+
+## Robustness
+
+Potential axes:
+
+- object distance,
+- occlusion,
+- truncation,
+- image degradation / low lighting,
+- LiDAR sparsification,
+- simulated sensor loss,
+- calibration perturbation / misalignment,
+- cross-dataset generalization.
+
+## Runtime
+
+- warmed-up per-frame latency,
+- end-to-end latency,
+- FPS,
+- model-loading cost separately.
+
+---
+
+# 39. Current master status
+
+## Completed / substantially completed
+
+- [x] Project topic and architecture defined
+- [x] Main repository stack selected
+- [x] KITTI downloaded and verified
+- [x] KITTI LiDAR-to-camera projection
+- [x] YOLOv8x camera inference
+- [x] YOLOv8x + projected LiDAR median-depth baseline
+- [x] V1/V2/V3 depth estimator study
+- [x] 100-frame development depth analysis
+- [x] 100-frame independent depth holdout
+- [x] Distance / visibility / failure analysis
+- [x] Frozen depth comparison CSV + figure
+- [x] Falcon MLX setup
+- [x] Falcon independent KITTI inference
+- [x] Falcon adapter
+- [x] Falcon single-frame diagnostic
+- [x] Falcon 10-frame raw evaluation
+- [x] Falcon duplicate failure diagnosis
+- [x] Falcon dedup threshold ablation
+- [x] Falcon independent dedup holdout
+- [x] Controlled YOLOv8x camera evaluation on identical splits
+- [x] Frozen YOLOv8x vs Falcon camera CSV + figure
+
+## Current / next
+
+- [ ] Falcon + LiDAR fusion using frozen median-ROI method
+- [ ] Multi-frame Falcon + LiDAR evaluation
+- [ ] Controlled YOLO+LiDAR vs Falcon+LiDAR comparison
+
+## Still planned
+
+- [ ] larger / standardized camera evaluation
+- [ ] current conventional YOLO-family experiment, if justified
+- [ ] PointPillars
+- [ ] PV-RCNN++ / OpenPCDet GPU stage
+- [ ] CLOCs-style fusion
+- [ ] PointPainting / semantic fusion
+- [ ] MMDetection3D integration
+- [ ] BEVFusion
+- [ ] nuScenes
+- [ ] cross-dataset evaluation
+- [ ] robustness experiments
+- [ ] standardized runtime benchmark
+- [ ] final ablations
+- [ ] final demo
+- [ ] reproducibility cleanup
+- [ ] final dissertation tables, results and discussion
+
+---
+
+# 40. Important commits to date
+
+| Commit | Description |
+|---|---|
+| `8782ae6` | Initial project setup |
+| `3e997a6` | Add initial multimodal perception project structure |
+| `3fef0bb` | Add KITTI LiDAR to camera projection |
+| `95d3221` | Add YOLOv8x LiDAR fusion baseline and depth evaluation |
+| `dc017df` | Add multi-frame KITTI depth and visibility analysis |
+| `28e01e3` | Add edge-aware fusion ablation and holdout validation |
+| `bc8b7cf` | Add depth estimation comparison results |
+| `48e50ed` | Add Falcon Perception adapter and KITTI evaluation |
+| `ddd1aa2` | Add controlled YOLOv8x KITTI camera evaluation |
+| `f63ea07` | Add YOLOv8x and Falcon camera comparison results |
+
+This table should be extended after every important experimental milestone.
+
+---
+
+# 41. Dissertation-ready findings currently supported
+
+The following conclusions are currently supported by the experiments already completed.
+
+## Finding A — Simpler LiDAR association generalized better
+
+A median of projected LiDAR depths inside a 2D detection box outperformed a more complicated nearest-cluster heuristic. A development-tuned edge-aware hybrid produced only a small development gain and failed to improve holdout MAE/RMSE.
+
+**Dissertation implication:** complexity should be justified by independent validation rather than assumed to improve performance.
+
+## Finding B — Projected ROI fusion has predictable failure modes
+
+The largest depth errors are associated with mixed-depth boxes, crowding, severe truncation, occlusion and long-range LiDAR sparsity.
+
+**Dissertation implication:** simple projection-based association is effective as a baseline but limited by 2D box geometry and sparse sensing.
+
+## Finding C — Falcon has a distinct output failure mode
+
+Raw Falcon can produce many redundant boxes, creating extremely low precision on some scenes despite detecting many genuine vehicles.
+
+**Dissertation implication:** open-vocabulary generative perception can require different post-processing assumptions from conventional detectors.
+
+## Finding D — Transparent score-free post-processing can help Falcon
+
+IoU-cluster deduplication at threshold 0.50 reduced duplicate false positives dramatically on the development pilot and improved precision/F1 on the independent holdout at IoU 0.30 and 0.50, while introducing a small strict-IoU tradeoff.
+
+**Dissertation implication:** post-processing must be validated independently and its tradeoffs reported.
+
+## Finding E — YOLOv8x currently has the stronger overall fixed-threshold camera result
+
+On the independent 10-frame camera holdout, YOLOv8x achieved higher precision and F1 across the tested IoU thresholds. Falcon + dedup achieved slightly higher recall at IoU 0.30 and 0.50.
+
+**Dissertation implication:** the models offer different tradeoffs rather than a simple winner/loser narrative.
+
+---
+
+# 42. Claims that must NOT be made yet
+
+Do not write any of the following in the final dissertation unless later experiments support them:
+
+- “Falcon is more accurate than YOLO.”
+- “YOLO is universally better than Falcon.”
+- “The current camera results are official KITTI mAP.”
+- “Falcon confidence threshold was X.”
+- “Falcon supplies conventional per-box confidence scores in this implementation.”
+- “The current timing proves YOLO is exactly X times faster end to end.”
+- “V3 improves depth estimation.”
+- “The full Azitt PV-RCNN++ pipeline was reproduced on the Mac.”
+- “BEVFusion, PointPillars, OpenPCDet or nuScenes experiments are complete.”
+
+---
+
+# 43. Recommended final dissertation structure based on the work so far
+
+## Introduction
+
+- autonomous robotic perception problem,
+- complementary properties of RGB and LiDAR,
+- motivation for conventional and open-vocabulary perception,
+- project objectives and research questions.
+
+## Literature review
+
+- 2D object detection,
+- LiDAR 3D detection,
+- early / late / BEV fusion,
+- CLOCs,
+- PointPainting,
+- TransFusion / BEVFusion,
+- open-vocabulary / multimodal perception,
+- robustness and cross-dataset generalization.
+
+## Methodology
+
+- software-only architecture,
+- hardware and environment separation,
+- KITTI calibration and projection,
+- YOLOv8x baseline,
+- Falcon adapter,
+- score-free Falcon deduplication,
+- LiDAR median-ROI association,
+- controlled evaluation splits,
+- development vs holdout procedure,
+- metrics and runtime protocol.
+
+## Results
+
+- V1/V2/V3 depth table,
+- distance / occlusion / truncation analysis,
+- Falcon raw vs dedup ablation,
+- YOLO vs Falcon camera comparison,
+- later YOLO+LiDAR vs Falcon+LiDAR,
+- later 3D detector / fusion / nuScenes / robustness results.
+
+## Discussion
+
+- why V2 failed,
+- why V3 did not generalize,
+- front-surface vs object-center depth bias,
+- Falcon duplicate-generation behavior,
+- precision–recall tradeoff between YOLO and Falcon,
+- computational tradeoffs,
+- limits of simple projected ROI association,
+- generalization and robustness.
+
+## Limitations
+
+- small current camera pilot,
+- custom fixed-threshold matching is not official KITTI mAP,
+- local hardware differences,
+- Falcon score limitations,
+- GPU-heavy experiments separated from Mac development,
+- dataset and calibration assumptions.
+
+---
+
+# 44. Experiment logging template for future work
+
+Every major experiment added after this point should append a section using the following structure.
+
+```markdown
+## YYYY-MM-DD — Experiment name
+
+### Objective
+What question was being tested?
+
+### Controlled variables
+What was held fixed?
+
+### Changed variable
+What was intentionally changed?
+
+### Dataset / split
+Exact frames, subset, seed, or official split.
+
+### Configuration
+Model, weights, thresholds, environment, hardware.
+
+### Result
+Exact metrics and output paths.
+
+### Problem encountered
+What failed or looked suspicious?
+
+### Diagnosis
+What evidence explained the problem?
+
+### Fix / ablation
+What was changed and why?
+
+### Validation
+Was the fix checked on independent data?
+
+### Final decision
+What implementation is retained?
+
+### Dissertation interpretation
+What can legitimately be concluded?
+
+### Commit
+Git commit hash and message.
+```
+
+---
+
+# 45. Current immediate next action
+
+The next project stage is **Falcon + LiDAR fusion** on KITTI.
+
+The correct controlled design is to reuse the already frozen LiDAR method:
+
+- projected KITTI LiDAR,
+- points inside the 2D camera box,
+- at least 3 projected LiDAR returns,
+- median camera-coordinate depth,
+
+while replacing only the camera detector input:
+
+```text
+YOLOv8x
+versus
+Falcon + dedup 0.50
+```
+
+After verifying one frame, the experiment should be expanded to the same controlled development/holdout philosophy used earlier.
+
+---
+
+# 46. Maintenance rule
+
+This document is a **living project record**. After every significant experiment, append:
+
+1. exact configuration,
+2. exact outputs,
+3. exact numerical results,
+4. unexpected problems,
+5. diagnosis,
+6. attempted fix,
+7. independent validation if relevant,
+8. final design decision,
+9. dissertation-safe interpretation,
+10. Git commit.
+
+This ensures that the final MSc dissertation can be reconstructed from version-controlled evidence rather than from memory alone.
