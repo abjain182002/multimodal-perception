@@ -1,0 +1,13 @@
+split,model,iou_threshold,precision,recall,f1,mean_matched_iou
+Development,YOLOv8x,0.3,0.608,0.938,0.738,0.71
+Development,Falcon + Dedup,0.3,0.526,0.854,0.651,0.677
+Development,YOLOv8x,0.5,0.541,0.833,0.656,0.746
+Development,Falcon + Dedup,0.5,0.397,0.646,0.492,0.749
+Development,YOLOv8x,0.7,0.324,0.5,0.393,0.838
+Development,Falcon + Dedup,0.7,0.269,0.438,0.333,0.821
+Holdout,YOLOv8x,0.3,0.661,0.911,0.766,0.767
+Holdout,Falcon + Dedup,0.3,0.583,0.933,0.718,0.751
+Holdout,YOLOv8x,0.5,0.581,0.8,0.673,0.815
+Holdout,Falcon + Dedup,0.5,0.528,0.844,0.65,0.787
+Holdout,YOLOv8x,0.7,0.484,0.667,0.561,0.856
+Holdout,Falcon + Dedup,0.7,0.403,0.644,0.496,0.84
