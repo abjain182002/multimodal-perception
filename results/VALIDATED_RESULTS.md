@@ -1,12 +1,10 @@
-# Validated Experimental Results
+# Experimental Results and Project Notes
 
-> Professor-facing technical summary of the experimentally verified results in this repository.
->
-> Project: **A Software-Only Deep Learning Pipeline for Multi-Modal Object Detection and Robotic Perception Using LiDAR and Camera Fusion Across Multiple Datasets**
->
-> This file consolidates the main numerical results produced so far. It is intended for supervisor/professor review and later dissertation use. Raw datasets, model weights, and bulk model outputs are intentionally not version-controlled.
+Project: **A Software-Only Deep Learning Pipeline for Multi-Modal Object Detection and Robotic Perception Using LiDAR and Camera Fusion Across Multiple Datasets**
 
-## 1. Evaluation conventions and important caveats
+I am using this file to keep the main results, settings and observations from my experiments in one place. It gives me a clear record to refer to during supervisor meetings and when I start writing the dissertation. Large datasets, model weights and bulk model outputs are kept outside GitHub because of their size.
+
+## 1. Evaluation setup and notes
 
 - Primary dataset so far: **KITTI training set**.
 - Camera class evaluated: **Car**.
@@ -385,7 +383,7 @@ Relevant commit:
 
 ---
 
-# 6. Current experimentally supported findings
+# 6. Main findings so far
 
 1. **The simpler V1 median-ROI LiDAR depth estimator generalized better than the more complicated alternatives tested.**
 2. **Projected ROI fusion has identifiable failure modes involving mixed depth layers, truncation, occlusion, crowding, and long-range LiDAR sparsity.**
@@ -396,7 +394,7 @@ Relevant commit:
 
 ---
 
-# 7. Claims not supported yet
+# 7. Results I am not claiming yet
 
 The following should **not** be claimed from the current evidence:
 
@@ -411,9 +409,9 @@ The following should **not** be claimed from the current evidence:
 
 ---
 
-# 8. Repository evidence map
+# 8. Files linked to these results
 
-For a professor or reviewer, the most useful files are:
+The main files I am using to keep the work traceable are:
 
 - `PROJECT_HISTORY.md` — detailed chronological technical record, decisions, failures and interpretations.
 - `DAILY_LOG.md` — dated working log.
@@ -429,9 +427,9 @@ Bulk generated outputs and datasets are intentionally excluded from Git because 
 
 ---
 
-# 9. Reproducibility status
+# 9. Reproducibility notes
 
-The repository records:
+I have kept the following details in the repository:
 
 - exact controlled frame lists,
 - thresholds,
@@ -443,81 +441,79 @@ The repository records:
 - scripts used for the latest Falcon+LiDAR experiment,
 - version-controlled frozen result tables and figures for the earlier depth and camera studies.
 
-The next planned results milestone is the controlled **YOLO+LiDAR vs Falcon+LiDAR** comparison using the same projected-LiDAR and median-depth association rules.
+My next results milestone is the controlled **YOLO+LiDAR vs Falcon+LiDAR** comparison using the same projected-LiDAR and median-depth association rules.
 
 
 ---
 
-# 10. Professor / supervisor reference statements
+# 10. Notes for explaining the work to my supervisor
 
-The statements below are intentionally written as concise, technically accurate explanations that can be reused in supervisor meetings, progress updates, presentations, and dissertation drafting. They summarize **what is being tested, why it is being tested, and what can legitimately be concluded** from the current experiments.
+I am keeping these notes here so I can explain the reasoning behind the experiments clearly in meetings. They are based on the results above and are meant to sit alongside the scripts, CSV files and figures.
 
-## 10.1 Overall project explanation
+## 10.1 What I am trying to do
 
-> The project investigates a software-only multimodal robotic-perception pipeline in which camera detections are combined with projected LiDAR measurements. The main emphasis is controlled experimentation: individual components are changed one at a time so that the effect of the camera detector, LiDAR association method, or fusion strategy can be evaluated without unnecessarily changing the rest of the pipeline.
+> My project is looking at how camera detections and LiDAR measurements can be combined in a software-only perception pipeline. I am trying to keep the experiments controlled, so when I change one part of the pipeline I keep the other parts fixed. This makes it easier to see whether a result is coming from the camera detector, the LiDAR association method or the fusion step.
 
-> KITTI is currently used as the primary dataset because it provides synchronized RGB images, Velodyne LiDAR point clouds, calibration files, and 3D object annotations. nuScenes is planned as the secondary dataset for cross-dataset evaluation.
+> I am using KITTI as the main dataset at this stage because it gives me the RGB images, Velodyne LiDAR, calibration files and object annotations needed for camera-LiDAR experiments. I plan to use nuScenes later as a second dataset to see how well the approach transfers.
 
-> The project deliberately combines conventional perception models such as YOLO with an open-vocabulary model, Falcon Perception, so that the tradeoff between fixed-taxonomy detection and more flexible language-conditioned perception can be studied under the same downstream LiDAR association procedure.
+> I am comparing YOLOv8x with Falcon because they represent two different types of camera perception. YOLOv8x is a conventional detector with a fixed class set, while Falcon can work with a natural-language query such as "car". I want to compare them while keeping the LiDAR processing as similar as possible.
 
-## 10.2 Why the LiDAR depth estimator was frozen
+## 10.2 Why I kept the median LiDAR depth method
 
-> The initial projected-LiDAR baseline estimates vehicle depth using the median camera-coordinate depth of LiDAR points whose image projections fall inside a matched 2D detection box. The median was chosen as a simple robust statistic that is less sensitive than the mean to isolated background returns.
+> My first LiDAR depth estimate was simple: after projecting the LiDAR points into the image, I take the points inside a matched 2D detection box and use their median camera-coordinate depth. I used the median because a detection box can also contain some background points, and the median is less affected by a few extreme values than the mean.
 
-> More complex depth-selection rules were tested rather than assumed to be better. The nearest-cluster method performed worse, and the edge-aware hybrid produced only a small development-set improvement that did not improve holdout MAE or RMSE. For this reason, the simpler median-ROI estimator was retained as the frozen baseline.
+> I also tested more complicated methods. The nearest-cluster method was worse, and the edge-aware method looked slightly better on the development data but did not improve MAE or RMSE on the independent holdout. Because of that, I kept the simpler median-ROI method instead of choosing the method that only looked better on the development set.
 
-> This development-versus-holdout sequence is important because it demonstrates that method selection was based on independent validation rather than on development performance alone.
+> This is useful for the project because it shows that I am checking changes on separate data before deciding to keep them.
 
-## 10.3 How to explain the negative depth bias
+## 10.3 What I think the negative depth bias means
 
-> The negative signed-depth bias is physically plausible because the projected LiDAR points frequently lie on the visible front surface of a vehicle, whereas the KITTI ground-truth z coordinate represents the annotated 3D object location in camera coordinates. The two measurements therefore refer to related but not identical physical quantities.
+> The depth estimates are usually slightly smaller than the KITTI ground-truth z value. A likely reason is that many LiDAR returns come from the visible front surface of a vehicle, while KITTI gives the annotated 3D object location in camera coordinates. These are related measurements, but they are not exactly the same physical point on the vehicle.
 
-> The bias is treated as a measurable characteristic of the simple fusion baseline rather than being hidden or corrected without justification.
+> I am keeping this bias visible in the results rather than applying a correction without first having a clear reason for doing so.
 
-## 10.4 Why Falcon required special post-processing
+## 10.4 Why I had to clean Falcon's output
 
-> Falcon Perception does not expose a conventional confidence score for the bounding boxes in the output path used in this project. Therefore, confidence-ranked non-maximum suppression would require inventing information that the model does not provide.
+> In the Falcon output I am using, I do not get a normal confidence score for every bounding box. That means I cannot apply standard confidence-ranked NMS in the same way as I would with YOLO without making up a score that the model did not provide.
 
-> A transparent score-free alternative was implemented instead: overlapping Falcon boxes are grouped using IoU-connected components and each group is represented by the coordinate-wise median box.
+> Instead, I group strongly overlapping Falcon boxes using IoU and replace each group with the median box coordinates. I use this as a score-free deduplication step.
 
-> The extreme frame 006648 demonstrated why this step was necessary: Falcon generated 101 raw boxes for 9 KITTI cars, many of which were highly redundant. Score-free deduplication reduced the frame to 17 representative boxes.
+> Frame 006648 is the clearest example of why this was needed. Falcon returned 101 raw boxes for a scene with 9 KITTI cars. Many of those boxes were repeated around the same vehicles. After the deduplication step, the 101 raw boxes were reduced to 17 representative boxes.
 
-## 10.5 How to explain YOLO vs Falcon
+## 10.5 What I found from YOLOv8x and Falcon
 
-> The objective is not to make Falcon outperform YOLO. The academically useful question is how a conventional detector and an open-vocabulary detector behave when evaluated under the same dataset split, matching rules, and downstream LiDAR procedure.
+> I am not trying to prove that Falcon is better than YOLO or the other way around. The purpose of this comparison is to see what changes when I use a conventional detector versus an open-vocabulary detector under the same evaluation setup.
 
-> In the current fixed-operating-point camera pilot, YOLOv8x produced higher precision and F1, while Falcon + dedup achieved slightly higher recall at some IoU thresholds. Falcon additionally offers open-vocabulary flexibility but is slower and required explicit duplicate handling.
+> On the current holdout, YOLOv8x has better precision and F1, while Falcon with deduplication has slightly better recall at some IoU thresholds. Falcon is also much slower in my current local setup, but it gives me the open-vocabulary behaviour that YOLOv8x does not provide in the same way.
 
-> These findings should be presented as a precision-recall-flexibility tradeoff rather than as a universal winner/loser conclusion.
+> For me, the useful result is the tradeoff between precision, recall, runtime and flexibility rather than choosing a single "winner".
 
-## 10.6 How to explain the Falcon + LiDAR experiment
+## 10.6 What I did in the Falcon + LiDAR experiment
 
-> The Falcon + LiDAR experiment changes the camera detector while keeping the downstream LiDAR processing fixed. Falcon detections are deduplicated at IoU 0.50, KITTI LiDAR is projected using the official calibration matrices, at least three projected LiDAR points are required inside each 2D detection box, and object depth is estimated using the frozen median-ROI method.
+> For Falcon + LiDAR, I kept the LiDAR side fixed and changed the camera detector. I use Falcon with deduplication at IoU 0.50, project KITTI LiDAR using the calibration matrices, require at least three projected LiDAR points inside a detection box, and then use the same median-ROI depth estimate that I had already validated earlier.
 
-> This controlled design allows the effect of the camera detector to be studied without simultaneously changing the LiDAR projection or depth-estimation rule.
+> On the 10 development frames, I had 41 matched fused cars. The MAE was 1.783 m, the Median AE was 1.105 m, the RMSE was 2.872 m, and the mean signed error was -1.261 m.
 
-> On the 10-frame development split, the Falcon + LiDAR pipeline produced 41 matched fused cars with MAE 1.783 m, Median AE 1.105 m, RMSE 2.872 m, and mean signed error -1.261 m.
+> I then ran the same setup on 10 independent holdout frames without changing the method. This gave 42 matched fused cars, with MAE 1.655 m, Median AE 1.477 m, RMSE 2.316 m, and mean signed error -0.948 m.
 
-> On the independent 10-frame holdout split, the same frozen method produced 42 matched fused cars with MAE 1.655 m, Median AE 1.477 m, RMSE 2.316 m, and mean signed error -0.948 m.
+> The important point for me is that the result stayed in the same range on the holdout instead of getting much worse. The holdout MAE and RMSE were actually lower, although the Median AE was higher. I therefore treat this as evidence that the current simple fusion method is behaving consistently across these two small controlled splits.
 
-> The frozen method did not collapse on the independent holdout. Holdout MAE and RMSE were lower than on development, while Median AE was higher. This supports a cautious conclusion that the method showed stable behaviour across these controlled subsets.
+## 10.7 Important limitation when I present these numbers
 
-## 10.7 How to state the evaluation limitation correctly
+> These are controlled experiments on selected KITTI development and holdout frames. I am not presenting them as official KITTI AP or mAP results.
 
-> These results represent controlled fixed-operating-point evaluations on selected KITTI development and independent holdout subsets; they are not official KITTI AP/mAP benchmark results.
+> The depth errors are also calculated only for fused detections that were successfully matched to KITTI Car annotations at the chosen 2D IoU threshold. Because of that, the MAE and RMSE describe depth quality for matched detections; they are not a complete measure of object-detection performance.
 
-> The reported depth errors are conditional on camera detections that were successfully matched to KITTI Car annotations at the chosen 2D IoU threshold. They therefore measure depth-estimation quality for matched fused detections and must not be presented as complete object-detection accuracy.
+## 10.8 What I consider my contribution at this stage
 
-## 10.8 How to explain the current research contribution
+> My contribution is not just running YOLO or Falcon separately. I have put the camera and LiDAR parts into one controlled pipeline, adapted Falcon output to the KITTI setup, added score-free deduplication for its duplicate boxes, tested different LiDAR depth rules, used separate development and holdout data for decisions, and recorded failure cases instead of only keeping the best examples.
 
-> The contribution is not simply running existing models. The project contribution lies in building a unified and reproducible software pipeline, adapting Falcon Perception to KITTI, designing transparent score-free post-processing, keeping fusion variables controlled, comparing conventional and open-vocabulary camera perception, validating design choices on independent holdout data, and documenting failure modes rather than reporting only successful examples.
+> The next comparison I want to complete is YOLOv8x + LiDAR versus Falcon + LiDAR with the same frames, projection, minimum-point rule, matching threshold and median-ROI depth method. That should make the camera detector the main variable that changes.
 
-> The next major controlled experiment is YOLOv8x + LiDAR versus Falcon + LiDAR using the same KITTI frames, LiDAR projection, minimum-point rule, matching rule, and median-ROI depth estimator. This isolates the camera detector as the principal changed variable.
+## 10.9 Short project update I can give in a meeting
 
-## 10.9 Short verbal summary for a supervisor meeting
+> I started by building a YOLO + projected-LiDAR baseline and checking different ways of estimating depth from the LiDAR points inside a 2D detection. The simpler median method generalized better, so I kept it fixed. I then integrated Falcon, found that it could produce a large number of duplicate boxes, and added a score-free deduplication step because the Falcon output I use does not include normal per-box confidence scores. After validating Falcon on separate holdout frames, I connected it to the same LiDAR depth pipeline. The Falcon + LiDAR result has now been checked on both development and independent holdout frames. My next step is the controlled YOLO+LiDAR versus Falcon+LiDAR comparison, followed by a stronger LiDAR/3D baseline, a stronger fusion experiment, cross-dataset testing and robustness analysis.
 
-> I first established a simple YOLO + projected-LiDAR baseline and then tested whether more complicated depth-selection methods actually improved it. They did not generalize better, so I froze the median-ROI estimator. I then integrated Falcon Perception, identified a duplicate-box failure mode, introduced score-free deduplication because Falcon does not provide conventional confidence scores, and validated that processing on an independent holdout. I have now integrated Falcon with LiDAR and verified the same frozen fusion method on both development and independent holdout frames. The next step is a controlled YOLO+LiDAR versus Falcon+LiDAR comparison, followed by one strong LiDAR/3D baseline, a stronger fusion method, cross-dataset testing, robustness analysis, and standardized runtime evaluation.
+## 10.10 How I am keeping the results traceable
 
-## 10.10 Evidence discipline
-
-These statements are intended as **interpretations of version-controlled experiments**, not replacements for the underlying evidence. When presenting a result to a supervisor or using it in the dissertation, the associated CSV, script, figure, frame list, threshold, and commit should be cited whenever practical.
+I am keeping the exact frame lists, thresholds, scripts, CSV summaries, figures and important Git commits with the results. When I use a number in a meeting or later in the dissertation, I should be able to trace it back to the script and saved experiment that produced it.
