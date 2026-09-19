@@ -998,7 +998,7 @@ Unless a later experiment provides strong evidence to change them:
 4. **Falcon Perception remains the main open-vocabulary camera experiment.**
 5. **Falcon downstream boxes use score-free IoU deduplication at 0.50**, while raw Falcon is retained as an ablation baseline.
 6. **V1 Median ROI remains the frozen simple projected-LiDAR depth association method.**
-7. Fair YOLO-vs-Falcon multimodal comparison should hold LiDAR projection and association fixed.
+7. The controlled YOLO-vs-Falcon multimodal comparison holds LiDAR projection and association fixed.
 8. PointPillars is planned as an additional LiDAR baseline.
 9. PV-RCNN++ remains relevant because of the Azitt reference pipeline.
 10. BEVFusion remains the advanced fusion comparison target.
@@ -1006,9 +1006,9 @@ Unless a later experiment provides strong evidence to change them:
 
 ---
 
-# 37. Planned controlled multimodal comparison
+# 37. Controlled multimodal comparison design
 
-The next core experiment should isolate the camera detector variable:
+The controlled comparison isolates the camera detector variable while keeping the downstream LiDAR procedure fixed:
 
 ```text
 YOLOv8x box
@@ -1030,7 +1030,7 @@ same minimum-point rule
 same median-ROI depth association
 ```
 
-This avoids confounding the camera-model comparison with a simultaneous change in the LiDAR association method.
+This experiment has now been completed on matched development and independent holdout splits. The final results are recorded in Section 47 and in `results/VALIDATED_RESULTS.md`.
 
 ---
 
@@ -1162,6 +1162,9 @@ Next technical priorities:
 | `48e50ed` | Add Falcon Perception adapter and KITTI evaluation |
 | `ddd1aa2` | Add controlled YOLOv8x KITTI camera evaluation |
 | `f63ea07` | Add YOLOv8x and Falcon camera comparison results |
+| `bf3154d` | Add Falcon LiDAR single-frame fusion |
+| `4142c45` | Add Falcon LiDAR multiframe and holdout evaluation |
+| `fc30b04` | Add controlled YOLOv8x and Falcon LiDAR comparison |
 
 This table should be extended after every important experimental milestone.
 
@@ -1200,6 +1203,12 @@ IoU-cluster deduplication at threshold 0.50 reduced duplicate false positives dr
 On the independent 10-frame camera holdout, YOLOv8x achieved higher precision and F1 across the tested IoU thresholds. Falcon + dedup achieved slightly higher recall at IoU 0.30 and 0.50.
 
 **Dissertation implication:** the models offer different tradeoffs rather than a simple winner/loser narrative.
+
+## Finding F — The multimodal detector comparison is split-dependent
+
+With the LiDAR projection and depth-association procedure held fixed, YOLOv8x + LiDAR was stronger on the development split. On the independent holdout, Falcon + LiDAR produced one additional matched fused car and slightly lower MAE and RMSE, while median absolute error was nearly identical.
+
+**Dissertation implication:** the multimodal result supports a split-dependent tradeoff rather than a universal ranking between the two camera detectors.
 
 ---
 
@@ -1258,7 +1267,7 @@ Do not write any of the following in the final dissertation unless later experim
 - distance / occlusion / truncation analysis,
 - Falcon raw vs dedup ablation,
 - YOLO vs Falcon camera comparison,
-- later YOLO+LiDAR vs Falcon+LiDAR,
+- controlled YOLOv8x+LiDAR vs Falcon+LiDAR comparison,
 - later 3D detector / fusion / nuScenes / robustness results.
 
 ## Discussion
@@ -1334,24 +1343,18 @@ Git commit hash and message.
 
 # 45. Current immediate next action
 
-The next project stage is **Falcon + LiDAR fusion** on KITTI.
+The controlled **YOLOv8x + LiDAR vs Falcon + LiDAR** comparison is complete and preserved as a frozen experimental checkpoint.
 
-The correct controlled design is to reuse the already frozen LiDAR method:
+The next technical stage should extend the project beyond the current projected-LiDAR baseline:
 
-- projected KITTI LiDAR,
-- points inside the 2D camera box,
-- at least 3 projected LiDAR returns,
-- median camera-coordinate depth,
+1. evaluate one current released YOLO-family detector if the comparison is justified by time and compatibility,
+2. establish a genuine LiDAR-only 3D baseline, preferably PointPillars,
+3. implement one stronger multimodal fusion method,
+4. adapt the pipeline to nuScenes for cross-dataset evaluation,
+5. perform targeted robustness experiments,
+6. run a standardized end-to-end runtime benchmark.
 
-while replacing only the camera detector input:
-
-```text
-YOLOv8x
-versus
-Falcon + dedup 0.50
-```
-
-After verifying one frame, the experiment should be expanded to the same controlled development/holdout philosophy used earlier.
+The project should prioritize controlled, independently validated experiments over adding multiple overlapping frameworks without sufficient analysis.
 
 ---
 
