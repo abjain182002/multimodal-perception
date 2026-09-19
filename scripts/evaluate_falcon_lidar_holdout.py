@@ -501,7 +501,7 @@ def main():
     )
 
     print(
-        "Development frames:"
+        "Holdout frames:"
     )
 
     print(
