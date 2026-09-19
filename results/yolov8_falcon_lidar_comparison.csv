@@ -1,0 +1,5 @@
+split,detector,ground_truth_cars,camera_boxes_used_for_fusion,fused_detections,matched_fused_cars,mae_m,median_ae_m,rmse_m,mean_signed_error_m
+Development,YOLOv8x,48,74,70,45,1.492,0.923,2.402,-0.86
+Development,Falcon + Dedup 0.50,48,78,65,41,1.783,1.105,2.872,-1.261
+Holdout,YOLOv8x,45,62,58,41,1.789,1.471,2.355,-1.029
+Holdout,Falcon + Dedup 0.50,45,72,63,42,1.655,1.477,2.316,-0.948

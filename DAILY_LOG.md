@@ -128,3 +128,51 @@ This experiment demonstrates successful **single-frame software integration** of
 
 ### Progress checkpoint
 Working technical-completion estimate after this milestone: **approximately 51%**.
+
+## 2026-09-19 — Controlled YOLOv8x + LiDAR vs Falcon + LiDAR
+
+### Objective
+Complete the controlled multimodal comparison while keeping the downstream LiDAR association fixed.
+
+### Environment
+- YOLOv8x evaluation: `azitt310`
+- Falcon evaluation: `falcon310`
+- Apple MPS used for YOLOv8x inference
+
+### Fixed evaluation settings
+- same 10-frame development split and 10-frame independent holdout split
+- KITTI `Car`
+- match IoU = 0.30
+- minimum projected LiDAR points = 3
+- same calibration/projection
+- same V1 median-ROI depth estimator
+- YOLOv8x confidence = 0.25
+- Falcon deduplication IoU = 0.50
+
+### Verified results
+Development:
+- YOLOv8x + LiDAR: 45 matched fused cars, MAE 1.492 m, Median AE 0.923 m, RMSE 2.402 m, signed error -0.860 m
+- Falcon + LiDAR: 41 matched fused cars, MAE 1.783 m, Median AE 1.105 m, RMSE 2.872 m, signed error -1.261 m
+
+Holdout:
+- YOLOv8x + LiDAR: 41 matched fused cars, MAE 1.789 m, Median AE 1.471 m, RMSE 2.355 m, signed error -1.029 m
+- Falcon + LiDAR: 42 matched fused cars, MAE 1.655 m, Median AE 1.477 m, RMSE 2.316 m, signed error -0.948 m
+
+### Validation
+Both YOLOv8x development and holdout CSVs were independently re-read and the aggregate metrics were reproduced.
+
+### Issues encountered
+- `falcon310` did not contain Ultralytics, confirming the need to keep model environments separated.
+- the first converted YOLO evaluator failed with `NameError: name 'iou' is not defined`; the shared IoU helper was restored and the full run then completed successfully.
+
+### Interpretation
+YOLOv8x was stronger on development, but the ordering did not transfer cleanly to holdout. Falcon produced one extra matched fused car and slightly lower holdout MAE/RMSE, while Median AE was almost identical. Treat this as a split-dependent tradeoff rather than a universal detector ranking.
+
+### Artifacts
+- `results/yolov8_falcon_lidar_comparison.csv`
+- `results/yolov8_falcon_lidar_comparison.png`
+- `scripts/evaluate_yolov8_lidar_multiframe.py`
+- `scripts/evaluate_yolov8_lidar_holdout.py`
+
+### Next step
+Finish repository documentation and checkpoint this experiment before moving to the next technical stage.

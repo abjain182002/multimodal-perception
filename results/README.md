@@ -18,6 +18,13 @@ These summarize the V1/V2/V3 development and independent-holdout comparison.
 
 These summarize the controlled fixed-operating-point YOLOv8x vs Falcon+dedup pilot on the matched development and holdout frame sets.
 
+### Camera-LiDAR detector comparison
+
+- `yolov8_falcon_lidar_comparison.csv`
+- `yolov8_falcon_lidar_comparison.png`
+
+These summarize the controlled YOLOv8x + LiDAR vs Falcon + LiDAR comparison using the same KITTI development/holdout splits and frozen V1 median-ROI LiDAR depth-association procedure.
+
 ## What belongs here
 
 Commit:

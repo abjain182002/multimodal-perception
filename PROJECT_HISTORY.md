@@ -1111,14 +1111,26 @@ Potential axes:
 
 ## Current / next
 
-- [ ] Falcon + LiDAR fusion using frozen median-ROI method
-- [ ] Multi-frame Falcon + LiDAR evaluation
-- [ ] Controlled YOLO+LiDAR vs Falcon+LiDAR comparison
+- [x] Falcon + LiDAR fusion using frozen median-ROI method
+- [x] Multi-frame Falcon + LiDAR development evaluation
+- [x] Independent Falcon + LiDAR holdout evaluation
+- [x] Controlled YOLOv8x + LiDAR development evaluation
+- [x] Independent YOLOv8x + LiDAR holdout evaluation
+- [x] Controlled YOLOv8x + LiDAR vs Falcon + LiDAR comparison
+- [x] Frozen comparison CSV + figure
+
+Next technical priorities:
+
+- [ ] current released YOLO-family comparison, if justified
+- [ ] PointPillars LiDAR-only 3D baseline
+- [ ] one stronger multimodal fusion method
+- [ ] nuScenes cross-dataset evaluation
+- [ ] robustness experiments
+- [ ] standardized runtime benchmark
 
 ## Still planned
 
 - [ ] larger / standardized camera evaluation
-- [ ] current conventional YOLO-family experiment, if justified
 - [ ] PointPillars
 - [ ] PV-RCNN++ / OpenPCDet GPU stage
 - [ ] CLOCs-style fusion
@@ -1359,3 +1371,110 @@ This document is a **living project record**. After every significant experiment
 10. Git commit.
 
 This ensures that the final MSc dissertation can be reconstructed from version-controlled evidence rather than from memory alone.
+
+---
+
+# 47. 2026-09-19 — Controlled YOLOv8x + LiDAR vs Falcon + LiDAR
+
+## Objective
+
+Compare YOLOv8x + LiDAR and Falcon + LiDAR while keeping the downstream LiDAR association and evaluation procedure fixed.
+
+## Controlled settings
+
+- same KITTI development and holdout frame sets,
+- `Car` ground-truth class,
+- GT match IoU = 0.30,
+- minimum projected LiDAR points = 3,
+- same KITTI calibration and LiDAR projection,
+- same V1 median-ROI depth estimator,
+- YOLOv8x confidence threshold = 0.25,
+- YOLOv8x inference on Apple MPS,
+- Falcon score-free deduplication IoU = 0.50.
+
+## YOLOv8x + LiDAR development result
+
+| Metric | Result |
+|---|---:|
+| Frames | 10 |
+| Ground-truth cars | 48 |
+| YOLOv8x car detections | 74 |
+| LiDAR-fused detections | 70 |
+| Matched fused cars | 45 |
+| MAE | 1.492 m |
+| Median AE | 0.923 m |
+| RMSE | 2.402 m |
+| Mean signed error | -0.860 m |
+
+The saved development CSV was independently re-read and all four depth-error metrics were reproduced.
+
+## YOLOv8x + LiDAR holdout result
+
+| Metric | Result |
+|---|---:|
+| Frames | 10 |
+| Ground-truth cars | 45 |
+| YOLOv8x car detections | 62 |
+| LiDAR-fused detections | 58 |
+| Matched fused cars | 41 |
+| MAE | 1.789 m |
+| Median AE | 1.471 m |
+| RMSE | 2.355 m |
+| Mean signed error | -1.029 m |
+
+All 10 holdout frames contributed at least one matched fused car.
+
+The saved holdout CSV was independently re-read and all four depth-error metrics were reproduced.
+
+## Controlled YOLOv8x + LiDAR vs Falcon + LiDAR comparison
+
+### Development split
+
+| Metric | YOLOv8x + LiDAR | Falcon + LiDAR |
+|---|---:|---:|
+| Matched fused cars | 45 | 41 |
+| MAE | 1.492 m | 1.783 m |
+| Median AE | 0.923 m | 1.105 m |
+| RMSE | 2.402 m | 2.872 m |
+| Mean signed error | -0.860 m | -1.261 m |
+
+### Independent holdout
+
+| Metric | YOLOv8x + LiDAR | Falcon + LiDAR |
+|---|---:|---:|
+| Matched fused cars | 41 | 42 |
+| MAE | 1.789 m | 1.655 m |
+| Median AE | 1.471 m | 1.477 m |
+| RMSE | 2.355 m | 2.316 m |
+| Mean signed error | -1.029 m | -0.948 m |
+
+## Implementation issue encountered
+
+The first converted YOLOv8x evaluator passed `py_compile` but failed at runtime during ground-truth matching because the shared `iou()` function had been removed together with Falcon-specific box utilities.
+
+The runtime error was `NameError: name 'iou' is not defined`.
+
+The shared IoU helper was restored, the script was syntax-checked again, and the full development evaluation then completed successfully.
+
+This was a code-conversion issue rather than a detector, dataset, calibration or LiDAR failure.
+
+## Result artifacts
+
+Created:
+
+- `results/yolov8_falcon_lidar_comparison.csv`
+- `results/yolov8_falcon_lidar_comparison.png`
+
+The comparison figure contains the depth-error metrics only.
+
+Runtime was intentionally excluded from the formal comparison because the current YOLO and Falcon timing paths are not yet standardized sufficiently for a fair end-to-end speed comparison.
+
+## Final interpretation
+
+YOLOv8x + LiDAR was stronger on the development split, with more matched fused cars and lower MAE, Median AE and RMSE.
+
+This advantage did not transfer in the same form to the independent holdout. Falcon + LiDAR produced one additional matched fused car and slightly lower MAE and RMSE, while the Median AE values were nearly identical.
+
+The result is therefore treated as a split-dependent comparison rather than evidence that either detector is universally superior.
+
+The reported depth metrics are conditional on fused detections matched to KITTI `Car` annotations at 2D IoU >= 0.30. These results are not official KITTI AP/mAP measurements.

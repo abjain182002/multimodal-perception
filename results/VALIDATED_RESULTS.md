@@ -383,6 +383,71 @@ Relevant commit:
 
 - `4142c45` — **Add Falcon LiDAR multiframe and holdout evaluation**
 
+## 5.4 Controlled YOLOv8x + LiDAR vs Falcon + LiDAR comparison
+
+The final controlled experiment at this stage changes the camera detector while keeping the downstream LiDAR procedure fixed.
+
+Fixed settings:
+
+- same KITTI development and holdout frame sets,
+- `Car` class,
+- GT matching IoU = **0.30**,
+- minimum projected LiDAR points = **3**,
+- same KITTI calibration and LiDAR projection,
+- same V1 median-ROI depth estimator,
+- YOLOv8x confidence threshold = **0.25**,
+- Falcon score-free deduplication IoU = **0.50**.
+
+### Development split
+
+| Metric | YOLOv8x + LiDAR | Falcon + LiDAR |
+|---|---:|---:|
+| Ground-truth cars | 48 | 48 |
+| Camera boxes used for fusion | 74 | 78 |
+| LiDAR-fused detections | 70 | 65 |
+| Matched fused cars | **45** | 41 |
+| MAE | **1.492 m** | 1.783 m |
+| Median AE | **0.923 m** | 1.105 m |
+| RMSE | **2.402 m** | 2.872 m |
+| Mean signed error | **-0.860 m** | -1.261 m |
+
+### Independent holdout
+
+| Metric | YOLOv8x + LiDAR | Falcon + LiDAR |
+|---|---:|---:|
+| Ground-truth cars | 45 | 45 |
+| Camera boxes used for fusion | 62 | 72 |
+| LiDAR-fused detections | 58 | 63 |
+| Matched fused cars | 41 | **42** |
+| MAE | 1.789 m | **1.655 m** |
+| Median AE | **1.471 m** | 1.477 m |
+| RMSE | 2.355 m | **2.316 m** |
+| Mean signed error | -1.029 m | **-0.948 m** |
+
+Both development and holdout CSV files were independently re-read and their MAE, median absolute error, RMSE and mean signed error were recomputed before these results were frozen.
+
+### Interpretation
+
+YOLOv8x + LiDAR produced the stronger result on the development split, with more matched fused cars and lower depth-error metrics.
+
+That advantage did not carry over in the same way to the independent holdout. Falcon + LiDAR produced one more matched fused car and slightly lower MAE and RMSE, while the two median absolute errors were almost identical.
+
+The result is therefore treated as a **split-dependent comparison rather than evidence that either detector is universally superior**. The depth metrics remain conditional on fused detections matched to KITTI `Car` annotations at 2D IoU >= 0.30.
+
+Runtime is not included in the formal comparison artifact because the present YOLO and Falcon timing paths are not yet sufficiently standardized for an end-to-end speed comparison.
+
+Tracked artifacts:
+
+- [yolov8_falcon_lidar_comparison.csv](yolov8_falcon_lidar_comparison.csv)
+- [yolov8_falcon_lidar_comparison.png](yolov8_falcon_lidar_comparison.png)
+
+Relevant scripts:
+
+- `scripts/evaluate_yolov8_lidar_multiframe.py`
+- `scripts/evaluate_yolov8_lidar_holdout.py`
+- `scripts/evaluate_falcon_lidar_multiframe.py`
+- `scripts/evaluate_falcon_lidar_holdout.py`
+
 ---
 
 # 6. Current experimentally supported findings
@@ -393,6 +458,7 @@ Relevant commit:
 4. **Transparent score-free deduplication substantially improves Falcon precision/F1 at moderate evaluation IoU thresholds while introducing a small strict-IoU tradeoff.**
 5. **YOLOv8x currently has the stronger overall fixed-threshold camera result, while Falcon + dedup has slightly higher recall at some thresholds and offers open-vocabulary flexibility.**
 6. **The frozen Falcon+LiDAR median-depth pipeline remained stable on the independent 10-frame holdout and reproduced its saved metrics on an independent CSV integrity check.**
+7. **The controlled YOLOv8x+LiDAR vs Falcon+LiDAR result is split-dependent: YOLOv8x was stronger on development, while Falcon produced one additional matched fused car and slightly lower MAE/RMSE on the independent holdout.**
 
 ---
 
@@ -406,8 +472,7 @@ The following should **not** be claimed from the current evidence:
 - completion of the full Azitt PV-RCNN++ pipeline on macOS,
 - completed PointPillars / OpenPCDet / BEVFusion results,
 - completed nuScenes cross-dataset results,
-- completed robustness evaluation,
-- completed YOLO+LiDAR vs Falcon+LiDAR controlled multimodal comparison.
+- completed robustness evaluation.
 
 ---
 
@@ -422,6 +487,10 @@ For a professor or reviewer, the most useful files are:
 - `results/depth_method_comparison.png` — figure for the depth-method comparison.
 - `results/camera_detector_comparison.csv` — frozen YOLOv8x vs Falcon camera pilot.
 - `results/camera_detector_comparison.png` — figure for the camera comparison.
+- `results/yolov8_falcon_lidar_comparison.csv` — frozen controlled multimodal detector comparison.
+- `results/yolov8_falcon_lidar_comparison.png` — figure for the controlled multimodal comparison.
+- `scripts/evaluate_yolov8_lidar_multiframe.py` — YOLOv8x+LiDAR development evaluator.
+- `scripts/evaluate_yolov8_lidar_holdout.py` — YOLOv8x+LiDAR independent holdout evaluator.
 - `scripts/evaluate_falcon_lidar_multiframe.py` — Falcon+LiDAR development evaluator.
 - `scripts/evaluate_falcon_lidar_holdout.py` — Falcon+LiDAR independent holdout evaluator.
 
@@ -440,7 +509,7 @@ The repository records:
 - matching rules,
 - depth metric definitions,
 - development/holdout separation,
-- scripts used for the latest Falcon+LiDAR experiment,
-- version-controlled frozen result tables and figures for the earlier depth and camera studies.
+- scripts used for the Falcon+LiDAR and YOLOv8x+LiDAR controlled experiments,
+- version-controlled frozen result tables and figures for the depth, camera-detector and multimodal comparison studies.
 
-The next planned results milestone is the controlled **YOLO+LiDAR vs Falcon+LiDAR** comparison using the same projected-LiDAR and median-depth association rules.
+The next planned technical milestone is to extend beyond the current projected-LiDAR baseline with a genuine LiDAR-only 3D detector, preferably PointPillars, after any small current YOLO-family comparison that is justified by time and compatibility.
