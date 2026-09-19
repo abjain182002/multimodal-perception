@@ -1,6 +1,6 @@
 # Validated Experimental Results
 
-> Professor-facing technical summary of the experimentally verified results in this repository.
+> 
 >
 > Project: **A Software-Only Deep Learning Pipeline for Multi-Modal Object Detection and Robotic Perception Using LiDAR and Camera Fusion Across Multiple Datasets**
 >
