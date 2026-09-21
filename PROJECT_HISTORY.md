@@ -1481,3 +1481,92 @@ This advantage did not transfer in the same form to the independent holdout. Fal
 The result is therefore treated as a split-dependent comparison rather than evidence that either detector is universally superior.
 
 The reported depth metrics are conditional on fused detections matched to KITTI `Car` annotations at 2D IoU >= 0.30. These results are not official KITTI AP/mAP measurements.
+
+---
+
+# 48. 2026-09-21 — Controlled YOLOv8x vs YOLO26x Camera-LiDAR Comparison
+
+## Objective
+
+Evaluate whether replacing YOLOv8x with YOLO26x changes the performance of the existing camera-LiDAR depth-association pipeline while keeping the downstream fusion and evaluation procedure fixed.
+
+## Controlled settings
+
+The YOLO26x evaluators were produced directly from the validated YOLOv8x evaluators. Apart from the detector weights, model labels and output paths, the evaluation logic was unchanged.
+
+The following settings were held fixed:
+
+- same KITTI development and holdout frame sets,
+- `Car` ground-truth class,
+- detector confidence threshold = 0.25,
+- GT matching IoU = 0.30,
+- minimum projected LiDAR points = 3,
+- same KITTI calibration and LiDAR projection,
+- same V1 median-ROI depth estimator,
+- same greedy one-to-one ground-truth matching,
+- Apple MPS inference.
+
+Environment:
+
+- Ultralytics 8.4.132,
+- PyTorch 2.13.0,
+- MPS available,
+- YOLO26x weights: `yolo26x.pt`.
+
+## Development result
+
+| Metric | YOLOv8x | YOLO26x |
+|---|---:|---:|
+| Ground-truth cars | 48 | 48 |
+| Camera detections | 74 | 64 |
+| LiDAR-fused detections | 70 | 60 |
+| Matched fused cars | 45 | 44 |
+| MAE | 1.492 m | 1.272 m |
+| Median AE | 0.923 m | 0.875 m |
+| RMSE | 2.402 m | 1.958 m |
+| Mean signed error | -0.860 m | -0.623 m |
+
+YOLO26x produced fewer camera detections and one fewer matched fused car on the development split, but the matched detections had lower MAE, median absolute error and RMSE.
+
+## Independent holdout result
+
+| Metric | YOLOv8x | YOLO26x |
+|---|---:|---:|
+| Ground-truth cars | 45 | 45 |
+| Camera detections | 62 | 54 |
+| LiDAR-fused detections | 58 | 53 |
+| Matched fused cars | 41 | 41 |
+| MAE | 1.789 m | 1.669 m |
+| Median AE | 1.471 m | 1.430 m |
+| RMSE | 2.355 m | 2.201 m |
+| Mean signed error | -1.029 m | -0.913 m |
+
+On the holdout split, YOLO26x retained the same number of matched fused cars as YOLOv8x while producing fewer camera detections and lower depth-error values.
+
+## Interpretation
+
+The same direction of depth-error reduction was observed on both development and holdout data.
+
+However, these results should not be interpreted as a complete detector-performance ranking. The reported depth errors are conditional on fused detections that were successfully matched to KITTI `Car` ground truth at IoU >= 0.30.
+
+The development split also shows the importance of considering match coverage alongside depth error, because YOLO26x achieved lower error while matching one fewer ground-truth car.
+
+The result therefore indicates that the camera detector can influence downstream LiDAR depth association even when the fusion procedure itself is unchanged.
+
+## Runtime note
+
+The first inference in each experiment was substantially slower than subsequent frames because of model warm-up. Runtime from these runs is therefore not used as the formal detector-speed comparison.
+
+A separate standardized runtime benchmark will be performed later.
+
+## Result artifacts
+
+Created:
+
+- `results/yolov8_yolo26_lidar_comparison.csv`
+- `results/yolov8_yolo26_lidar_comparison.png`
+- `scripts/evaluate_yolo26_lidar_multiframe.py`
+- `scripts/evaluate_yolo26_lidar_holdout.py`
+- `scripts/generate_yolov8_yolo26_lidar_comparison.py`
+
+The comparison figure reports MAE, median absolute error and RMSE for both development and holdout splits.

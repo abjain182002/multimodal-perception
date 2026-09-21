@@ -1,0 +1,5 @@
+split,detector,ground_truth_cars,camera_boxes,fused_detections,matched_fused_cars,mae_m,median_ae_m,rmse_m,mean_signed_error_m
+Development,YOLOv8x,48,74,70,45,1.492,0.923,2.402,-0.860
+Development,YOLO26x,48,64,60,44,1.272,0.875,1.958,-0.623
+Holdout,YOLOv8x,45,62,58,41,1.789,1.471,2.355,-1.029
+Holdout,YOLO26x,45,54,53,41,1.669,1.430,2.201,-0.913
