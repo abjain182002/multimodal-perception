@@ -1,6 +1,6 @@
 # Project History and Dissertation Record
 
-> Living technical record for the MSc Major Project. This file is intended to preserve the project rationale, implementation history, experimental results, failures, fixes, design decisions, limitations, and dissertation-ready interpretations so that the final report can be written from an auditable record rather than memory.
+> Living technical record for the MSc Major Project. This file is a place to capture the rationale for the project, the implementation history, test results, failures, fixes, design decisions, limitations, and dissertation-ready interpretations so that the final report can be written from an auditable record.
 
 ## 1. Working project title
 
