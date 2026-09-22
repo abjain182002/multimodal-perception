@@ -1,0 +1,313 @@
+{
+  "dataset": "KITTI standard validation",
+  "frames": 3769,
+  "class": "Car",
+  "difficulty": "Moderate",
+  "strict_3d_iou_threshold": 0.7,
+  "matching": "Diagnostic greedy one-to-one matching in descending prediction-confidence order.",
+  "warning": "This is NOT the official KITTI false-positive calculation. KITTI difficulty handling, confidence sampling and DontCare suppression make the official AP protocol more complex.",
+  "valid_prediction_rows": 19796,
+  "categories": {
+    "no_overlap": 12116,
+    "matched_iou>=0.70": 6644,
+    "0.50<=iou<0.70": 934,
+    "0.30<=iou<0.50": 50,
+    "0<iou<0.30": 52
+  },
+  "score_summary": {
+    "0.30-0.50": {
+      "predictions": 1763,
+      "matched": 55,
+      "unmatched": 1708
+    },
+    "0.10-0.30": {
+      "predictions": 5066,
+      "matched": 13,
+      "unmatched": 5053
+    },
+    "0.70-0.90": {
+      "predictions": 4482,
+      "matched": 1488,
+      "unmatched": 2994
+    },
+    "0.50-0.70": {
+      "predictions": 1883,
+      "matched": 236,
+      "unmatched": 1647
+    },
+    "0.90-1.00": {
+      "predictions": 6602,
+      "matched": 4852,
+      "unmatched": 1750
+    }
+  },
+  "high_confidence_unmatched_score_ge_0.50": 6391,
+  "high_confidence_unmatched_categories": {
+    "no_overlap": 5475,
+    "0.50<=iou<0.70": 874,
+    "0.30<=iou<0.50": 34,
+    "0<iou<0.30": 8
+  },
+  "top_high_confidence_unmatched": [
+    {
+      "frame_id": "001084",
+      "pred_index": 0,
+      "score": 0.9874770641326904,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 13.109209060668945,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "004091",
+      "pred_index": 0,
+      "score": 0.9866210222244263,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 7.2943830490112305,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "001410",
+      "pred_index": 0,
+      "score": 0.9843919277191162,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 22.95363998413086,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 1,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "002193",
+      "pred_index": 0,
+      "score": 0.9833123087882996,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 6.396657943725586,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "002879",
+      "pred_index": 0,
+      "score": 0.9833053946495056,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 9.719820976257324,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "007169",
+      "pred_index": 1,
+      "score": 0.9832830429077148,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 8.033833503723145,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "000751",
+      "pred_index": 0,
+      "score": 0.9829437136650085,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 11.397151947021484,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "005167",
+      "pred_index": 0,
+      "score": 0.9826755523681641,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 17.672786712646484,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "002934",
+      "pred_index": 0,
+      "score": 0.9826101660728455,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 6.293392658233643,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 1,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "005188",
+      "pred_index": 0,
+      "score": 0.9825290441513062,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 7.545585632324219,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 1,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "001582",
+      "pred_index": 0,
+      "score": 0.9824857711791992,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 8.068870544433594,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "001376",
+      "pred_index": 0,
+      "score": 0.9820117950439453,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 6.382304668426514,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 3,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "001778",
+      "pred_index": 0,
+      "score": 0.9811945557594299,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 11.441082000732422,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "001025",
+      "pred_index": 0,
+      "score": 0.9788939356803894,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 9.291059494018555,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.6821426749229431,
+      "diagnostic_category": "0.50<=iou<0.70"
+    },
+    {
+      "frame_id": "005821",
+      "pred_index": 0,
+      "score": 0.9781655669212341,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 6.684079170227051,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 2,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "000226",
+      "pred_index": 1,
+      "score": 0.9779139161109924,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 15.957670211791992,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "004486",
+      "pred_index": 0,
+      "score": 0.9777711033821106,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 6.332521438598633,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    },
+    {
+      "frame_id": "002127",
+      "pred_index": 0,
+      "score": 0.9776653051376343,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 7.85107421875,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.6959428191184998,
+      "diagnostic_category": "0.50<=iou<0.70"
+    },
+    {
+      "frame_id": "002997",
+      "pred_index": 0,
+      "score": 0.9772441387176514,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 19.38307762145996,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 0,
+      "best_any_valid_gt_iou": 0.6924923062324524,
+      "diagnostic_category": "0.50<=iou<0.70"
+    },
+    {
+      "frame_id": "005660",
+      "pred_index": 1,
+      "score": 0.9771959781646729,
+      "score_bin": "0.90-1.00",
+      "distance_z_m": 13.883769035339355,
+      "greedy_matched": false,
+      "matched_gt_index": -1,
+      "matched_iou": 0.0,
+      "best_any_valid_gt_index": 1,
+      "best_any_valid_gt_iou": 0.0,
+      "diagnostic_category": "no_overlap"
+    }
+  ]
+}

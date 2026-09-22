@@ -1570,3 +1570,244 @@ Created:
 - `scripts/generate_yolov8_yolo26_lidar_comparison.py`
 
 The comparison figure reports MAE, median absolute error and RMSE for both development and holdout splits.
+
+# 49. 2026-09-22 — PointPillars LiDAR-Only 3D Baseline
+
+## Objective
+
+Establish a genuine LiDAR-only 3D object-detection baseline on the standard KITTI validation split before introducing a stronger multimodal fusion method.
+
+## Model and provenance
+
+Framework:
+
+- MMDetection3D 1.4.0
+- repository commit: `fe25f7a51d36e3702f961e198894580d83c4387b`
+
+Configuration:
+
+`configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-car.py`
+
+Official pretrained checkpoint SHA-256:
+
+`d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e`
+
+The model is Car-only and uses reduced KITTI LiDAR point clouds.
+
+## Evaluation environment
+
+- Linux
+- Python 3.10.14
+- PyTorch 2.1.2 + CUDA 12.1
+- Tesla T4
+- MMEngine 0.10.7
+- MMCV 2.1.0
+- MMDetection 3.2.0
+- MMDetection3D 1.4.0
+- NumPy 1.26.4
+- Numba 0.59.1
+
+The GPU environment is intentionally separate from the Mac YOLO/Falcon environments.
+
+## Dataset and split
+
+Standard SECOND KITTI split:
+
+- training frames: 3,712
+- validation frames: 3,769
+- train/validation overlap: 0
+- union: 7,481
+
+Split SHA-256:
+
+- `train.txt`: `b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb`
+- `val.txt`: `6e2394d97c866c3af1ffb049f828abdf3d5b707d9575d16885fd0de87b72b0c8`
+
+## Prediction generation
+
+Complete validation inference produced:
+
+- 3,769 prediction records
+- 23,844 retained detections
+- 127 frames with zero retained predictions
+- 0 frames with non-finite values
+
+Frozen prediction PKL SHA-256:
+
+`2905f9c15fd04a6055dca99753b6fb6e6585492371608c5a625e3cc6ded764d3`
+
+The bulk prediction PKL remains outside Git.
+
+## Evaluation issue and resolution
+
+The original MMDetection3D run completed inference for all 3,769 validation frames and converted all predictions to KITTI format, but terminated with exit status 139 during BEV/3D evaluation.
+
+The failure was isolated to the legacy Numba CUDA rotated-IoU path.
+
+A minimal identical-box rotated-IoU test reproduced the native crash. The environment was then given `cuda-python==12.2.1` and evaluation was invoked with:
+
+`NUMBA_CUDA_USE_NVIDIA_BINDING=1`
+
+The same identical-box test then returned IoU = 1.0 successfully.
+
+A 50-frame bbox/BEV/3D preflight completed before the full frozen prediction set was evaluated.
+
+No PointPillars inference was repeated for the final metrics.
+
+## Official KITTI result
+
+Primary protocol:
+
+**KITTI Car AP40, strict IoU = 0.70**
+
+| Metric | Easy | Moderate | Hard |
+|---|---:|---:|---:|
+| 2D AP40 | 96.1046 | 92.4841 | 89.7698 |
+| BEV AP40 | 92.7663 | 88.3680 | 85.5054 |
+| 3D AP40 | **90.3449** | **79.1299** | **76.1566** |
+
+Primary Moderate 3D result:
+
+**79.1299% AP40 at IoU 0.70.**
+
+## Independent numerical verification
+
+The full KITTI evaluation was rerun directly from the frozen predictions.
+
+Verification:
+
+- prediction SHA-256 unchanged
+- saved metrics: 36
+- recomputed metrics: 36
+- maximum absolute difference: 0.0
+- every metric exactly identical
+
+## Earlier custom-frame overlap audit
+
+The earlier camera/fusion pilot used 20 custom development/holdout frames.
+
+Relative to the standard SECOND split:
+
+- 12 are standard-validation frames
+- 8 are standard-training frames
+
+Only the 12 validation frames are eligible for independent frame-matched PointPillars comparisons.
+
+## Moderate-Car localization diagnostic
+
+This object-level diagnostic is not official KITTI recall/AP.
+
+Valid Moderate Car GT objects: 7,874.
+
+Best retained 3D-IoU distribution:
+
+- IoU >= 0.70: 6,644
+- 0.50 <= IoU < 0.70: 934
+- 0.30 <= IoU < 0.50: 50
+- 0 < IoU < 0.30: 18
+- no overlap: 228
+
+Distance-stratified strict-IoU coverage:
+
+| Distance | Valid GT | Best prediction IoU >= 0.70 |
+|---|---:|---:|
+| <20 m | 3,088 | 96.11% |
+| 20–40 m | 3,793 | 83.63% |
+| 40–60 m | 993 | 50.76% |
+
+This supports a clear distance-dependent degradation in strict 3D localization.
+
+## Prediction-centric diagnostic
+
+This diagnostic is not the official KITTI false-positive calculation.
+
+For score >= 0.50 unmatched predictions:
+
+- 3,678 strongly overlapped Moderate-ignored GT
+- 657 moderately overlapped Moderate-ignored GT
+- 874 were valid-Car localization near-misses
+- 34 had weak overlap with valid Car GT
+- 66 had low overlap
+- 1,082 had no 3D overlap with evaluated or Moderate-ignored GT
+
+This refinement prevents ignored-object detections from being naively counted as ordinary false positives.
+
+## Frozen qualitative cases
+
+Cases were selected by quantitative rules before visualization.
+
+### Distant success
+
+Frame `002744`:
+
+- distance: 40.70 m
+- prediction score: 0.896138
+- 3D IoU: 0.913522
+
+### Distant localization near-miss
+
+Frame `004096`:
+
+- distance: 40.45 m
+- prediction score: 0.958086
+- 3D IoU: 0.680505
+
+### High-confidence unmatched diagnostic
+
+Frame `001199`:
+
+- prediction depth: 33.30 m
+- score: 0.964747
+- best valid Moderate GT IoU: 0.0
+- best ignored Moderate GT IoU: 0.0
+
+This case is described as a diagnostic unmatched prediction rather than automatically as an official KITTI false positive.
+
+## Supported interpretation
+
+PointPillars provides a strong LiDAR-only 3D baseline on KITTI while showing clear degradation in strict 3D localization as object distance increases.
+
+Many strict-threshold failures are localization near-misses rather than complete detection failures.
+
+The analysis also shows why apparent unmatched predictions must be interpreted using KITTI ignored-object rules.
+
+## Limitations
+
+- Distance coverage is diagnostic, not official KITTI AP/recall.
+- Prediction-centric unmatched analysis does not replicate every part of the official KITTI false-positive protocol.
+- T4 timing is not directly comparable with Mac YOLO/Falcon runtime.
+- Eight earlier custom frames belong to the standard training split.
+- The experiment reproduces an official pretrained PointPillars checkpoint rather than training a new project-specific model.
+
+## Result artifacts
+
+Compact GitHub artifacts include:
+
+- `results/pointpillars_kitti_ap40_strict_summary.csv`
+- `results/pointpillars_kitti_ap40_strict.png`
+- `results/pointpillars_kitti_ap40_strict.pdf`
+- `results/kitti_full_metrics.json`
+- `results/kitti_full_results.txt`
+- `results/pointpillars_distance_diagnostic.png`
+- `results/pointpillars_distance_diagnostic.pdf`
+- `results/kitti_split_overlap_audit.json`
+- `results/pointpillars_evidence_manifest.json`
+- `results/pointpillars_moderate_failure_summary.json`
+- `results/pointpillars_prediction_diagnostics_summary.json`
+- `results/pointpillars_high_conf_unmatched_refined.json`
+- `results/pointpillars_final_case_studies.json`
+- three frozen qualitative case-study figures in PNG and PDF form
+
+Bulk predictions, model weights and datasets remain outside Git history.
+
+## Final decision
+
+The pinned MMDetection3D PointPillars Car checkpoint is retained as the project's principal LiDAR-only 3D baseline.
+
+The next major experimental stage is one stronger multimodal fusion method while preserving PointPillars as the LiDAR reference.
+
+## Commit
+
+Local repository transfer and integrity verification completed. Milestone commit message: `Add PointPillars LiDAR baseline and KITTI evaluation`.
+
+---

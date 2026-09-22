@@ -4,18 +4,19 @@ MSc Major Project: Software-only deep learning pipeline for multi-modal object d
 
 ## Project Status
 
-**Technical implementation: approximately 65% complete** (working estimate).
+**Technical implementation: approximately 78% complete** (working estimate).
 
-Latest verified milestone: **controlled YOLOv8x + LiDAR vs Falcon + LiDAR comparison** on matched KITTI development and independent holdout splits using the frozen projected-LiDAR median-depth association method.
+Latest verified milestone: **PointPillars LiDAR-only 3D baseline** on the standard 3,769-frame KITTI validation split using the pinned MMDetection3D implementation. The primary reproduced result is **Car 3D AP40 = 79.1299% for Moderate difficulty at strict IoU 0.70**, with exact metric re-evaluation from frozen predictions and a standard train/validation split-overlap audit.
+
+The controlled **YOLOv8x vs YOLO26x + LiDAR** comparison is also complete.
 
 Next technical priorities:
 
-- evaluate one current released YOLO-family detector if justified by time and compatibility,
-- establish PointPillars as a genuine LiDAR-only 3D baseline,
-- add one stronger multimodal fusion method,
-- extend evaluation to nuScenes,
+- implement and evaluate one stronger multimodal fusion method,
+- extend evaluation to nuScenes / cross-dataset analysis,
 - run targeted robustness experiments,
-- complete a standardized runtime benchmark.
+- complete a standardized runtime benchmark,
+- consolidate final ablations, failure analysis and reproducibility evidence.
 
 ## Project Records
 
@@ -31,6 +32,12 @@ Next technical priorities:
 - [`results/camera_detector_comparison.png`](results/camera_detector_comparison.png)
 - [`results/yolov8_falcon_lidar_comparison.csv`](results/yolov8_falcon_lidar_comparison.csv)
 - [`results/yolov8_falcon_lidar_comparison.png`](results/yolov8_falcon_lidar_comparison.png)
+- [`results/yolov8_yolo26_lidar_comparison.csv`](results/yolov8_yolo26_lidar_comparison.csv)
+- [`results/yolov8_yolo26_lidar_comparison.png`](results/yolov8_yolo26_lidar_comparison.png)
+- [`results/pointpillars_kitti_ap40_strict_summary.csv`](results/pointpillars_kitti_ap40_strict_summary.csv)
+- [`results/pointpillars_kitti_ap40_strict.png`](results/pointpillars_kitti_ap40_strict.png)
+- [`results/pointpillars_distance_diagnostic.png`](results/pointpillars_distance_diagnostic.png)
+- [`results/pointpillars_evidence_manifest.json`](results/pointpillars_evidence_manifest.json)
 
 See [`results/README.md`](results/README.md) for the artifact-storage policy.
 

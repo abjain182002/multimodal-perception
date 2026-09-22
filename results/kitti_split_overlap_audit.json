@@ -1,0 +1,38 @@
+{
+  "dataset": "KITTI",
+  "split_scheme": "standard SECOND split",
+  "train_count": 3712,
+  "val_count": 3769,
+  "train_val_overlap": 0,
+  "train_val_union": 7481,
+  "train_txt_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+  "val_txt_sha256": "6e2394d97c866c3af1ffb049f828abdf3d5b707d9575d16885fd0de87b72b0c8",
+  "custom_frames_total": 20,
+  "standard_val_custom_frames": [
+    "000831",
+    "001662",
+    "003324",
+    "004155",
+    "004986",
+    "007480",
+    "000642",
+    "000704",
+    "003236",
+    "003280",
+    "004891",
+    "005783"
+  ],
+  "standard_train_custom_frames": [
+    "000000",
+    "002493",
+    "005817",
+    "006648",
+    "000666",
+    "001506",
+    "005215",
+    "006419"
+  ],
+  "standard_val_custom_count": 12,
+  "standard_train_custom_count": 8,
+  "interpretation": "The full PointPillars result is evaluated on the standard KITTI validation split, which is disjoint from the standard training split. Only the 12 custom frames belonging to the standard validation split are eligible for independent frame-matched comparisons involving the pretrained PointPillars checkpoint."
+}

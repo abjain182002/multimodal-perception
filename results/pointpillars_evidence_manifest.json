@@ -1,0 +1,96 @@
+{
+  "experiment": "PointPillars LiDAR-only KITTI baseline",
+  "model": {
+    "framework": "MMDetection3D",
+    "repository_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+    "config": "configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-car.py",
+    "checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e"
+  },
+  "dataset": {
+    "name": "KITTI",
+    "split": "standard SECOND validation split",
+    "validation_frames": 3769,
+    "train_frames": 3712,
+    "train_val_overlap": 0,
+    "train_txt_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+    "val_txt_sha256": "6e2394d97c866c3af1ffb049f828abdf3d5b707d9575d16885fd0de87b72b0c8"
+  },
+  "predictions": {
+    "frames": 3769,
+    "detections": 23844,
+    "frames_with_zero_predictions": 127,
+    "frames_with_non_finite_values": 0,
+    "sha256": "2905f9c15fd04a6055dca99753b6fb6e6585492371608c5a625e3cc6ded764d3"
+  },
+  "evaluation": {
+    "class": "Car",
+    "primary_protocol": "KITTI AP40 strict IoU 0.70",
+    "reproducibility_check": "36/36 metrics exactly identical; max absolute difference 0.0",
+    "evaluator_note": "Legacy Numba CUDA driver path segfaulted during rotated-IoU evaluation. Evaluation succeeded using NUMBA_CUDA_USE_NVIDIA_BINDING=1 with cuda-python 12.2.1.",
+    "ap40_strict": {
+      "2D": {
+        "easy": 96.1046,
+        "moderate": 92.4841,
+        "hard": 89.7698
+      },
+      "BEV": {
+        "easy": 92.7663,
+        "moderate": 88.368,
+        "hard": 85.5054
+      },
+      "3D": {
+        "easy": 90.3449,
+        "moderate": 79.1299,
+        "hard": 76.1566
+      }
+    }
+  },
+  "moderate_distance_diagnostic": {
+    "note": "Best-retained-prediction 3D-IoU coverage; diagnostic only, not KITTI recall/AP.",
+    "<20m": {
+      "gt": 3088,
+      "iou_ge_0.70_percent": 96.11
+    },
+    "20-40m": {
+      "gt": 3793,
+      "iou_ge_0.70_percent": 83.63
+    },
+    "40-60m": {
+      "gt": 993,
+      "iou_ge_0.70_percent": 50.76
+    }
+  },
+  "custom_split_audit": {
+    "custom_frames": 20,
+    "standard_val_frames": 12,
+    "standard_train_frames": 8,
+    "interpretation": "Only the 12 standard-validation custom frames are eligible for independent frame-matched comparison involving the pretrained PointPillars checkpoint."
+  },
+  "frozen_case_studies": {
+    "distant_success": {
+      "frame": "002744",
+      "distance_m": 40.7,
+      "score": 0.896138,
+      "3d_iou": 0.913522
+    },
+    "distant_localisation_near_miss": {
+      "frame": "004096",
+      "distance_m": 40.45,
+      "score": 0.958086,
+      "3d_iou": 0.680505
+    },
+    "high_confidence_unmatched_diagnostic": {
+      "frame": "001199",
+      "prediction_depth_m": 33.3048,
+      "score": 0.964747,
+      "best_valid_gt_iou": 0.0,
+      "best_ignored_gt_iou": 0.0
+    }
+  },
+  "limitations": [
+    "Distance-dependent degradation is visible in the Moderate-Car best-prediction IoU diagnostic.",
+    "Diagnostic coverage statistics are not substitutes for official KITTI AP.",
+    "The high-confidence unmatched case is not labelled as an official KITTI false positive.",
+    "Runtime values from the T4 evaluation are not directly comparable with Mac-based YOLO/Falcon runtime measurements."
+  ]
+}

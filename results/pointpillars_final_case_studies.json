@@ -1,0 +1,37 @@
+{
+  "selection_principle": "Representative cases selected by predefined quantitative criteria before visualization; no manual visual cherry-picking.",
+  "distant_success": {
+    "selection_rule": "40-60 m valid Moderate Car; IoU >= 0.70; highest 3D IoU.",
+    "case": {
+      "frame_id": "002744",
+      "gt_index": 3,
+      "distance_z_m": 40.7,
+      "best_pred_score": 0.896138072013855,
+      "best_3d_iou": 0.9135221838951111,
+      "diagnostic_category": "iou>=0.70"
+    }
+  },
+  "distant_localisation_near_miss": {
+    "selection_rule": "40-60 m valid Moderate Car; 0.50 <= IoU < 0.70; highest prediction confidence.",
+    "case": {
+      "frame_id": "004096",
+      "gt_index": 5,
+      "distance_z_m": 40.45,
+      "best_pred_score": 0.9580860733985901,
+      "best_3d_iou": 0.6805047392845154,
+      "diagnostic_category": "0.50<=iou<0.70"
+    }
+  },
+  "high_confidence_unmatched": {
+    "selection_rule": "Score >= 0.50; no 3D overlap with evaluated or ignored Moderate GT; highest confidence.",
+    "case": {
+      "frame_id": "001199",
+      "pred_index": 3,
+      "score": 0.9647471904754639,
+      "distance_z_m": 33.304805755615234,
+      "best_valid_gt_iou": 0.0,
+      "best_ignored_gt_iou": 0.0
+    },
+    "caution": "Diagnostic unmatched prediction only; not labelled as an official KITTI false positive."
+  }
+}

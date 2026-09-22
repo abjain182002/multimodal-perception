@@ -1,0 +1,4 @@
+model,dataset,class,protocol,metric,easy,moderate,hard
+PointPillars,KITTI validation,Car,AP40 strict IoU 0.70,2D,96.1046,92.4841,89.7698
+PointPillars,KITTI validation,Car,AP40 strict IoU 0.70,BEV,92.7663,88.3680,85.5054
+PointPillars,KITTI validation,Car,AP40 strict IoU 0.70,3D,90.3449,79.1299,76.1566

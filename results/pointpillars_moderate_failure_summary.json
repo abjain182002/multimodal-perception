@@ -1,0 +1,39 @@
+{
+  "dataset": "KITTI standard validation",
+  "frames": 3769,
+  "class": "Car",
+  "difficulty": "Moderate",
+  "diagnostic_iou": "3D IoU",
+  "strict_iou_threshold": 0.7,
+  "note": "This is an object-level diagnostic based on each valid Moderate ground-truth Car's best retained prediction IoU. It is not a replacement for official KITTI AP and does not reproduce the official confidence-threshold matching procedure.",
+  "valid_moderate_gt_objects": 7874,
+  "diagnostic_categories": {
+    "iou>=0.70": 6644,
+    "0.50<=iou<0.70": 934,
+    "no_overlap": 228,
+    "0.30<=iou<0.50": 50,
+    "0<iou<0.30": 18
+  },
+  "distance_summary": {
+    "<20m": {
+      "valid_moderate_gt": 3088,
+      "best_iou_ge_0.70": 2968,
+      "coverage_percent": 96.11398963730569
+    },
+    "20-40m": {
+      "valid_moderate_gt": 3793,
+      "best_iou_ge_0.70": 3172,
+      "coverage_percent": 83.62773530187187
+    },
+    "40-60m": {
+      "valid_moderate_gt": 993,
+      "best_iou_ge_0.70": 504,
+      "coverage_percent": 50.755287009063444
+    },
+    "60m+": {
+      "valid_moderate_gt": 0,
+      "best_iou_ge_0.70": 0,
+      "coverage_percent": null
+    }
+  }
+}
