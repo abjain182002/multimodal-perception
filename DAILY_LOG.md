@@ -176,3 +176,10 @@ YOLOv8x was stronger on development, but the ordering did not transfer cleanly t
 
 ### Next step
 Finish repository documentation and checkpoint this experiment before moving to the next technical stage.
+
+## 2026-09-25 — KITTI CLOCs GT audit and candidate-IoU preparation
+
+- Mac `azitt310`: 84 full-suite tests passed after the GT audit script was pulled.
+- Canonical train/validation split: 3,712/3,769 frames, no overlap. Audited all 7,481 labelled KITTI frames; exact Car GT 28,742 before and 28,374 after detector range filtering. Train/validation retained 14,144/14,230 Cars. Saved `results/kitti_clocs_gt_audit.json` at `96c3a37` and confirmed a clean Mac tree.
+- CPU reference implementation now computes camera-space rotated 3D IoU for dense candidate matching. PointPillars extraction returns matching camera boxes in candidate order. Seven new synthetic tests pass; locally available suite 43/43.
+- Gate: `reference_structural_smoke` has placeholder zero overlaps. Export genuine dense 3D boxes from Colab and independently verify real targets before training or declaring fusion accuracy.

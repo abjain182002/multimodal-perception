@@ -132,6 +132,7 @@ def extract_dense_pointpillars_candidates(
     The returned dictionary contains:
 
         boxes_lidar
+        boxes_camera (rectified KITTI camera [x,y,z,l,h,w,ry])
         scores_3d
         direction_labels
         projected_boxes
@@ -351,6 +352,7 @@ def extract_dense_pointpillars_candidates(
 
     tensors = {
         "boxes_lidar": boxes_lidar,
+        "boxes_camera": camera_boxes.tensor,
         "scores_3d": scores_3d,
         "direction_labels": direction_labels,
         "projected_boxes": projected_boxes,
@@ -368,6 +370,8 @@ def extract_dense_pointpillars_candidates(
     num_candidates = boxes_lidar.shape[0]
 
     if not (
+        camera_boxes.tensor.shape[0]
+        ==
         scores_3d.shape[0]
         == direction_labels.shape[0]
         == projected_boxes.shape[0]
@@ -382,6 +386,14 @@ def extract_dense_pointpillars_candidates(
     return {
         "boxes_lidar": (
             boxes_lidar
+            .detach()
+            .cpu()
+            .numpy()
+            .astype(np.float32)
+        ),
+
+        "boxes_camera": (
+            camera_boxes.tensor
             .detach()
             .cpu()
             .numpy()

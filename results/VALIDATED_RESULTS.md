@@ -466,11 +466,11 @@ Relevant scripts:
 
 The following should **not** be claimed from the current evidence:
 
-- official KITTI AP/mAP performance,
+- official KITTI AP/mAP for camera or fused models (the separate PointPillars-only KITTI Car AP40 result is established),
 - universal superiority of YOLO over Falcon or Falcon over YOLO,
 - a standardized end-to-end runtime ratio,
 - completion of the full Azitt PV-RCNN++ pipeline on macOS,
-- completed PointPillars / OpenPCDet / BEVFusion results,
+- completed OpenPCDet, trained CLOCs, or BEVFusion fusion results,
 - completed nuScenes cross-dataset results,
 - completed robustness evaluation.
 
@@ -512,4 +512,14 @@ The repository records:
 - scripts used for the Falcon+LiDAR and YOLOv8x+LiDAR controlled experiments,
 - version-controlled frozen result tables and figures for the depth, camera-detector and multimodal comparison studies.
 
-The next planned technical milestone is to extend beyond the current projected-LiDAR baseline with a genuine LiDAR-only 3D detector, preferably PointPillars, after any small current YOLO-family comparison that is justified by time and compatibility.
+The PointPillars-only LiDAR baseline has since been evaluated on the full frozen SECOND validation split. The next technical gate is real dense candidate 3D-IoU matching for CLOCs, with camera-space boxes aligned to candidate scores and feature rows.
+
+---
+
+# 10. PointPillars baseline and CLOCs target preparation
+
+The pinned PointPillars LiDAR-only baseline was independently verified on the frozen SECOND KITTI validation split. At strict Car IoU 0.70, **3D AP40 = 90.3449 / 79.1299 / 76.1566** for Easy / Moderate / Hard. These are LiDAR-only detection metrics, not CLOCs fusion results. See `results/pointpillars_kitti_ap40_strict_summary.csv` and `results/pointpillars_evidence_manifest.json` for experiment details.
+
+The full CLOCs GT audit processed **7,481** KITTI labelled frames (train **3,712**, validation **3,769**, overlap **0**). Exact Car GT counts were **28,742 before** and **28,374 after** the detector range filter, with **14,144** retained in training and **14,230** in validation. **859** frames have no retained Car GT. Source: `results/kitti_clocs_gt_audit.json` (commit `96c3a37`). The audit verifies GT preparation and split integrity; it is not an evaluation of CLOCs accuracy.
+
+A CPU camera-space rotated 3D-IoU reference and aligned candidate camera-box export are implemented and checked on synthetic geometry. Real candidate-to-GT target counts and trained CLOCs scores remain pending export of dense 3D candidate boxes from Colab. The existing all-negative `reference_structural_smoke` example uses placeholder zero IoU and is excluded from training.

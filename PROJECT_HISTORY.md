@@ -1811,3 +1811,13 @@ The next major experimental stage is one stronger multimodal fusion method while
 Local repository transfer and integrity verification completed. Milestone commit message: `Add PointPillars LiDAR baseline and KITTI evaluation`.
 
 ---
+
+## 2026-09-25 — Full KITTI CLOCs GT audit and CPU 3D-IoU reference
+
+The canonical SECOND train/validation manifest was verified with 3,712 training and 3,769 validation frames and no overlap. The Mac audit `scripts/audit_kitti_gt.py` processed all 7,481 KITTI labelled frames and saved `results/kitti_clocs_gt_audit.json` (commit `96c3a37`). For the exact Car class, 28,742 GT boxes precede the pinned CLOCs/SECOND BEV range filter; 28,374 remain, with 368 filtered out. Training retains 14,144 Cars and validation retains 14,230. There are 859 frames with no Car GT after filtering; these can legitimately yield all-negative candidate targets.
+
+The GT audit and 84-test Mac suite passed at `96c3a37`. The saved `000001_dataset_schema_compatibility.npz` is a structural smoke test only: its 107,136 candidates all have placeholder zero IoU and negative labels. It must not be used to train or evaluate a fusion model.
+
+Added a NumPy camera-space rotated 3D-IoU reference with validated synthetic overlap, rotation, height, empty-GT and symmetry cases. The dense PointPillars adapter now returns aligned camera boxes in addition to LiDAR boxes and features. Seven new tests passed locally; the available repository subset ran 43 tests, all passing. This is code-level validation only: the Mac currently lacks dense saved 3D candidate boxes, so no real candidate-to-GT targets or fusion AP have been measured. Once Colab is available, export frozen dense boxes with scores and indices, compute real multi-frame IoUs, independently cross-check against the pinned CLOCs evaluation kernel, inspect positive/negative/ignored counts, then permit training.
+
+This is an engineering record toward the 8–10 October Phase 1 freeze; dissertation chapter writing starts after 10 October.
