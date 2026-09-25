@@ -191,3 +191,5 @@ Finish repository documentation and checkpoint this experiment before moving to 
 
 - Mac confirmation: pulled `6b913a1`; **100/100 tests passed in 0.551 s**, and `main...origin/main` was clean.
 - Set daily Phase 1 targets through 10 October in `docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md`. Each date has an evidence gate and a GitHub checkpoint or documented blocker. Dissertation chapter drafting starts after 10 October; a continuing GPU outage is escalated rather than recorded as finished work.
+
+- User reaffirmed the locked 29 August scope. Updated `docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md` to track the Azitt fusion baseline, OpenPCDet/PV-RCNN++, MultiCorrupt, Glasgow demo and NVIDIA optimisation (stretch only) explicitly, while preserving all already verified work. Added inventory and provenance rules for existing and future result figures.
