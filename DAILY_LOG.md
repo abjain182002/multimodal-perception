@@ -4,7 +4,7 @@ This file records work chronologically. `PROJECT_HISTORY.md` remains the synthes
 
 ---
 
-## 2026-09-01 — Falcon + LiDAR single-frame fusion
+## Falcon + LiDAR single-frame fusion
 
 ### Objective
 Integrate Falcon Perception with the existing KITTI LiDAR projection and the already frozen median-ROI depth association method on one frame before expanding to a multi-frame experiment.
