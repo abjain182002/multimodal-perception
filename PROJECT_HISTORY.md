@@ -1825,3 +1825,9 @@ This is an engineering record toward the 8–10 October Phase 1 freeze; disserta
 ### Target-construction command
 
 Implemented `scripts/build_clocs_training_example.py` with a frame-tagged dense-box/feature export contract (`docs/CLOCS_TARGET_PREPARATION.md`). It rejects mismatched frames, altered dense candidate order, mismatched feature scores or distances, missing frozen-split membership, and malformed 3D geometry. The complete synthetic CLI integration test saves and reloads a hashed example containing positive, ignored and negative targets. The available local suite passed 49/49; the Mac full suite and genuine dense export remain to be checked after pulling and restoring Colab.
+
+### 2026-09-25 Mac confirmation and 2D alignment guard
+
+The Mac pulled commit `e2e3a47` and passed the complete repository suite: **97 tests in 0.613 s**, with a clean `main...origin/main` working tree. This confirms the CPU geometry and first target-construction version run in `azitt310` on macOS.
+
+The input contract was then tightened: saved original 2D boxes, scores, projected candidate boxes, 2D detector indices and row types are required to reconstruct **every** CLOCs feature row. A wrong 2D export or candidate association can no longer pass using only matching 3D scores and distances. Local tests cover altered 2D detections and projections; the available subset passed 52 tests. This remains a code-level check; real candidate-to-GT labels still require the Colab export.

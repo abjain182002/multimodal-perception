@@ -10,6 +10,7 @@ from unittest.mock import patch
 
 import numpy as np
 
+from fusion.clocs import build_clocs_feature_rows
 from fusion.clocs_dataset import load_training_example_npz
 from fusion.kitti_labels import parse_kitti_label_line
 from scripts.build_clocs_training_example import build_real_example, main, read_inputs
@@ -27,15 +28,22 @@ class TestRealExampleConstruction(unittest.TestCase):
             "scores_3d": np.array([0.8, 0.6, 0.2]),
             "distance_82": np.array([0.2, 0.21, 0.4]),
             "candidate_index": np.arange(3),
+            "projected_boxes": np.array([[0, 0, 2, 2],
+                                          [1, 0, 3, 2],
+                                          [100, 0, 102, 2]], dtype=np.float32),
         }
+        boxes_2d = np.array([[0, 0, 2, 2], [2, 0, 3, 2]], dtype=np.float32)
+        scores_2d = np.array([0.7, 0.5], dtype=np.float32)
+        rows = build_clocs_feature_rows(
+            self.candidates["projected_boxes"], self.candidates["scores_3d"],
+            boxes_2d, scores_2d, self.candidates["distance_82"])
         self.features = {
-            "features": np.array([
-                [0.9, 0.8, 0.7, 0.2],
-                [0.8, 0.6, 0.7, 0.21],
-                [0.7, 0.6, 0.5, 0.21],
-                [-10, 0.2, -10, 0.4],
-            ]),
-            "candidate_index": np.array([0, 1, 1, 2]),
+            "features": rows["features"],
+            "candidate_index": rows["candidate_index"],
+            "detector_2d_index": rows["detector_2d_index"],
+            "row_type": rows["row_type"],
+            "boxes_2d": boxes_2d,
+            "scores_2d": scores_2d,
         }
 
     def test_real_geometry_targets_and_row_coverage(self):
@@ -65,6 +73,31 @@ class TestRealExampleConstruction(unittest.TestCase):
                 build_real_example("000001", "train", self.candidates,
                                    self.features, [self.gt], np.eye(4))
             self.features["features"][0, column] = original
+
+    def test_reject_misaligned_2d_detection_and_projection(self):
+        for source, field, index in [
+            (self.features, "boxes_2d", (0, 0)),
+            (self.features, "scores_2d", (0,)),
+            (self.candidates, "projected_boxes", (0, 0)),
+        ]:
+            original = source[field][index]
+            source[field][index] += 0.25
+            with self.assertRaisesRegex(ValueError, "regenerated 2D/3D associations"):
+                build_real_example("000001", "train", self.candidates,
+                                   self.features, [self.gt], np.eye(4))
+            source[field][index] = original
+
+    def test_reject_misaligned_2d_row_indices(self):
+        self.features["detector_2d_index"][0] = 1
+        with self.assertRaisesRegex(ValueError, "regenerated 2D/3D associations"):
+            build_real_example("000001", "train", self.candidates,
+                               self.features, [self.gt], np.eye(4))
+
+    def test_reject_invalid_2d_detection_geometry(self):
+        self.features["boxes_2d"][0, 0] = np.nan
+        with self.assertRaisesRegex(ValueError, "must be finite"):
+            build_real_example("000001", "train", self.candidates,
+                               self.features, [self.gt], np.eye(4))
 
     def test_input_archive_checks_frame_and_fields(self):
         with tempfile.TemporaryDirectory() as directory:

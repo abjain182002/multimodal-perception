@@ -185,3 +185,6 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Gate: `reference_structural_smoke` has placeholder zero overlaps. Export genuine dense 3D boxes from Colab and independently verify real targets before training or declaring fusion accuracy.
 
 - Added guarded per-frame target builder and GPU export contract. A synthetic end-to-end test exercises split verification, target generation, saved SHA-256 and reload; local subset 49/49 tests passed. Genuine dense candidate export and real-data checks remain the GPU gate.
+
+- Mac confirmation: pulled `e2e3a47`; 97/97 repository tests passed in 0.613 s, with clean `main...origin/main`.
+- Tightened CLOCs target input contract: regenerate all rows from saved original 2D detections and projected dense candidate boxes; reject altered 2D geometry, scores, indices or row types. Local subset 52/52 tests passes. Real candidate labels remain pending GPU export.

@@ -2,8 +2,9 @@
 """Build one genuine KITTI Car CLOCs example from aligned dense boxes.
 
 Both input NPZ files must identify the same frame. The candidate archive needs
-the adapter's boxes_camera, scores_3d, distance_82, and candidate_index. The
-feature archive needs features and candidate_index from the same extraction.
+the adapter's boxes_camera, projected_boxes, scores_3d, distance_82, and
+candidate_index. The feature archive needs the original 2D detections and
+feature rows from that extraction so every feature can be reconstructed.
 Saved structural smoke archives lack 3D boxes and cannot pass this gate.
 """
 
@@ -14,6 +15,7 @@ from pathlib import Path
 import numpy as np
 
 from adapters.pointpillars_adapter import build_kitti_lidar2cam, load_kitti_calibration
+from fusion.clocs import build_clocs_feature_rows
 from fusion.clocs_dataset import (
     build_training_example,
     load_training_example_npz,
@@ -40,15 +42,34 @@ def build_real_example(frame_id, split, candidates, feature_archive, records,
     boxes = np.asarray(candidates["boxes_camera"])
     scores = np.asarray(candidates["scores_3d"])
     distances = np.asarray(candidates["distance_82"])
+    projected = np.asarray(candidates["projected_boxes"])
     dense_index = np.asarray(candidates["candidate_index"])
     features = np.asarray(feature_archive["features"])
     row_index = np.asarray(feature_archive["candidate_index"])
+    boxes_2d = np.asarray(feature_archive["boxes_2d"])
+    scores_2d = np.asarray(feature_archive["scores_2d"])
+    detector_index = np.asarray(feature_archive["detector_2d_index"])
+    row_type = np.asarray(feature_archive["row_type"])
 
     if boxes.ndim != 2 or boxes.shape[1] != 7 or boxes.shape[0] == 0:
         raise ValueError("boxes_camera must have shape [N, 7] with N > 0")
     num_candidates = boxes.shape[0]
     if scores.shape != (num_candidates,) or distances.shape != (num_candidates,):
         raise ValueError("scores_3d and distance_82 must align with boxes_camera")
+    if projected.shape != (num_candidates, 4):
+        raise ValueError("projected_boxes must align with boxes_camera")
+    if not np.isfinite(projected).all():
+        raise ValueError("projected_boxes must be finite")
+    if boxes_2d.ndim != 2 or boxes_2d.shape[1] != 4:
+        raise ValueError("boxes_2d must have shape [M, 4]")
+    if scores_2d.shape != (boxes_2d.shape[0],):
+        raise ValueError("scores_2d must align with boxes_2d")
+    if not np.isfinite(boxes_2d).all() or not np.isfinite(scores_2d).all():
+        raise ValueError("boxes_2d and scores_2d must be finite")
+    if np.any(boxes_2d[:, 2:] < boxes_2d[:, :2]):
+        raise ValueError("boxes_2d must have ordered xyxy corners")
+    if np.any(scores_2d < 0) or np.any(scores_2d > 1):
+        raise ValueError("scores_2d must be in [0, 1]")
     if dense_index.shape != (num_candidates,) or not np.issubdtype(dense_index.dtype, np.integer):
         raise ValueError("candidate_index must be an integer index for every dense box")
     if not np.array_equal(dense_index, np.arange(num_candidates)):
@@ -57,6 +78,8 @@ def build_real_example(frame_id, split, candidates, feature_archive, records,
         raise ValueError("features must have shape [R, 4] with R > 0")
     if row_index.shape != (features.shape[0],) or not np.issubdtype(row_index.dtype, np.integer):
         raise ValueError("feature candidate_index must have one integer per row")
+    if detector_index.shape != row_index.shape or row_type.shape != row_index.shape:
+        raise ValueError("2D detector indices and row types must align with feature rows")
     if not np.isfinite(features).all() or not np.isfinite(scores).all() or not np.isfinite(distances).all():
         raise ValueError("features, scores_3d, and distance_82 must be finite")
     if np.any(row_index < 0) or np.any(row_index >= num_candidates):
@@ -65,6 +88,13 @@ def build_real_example(frame_id, split, candidates, feature_archive, records,
         raise ValueError("feature rows do not match candidate 3D scores")
     if not np.allclose(features[:, 3], distances[row_index], rtol=0, atol=1e-6):
         raise ValueError("feature rows do not match candidate distances")
+    rebuilt = build_clocs_feature_rows(projected, scores, boxes_2d,
+                                       scores_2d, distances)
+    if (not np.array_equal(row_index, rebuilt["candidate_index"])
+            or not np.array_equal(detector_index, rebuilt["detector_2d_index"])
+            or not np.array_equal(row_type, rebuilt["row_type"])
+            or not np.allclose(features, rebuilt["features"], rtol=0, atol=1e-6)):
+        raise ValueError("feature rows do not match regenerated 2D/3D associations")
 
     ground_truth = prepare_clocs_car_ground_truth(records, lidar_to_camera)
     best_iou = best_camera_3d_iou(boxes, ground_truth["camera_boxes"])
@@ -95,9 +125,12 @@ def main():
         raise ValueError("frame_id is not in the frozen KITTI train/validation split")
     split_name = "train" if args.frame_id in train_ids else "validation"
     candidates = read_inputs(args.candidates,
-                             ("boxes_camera", "scores_3d", "distance_82", "candidate_index"),
+                             ("boxes_camera", "projected_boxes", "scores_3d",
+                              "distance_82", "candidate_index"),
                              args.frame_id)
-    features = read_inputs(args.features, ("features", "candidate_index"),
+    features = read_inputs(args.features, ("features", "candidate_index",
+                                          "boxes_2d", "scores_2d",
+                                          "detector_2d_index", "row_type"),
                            args.frame_id)
     dataset = Path(args.dataset)
     records = parse_kitti_label_file(dataset / "label_2" / (args.frame_id + ".txt"))

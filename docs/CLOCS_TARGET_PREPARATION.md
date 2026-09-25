@@ -32,7 +32,9 @@ rows = build_clocs_feature_rows(
 )
 np.savez_compressed(
     "000001_clocs_rows.npz", frame_id=frame_id,
+    boxes_2d=boxes_2d, scores_2d=scores_2d,
     features=rows["features"], candidate_index=rows["candidate_index"],
+    detector_2d_index=rows["detector_2d_index"], row_type=rows["row_type"],
 )
 ```
 
@@ -52,6 +54,6 @@ python -m scripts.build_clocs_training_example \
   --output "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000001_real_targets.npz"
 ```
 
-The command checks split identity and frame IDs, dense candidate ordering, feature-score and feature-distance alignment, GT range filtering, and the saved example's SHA-256. It then computes camera-coordinate rotated **3D** IoU to filtered Car GT: positive `>=0.70`, negative `<=0.50`, and ignored in between. Frames without retained Car GT legitimately have all-negative candidates. An isolated all-negative frame is not proof of a dataset-level training signal.
+The command checks split identity and frame IDs, dense candidate ordering, feature-score and feature-distance alignment, and **rebuilds all feature rows** from the saved projected boxes and original 2D detections. It checks the candidate and 2D indices, row types, IoUs, and scores before GT range filtering and computing camera-coordinate rotated **3D** IoU: positive `>=0.70`, negative `<=0.50`, and ignored in between. It verifies the saved example's SHA-256. Frames without retained Car GT legitimately have all-negative candidates. An isolated all-negative frame is not proof of a dataset-level training signal.
 
 Before training, cross-check sampled frame IoUs against the pinned SECOND/CLOCs evaluation kernel, inspect positive/negative/ignored counts across multiple train frames, verify example hashes and frame membership, then freeze validation evaluation settings. The CPU reference implementation and synthetic tests are preparation, not an AP result.
