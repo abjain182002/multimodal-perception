@@ -1821,3 +1821,7 @@ The GT audit and 84-test Mac suite passed at `96c3a37`. The saved `000001_datase
 Added a NumPy camera-space rotated 3D-IoU reference with validated synthetic overlap, rotation, height, empty-GT and symmetry cases. The dense PointPillars adapter now returns aligned camera boxes in addition to LiDAR boxes and features. Seven new tests passed locally; the available repository subset ran 43 tests, all passing. This is code-level validation only: the Mac currently lacks dense saved 3D candidate boxes, so no real candidate-to-GT targets or fusion AP have been measured. Once Colab is available, export frozen dense boxes with scores and indices, compute real multi-frame IoUs, independently cross-check against the pinned CLOCs evaluation kernel, inspect positive/negative/ignored counts, then permit training.
 
 This is an engineering record toward the 8–10 October Phase 1 freeze; dissertation chapter writing starts after 10 October.
+
+### Target-construction command
+
+Implemented `scripts/build_clocs_training_example.py` with a frame-tagged dense-box/feature export contract (`docs/CLOCS_TARGET_PREPARATION.md`). It rejects mismatched frames, altered dense candidate order, mismatched feature scores or distances, missing frozen-split membership, and malformed 3D geometry. The complete synthetic CLI integration test saves and reloads a hashed example containing positive, ignored and negative targets. The available local suite passed 49/49; the Mac full suite and genuine dense export remain to be checked after pulling and restoring Colab.
