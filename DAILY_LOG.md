@@ -188,3 +188,6 @@ Finish repository documentation and checkpoint this experiment before moving to 
 
 - Mac confirmation: pulled `e2e3a47`; 97/97 repository tests passed in 0.613 s, with clean `main...origin/main`.
 - Tightened CLOCs target input contract: regenerate all rows from saved original 2D detections and projected dense candidate boxes; reject altered 2D geometry, scores, indices or row types. Local subset 52/52 tests passes. Real candidate labels remain pending GPU export.
+
+- Mac confirmation: pulled `6b913a1`; **100/100 tests passed in 0.551 s**, and `main...origin/main` was clean.
+- Set daily Phase 1 targets through 10 October in `docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md`. Each date has an evidence gate and a GitHub checkpoint or documented blocker. Dissertation chapter drafting starts after 10 October; a continuing GPU outage is escalated rather than recorded as finished work.

@@ -1831,3 +1831,7 @@ Implemented `scripts/build_clocs_training_example.py` with a frame-tagged dense-
 The Mac pulled commit `e2e3a47` and passed the complete repository suite: **97 tests in 0.613 s**, with a clean `main...origin/main` working tree. This confirms the CPU geometry and first target-construction version run in `azitt310` on macOS.
 
 The input contract was then tightened: saved original 2D boxes, scores, projected candidate boxes, 2D detector indices and row types are required to reconstruct **every** CLOCs feature row. A wrong 2D export or candidate association can no longer pass using only matching 3D scores and distances. Local tests cover altered 2D detections and projections; the available subset passed 52 tests. This remains a code-level check; real candidate-to-GT labels still require the Colab export.
+
+### 2026-09-25 — Daily engineering target and milestone policy
+
+The Mac confirmed commit `6b913a1`: 100/100 tests passed in 0.551 seconds and the repository was clean. The dated engineering schedule in `docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md` retains the full agreed technical scope through the 8–10 October freeze. Each daily exit criterion requires a measured artifact or an explicit blocker; small code, manifests, tests, results and evidence are committed to GitHub by milestone. Large datasets, predictions and checkpoint files stay in durable project storage with hashes and locations tracked in the repository. GPU-dependent experiments remain conditional on access to compute; dissertation chapter writing begins after 10 October.
