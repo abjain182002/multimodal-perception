@@ -1,0 +1,44 @@
+{
+  "schema_version": "kitti_second_split_v1",
+  "dataset": "KITTI Object Detection",
+  "protocol": "SECOND-style KITTI train/validation split",
+  "total_frames": 7481,
+
+  "train": {
+    "count": 3712,
+    "unique_count": 3712,
+    "sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb"
+  },
+
+  "validation": {
+    "count": 3769,
+    "unique_count": 3769,
+    "sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+  },
+
+  "overlap_count": 0,
+  "union_count": 7481,
+
+  "canonical_source": {
+    "repository": "pangsu0613/CLOCs",
+    "commit": "d7d78f69fcd2b30147f0448f0606df3551975472",
+    "train_path": "second/data/ImageSets/train.txt",
+    "validation_path": "second/data/ImageSets/val.txt"
+  },
+
+  "independent_corroboration": {
+    "repository": "open-mmlab/OpenPCDet",
+    "commit": "233f849",
+    "train_path": "data/kitti/ImageSets/train.txt",
+    "validation_path": "data/kitti/ImageSets/val.txt",
+    "hashes_match_canonical_source": true
+  },
+
+  "experiment_policy": {
+    "fusion_training_source": "train",
+    "validation_source": "validation",
+    "hyperparameter_selection_on_validation": false,
+    "internal_development_subset_must_come_from_train": true,
+    "final_validation_set_remains_untouched_until_model_configuration_is_frozen": true
+  }
+}
