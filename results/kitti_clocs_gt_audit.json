@@ -1,0 +1,45 @@
+{
+  "dataset": "KITTI Object Detection labelled training directory",
+  "schema_version": "kitti_clocs_gt_audit_v1",
+  "split": {
+    "overlap_count": 0,
+    "train_count": 3712,
+    "train_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+    "train_unique_count": 3712,
+    "union_count": 7481,
+    "validation_count": 3769,
+    "validation_sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86",
+    "validation_unique_count": 3769
+  },
+  "split_manifest_sha256": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066",
+  "total": {
+    "car_after_range_filter": 28374,
+    "car_before_range_filter": 28742,
+    "car_removed_by_range_filter": 368,
+    "frames": 7481,
+    "frames_with_removed_car": 345,
+    "frames_without_car_after_filter": 859,
+    "frames_without_car_before_filter": 797,
+    "max_car_after_filter_in_one_frame": 19
+  },
+  "train": {
+    "car_after_range_filter": 14144,
+    "car_before_range_filter": 14357,
+    "car_removed_by_range_filter": 213,
+    "frames": 3712,
+    "frames_with_removed_car": 190,
+    "frames_without_car_after_filter": 473,
+    "frames_without_car_before_filter": 452,
+    "max_car_after_filter_in_one_frame": 17
+  },
+  "validation": {
+    "car_after_range_filter": 14230,
+    "car_before_range_filter": 14385,
+    "car_removed_by_range_filter": 155,
+    "frames": 3769,
+    "frames_with_removed_car": 155,
+    "frames_without_car_after_filter": 386,
+    "frames_without_car_before_filter": 345,
+    "max_car_after_filter_in_one_frame": 19
+  }
+}
