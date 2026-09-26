@@ -1,0 +1,17 @@
+{
+  "schema_version": "clocs_train_export_archive_receipt_v1",
+  "created_local_date": "2026-09-26",
+  "status": "LOCAL_ARCHIVE_VERIFIED_TRANSFER_PENDING",
+  "evidence_source": "User-provided Mac terminal output of scripts.package_clocs_train_export_batch pack; archive bytes have not been independently opened in this workspace.",
+  "archive_location_mac": "$HOME/Desktop/clocs_train_export_16.tar.gz",
+  "archive_bytes": 30768829,
+  "archive_sha256": "3600369f1d513bb48b0896200486cb9925c4f1e3a7e50a960f2858677b59e1d2",
+  "manifest_path": "results/clocs_train_export_batch_manifest.json",
+  "embedded_manifest_sha256": "71f4f933c9a2b1228b598ce604e9016f3ea295437845a94ec182bd0407eaf054",
+  "num_frames": 16,
+  "input_members_verified": 64,
+  "split_members_verified": 2,
+  "source_input_bytes": 43313442,
+  "interpretation": "Mac local transfer archive integrity only; not a Colab restore, trained CLOCs model, or KITTI AP.",
+  "next_gate": "Transfer the archive to Colab, run package_clocs_train_export_batch verify against the pinned Git manifest, compare the archive SHA-256, and preserve the successful restore audit."
+}
