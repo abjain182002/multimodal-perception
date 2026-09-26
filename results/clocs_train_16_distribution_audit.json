@@ -1,0 +1,360 @@
+{
+  "schema_version": "clocs_train_16_distribution_audit_v1",
+  "status": "PASS",
+  "split": "train",
+  "interpretation": "Deliberately GT-stratified 16-frame pilot; descriptive labels, not detector AP or population prevalence.",
+  "source_batch_audit_sha256": "3a80d327ed5156f6b5cea7a0842ec8446122b234cc3f20a2742be4877e3c40be",
+  "num_frames": 16,
+  "num_candidates": 1714176,
+  "num_feature_rows": 2191437,
+  "num_car_gt": 67,
+  "num_yolov8x_car_detections": 85,
+  "label_counts": {
+    "negative": 1711298,
+    "ignored": 1533,
+    "positive": 1345
+  },
+  "positive_fraction_of_candidates": 0.0007846335498805257,
+  "negative_to_positive_ratio": 1272.3405204460967,
+  "frames_without_retained_car_gt": 5,
+  "frames_with_gt_without_positive": [],
+  "camera_association": {
+    "matched_candidates": 441837,
+    "unmatched_candidates": 1272339,
+    "matched_positive_candidates": 1341,
+    "positive_candidates_without_camera_match": 4,
+    "matched_rows": 919098,
+    "unmatched_sentinel_rows": 1272339
+  },
+  "score_histogram": {
+    "edges": [
+      0.0,
+      0.05,
+      0.1,
+      0.15000000000000002,
+      0.2,
+      0.25,
+      0.30000000000000004,
+      0.35000000000000003,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6000000000000001,
+      0.65,
+      0.7000000000000001,
+      0.75,
+      0.8,
+      0.8500000000000001,
+      0.9,
+      0.9500000000000001,
+      1.0
+    ],
+    "negative": [
+      1706942,
+      3468,
+      556,
+      197,
+      52,
+      32,
+      17,
+      8,
+      14,
+      7,
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ignored": [
+      1102,
+      170,
+      68,
+      53,
+      33,
+      30,
+      10,
+      19,
+      16,
+      11,
+      10,
+      8,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "positive": [
+      223,
+      99,
+      70,
+      59,
+      51,
+      63,
+      60,
+      57,
+      53,
+      40,
+      36,
+      43,
+      37,
+      31,
+      58,
+      37,
+      49,
+      74,
+      140,
+      65
+    ]
+  },
+  "lidar_xy_range_histogram_m": {
+    "bins": [
+      "0\u201320",
+      "20\u201340",
+      "40\u201360",
+      "60\u201382",
+      "82+"
+    ],
+    "negative": [
+      194238,
+      588103,
+      586084,
+      342873,
+      0
+    ],
+    "ignored": [
+      680,
+      478,
+      325,
+      50,
+      0
+    ],
+    "positive": [
+      656,
+      474,
+      195,
+      20,
+      0
+    ]
+  },
+  "frames": [
+    {
+      "frame_id": "000000",
+      "gt": 0,
+      "yolo": 0,
+      "counts": {
+        "positive": 0,
+        "negative": 107136,
+        "ignored": 0
+      },
+      "feature_rows": 107136,
+      "matched_candidate_count": 0,
+      "matched_positive_count": 0
+    },
+    {
+      "frame_id": "000149",
+      "gt": 10,
+      "yolo": 9,
+      "counts": {
+        "positive": 179,
+        "negative": 106798,
+        "ignored": 159
+      },
+      "feature_rows": 158838,
+      "matched_candidate_count": 38661,
+      "matched_positive_count": 179
+    },
+    {
+      "frame_id": "001970",
+      "gt": 0,
+      "yolo": 0,
+      "counts": {
+        "positive": 0,
+        "negative": 107136,
+        "ignored": 0
+      },
+      "feature_rows": 107136,
+      "matched_candidate_count": 0,
+      "matched_positive_count": 0
+    },
+    {
+      "frame_id": "000972",
+      "gt": 2,
+      "yolo": 3,
+      "counts": {
+        "positive": 26,
+        "negative": 107069,
+        "ignored": 41
+      },
+      "feature_rows": 113105,
+      "matched_candidate_count": 19344,
+      "matched_positive_count": 26
+    },
+    {
+      "frame_id": "001020",
+      "gt": 5,
+      "yolo": 5,
+      "counts": {
+        "positive": 80,
+        "negative": 106967,
+        "ignored": 89
+      },
+      "feature_rows": 136220,
+      "matched_candidate_count": 38244,
+      "matched_positive_count": 80
+    },
+    {
+      "frame_id": "004842",
+      "gt": 10,
+      "yolo": 9,
+      "counts": {
+        "positive": 178,
+        "negative": 106723,
+        "ignored": 235
+      },
+      "feature_rows": 162925,
+      "matched_candidate_count": 48068,
+      "matched_positive_count": 174
+    },
+    {
+      "frame_id": "002485",
+      "gt": 0,
+      "yolo": 0,
+      "counts": {
+        "positive": 0,
+        "negative": 107136,
+        "ignored": 0
+      },
+      "feature_rows": 107136,
+      "matched_candidate_count": 0,
+      "matched_positive_count": 0
+    },
+    {
+      "frame_id": "002610",
+      "gt": 1,
+      "yolo": 1,
+      "counts": {
+        "positive": 8,
+        "negative": 107110,
+        "ignored": 18
+      },
+      "feature_rows": 107136,
+      "matched_candidate_count": 8995,
+      "matched_positive_count": 8
+    },
+    {
+      "frame_id": "006788",
+      "gt": 4,
+      "yolo": 14,
+      "counts": {
+        "positive": 68,
+        "negative": 107005,
+        "ignored": 63
+      },
+      "feature_rows": 173091,
+      "matched_candidate_count": 63513,
+      "matched_positive_count": 68
+    },
+    {
+      "frame_id": "002106",
+      "gt": 12,
+      "yolo": 17,
+      "counts": {
+        "positive": 225,
+        "negative": 106605,
+        "ignored": 306
+      },
+      "feature_rows": 230531,
+      "matched_candidate_count": 66390,
+      "matched_positive_count": 225
+    },
+    {
+      "frame_id": "006830",
+      "gt": 0,
+      "yolo": 0,
+      "counts": {
+        "positive": 0,
+        "negative": 107136,
+        "ignored": 0
+      },
+      "feature_rows": 107136,
+      "matched_candidate_count": 0,
+      "matched_positive_count": 0
+    },
+    {
+      "frame_id": "003079",
+      "gt": 2,
+      "yolo": 3,
+      "counts": {
+        "positive": 37,
+        "negative": 107069,
+        "ignored": 30
+      },
+      "feature_rows": 120353,
+      "matched_candidate_count": 12751,
+      "matched_positive_count": 37
+    },
+    {
+      "frame_id": "006707",
+      "gt": 6,
+      "yolo": 5,
+      "counts": {
+        "positive": 220,
+        "negative": 106686,
+        "ignored": 230
+      },
+      "feature_rows": 126798,
+      "matched_candidate_count": 36006,
+      "matched_positive_count": 220
+    },
+    {
+      "frame_id": "004838",
+      "gt": 14,
+      "yolo": 12,
+      "counts": {
+        "positive": 303,
+        "negative": 106483,
+        "ignored": 350
+      },
+      "feature_rows": 188924,
+      "matched_candidate_count": 62905,
+      "matched_positive_count": 303
+    },
+    {
+      "frame_id": "002496",
+      "gt": 0,
+      "yolo": 0,
+      "counts": {
+        "positive": 0,
+        "negative": 107136,
+        "ignored": 0
+      },
+      "feature_rows": 107136,
+      "matched_candidate_count": 0,
+      "matched_positive_count": 0
+    },
+    {
+      "frame_id": "003013",
+      "gt": 1,
+      "yolo": 7,
+      "counts": {
+        "positive": 21,
+        "negative": 107103,
+        "ignored": 12
+      },
+      "feature_rows": 137836,
+      "matched_candidate_count": 46960,
+      "matched_positive_count": 21
+    }
+  ]
+}
