@@ -58,3 +58,7 @@ cd "$PROJECT_ROOT"
 ```
 
 Set `PROJECT_ROOT` to the checkout containing this script and `KITTI_TRAINING` to the restored directory containing `000149.txt` in both `label_2/` and `calib/`. A `PASS` report with numerical differences, reference source SHA and candidate provenance is the exit criterion. The report and a measured IoU parity PNG are written even if the comparison fails; investigate failures before training. Review and commit the small report and figure once run and checked. A single positive frame still does not meet the later multi-frame training-corpus gate.
+
+### Native CUDA evaluator blocker and independent CPU check
+
+On the available Colab T4 runtime, loading the pinned KITTI evaluator directly bypassed an unrelated missing Lyft SDK, but the resulting native process exited with signal 11 before writing a report. This is an **unresolved reference-runtime crash**, not an observed IoU disagreement. Do not describe that evaluator as passed. `scripts/audit_clocs_iou_scipy.py` supplies an independent CPU geometric check using SciPy/Qhull halfspace intersections on the same hash-verified `000149` inputs; it saves a separate report and correctly labelled measured parity PNG. Its `PASS` cannot be substituted for a completed pinned MMDetection3D/SECOND evaluator run. Retain the GPU runtime blocker and resolve it before claiming official evaluator agreement.

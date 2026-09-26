@@ -83,7 +83,8 @@ def compare_iou(ours, reference, indices, atol=5e-4):
     }
 
 
-def save_parity_figure(path, ours, reference, status, max_error):
+def save_parity_figure(path, ours, reference, status, max_error,
+                       reference_label="Pinned KITTI evaluator 3D IoU"):
     """Render measured parity; each point is one genuine train-frame anchor."""
     import matplotlib
     matplotlib.use("Agg", force=True)
@@ -105,7 +106,7 @@ def save_parity_figure(path, ours, reference, status, max_error):
         ax.axvline(threshold, linewidth=.8, linestyle=":", color="0.55")
         ax.axhline(threshold, linewidth=.8, linestyle=":", color="0.55")
     ax.set(xlim=(-.02, 1.02), ylim=(-.02, 1.02),
-           xlabel="Our camera-space 3D IoU", ylabel="Pinned KITTI evaluator 3D IoU",
+           xlabel="Our camera-space 3D IoU", ylabel=reference_label,
            title=f"KITTI train 000149 | {len(ours)} sampled anchors | {status}")
     ax.text(.03, .97, f"Maximum absolute difference: {max_error:.6g}",
             ha="left", va="top", transform=ax.transAxes,
