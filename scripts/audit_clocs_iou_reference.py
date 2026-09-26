@@ -7,9 +7,11 @@ it is not an object-detection evaluation or a KITTI AP result.
 """
 
 import argparse
+import importlib.util
 import json
 import subprocess
 import sys
+import types
 from pathlib import Path
 
 import numpy as np
@@ -114,6 +116,22 @@ def save_parity_figure(path, ours, reference, status, max_error):
     plt.close(fig)
 
 
+def load_pinned_kitti_overlap(root):
+    """Import only the pinned KITTI evaluator, without optional dataset SDKs."""
+    package_dir = root / "mmdet3d/evaluation/functional/kitti_utils"
+    eval_file = package_dir / "eval.py"
+    if not eval_file.is_file() or not (package_dir / "rotate_iou.py").is_file():
+        raise FileNotFoundError("Pinned KITTI evaluator source files are missing")
+    package_name = "_clocs_pinned_kitti_utils"
+    package = types.ModuleType(package_name)
+    package.__path__ = [str(package_dir)]
+    sys.modules[package_name] = package
+    spec = importlib.util.spec_from_file_location(package_name + ".eval", eval_file)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.d3_box_overlap
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", required=True, help="KITTI training directory containing calib/ and label_2/")
@@ -178,7 +196,7 @@ def main():
     import torch
     if not torch.cuda.is_available():
         raise RuntimeError("The pinned KITTI reference evaluator requires CUDA")
-    from mmdet3d.evaluation.functional.kitti_utils.eval import d3_box_overlap
+    d3_box_overlap = load_pinned_kitti_overlap(root)
     kernel = root / "mmdet3d/evaluation/functional/kitti_utils/eval.py"
 
     indices = representative_indices(ours, args.per_group)

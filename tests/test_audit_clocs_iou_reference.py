@@ -1,8 +1,12 @@
 import unittest
+import tempfile
+from pathlib import Path
 
 import numpy as np
 
-from scripts.audit_clocs_iou_reference import compare_iou, representative_indices
+from scripts.audit_clocs_iou_reference import (
+    compare_iou, load_pinned_kitti_overlap, representative_indices,
+)
 
 
 class ReferenceIoUAuditTests(unittest.TestCase):
@@ -34,6 +38,18 @@ class ReferenceIoUAuditTests(unittest.TestCase):
             compare_iou([.1], [float('nan')], [1])
         with self.assertRaises(ValueError):
             representative_indices([0, .2], per_group=0)
+
+    def test_reference_loader_skips_optional_evaluation_packages(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            kit = root / 'mmdet3d/evaluation/functional/kitti_utils'
+            kit.mkdir(parents=True)
+            (kit / 'rotate_iou.py').write_text('VALUE = 7\n')
+            (kit / 'eval.py').write_text(
+                'from .rotate_iou import VALUE\n'
+                'def d3_box_overlap(a, b):\n    return VALUE\n'
+            )
+            self.assertEqual(load_pinned_kitti_overlap(root)(None, None), 7)
 
 
 if __name__ == '__main__':
