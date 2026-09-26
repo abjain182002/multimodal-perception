@@ -512,7 +512,7 @@ The repository records:
 - scripts used for the Falcon+LiDAR and YOLOv8x+LiDAR controlled experiments,
 - version-controlled frozen result tables and figures for the depth, camera-detector and multimodal comparison studies.
 
-The PointPillars-only LiDAR baseline has since been evaluated on the full frozen SECOND validation split. The next technical gate is real dense candidate 3D-IoU matching for CLOCs, with camera-space boxes aligned to candidate scores and feature rows.
+The PointPillars-only LiDAR baseline has been evaluated on the full frozen SECOND validation split. Real CLOCs target preparation and the independent CPU geometry audit have passed on train frame `000149`. The next technical gate is a multi-frame, train-only export and a successful pinned CUDA/SECOND evaluator cross-check before training; the CUDA reference process previously exited with signal 11.
 
 ---
 
@@ -522,4 +522,13 @@ The pinned PointPillars LiDAR-only baseline was independently verified on the fr
 
 The full CLOCs GT audit processed **7,481** KITTI labelled frames (train **3,712**, validation **3,769**, overlap **0**). Exact Car GT counts were **28,742 before** and **28,374 after** the detector range filter, with **14,144** retained in training and **14,230** in validation. **859** frames have no retained Car GT. Source: `results/kitti_clocs_gt_audit.json` (commit `96c3a37`). The audit verifies GT preparation and split integrity; it is not an evaluation of CLOCs accuracy.
 
-A CPU camera-space rotated 3D-IoU reference and aligned candidate camera-box export are implemented and checked on synthetic geometry. Real candidate-to-GT target counts and trained CLOCs scores remain pending export of dense 3D candidate boxes from Colab. The existing all-negative `reference_structural_smoke` example uses placeholder zero IoU and is excluded from training.
+Aligned real PointPillars dense candidates are available for two canonical training frames. Frame `000000` is a valid empty-Car/empty-YOLO negative control; frame `000149` has 10 retained Car GT, 9 YOLO Car detections, 107,136 candidate anchors, 158,838 feature rows, and 179 positive / 106,798 negative / 159 ignored candidates. On `000149`, a hash-verified 258-anchor stratified CPU comparison against independent SciPy/Qhull geometry passed with zero label disagreements and maximum absolute IoU error `2.968672907499581e-08` versus tolerance `0.0005`. This verifies a single real-frame geometry implementation, **not** the pinned CUDA evaluator, trained CLOCs, or KITTI AP. The CUDA reference crashed with signal 11 before producing a result. The earlier all-negative `reference_structural_smoke` uses placeholder zero IoU and remains excluded from training. Sources: `results/clocs_real_frame_000000_audit.json`, `results/clocs_real_frame_000149_audit.json`, and `results/clocs_000149_iou_scipy_audit.json`.
+
+
+---
+
+# 11. Additional controlled camera-model pilot
+
+A tracked YOLOv8x versus YOLO26x projected-LiDAR pilot used the same 10-frame development and 10-frame holdout comparison sets. At the fixed matched-detection operating point, YOLOv8x / YOLO26x had development depth MAE **1.492 / 1.272 m** (45 / 44 matched cars) and holdout MAE **1.789 / 1.669 m** (41 / 41 matched cars). The matching denominators are shown to avoid treating conditional depth error as full detection accuracy. The sets of matched cars need not be identical, so the lower observed MAE is not a paired improvement claim. These are not official 3D AP results. See `results/yolov8_yolo26_lidar_comparison.csv` and `.png`.
+
+A role-by-role inventory of the tracked result figures, backing numerical files, and limitations is kept in `docs/RESULT_FIGURE_INVENTORY.md`. Presence in Git does not certify visual legibility; inspect final figure exports before choosing dissertation and poster panels.
