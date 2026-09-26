@@ -1,0 +1,24 @@
+{
+  "schema_version": "clocs_train_export_colab_restore_v1",
+  "local_date": "2026-09-26",
+  "status": "PASS_USER_REPORTED",
+  "evidence_source": "Colab notebook output supplied by user; independently hashed archive and extracted members with Python standard library, without exporting new model predictions.",
+  "frame_count": 16,
+  "input_files_verified": 64,
+  "split_files_verified": 2,
+  "archive_bytes": 30768829,
+  "archive_sha256": "3600369f1d513bb48b0896200486cb9925c4f1e3a7e50a960f2858677b59e1d2",
+  "manifest_sha256": "71f4f933c9a2b1228b598ce604e9016f3ea295437845a94ec182bd0407eaf054",
+  "archive_on_colab": "/content/clocs_train_export_16.tar.gz",
+  "archive_backed_up_on_drive": "/content/drive/MyDrive/Major Project/cloud transfer/clocs_stage5_checkpoints/clocs_train_export_16.tar.gz",
+  "restored_training_root": "/content/datasets/KITTI/training",
+  "restored_split_root": "/content/datasets/KITTI/splits",
+  "gpu_reported": "Tesla T4",
+  "required_runtime_paths_at_restore": {
+    "python_310": false,
+    "mmdetection3d_checkout": false,
+    "pointpillars_checkpoint": false,
+    "project_checkout": false
+  },
+  "result_interpretation": "Input integrity and restore gate only; no new dense candidates, trained CLOCs fusion model or KITTI AP result."
+}
