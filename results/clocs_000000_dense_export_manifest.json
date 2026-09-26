@@ -1,7 +1,7 @@
 {
   "schema_version": "clocs_single_frame_dense_export_v1",
   "date_ist": "2026-09-26",
-  "evidence_status": "Colab stdout supplied by user; Mac copy verification and real targets pending",
+  "evidence_status": "Colab export and Mac copy SHA-256 match; genuine all-negative frame audit recorded separately",
   "frame_id": "000000",
   "split": "train",
   "pointcloud_input": {
