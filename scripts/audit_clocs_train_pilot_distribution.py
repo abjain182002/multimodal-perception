@@ -12,8 +12,8 @@ from scripts.export_clocs_dense_train_frame import file_sha256
 
 
 SCORE_EDGES = np.linspace(0.0, 1.0, 21)
-RANGE_EDGES = np.array([20.0, 40.0, 60.0, 82.0])
-RANGE_NAMES = ('0–20', '20–40', '40–60', '60–82', '82+')
+RANGE_EDGES = np.array([20.0, 40.0, 60.0])
+RANGE_NAMES = ('0–20', '20–40', '40–60', '60+')
 LABEL_NAMES = ('negative', 'ignored', 'positive')
 
 
@@ -61,7 +61,7 @@ def inspect_frame(frame, root):
     if int(np.count_nonzero(row_types == 0)) != int(np.count_nonzero(~matched)):
         raise ValueError(f'Sentinel coverage differs from unmatched candidates: {fid}')
     range_bin = np.digitize(normalized_distance * 82.0, RANGE_EDGES)
-    by_range = {label: np.bincount(range_bin[labels == value], minlength=5).astype(int)
+    by_range = {label: np.bincount(range_bin[labels == value], minlength=len(RANGE_NAMES)).astype(int)
                 for label, value in (('negative', 0), ('ignored', -1), ('positive', 1))}
     by_score = {label: np.histogram(scores[labels == value], bins=SCORE_EDGES)[0].astype(int)
                 for label, value in (('negative', 0), ('ignored', -1), ('positive', 1))}
@@ -159,8 +159,9 @@ def main():
                s=65, color='#2563eb', alpha=0.85)
     for f in records:
         if f['gt'] >= 7 or (f['gt'] and f['counts']['positive'] < 15):
+            offset = {'000149': (-52, -18), '004842': (6, 9)}.get(f['frame_id'], (5, 4))
             ax.annotate(f['frame_id'], (f['gt'], f['counts']['positive']),
-                        xytext=(4, 4), textcoords='offset points', fontsize=8)
+                        xytext=offset, textcoords='offset points', fontsize=8)
     ax.set(xlabel='Retained Car GT per frame', ylabel='Positive 3D candidates',
            title='Positive training signal by scene')
     ax.grid(alpha=0.18)
@@ -178,7 +179,7 @@ def main():
     ax = axes[1, 0]
     total_by_range = sum(range_hist.values())
     positive_per_1000 = np.divide(range_hist['positive'] * 1000, total_by_range,
-                                  out=np.zeros(5, dtype=float), where=total_by_range > 0)
+                                  out=np.zeros(len(RANGE_NAMES), dtype=float), where=total_by_range > 0)
     bars = ax.bar(RANGE_NAMES, positive_per_1000, color='#0d9488')
     ax.bar_label(bars, labels=[f'{v:.2f}' for v in positive_per_1000], padding=3, fontsize=8)
     ax.set(xlabel='Candidate LiDAR xy range (m)',
@@ -188,8 +189,10 @@ def main():
 
     ax = axes[1, 1]
     order = ('positive', 'ignored', 'negative')
-    bars = ax.bar(order, [counts[k] for k in order], color=['#ea580c', '#7c3aed', '#2563eb'])
+    bars = ax.bar(order, [counts[k] - 1 for k in order], bottom=1,
+                  color=['#ea580c', '#7c3aed', '#2563eb'])
     ax.set_yscale('log')
+    ax.set_ylim(1, 5_000_000)
     ax.set(ylabel='Number of candidates (log scale)', title='Target imbalance')
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f'{v:,.0f}'))
     ax.bar_label(bars, labels=[f'{counts[k]:,}' for k in order], padding=3, fontsize=9)
