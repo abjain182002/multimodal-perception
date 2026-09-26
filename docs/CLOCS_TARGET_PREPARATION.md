@@ -57,4 +57,4 @@ cd "$PROJECT_ROOT"
   --output results/clocs_000149_iou_reference_audit.json
 ```
 
-Set `PROJECT_ROOT` to the checkout containing this script and `KITTI_TRAINING` to the restored directory containing `000149.txt` in both `label_2/` and `calib/`. A `PASS` report with numerical differences, reference source SHA and candidate provenance is the exit criterion. The report is written even if the comparison fails; investigate failures before training. Review and commit only the small report once it has been run and checked. A single positive frame still does not meet the later multi-frame training-corpus gate.
+Set `PROJECT_ROOT` to the checkout containing this script and `KITTI_TRAINING` to the restored directory containing `000149.txt` in both `label_2/` and `calib/`. A `PASS` report with numerical differences, reference source SHA and candidate provenance is the exit criterion. The report and a measured IoU parity PNG are written even if the comparison fails; investigate failures before training. Review and commit the small report and figure once run and checked. A single positive frame still does not meet the later multi-frame training-corpus gate.

@@ -81,6 +81,39 @@ def compare_iou(ours, reference, indices, atol=5e-4):
     }
 
 
+def save_parity_figure(path, ours, reference, status, max_error):
+    """Render measured parity; each point is one genuine train-frame anchor."""
+    import matplotlib
+    matplotlib.use("Agg", force=True)
+    import matplotlib.pyplot as plt
+
+    ours = np.asarray(ours)
+    reference = np.asarray(reference)
+    fig, ax = plt.subplots(figsize=(6.2, 5.5), layout="constrained")
+    ax.plot([0, 1], [0, 1], color="0.3", linewidth=1, label="Exact agreement")
+    for name, mask, color in (
+        ("Negative or zero", ours <= .50, "#377eb8"),
+        ("Ignored", (ours > .50) & (ours < .70), "#e69f00"),
+        ("Positive", ours >= .70, "#009e73"),
+    ):
+        if mask.any():
+            ax.scatter(ours[mask], reference[mask], s=24, alpha=.7,
+                       color=color, label=f"{name} (n={mask.sum()})")
+    for threshold in (.50, .70):
+        ax.axvline(threshold, linewidth=.8, linestyle=":", color="0.55")
+        ax.axhline(threshold, linewidth=.8, linestyle=":", color="0.55")
+    ax.set(xlim=(-.02, 1.02), ylim=(-.02, 1.02),
+           xlabel="Our camera-space 3D IoU", ylabel="Pinned KITTI evaluator 3D IoU",
+           title=f"KITTI train 000149 | {len(ours)} sampled anchors | {status}")
+    ax.text(.03, .97, f"Maximum absolute difference: {max_error:.6g}",
+            ha="left", va="top", transform=ax.transAxes,
+            bbox={"facecolor": "white", "edgecolor": "0.8", "alpha": .9})
+    ax.legend(loc="lower right", fontsize=8)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(path, dpi=180)
+    plt.close(fig)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", required=True, help="KITTI training directory containing calib/ and label_2/")
@@ -88,6 +121,7 @@ def main():
     parser.add_argument("--audit", default="results/clocs_real_frame_000149_audit.json")
     parser.add_argument("--mmdet3d-root", default="/content/mmdetection3d")
     parser.add_argument("--output", default="results/clocs_000149_iou_reference_audit.json")
+    parser.add_argument("--figure", default="results/clocs_000149_iou_parity.png")
     parser.add_argument("--per-group", type=int, default=64)
     args = parser.parse_args()
 
@@ -170,7 +204,10 @@ def main():
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    save_parity_figure(Path(args.figure), ours[indices], reference,
+                       report["status"], report["max_absolute_iou_error"])
     print(json.dumps(report, indent=2, sort_keys=True))
+    print(f"Saved parity figure: {args.figure}")
     if report["status"] != "PASS":
         raise SystemExit("Reference parity FAILED; inspect the saved discrepancies before training")
 
