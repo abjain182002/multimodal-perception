@@ -1,0 +1,317 @@
+{
+  "frames": [
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "000000",
+      "input_files": {
+        "calib": "calib/000000.txt",
+        "image_2": "image_2/000000.png",
+        "label_2": "label_2/000000.txt",
+        "velodyne": "velodyne/000000.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+        "label_2": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+        "velodyne": "0e09c85e3f6078ecbdd1e706ee9624519f1bd29417437167a9ed7fbe6f54b4b1"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 10,
+      "car_gt_before_range_filter": 10,
+      "frame_id": "000149",
+      "input_files": {
+        "calib": "calib/000149.txt",
+        "image_2": "image_2/000149.png",
+        "label_2": "label_2/000149.txt",
+        "velodyne": "velodyne/000149.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "95c15bc2b801095d2d167bd89d30017e01b5bce84f7b606204dba48610f5426e",
+        "label_2": "ba68b49f061d333b96930abccc7f3d701d291914a99f4a75d39f1b36276dd1cc",
+        "velodyne": "847547b4e26625ae6dca47b6d871ec5161d0301f80b3fae650243ce9282827d8"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001970",
+      "input_files": {
+        "calib": "calib/001970.txt",
+        "image_2": "image_2/001970.png",
+        "label_2": "label_2/001970.txt",
+        "velodyne": "velodyne/001970.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "953ffe304d1924f9c75d1dbc9d0b4a7a45201d1a4785ce98fe872c218fc2aa5d",
+        "label_2": "9559b7a54716159b30337744acd39d5d461f6e361122907076cad17021519c40",
+        "velodyne": "26f0b89674563155f6ed975116f2aa2736e322db902a8a759be7d1a62ea832e9"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "000972",
+      "input_files": {
+        "calib": "calib/000972.txt",
+        "image_2": "image_2/000972.png",
+        "label_2": "label_2/000972.txt",
+        "velodyne": "velodyne/000972.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "56c8d5ea43d43b5d8d92daa47f789ce200bce6b0602b6e8447d4fb32965ff2d8",
+        "label_2": "9361f0d74b08e215c8890ca5a86d73840409f2469023feb2f829205840b1e667",
+        "velodyne": "1b7aa0c55084fee04899296860446662461de250ad1af3f578887010818b6fad"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "001020",
+      "input_files": {
+        "calib": "calib/001020.txt",
+        "image_2": "image_2/001020.png",
+        "label_2": "label_2/001020.txt",
+        "velodyne": "velodyne/001020.bin"
+      },
+      "input_sha256": {
+        "calib": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab",
+        "image_2": "25e35d0e69f356f307273f66d5d5414718daa3c91bf2ebfc1144be43aac58d75",
+        "label_2": "170c9a716bb6098e570b042e372d706ce94f94bb149fdad20c0b67c605840d6b",
+        "velodyne": "bff9fe66c96e8de11e945c10e2b831ae814d6f3696c9eb80ae12d22fea1ff7c1"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 10,
+      "car_gt_before_range_filter": 10,
+      "frame_id": "004842",
+      "input_files": {
+        "calib": "calib/004842.txt",
+        "image_2": "image_2/004842.png",
+        "label_2": "label_2/004842.txt",
+        "velodyne": "velodyne/004842.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "c4449c4166231926830cd9fa7cbab0ad05fdf20cb404fd615146bb66aabe57df",
+        "label_2": "b287ebd17a8e4181fa8c5223c76d1b7e74a38b01de53cdf618dfd72e3f46aa8e",
+        "velodyne": "3379b0cfc95c3bc40bc249f180c4bc4917e297f4623c23e616d82becb13a297d"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002485",
+      "input_files": {
+        "calib": "calib/002485.txt",
+        "image_2": "image_2/002485.png",
+        "label_2": "label_2/002485.txt",
+        "velodyne": "velodyne/002485.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "ad0a5ab1371884f1800d4f283aff93084b25e93eba0d307b3ef1f0c0c7dce54f",
+        "label_2": "ca7b462034f39c7ab5a2f6c5996ce7fbd792df7c9f1044a0a96b7184cb51e45d",
+        "velodyne": "00f0687645f564642230e1caf1469da467fc2161e0ea6b168411bdbd929f303a"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "002610",
+      "input_files": {
+        "calib": "calib/002610.txt",
+        "image_2": "image_2/002610.png",
+        "label_2": "label_2/002610.txt",
+        "velodyne": "velodyne/002610.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "4af251f7a0c5fc8f8ac98c673925c06906e1ebc95eb8a125ba461c3fa5343d35",
+        "label_2": "ad81f72385f730e939f1cdfa1726a68d42a08972a3c72d292741e5a4b6a742b0",
+        "velodyne": "f4edbf47c98b33c7be1c294435384e4910bc489ecd29fd27bbc9c01e46bc84ed"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "006788",
+      "input_files": {
+        "calib": "calib/006788.txt",
+        "image_2": "image_2/006788.png",
+        "label_2": "label_2/006788.txt",
+        "velodyne": "velodyne/006788.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "3b9fbcd53e36cfb72d7d21f1a3e2ca6785f45e2e1ba235fae66a63c7379784fd",
+        "label_2": "80fe200394e253e83eacf5aa9936ebc983e815263a3a9db1565e8705504fedae",
+        "velodyne": "144fc46af49d22454fe351a2410ca6e88e25d5550eed4fd3cb4d5c8066991812"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 12,
+      "car_gt_before_range_filter": 12,
+      "frame_id": "002106",
+      "input_files": {
+        "calib": "calib/002106.txt",
+        "image_2": "image_2/002106.png",
+        "label_2": "label_2/002106.txt",
+        "velodyne": "velodyne/002106.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "2a35afa0836d21680703abfdbabb632a15d3f6ed27ab9c1e88d08fec927b5e9d",
+        "label_2": "7dbe1475e93da010f5c7affb228120073d15a52f0b550cc2f468316f03caceba",
+        "velodyne": "df8f9f47dc1cf5d75151560cad24866e974c8d12982a16d6069794fa71d8066b"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "006830",
+      "input_files": {
+        "calib": "calib/006830.txt",
+        "image_2": "image_2/006830.png",
+        "label_2": "label_2/006830.txt",
+        "velodyne": "velodyne/006830.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "f861958bc10b4481623ef89cb34d3439fb49741a12f5717211fc78b1a8877778",
+        "label_2": "9f19f2be548d88b2c9530c3f06eddbec7ad3d804a8c32281013e4118c0943d51",
+        "velodyne": "91bfc3ee600429c58f1f0accf991e1dd228b757e3f92f4b118ae0a9d7cd7cef2"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "003079",
+      "input_files": {
+        "calib": "calib/003079.txt",
+        "image_2": "image_2/003079.png",
+        "label_2": "label_2/003079.txt",
+        "velodyne": "velodyne/003079.bin"
+      },
+      "input_sha256": {
+        "calib": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab",
+        "image_2": "b586ce94936afd0fe5382f6a6fe49e08accebfc7e0d38216461bdc42c14e49d6",
+        "label_2": "f9a17d79bafbf0ddc585aeb00c64f4c67265237dee8d6b9d61fb5a3b78d2e82a",
+        "velodyne": "adadbb34487d5a9fe6327840483f01b4f5238c783e7a657c2da28bf33ef65e11"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 6,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "006707",
+      "input_files": {
+        "calib": "calib/006707.txt",
+        "image_2": "image_2/006707.png",
+        "label_2": "label_2/006707.txt",
+        "velodyne": "velodyne/006707.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "f574faca735b8807a997fc4d7fe4f26ad41204d6a91afe1d8f5732bc847a8829",
+        "label_2": "93043e6127e11cb3e4dd5ce6775b7a5f0bd3cb09c4ce0d4b897cd953404d1031",
+        "velodyne": "c021f4eee7e2fe7b60b8773f12cf6aa473c352a136fcbbfb5eccc4a4a8b415dd"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 14,
+      "car_gt_before_range_filter": 14,
+      "frame_id": "004838",
+      "input_files": {
+        "calib": "calib/004838.txt",
+        "image_2": "image_2/004838.png",
+        "label_2": "label_2/004838.txt",
+        "velodyne": "velodyne/004838.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "9e80b9a4fe40a9d472390781d88ff04b421a76dc8a40545426dc072ea3a2a0ea",
+        "label_2": "dfcf128e0a2269d5d5c811f7da9e6a095cdfc118c3d84ec4fed003756b5e23b9",
+        "velodyne": "eaabcfbe5fc18dd6183b8f917031c3b5f1abc823f519f6cc052f78ba1e111f68"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002496",
+      "input_files": {
+        "calib": "calib/002496.txt",
+        "image_2": "image_2/002496.png",
+        "label_2": "label_2/002496.txt",
+        "velodyne": "velodyne/002496.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "50e2da2b2587fb6953cbf30098088ee166ac8e2cb568d01a268c29aaed807760",
+        "label_2": "62b0214ca56475a05555b4278adb2cf4995d8c8d515bdb04af0149aa0e4c195f",
+        "velodyne": "e939082e0c795f7fed48d1907e636bd7a2fcb3e4a07b168b1a3c671a2ee40a0b"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "003013",
+      "input_files": {
+        "calib": "calib/003013.txt",
+        "image_2": "image_2/003013.png",
+        "label_2": "label_2/003013.txt",
+        "velodyne": "velodyne/003013.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "7c74e1820416d30320aca2ed23aca593340c3dfd2671822442b2b2861ecc6a8d",
+        "label_2": "a0b75192a96b1ed5a964c93b7a4c6cf007e9f3720b406617d26e9785cc17e8d0",
+        "velodyne": "d1e6153b891a84a6f4e8ffc7a71a3470de5a206d4fe9ae9cf4d4ac1548316e36"
+      },
+      "stratum": "one_two"
+    }
+  ],
+  "included_frames": [
+    "000000",
+    "000149"
+  ],
+  "interpretation": "Train-only input/export pilot with deliberate GT-count balancing; not a representative corpus, a fusion result, or KITTI AP.",
+  "mmdetection3d_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "pointpillars_checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+  "pointpillars_config": "configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-car.py",
+  "requested_size": 16,
+  "sampling": "pilot: seeded SHA-256 ordering and round-robin GT-count strata",
+  "sampling_seed": 20260926,
+  "schema_version": "clocs_train_export_batch_v1",
+  "selected_ids_sha256": "17b02589a45ec5046829854fe6c533236596a10dd9ede3c6205f2cb0df38d263",
+  "split": "train",
+  "split_manifest_sha256": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066",
+  "status": "INPUTS_VERIFIED_EXPORT_PENDING",
+  "train_frames_scanned": 3712,
+  "train_pool_by_stratum": {
+    "one_two": 1208,
+    "seven_plus": 703,
+    "three_six": 1328,
+    "zero": 473
+  },
+  "train_split_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+  "validation_split_sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+}
