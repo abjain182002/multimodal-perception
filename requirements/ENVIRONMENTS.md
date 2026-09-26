@@ -27,6 +27,14 @@ YOLO device on Mac: MPS
 
 The model weight file itself is intentionally excluded from Git.
 
+For the independent CPU check of CLOCs camera 3D IoU on Mac, `azitt310` needs the additional dependency in `requirements/macos-clocs-geometry.txt`. Install it using the active Python environment:
+
+```bash
+python -m pip install --only-binary=:all: -r requirements/macos-clocs-geometry.txt
+```
+
+This requirement pins the intended version for the geometry check; confirm and record the versions actually installed and the audit result after running it. The separate pinned CUDA evaluator comparison remains unresolved.
+
 ### `falcon310`
 
 Primary use:
