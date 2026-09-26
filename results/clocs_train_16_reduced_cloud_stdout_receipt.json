@@ -1,0 +1,111 @@
+{
+  "schema_version": "clocs_train_16_reduced_cloud_stdout_receipt_v1",
+  "status": "REPORTED_PASS",
+  "source": "Colab stdout supplied by project owner, 2026-09-26",
+  "interpretation": "Training-only data preparation; no fusion training or validation AP measured.",
+  "batch_manifest_sha256": "71f4f933c9a2b1228b598ce604e9016f3ea295437845a94ec182bd0407eaf054",
+  "drive_audit_path": "/content/drive/MyDrive/Major Project/cloud transfer/clocs_stage5_checkpoints/clocs_train_16_reduced_cloud_audit.json",
+  "drive_audit_file_hash_verified_here": false,
+  "known_controls_passed": 2,
+  "num_frames": 16,
+  "raw_points_total": 1871658,
+  "reduced_points_total": 303611,
+  "frames": [
+    {
+      "frame_id": "000149",
+      "raw_points": 119984,
+      "reduced_points": 19722,
+      "reduced_sha256": "5d99494bdbcf1c379438beec2c466c8cd3e8da0714652625a821d394d464d80b"
+    },
+    {
+      "frame_id": "000000",
+      "raw_points": 115384,
+      "reduced_points": 20285,
+      "reduced_sha256": "26d9ca482b2bc36c731094965166598b11095e03961c486cbf49cd78486fb34a"
+    },
+    {
+      "frame_id": "001970",
+      "raw_points": 115050,
+      "reduced_points": 20230,
+      "reduced_sha256": "268d0315f29708f096c5bacf0c384794f8abc5b3ada45287226a93d8c0e247f1"
+    },
+    {
+      "frame_id": "000972",
+      "raw_points": 120240,
+      "reduced_points": 18224,
+      "reduced_sha256": "0f8f61db5516e076e04601682652bc118c4e0fbe5aed55beb66fff9f7ab96f3b"
+    },
+    {
+      "frame_id": "001020",
+      "raw_points": 122470,
+      "reduced_points": 17705,
+      "reduced_sha256": "085fa73e6c9ea30af8d6c50ec1f87b81be6416be5fcfdc4826af85b4c62090fc"
+    },
+    {
+      "frame_id": "004842",
+      "raw_points": 106821,
+      "reduced_points": 17702,
+      "reduced_sha256": "2a8b22b2e3b66e50eb916c9f706affd179aa99679406c3be34fe5bd177c019e4"
+    },
+    {
+      "frame_id": "002485",
+      "raw_points": 115019,
+      "reduced_points": 20221,
+      "reduced_sha256": "a58d3239fbb7d6e24224628a3e04c9218d7f403132ab357917597dc0483cac6b"
+    },
+    {
+      "frame_id": "002610",
+      "raw_points": 118270,
+      "reduced_points": 19882,
+      "reduced_sha256": "eee07d7ab8a53d942f7bbf3f2c6f8e64bdfd3c1ab9504d048512b2618816db4f"
+    },
+    {
+      "frame_id": "006788",
+      "raw_points": 114648,
+      "reduced_points": 18251,
+      "reduced_sha256": "7ea142af87a41d4713fd0210951851961ea1983aa00c1af2ae582b63c96dcfde"
+    },
+    {
+      "frame_id": "002106",
+      "raw_points": 102812,
+      "reduced_points": 15594,
+      "reduced_sha256": "dcc3f2b4d1af57c6eb218decaa70c554e87137e7e4a577789a55fc99c5686516"
+    },
+    {
+      "frame_id": "006830",
+      "raw_points": 114263,
+      "reduced_points": 20178,
+      "reduced_sha256": "b8a5510bfec68f71d71efe7f59bf003c972014ff8a7cd2bc79aea85d72ca88e2"
+    },
+    {
+      "frame_id": "003079",
+      "raw_points": 124824,
+      "reduced_points": 19844,
+      "reduced_sha256": "91e00c66e9405a77165f099781f4efb97d0d8884ba5a6287c16d7388b8234896"
+    },
+    {
+      "frame_id": "006707",
+      "raw_points": 120603,
+      "reduced_points": 20222,
+      "reduced_sha256": "ab9a8d6d844dc6ee88e73929015efa860b43c2b4d991ce8689d7b7c8471b2078"
+    },
+    {
+      "frame_id": "004838",
+      "raw_points": 119053,
+      "reduced_points": 18195,
+      "reduced_sha256": "d00d4167ef6d915490a29ed471d9057475839b1616a07dcee231ccdc1a56d841"
+    },
+    {
+      "frame_id": "002496",
+      "raw_points": 122951,
+      "reduced_points": 19873,
+      "reduced_sha256": "224e39fd5ec2fd4d49200c1c12ef8bbbf05db91f0f1637330ad13685f7050d1c"
+    },
+    {
+      "frame_id": "003013",
+      "raw_points": 119266,
+      "reduced_points": 17483,
+      "reduced_sha256": "44baf5063d190ab8e8933ae77e90b12ebda2723bee3e161be80b0c64eee66bbd"
+    }
+  ]
+}
