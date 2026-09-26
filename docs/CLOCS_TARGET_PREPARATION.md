@@ -40,3 +40,21 @@ python -m scripts.build_clocs_yolo_train_frame \
 The Mac step checks frame and archive provenance, recomputes all 2D/3D feature rows, computes camera-coordinate rotated **3D IoU**, applies positive `>=0.70`, negative `<=0.50` and ignored thresholds, and reloads the saved example with its content hash verified. Inspect real Car GT and positive/negative/ignored counts. Frames with no retained Car GT can legitimately be all-negative; one frame is only an integrity gate, **not** a trained model or KITTI AP result.
 
 Commit the inspected small audit JSON to GitHub as a separate experimental milestone. Keep KITTI data, NPZ files and model weights in durable external project storage; record their SHA-256 hashes in the audit. Before any actual fusion training, compare sampled IoUs against the pinned SECOND/CLOCs evaluator and confirm a real positive signal on multiple train frames. Validation stays frozen until the final evaluation.
+
+## Progress and next geometry gate (26 September)
+
+Train frame `000000` is a valid all-negative control; `results/clocs_real_frame_000000_audit.json` records zero Car GT and zero YOLO Car detections. The independent train frame `000149` has 10 retained Car GT, 9 YOLO Car detections, 179 positive/106,798 negative/159 ignored candidates, and a maximum computed 3D IoU of 0.929133. See its candidate export manifest and `results/clocs_real_frame_000149_audit.json`. These are real examples, not a trained CLOCs model.
+
+Before expanding the training corpus, run the independent **pinned MMDetection3D KITTI evaluator** on the `000149` candidate export in the already prepared CUDA environment. The standalone script checks input hashes, re-derives full-frame target counts from original KITTI labels, then compares representative positive, ignored, overlapping-negative and zero-IoU candidates with the reference GPU `d3_box_overlap` implementation. The pinned KITTI evaluator uses the same camera-coordinate 3D overlap formulation as the SECOND/CLOCs evaluator; record it explicitly as the MMDetection3D comparison, not as a CLOCs run.
+
+```bash
+cd "$PROJECT_ROOT"
+"/content/pointpillars310/bin/python" -m scripts.audit_clocs_iou_reference \
+  --dataset "$KITTI_TRAINING" \
+  --candidates "/content/drive/MyDrive/Major Project/cloud transfer/clocs_stage5_checkpoints/000149_dense_candidates.npz" \
+  --mmdet3d-root /content/mmdetection3d \
+  --audit results/clocs_real_frame_000149_audit.json \
+  --output results/clocs_000149_iou_reference_audit.json
+```
+
+Set `PROJECT_ROOT` to the checkout containing this script and `KITTI_TRAINING` to the restored directory containing `000149.txt` in both `label_2/` and `calib/`. A `PASS` report with numerical differences, reference source SHA and candidate provenance is the exit criterion. The report is written even if the comparison fails; investigate failures before training. Review and commit only the small report once it has been run and checked. A single positive frame still does not meet the later multi-frame training-corpus gate.
