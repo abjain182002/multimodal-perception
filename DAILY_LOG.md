@@ -193,3 +193,10 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Set daily Phase 1 targets through 10 October in `docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md`. Each date has an evidence gate and a GitHub checkpoint or documented blocker. Dissertation chapter drafting starts after 10 October; a continuing GPU outage is escalated rather than recorded as finished work.
 
 - User reaffirmed the locked 29 August scope. Updated `docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md` to track the Azitt fusion baseline, OpenPCDet/PV-RCNN++, MultiCorrupt, Glasgow demo and NVIDIA optimisation (stretch only) explicitly, while preserving all already verified work. Added inventory and provenance rules for existing and future result figures.
+
+## 2026-09-26 — Real CLOCs train frame with positive targets
+
+- Pinned PointPillars GPU export and Mac SHA-256 verification produced 107,136 dense candidates for canonical SECOND train frame `000149`, using the official reduced cloud (`119,984` raw points to `19,722` reduced; candidate SHA-256 `3943f256e48e1d9b072cf01f8a9165c3cff9f612b94125bd1986cf21668b1b99`). The export manifest records checkpoint, config, split and provenance.
+- On Mac, frozen YOLOv8x produced 9 Car detections. After the detector range filter, KITTI labels retained 10 Car GT. The regenerated CLOCs features have 158,838 rows; the 3D IoU audit has 5,137 nonzero candidate overlaps, maximum 0.9291334748, and 179 positive / 106,798 negative / 159 ignored candidates (sum 107,136). Saved `results/clocs_real_frame_000149_audit.json`.
+- `000000` is a legitimate train-frame negative control: zero retained Car GT and zero YOLO Car detections, with 107,136 negatives. Its audit is already preserved in `results/clocs_real_frame_000000_audit.json`.
+- Both frames are single-frame pipeline integrity evidence; no fusion model has yet been trained or evaluated for KITTI AP. The large `.npz` examples remain outside Git on Mac, with the 3D candidate export backed up to Drive. Next daily gate is the planned multi-frame training preparation.
