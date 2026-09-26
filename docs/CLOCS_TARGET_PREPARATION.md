@@ -1,59 +1,42 @@
-# CLOCs target preparation: frozen KITTI Car protocol
+# One real CLOCs training frame: KITTI Car
 
-## Verified prerequisites
+## Frozen inputs and interpretation
 
-- Frozen SECOND split: `configs/splits/kitti_second_split.json` and the original CLOCs `train.txt` / `val.txt`; 3,712 / 3,769 frames and zero overlap.
-- Complete GT audit: `results/kitti_clocs_gt_audit.json`; 28,374 range-filtered Car boxes over 7,481 frames.
-- Dense candidate arrays must originate from the *same* frozen PointPillars extraction as their corresponding 2D features. The saved structural smoke output has no real 3D candidate boxes and is unsuitable for training.
+- Use the original SECOND `train.txt` and `val.txt` with `configs/splits/kitti_second_split.json`: 3,712/3,769 nonoverlapping frames. Frame `000000` is in **train**; the prior `000001` structural example is in **validation** and cannot be used to develop the fusion model.
+- `results/pointpillars_evidence_manifest.json` pins the PointPillars checkpoint and config. The existing `000001` structural NPZ lacks real 3D candidate boxes; its all-negative labels are **not** training targets.
+- The complete GT audit is `results/kitti_clocs_gt_audit.json`: 28,374 range-filtered Car boxes over all 7,481 labelled frames.
 
-## GPU export contract (one KITTI frame)
+## Colab: one dense PointPillars export
 
-Run dense PointPillars extraction on the available CUDA runtime. Save these arrays **in the original pre-NMS order** from `extract_dense_pointpillars_candidates`:
-
-```python
-import numpy as np
-
-from fusion.clocs import build_clocs_feature_rows
-
-frame_id = "000001"  # example; use the actual six-digit KITTI frame ID
-# candidates = extract_dense_pointpillars_candidates(model, pointcloud_path,
-#     calibration_path, image_width, image_height)
-# boxes_2d and scores_2d are detections from that same frame.
-required = ("boxes_camera", "boxes_lidar", "scores_3d", "distance_82",
-            "candidate_index", "projected_boxes")
-assert all(key in candidates for key in required)
-np.savez_compressed(
-    "000001_dense_candidates.npz", frame_id=frame_id,
-    **{key: candidates[key] for key in required},
-)
-rows = build_clocs_feature_rows(
-    candidates["projected_boxes"], candidates["scores_3d"],
-    boxes_2d, scores_2d, candidates["distance_82"],
-)
-np.savez_compressed(
-    "000001_clocs_rows.npz", frame_id=frame_id,
-    boxes_2d=boxes_2d, scores_2d=scores_2d,
-    features=rows["features"], candidate_index=rows["candidate_index"],
-    detector_2d_index=rows["detector_2d_index"], row_type=rows["row_type"],
-)
-```
-
-Use frame-specific names instead of the example literals for subsequent frames. Keep dataset files, large candidate archives, checkpoints, and 2D/3D weights outside Git; record detector/checkpoint hashes, extraction settings, split hash and both NPZ hashes in the experiment manifest.
-
-## CPU conversion on the Mac
+From this repository's root on a CUDA runtime, set the four paths for the mounted KITTI data, pinned MMDetection3D checkout, pinned checkpoint and original CLOCs split directory. Store the large output somewhere durable **outside Git**; transfer the file to the Mac without changing its bytes.
 
 ```bash
-cd ~/Major_Project/multimodal-perception
-python -m scripts.build_clocs_training_example \
-  --dataset "$HOME/Major_Project/datasets/KITTI/training" \
-  --frame-id 000001 \
-  --candidates "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000001_dense_candidates.npz" \
-  --features "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000001_clocs_rows.npz" \
-  --train "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/train.txt" \
-  --val "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/val.txt" \
-  --output "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000001_real_targets.npz"
+python -m scripts.export_clocs_dense_train_frame \
+  --dataset "$KITTI_TRAINING" --frame-id 000000 \
+  --config "$MMDET_ROOT/configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-car.py" \
+  --checkpoint "$POINTPILLARS_CKPT" \
+  --train "$SECOND_SPLITS/train.txt" --val "$SECOND_SPLITS/val.txt" \
+  --output "$EXTERNAL_OUTPUT/000000_dense_candidates.npz"
 ```
 
-The command checks split identity and frame IDs, dense candidate ordering, feature-score and feature-distance alignment, and **rebuilds all feature rows** from the saved projected boxes and original 2D detections. It checks the candidate and 2D indices, row types, IoUs, and scores before GT range filtering and computing camera-coordinate rotated **3D** IoU: positive `>=0.70`, negative `<=0.50`, and ignored in between. It verifies the saved example's SHA-256. Frames without retained Car GT legitimately have all-negative candidates. An isolated all-negative frame is not proof of a dataset-level training signal.
+The export rejects mismatched splits/checkpoints/config names and unavailable CUDA. Its NPZ retains the original pre-NMS candidate order, camera and LiDAR boxes, 2D projections, scores, directions, distances and input provenance hashes. Record its printed SHA-256 when transferring it.
 
-Before training, cross-check sampled frame IoUs against the pinned SECOND/CLOCs evaluation kernel, inspect positive/negative/ignored counts across multiple train frames, verify example hashes and frame membership, then freeze validation evaluation settings. The CPU reference implementation and synthetic tests are preparation, not an AP result.
+## Mac: real YOLOv8x associations and 3D IoU targets
+
+Set `YOLO_WEIGHTS` to the locally frozen `yolov8x.pt`. Copy the Colab NPZ to the `--candidates` location below and run this from the repository root in `azitt310`:
+
+```bash
+python -m scripts.build_clocs_yolo_train_frame \
+  --dataset "$HOME/Major_Project/datasets/KITTI/training" --frame-id 000000 \
+  --candidates "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000000_dense_candidates.npz" \
+  --yolo-weights "$YOLO_WEIGHTS" --device mps \
+  --train "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/train.txt" \
+  --val "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/val.txt" \
+  --rows "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000000_clocs_rows.npz" \
+  --output "$HOME/Major_Project/model_outputs/clocs_stage5_checkpoints/000000_real_targets.npz" \
+  --audit results/clocs_real_frame_000000_audit.json
+```
+
+The Mac step checks frame and archive provenance, recomputes all 2D/3D feature rows, computes camera-coordinate rotated **3D IoU**, applies positive `>=0.70`, negative `<=0.50` and ignored thresholds, and reloads the saved example with its content hash verified. Inspect real Car GT and positive/negative/ignored counts. Frames with no retained Car GT can legitimately be all-negative; one frame is only an integrity gate, **not** a trained model or KITTI AP result.
+
+Commit the inspected small audit JSON to GitHub as a separate experimental milestone. Keep KITTI data, NPZ files and model weights in durable external project storage; record their SHA-256 hashes in the audit. Before any actual fusion training, compare sampled IoUs against the pinned SECOND/CLOCs evaluator and confirm a real positive signal on multiple train frames. Validation stays frozen until the final evaluation.
