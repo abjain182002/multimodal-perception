@@ -1,0 +1,94 @@
+{
+  "absolute_tolerance": 0.0005,
+  "frame_id": "000149",
+  "full_frame_counts_verified": true,
+  "interpretation": "Single real training-frame geometry check; not KITTI AP or trained fusion accuracy.",
+  "label_disagreements": 0,
+  "max_absolute_iou_error": 2.968672907499581e-08,
+  "mean_absolute_iou_error": 8.23962436324451e-09,
+  "num_candidates": 107136,
+  "num_car_gt": 10,
+  "out_of_tolerance": 0,
+  "pinned_gpu_evaluator_status": "NOT RUN: pinned CUDA reference crashed natively (-11)",
+  "reference": "Independent SciPy/Qhull 2D halfspace area plus camera y overlap",
+  "sample_indices_sha256": "6adf8708d4882d49b7165cb388398dcc333341029b20f3b902d2aba095e8f0b9",
+  "sample_size": 258,
+  "sample_strata": {
+    "ignored": 65,
+    "overlapping_negative": 64,
+    "positive": 65,
+    "zero_iou": 64
+  },
+  "schema_version": "clocs_scipy_geometry_parity_v1",
+  "scipy_version": "1.14.1",
+  "source_sha256": {
+    "calibration": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+    "dense_candidates": "3943f256e48e1d9b072cf01f8a9165c3cff9f612b94125bd1986cf21668b1b99",
+    "label": "ba68b49f061d333b96930abccc7f3d701d291914a99f4a75d39f1b36276dd1cc",
+    "saved_audit": "82fcffd648b97ab0db5c75614ae4f503cbd90d811f6601d5b3c5edecac9d2f32"
+  },
+  "split": "train",
+  "status": "PASS",
+  "worst_pairs": [
+    {
+      "absolute_error": 2.968672907499581e-08,
+      "candidate_index": 58072,
+      "our_iou": 0.8898319602012634,
+      "reference_iou": 0.8898319305145344
+    },
+    {
+      "absolute_error": 2.961766076836625e-08,
+      "candidate_index": 70717,
+      "our_iou": 0.8306207656860352,
+      "reference_iou": 0.8306207360683744
+    },
+    {
+      "absolute_error": 2.9296875481144014e-08,
+      "candidate_index": 54318,
+      "our_iou": 0.8633811473846436,
+      "reference_iou": 0.8633811180877681
+    },
+    {
+      "absolute_error": 2.9136920542960354e-08,
+      "candidate_index": 49340,
+      "our_iou": 0.8522189259529114,
+      "reference_iou": 0.8522188968159908
+    },
+    {
+      "absolute_error": 2.9045723715093175e-08,
+      "candidate_index": 49372,
+      "our_iou": 0.5361274480819702,
+      "reference_iou": 0.5361274190362465
+    },
+    {
+      "absolute_error": 2.8522009198894693e-08,
+      "candidate_index": 50726,
+      "our_iou": 0.5694619417190552,
+      "reference_iou": 0.569461913197046
+    },
+    {
+      "absolute_error": 2.8477053382047757e-08,
+      "candidate_index": 53464,
+      "our_iou": 0.5139907598495483,
+      "reference_iou": 0.513990731372495
+    },
+    {
+      "absolute_error": 2.8347449498866695e-08,
+      "candidate_index": 68989,
+      "our_iou": 0.6529198884963989,
+      "reference_iou": 0.6529199168438484
+    },
+    {
+      "absolute_error": 2.8167944976509318e-08,
+      "candidate_index": 48994,
+      "our_iou": 0.5176185369491577,
+      "reference_iou": 0.5176185087812127
+    },
+    {
+      "absolute_error": 2.8131106000195416e-08,
+      "candidate_index": 49344,
+      "our_iou": 0.8522467017173767,
+      "reference_iou": 0.8522467298484827
+    }
+  ]
+}
