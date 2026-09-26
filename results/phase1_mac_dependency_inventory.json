@@ -1,0 +1,121 @@
+{
+  "evidence_type": "path_and_revision_inventory_only",
+  "external_repositories": {
+    "Azitt": {
+      "actual_commit": "b59b49d2e915cd3b4a3b816b9c228e811601e241",
+      "commit_matches": true,
+      "directory_present": true,
+      "expected_commit": "b59b49d2e915cd3b4a3b816b9c228e811601e241",
+      "relative_path": "external/Lidar-CameraFusion-3DobjectDetection"
+    },
+    "BEVFusion": {
+      "actual_commit": "fb4384ca05cae05be548dd96a0f940da70263cdb",
+      "commit_matches": true,
+      "directory_present": true,
+      "expected_commit": "fb4384ca05cae05be548dd96a0f940da70263cdb",
+      "relative_path": "external/BEVFusion"
+    },
+    "MultiCorrupt": {
+      "actual_commit": "39652e35d10dd7c2aed0b71df8c8c7effe9e6349",
+      "commit_matches": true,
+      "directory_present": true,
+      "expected_commit": "39652e3",
+      "relative_path": "external/MultiCorrupt"
+    },
+    "OpenPCDet": {
+      "actual_commit": "233f849829b6ac19afb8af8837a0246890908755",
+      "commit_matches": true,
+      "directory_present": true,
+      "expected_commit": "233f849829b6ac19afb8af8837a0246890908755",
+      "relative_path": "external/OpenPCDet"
+    },
+    "mmdetection3d": {
+      "actual_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "commit_matches": true,
+      "directory_present": true,
+      "expected_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "relative_path": "external/mmdetection3d"
+    }
+  },
+  "limitations": [
+    "Path/revision presence does not prove model or checkpoint inference.",
+    "nuScenes metadata presence alone does not prove complete sensor files or annotations.",
+    "The Azitt entrypoint's CUDA model and PV-RCNN++ weights must be checked separately."
+  ],
+  "nuscenes_candidates": {
+    "datasets/nuScenes": {
+      "directory_present": false,
+      "mini_metadata_present": false,
+      "trainval_metadata_present": false
+    },
+    "datasets/nuscenes": {
+      "directory_present": false,
+      "mini_metadata_present": false,
+      "trainval_metadata_present": false
+    },
+    "external/BEVFusion/data/nuscenes": {
+      "directory_present": false,
+      "mini_metadata_present": false,
+      "trainval_metadata_present": false
+    }
+  },
+  "pilot_input_members": 64,
+  "pilot_uncompressed_input_bytes": 43313442,
+  "project_disk_free_bytes": 72099409920,
+  "project_root_name": "Major_Project",
+  "required_paths": {
+    "azitt_entrypoint": {
+      "present": true,
+      "relative_path": "external/Lidar-CameraFusion-3DobjectDetection/main.py"
+    },
+    "azitt_expected_weights": {
+      "present": false,
+      "relative_path": "external/Lidar-CameraFusion-3DobjectDetection/lidar-camera-models/pv_rcnn_8369.pth"
+    },
+    "azitt_predictor": {
+      "present": true,
+      "relative_path": "external/Lidar-CameraFusion-3DobjectDetection/inference/predictor.py"
+    },
+    "azitt_pvrcnn_config": {
+      "present": true,
+      "relative_path": "external/Lidar-CameraFusion-3DobjectDetection/detection/pvrcnn_config.json"
+    },
+    "bevfusion_nuscenes_config": {
+      "present": true,
+      "relative_path": "external/BEVFusion/configs/bevfusion/bevf_pp_2x8_1x_nusc.py"
+    },
+    "kitti_train_calib_dir": {
+      "present": true,
+      "relative_path": "datasets/KITTI/training/calib"
+    },
+    "kitti_train_image_dir": {
+      "present": true,
+      "relative_path": "datasets/KITTI/training/image_2"
+    },
+    "kitti_train_label_dir": {
+      "present": true,
+      "relative_path": "datasets/KITTI/training/label_2"
+    },
+    "kitti_train_velodyne_dir": {
+      "present": true,
+      "relative_path": "datasets/KITTI/training/velodyne"
+    },
+    "mmdet_pointpillars_config": {
+      "present": true,
+      "relative_path": "external/mmdetection3d/configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-car.py"
+    },
+    "openpcdet_kitti_pvrcnn_plus_config": {
+      "present": true,
+      "relative_path": "external/OpenPCDet/tools/cfgs/kitti_models/pv_rcnn_plusplus_reproduced_by_community.yaml"
+    },
+    "second_train_split": {
+      "present": true,
+      "relative_path": "external/CLOCs/second/data/ImageSets/train.txt"
+    },
+    "second_validation_split": {
+      "present": true,
+      "relative_path": "external/CLOCs/second/data/ImageSets/val.txt"
+    }
+  },
+  "schema_version": "phase1_mac_dependency_inventory_v1"
+}
