@@ -6,7 +6,7 @@
 
 ## Research path
 
-Establish separate camera-only, LiDAR-only and camera–LiDAR baselines on well-defined tasks. Train and evaluate learned CLOCs on KITTI using the **same 3D AP40 protocol** as the PointPillars baseline. Compare with the separately reproduced Azitt/PV-RCNN++ route and pursue PointPainting-style semantic fusion and BEVFusion; investigate nuScenes, degradation, ablations, runtime and a runnable software demo. Camera 2D results and matched-object depth error cannot be relabelled as 3D AP.
+Establish separate camera-only, LiDAR-only and camera–LiDAR baselines on well-defined tasks. After the verified PointPillars result, run **parallel advanced-fusion tracks**: train/evaluate CLOCs on KITTI under the same 3D AP40 protocol as PointPillars, and begin BEVFusion plus nuScenes data/config/calibration work now rather than waiting for CLOCs to finish. Reproduce the separate Azitt/PV-RCNN++ route and pursue PointPainting-style semantic fusion. Then test robotic-perception behaviour under range, occlusion, sensor degradation and calibration changes, measure runtime and deliver a runnable software demo. Camera 2D results and matched-object depth error cannot be relabelled as 3D AP.
 
 | Component | Status as of this record | Evidence / next gate |
 |---|---|---|
@@ -24,10 +24,10 @@ Establish separate camera-only, LiDAR-only and camera–LiDAR baselines on well-
 
 ## Critical path, with exit evidence
 
-1. **26–30 Sep: data and model gates.** Select/verify a larger train-only CLOCs batch, reuse the 16 validated examples, freeze an internal development partition *before* model selection, export real dense candidates, construct targets and verify candidate order/hashes. In parallel resolve Azitt weights and nuScenes/BEVFusion data availability; record immediate blockers.
-2. **1–3 Oct: measured learned fusion.** Train CLOCs with valid class-imbalance handling and a recorded checkpoint, use only train-side development for choices, then evaluate once with the frozen protocol on the held-out KITTI validation split. Compare the exact eligible frames and AP settings with PointPillars; report negative results if observed.
-3. **4–6 Oct: wider comparisons.** Run the separately pinned Azitt/PV-RCNN++ and planned semantic/BEV methods and the nuScenes experiment to the extent their verified resources allow; for each unrun part state the exact dependency rather than calling a substitute result complete.
-4. **7–10 Oct: synthesis and freeze.** Complete controlled robustness/ablations, standardized runtime and software demo; recompute key tables, review original figures and qualitative case-selection rules, freeze source/checkpoint/metric manifests and write a completed/partial/blocked ledger. Dissertation drafting starts after 10 October.
+1. **26–30 Sep: two parallel technical tracks.** For CLOCs, select/verify a larger train-only batch, reuse the 16 validated examples, freeze an internal development partition, export aligned candidates and construct targets. For BEVFusion/nuScenes, check dataset completeness, sensor/calibration and taxonomy mappings, pinned config, checkpoint and runtime prerequisites, then execute the first real input/inference gate as soon as resources exist. Audit the separate Azitt weights in parallel. Record each blocker immediately.
+2. **1–3 Oct: measured fusion and second-dataset setup.** Train CLOCs with documented class-imbalance handling and freeze its checkpoint; evaluate it on KITTI against the PointPillars protocol. In parallel continue a verified BEVFusion/nuScenes run path; distinguish configuration and smoke tests from measured dataset results.
+3. **4–6 Oct: wider comparisons.** Run Azitt/PV-RCNN++ and planned PointPainting-style and BEVFusion/nuScenes experiments on their defined protocols where eligible resources have been verified. Report any incomplete run and its actual dependency; no PointPillars or CLOCs result stands in for another method.
+4. **7–10 Oct: robotic-perception analysis and freeze.** Run controlled range, occlusion, corruption and calibration-sensitivity studies; complete ablations, standardized runtime and a software demo replaying real outputs. Recompute tables, review representative cases and figures, and freeze source/checkpoint/metric manifests plus a completed/partial/blocked ledger. Dissertation drafting starts after 10 October.
 
 ## What progress claims mean
 
