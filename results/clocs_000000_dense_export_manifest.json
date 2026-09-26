@@ -1,0 +1,31 @@
+{
+  "schema_version": "clocs_single_frame_dense_export_v1",
+  "date_ist": "2026-09-26",
+  "evidence_status": "Colab stdout supplied by user; Mac copy verification and real targets pending",
+  "frame_id": "000000",
+  "split": "train",
+  "pointcloud_input": {
+    "method": "Pinned MMDetection3D KITTI camera-frustum reduction applied to raw Velodyne points",
+    "raw_points": 115384,
+    "reduced_points": 20285,
+    "reduced_sha256": "26d9ca482b2bc36c731094965166598b11095e03961c486cbf49cd78486fb34a"
+  },
+  "model": {
+    "framework_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+    "python": "3.10.14",
+    "torch": "2.1.2+cu121",
+    "mmcv": "2.1.0",
+    "mmengine": "0.10.7",
+    "mmdet": "3.2.0",
+    "mmdet3d": "1.4.0",
+    "gpu": "Tesla T4",
+    "checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+    "config_sha256": "75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc"
+  },
+  "split_manifest_sha256": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066",
+  "num_candidates": 107136,
+  "feature_map_size": [248, 216],
+  "candidate_npz_sha256": "99076c37ebe03ed812ed422c5b57119ad5ba790ef9d537706084ef100de83d8a",
+  "external_storage": "/content/drive/MyDrive/Major Project/cloud transfer/clocs_stage5_checkpoints/000000_dense_candidates.npz",
+  "interpretation": "One frozen-split training frame dense export; no learned fusion or KITTI AP result."
+}
