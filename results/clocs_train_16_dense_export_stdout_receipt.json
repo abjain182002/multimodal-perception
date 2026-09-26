@@ -1,0 +1,98 @@
+{
+  "schema_version": "clocs_train_16_dense_export_stdout_receipt_v1",
+  "status": "REPORTED_PASS",
+  "source": "Colab audit summary output supplied by project owner, 2026-09-26",
+  "interpretation": "Training-only export pilot; no learned fusion accuracy or validation AP measured.",
+  "audit_path": "/content/drive/MyDrive/Major Project/cloud transfer/clocs_stage5_checkpoints/clocs_train_16_dense_export_audit.json",
+  "audit_sha256": "638f505933bbdb9e65d009a8844fefe0fa9ac968d3ddef59b00cf5b22331e671",
+  "audit_bytes_transferred_to_git": false,
+  "split": "train",
+  "batch_manifest_sha256": "71f4f933c9a2b1228b598ce604e9016f3ea295437845a94ec182bd0407eaf054",
+  "num_frames": 16,
+  "new_exports": 14,
+  "known_controls_reused": 2,
+  "num_candidates": 1714176,
+  "candidates_per_frame": 107136,
+  "frames": [
+    {
+      "frame_id": "000000",
+      "action": "REUSED",
+      "candidate_sha256": "99076c37ebe03ed812ed422c5b57119ad5ba790ef9d537706084ef100de83d8a"
+    },
+    {
+      "frame_id": "000149",
+      "action": "REUSED",
+      "candidate_sha256": "3943f256e48e1d9b072cf01f8a9165c3cff9f612b94125bd1986cf21668b1b99"
+    },
+    {
+      "frame_id": "001970",
+      "action": "EXPORTED",
+      "candidate_sha256": "74e8d7024b68a51b2267ac32c66bd673bc3950b6a590d071fd19212f7bc41540"
+    },
+    {
+      "frame_id": "000972",
+      "action": "EXPORTED",
+      "candidate_sha256": "f38fafb4ec8d25df4aa1eb94176e43c8cb28f6318cdc17c41d6967e669c8f77d"
+    },
+    {
+      "frame_id": "001020",
+      "action": "EXPORTED",
+      "candidate_sha256": "7ed65af972569d9bf5197ffdb57fee549b1fc310a6c4b24e859d6a94acd993a8"
+    },
+    {
+      "frame_id": "004842",
+      "action": "EXPORTED",
+      "candidate_sha256": "3895ba091810173a87531c3a9c922cf43d9bb8a2cdb8e5c9900ec07ff52c59a3"
+    },
+    {
+      "frame_id": "002485",
+      "action": "EXPORTED",
+      "candidate_sha256": "48d30bd2b5c4cfd221583a065d3319be043a79be725489f092feec9553d35040"
+    },
+    {
+      "frame_id": "002610",
+      "action": "EXPORTED",
+      "candidate_sha256": "eac33cec02d673b6c5c67a4ff1926482578ea20ad2b9328806ee5307aaaee6d0"
+    },
+    {
+      "frame_id": "006788",
+      "action": "EXPORTED",
+      "candidate_sha256": "de56a724bde5119f3131b1d29eed97f7bc89057b7cd17d44f1ef30c24271bc34"
+    },
+    {
+      "frame_id": "002106",
+      "action": "EXPORTED",
+      "candidate_sha256": "6894f4fe54e30705a8863a072a9b567cfb8e0a0f92a588ec277b1d02426b7da0"
+    },
+    {
+      "frame_id": "006830",
+      "action": "EXPORTED",
+      "candidate_sha256": "da5095d0ba6cdff4f3282a88b79e5c2b6a1e6a0067cedf02d9e56c36c697cb74"
+    },
+    {
+      "frame_id": "003079",
+      "action": "EXPORTED",
+      "candidate_sha256": "cc8e51186d48360da220b0659d7a1717cec997b4bd40cc00217468537668777c"
+    },
+    {
+      "frame_id": "006707",
+      "action": "EXPORTED",
+      "candidate_sha256": "5a55ea64a0a37bb776ad44d40eb25bef3b124a49194926faaedf5752b01a75ee"
+    },
+    {
+      "frame_id": "004838",
+      "action": "EXPORTED",
+      "candidate_sha256": "dca9fee499738335ee06405a20c5551101401eef17077051c2ff2f4eed3e3edf"
+    },
+    {
+      "frame_id": "002496",
+      "action": "EXPORTED",
+      "candidate_sha256": "85eb57595451f98230af5ae5dad32bc18d777da75407a4383536c2e2bffd514c"
+    },
+    {
+      "frame_id": "003013",
+      "action": "EXPORTED",
+      "candidate_sha256": "b71ba27558e8c92446563b753d01b055c5229f3abe45cd3f695680a5f5e6b3e9"
+    }
+  ]
+}
