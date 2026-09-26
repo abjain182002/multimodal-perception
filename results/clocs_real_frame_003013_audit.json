@@ -1,0 +1,27 @@
+{
+  "best_iou_max": 0.8749147057533264,
+  "best_iou_nonzero": 512,
+  "car_gt_after_range_filter": 1,
+  "frame_id": "003013",
+  "interpretation": "One training-frame integrity check; not KITTI AP or a trained fusion result.",
+  "num_candidates": 107136,
+  "num_feature_rows": 137836,
+  "num_ignored": 12,
+  "num_negative": 107103,
+  "num_positive": 21,
+  "schema_version": "clocs_real_train_frame_audit_v1",
+  "source_sha256": {
+    "calibration": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+    "dense_candidates": "b71ba27558e8c92446563b753d01b055c5229f3abe45cd3f695680a5f5e6b3e9",
+    "feature_rows": "05f214c5bef436327067e27148e893341369b1f1f522ad1a31e943b57e070c98",
+    "image": "7c74e1820416d30320aca2ed23aca593340c3dfd2671822442b2b2861ecc6a8d",
+    "label": "a0b75192a96b1ed5a964c93b7a4c6cf007e9f3720b406617d26e9785cc17e8d0",
+    "pointpillars_checkpoint": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+    "pointpillars_config": "75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc",
+    "split_manifest": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066",
+    "yolov8x_weights": "3df4ada6b4dad6d657868f2fdf7faecfb34dcfccf3a25c4b82079064718524c8"
+  },
+  "split": "train",
+  "training_example_content_sha256": "832e7427b0f782c32e3b013573babe0d1c95d0f98aeecebb1bf9335a92ac6b12",
+  "yolov8x_car_detections": 7
+}
