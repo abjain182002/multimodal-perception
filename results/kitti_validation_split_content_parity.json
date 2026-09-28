@@ -1,0 +1,13 @@
+{
+  "schema_version": "kitti_validation_split_content_parity_v1",
+  "status": "PASS",
+  "frame_count": 3769,
+  "same_ordered_frame_ids": true,
+  "same_frame_id_set": true,
+  "file_sha256": {
+    "earlier_pointpillars": "6e2394d97c866c3af1ffb049f828abdf3d5b707d9575d16885fd0de87b72b0c8",
+    "current_clocs": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86",
+    "openpcdet": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+  },
+  "interpretation": "Byte hashes differ between the earlier baseline and current split files, but their ordered validation frame IDs are identical. This checks frame identity, not prediction or AP parity."
+}
