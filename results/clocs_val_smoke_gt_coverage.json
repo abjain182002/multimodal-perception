@@ -1,0 +1,145 @@
+{
+  "schema_version": "clocs_val_smoke_gt_coverage_v1",
+  "status": "PASS",
+  "interpretation": "Four-frame best-IoU diagnostic against all labelled Car; no difficulty filtering, DontCare suppression, one-to-one matching, or official KITTI AP40.",
+  "input_sha256": {
+    "manifest": "af029521c75df15756b9e284c35dc0258ef643a97328a5f934fbb36325e6a2b4",
+    "inference_audit": "c9afaa20496d6167ede90471525fb93fb2c99e239208eb2cc410eaebb0c569b8",
+    "config": "75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc"
+  },
+  "native_pointpillars_parity_frames": 4,
+  "frames": [
+    {
+      "frame_id": "000831",
+      "labelled_car": 13,
+      "methods": {
+        "pointpillars": {
+          "retained_detections": 11,
+          "gt_covered_at_iou_070": 9,
+          "gt_best_3d_iou": [
+            0.0,
+            0.7661097049713135,
+            0.7525230646133423,
+            0.8047989010810852,
+            0.0,
+            0.0,
+            0.7176988124847412,
+            0.8127413988113403,
+            0.7763488292694092,
+            0.8997937440872192,
+            0.8113113641738892,
+            0.9061503410339355,
+            0.0
+          ],
+          "detections_below_iou_070": 2
+        },
+        "fusion": {
+          "retained_detections": 10,
+          "gt_covered_at_iou_070": 10,
+          "gt_best_3d_iou": [
+            0.0,
+            0.7661097049713135,
+            0.7607243061065674,
+            0.8118512034416199,
+            0.8092727065086365,
+            0.8050952553749084,
+            0.7176988124847412,
+            0.8013672232627869,
+            0.0,
+            0.8996610641479492,
+            0.8355848789215088,
+            0.9061503410339355,
+            0.0
+          ],
+          "detections_below_iou_070": 0
+        }
+      }
+    },
+    {
+      "frame_id": "001662",
+      "labelled_car": 5,
+      "methods": {
+        "pointpillars": {
+          "retained_detections": 7,
+          "gt_covered_at_iou_070": 4,
+          "gt_best_3d_iou": [
+            0.8880536556243896,
+            0.8051961660385132,
+            0.8589065074920654,
+            0.8273414373397827,
+            0.6129140257835388
+          ],
+          "detections_below_iou_070": 3
+        },
+        "fusion": {
+          "retained_detections": 5,
+          "gt_covered_at_iou_070": 4,
+          "gt_best_3d_iou": [
+            0.8880536556243896,
+            0.7976201772689819,
+            0.8879011273384094,
+            0.8273414373397827,
+            0.6129140257835388
+          ],
+          "detections_below_iou_070": 1
+        }
+      }
+    },
+    {
+      "frame_id": "003324",
+      "labelled_car": 1,
+      "methods": {
+        "pointpillars": {
+          "retained_detections": 10,
+          "gt_covered_at_iou_070": 1,
+          "gt_best_3d_iou": [
+            0.7211928367614746
+          ],
+          "detections_below_iou_070": 9
+        },
+        "fusion": {
+          "retained_detections": 2,
+          "gt_covered_at_iou_070": 1,
+          "gt_best_3d_iou": [
+            0.7211928367614746
+          ],
+          "detections_below_iou_070": 1
+        }
+      }
+    },
+    {
+      "frame_id": "004155",
+      "labelled_car": 7,
+      "methods": {
+        "pointpillars": {
+          "retained_detections": 12,
+          "gt_covered_at_iou_070": 3,
+          "gt_best_3d_iou": [
+            0.7268579602241516,
+            0.628309965133667,
+            0.761001467704773,
+            0.6409512162208557,
+            0.6864725947380066,
+            0.0,
+            0.8507946133613586
+          ],
+          "detections_below_iou_070": 9
+        },
+        "fusion": {
+          "retained_detections": 10,
+          "gt_covered_at_iou_070": 3,
+          "gt_best_3d_iou": [
+            0.7268579602241516,
+            0.6060792803764343,
+            0.761001467704773,
+            0.6409512162208557,
+            0.6864725947380066,
+            0.0,
+            0.8556023836135864
+          ],
+          "detections_below_iou_070": 7
+        }
+      }
+    }
+  ]
+}
