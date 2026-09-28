@@ -1,0 +1,8 @@
+{
+  "evaluated_candidates": 3425683,
+  "frames": 32,
+  "fusion_candidate_ap": 0.7487115704985924,
+  "mean_frame_focal_loss": 0.12231494183652103,
+  "pointpillars_candidate_ap": 0.5391782875407971,
+  "positive_candidates": 2433
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "clocs_128_candidate_comparison_v1",
+  "status": "PASS",
+  "interpretation": "Internal development candidate ranking; not KITTI 3D or BEV AP40.",
+  "optimization_frames": 96,
+  "development_frames": 32,
+  "development_candidates": 3425683,
+  "development_positives": 2433,
+  "pointpillars_candidate_ap": 0.5391782875407971,
+  "all_negatives_candidate_ap": 0.8599499848260896,
+  "ratio8_candidate_ap": 0.7426767703166551,
+  "all_minus_ratio8_percentage_points": 11.727321450943451,
+  "caveats": [
+    "One frame split and one seed per training protocol.",
+    "The initial untrained network was also evaluated on development frames.",
+    "Checkpoint selection used the same development set; full KITTI validation is pending."
+  ],
+  "checkpoint_sha256": {
+    "0": "a2203b9adee46b782e896b7f3b9344b5916433b5404d4bd871aa7e05d6b0c473",
+    "8": "f8b8b5e32614553f38e6b7bff6090ac99de7ff29073b4448d3d358f42287881a"
+  }
+}
