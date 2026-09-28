@@ -1,0 +1,2347 @@
+{
+  "frames": [
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "000000",
+      "input_files": {
+        "calib": "calib/000000.txt",
+        "image_2": "image_2/000000.png",
+        "label_2": "label_2/000000.txt",
+        "velodyne": "velodyne/000000.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "bf103e7a67c33549053fd3faa22b4c079434acc967b24995da3bdc7f8ece8c65",
+        "label_2": "6627ff300809ccdb8f0402c1003b7c691a64e3027ceaf0ce7cabfeef9809d0c3",
+        "velodyne": "0e09c85e3f6078ecbdd1e706ee9624519f1bd29417437167a9ed7fbe6f54b4b1"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 10,
+      "car_gt_before_range_filter": 10,
+      "frame_id": "000149",
+      "input_files": {
+        "calib": "calib/000149.txt",
+        "image_2": "image_2/000149.png",
+        "label_2": "label_2/000149.txt",
+        "velodyne": "velodyne/000149.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "95c15bc2b801095d2d167bd89d30017e01b5bce84f7b606204dba48610f5426e",
+        "label_2": "ba68b49f061d333b96930abccc7f3d701d291914a99f4a75d39f1b36276dd1cc",
+        "velodyne": "847547b4e26625ae6dca47b6d871ec5161d0301f80b3fae650243ce9282827d8"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001970",
+      "input_files": {
+        "calib": "calib/001970.txt",
+        "image_2": "image_2/001970.png",
+        "label_2": "label_2/001970.txt",
+        "velodyne": "velodyne/001970.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "953ffe304d1924f9c75d1dbc9d0b4a7a45201d1a4785ce98fe872c218fc2aa5d",
+        "label_2": "9559b7a54716159b30337744acd39d5d461f6e361122907076cad17021519c40",
+        "velodyne": "26f0b89674563155f6ed975116f2aa2736e322db902a8a759be7d1a62ea832e9"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "000972",
+      "input_files": {
+        "calib": "calib/000972.txt",
+        "image_2": "image_2/000972.png",
+        "label_2": "label_2/000972.txt",
+        "velodyne": "velodyne/000972.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "56c8d5ea43d43b5d8d92daa47f789ce200bce6b0602b6e8447d4fb32965ff2d8",
+        "label_2": "9361f0d74b08e215c8890ca5a86d73840409f2469023feb2f829205840b1e667",
+        "velodyne": "1b7aa0c55084fee04899296860446662461de250ad1af3f578887010818b6fad"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "001020",
+      "input_files": {
+        "calib": "calib/001020.txt",
+        "image_2": "image_2/001020.png",
+        "label_2": "label_2/001020.txt",
+        "velodyne": "velodyne/001020.bin"
+      },
+      "input_sha256": {
+        "calib": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab",
+        "image_2": "25e35d0e69f356f307273f66d5d5414718daa3c91bf2ebfc1144be43aac58d75",
+        "label_2": "170c9a716bb6098e570b042e372d706ce94f94bb149fdad20c0b67c605840d6b",
+        "velodyne": "bff9fe66c96e8de11e945c10e2b831ae814d6f3696c9eb80ae12d22fea1ff7c1"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 10,
+      "car_gt_before_range_filter": 10,
+      "frame_id": "004842",
+      "input_files": {
+        "calib": "calib/004842.txt",
+        "image_2": "image_2/004842.png",
+        "label_2": "label_2/004842.txt",
+        "velodyne": "velodyne/004842.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "c4449c4166231926830cd9fa7cbab0ad05fdf20cb404fd615146bb66aabe57df",
+        "label_2": "b287ebd17a8e4181fa8c5223c76d1b7e74a38b01de53cdf618dfd72e3f46aa8e",
+        "velodyne": "3379b0cfc95c3bc40bc249f180c4bc4917e297f4623c23e616d82becb13a297d"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002485",
+      "input_files": {
+        "calib": "calib/002485.txt",
+        "image_2": "image_2/002485.png",
+        "label_2": "label_2/002485.txt",
+        "velodyne": "velodyne/002485.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "ad0a5ab1371884f1800d4f283aff93084b25e93eba0d307b3ef1f0c0c7dce54f",
+        "label_2": "ca7b462034f39c7ab5a2f6c5996ce7fbd792df7c9f1044a0a96b7184cb51e45d",
+        "velodyne": "00f0687645f564642230e1caf1469da467fc2161e0ea6b168411bdbd929f303a"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "002610",
+      "input_files": {
+        "calib": "calib/002610.txt",
+        "image_2": "image_2/002610.png",
+        "label_2": "label_2/002610.txt",
+        "velodyne": "velodyne/002610.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "4af251f7a0c5fc8f8ac98c673925c06906e1ebc95eb8a125ba461c3fa5343d35",
+        "label_2": "ad81f72385f730e939f1cdfa1726a68d42a08972a3c72d292741e5a4b6a742b0",
+        "velodyne": "f4edbf47c98b33c7be1c294435384e4910bc489ecd29fd27bbc9c01e46bc84ed"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "006788",
+      "input_files": {
+        "calib": "calib/006788.txt",
+        "image_2": "image_2/006788.png",
+        "label_2": "label_2/006788.txt",
+        "velodyne": "velodyne/006788.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "3b9fbcd53e36cfb72d7d21f1a3e2ca6785f45e2e1ba235fae66a63c7379784fd",
+        "label_2": "80fe200394e253e83eacf5aa9936ebc983e815263a3a9db1565e8705504fedae",
+        "velodyne": "144fc46af49d22454fe351a2410ca6e88e25d5550eed4fd3cb4d5c8066991812"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 12,
+      "car_gt_before_range_filter": 12,
+      "frame_id": "002106",
+      "input_files": {
+        "calib": "calib/002106.txt",
+        "image_2": "image_2/002106.png",
+        "label_2": "label_2/002106.txt",
+        "velodyne": "velodyne/002106.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "2a35afa0836d21680703abfdbabb632a15d3f6ed27ab9c1e88d08fec927b5e9d",
+        "label_2": "7dbe1475e93da010f5c7affb228120073d15a52f0b550cc2f468316f03caceba",
+        "velodyne": "df8f9f47dc1cf5d75151560cad24866e974c8d12982a16d6069794fa71d8066b"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "006830",
+      "input_files": {
+        "calib": "calib/006830.txt",
+        "image_2": "image_2/006830.png",
+        "label_2": "label_2/006830.txt",
+        "velodyne": "velodyne/006830.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "f861958bc10b4481623ef89cb34d3439fb49741a12f5717211fc78b1a8877778",
+        "label_2": "9f19f2be548d88b2c9530c3f06eddbec7ad3d804a8c32281013e4118c0943d51",
+        "velodyne": "91bfc3ee600429c58f1f0accf991e1dd228b757e3f92f4b118ae0a9d7cd7cef2"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "003079",
+      "input_files": {
+        "calib": "calib/003079.txt",
+        "image_2": "image_2/003079.png",
+        "label_2": "label_2/003079.txt",
+        "velodyne": "velodyne/003079.bin"
+      },
+      "input_sha256": {
+        "calib": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab",
+        "image_2": "b586ce94936afd0fe5382f6a6fe49e08accebfc7e0d38216461bdc42c14e49d6",
+        "label_2": "f9a17d79bafbf0ddc585aeb00c64f4c67265237dee8d6b9d61fb5a3b78d2e82a",
+        "velodyne": "adadbb34487d5a9fe6327840483f01b4f5238c783e7a657c2da28bf33ef65e11"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 6,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "006707",
+      "input_files": {
+        "calib": "calib/006707.txt",
+        "image_2": "image_2/006707.png",
+        "label_2": "label_2/006707.txt",
+        "velodyne": "velodyne/006707.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "f574faca735b8807a997fc4d7fe4f26ad41204d6a91afe1d8f5732bc847a8829",
+        "label_2": "93043e6127e11cb3e4dd5ce6775b7a5f0bd3cb09c4ce0d4b897cd953404d1031",
+        "velodyne": "c021f4eee7e2fe7b60b8773f12cf6aa473c352a136fcbbfb5eccc4a4a8b415dd"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 14,
+      "car_gt_before_range_filter": 14,
+      "frame_id": "004838",
+      "input_files": {
+        "calib": "calib/004838.txt",
+        "image_2": "image_2/004838.png",
+        "label_2": "label_2/004838.txt",
+        "velodyne": "velodyne/004838.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "9e80b9a4fe40a9d472390781d88ff04b421a76dc8a40545426dc072ea3a2a0ea",
+        "label_2": "dfcf128e0a2269d5d5c811f7da9e6a095cdfc118c3d84ec4fed003756b5e23b9",
+        "velodyne": "eaabcfbe5fc18dd6183b8f917031c3b5f1abc823f519f6cc052f78ba1e111f68"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002496",
+      "input_files": {
+        "calib": "calib/002496.txt",
+        "image_2": "image_2/002496.png",
+        "label_2": "label_2/002496.txt",
+        "velodyne": "velodyne/002496.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "50e2da2b2587fb6953cbf30098088ee166ac8e2cb568d01a268c29aaed807760",
+        "label_2": "62b0214ca56475a05555b4278adb2cf4995d8c8d515bdb04af0149aa0e4c195f",
+        "velodyne": "e939082e0c795f7fed48d1907e636bd7a2fcb3e4a07b168b1a3c671a2ee40a0b"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "003013",
+      "input_files": {
+        "calib": "calib/003013.txt",
+        "image_2": "image_2/003013.png",
+        "label_2": "label_2/003013.txt",
+        "velodyne": "velodyne/003013.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "7c74e1820416d30320aca2ed23aca593340c3dfd2671822442b2b2861ecc6a8d",
+        "label_2": "a0b75192a96b1ed5a964c93b7a4c6cf007e9f3720b406617d26e9785cc17e8d0",
+        "velodyne": "d1e6153b891a84a6f4e8ffc7a71a3470de5a206d4fe9ae9cf4d4ac1548316e36"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "003849",
+      "input_files": {
+        "calib": "calib/003849.txt",
+        "image_2": "image_2/003849.png",
+        "label_2": "label_2/003849.txt",
+        "velodyne": "velodyne/003849.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "a0b8e2d7150d1aca206e9e26e8666498cf42276ed259f1912d435a4135508240",
+        "label_2": "76e62e0c943aa7e31698897d984d3160ec0cd550f53ea0b8bacac7b2678c2204",
+        "velodyne": "92bbfc2a15c238bc95f85805fb9064ffa8faa4695418e02ace778c444c4dccfa"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "003825",
+      "input_files": {
+        "calib": "calib/003825.txt",
+        "image_2": "image_2/003825.png",
+        "label_2": "label_2/003825.txt",
+        "velodyne": "velodyne/003825.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "ec80d27a1eff5be0193506db4f36bba6323ab042e024f237b8372932412e29d0",
+        "label_2": "8a5973f6a8791c2323ace811ce0d39c2bdbe184c0dc81e5945c20709df94194f",
+        "velodyne": "64bc8054196878ac395a55b7be6ec44f1da8990c4de14563c703e7d807595ec3"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "006438",
+      "input_files": {
+        "calib": "calib/006438.txt",
+        "image_2": "image_2/006438.png",
+        "label_2": "label_2/006438.txt",
+        "velodyne": "velodyne/006438.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "e49a6ab394c1951f3b870d59c5aca834bddcff6be435a0bea0dd6838bf092139",
+        "label_2": "bf000f271ee492a0af0bf4eda8a2d4e6c2e2557c105f9b275140e04b5f637e7b",
+        "velodyne": "aad0376e0c5d1cc64378a783b9aad16d02dbda0a58c698cf04797d522b80322a"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "003206",
+      "input_files": {
+        "calib": "calib/003206.txt",
+        "image_2": "image_2/003206.png",
+        "label_2": "label_2/003206.txt",
+        "velodyne": "velodyne/003206.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "33bba32e0a6cacf81de704423edbb6637e7b7de5c7194ecb12b4c27169bba09b",
+        "label_2": "d12be76a52ee637ac461be9d2f467e5819746aab3d62e36a3d4962e0c8a14bc4",
+        "velodyne": "c97fa352aedb7acf71e43aac240955781f05ba50ef8a0479229aeb856dbdf22f"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001873",
+      "input_files": {
+        "calib": "calib/001873.txt",
+        "image_2": "image_2/001873.png",
+        "label_2": "label_2/001873.txt",
+        "velodyne": "velodyne/001873.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "e248a8bd334686c98a39690acf4e74a9a1160545ee103701aff0b464872be16d",
+        "label_2": "fe8596ecbae961d3823e791bb74911640c809be479c9421907d82e244b6eb3df",
+        "velodyne": "e4bab2e65a4c1318d2a151490e3b830399c4f6dd3c4cf7b9becd2e558a7157c8"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "001655",
+      "input_files": {
+        "calib": "calib/001655.txt",
+        "image_2": "image_2/001655.png",
+        "label_2": "label_2/001655.txt",
+        "velodyne": "velodyne/001655.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "2edac2a96828a67d4913db4e0f9927a47f3dac654228309f9647cbbd50796221",
+        "label_2": "3da641f2800619c48d159fd226f7d140f2383389b2a95ba9da0d53834dfe8b93",
+        "velodyne": "0b9df48d5cd7445388d864e63a8e5654efc615a27068c8e9e33343a6cc7bc8a9"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "000160",
+      "input_files": {
+        "calib": "calib/000160.txt",
+        "image_2": "image_2/000160.png",
+        "label_2": "label_2/000160.txt",
+        "velodyne": "velodyne/000160.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "39501ba430ca10dbda957454edd258350514769da413e03ced21112588bd0026",
+        "label_2": "7b68604e551dcbe8bd0fd048c2f403f0f5f5a043496929d998ee41378f3ef2cc",
+        "velodyne": "d0aa8a60e1815866c93cbc45d229585564ad350df6c97190a79290e63ecca6e3"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "002579",
+      "input_files": {
+        "calib": "calib/002579.txt",
+        "image_2": "image_2/002579.png",
+        "label_2": "label_2/002579.txt",
+        "velodyne": "velodyne/002579.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "6dcd7ee1fedc681f2597ae8a3dd2f569a2bfca913ede180a915169f95310846d",
+        "label_2": "ee57d9a9f809d920082198710e9f7b021a990d776a502b4d8ce366c5a4375b1f",
+        "velodyne": "bfeed9351379db0f073a810aa8f810cd322e72cd40e6d3cfeb42daa7ab0192de"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002956",
+      "input_files": {
+        "calib": "calib/002956.txt",
+        "image_2": "image_2/002956.png",
+        "label_2": "label_2/002956.txt",
+        "velodyne": "velodyne/002956.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "5fb262b1eac853c08a980d1aed9587ae7a8b7c398ffe9e8160467d8d468f8e92",
+        "label_2": "0c8010a29e222d277f989f4d56ebf7f6510a97fff2160efce1b29a202e7be333",
+        "velodyne": "20b46605f3c2ea155f6f75f3b8f98f8930e90a4d499da7501887e00f742bb77b"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "005305",
+      "input_files": {
+        "calib": "calib/005305.txt",
+        "image_2": "image_2/005305.png",
+        "label_2": "label_2/005305.txt",
+        "velodyne": "velodyne/005305.bin"
+      },
+      "input_sha256": {
+        "calib": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab",
+        "image_2": "d372dff1d8ce797a385a35ef785ebcccb0e5a11fee0bb424abcb7e1229005c26",
+        "label_2": "6130a6f1a31be4062ce73bed51ed144cd090ca956f795978492044acbf17b0fc",
+        "velodyne": "5e1988232c8c54afa5ff6e3d91d3c7883723e29c4d1d6c63b5693ca863513b9d"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "005722",
+      "input_files": {
+        "calib": "calib/005722.txt",
+        "image_2": "image_2/005722.png",
+        "label_2": "label_2/005722.txt",
+        "velodyne": "velodyne/005722.bin"
+      },
+      "input_sha256": {
+        "calib": "d567fe1ef88e37cbaa49772533db1c72ecc4094f243c952a436e77950ba74cab",
+        "image_2": "62fd21ac81f46d9e6cee776ae3b8d3b0c0f7d3e351521bde07d9031bf85eacf1",
+        "label_2": "2eb48d48987b900b719696012571dcf2a8c9dad7008bbaa59767f0f03ab6ebc3",
+        "velodyne": "4dc924aa2fafd3c44eeead187fe14b9a59d75ca63dd876c748a83813f259556f"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 8,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "000178",
+      "input_files": {
+        "calib": "calib/000178.txt",
+        "image_2": "image_2/000178.png",
+        "label_2": "label_2/000178.txt",
+        "velodyne": "velodyne/000178.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "da6dc7523a12c9771ec4856ae9fceafe4ed2bbb1e6e467bbfebfd8249a77003c",
+        "label_2": "244c24dcb865baa0ea021da92b0fc6d99ee27941fb1259e55b890592523e9b02",
+        "velodyne": "bb0d7fcf8968b69154177f15ca7bfaaa7c55c78522cd47275b199a831d86f5f9"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "002204",
+      "input_files": {
+        "calib": "calib/002204.txt",
+        "image_2": "image_2/002204.png",
+        "label_2": "label_2/002204.txt",
+        "velodyne": "velodyne/002204.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "ac92843dcfe048368008af030f0adc8297ced090b20bab3a292a453167fb6128",
+        "label_2": "4c0a751549c399449ce425f60c4834835fe701516caada045e5e1754fb32dee6",
+        "velodyne": "164dcb4532e0293a251f81b7f4eb0ae191731822c367cb184f7abbc8448bd74b"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "002776",
+      "input_files": {
+        "calib": "calib/002776.txt",
+        "image_2": "image_2/002776.png",
+        "label_2": "label_2/002776.txt",
+        "velodyne": "velodyne/002776.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "257cf472c19cc9f8b655a6c6c1f92b792685f92e1db42fe5acb817f56be3d16e",
+        "label_2": "68387e5915c3d9a0bf294f40fed0700fe9c946e3d49a89cf846165bb2e263c03",
+        "velodyne": "440a36bc197f561454482c3f7075d7d4a0eb87dfa1e7f7e6d18a076d42662352"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "006398",
+      "input_files": {
+        "calib": "calib/006398.txt",
+        "image_2": "image_2/006398.png",
+        "label_2": "label_2/006398.txt",
+        "velodyne": "velodyne/006398.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "9e38cbbd0ab1ad0a2d656b2722eb4934c73e92409e0a01a51eee2428c31b1a0b",
+        "label_2": "c482237ed83d01efe2b630360e0598235da87de3f441c1ebc9f121b32af8ec34",
+        "velodyne": "cc3907f4a8a965c682d3d8aa2a43ff61e8b1093d4ebdadaf4b738a50dbf6c029"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 13,
+      "car_gt_before_range_filter": 13,
+      "frame_id": "005126",
+      "input_files": {
+        "calib": "calib/005126.txt",
+        "image_2": "image_2/005126.png",
+        "label_2": "label_2/005126.txt",
+        "velodyne": "velodyne/005126.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b20088741c513ff088691fea979daf7298935a554dedf7cba98553d684d0ff76",
+        "label_2": "9c286c05285205e0318fcea011d9e96b833cba823bdbc343f585b53a741ebba8",
+        "velodyne": "1950a14532e2b9647d566de57c54f2e54aa72c237e3977cec5f899a7c7f262e9"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "007431",
+      "input_files": {
+        "calib": "calib/007431.txt",
+        "image_2": "image_2/007431.png",
+        "label_2": "label_2/007431.txt",
+        "velodyne": "velodyne/007431.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "c85e363d92f1ea9fb1d0ba04b912c1f749c69f0f248887ab2b9578d009d3f45f",
+        "label_2": "8048aeaedc6621f4ab5cfda1145c0513bc87f9d0d1596bd169590e24e40347cc",
+        "velodyne": "ee7937f532fde12e08e4e6cee8cbf6d9b810dee65ae5fa58689f41aa0c4fa289"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "002309",
+      "input_files": {
+        "calib": "calib/002309.txt",
+        "image_2": "image_2/002309.png",
+        "label_2": "label_2/002309.txt",
+        "velodyne": "velodyne/002309.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "52be056c5eb6a4f25d6e71499e66c78983ec2e4b3fbcc4fa8350b356d557b05c",
+        "label_2": "86f2a30f6bbe376585efd8b086974411aee94599ada72829d65b4f9d4898556f",
+        "velodyne": "a3d7933e308a287844360a4acc350a1099355eae4a12872d837b8e67b8fd2c00"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "005493",
+      "input_files": {
+        "calib": "calib/005493.txt",
+        "image_2": "image_2/005493.png",
+        "label_2": "label_2/005493.txt",
+        "velodyne": "velodyne/005493.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "4bd57bb1d7b8ef0837076053cfc837a53b1e49ae754afcd54ca7e04090db663a",
+        "label_2": "316dc150bcc5386294b801395d636cd2eb0fd1d2a53fd30cb6f111e24ec0e10b",
+        "velodyne": "d5645c4be135e5dfc43a9df015a53057ad031874d91c6851270477167efb1738"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 8,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "001506",
+      "input_files": {
+        "calib": "calib/001506.txt",
+        "image_2": "image_2/001506.png",
+        "label_2": "label_2/001506.txt",
+        "velodyne": "velodyne/001506.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "4759ddf4cc25a807d83653c19b2cd11c608d7547975f6bf54e9128ffe83669fc",
+        "label_2": "16d94d202d8629e599cb8145558d5b5ec020149a3d7e1e76f77dd78e9ecc01f0",
+        "velodyne": "339559e5f3746dd9177ec6d07506bf36adc1974ebe9bc1bb85cba6525488891e"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001504",
+      "input_files": {
+        "calib": "calib/001504.txt",
+        "image_2": "image_2/001504.png",
+        "label_2": "label_2/001504.txt",
+        "velodyne": "velodyne/001504.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "6071b5c281ff014ccb71e31bb5bbc811bdbaf5fdaf2c958ce68a9352d9d36d5a",
+        "label_2": "ff3a2fb50edd4605a50783fef5607f123fa4f61e1090a8f08917206434d0cf2d",
+        "velodyne": "b023b8786dc3dc10b325b29bd5d33127c170014fb598a4645a6438d8f46f090e"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "005974",
+      "input_files": {
+        "calib": "calib/005974.txt",
+        "image_2": "image_2/005974.png",
+        "label_2": "label_2/005974.txt",
+        "velodyne": "velodyne/005974.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "7cf0b4db62816215950052a4672d483c4b5ae14732dc5ce847774d63cd04f9a0",
+        "label_2": "0ba869a0645bf8037fd9d1618a34be647913e56ffb553be9bfb192439a471560",
+        "velodyne": "c733db43f60458cba5436e58ad37b94ff39e8d04680b96cba38a1e1c7d5e1826"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "002109",
+      "input_files": {
+        "calib": "calib/002109.txt",
+        "image_2": "image_2/002109.png",
+        "label_2": "label_2/002109.txt",
+        "velodyne": "velodyne/002109.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "06412fdbe339f07c8e3056d248bbce25eda975d0dae6ed9a919f4c6b878ec49b",
+        "label_2": "4e3142d38a7fb6c2e258d5434a5ddd672bc22a483f09b1ddd5e1c8b35464c1bd",
+        "velodyne": "599254734d18ab31dddda90787f465f078901283145afbef21c599dde8ca0ded"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 8,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "004572",
+      "input_files": {
+        "calib": "calib/004572.txt",
+        "image_2": "image_2/004572.png",
+        "label_2": "label_2/004572.txt",
+        "velodyne": "velodyne/004572.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "93ff531c776cc8924afef05573acb070d4d9c03de7500d36c40ff11a6c0315a7",
+        "label_2": "64e54f794136edd801f1522aa28f52cfd222787d71497315d31713ceb20f97bc",
+        "velodyne": "e7e9700dc44f080fac324177b0cbc53d6d4070d0e635cf5a97a6a86e14e61e94"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "006164",
+      "input_files": {
+        "calib": "calib/006164.txt",
+        "image_2": "image_2/006164.png",
+        "label_2": "label_2/006164.txt",
+        "velodyne": "velodyne/006164.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "27b40d22619cc225739c3def101c608293f66a6965a0620fff686b60e37238a0",
+        "label_2": "c30eca36ef7e099f59f1e0ae9818d91e31c758ce111df8008b3166492f379689",
+        "velodyne": "57a4fe306174ad52df28f094251453b8714feac081e412f870925fffdc639bdd"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "004459",
+      "input_files": {
+        "calib": "calib/004459.txt",
+        "image_2": "image_2/004459.png",
+        "label_2": "label_2/004459.txt",
+        "velodyne": "velodyne/004459.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "bda5633c69da48ddc12458a57abfa8c17849f93cbdd72bccf83c478ef1d14a85",
+        "label_2": "fc9d23882aaa75f63abad0ac3197aebeabb7af4dae42691e90a273bdb3ec8ae8",
+        "velodyne": "235e6b8ff8eb1043b8836bcf8951b18c3fd5464c1623c9c70b5da810896af644"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "002918",
+      "input_files": {
+        "calib": "calib/002918.txt",
+        "image_2": "image_2/002918.png",
+        "label_2": "label_2/002918.txt",
+        "velodyne": "velodyne/002918.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "b9c751e184ac28fd8bed820d703c1132612abcafb0f0d25732bc142fc1b23d8f",
+        "label_2": "b727bca1a617d5622cf4125f35c7288269a55963ac0ba2b5a86c2f107fb1b696",
+        "velodyne": "47a4c0c96ee15aeefbffcea400164c1deae449e34141231d415f2bae44aeadd4"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 13,
+      "car_gt_before_range_filter": 13,
+      "frame_id": "006559",
+      "input_files": {
+        "calib": "calib/006559.txt",
+        "image_2": "image_2/006559.png",
+        "label_2": "label_2/006559.txt",
+        "velodyne": "velodyne/006559.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "ae0b6c2ebe278b3961e355abd020678ee649710e95f29ac00a21ffccb64e842f",
+        "label_2": "9768f72f37aadfa3bc5ee571cbb27a578cf4c93a84b40ecbe1c7096bd834a46b",
+        "velodyne": "de1681d52597b4ad4c835d6c94b0c3212bdadd125ad469ddd50f06789c2ee1eb"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "006294",
+      "input_files": {
+        "calib": "calib/006294.txt",
+        "image_2": "image_2/006294.png",
+        "label_2": "label_2/006294.txt",
+        "velodyne": "velodyne/006294.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "a4212c8f5d442f8580d363897005cc2913332f6ba08902a751bfe24e9fd4afa0",
+        "label_2": "b29c179d4ad619644b2eb34e68de0033b3c84a100ed70c690de517ca1d06a92e",
+        "velodyne": "89cfcc218fed10841656c59a6eb64fdebc42b2eeaad98362266b144442530679"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "000334",
+      "input_files": {
+        "calib": "calib/000334.txt",
+        "image_2": "image_2/000334.png",
+        "label_2": "label_2/000334.txt",
+        "velodyne": "velodyne/000334.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "44dfa94cf23b5fe7aa45e72be833967cd1c4f434374ea7c2c2f54cf28c15cd13",
+        "label_2": "51be635ea730147c104c994ddd370222e9a8087065a9ee9c5bdf7bfe8c983afa",
+        "velodyne": "de844eac682511290816f4fcaf044e7db9d030149e2cdcdcd18bd7b15cbf518d"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 6,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "004066",
+      "input_files": {
+        "calib": "calib/004066.txt",
+        "image_2": "image_2/004066.png",
+        "label_2": "label_2/004066.txt",
+        "velodyne": "velodyne/004066.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "5852c67ea80f57e0212d3497161257d4922604bbd3a4b2c282a79d838d1d8f14",
+        "label_2": "87c2c8b8f1dcafe3e1de0e052ddcbd0cf6d8f98f582a2cdb062bbfe5ec47a37d",
+        "velodyne": "d1f0fb627e4888691eaf0a859c07e59d771941506adbb5a174155c848df6380f"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 14,
+      "car_gt_before_range_filter": 14,
+      "frame_id": "006376",
+      "input_files": {
+        "calib": "calib/006376.txt",
+        "image_2": "image_2/006376.png",
+        "label_2": "label_2/006376.txt",
+        "velodyne": "velodyne/006376.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "6700ea3d1af8028de79c1a140d2263c0faf302e455385493125e31128eeb86a9",
+        "label_2": "c1eb45581250988ba9b2750bdff3e6641d4d8b1562ab2266dbfe33fc984f3c06",
+        "velodyne": "49a11b76108dd67cca7fcb6d0602f634857557b820fe732cb150b721f361ad7e"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "006035",
+      "input_files": {
+        "calib": "calib/006035.txt",
+        "image_2": "image_2/006035.png",
+        "label_2": "label_2/006035.txt",
+        "velodyne": "velodyne/006035.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "0390c06510b6b75d3ad46edb470ba5eb69980b59dfc6d6f6df18199033e7204c",
+        "label_2": "d4b9948d6ef97da95c2c5f8174b18dcc2795f3853f6ce4b355ff07bcee66611f",
+        "velodyne": "88ef79f0c92c40366598711f5d2168e60fbcc63f20a8e57c673bd1613a2c95dc"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "000257",
+      "input_files": {
+        "calib": "calib/000257.txt",
+        "image_2": "image_2/000257.png",
+        "label_2": "label_2/000257.txt",
+        "velodyne": "velodyne/000257.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "bd67b7029876b2c5984c73ace85ffcbfb6318a4d5f5081e4d43f4253ebef87b8",
+        "label_2": "c0ea71455220017bf1f55c40c75a549a21fe88e456680f63cc4220c67322292c",
+        "velodyne": "e5caf64cd1c131826912bf4caaa4f21b76f4e59f0813c9c02146112978b88c65"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "007429",
+      "input_files": {
+        "calib": "calib/007429.txt",
+        "image_2": "image_2/007429.png",
+        "label_2": "label_2/007429.txt",
+        "velodyne": "velodyne/007429.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "be1cc3e8f0ac80d036a540d1face6785fda87c4e287984def8b4a0e7ee809ef7",
+        "label_2": "6b68ebbf2d1454c7fe72a1df0d4cf231248f7d0973c63ac99bd54483af2211b4",
+        "velodyne": "0c1de83b40d3c478b04102243fee69b79be8cf431798692f30da009e43ee5ce6"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 12,
+      "car_gt_before_range_filter": 12,
+      "frame_id": "003064",
+      "input_files": {
+        "calib": "calib/003064.txt",
+        "image_2": "image_2/003064.png",
+        "label_2": "label_2/003064.txt",
+        "velodyne": "velodyne/003064.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "ee5a2aa0fe2aea498d002b86e873ea930f86c3dee0a0c8e1263146c71f487c07",
+        "label_2": "fe504619ace247afad01e83e875ca17a94de324c36ae51008c6fd706d55f9cf3",
+        "velodyne": "c789b788a70f2e0a1139c813dbb3bffb2c0c1a93b91125ace0eae8f549504c14"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "006201",
+      "input_files": {
+        "calib": "calib/006201.txt",
+        "image_2": "image_2/006201.png",
+        "label_2": "label_2/006201.txt",
+        "velodyne": "velodyne/006201.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "e5ac3345d0f7e75072d6bb230badf301f7e163066ad734ef66f3e3a810d1eff3",
+        "label_2": "12b7c4a1874cb6d98ae0cc56d4492cf29484f08c20cd812aee0ad9ca726b195c",
+        "velodyne": "e693c5a55b342d2e585e16d17f6f7d78d723f31ce2cc14cfa363d61a3a5d4d26"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "000060",
+      "input_files": {
+        "calib": "calib/000060.txt",
+        "image_2": "image_2/000060.png",
+        "label_2": "label_2/000060.txt",
+        "velodyne": "velodyne/000060.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "92b74583e5114fb9c702a144ec0f4bd2316c92bbc15d4e3c279d66b439da16a1",
+        "label_2": "6659c377afd4d5585060cc46e6da9d72ae1ddee9e74f1fedab715acc50854d39",
+        "velodyne": "c3a5044cfd630c5ed8aac295ee626548c0ca9fa7101cf5d7bc6dbf6a1f0d50bd"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "002965",
+      "input_files": {
+        "calib": "calib/002965.txt",
+        "image_2": "image_2/002965.png",
+        "label_2": "label_2/002965.txt",
+        "velodyne": "velodyne/002965.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "761cb629a2efaa9fc12394c62fe3b75697efff62cc12ae2205d540e3aab1470b",
+        "label_2": "5bb8e666985c6af762c01d051548279fb82c7dd3b6590a7ae1045f585421c9cc",
+        "velodyne": "2bc7167bfa7ba97edf7bfbfe531d1bb39bd2f494e76b96109c91e78b4b7ec315"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 10,
+      "car_gt_before_range_filter": 11,
+      "frame_id": "000110",
+      "input_files": {
+        "calib": "calib/000110.txt",
+        "image_2": "image_2/000110.png",
+        "label_2": "label_2/000110.txt",
+        "velodyne": "velodyne/000110.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "c61a569f0968e3785cd211a6b26f712c5221e44f1c8b3563490ad8a4e5c77a98",
+        "label_2": "0fe405b2fc8d5f532df9a4df4169109aee8f6cf0ba9cc77219d05e5eb18ac65b",
+        "velodyne": "0bdbd9a7409e4a1c58bd6d2958fdcac03159955d6c2f4d60145ec758412420fe"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001661",
+      "input_files": {
+        "calib": "calib/001661.txt",
+        "image_2": "image_2/001661.png",
+        "label_2": "label_2/001661.txt",
+        "velodyne": "velodyne/001661.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "fe802ca7fa09e8fb3eff5e7afdee07a6c8336e2d26bf31aa1b0d89f5c0a3e967",
+        "label_2": "d7a2660d2379375044219f3accc55be94e15f5b401ef176602cf947d540eb291",
+        "velodyne": "a544a72f1354094fb708928f3f877e69916e1f64529acf94a89c999261b7e902"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "002701",
+      "input_files": {
+        "calib": "calib/002701.txt",
+        "image_2": "image_2/002701.png",
+        "label_2": "label_2/002701.txt",
+        "velodyne": "velodyne/002701.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "8034232e933a61e883a51300cfca1184123604025056a8363e3d196ef0258c2e",
+        "label_2": "82226a32256f88a1c769b24da3903d9cbe89645804650bead8c7a133982459bd",
+        "velodyne": "38ac5f7be1b600aace836d15b311fad56146ab9872831ee24c7705ccdb85d16e"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "004751",
+      "input_files": {
+        "calib": "calib/004751.txt",
+        "image_2": "image_2/004751.png",
+        "label_2": "label_2/004751.txt",
+        "velodyne": "velodyne/004751.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "a02b70101d0d8ce2d0e8b9398aefeceaec0d5b9244cf77e3d6577fbb506734f8",
+        "label_2": "afdae18745a70ec59570afe4230d5f229ed217fd44cbc8ad794d06a8283991f8",
+        "velodyne": "86378c0b1a65843f5bac9776048e107452363a9a1e65fabd6e19dc08bd294230"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "001663",
+      "input_files": {
+        "calib": "calib/001663.txt",
+        "image_2": "image_2/001663.png",
+        "label_2": "label_2/001663.txt",
+        "velodyne": "velodyne/001663.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "f36863c3047e96e8da879075abac0cd31c1ec3862c364d3ca20235693d8f09b3",
+        "label_2": "2ce38a3f25efff1cf3b1da79b989e381d064ee04086f117315bb2860e9752b7b",
+        "velodyne": "8fd486c494c7a807b54b4d1430caa861597de479796b90efc0d5e356b5f4d0d3"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002271",
+      "input_files": {
+        "calib": "calib/002271.txt",
+        "image_2": "image_2/002271.png",
+        "label_2": "label_2/002271.txt",
+        "velodyne": "velodyne/002271.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "a1164d2cfaee7b328a8917f8bc3c95d022be4563557a214e6b99fde6bb9ff29b",
+        "label_2": "01d45ae84faadd0844892d3d2490876238fdbb8489db9333f4ed047cab1e099c",
+        "velodyne": "26929b9616cc0f7ce27e227fcf028772e1bdfbd8d0ad3a1d95e360877cc890fb"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "006318",
+      "input_files": {
+        "calib": "calib/006318.txt",
+        "image_2": "image_2/006318.png",
+        "label_2": "label_2/006318.txt",
+        "velodyne": "velodyne/006318.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "c4bf4478d3550ab48443f488f81de4237e97f9de00488e11c17d69fe3d261176",
+        "label_2": "50a7ae1743e1025817ec2ec2b2266f43d8aeb796f1898149ce31f580999954f1",
+        "velodyne": "37b8099a250d23efa67619a070a039d27057aa478562f965d5cc5b7b44286e1b"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "001392",
+      "input_files": {
+        "calib": "calib/001392.txt",
+        "image_2": "image_2/001392.png",
+        "label_2": "label_2/001392.txt",
+        "velodyne": "velodyne/001392.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "2b229f617795f0bee43846c9de41066ac8885bf0df55633904e8ec6c9d5cd1a3",
+        "label_2": "c47c2b7ec4fa181aa894bf36bd5af5e6488729fccbec8bf27204c708c44ff02d",
+        "velodyne": "432fbe6253ff62da3fad59115ae45dbad31fb851dbb873987e98d836e75f9c75"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "001992",
+      "input_files": {
+        "calib": "calib/001992.txt",
+        "image_2": "image_2/001992.png",
+        "label_2": "label_2/001992.txt",
+        "velodyne": "velodyne/001992.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "7b241270aa7e305f2d1bed37dd2113ba03c929173b961662ed6b0c92c5aa1ba9",
+        "label_2": "f3b1cc4fa8f5b44d074d9b1b984dc538e89a3a181bed7afe53d619dd99e158e8",
+        "velodyne": "b3433bd90349d6b07fdacdf3c4af180923504c346852b594d1bddd6e36ed3287"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "004844",
+      "input_files": {
+        "calib": "calib/004844.txt",
+        "image_2": "image_2/004844.png",
+        "label_2": "label_2/004844.txt",
+        "velodyne": "velodyne/004844.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "c7156f6e38e0b9de2b21bdf6ad4140f17a48d803d7f51175299160f413c0d008",
+        "label_2": "5330797dec9a3fbbdf2f8add3cca4b940e3f3b979c21113a11ed5f002619c321",
+        "velodyne": "1c56f7213659be494c7f30259597b413e8c6eddfff061d795a51417e4be4d465"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "002114",
+      "input_files": {
+        "calib": "calib/002114.txt",
+        "image_2": "image_2/002114.png",
+        "label_2": "label_2/002114.txt",
+        "velodyne": "velodyne/002114.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b0b8ca7a9eedee1ecefceeb231fab64c5d043da90a465fba8add10dca946a20c",
+        "label_2": "747aa0f672444b3d653282c2ae06c8859833a3403473c84b28d93fc3fd3e8059",
+        "velodyne": "6858368b1308efefdd8a513812f51be21b0de8f1790bbb8f132ccac9c6d6d9dc"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "005310",
+      "input_files": {
+        "calib": "calib/005310.txt",
+        "image_2": "image_2/005310.png",
+        "label_2": "label_2/005310.txt",
+        "velodyne": "velodyne/005310.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "7b0da3ee5b44570c6e5f3fa5780ed92b000d77d2bb2e636ae6d440f024204b5d",
+        "label_2": "cd56073aed67a138cdd4c9873129457b4f271c40f1be7918a64b737e75df7df7",
+        "velodyne": "b45905aa70fc3ad1df44594efb283027870601c9d0292cdbddba04272c009e06"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 8,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "003147",
+      "input_files": {
+        "calib": "calib/003147.txt",
+        "image_2": "image_2/003147.png",
+        "label_2": "label_2/003147.txt",
+        "velodyne": "velodyne/003147.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "16e23c27ab19ed5e9c80e0a1d5c0ee95ed609d5d955cfdd84a562e4ec0b7ba87",
+        "label_2": "4169d1b7746b122c2a4f64c6cc36c9765d9cac09ce7aaa2b243bc7f3ea2006c0",
+        "velodyne": "8d43fa97f7fa963d9abafc1ca0145455137f3a59cbbcd7bb2b3a5dd76c0026bc"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "005937",
+      "input_files": {
+        "calib": "calib/005937.txt",
+        "image_2": "image_2/005937.png",
+        "label_2": "label_2/005937.txt",
+        "velodyne": "velodyne/005937.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "d144128186dd28a753f259bb8abc48418384dbda739f73d12a1014cf908aaf4b",
+        "label_2": "f0794ca0efdfa97c1a3449bc3bdbf08d98969781d6667c6bc12f2903052989e3",
+        "velodyne": "03e6685e7bf82e3b105037911a3263411baa94dbb7ef8a49db95970a859cf999"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "001988",
+      "input_files": {
+        "calib": "calib/001988.txt",
+        "image_2": "image_2/001988.png",
+        "label_2": "label_2/001988.txt",
+        "velodyne": "velodyne/001988.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "58fabf18b4718aa431dc0ccc26cf34014202da9ddc54d8354231fc8a18c98dae",
+        "label_2": "a28b796fa29f44d3357a2d65b8d10033868d0eaff52905106cda33b89d446c30",
+        "velodyne": "368660dfbd48eaa8b44549e5d57c7a1fc0475067a4e8bd9b45388d993c586d3a"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "000511",
+      "input_files": {
+        "calib": "calib/000511.txt",
+        "image_2": "image_2/000511.png",
+        "label_2": "label_2/000511.txt",
+        "velodyne": "velodyne/000511.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b1d6accdcdb6039e615b091fd8884cb24c82dc9f7bbc53bd738f822fd5bf5576",
+        "label_2": "20b47546ae555c487cea0feb987cc99e0a258356e3e1087102717f05a1d3dce5",
+        "velodyne": "cc312bc8f58d1cab571b2886a715505daa66d75122d313ecec229e8ca226f8d2"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 9,
+      "car_gt_before_range_filter": 9,
+      "frame_id": "004181",
+      "input_files": {
+        "calib": "calib/004181.txt",
+        "image_2": "image_2/004181.png",
+        "label_2": "label_2/004181.txt",
+        "velodyne": "velodyne/004181.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "c9521d3a78938604f106b55a4bd4f1021ecaa5dc5e5840d34f7270a5567d9ec0",
+        "label_2": "060c6bfbf7b47467d3fdeed12f5dc8ef02c610e417a58df2a4f7fde6a9afcb77",
+        "velodyne": "b941ea3e1678be2af3c79ee578577bb62e928860e561ee62941d8a640d4d33b5"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "003164",
+      "input_files": {
+        "calib": "calib/003164.txt",
+        "image_2": "image_2/003164.png",
+        "label_2": "label_2/003164.txt",
+        "velodyne": "velodyne/003164.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "f4c70165a3b48f6407fef9827c451f0876afeb9247a9a3e88482b097441ad61d",
+        "label_2": "b6fff1b4542432a6c2b73cbe26526a95edd0f9a2f5104b2c8b2639ffa090e2ef",
+        "velodyne": "0a104a7af64e270a4e03f4390418f11ff1ccddafe7e4690a4e575b3465c8c217"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "003893",
+      "input_files": {
+        "calib": "calib/003893.txt",
+        "image_2": "image_2/003893.png",
+        "label_2": "label_2/003893.txt",
+        "velodyne": "velodyne/003893.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "1d71f3a7c8b0fe3bad78af6630df334200860b2af308e465a61938d04e569578",
+        "label_2": "a28872245c58290f3b33d6af977984205a683365ada716b78239e24a81336d78",
+        "velodyne": "06bc9b0548b05aef3275eab6ac89b51068095d434f230b913d7446ef3d1ed00e"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "005399",
+      "input_files": {
+        "calib": "calib/005399.txt",
+        "image_2": "image_2/005399.png",
+        "label_2": "label_2/005399.txt",
+        "velodyne": "velodyne/005399.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "00a6c98c80c6eef1a312bfa5dd192dc276b74a2c5f0bb2ef69913e23f4957992",
+        "label_2": "aa475ae1413c025c8a5bde4a13bc9aff3bae8f9cb88404b4875447f134bf604c",
+        "velodyne": "f76ac8c60efd047d2a69fef54bdc296627237ffa2cb663101dd0b2ba3c2d72c8"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 8,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "005414",
+      "input_files": {
+        "calib": "calib/005414.txt",
+        "image_2": "image_2/005414.png",
+        "label_2": "label_2/005414.txt",
+        "velodyne": "velodyne/005414.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "e74b1f74bf55269195b174a586c1a37d3347de4d46d486e085f2cb4dcd90c23a",
+        "label_2": "dcf36eb061fa038f0be247dea64876ba82952951519fdc862e49a80bacdbfae9",
+        "velodyne": "5c265b522c488368e39c7ec1fa03f8c1e833a400395aedb292c3e5bf526d3cd9"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "000294",
+      "input_files": {
+        "calib": "calib/000294.txt",
+        "image_2": "image_2/000294.png",
+        "label_2": "label_2/000294.txt",
+        "velodyne": "velodyne/000294.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "8f1a3602aba28209a8db2d62429ad30ed5fa88b8de28fbc246927106f944143b",
+        "label_2": "c8afdff8c88a8a85ca4311cf65da018f961597f010be95395693757c54dbc02e",
+        "velodyne": "270eacf8a9f0f166e3f5fcbef415e02258425bf59fa69ecc9f3f35d872937385"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "005726",
+      "input_files": {
+        "calib": "calib/005726.txt",
+        "image_2": "image_2/005726.png",
+        "label_2": "label_2/005726.txt",
+        "velodyne": "velodyne/005726.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "854e14db43e3b41e2771d89766f79a347fbcd91409efb59cb65baef3e4b80f06",
+        "label_2": "cc7d81bf62a1bfda28d4fa2137bbfeca98c8b7aba4aa35ffbe6931e2fa4bcf53",
+        "velodyne": "2cde3abb6b4117d9c646275a95aa6f03a64471488f2fdafd2ba35cf0d9d50298"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "003273",
+      "input_files": {
+        "calib": "calib/003273.txt",
+        "image_2": "image_2/003273.png",
+        "label_2": "label_2/003273.txt",
+        "velodyne": "velodyne/003273.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "3af439f8f93124e7860fcc8201b5f27b1dcc978b5e20d070a81048455e7e08e4",
+        "label_2": "889f976499c135c6315195119e9445f812b03258e9bd3390467d4b8e03de383d",
+        "velodyne": "5e748562190482707cc47fdf0f9d45637ee08b974a2a2666a68cb5590de3ce6c"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "006199",
+      "input_files": {
+        "calib": "calib/006199.txt",
+        "image_2": "image_2/006199.png",
+        "label_2": "label_2/006199.txt",
+        "velodyne": "velodyne/006199.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "10937f24fd2513e74470a0a07a0ce884c66fcbfddec65d48ab508e49efee5e39",
+        "label_2": "6b831c572043c7419b0ceb343aad1508efe918d3b919633bc8d3f339db08eabd",
+        "velodyne": "a54a031e1ef86d0ee2aa09c8fb3555ad22d7d21b8f3e887884e1c050976e11cf"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "004012",
+      "input_files": {
+        "calib": "calib/004012.txt",
+        "image_2": "image_2/004012.png",
+        "label_2": "label_2/004012.txt",
+        "velodyne": "velodyne/004012.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "3073e808976af6acee83259f222a54fcbb609452bc24f31eda3f60562e76b2dc",
+        "label_2": "b0558fc1ab5fb6a989f242f173b41d93536b9736e029b542eb1848a974e3e8ad",
+        "velodyne": "0fafffe99dd85fd88a6138d976dae01ab6b28bbd1913fa94d0ed9e7a20e65c85"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "001492",
+      "input_files": {
+        "calib": "calib/001492.txt",
+        "image_2": "image_2/001492.png",
+        "label_2": "label_2/001492.txt",
+        "velodyne": "velodyne/001492.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "da0d98e0445e72c78211ce8cf6beaa32b62ee6479634080d3312f7f707c93c04",
+        "label_2": "2a23983a06d9b70644bdca2c692c43fd2492418b6ffc0d80ae3d5f7e23d4f8b4",
+        "velodyne": "8f08d9991fd55cea70ee1c40389a45e22df8d23b3e2b01c94a8cff3e050b8727"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "005675",
+      "input_files": {
+        "calib": "calib/005675.txt",
+        "image_2": "image_2/005675.png",
+        "label_2": "label_2/005675.txt",
+        "velodyne": "velodyne/005675.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "4d74a2270a86466dee64a8a71c58056b8b616bce1a64fa0e70b74c0cfda4142c",
+        "label_2": "5e0e94de54808e47b5289a4b61ea2b6c8a679fac46645a50f623b95b7b12963b",
+        "velodyne": "ad8e6c6011e1a258bb6ce70415d9d731fa50df9f7271ba2a6b68f69d0eddc36b"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 11,
+      "car_gt_before_range_filter": 11,
+      "frame_id": "003274",
+      "input_files": {
+        "calib": "calib/003274.txt",
+        "image_2": "image_2/003274.png",
+        "label_2": "label_2/003274.txt",
+        "velodyne": "velodyne/003274.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "99fde97b44776d3ea08f03048c9a2cb033e8c1db4cbacc63589e176fde1bf007",
+        "label_2": "6ac9d7e84a0a025613fb6056763df049ff4062e2c65e350bd8b4908f88d25295",
+        "velodyne": "9dcca30e9b06e9f2372b9a465f2ff35b6df1fb40848ab0ad93b5a28d5524ae53"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001348",
+      "input_files": {
+        "calib": "calib/001348.txt",
+        "image_2": "image_2/001348.png",
+        "label_2": "label_2/001348.txt",
+        "velodyne": "velodyne/001348.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "48c3526bedd9b8c5514b7135be2de6bf38f6d5d401d1aeaaea6f0a2da3b77f97",
+        "label_2": "dcf28add0f8f33cb479aa5f53767ecac69a002a7c5844ef2e947c5b786b6e2a6",
+        "velodyne": "99c2b8abb1ca35d11f91785aa0ab21ea7ce224b007d507f2f24cc53148390927"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "002771",
+      "input_files": {
+        "calib": "calib/002771.txt",
+        "image_2": "image_2/002771.png",
+        "label_2": "label_2/002771.txt",
+        "velodyne": "velodyne/002771.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "c43224b473a88ba3f931c289fab266bf8a0e62d7e653add81cf36941dd9a9ec2",
+        "label_2": "007b543239192efd5b358e9baabdfa6aa9a1f3fb81963245d730ee0849988b96",
+        "velodyne": "01659e910b633a0c901e8f755e4c4cb03607bf0df2ed5bc0c0bee7b5c2d879fd"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 5,
+      "car_gt_before_range_filter": 5,
+      "frame_id": "004796",
+      "input_files": {
+        "calib": "calib/004796.txt",
+        "image_2": "image_2/004796.png",
+        "label_2": "label_2/004796.txt",
+        "velodyne": "velodyne/004796.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "1b9d2385612adb6bdf8d691734c9609347df956072afb870c69b9008ab06b6f6",
+        "label_2": "32a8bac255166620c4c946e448524f178026df487610559e4211b345a5b87b96",
+        "velodyne": "b7d1e24b91daff98bc9f3bc98e15b307ea4751afffc529abaff99745461911eb"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "006867",
+      "input_files": {
+        "calib": "calib/006867.txt",
+        "image_2": "image_2/006867.png",
+        "label_2": "label_2/006867.txt",
+        "velodyne": "velodyne/006867.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "e67b7765373294fba3928eff19043882a4cb2d36fa6362dddaf4f8e8962c9337",
+        "label_2": "ca676f721275c5601e9bda61e2a7bb65d40c80a17946bb9b3a2c5b1389f71c4a",
+        "velodyne": "87e62ab3008508b590af974bfc0e5f019de1eb46b84d21a67ec80d17333b440b"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "000744",
+      "input_files": {
+        "calib": "calib/000744.txt",
+        "image_2": "image_2/000744.png",
+        "label_2": "label_2/000744.txt",
+        "velodyne": "velodyne/000744.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "a34a235da44e5aa889ab904e9aa0cd0e01c0a4355a7afd8ad16bf0c2616971a3",
+        "label_2": "b50e11436d02bd915a0234dcea11b4cb79d8500921915d858b9977e7bc08b77c",
+        "velodyne": "ef0fdaba0a489f5b63cfb4a9b8099a9af91da4aceb05cf87f0cd69b40ddba73b"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "005554",
+      "input_files": {
+        "calib": "calib/005554.txt",
+        "image_2": "image_2/005554.png",
+        "label_2": "label_2/005554.txt",
+        "velodyne": "velodyne/005554.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "711e7141c58b85d8e440f695fe5d9e983f619313e17b84d2cd582b7dc00cefbc",
+        "label_2": "b1b3927ad8dd30603e9719e1ecd96f3fcdc1ef1640fe1e394560fa1397c46d8f",
+        "velodyne": "8e4d6b8f595a2afc674c2d61f4530ba93050c298b6113bdefc438db34ee0368f"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "001390",
+      "input_files": {
+        "calib": "calib/001390.txt",
+        "image_2": "image_2/001390.png",
+        "label_2": "label_2/001390.txt",
+        "velodyne": "velodyne/001390.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "1f6212f7757a5477d9a70ff97706ef779862d0f23e87e2969b15a12734081fb3",
+        "label_2": "9a09d08b51086ad71cc892d78b2d304c78b2871c99718e1683b0879d9e323ab1",
+        "velodyne": "1f4afe3f8c43edc6b2a9d1ad607ee3e5b3a668ad4732526766f1ff8d284f3140"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 10,
+      "car_gt_before_range_filter": 10,
+      "frame_id": "001429",
+      "input_files": {
+        "calib": "calib/001429.txt",
+        "image_2": "image_2/001429.png",
+        "label_2": "label_2/001429.txt",
+        "velodyne": "velodyne/001429.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "a6499f0f7a9acf8e40ef2c228f1ba2181b509e1a1b1d9913ae9f68b989b0a193",
+        "label_2": "6f7bec13ccb5ce0dba18f4b23eab01b69354ea10711e6510b48bede60f255ccb",
+        "velodyne": "e810e657932e72fe234bee5572e63f2d488f525abc5f2e334ab43c4ed42d832f"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "007018",
+      "input_files": {
+        "calib": "calib/007018.txt",
+        "image_2": "image_2/007018.png",
+        "label_2": "label_2/007018.txt",
+        "velodyne": "velodyne/007018.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "aa1da35e26565a4de491b3d9ae39e60bc57481c062f49fb26601fc3b87ec491f",
+        "label_2": "b236be66a401ec6f5da0cd30ac393b98367f7f6b9707587c2d36117db362d3b4",
+        "velodyne": "a5b0e5aae64510bf1093df197a46357fb9bd4f92ee7738e46f1db48571927757"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "002203",
+      "input_files": {
+        "calib": "calib/002203.txt",
+        "image_2": "image_2/002203.png",
+        "label_2": "label_2/002203.txt",
+        "velodyne": "velodyne/002203.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "2ee6502a01b5a7e241ad8122d6860722c511fcb523fd9799242fa7a97b88f7a4",
+        "label_2": "706ef505a84fd51eb07f3858af96753c1d20a9fa1cc9c1aa73027271f24c54b9",
+        "velodyne": "4a40ec4aa17c98f75a07b24462921fef9871f10c15130327092f2cf212b0461a"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "000380",
+      "input_files": {
+        "calib": "calib/000380.txt",
+        "image_2": "image_2/000380.png",
+        "label_2": "label_2/000380.txt",
+        "velodyne": "velodyne/000380.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "0fb472620ee198116880d765ff958c85c63d0d6bf82d742703f00e2d2a01df56",
+        "label_2": "fecd7d9fca954d3da262a3e9971ec45711fd2e1fccd788c5b182ec82dfa10af3",
+        "velodyne": "02329cdfc345839f48e6c4cf2b020de607a34b698039d65a21750fe2afdfff2d"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "002980",
+      "input_files": {
+        "calib": "calib/002980.txt",
+        "image_2": "image_2/002980.png",
+        "label_2": "label_2/002980.txt",
+        "velodyne": "velodyne/002980.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "f22b6f60a48a0c86b21f2b96f7687237d5b7fb16b2783e3ddf35db22c10c41a1",
+        "label_2": "08ace59d5df2c0706247c71ff6271995cb5b291b55f8ea693f60abb4db5bc601",
+        "velodyne": "4a90b15b79749d42be92a3afa60c24477590251a706c75be30d288553a51606d"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "001879",
+      "input_files": {
+        "calib": "calib/001879.txt",
+        "image_2": "image_2/001879.png",
+        "label_2": "label_2/001879.txt",
+        "velodyne": "velodyne/001879.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "55a72a871360cba492e97f8c4fdad24022a4f13b04f2e3cb6a8139a2fa995c8a",
+        "label_2": "50867cc971949405cbb353c0edc1163436c32e5cc6bec488873380501c134629",
+        "velodyne": "84b1b0de74a7b638b3f45197de41847655d0d621bebcce8d0187fe302f6bd7bb"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "005091",
+      "input_files": {
+        "calib": "calib/005091.txt",
+        "image_2": "image_2/005091.png",
+        "label_2": "label_2/005091.txt",
+        "velodyne": "velodyne/005091.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "efedc577b5242dcf8ad882b12675e5918854f744b4bab4621db84003f154305f",
+        "label_2": "f899cd92823925c64afb187c44e445017bfe7d4566dd43b72cd984a298b6d355",
+        "velodyne": "ee3f64b80bb9cab47f2f0da21352e680b1b9bb02d4e670a40ada4c1140aa73e5"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 4,
+      "car_gt_before_range_filter": 4,
+      "frame_id": "006290",
+      "input_files": {
+        "calib": "calib/006290.txt",
+        "image_2": "image_2/006290.png",
+        "label_2": "label_2/006290.txt",
+        "velodyne": "velodyne/006290.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "e55b3a45552509bc62e0bb5049032cd242f875f08929e02002b6501fb4560584",
+        "label_2": "9682ec095abc5f9d5a15888349fe4366935ed2991d6660be4df6b235e6e3d575",
+        "velodyne": "c307f0ecb59e0fa92e0c88961d22cae9a0b1143492332d68ed093e4829a6c94b"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "006979",
+      "input_files": {
+        "calib": "calib/006979.txt",
+        "image_2": "image_2/006979.png",
+        "label_2": "label_2/006979.txt",
+        "velodyne": "velodyne/006979.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "38ba810b7b036ec01cd5b4df4b3b8a6242f5ca07c978f3a46264555f512d4423",
+        "label_2": "b1f715f49509730700caa89bcfb8fd6140ccf659aa55660d3356a2a9745327f3",
+        "velodyne": "b543778d465d0c0914e4e4ca336d0b1e07231f56718a6ca64d739f494ac73cf0"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "000103",
+      "input_files": {
+        "calib": "calib/000103.txt",
+        "image_2": "image_2/000103.png",
+        "label_2": "label_2/000103.txt",
+        "velodyne": "velodyne/000103.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "d98f7176d2b7655485578ddf2f7ee7cbbbe1a278edeebb9343adcc2b8bec4445",
+        "label_2": "82e4948b02161296abbe2b91835423269157347bdd7b26d63776ff63044b6545",
+        "velodyne": "5798f0a85d50d87e85e48c3a766ac66f7b664eefd483ccd6be8f2bd894f77c71"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "001554",
+      "input_files": {
+        "calib": "calib/001554.txt",
+        "image_2": "image_2/001554.png",
+        "label_2": "label_2/001554.txt",
+        "velodyne": "velodyne/001554.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b606e019fd534ad395b69ba85f2ca99d8c54b3f7e342ce0ae2000491c1bcf95a",
+        "label_2": "08d0c9c64749ede6289199180a8d10f6ece6c4ad0ac7509c79ae7f1e0afda4a7",
+        "velodyne": "907e580bdca1db7e7487616aa027845695bde946d87dd5efb16187e49a88bea8"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "000238",
+      "input_files": {
+        "calib": "calib/000238.txt",
+        "image_2": "image_2/000238.png",
+        "label_2": "label_2/000238.txt",
+        "velodyne": "velodyne/000238.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b0a89f4fd0f7d59b87b321790dae442525d2fcffa346b776900543b3487b6de3",
+        "label_2": "334839b103c1e86dc3b1964f362bcbf5117653f3063df7fac6c490dcfd1fe074",
+        "velodyne": "683a5ab134673869e11f59b3a2d3618d0ae213682501bffb1a287eedbb64959f"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 12,
+      "car_gt_before_range_filter": 12,
+      "frame_id": "000845",
+      "input_files": {
+        "calib": "calib/000845.txt",
+        "image_2": "image_2/000845.png",
+        "label_2": "label_2/000845.txt",
+        "velodyne": "velodyne/000845.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "0cbd6d4b4e003cbbc6da8edb8434c2f4a8ec6f9b535baffc011209c03300c11c",
+        "label_2": "2069a82c6d39eae572c7b48a3654e980acea7ca342798ebe7f02d33dd60ca23d",
+        "velodyne": "055d7367d998e25214f2a3280a540a625a399a5f9047b5c84149f21f41037be2"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "005779",
+      "input_files": {
+        "calib": "calib/005779.txt",
+        "image_2": "image_2/005779.png",
+        "label_2": "label_2/005779.txt",
+        "velodyne": "velodyne/005779.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "3de32ec166d3ee022ea5138a4cb2955b89d8a897946f7b04cdc7966389bbd7de",
+        "label_2": "58c7962a2bea6c85b1ce3a0b66132daaf5caf35e004e42c627a219a9c308bb90",
+        "velodyne": "e798ff61545b8f5ef7635261b82743a9d36a3edb142419afb0fc3758367264ef"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "005483",
+      "input_files": {
+        "calib": "calib/005483.txt",
+        "image_2": "image_2/005483.png",
+        "label_2": "label_2/005483.txt",
+        "velodyne": "velodyne/005483.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "ce470ed34b55a5c57b9beffd52a28f438460801730bd4a07fbbb2e383bd41ac7",
+        "label_2": "3bcaac7cce131746176b26faefdcf42429e61f911c40a636ab023c44a6e082b9",
+        "velodyne": "7afc608f1de456ddf415df845ae26cac72a2d148e8134fc1e255a659f2b2b41e"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 6,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "004518",
+      "input_files": {
+        "calib": "calib/004518.txt",
+        "image_2": "image_2/004518.png",
+        "label_2": "label_2/004518.txt",
+        "velodyne": "velodyne/004518.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "3101843982ef9fef7f3ccffd470eb3c7ba1a676e4618fdd9adba588e95d17de2",
+        "label_2": "e1c3e58bc1d7c44f03f543c302431d91b8d99eff22c748c0e568389aae141ff3",
+        "velodyne": "96893179ad1d239c2bee0314495a06a2be4b27c1b013cffc25cf144139c18c87"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 8,
+      "car_gt_before_range_filter": 8,
+      "frame_id": "005868",
+      "input_files": {
+        "calib": "calib/005868.txt",
+        "image_2": "image_2/005868.png",
+        "label_2": "label_2/005868.txt",
+        "velodyne": "velodyne/005868.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b562c82a094e8e50cf3cfadcc5b7e211710607004142c4aee1a1e6a3fd366f75",
+        "label_2": "cd05e7ac12071c604631903343e9592737213100a01cc4fc6a98ed61f67dc2f3",
+        "velodyne": "3f2c6705693f6f295d14fdce0f02e7b0c529407c5f2ca73b3b7baa1393fc7213"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "003589",
+      "input_files": {
+        "calib": "calib/003589.txt",
+        "image_2": "image_2/003589.png",
+        "label_2": "label_2/003589.txt",
+        "velodyne": "velodyne/003589.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "97bcbfe56e99db10dfc50d1e1a0d730195d93a3911e9e0415f08adddda8aaf3e",
+        "label_2": "74c69f3671209c80bf1bc94774fd2ba20eb3c3a636380c8e72f6236bdc5c58a6",
+        "velodyne": "7f187341fbfcb2635f2c00d1f096ab9e3fdfe032dd92ddf43d63292aed99f858"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "005902",
+      "input_files": {
+        "calib": "calib/005902.txt",
+        "image_2": "image_2/005902.png",
+        "label_2": "label_2/005902.txt",
+        "velodyne": "velodyne/005902.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "c984db5868e2a62167825908ca4c7b534258abb1d4de134dfc735b9aad2a556c",
+        "label_2": "d34b3ac0296e9d0f3ebaa224f751a8fbfab74d395426ca5d37ba9c449dd327f2",
+        "velodyne": "e0be5feac1b7a30f2b1ba1faa4373e2308393e6d9faacc4b08620d244ee44288"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "005904",
+      "input_files": {
+        "calib": "calib/005904.txt",
+        "image_2": "image_2/005904.png",
+        "label_2": "label_2/005904.txt",
+        "velodyne": "velodyne/005904.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "52cb900461d44cf2dd2f9ed4d09d10a09a5d9bbecabc0ec0d89bb9ee8ef38e29",
+        "label_2": "c55caec3ef069cfcd531c740509600af8400cf600e538a8624a7b419da47341b",
+        "velodyne": "46b9b7157db009345437f1a1c86f58f9c8966339b18225b1d9a5470f82fb615f"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "005849",
+      "input_files": {
+        "calib": "calib/005849.txt",
+        "image_2": "image_2/005849.png",
+        "label_2": "label_2/005849.txt",
+        "velodyne": "velodyne/005849.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "fd51c739665d94ba406e0f0abeb3fdea5a6d74a0ee4695021f3b0bd51ddf45c6",
+        "label_2": "03fd49a47957719ac8f4a46c3cf1873ecf02e5be1fec94f8d771a8e14504ee70",
+        "velodyne": "392302722c24a16f3032fcbc42aef3c9af556113cedc88ec76a6c4ec44d3a192"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "002403",
+      "input_files": {
+        "calib": "calib/002403.txt",
+        "image_2": "image_2/002403.png",
+        "label_2": "label_2/002403.txt",
+        "velodyne": "velodyne/002403.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "9991242560ae7786e6a647e2cf4545322aada1d59c829e9e9f82af89853aecb0",
+        "label_2": "20406dda655c716bb2d1ed4946a4311a0b2f1326f783996dbf96c6624e6ddc6e",
+        "velodyne": "e8a43e883f41548128bd2a981355234ae2423b9787a69db8213cd8cc7b4a87e4"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "002480",
+      "input_files": {
+        "calib": "calib/002480.txt",
+        "image_2": "image_2/002480.png",
+        "label_2": "label_2/002480.txt",
+        "velodyne": "velodyne/002480.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "f613a3e95fa9fb99990a85ae74b5eb3d52524933d4beb6d4eb0370e16e0b0cb4",
+        "label_2": "f602528532e1320773f60dad68730eba0445f6357b63c141e9e9c37e5480bef6",
+        "velodyne": "a24d31167f0175c69d194b9d3edb78c17602d46bdce55bdbe0da80eeac3f5697"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "006056",
+      "input_files": {
+        "calib": "calib/006056.txt",
+        "image_2": "image_2/006056.png",
+        "label_2": "label_2/006056.txt",
+        "velodyne": "velodyne/006056.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "dae4afe25ecb08e3fb43630b9dedf14885ceccf05fa3e8570b82d827defc37ca",
+        "label_2": "532a572c2c87e655e8b2a75e252ecd248cf7699607f90574e57a81679167480d",
+        "velodyne": "e3aaa91446b8eb1d4c546f6e27b8bd12614cf8c93382aaafb3b6e66f2b70e6df"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 9,
+      "car_gt_before_range_filter": 9,
+      "frame_id": "006662",
+      "input_files": {
+        "calib": "calib/006662.txt",
+        "image_2": "image_2/006662.png",
+        "label_2": "label_2/006662.txt",
+        "velodyne": "velodyne/006662.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "7ee70f76627c801347a45926c2fd47ad9964bac1291fe359ec5909695da037db",
+        "label_2": "b52edcd5693e3c7efb79178f8042025513b7efe49a3370a0c88511f54295ef53",
+        "velodyne": "1939bb7d116a5336181e3584ee00fe005d9df563b9edafd939e6b6c99ee4c97f"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "005526",
+      "input_files": {
+        "calib": "calib/005526.txt",
+        "image_2": "image_2/005526.png",
+        "label_2": "label_2/005526.txt",
+        "velodyne": "velodyne/005526.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "cc4c143da15714b406795eec54ad530864add52aea0692a38571f00f8c14f053",
+        "label_2": "28a2fcfd563b20e9ca27e88a79de685838886c9794a6736ea08dd3b14837b8ff",
+        "velodyne": "54e8f491c0b51b9159e3f67c8039d3044e7f0ef83c8aee201a3066ca1fbb4973"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 1,
+      "frame_id": "001408",
+      "input_files": {
+        "calib": "calib/001408.txt",
+        "image_2": "image_2/001408.png",
+        "label_2": "label_2/001408.txt",
+        "velodyne": "velodyne/001408.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "d8b430b2640c60e0eeb84df5c7153d280593ed1aa5ae764b5881c14ef85d713f",
+        "label_2": "3e11d665ec75a59af8dc46ad27620c9ac9f4becb9f4843e1bfdbd589d7babc21",
+        "velodyne": "99d9ff10abd883750aadd9532268fcfa6d34bf2a2a6a4e63ddcb64abe166d540"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 6,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "003200",
+      "input_files": {
+        "calib": "calib/003200.txt",
+        "image_2": "image_2/003200.png",
+        "label_2": "label_2/003200.txt",
+        "velodyne": "velodyne/003200.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "d31d46212dc75f09119729e05d0495a41663423730c2454d0008cf9faed4f332",
+        "label_2": "f2ad04c4e2c77721ed0f903a3087740df4299bf59f4004b7ba2476b3d437fc97",
+        "velodyne": "c7dbe4b0dc1c2d3ce5f8958261372c48fb84f5f85b73668fe57c1e8f04305f7b"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "003040",
+      "input_files": {
+        "calib": "calib/003040.txt",
+        "image_2": "image_2/003040.png",
+        "label_2": "label_2/003040.txt",
+        "velodyne": "velodyne/003040.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "99e7779e3e93a181a8632ef000285c13ea31f86739493db6725aa9c25686011f",
+        "label_2": "3d4ee1c8d6f46047b7d886d15199d232aef464dd8db81de511aa04539e270fd2",
+        "velodyne": "796da73270827218a340fc3c0753c25c2fa8680827ba46a028b1a66a9579cdc4"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "004912",
+      "input_files": {
+        "calib": "calib/004912.txt",
+        "image_2": "image_2/004912.png",
+        "label_2": "label_2/004912.txt",
+        "velodyne": "velodyne/004912.bin"
+      },
+      "input_sha256": {
+        "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+        "image_2": "870b50758ce5616e0974e672e1c152195335645b449b8865166b8ca7d5248114",
+        "label_2": "7b56b652f0815a34ae90b4a3b81a4b64e5b40e3bc73084371854546623431d66",
+        "velodyne": "eba0ab6645400503e4b81c2537dca6c83d8bab89812e07c975be7d50e736fc72"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 2,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "004240",
+      "input_files": {
+        "calib": "calib/004240.txt",
+        "image_2": "image_2/004240.png",
+        "label_2": "label_2/004240.txt",
+        "velodyne": "velodyne/004240.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "6e227531c792781d3d085104f6a0308edcc71b98ef60a0834a2da2134a3c8d35",
+        "label_2": "393baf53014f907227560d51b55ef4641d5ffac705cebf07926a9eff20ded167",
+        "velodyne": "1c97ab00b9cd0dc67e0410c44dead759eef64c9deda0e602e227080995876576"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 6,
+      "car_gt_before_range_filter": 6,
+      "frame_id": "002444",
+      "input_files": {
+        "calib": "calib/002444.txt",
+        "image_2": "image_2/002444.png",
+        "label_2": "label_2/002444.txt",
+        "velodyne": "velodyne/002444.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "cb1c14c23fc3fd9d66ecad80768825029f0e76bb00ff2b7429cd8bb392112db4",
+        "label_2": "7ba83796cd565cc88cb4c1ab5b6326ff4eed4ca9325532ca898bb435ec99baf0",
+        "velodyne": "99a61f6e65544c5e299cf8019f194f33e9e9f4005ea6bab868a3b3f5c614a7a4"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 9,
+      "car_gt_before_range_filter": 9,
+      "frame_id": "000483",
+      "input_files": {
+        "calib": "calib/000483.txt",
+        "image_2": "image_2/000483.png",
+        "label_2": "label_2/000483.txt",
+        "velodyne": "velodyne/000483.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "b4e7892c123b6da2fc76b6cdb278a148c2d3f1fee5df7f788579d3218b4a9b81",
+        "label_2": "c4547f79057a049cbc36eec884cbff74ba7e0efe3329652264afdd1824d4660b",
+        "velodyne": "4a241f365da6f22adc1a832b042e0421a8b02b5674d6fa97f876549ae56d8abc"
+      },
+      "stratum": "seven_plus"
+    },
+    {
+      "car_gt_after_range_filter": 0,
+      "car_gt_before_range_filter": 0,
+      "frame_id": "000892",
+      "input_files": {
+        "calib": "calib/000892.txt",
+        "image_2": "image_2/000892.png",
+        "label_2": "label_2/000892.txt",
+        "velodyne": "velodyne/000892.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "f8aceabac119ac1d9dacd81b15489212d2600ff97119f2d65253cfafb1e00331",
+        "label_2": "15c09534558f84e40c35a8e27924eb5015862a3e7bd88b089f4090e77bc4d44a",
+        "velodyne": "823b76381fa76a284d2b2decf5e23719fe33a203d21f0e33cb0088d117023445"
+      },
+      "stratum": "zero"
+    },
+    {
+      "car_gt_after_range_filter": 1,
+      "car_gt_before_range_filter": 2,
+      "frame_id": "000523",
+      "input_files": {
+        "calib": "calib/000523.txt",
+        "image_2": "image_2/000523.png",
+        "label_2": "label_2/000523.txt",
+        "velodyne": "velodyne/000523.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "0e49f8bf969d46c5fd23d370a820a89f30af0fe5ca74d7d00d9f3afa9203e0a4",
+        "label_2": "43cd211665678aa8d2def0c2878f6e40c26cae3af2af63e66de9e7abaa1e31c0",
+        "velodyne": "8c1edfd269d2de58a86787a8172cfec83541701b88f07f99376e5e4c5c168f82"
+      },
+      "stratum": "one_two"
+    },
+    {
+      "car_gt_after_range_filter": 3,
+      "car_gt_before_range_filter": 3,
+      "frame_id": "003908",
+      "input_files": {
+        "calib": "calib/003908.txt",
+        "image_2": "image_2/003908.png",
+        "label_2": "label_2/003908.txt",
+        "velodyne": "velodyne/003908.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "33263afd13a9ed810843186576a3c55a5ea9cf556a8fff5a5b522e3749bcf346",
+        "label_2": "3412b46fdc4d4336296913cb28d4074e8ff3d94005fe64868f50db1b36e8e396",
+        "velodyne": "6055330f016a47e6a8ded2d8c1bd54062c3193adcb29c6c53c4fd26483f2d2b1"
+      },
+      "stratum": "three_six"
+    },
+    {
+      "car_gt_after_range_filter": 7,
+      "car_gt_before_range_filter": 7,
+      "frame_id": "000441",
+      "input_files": {
+        "calib": "calib/000441.txt",
+        "image_2": "image_2/000441.png",
+        "label_2": "label_2/000441.txt",
+        "velodyne": "velodyne/000441.bin"
+      },
+      "input_sha256": {
+        "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+        "image_2": "0a8456ff4635f05160d1ad3d423701eabde5e6590e6967c98119eb0a061c2199",
+        "label_2": "ae6d88d5dce971d00ba6350c8fed6ea58a312934862b4b384def18e423ef3a6f",
+        "velodyne": "f172a89962dc59a039b4f9831d9f8fb4a5312c0f1538de6eae8f0c8dfdaa5d69"
+      },
+      "stratum": "seven_plus"
+    }
+  ],
+  "included_frames": [
+    "000000",
+    "000149",
+    "001970",
+    "000972",
+    "001020",
+    "004842",
+    "002485",
+    "002610",
+    "006788",
+    "002106",
+    "006830",
+    "003079",
+    "006707",
+    "004838",
+    "002496",
+    "003013"
+  ],
+  "interpretation": "Train-only input/export pilot with deliberate GT-count balancing; not a representative corpus, a fusion result, or KITTI AP.",
+  "mmdetection3d_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "pointpillars_checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+  "pointpillars_config": "configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-car.py",
+  "requested_size": 128,
+  "sampling": "pilot: seeded SHA-256 ordering and round-robin GT-count strata",
+  "sampling_seed": 20260926,
+  "schema_version": "clocs_train_export_batch_v1",
+  "selected_ids_sha256": "1d95d3d434876ea697494ed006e3a62513a53000921677a4e090074e9109968a",
+  "split": "train",
+  "split_manifest_sha256": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066",
+  "status": "INPUTS_VERIFIED_EXPORT_PENDING",
+  "train_frames_scanned": 3712,
+  "train_pool_by_stratum": {
+    "one_two": 1208,
+    "seven_plus": 703,
+    "three_six": 1328,
+    "zero": 473
+  },
+  "train_split_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+  "validation_split_sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86"
+}
