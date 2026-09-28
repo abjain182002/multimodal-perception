@@ -1,0 +1,31 @@
+{
+  "best_iou_max": 0.8143773078918457,
+  "best_iou_nonzero": 663,
+  "camera_confidence_threshold": 0.25,
+  "camera_device": "cuda",
+  "camera_model": "yolo26x",
+  "car_gt_after_range_filter": 1,
+  "frame_id": "005974",
+  "interpretation": "One training-frame integrity check; not KITTI AP or a trained fusion result.",
+  "num_candidates": 107136,
+  "num_feature_rows": 115362,
+  "num_ignored": 18,
+  "num_negative": 107104,
+  "num_positive": 14,
+  "schema_version": "clocs_real_train_frame_audit_v2",
+  "source_sha256": {
+    "calibration": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+    "dense_candidates": "680fdfa0b9275db4749bed3768c2f577849cedc90b16fe2e10639932c3b04063",
+    "feature_rows": "8fe6c412b712d4c61bee9f578ae05722231de99aae786e2207a61c59f8a42836",
+    "image": "7cf0b4db62816215950052a4672d483c4b5ae14732dc5ce847774d63cd04f9a0",
+    "label": "0ba869a0645bf8037fd9d1618a34be647913e56ffb553be9bfb192439a471560",
+    "pointpillars_checkpoint": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+    "pointpillars_config": "75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc",
+    "split_manifest": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066",
+    "yolo26x_weights": "9fdd44a31c504547ffb81d2c6d9e6dac3493c8eaa8b0398d3f43bae6c7003e92"
+  },
+  "split": "train",
+  "training_example_content_sha256": "2eb6b583e609515a5480c65a93784fbd2efcf07ded7cb8e9bbf0ca521a098ec2",
+  "ultralytics_version": "8.4.132",
+  "yolo26x_car_detections": 2
+}
