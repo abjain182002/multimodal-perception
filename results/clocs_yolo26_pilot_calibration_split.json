@@ -1,0 +1,271 @@
+{
+  "holdout_baseline_pointpillars_ap": 0.7965761635217612,
+  "holdout_candidates": 427994,
+  "holdout_frame_ids": [
+    "000149",
+    "000972",
+    "002496",
+    "004838"
+  ],
+  "holdout_improvement_over_pointpillars": 0.04669019303138966,
+  "holdout_positive_candidates": 508,
+  "holdout_selected_calibrated_ap": 0.8432663565531509,
+  "interpretation": "Calibration selected on 12 optimization frames and evaluated once on 4 fixed held-out frames; this remains a small pilot, not official KITTI AP.",
+  "schema_version": "clocs_yolo26_pilot_calibration_split_v1",
+  "selected_on_train": {
+    "ap": 0.7581866786851935,
+    "method": "logit_prior_blend",
+    "parameter": 1.875
+  },
+  "status": "PASS",
+  "train_baseline_pointpillars_ap": 0.7355675631408635,
+  "train_candidates": 1284649,
+  "train_frame_ids": [
+    "000000",
+    "001020",
+    "001970",
+    "002106",
+    "002485",
+    "002610",
+    "003013",
+    "003079",
+    "004842",
+    "006707",
+    "006788",
+    "006830"
+  ],
+  "train_grid": [
+    {
+      "ap": 0.7355675631408635,
+      "method": "linear_probability_blend",
+      "parameter": 0.0
+    },
+    {
+      "ap": 0.7386345601392351,
+      "method": "linear_probability_blend",
+      "parameter": 0.05
+    },
+    {
+      "ap": 0.7416835527970975,
+      "method": "linear_probability_blend",
+      "parameter": 0.1
+    },
+    {
+      "ap": 0.7445472038527302,
+      "method": "linear_probability_blend",
+      "parameter": 0.15000000000000002
+    },
+    {
+      "ap": 0.7470898883299363,
+      "method": "linear_probability_blend",
+      "parameter": 0.2
+    },
+    {
+      "ap": 0.7491144939812672,
+      "method": "linear_probability_blend",
+      "parameter": 0.25
+    },
+    {
+      "ap": 0.7504527443218046,
+      "method": "linear_probability_blend",
+      "parameter": 0.30000000000000004
+    },
+    {
+      "ap": 0.7509120699978886,
+      "method": "linear_probability_blend",
+      "parameter": 0.35000000000000003
+    },
+    {
+      "ap": 0.750131006151371,
+      "method": "linear_probability_blend",
+      "parameter": 0.4
+    },
+    {
+      "ap": 0.7481470594574477,
+      "method": "linear_probability_blend",
+      "parameter": 0.45
+    },
+    {
+      "ap": 0.744984913050227,
+      "method": "linear_probability_blend",
+      "parameter": 0.5
+    },
+    {
+      "ap": 0.7411543123415654,
+      "method": "linear_probability_blend",
+      "parameter": 0.55
+    },
+    {
+      "ap": 0.7360903346703522,
+      "method": "linear_probability_blend",
+      "parameter": 0.6000000000000001
+    },
+    {
+      "ap": 0.7288682275727939,
+      "method": "linear_probability_blend",
+      "parameter": 0.65
+    },
+    {
+      "ap": 0.7196940679026336,
+      "method": "linear_probability_blend",
+      "parameter": 0.7000000000000001
+    },
+    {
+      "ap": 0.7086832145799327,
+      "method": "linear_probability_blend",
+      "parameter": 0.75
+    },
+    {
+      "ap": 0.6922284686936467,
+      "method": "linear_probability_blend",
+      "parameter": 0.8
+    },
+    {
+      "ap": 0.668254439027437,
+      "method": "linear_probability_blend",
+      "parameter": 0.8500000000000001
+    },
+    {
+      "ap": 0.6386832268675764,
+      "method": "linear_probability_blend",
+      "parameter": 0.9
+    },
+    {
+      "ap": 0.5968111474576793,
+      "method": "linear_probability_blend",
+      "parameter": 0.9500000000000001
+    },
+    {
+      "ap": 0.533532128082387,
+      "method": "linear_probability_blend",
+      "parameter": 1.0
+    },
+    {
+      "ap": 0.533532128082387,
+      "method": "logit_prior_blend",
+      "parameter": 0.0
+    },
+    {
+      "ap": 0.6573211518132226,
+      "method": "logit_prior_blend",
+      "parameter": 0.125
+    },
+    {
+      "ap": 0.7070641660840559,
+      "method": "logit_prior_blend",
+      "parameter": 0.25
+    },
+    {
+      "ap": 0.731606957516125,
+      "method": "logit_prior_blend",
+      "parameter": 0.375
+    },
+    {
+      "ap": 0.7431412896834194,
+      "method": "logit_prior_blend",
+      "parameter": 0.5
+    },
+    {
+      "ap": 0.7491042648159967,
+      "method": "logit_prior_blend",
+      "parameter": 0.625
+    },
+    {
+      "ap": 0.7526827554252287,
+      "method": "logit_prior_blend",
+      "parameter": 0.75
+    },
+    {
+      "ap": 0.7547905911968218,
+      "method": "logit_prior_blend",
+      "parameter": 0.875
+    },
+    {
+      "ap": 0.7561343019017409,
+      "method": "logit_prior_blend",
+      "parameter": 1.0
+    },
+    {
+      "ap": 0.7568299398442084,
+      "method": "logit_prior_blend",
+      "parameter": 1.125
+    },
+    {
+      "ap": 0.7573380245401722,
+      "method": "logit_prior_blend",
+      "parameter": 1.25
+    },
+    {
+      "ap": 0.7576916994562852,
+      "method": "logit_prior_blend",
+      "parameter": 1.375
+    },
+    {
+      "ap": 0.757970973293605,
+      "method": "logit_prior_blend",
+      "parameter": 1.5
+    },
+    {
+      "ap": 0.758080576312329,
+      "method": "logit_prior_blend",
+      "parameter": 1.625
+    },
+    {
+      "ap": 0.7581733713513895,
+      "method": "logit_prior_blend",
+      "parameter": 1.75
+    },
+    {
+      "ap": 0.7581866786851935,
+      "method": "logit_prior_blend",
+      "parameter": 1.875
+    },
+    {
+      "ap": 0.7580498137873393,
+      "method": "logit_prior_blend",
+      "parameter": 2.0
+    },
+    {
+      "ap": 0.7578895979139003,
+      "method": "logit_prior_blend",
+      "parameter": 2.125
+    },
+    {
+      "ap": 0.7576968277142484,
+      "method": "logit_prior_blend",
+      "parameter": 2.25
+    },
+    {
+      "ap": 0.7575501067702348,
+      "method": "logit_prior_blend",
+      "parameter": 2.375
+    },
+    {
+      "ap": 0.7573381065157432,
+      "method": "logit_prior_blend",
+      "parameter": 2.5
+    },
+    {
+      "ap": 0.7571112566079782,
+      "method": "logit_prior_blend",
+      "parameter": 2.625
+    },
+    {
+      "ap": 0.7568861139936441,
+      "method": "logit_prior_blend",
+      "parameter": 2.75
+    },
+    {
+      "ap": 0.7566603862745886,
+      "method": "logit_prior_blend",
+      "parameter": 2.875
+    },
+    {
+      "ap": 0.7564322991865604,
+      "method": "logit_prior_blend",
+      "parameter": 3.0
+    }
+  ],
+  "train_positive_candidates": 837,
+  "train_selected_calibrated_ap": 0.7581866786851935
+}
