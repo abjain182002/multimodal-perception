@@ -1,0 +1,25 @@
+{
+  "schema_version": "clocs_validation_input_preflight_v1",
+  "status": "PASS",
+  "interpretation": "Validation input availability and frozen provenance; no fused detection AP measured.",
+  "train_frames": 3712,
+  "validation_frames": 3769,
+  "missing_validation_files": 0,
+  "missing_examples": [],
+  "dataset_root": "/Users/abhishekjain/Major_Project/datasets/KITTI/training",
+  "train_split_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+  "val_split_sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86",
+  "baseline_evidence_train_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+  "baseline_evidence_val_sha256": "6e2394d97c866c3af1ffb049f828abdf3d5b707d9575d16885fd0de87b72b0c8",
+  "baseline_evidence_val_hash_matches": false,
+  "fusion_checkpoint_sha256": "a2203b9adee46b782e896b7f3b9344b5916433b5404d4bd871aa7e05d6b0c473",
+  "fusion_checkpoint_path": "/Users/abhishekjain/Major_Project/model_outputs/clocs_stage5_checkpoints/clocs_128_training_comparison/clocs_128_ratio0_seed20260928/best_dev_checkpoint.pt",
+  "baseline_checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+  "baseline_predictions_reported": 3769,
+  "baseline_prediction_file": null,
+  "pending": [
+    "Export validation candidate features using the frozen PointPillars and YOLO26x.",
+    "Apply this checkpoint to all candidates and match baseline postprocessing.",
+    "Compare 3D/BEV strict AP40 under the same KITTI evaluator."
+  ]
+}
