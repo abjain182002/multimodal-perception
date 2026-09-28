@@ -30,6 +30,27 @@ not establish completed inference or training.
 
 Four focused tests passed in the development workspace: camera weight identity
 and tamper rejection, existing artifact protection, train-only split validation,
-and dense export provenance. Real YOLO26 inference on this training frame and
-Kaggle project compatibility remain pending user execution. No trained CLOCs
+and dense export provenance. The subsequent Mac execution is recorded below. Kaggle project compatibility
+and training remain pending. No trained CLOCs
 accuracy or generalisation result is claimed by this preparation step.
+
+## Frame 000149 execution receipt
+
+Source: user-supplied Mac terminal output on 28 September 2026, after pulling
+`37e7a51`. The full Mac suite passed 112 tests. The frame builder completed with
+camera `yolo26x`, Ultralytics 8.4.132, MPS and confidence threshold 0.25.
+
+- Car GT: 10; YOLO26x Car detections: 9.
+- Candidates: 107136; feature rows: 158691.
+- Positive / negative / ignored: 179 / 106798 / 159.
+- Best IoU maximum: 0.9291334748268127; nonzero: 5137.
+- Feature-row file SHA-256: `fa1d2b001fd886bf243149c9c85bf2b9a045357533e7bebe7fda3dedd271b863`.
+- Training-example content SHA-256: `01de9ddccbde0ebe99bd93f03c9e16728da34be56937b00b656d79d467cc8c9a`.
+
+The unchanged labels agree with the existing YOLOv8 control. There are 147 fewer
+feature rows than the YOLOv8 example (158838); this is a camera-association
+change, not evidence of improved detector accuracy. The original small audit
+is `results/clocs_yolo26_frame_000149_audit.json` on the Mac, awaiting its own
+commit at the time of this receipt. Large files remain in the separate
+`yolo26x` directory outside Git. This receipt records reported execution;
+it is not an independent rerun of the local artifacts.
