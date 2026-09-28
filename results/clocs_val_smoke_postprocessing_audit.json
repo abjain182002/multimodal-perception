@@ -1,0 +1,129 @@
+{
+  "schema_version": "clocs_val_smoke_postprocessing_v1",
+  "status": "PASS",
+  "interpretation": "Four-frame postprocessing and detection-count diagnostic; not KITTI AP40 or an accuracy comparison.",
+  "settings": {
+    "nms_pre": 100,
+    "nms_thr": 0.01,
+    "score_thr": 0.1,
+    "max_num": 50,
+    "use_rotate_nms": true
+  },
+  "frames": [
+    {
+      "frame_id": "000831",
+      "native_pointpillars_parity": "PASS",
+      "native_baseline_detections": 11,
+      "fusion_detections": 10,
+      "max_baseline_score_error": 0.0,
+      "max_baseline_box_error": 0.0,
+      "baseline_retained_scores": [
+        0.9635120034217834,
+        0.9532924890518188,
+        0.9505230188369751,
+        0.9496387243270874,
+        0.9353958964347839,
+        0.9269772171974182,
+        0.9262688159942627,
+        0.9235336184501648,
+        0.9137451648712158,
+        0.8202664256095886,
+        0.8035833835601807
+      ],
+      "fusion_retained_scores": [
+        0.7712957262992859,
+        0.7569008469581604,
+        0.7567046284675598,
+        0.7533361911773682,
+        0.7480657696723938,
+        0.7343959212303162,
+        0.6932778358459473,
+        0.676941454410553,
+        0.6688954830169678,
+        0.6686426997184753
+      ]
+    },
+    {
+      "frame_id": "001662",
+      "native_pointpillars_parity": "PASS",
+      "native_baseline_detections": 7,
+      "fusion_detections": 5,
+      "max_baseline_score_error": 0.0,
+      "max_baseline_box_error": 0.0,
+      "baseline_retained_scores": [
+        0.965885579586029,
+        0.9567515254020691,
+        0.9130834341049194,
+        0.7809305787086487,
+        0.7609882354736328,
+        0.5158476233482361,
+        0.19916842877864838
+      ],
+      "fusion_retained_scores": [
+        0.7651447057723999,
+        0.7495100498199463,
+        0.7362909317016602,
+        0.7197605967521667,
+        0.710045576095581
+      ]
+    },
+    {
+      "frame_id": "003324",
+      "native_pointpillars_parity": "PASS",
+      "native_baseline_detections": 10,
+      "fusion_detections": 2,
+      "max_baseline_score_error": 0.0,
+      "max_baseline_box_error": 0.0,
+      "baseline_retained_scores": [
+        0.26318812370300293,
+        0.17725211381912231,
+        0.13937535881996155,
+        0.1320120394229889,
+        0.1154976636171341,
+        0.10935603827238083,
+        0.10929637402296066,
+        0.10813244432210922,
+        0.10584431141614914,
+        0.10202333331108093
+      ],
+      "fusion_retained_scores": [
+        0.4237149953842163,
+        0.4132227301597595
+      ]
+    },
+    {
+      "frame_id": "004155",
+      "native_pointpillars_parity": "PASS",
+      "native_baseline_detections": 12,
+      "fusion_detections": 10,
+      "max_baseline_score_error": 0.0,
+      "max_baseline_box_error": 0.0,
+      "baseline_retained_scores": [
+        0.957267165184021,
+        0.956867516040802,
+        0.9364907145500183,
+        0.9137144684791565,
+        0.8926876187324524,
+        0.8879700899124146,
+        0.8516804575920105,
+        0.824187159538269,
+        0.8106727600097656,
+        0.8076314926147461,
+        0.7554628849029541,
+        0.658534049987793
+      ],
+      "fusion_retained_scores": [
+        0.7617822885513306,
+        0.7560134530067444,
+        0.7548284530639648,
+        0.7345927357673645,
+        0.7172830104827881,
+        0.7169452905654907,
+        0.7159877419471741,
+        0.701327383518219,
+        0.6836232542991638,
+        0.660956084728241
+      ]
+    }
+  ]
+}
