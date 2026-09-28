@@ -1,0 +1,41 @@
+{
+  "schema_version": "clocs_validation_smoke_inputs_v1",
+  "split": "validation",
+  "interpretation": "Four validation frames for inference plumbing only; not a performance estimate.",
+  "frame_ids": [
+    "000831",
+    "001662",
+    "003324",
+    "004155"
+  ],
+  "train_split_sha256": "b6417a1d9b18c8fdb085128e633d28ff321b7674a6d1b3841b8f43d865b281cb",
+  "validation_split_sha256": "657ac4bcc1e156e5b106a4ca18e1f88e012787ea1d2b5d0adeea97fee903fa86",
+  "input_sha256": {
+    "000831": {
+      "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+      "image_2": "6877b3cb7db562f0e5028c77d6de8198c0fb0c5bff6bf2d88a2491d130102166",
+      "label_2": "ff999f08de4d84e51fb5b6bbf45d77efb9c63b7e5d9d7035f6fb4d7bf6248af6",
+      "velodyne": "4bf8ab819ff6fa6b719e956d6881243e2a5edbf28c2d93bd7a56e12fe9fb2843"
+    },
+    "001662": {
+      "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+      "image_2": "71a68359d77d1a5be319f307dbb5d5b3a7307c02c514d7a7e58fd404cfe8af4a",
+      "label_2": "7e6af53519042d81eb0cd02dc4ec4769911c95a8ee76fab2519c3bddff3d954b",
+      "velodyne": "c74b5ef9af7d0044d0f49c85fda11bf450a485923bfc7bbcec787a9fbd9e5723"
+    },
+    "003324": {
+      "calib": "29b89ca9fa49b2cad778bf73910ff7210c7998badae39796cf29666081992d7f",
+      "image_2": "8115a465bb870798787f7b38c26c998b6fb3b9539521b97709810f9244862c15",
+      "label_2": "f5b4f31e71b77c2a17d69f434cf83ffe7ed6ec594d83addf6ff8485100b58573",
+      "velodyne": "2adce15e97658702e3a68e396e3fec554881578852a8cb0fb5678ce987ec2397"
+    },
+    "004155": {
+      "calib": "5813c05a89e33e67244891c62e153e0a572692d42365b8665e38cc242c7d4918",
+      "image_2": "eb829ae74dbc375d8aff0735f41d1d03ea52acbf4a9393e2805b69ac9ef34816",
+      "label_2": "20f9ad355f4b613d9a2911deadf33308334aa08324ac1514304a6a369f5179e9",
+      "velodyne": "cbae3d9ef617df7726050436e204af7bc8ca4a62dbc3dc5cad3e1dbf091dbfa6"
+    }
+  },
+  "fusion_checkpoint_sha256": "a2203b9adee46b782e896b7f3b9344b5916433b5404d4bd871aa7e05d6b0c473",
+  "pointpillars_checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e"
+}
