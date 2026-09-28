@@ -1,0 +1,21 @@
+{
+  "schema_version": "clocs_yolo26_transfer_receipt_v1",
+  "evidence_source": "User-supplied Mac terminal output, 2026-09-28; not an independent archive reread",
+  "source_commit": "c64684b",
+  "status": "REPORTED_PACKAGE_PASS",
+  "num_frames": 16,
+  "verified_members": 49,
+  "archive_name": "clocs_yolo26_training_16.tar.gz",
+  "archive_bytes": 43767933,
+  "archive_sha256": "5a5fa276f8396169900f485b3c0326b2ba476ca8ebd708c13e174dbee1fee1ef",
+  "totals": {
+    "car_gt_after_range_filter": 67,
+    "yolo26x_car_detections": 84,
+    "num_candidates": 1714176,
+    "num_feature_rows": 2177552,
+    "num_positive": 1345,
+    "num_negative": 1711298,
+    "num_ignored": 1533
+  },
+  "kaggle_restore_status": "PENDING"
+}
