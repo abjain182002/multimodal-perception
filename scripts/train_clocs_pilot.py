@@ -223,12 +223,24 @@ def main() -> None:
     with checkpoint_path.open("rb") as handle:
         checkpoint_sha = hashlib.sha256(handle.read()).hexdigest()
 
+    # Reload the persisted weights and require the same held-out result.  This
+    # catches incomplete or incompatible checkpoint writes before the run is
+    # treated as evidence.
+    reloaded = CLOCsFusionNet().to(device)
+    payload = torch.load(checkpoint_path, map_location=device, weights_only=False)
+    reloaded.load_state_dict(payload["model_state_dict"])
+    reloaded_after = {"holdout": evaluate(reloaded, holdout_frames, device)}
+    reload_ap_error = abs(reloaded_after["holdout"]["fused_clocs_ap"] - after["holdout"]["fused_clocs_ap"])
+    if reload_ap_error > 1e-12:
+        raise RuntimeError(f"checkpoint reload changed held-out AP by {reload_ap_error}")
+
     report = {"schema_version": SCHEMA, "status": "PASS", "interpretation": "16-frame KITTI training pilot; not full KITTI AP and not a held-out official benchmark.",
               "camera_model": "yolo26x", "device": str(device), "seed": args.seed, "epochs": args.epochs,
               "learning_rate": args.learning_rate, "all_frame_ids": ids, "train_frame_ids": train_ids,
               "holdout_frame_ids": holdout_ids, "train_positive_candidates": int(sum(frames[f]["example"]["num_positive"] for f in train_ids)),
               "holdout_positive_candidates": int(sum(frames[f]["example"]["num_positive"] for f in holdout_ids)),
-              "before": before, "after": after, "history": history,
+              "before": before, "after": after, "reloaded_after": reloaded_after,
+              "checkpoint_reload_ap_absolute_error": reload_ap_error, "history": history,
               "checkpoint": {"path": str(checkpoint_path), "sha256": checkpoint_sha},
               "input_sha256": {"summary": sha256(data_dir / "summary.json"), "manifest": sha256(data_dir / "manifest.json"),
                                "examples": {f: sha256(frames[f]["example_path"]) for f in ids},
