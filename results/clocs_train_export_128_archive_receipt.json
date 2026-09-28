@@ -1,0 +1,15 @@
+{
+  "schema_version": "clocs_dense_export_128_archive_receipt_v1",
+  "status": "PASS",
+  "num_frames": 128,
+  "candidate_files": 128,
+  "archive_bytes": 907480495,
+  "archive_sha256": "79ed0d6a94a41e1aa69158fab14dd6f806120d20933c70c0e075f8cb6c36b306",
+  "audit_status": "PASS",
+  "completed_frames": 128,
+  "requested_frames": 128,
+  "checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+  "config_sha256": "75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc",
+  "manifest_sha256": "25d5d8173d56342bffaac8b6a52a67672da1bed582e6adb69ad4b847ea1d3427",
+  "split_manifest_sha256": "5bb9eab9c62722d54e4b7ab65dc61646ce677bf48473e51da977d4da01a36066"
+}
