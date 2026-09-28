@@ -4,6 +4,18 @@ This project uses established open-source implementations as external references
 
 The external implementations are used as baselines or supporting frameworks. Project-specific work is maintained in this repository, including integration code, evaluation scripts, experimental results, comparative analysis and visualisation.
 
+## CLOCs
+
+- Repository: https://github.com/pangsu0613/CLOCs
+- Paper: Su Pang, Daniel Morris and Hayder Radha. *CLOCs: Camera-LiDAR Object Candidates Fusion for 3D Object Detection*. IROS, 2020.
+- Paper link: https://arxiv.org/abs/2009.00784
+- Licence: MIT (retain upstream notices when reusing source).
+- Project use: candidate fusion architecture and methodology reference.
+- The YOLO26x/PointPillars integration, optional negative sampling and 128-frame
+  internal development protocol are project adaptations, not original-paper results.
+- Exact local upstream commit must be recorded when using that checkout; none is
+  inferred from the uploaded project archive.
+
 ## MMDetection3D
 
 - Repository: `open-mmlab/mmdetection3d`
