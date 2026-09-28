@@ -1,0 +1,443 @@
+{
+  "after": {
+    "holdout": {
+      "baseline_pointpillars_ap": 0.7965761635217612,
+      "candidates": 427994,
+      "frames": 4,
+      "fused_clocs_ap": 0.5771757407891116,
+      "mean_normalized_focal_loss": 0.0005644178097911159,
+      "positive_candidates": 508
+    },
+    "train": {
+      "baseline_pointpillars_ap": 0.7355675631408635,
+      "candidates": 1284649,
+      "frames": 12,
+      "fused_clocs_ap": 0.5335320942088095,
+      "mean_normalized_focal_loss": 0.00032189378303112596,
+      "positive_candidates": 837
+    }
+  },
+  "all_frame_ids": [
+    "000000",
+    "000149",
+    "000972",
+    "001020",
+    "001970",
+    "002106",
+    "002485",
+    "002496",
+    "002610",
+    "003013",
+    "003079",
+    "004838",
+    "004842",
+    "006707",
+    "006788",
+    "006830"
+  ],
+  "before": {
+    "holdout": {
+      "baseline_pointpillars_ap": 0.7965761635217612,
+      "candidates": 427994,
+      "frames": 4,
+      "fused_clocs_ap": 0.746808771997985,
+      "mean_normalized_focal_loss": 0.12307150907489879,
+      "positive_candidates": 508
+    },
+    "train": {
+      "baseline_pointpillars_ap": 0.7355675631408635,
+      "candidates": 1284649,
+      "frames": 12,
+      "fused_clocs_ap": 0.7235567657459395,
+      "mean_normalized_focal_loss": 0.12273873444518613,
+      "positive_candidates": 837
+    }
+  },
+  "camera_model": "yolo26x",
+  "checkpoint": {
+    "path": "/kaggle/working/clocs_yolo26_pilot_run/clocs_yolo26_pilot_checkpoint.pt",
+    "sha256": "8fb22db676cb1de14a676e0a37fb80a4723962c28e31a0e40809495cb9ec7caf"
+  },
+  "checkpoint_reload_ap_absolute_error": 0.0,
+  "device": "cuda",
+  "epochs": 12,
+  "history": [
+    {
+      "epoch": 1,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.40841562076427784,
+          "mean_normalized_focal_loss": 0.023239960665798334,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.3480026783367075,
+          "mean_normalized_focal_loss": 0.02257338730909025,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.9022439122200012,
+        "mean_normalized_focal_loss": 0.060562312234348305
+      }
+    },
+    {
+      "epoch": 2,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.3616278738043375,
+          "mean_normalized_focal_loss": 0.00867495969337724,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.25123832283084596,
+          "mean_normalized_focal_loss": 0.008433324514668864,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.1455061137676239,
+        "mean_normalized_focal_loss": 0.014408539963672714
+      }
+    },
+    {
+      "epoch": 3,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.2659602770700518,
+          "mean_normalized_focal_loss": 0.0022907362290657037,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.20837090195087293,
+          "mean_normalized_focal_loss": 0.0021600730433717027,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.08415396511554718,
+        "mean_normalized_focal_loss": 0.004556336226490505
+      }
+    },
+    {
+      "epoch": 4,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.2653455571283962,
+          "mean_normalized_focal_loss": 0.0008917125086611497,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.22090741911475115,
+          "mean_normalized_focal_loss": 0.0006958463569315424,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.028501957654953003,
+        "mean_normalized_focal_loss": 0.0011622239618276353
+      }
+    },
+    {
+      "epoch": 5,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.32216900007547544,
+          "mean_normalized_focal_loss": 0.0007102337721151446,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.2761376139109872,
+          "mean_normalized_focal_loss": 0.00046310204643139975,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.008065448142588139,
+        "mean_normalized_focal_loss": 0.0005387989192750334
+      }
+    },
+    {
+      "epoch": 6,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.37332726253030624,
+          "mean_normalized_focal_loss": 0.000682175531718115,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.3379395692132057,
+          "mean_normalized_focal_loss": 0.0004144057507863856,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.0036209975369274616,
+        "mean_normalized_focal_loss": 0.0004331022398214035
+      }
+    },
+    {
+      "epoch": 7,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.3952672945122463,
+          "mean_normalized_focal_loss": 0.0006669266520086972,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.3859978728490416,
+          "mean_normalized_focal_loss": 0.00039394691368719556,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.0027289604768157005,
+        "mean_normalized_focal_loss": 0.00040373912063255507
+      }
+    },
+    {
+      "epoch": 8,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.4165753139799429,
+          "mean_normalized_focal_loss": 0.0006496761719561777,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.4162601407094826,
+          "mean_normalized_focal_loss": 0.0003786416565837914,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.002350146183744073,
+        "mean_normalized_focal_loss": 0.0003866529309980808
+      }
+    },
+    {
+      "epoch": 9,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.43905699141451565,
+          "mean_normalized_focal_loss": 0.0006296109664420053,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.4443476099231146,
+          "mean_normalized_focal_loss": 0.0003643530754843744,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.0021882711444050074,
+        "mean_normalized_focal_loss": 0.00037197661080308936
+      }
+    },
+    {
+      "epoch": 10,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.45824260052733995,
+          "mean_normalized_focal_loss": 0.0006083824353961885,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.466451103637726,
+          "mean_normalized_focal_loss": 0.00035025052392229187,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.0021009480115026236,
+        "mean_normalized_focal_loss": 0.0003578509031612794
+      }
+    },
+    {
+      "epoch": 11,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.5091026554209171,
+          "mean_normalized_focal_loss": 0.0005865932512528237,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.493880473643094,
+          "mean_normalized_focal_loss": 0.0003360549614435813,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.0020284545607864857,
+        "mean_normalized_focal_loss": 0.000343729296158705
+      }
+    },
+    {
+      "epoch": 12,
+      "evaluation": {
+        "holdout": {
+          "baseline_pointpillars_ap": 0.7965761635217612,
+          "candidates": 427994,
+          "frames": 4,
+          "fused_clocs_ap": 0.5771757407891116,
+          "mean_normalized_focal_loss": 0.0005644178097911159,
+          "positive_candidates": 508
+        },
+        "train": {
+          "baseline_pointpillars_ap": 0.7355675631408635,
+          "candidates": 1284649,
+          "frames": 12,
+          "fused_clocs_ap": 0.5335320942088095,
+          "mean_normalized_focal_loss": 0.00032189378303112596,
+          "positive_candidates": 837
+        }
+      },
+      "train_step": {
+        "max_gradient_norm": 0.001962886657565832,
+        "mean_normalized_focal_loss": 0.0003295263678269045
+      }
+    }
+  ],
+  "holdout_frame_ids": [
+    "000149",
+    "000972",
+    "002496",
+    "004838"
+  ],
+  "holdout_positive_candidates": 508,
+  "input_sha256": {
+    "examples": {
+      "000000": "0f93a0351cdf8cdd44be8bf404fae364e9c1cde1295617b4479c1b9966604e22",
+      "000149": "ae3d71a1fd7a88a9b65ae28466127fb5c352c85f962070814d347a99eccfd1ac",
+      "000972": "bc8a4c67c94c4ae3c88f13743c5e4df3a9f9eff4793752c7787378a5cbe33f47",
+      "001020": "4baf4be73a309ebffc331cebf6a409622fb182617af17ef264373a57472e0ee5",
+      "001970": "fa50e900b299b58dfdbc03d3c3a41817f8d3090a17ea149659dc257d8ed7bf49",
+      "002106": "2d1667390c4328cd02c0f3ec37d96f640f24ea984ec2fa90ae3e148648a20e77",
+      "002485": "91ad3e2ac619356078edb94949f7d9779e4f5acd79e831d38325a6aa82577b17",
+      "002496": "3d4cc4dcf2d8c71e57a4fd8ed5d8ec2a631ded09e3c354263612c37231d48bf1",
+      "002610": "8aa7cf2ba59bc4136b06ecbae64c9252190f1b54ff0dd4ba77c357c45b66a869",
+      "003013": "020e9927496d1a87a3d26bafd2945a5add41c472d184d6c224a0e01586562ef2",
+      "003079": "9bc239e346973df8774889eff325adca9a6c0dccddef63bb36e88048822df20d",
+      "004838": "d3fe81388e280d88e946fa32fee08ebe290aac4462aefd5e4582a5e604771b58",
+      "004842": "4076db2b205d55028eda9d89bcb747ba1f3c8e7980f443c999cce3998a8177be",
+      "006707": "f527b2e2695447425b391fe35a19291ef01defb9bf5a61062c6e7c165106ef0e",
+      "006788": "229b9edb01289461e3abbc9b836a706fc7fd79fb43df662d3e08052ccb121416",
+      "006830": "9eae42a3817fa12f6ce342b3907665952db864f93b60fc7a9a48266ca9f3a3ab"
+    },
+    "manifest": "586c7b5e43149e5b82079377e026edc50df44d379b0d6f4a4431394dfc52cd57",
+    "rows": {
+      "000000": "5c7a7c4d24c276c4584060578fcd9c247fdef7d350ae3a23c96fc2afd49082e5",
+      "000149": "fa1d2b001fd886bf243149c9c85bf2b9a045357533e7bebe7fda3dedd271b863",
+      "000972": "6aac556d6ecf73dbdcf7d201d13173f17445e1b6456c51ce86ec12e14455dcd8",
+      "001020": "6f054627601d9447cd47a362bb1b5a36d1a7561d73bc62b51c182020af851bcd",
+      "001970": "26598fde97ba43cad89205aa171bf5ce179de36faebde67855140127dfd9d056",
+      "002106": "27ac1c0fe3c33dfe6d1eb4e75648e0c528bff20bcffbc5c414c4ce071e06e3b2",
+      "002485": "7a1774b5926f58ea616d7b3ee592233c563ec30ec42eb44d97188e4e60d4d0d9",
+      "002496": "75e13042764dd304f510b9ac2665f26528f4beb503b59cfede46c345f486239b",
+      "002610": "ac2004dc0edf50d03da10c32f4df50c2608bee241df0fc250dc17277d521b1fe",
+      "003013": "f69bbdc29f04981ee27c47870449e529484631742599c2caf9c381da76022106",
+      "003079": "16d6fab5df5029787489ea370a054625f2e7fcdd9c3c51906e30a2c9a46d57ab",
+      "004838": "b07827de96b192783c337c7f02617adc9a71b2eb9cd1904e458c2ef209a96401",
+      "004842": "032e26a47dec1e939aa0b9dc85043c3116c23a8a0cc74972dae350515e4ed36f",
+      "006707": "a25219e832669fff29f40bf44b6514a06fe599355e871a5bbf7b73bfde070887",
+      "006788": "316b0198f5ac6427688c803e08459c1c6331776245b166d57546c6be29be05af",
+      "006830": "49927e87dd8aad666c0fbec1206f83b8c353dddb52ea6cd52ed675638c97aabf"
+    },
+    "summary": "8ea273216638bb673084879c9d8ed28f6591ca8248fb03c48befdd93242ea19e"
+  },
+  "interpretation": "16-frame KITTI training pilot; not full KITTI AP and not a held-out official benchmark.",
+  "learning_rate": 0.002,
+  "reloaded_after": {
+    "holdout": {
+      "baseline_pointpillars_ap": 0.7965761635217612,
+      "candidates": 427994,
+      "frames": 4,
+      "fused_clocs_ap": 0.5771757407891116,
+      "mean_normalized_focal_loss": 0.0005644178097911159,
+      "positive_candidates": 508
+    }
+  },
+  "schema_version": "clocs_yolo26_pilot_training_v1",
+  "seed": 20260928,
+  "status": "PASS",
+  "train_frame_ids": [
+    "000000",
+    "001020",
+    "001970",
+    "002106",
+    "002485",
+    "002610",
+    "003013",
+    "003079",
+    "004842",
+    "006707",
+    "006788",
+    "006830"
+  ],
+  "train_positive_candidates": 837
+}
