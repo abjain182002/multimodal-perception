@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mac: build one real CLOCs Car example from a Colab dense export and YOLOv8x.
+"""Build one real CLOCs Car example from dense exports and pinned YOLO weights.
 
 Outputs the auditable feature rows, a hash-verified training example and a
 small JSON diagnostic. This single frame is a data-integrity gate, not AP.
@@ -17,6 +17,27 @@ from fusion.clocs_dataset import load_training_example_npz, save_training_exampl
 from fusion.kitti_labels import parse_kitti_label_file
 from scripts.build_clocs_training_example import build_real_example, read_inputs
 from scripts.export_clocs_dense_train_frame import check_training_frame, file_sha256
+
+
+CAMERA_WEIGHT_SHA256 = {
+    "yolov8x": "3df4ada6b4dad6d657868f2fdf7faecfb34dcfccf3a25c4b82079064718524c8",
+    # User's local YOLO26x artifact, fingerprinted on 2026-09-28.
+    # This records project provenance, not an upstream authenticity assertion.
+    "yolo26x": "9fdd44a31c504547ffb81d2c6d9e6dac3493c8eaa8b0398d3f43bae6c7003e92",
+}
+
+
+def validate_camera_weights(camera_model, weights):
+    actual = file_sha256(weights)
+    if actual != CAMERA_WEIGHT_SHA256[camera_model]:
+        raise ValueError(f"Weights do not match pinned {camera_model}: {actual}")
+    return actual
+
+
+def require_new_outputs(*paths):
+    for path in paths:
+        if Path(path).exists():
+            raise FileExistsError(f"Refusing to overwrite existing artifact: {path}")
 
 
 def car_detections(result, names):
@@ -51,7 +72,9 @@ def main():
     parser.add_argument("--dataset", required=True, help="KITTI labelled training root")
     parser.add_argument("--frame-id", default="000000")
     parser.add_argument("--candidates", required=True, help="Colab dense candidate NPZ")
-    parser.add_argument("--yolo-weights", required=True, help="Frozen yolov8x.pt")
+    parser.add_argument("--yolo-weights", required=True, help="Frozen camera weights")
+    parser.add_argument("--camera-model", choices=tuple(CAMERA_WEIGHT_SHA256),
+                        default="yolov8x", help="Must match the pinned weight hash")
     parser.add_argument("--device", default="mps", help="Ultralytics inference device")
     parser.add_argument("--train", required=True, help="Canonical SECOND train.txt")
     parser.add_argument("--val", required=True, help="Canonical SECOND val.txt")
@@ -66,6 +89,8 @@ def main():
              (args.candidates, args.output, args.rows, args.audit)]
     if len(set(paths)) != len(paths):
         parser.error("--candidates, --output, --rows and --audit must be distinct")
+    require_new_outputs(args.output, args.rows, args.audit)
+    camera_sha = validate_camera_weights(args.camera_model, args.yolo_weights)
 
     check_training_frame(args.frame_id, args.manifest, args.train, args.val)
     candidates = read_inputs(args.candidates,
@@ -88,6 +113,7 @@ def main():
         if not path.is_file():
             raise FileNotFoundError(path)
 
+    import ultralytics
     from ultralytics import YOLO
     detector = YOLO(str(weights))
     prediction = detector.predict(source=str(image), device=args.device,
@@ -110,15 +136,23 @@ def main():
     rows_path = Path(args.rows)
     output.parent.mkdir(parents=True, exist_ok=True)
     rows_path.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(rows_path, frame_id=args.frame_id, **raw_rows)
+    np.savez_compressed(rows_path, frame_id=args.frame_id,
+                        camera_model=args.camera_model,
+                        camera_weights_sha256=camera_sha, **raw_rows)
     saved = save_training_example_npz(example, output)
     load_training_example_npz(output, verify_integrity=True)
 
     summary = {
-        "schema_version": "clocs_real_train_frame_audit_v1",
+        "schema_version": ("clocs_real_train_frame_audit_v1"
+                           if args.camera_model == "yolov8x"
+                           else "clocs_real_train_frame_audit_v2"),
         "frame_id": args.frame_id, "split": "train",
+        "camera_model": args.camera_model,
+        "ultralytics_version": ultralytics.__version__,
+        "camera_device": args.device,
+        "camera_confidence_threshold": 0.25,
         "car_gt_after_range_filter": gt["num_car_after_range_filter"],
-        "yolov8x_car_detections": int(boxes_2d.shape[0]),
+        f"{args.camera_model}_car_detections": int(boxes_2d.shape[0]),
         "num_candidates": example["num_candidates"],
         "num_feature_rows": example["num_rows"],
         "num_positive": example["num_positive"],
@@ -130,7 +164,7 @@ def main():
             "dense_candidates": file_sha256(args.candidates),
             "pointpillars_checkpoint": str(candidates["checkpoint_sha256"].item()),
             "pointpillars_config": config_sha,
-            "yolov8x_weights": file_sha256(weights),
+            f"{args.camera_model}_weights": camera_sha,
             "image": file_sha256(image),
             "calibration": file_sha256(calibration),
             "label": file_sha256(labels),
