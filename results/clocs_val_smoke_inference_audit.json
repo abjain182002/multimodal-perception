@@ -1,0 +1,38 @@
+{
+  "schema_version": "clocs_val_smoke_inference_v1",
+  "status": "PASS",
+  "interpretation": "Four validation frames scored before detection postprocessing; no KITTI AP measured.",
+  "manifest_sha256": "af029521c75df15756b9e284c35dc0258ef643a97328a5f934fbb36325e6a2b4",
+  "fusion_checkpoint_sha256": "a2203b9adee46b782e896b7f3b9344b5916433b5404d4bd871aa7e05d6b0c473",
+  "pointpillars_checkpoint_sha256": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e",
+  "frames": [
+    {
+      "frame_id": "000831",
+      "candidates": 107136,
+      "yolo26x_car_detections": 13,
+      "num_feature_rows": 205692,
+      "score_file_sha256": "ab2eb1d49fdcb7953ea712ddd22c2343f7dff2a66effe6960045152a3244f6c6"
+    },
+    {
+      "frame_id": "001662",
+      "candidates": 107136,
+      "yolo26x_car_detections": 5,
+      "num_feature_rows": 124896,
+      "score_file_sha256": "116f040e797cb6ba0f1b3d371c438622ffb37dc0dacde617cb513a521305b557"
+    },
+    {
+      "frame_id": "003324",
+      "candidates": 107136,
+      "yolo26x_car_detections": 1,
+      "num_feature_rows": 107136,
+      "score_file_sha256": "0d3dc132e166ba74e9dc3eccf07e2b176957ade42cafb8b12583de53d6f04228"
+    },
+    {
+      "frame_id": "004155",
+      "candidates": 107136,
+      "yolo26x_car_detections": 15,
+      "num_feature_rows": 200600,
+      "score_file_sha256": "84735724a0512e4318ffcfde90d28bea18f97def16fd1fa377c5c46297b9dea9"
+    }
+  ]
+}

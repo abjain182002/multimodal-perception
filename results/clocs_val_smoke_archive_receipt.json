@@ -1,0 +1,8 @@
+{
+  "schema_version": "clocs_val_smoke_archive_receipt_v1",
+  "status": "PASS",
+  "frames_verified": 4,
+  "archive_sha256": "fb51d16c4b8c26af66510c50ee4b704d502ef33db77f30854027da3e6dfa7201",
+  "inference_audit_sha256": "c9afaa20496d6167ede90471525fb93fb2c99e239208eb2cc410eaebb0c569b8",
+  "interpretation": "Four validation frames scored before detection postprocessing; no KITTI AP measured."
+}
