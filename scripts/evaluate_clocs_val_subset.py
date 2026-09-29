@@ -83,7 +83,8 @@ def gt_annotation(path):
     )
 
 
-def detection_annotation(boxes, scores, labels, calib, width, height):
+def detection_annotation(boxes, scores, labels, calib, width, height,
+                         pcd_limit_range=(0, -39.68, -3, 69.12, 39.68, 1)):
     """Follow pinned KittiMetric.convert_valid_bboxes and bbox2result_kitti."""
     import torch
     from mmdet3d.structures import Box3DMode, LiDARInstance3DBoxes, points_cam2img
@@ -98,8 +99,8 @@ def detection_annotation(boxes, scores, labels, calib, width, height):
     valid_image = ((projected[:, 0] < width) & (projected[:, 1] < height)
                    & (projected[:, 2] > 0) & (projected[:, 3] > 0))
     center = lidar.center
-    lo = boxes.new_tensor([0, -39.68, -3])
-    hi = boxes.new_tensor([69.12, 39.68, 1])
+    lo = boxes.new_tensor(pcd_limit_range[:3])
+    hi = boxes.new_tensor(pcd_limit_range[3:])
     valid = valid_image & ((center > lo) & (center < hi)).all(-1)
     camera_values = camera.tensor[valid].detach().cpu().numpy().astype(np.float64)
     lidar_values = lidar.tensor[valid].detach().cpu().numpy().astype(np.float64)
