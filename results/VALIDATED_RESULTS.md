@@ -1,5 +1,7 @@
 # Validated Experimental Results
 
+> **Current CLOCs status (29 September 2026):** A 128-frame train-only YOLO26x+CLOCs model has been trained and evaluated on all 3,769 KITTI SECOND validation frames. The same-run paired 3D Moderate AP40 is 74.2256 for PointPillars and 79.1601 for CLOCs (+4.9345 points). This run did **not** reproduce the earlier PointPillars baseline (79.1299 Moderate); the full fusion result is recorded as a paired diagnostic with that discrepancy, not as a reproduced historical-baseline comparison. See [the full result audit](../docs/CLOCS_FULL_VALIDATION_PAIRED_RESULT_2026-09-29.md).
+
 > 
 >
 > Project: **A Software-Only Deep Learning Pipeline for Multi-Modal Object Detection and Robotic Perception Using LiDAR and Camera Fusion Across Multiple Datasets**
@@ -459,6 +461,7 @@ Relevant scripts:
 5. **YOLOv8x currently has the stronger overall fixed-threshold camera result, while Falcon + dedup has slightly higher recall at some thresholds and offers open-vocabulary flexibility.**
 6. **The frozen Falcon+LiDAR median-depth pipeline remained stable on the independent 10-frame holdout and reproduced its saved metrics on an independent CSV integrity check.**
 7. **The controlled YOLOv8x+LiDAR vs Falcon+LiDAR result is split-dependent: YOLOv8x was stronger on development, while Falcon produced one additional matched fused car and slightly lower MAE/RMSE on the independent holdout.**
+8. **In the full 3,769-frame same-run KITTI CLOCs diagnostic, fusion increased strict Car 3D Moderate AP40 from 74.2256 to 79.1601; the earlier PointPillars baseline of 79.1299 did not reproduce and requires investigation.**
 
 ---
 
@@ -466,11 +469,11 @@ Relevant scripts:
 
 The following should **not** be claimed from the current evidence:
 
-- official KITTI AP/mAP for camera or fused models (the separate PointPillars-only KITTI Car AP40 result is established),
+- official KITTI test-server AP, or a claim that this CLOCs run reproduced the earlier PointPillars baseline (the same-run full-validation paired AP40 result is recorded separately with the discrepancy),
 - universal superiority of YOLO over Falcon or Falcon over YOLO,
 - a standardized end-to-end runtime ratio,
 - completion of the full Azitt PV-RCNN++ pipeline on macOS,
-- completed OpenPCDet, trained CLOCs, or BEVFusion fusion results,
+- completed OpenPCDet or BEVFusion fusion results,
 - completed nuScenes cross-dataset results,
 - completed robustness evaluation.
 
@@ -493,6 +496,10 @@ For a professor or reviewer, the most useful files are:
 - `scripts/evaluate_yolov8_lidar_holdout.py` — YOLOv8x+LiDAR independent holdout evaluator.
 - `scripts/evaluate_falcon_lidar_multiframe.py` — Falcon+LiDAR development evaluator.
 - `scripts/evaluate_falcon_lidar_holdout.py` — Falcon+LiDAR independent holdout evaluator.
+- `results/clocs_full_val_paired/paired_diagnostic.json` — full same-run AP40 measurements and historical baseline discrepancy.
+- `results/clocs_full_val_paired/coverage_diagnostic.json` — all-labelled-Car best-IoU coverage by range and occlusion, not AP40.
+- `results/clocs_full_val_paired/cases/case_studies.json` — audited rescue/loss examples.
+- `docs/CLOCS_FULL_VALIDATION_PAIRED_RESULT_2026-09-29.md` — interpretation and limitations.
 
 Bulk generated outputs and datasets are intentionally excluded from Git because of size and reproducibility policy.
 
@@ -512,7 +519,7 @@ The repository records:
 - scripts used for the Falcon+LiDAR and YOLOv8x+LiDAR controlled experiments,
 - version-controlled frozen result tables and figures for the depth, camera-detector and multimodal comparison studies.
 
-The PointPillars-only LiDAR baseline has been evaluated on the full frozen SECOND validation split. Real CLOCs target preparation and the independent CPU geometry audit have passed on train frame `000149`. The next technical gate is a multi-frame, train-only export and a successful pinned CUDA/SECOND evaluator cross-check before training; the CUDA reference process previously exited with signal 11.
+The earlier PointPillars-only LiDAR baseline was evaluated on the full frozen SECOND validation split. Subsequently, 128 training frames were exported and a YOLO26x+CLOCs checkpoint was trained with an internal development split. A full 3,769-frame paired validation diagnostic and separate coverage/case analyses are now recorded. The historical PointPillars AP does not reproduce in the current run; preserve both audits and resolve that discrepancy before calling the new result a reproduced baseline comparison. The Numba CUDA evaluator was successfully run with the pinned NVIDIA binding.
 
 ---
 
