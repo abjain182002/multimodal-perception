@@ -53,6 +53,8 @@ def main():
     parser.add_argument('--manifest', type=Path, required=True)
     parser.add_argument('--predictions', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--point-cloud-mode', choices=('raw', 'reduced_fov'),
+                        default='raw')
     args = parser.parse_args()
 
     if os.environ.get('NUMBA_CUDA_USE_NVIDIA_BINDING') != '1' or os.environ.get('NUMBA_ENABLE_CUDASIM'):
@@ -62,6 +64,10 @@ def main():
         raise RuntimeError('The full evaluator requires cuda-python 12.2.1')
     ids = verify_manifest(json.loads(args.manifest.read_text()))
     provenance = dict(input_manifest_sha256=sha256(args.manifest), **EXPECTED)
+    if args.point_cloud_mode == 'reduced_fov':
+        provenance['point_cloud_mode'] = 'reduced_fov'
+        provenance['reduction'] = ('MMDetection3D fe25f7a5 KITTI converter '
+                                   'camera-2 field-of-view')
     gt = []
     predictions = {'pointpillars': [], 'fusion': []}
     hashes = hashlib.sha256()
@@ -89,7 +95,8 @@ def main():
                   status='BASELINE_PARITY_PENDING' if largest > .05 else 'PASS',
                   interpretation=('Frozen 3769-frame KITTI SECOND validation, Car strict IoU 0.70. '
                                   'Fusion comparison accepted only after baseline AP parity.'),
-                  frames=len(ids), evaluator='MMDetection3D pinned fe25f7a5',
+                  frames=len(ids), point_cloud_mode=args.point_cloud_mode,
+                  evaluator='MMDetection3D pinned fe25f7a5',
                   overlap_backend='Numba NVIDIA CUDA binding; cuda-python 12.2.1',
                   source_sha256=dict(input_manifest=sha256(args.manifest),
                                      ordered_prediction_digests=hashes.hexdigest()),
