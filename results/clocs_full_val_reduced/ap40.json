@@ -1,0 +1,71 @@
+{
+  "schema_version": "clocs_full_val_ap40_v1",
+  "status": "PASS",
+  "interpretation": "Frozen 3769-frame KITTI SECOND validation, Car strict IoU 0.70. Fusion comparison accepted only after baseline AP parity.",
+  "frames": 3769,
+  "point_cloud_mode": "reduced_fov",
+  "evaluator": "MMDetection3D pinned fe25f7a5",
+  "overlap_backend": "Numba NVIDIA CUDA binding; cuda-python 12.2.1",
+  "source_sha256": {
+    "input_manifest": "2f68c2591d41aa320f1d4abe65a3e73e4af05212435a81bf83327203704327a7",
+    "ordered_prediction_digests": "aab3201e04e47904a7492aef86ade1108b28211b0c9477a78e52c7642fcbd016"
+  },
+  "detections": {
+    "pointpillars": 23844,
+    "fusion": 18082
+  },
+  "baseline_max_absolute_ap40_error": 0.0,
+  "baseline_ap40_differences": {
+    "2D": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    },
+    "BEV": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    },
+    "3D": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    }
+  },
+  "ap40_strict_iou_070": {
+    "pointpillars": {
+      "2D": {
+        "easy": 96.10463590066347,
+        "moderate": 92.4841064377867,
+        "hard": 89.76978062674723
+      },
+      "BEV": {
+        "easy": 92.76631753879718,
+        "moderate": 88.36802380600489,
+        "hard": 85.50537785461054
+      },
+      "3D": {
+        "easy": 90.34490342609234,
+        "moderate": 79.12987417920098,
+        "hard": 76.15655595797031
+      }
+    },
+    "fusion": {
+      "2D": {
+        "easy": 96.68153743814256,
+        "moderate": 93.5565482868194,
+        "hard": 88.21016162574416
+      },
+      "BEV": {
+        "easy": 92.2903108290609,
+        "moderate": 88.75294031965157,
+        "hard": 83.28069959746125
+      },
+      "3D": {
+        "easy": 90.14086380800585,
+        "moderate": 79.25417568850747,
+        "hard": 73.63264072960499
+      }
+    }
+  }
+}

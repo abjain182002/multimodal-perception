@@ -1,0 +1,11 @@
+{
+  "schema_version": "clocs_full_val_reduced_archive_receipt_v1",
+  "status": "PASS",
+  "archive_filename": "clocs_full_val_reduced_verified_evidence.zip",
+  "archive_bytes": 8643188,
+  "archive_sha256": "5287a3e17a110e0b3c16a5e538125aa094fd46e3c5f77574e8afff7a23ce1a51",
+  "prediction_files_verified": 3769,
+  "ap40_json_sha256": "220a1dd158493ff9f89a469dc1ccf50b03f6b451c9d92b7d4c8ac0d03b408594",
+  "baseline_max_absolute_ap40_error": 0.0,
+  "interpretation": "Full 3769-frame reduced-cloud paired validation. Historical PointPillars AP40 reproduced exactly; CLOCs effects vary by difficulty and metric."
+}
