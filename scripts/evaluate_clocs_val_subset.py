@@ -10,12 +10,26 @@ from pathlib import Path
 
 import numpy as np
 
-from adapters.pointpillars_adapter import build_kitti_lidar2cam, load_kitti_calibration
-
 FRAMES = ('000831', '001662', '003324', '004155')
 CONFIG_SHA = '75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc'
 POINTPILLARS_SHA = 'd42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e'
 FUSION_SHA = 'a2203b9adee46b782e896b7f3b9344b5916433b5404d4bd871aa7e05d6b0c473'
+
+
+def load_kitti_calibration(path):
+    values = {}
+    for line in Path(path).read_text().splitlines():
+        if ':' in line:
+            key, data = line.split(':', 1)
+            values[key] = np.asarray([float(x) for x in data.split()], dtype=np.float32)
+    return values
+
+
+def build_kitti_lidar2cam(calib):
+    rect, velo = np.eye(4, dtype=np.float32), np.eye(4, dtype=np.float32)
+    rect[:3, :3] = calib['R0_rect'].reshape(3, 3)
+    velo[:3, :] = calib['Tr_velo_to_cam'].reshape(3, 4)
+    return rect @ velo
 
 
 def postprocess(boxes, directions, scores, cfg):
