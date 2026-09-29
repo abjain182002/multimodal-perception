@@ -84,6 +84,10 @@ def main():
     from PIL import Image
     from ultralytics import YOLO
     from mmengine.config import Config
+    from importlib.metadata import version
+
+    if version('ultralytics') != '8.4.132':
+        raise ValueError('Use the frozen Ultralytics 8.4.132 camera inference')
 
     manifest = json.loads(args.manifest.read_text())
     ids = verify_manifest(manifest)
