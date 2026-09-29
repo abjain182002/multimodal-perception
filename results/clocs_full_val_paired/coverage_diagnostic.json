@@ -1,0 +1,340 @@
+{
+  "schema_version": "clocs_full_val_best_iou_coverage_v1",
+  "status": "PASS",
+  "interpretation": "Best 3D IoU of each labelled Car against any retained detection; no KITTI difficulty or DontCare handling, no one-to-one matching, and not AP40. Historical baseline parity remains unresolved.",
+  "frames": 3769,
+  "iou_threshold": 0.7,
+  "ordered_prediction_digests": "16c7792b188a4e4e90185482d6926da9012218b95ba111a152e1acb295375fde",
+  "paired_audit_status": "PAIRED_RESULT_WITH_HISTORICAL_BASELINE_MISMATCH",
+  "all_labelled_car": {
+    "cars": 14385,
+    "pointpillars": 10652,
+    "fusion": 10647,
+    "rescued": 317,
+    "lost": 322,
+    "pointpillars_coverage_percent": 74.0494,
+    "fusion_coverage_percent": 74.0146
+  },
+  "by_range": {
+    "<20 m": {
+      "cars": 5807,
+      "pointpillars": 5369,
+      "fusion": 5279,
+      "rescued": 62,
+      "lost": 152,
+      "pointpillars_coverage_percent": 92.4574,
+      "fusion_coverage_percent": 90.9075
+    },
+    "20\u201340 m": {
+      "cars": 5632,
+      "pointpillars": 4220,
+      "fusion": 4255,
+      "rescued": 171,
+      "lost": 136,
+      "pointpillars_coverage_percent": 74.929,
+      "fusion_coverage_percent": 75.5504
+    },
+    "40\u201360 m": {
+      "cars": 2404,
+      "pointpillars": 1015,
+      "fusion": 1061,
+      "rescued": 74,
+      "lost": 28,
+      "pointpillars_coverage_percent": 42.2213,
+      "fusion_coverage_percent": 44.1348
+    },
+    "60+ m": {
+      "cars": 542,
+      "pointpillars": 48,
+      "fusion": 52,
+      "rescued": 10,
+      "lost": 6,
+      "pointpillars_coverage_percent": 8.8561,
+      "fusion_coverage_percent": 9.5941
+    }
+  },
+  "by_occlusion": {
+    "occlusion_0": {
+      "cars": 6814,
+      "pointpillars": 5393,
+      "fusion": 5419,
+      "rescued": 93,
+      "lost": 67,
+      "pointpillars_coverage_percent": 79.1459,
+      "fusion_coverage_percent": 79.5274
+    },
+    "occlusion_1": {
+      "cars": 3956,
+      "pointpillars": 2947,
+      "fusion": 2979,
+      "rescued": 93,
+      "lost": 61,
+      "pointpillars_coverage_percent": 74.4944,
+      "fusion_coverage_percent": 75.3033
+    },
+    "occlusion_2": {
+      "cars": 3074,
+      "pointpillars": 1865,
+      "fusion": 1817,
+      "rescued": 118,
+      "lost": 166,
+      "pointpillars_coverage_percent": 60.6701,
+      "fusion_coverage_percent": 59.1087
+    },
+    "occlusion_3": {
+      "cars": 541,
+      "pointpillars": 447,
+      "fusion": 432,
+      "rescued": 13,
+      "lost": 28,
+      "pointpillars_coverage_percent": 82.6248,
+      "fusion_coverage_percent": 79.8521
+    }
+  },
+  "frames_with_rescue": 288,
+  "frames_with_loss": 279,
+  "largest_rescues": [
+    {
+      "frame_id": "001583",
+      "labelled_car": 15,
+      "pointpillars_detections": 10,
+      "fusion_detections": 11,
+      "pointpillars_covered": 8,
+      "fusion_covered": 11,
+      "rescued_cars": 3,
+      "lost_cars": 0
+    },
+    {
+      "frame_id": "004513",
+      "labelled_car": 10,
+      "pointpillars_detections": 10,
+      "fusion_detections": 8,
+      "pointpillars_covered": 6,
+      "fusion_covered": 7,
+      "rescued_cars": 3,
+      "lost_cars": 2
+    },
+    {
+      "frame_id": "000831",
+      "labelled_car": 13,
+      "pointpillars_detections": 9,
+      "fusion_detections": 10,
+      "pointpillars_covered": 9,
+      "fusion_covered": 10,
+      "rescued_cars": 2,
+      "lost_cars": 1
+    },
+    {
+      "frame_id": "001021",
+      "labelled_car": 5,
+      "pointpillars_detections": 3,
+      "fusion_detections": 4,
+      "pointpillars_covered": 3,
+      "fusion_covered": 4,
+      "rescued_cars": 2,
+      "lost_cars": 1
+    },
+    {
+      "frame_id": "001077",
+      "labelled_car": 13,
+      "pointpillars_detections": 10,
+      "fusion_detections": 10,
+      "pointpillars_covered": 8,
+      "fusion_covered": 10,
+      "rescued_cars": 2,
+      "lost_cars": 0
+    },
+    {
+      "frame_id": "001330",
+      "labelled_car": 5,
+      "pointpillars_detections": 4,
+      "fusion_detections": 5,
+      "pointpillars_covered": 2,
+      "fusion_covered": 4,
+      "rescued_cars": 2,
+      "lost_cars": 0
+    },
+    {
+      "frame_id": "001999",
+      "labelled_car": 18,
+      "pointpillars_detections": 10,
+      "fusion_detections": 11,
+      "pointpillars_covered": 10,
+      "fusion_covered": 11,
+      "rescued_cars": 2,
+      "lost_cars": 1
+    },
+    {
+      "frame_id": "002257",
+      "labelled_car": 15,
+      "pointpillars_detections": 11,
+      "fusion_detections": 10,
+      "pointpillars_covered": 9,
+      "fusion_covered": 8,
+      "rescued_cars": 2,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "002357",
+      "labelled_car": 10,
+      "pointpillars_detections": 10,
+      "fusion_detections": 9,
+      "pointpillars_covered": 7,
+      "fusion_covered": 8,
+      "rescued_cars": 2,
+      "lost_cars": 1
+    },
+    {
+      "frame_id": "002793",
+      "labelled_car": 9,
+      "pointpillars_detections": 5,
+      "fusion_detections": 7,
+      "pointpillars_covered": 5,
+      "fusion_covered": 7,
+      "rescued_cars": 2,
+      "lost_cars": 0
+    },
+    {
+      "frame_id": "002815",
+      "labelled_car": 15,
+      "pointpillars_detections": 10,
+      "fusion_detections": 10,
+      "pointpillars_covered": 7,
+      "fusion_covered": 9,
+      "rescued_cars": 2,
+      "lost_cars": 0
+    },
+    {
+      "frame_id": "003004",
+      "labelled_car": 15,
+      "pointpillars_detections": 10,
+      "fusion_detections": 11,
+      "pointpillars_covered": 9,
+      "fusion_covered": 10,
+      "rescued_cars": 2,
+      "lost_cars": 1
+    }
+  ],
+  "largest_losses": [
+    {
+      "frame_id": "000393",
+      "labelled_car": 8,
+      "pointpillars_detections": 10,
+      "fusion_detections": 7,
+      "pointpillars_covered": 8,
+      "fusion_covered": 5,
+      "rescued_cars": 0,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "002135",
+      "labelled_car": 14,
+      "pointpillars_detections": 14,
+      "fusion_detections": 9,
+      "pointpillars_covered": 12,
+      "fusion_covered": 9,
+      "rescued_cars": 0,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "002257",
+      "labelled_car": 15,
+      "pointpillars_detections": 11,
+      "fusion_detections": 10,
+      "pointpillars_covered": 9,
+      "fusion_covered": 8,
+      "rescued_cars": 2,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "002615",
+      "labelled_car": 17,
+      "pointpillars_detections": 14,
+      "fusion_detections": 11,
+      "pointpillars_covered": 11,
+      "fusion_covered": 9,
+      "rescued_cars": 1,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "006163",
+      "labelled_car": 16,
+      "pointpillars_detections": 11,
+      "fusion_detections": 10,
+      "pointpillars_covered": 9,
+      "fusion_covered": 8,
+      "rescued_cars": 2,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "007166",
+      "labelled_car": 9,
+      "pointpillars_detections": 10,
+      "fusion_detections": 9,
+      "pointpillars_covered": 8,
+      "fusion_covered": 5,
+      "rescued_cars": 0,
+      "lost_cars": 3
+    },
+    {
+      "frame_id": "000169",
+      "labelled_car": 15,
+      "pointpillars_detections": 11,
+      "fusion_detections": 10,
+      "pointpillars_covered": 11,
+      "fusion_covered": 9,
+      "rescued_cars": 0,
+      "lost_cars": 2
+    },
+    {
+      "frame_id": "000395",
+      "labelled_car": 8,
+      "pointpillars_detections": 11,
+      "fusion_detections": 9,
+      "pointpillars_covered": 8,
+      "fusion_covered": 6,
+      "rescued_cars": 0,
+      "lost_cars": 2
+    },
+    {
+      "frame_id": "000492",
+      "labelled_car": 11,
+      "pointpillars_detections": 10,
+      "fusion_detections": 8,
+      "pointpillars_covered": 10,
+      "fusion_covered": 8,
+      "rescued_cars": 0,
+      "lost_cars": 2
+    },
+    {
+      "frame_id": "000590",
+      "labelled_car": 17,
+      "pointpillars_detections": 12,
+      "fusion_detections": 9,
+      "pointpillars_covered": 11,
+      "fusion_covered": 9,
+      "rescued_cars": 0,
+      "lost_cars": 2
+    },
+    {
+      "frame_id": "000613",
+      "labelled_car": 11,
+      "pointpillars_detections": 8,
+      "fusion_detections": 5,
+      "pointpillars_covered": 5,
+      "fusion_covered": 3,
+      "rescued_cars": 0,
+      "lost_cars": 2
+    },
+    {
+      "frame_id": "000669",
+      "labelled_car": 10,
+      "pointpillars_detections": 9,
+      "fusion_detections": 7,
+      "pointpillars_covered": 9,
+      "fusion_covered": 7,
+      "rescued_cars": 0,
+      "lost_cars": 2
+    }
+  ]
+}
