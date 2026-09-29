@@ -12,6 +12,14 @@
 
 ## Procedure
 
+For a smaller first transfer, package a batch from the ordered validation IDs
+using schema `clocs_kitti_validation_batch_v1`, the parent full manifest SHA,
+and four files per included frame. The streaming runner accepts this batch.
+Its output provenance refers to the parent manifest, so completed frame JSON
+files can be reused with the full input package. The evaluator still requires
+the complete `clocs_kitti_full_validation_inputs_v1` manifest and all 3,769
+frames; batch AP is not accepted as final validation AP.
+
 1. Attach the unpacked validation archive and a current `git archive` code bundle
    as Kaggle datasets. Keep the pinned checkpoints and YOLO26x dataset attached.
 2. Confirm the archive SHA before upload, the unpacked `manifest.json`, and
