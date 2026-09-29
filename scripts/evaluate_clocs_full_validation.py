@@ -68,6 +68,7 @@ def main():
         provenance['point_cloud_mode'] = 'reduced_fov'
         provenance['reduction'] = ('MMDetection3D fe25f7a5 KITTI converter '
                                    'camera-2 field-of-view')
+        provenance['pcd_limit_range'] = [0, -40, -3, 70.4, 40, 0]
     gt = []
     predictions = {'pointpillars': [], 'fusion': []}
     hashes = hashlib.sha256()
