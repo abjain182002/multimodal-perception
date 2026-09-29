@@ -1,0 +1,8 @@
+{
+  "schema_version": "clocs_full_val_evidence_archive_receipt_v1",
+  "status": "VERIFIED_PAIRED_DIAGNOSTIC_HISTORICAL_BASELINE_MISMATCH",
+  "frames_verified": 3769,
+  "archive_sha256": "1b034d06f49c343dfc4a21c80339481e37db455f237a19f3db3764d3a1306413",
+  "ordered_prediction_digests": "16c7792b188a4e4e90185482d6926da9012218b95ba111a152e1acb295375fde",
+  "interpretation": "Paired full-validation measurement; historical PointPillars parity failed."
+}

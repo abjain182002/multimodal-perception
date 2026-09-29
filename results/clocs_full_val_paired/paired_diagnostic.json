@@ -1,0 +1,67 @@
+{
+  "schema_version": "clocs_full_val_paired_diagnostic_v1",
+  "status": "PAIRED_RESULT_WITH_HISTORICAL_BASELINE_MISMATCH",
+  "scope": "3769 identical validation frames; Car strict IoU 0.70 AP40",
+  "limitation": "The PointPillars result in this paired run differs from the previously recorded full-validation baseline. Do not present this diagnostic as a reproduction of that earlier experiment.",
+  "failed_parity_audit_sha256": "bf219bda2baabc057268c099e790fe4ed7d43024d3a32611d3573edf6bc05065",
+  "input_manifest_sha256": "2f68c2591d41aa320f1d4abe65a3e73e4af05212435a81bf83327203704327a7",
+  "ordered_prediction_digests": "16c7792b188a4e4e90185482d6926da9012218b95ba111a152e1acb295375fde",
+  "detections": {
+    "pointpillars": 24180,
+    "fusion": 19036
+  },
+  "historical_baseline_max_absolute_ap40_error": 8.093361723003355,
+  "ap40_strict_iou_070": {
+    "pointpillars_this_run": {
+      "2D": {
+        "easy": 88.01127417766011,
+        "moderate": 85.840936727612,
+        "hard": 81.76897749614837
+      },
+      "BEV": {
+        "easy": 86.35915984525907,
+        "moderate": 82.8220915992455,
+        "hard": 78.7595170300587
+      },
+      "3D": {
+        "easy": 82.56039963942821,
+        "moderate": 74.22559799198947,
+        "hard": 70.08694406523578
+      }
+    },
+    "fusion_this_run": {
+      "2D": {
+        "easy": 96.31497656391787,
+        "moderate": 93.28385848643791,
+        "hard": 87.8787683099372
+      },
+      "BEV": {
+        "easy": 92.04863007171818,
+        "moderate": 88.5903261901687,
+        "hard": 83.07618485364505
+      },
+      "3D": {
+        "easy": 89.82042730057664,
+        "moderate": 79.16006409853146,
+        "hard": 73.59841200916908
+      }
+    }
+  },
+  "fusion_minus_pointpillars_this_run_ap_points": {
+    "2D": {
+      "easy": 8.303702386257754,
+      "moderate": 7.442921758825904,
+      "hard": 6.109790813788834
+    },
+    "BEV": {
+      "easy": 5.6894702264591075,
+      "moderate": 5.7682345909232,
+      "hard": 4.316667823586343
+    },
+    "3D": {
+      "easy": 7.260027661148428,
+      "moderate": 4.93446610654199,
+      "hard": 3.5114679439332974
+    }
+  }
+}
