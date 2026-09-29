@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "scope": "All labelled Cars, best 3D IoU >= 0.70; not KITTI difficulty matching or AP40.",
+  "frames": 3769,
+  "groups": {
+    "all": {
+      "cars": 14385,
+      "pointpillars": 10650,
+      "fusion": 10447,
+      "rescued": 186,
+      "lost": 389
+    },
+    "40\u201360 m": {
+      "cars": 2404,
+      "pointpillars": 1065,
+      "fusion": 1066,
+      "rescued": 46,
+      "lost": 45
+    },
+    "occlusion_0": {
+      "cars": 6814,
+      "pointpillars": 5268,
+      "fusion": 5285,
+      "rescued": 90,
+      "lost": 73
+    },
+    "20\u201340 m": {
+      "cars": 5632,
+      "pointpillars": 4344,
+      "fusion": 4250,
+      "rescued": 86,
+      "lost": 180
+    },
+    "occlusion_2": {
+      "cars": 3074,
+      "pointpillars": 2001,
+      "fusion": 1831,
+      "rescued": 51,
+      "lost": 221
+    },
+    "<20 m": {
+      "cars": 5807,
+      "pointpillars": 5184,
+      "fusion": 5079,
+      "rescued": 45,
+      "lost": 150
+    },
+    "occlusion_1": {
+      "cars": 3956,
+      "pointpillars": 2992,
+      "fusion": 2959,
+      "rescued": 41,
+      "lost": 74
+    },
+    "occlusion_3": {
+      "cars": 541,
+      "pointpillars": 389,
+      "fusion": 372,
+      "rescued": 4,
+      "lost": 21
+    },
+    "60+ m": {
+      "cars": 542,
+      "pointpillars": 57,
+      "fusion": 52,
+      "rescued": 9,
+      "lost": 14
+    }
+  },
+  "largest_losses": [
+    {
+      "frame_id": "000393",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "000492",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "002050",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "002257",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "002615",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "004787",
+      "rescued": 1,
+      "lost": 3
+    },
+    {
+      "frame_id": "006163",
+      "rescued": 2,
+      "lost": 3
+    },
+    {
+      "frame_id": "007166",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "007458",
+      "rescued": 0,
+      "lost": 3
+    },
+    {
+      "frame_id": "000169",
+      "rescued": 0,
+      "lost": 2
+    },
+    {
+      "frame_id": "000455",
+      "rescued": 0,
+      "lost": 2
+    },
+    {
+      "frame_id": "000590",
+      "rescued": 0,
+      "lost": 2
+    }
+  ],
+  "largest_rescues": [
+    {
+      "frame_id": "004513",
+      "rescued": 3,
+      "lost": 2
+    },
+    {
+      "frame_id": "002380",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "002815",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "003197",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "005274",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "005595",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "006163",
+      "rescued": 2,
+      "lost": 3
+    },
+    {
+      "frame_id": "006733",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "007284",
+      "rescued": 2,
+      "lost": 0
+    },
+    {
+      "frame_id": "000117",
+      "rescued": 1,
+      "lost": 0
+    },
+    {
+      "frame_id": "000168",
+      "rescued": 1,
+      "lost": 0
+    },
+    {
+      "frame_id": "000183",
+      "rescued": 1,
+      "lost": 0
+    }
+  ]
+}
