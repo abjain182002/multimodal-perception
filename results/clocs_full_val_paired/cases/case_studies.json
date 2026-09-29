@@ -1,0 +1,102 @@
+{
+  "schema_version": "clocs_full_val_case_studies_v1",
+  "status": "PASS",
+  "interpretation": "Visualized diagnostic rescue/loss boxes on three validation frames; not KITTI AP or proof of cause.",
+  "ordered_prediction_digests": "16c7792b188a4e4e90185482d6926da9012218b95ba111a152e1acb295375fde",
+  "paired_audit_status": "PAIRED_RESULT_WITH_HISTORICAL_BASELINE_MISMATCH",
+  "cases": [
+    {
+      "frame_id": "001583",
+      "labelled_car": 15,
+      "pointpillars_detections": 10,
+      "fusion_detections": 11,
+      "rescued": 3,
+      "lost": 0,
+      "changed_cars": [
+        {
+          "gt_index": 1,
+          "change": "rescued",
+          "depth_m": 6.070000171661377,
+          "pointpillars_best_3d_iou": 0.692878246307373,
+          "fusion_best_3d_iou": 0.7285513281822205
+        },
+        {
+          "gt_index": 4,
+          "change": "rescued",
+          "depth_m": 15.479999542236328,
+          "pointpillars_best_3d_iou": 0.0,
+          "fusion_best_3d_iou": 0.735034704208374
+        },
+        {
+          "gt_index": 14,
+          "change": "rescued",
+          "depth_m": 42.529998779296875,
+          "pointpillars_best_3d_iou": 0.0,
+          "fusion_best_3d_iou": 0.8212066888809204
+        }
+      ]
+    },
+    {
+      "frame_id": "000393",
+      "labelled_car": 8,
+      "pointpillars_detections": 10,
+      "fusion_detections": 7,
+      "rescued": 0,
+      "lost": 3,
+      "changed_cars": [
+        {
+          "gt_index": 2,
+          "change": "lost",
+          "depth_m": 13.380000114440918,
+          "pointpillars_best_3d_iou": 0.7052619457244873,
+          "fusion_best_3d_iou": 0.6868335604667664
+        },
+        {
+          "gt_index": 5,
+          "change": "lost",
+          "depth_m": 25.260000228881836,
+          "pointpillars_best_3d_iou": 0.7892536520957947,
+          "fusion_best_3d_iou": 0.0
+        },
+        {
+          "gt_index": 7,
+          "change": "lost",
+          "depth_m": 32.130001068115234,
+          "pointpillars_best_3d_iou": 0.7717505693435669,
+          "fusion_best_3d_iou": 0.0
+        }
+      ]
+    },
+    {
+      "frame_id": "000831",
+      "labelled_car": 13,
+      "pointpillars_detections": 9,
+      "fusion_detections": 10,
+      "rescued": 2,
+      "lost": 1,
+      "changed_cars": [
+        {
+          "gt_index": 4,
+          "change": "rescued",
+          "depth_m": 10.829999923706055,
+          "pointpillars_best_3d_iou": 0.0,
+          "fusion_best_3d_iou": 0.8092727065086365
+        },
+        {
+          "gt_index": 5,
+          "change": "rescued",
+          "depth_m": 12.90999984741211,
+          "pointpillars_best_3d_iou": 0.0,
+          "fusion_best_3d_iou": 0.8050952553749084
+        },
+        {
+          "gt_index": 8,
+          "change": "lost",
+          "depth_m": 28.06999969482422,
+          "pointpillars_best_3d_iou": 0.7763488292694092,
+          "fusion_best_3d_iou": 0.0
+        }
+      ]
+    }
+  ]
+}
