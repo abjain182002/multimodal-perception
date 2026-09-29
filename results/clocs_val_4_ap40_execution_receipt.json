@@ -1,0 +1,8 @@
+{
+  "schema_version": "clocs_val_4_ap40_execution_receipt_v1",
+  "status": "PASS",
+  "archive_sha256": "c9bd8ca4fbd7842ff604b830f4b37c9fc1af9b96311a80b0c00977fb689adda0",
+  "overlap_execution": "NUMBA_ENABLE_CUDASIM=1",
+  "scope": "Four validation frames; engineering subset, not full KITTI AP40",
+  "audit_sha256": "40d72a2a740c3dd4ed46645bea08f2b79a48396d1e60cacacb13207859e05698"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "clocs_val_subset_kitti_ap40_v1",
+  "status": "PASS",
+  "interpretation": "Four-frame, same-frame pinned KITTI AP40 engineering subset; NOT full KITTI validation AP40. Too small to estimate dataset performance or tune parameters.",
+  "frame_ids": [
+    "000831",
+    "001662",
+    "003324",
+    "004155"
+  ],
+  "evaluator_partition_count": 4,
+  "source_sha256": {
+    "manifest": "af029521c75df15756b9e284c35dc0258ef643a97328a5f934fbb36325e6a2b4",
+    "inference_audit": "c9afaa20496d6167ede90471525fb93fb2c99e239208eb2cc410eaebb0c569b8",
+    "config": "75145966859d3f9f4bc3fcd364ee12e6b3edc221cf1cdea7c70e4274443891dc",
+    "pointpillars_checkpoint": "d42d15edce05b552fdd14e6412fc1d3e02207ee4799e6e3869f61bd30e730f3e"
+  },
+  "frames": [
+    {
+      "frame_id": "000831",
+      "gt_car": 13,
+      "retained": {
+        "pointpillars": 9,
+        "fusion": 10
+      }
+    },
+    {
+      "frame_id": "001662",
+      "gt_car": 5,
+      "retained": {
+        "pointpillars": 6,
+        "fusion": 5
+      }
+    },
+    {
+      "frame_id": "003324",
+      "gt_car": 1,
+      "retained": {
+        "pointpillars": 7,
+        "fusion": 2
+      }
+    },
+    {
+      "frame_id": "004155",
+      "gt_car": 7,
+      "retained": {
+        "pointpillars": 10,
+        "fusion": 10
+      }
+    }
+  ],
+  "ap40_strict_iou_070": {
+    "pointpillars": {
+      "2D": {
+        "easy": 3.75,
+        "moderate": 25.36111111111111,
+        "hard": 30.564839572192522
+      },
+      "BEV": {
+        "easy": 3.75,
+        "moderate": 22.936367725841414,
+        "hard": 28.148361442479086
+      },
+      "3D": {
+        "easy": 3.75,
+        "moderate": 18.602114260009,
+        "hard": 23.716450216450212
+      }
+    },
+    "fusion": {
+      "2D": {
+        "easy": 5.0,
+        "moderate": 26.558441558441558,
+        "hard": 35.60606060606061
+      },
+      "BEV": {
+        "easy": 5.0,
+        "moderate": 23.764204545454547,
+        "hard": 31.718073593073605
+      },
+      "3D": {
+        "easy": 5.0,
+        "moderate": 18.90625,
+        "hard": 25.791666666666668
+      }
+    }
+  }
+}
