@@ -1,0 +1,63 @@
+{
+  "schema_version": "clocs_historical_pointpillars_replay_v1",
+  "status": "HISTORICAL_AP_REPRODUCED",
+  "interpretation": "Historical saved PointPillars detections evaluated against ground truth from the paired run with pinned MMDetection3D. This isolates prediction versus ground-truth/evaluator differences; no fusion AP is recalculated.",
+  "frames": 3769,
+  "historical_prediction_sha256": "2905f9c15fd04a6055dca99753b6fb6e6585492371608c5a625e3cc6ded764d3",
+  "paired_input_manifest_sha256": "2f68c2591d41aa320f1d4abe65a3e73e4af05212435a81bf83327203704327a7",
+  "paired_ordered_prediction_digests": "16c7792b188a4e4e90185482d6926da9012218b95ba111a152e1acb295375fde",
+  "historical_detections": 23844,
+  "paired_detections": 24180,
+  "historical_replay_ap40_strict_iou_070": {
+    "2D": {
+      "easy": 96.10463590066347,
+      "moderate": 92.4841064377867,
+      "hard": 89.76978062674723
+    },
+    "BEV": {
+      "easy": 92.76631753879718,
+      "moderate": 88.36802380600489,
+      "hard": 85.50537785461054
+    },
+    "3D": {
+      "easy": 90.34490342609234,
+      "moderate": 79.12987417920098,
+      "hard": 76.15655595797031
+    }
+  },
+  "historical_reference_ap40_strict_iou_070": {
+    "2D": {
+      "easy": 96.10463590066347,
+      "moderate": 92.4841064377867,
+      "hard": 89.76978062674723
+    },
+    "BEV": {
+      "easy": 92.76631753879718,
+      "moderate": 88.36802380600489,
+      "hard": 85.50537785461054
+    },
+    "3D": {
+      "easy": 90.34490342609234,
+      "moderate": 79.12987417920098,
+      "hard": 76.15655595797031
+    }
+  },
+  "replay_minus_reference_ap_points": {
+    "2D": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    },
+    "BEV": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    },
+    "3D": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    }
+  },
+  "max_absolute_ap40_error": 0.0
+}
