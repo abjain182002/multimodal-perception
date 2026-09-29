@@ -16,6 +16,7 @@ import numpy as np
 from adapters.pointpillars_adapter import extract_dense_pointpillars_candidates, load_pointpillars_model
 from fusion.clocs import build_clocs_feature_rows
 from fusion.clocs_network import CLOCsFusionNet
+from fusion.kitti_reduced_cloud import reduce_kitti_frame
 from scripts.build_clocs_yolo_train_frame import car_detections
 from scripts.evaluate_clocs_val_subset import (detection_annotation, gt_annotation,
                                                 load_kitti_calibration, postprocess)
@@ -86,6 +87,10 @@ def main():
     parser.add_argument('--yolo-weights', type=Path, required=True)
     parser.add_argument('--fusion-checkpoint', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--point-cloud-mode', choices=('raw', 'reduced_fov'),
+                        default='raw')
+    parser.add_argument('--historical-predictions', type=Path,
+                        help='Verified historical pickle for per-frame baseline parity')
     parser.add_argument('--max-new-frames', type=int, default=0,
                         help='0 processes all missing frames; small values allow a smoke run')
     args = parser.parse_args()
@@ -127,6 +132,20 @@ def main():
 
     args.output.mkdir(parents=True, exist_ok=True)
     provenance = provenance_for(manifest, args.manifest)
+    historical = None
+    if args.point_cloud_mode == 'reduced_fov':
+        provenance['point_cloud_mode'] = 'reduced_fov'
+        provenance['reduction'] = ('MMDetection3D fe25f7a5 KITTI converter '
+                                   'camera-2 field-of-view')
+    if args.historical_predictions:
+        import pickle
+        expected_history = ('2905f9c15fd04a6055dca99753b6fb6e6585492371608c5a625e3cc6ded764d3')
+        if sha256(args.historical_predictions) != expected_history:
+            raise ValueError('Historical predictions SHA-256 mismatch; refusing to unpickle')
+        with args.historical_predictions.open('rb') as stream:
+            historical = pickle.load(stream)
+        if not isinstance(historical, list) or len(historical) != len(ids):
+            raise ValueError('Historical predictions must contain 3769 ordered frames')
     created = reused = 0
     started = time.monotonic()
     for index, fid in enumerate(ids, 1):
@@ -146,8 +165,21 @@ def main():
         prediction = camera.predict(source=str(files['image_2']), device='cuda:0',
                                     conf=.25, verbose=False)[0]
         boxes_2d, scores_2d = car_detections(prediction, camera.names)
-        dense = extract_dense_pointpillars_candidates(
-            pp, files['velodyne'], files['calib'], width, height)
+        calib = load_kitti_calibration(files['calib'])
+        cloud = files['velodyne']
+        reduced_cloud = None
+        if args.point_cloud_mode == 'reduced_fov':
+            reduced_cloud = args.output / '.reduced_clouds' / f'{fid}.bin'
+            if reduced_cloud.exists():
+                raise FileExistsError(f'Partial reduced cloud requires inspection: {reduced_cloud}')
+            reduce_kitti_frame(cloud, calib, height, width, reduced_cloud)
+            cloud = reduced_cloud
+        try:
+            dense = extract_dense_pointpillars_candidates(
+                pp, cloud, files['calib'], width, height)
+        finally:
+            if reduced_cloud is not None:
+                reduced_cloud.unlink()
         rows = build_clocs_feature_rows(dense['projected_boxes'], dense['scores_3d'],
                                         boxes_2d, scores_2d, dense['distance_82'])
         with torch.inference_mode():
@@ -157,13 +189,25 @@ def main():
             fused = torch.sigmoid(logits).cpu().numpy().astype(np.float32)
         if fused.shape != dense['scores_3d'].shape or not np.isfinite(fused).all():
             raise ValueError(f'Invalid fusion score vector for {fid}')
-        calib = load_kitti_calibration(files['calib'])
         detected = {}
         for name, score in (('pointpillars', dense['scores_3d']), ('fusion', fused)):
             kept, confidence, labels = postprocess(
                 dense['boxes_lidar'], dense['direction_labels'], score, cfg)
             detected[name] = to_json(detection_annotation(
                 kept, confidence, labels, calib, width, height))
+        if historical is not None:
+            old = historical[index - 1]
+            now = detected['pointpillars']
+            samples = np.asarray(old['sample_idx'])
+            if (len(samples) != len(old['score']) or np.any(samples != index - 1)
+                    or len(old['score']) != len(now['score'])):
+                raise ValueError(f'Historical baseline count/index mismatch: {fid}')
+            for field, tolerance in (('score', 1e-5), ('bbox', 1e-3),
+                                     ('dimensions', 1e-4), ('location', 1e-4),
+                                     ('rotation_y', 1e-5)):
+                if not np.allclose(np.asarray(old[field]), np.asarray(now[field]),
+                                   rtol=0, atol=tolerance):
+                    raise ValueError(f'Historical baseline {field} mismatch: {fid}')
         item = dict(frame_id=fid, provenance=provenance,
                     ground_truth=to_json(gt_annotation(files['label_2'])),
                     detections=detected,
