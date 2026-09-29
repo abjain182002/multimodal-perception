@@ -137,6 +137,7 @@ def main():
         provenance['point_cloud_mode'] = 'reduced_fov'
         provenance['reduction'] = ('MMDetection3D fe25f7a5 KITTI converter '
                                    'camera-2 field-of-view')
+        provenance['pcd_limit_range'] = [0, -40, -3, 70.4, 40, 0]
     if args.historical_predictions:
         import pickle
         expected_history = ('2905f9c15fd04a6055dca99753b6fb6e6585492371608c5a625e3cc6ded764d3')
@@ -193,8 +194,12 @@ def main():
         for name, score in (('pointpillars', dense['scores_3d']), ('fusion', fused)):
             kept, confidence, labels = postprocess(
                 dense['boxes_lidar'], dense['direction_labels'], score, cfg)
+            metric_range = ((0, -40, -3, 70.4, 40, 0)
+                            if args.point_cloud_mode == 'reduced_fov'
+                            else (0, -39.68, -3, 69.12, 39.68, 1))
             detected[name] = to_json(detection_annotation(
-                kept, confidence, labels, calib, width, height))
+                kept, confidence, labels, calib, width, height,
+                pcd_limit_range=metric_range))
         if historical is not None:
             old = historical[index - 1]
             now = detected['pointpillars']
