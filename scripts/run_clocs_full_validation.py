@@ -38,18 +38,28 @@ def sha256(path):
     return digest.hexdigest()
 
 
-def verify_manifest(manifest):
-    if (manifest.get('schema_version') != 'clocs_kitti_full_validation_inputs_v1'
+def verify_manifest(manifest, allow_partial=False):
+    partial = manifest.get('schema_version') == 'clocs_kitti_validation_batch_v1'
+    if (manifest.get('schema_version') not in (
+            ('clocs_kitti_full_validation_inputs_v1', 'clocs_kitti_validation_batch_v1')
+            if allow_partial else ('clocs_kitti_full_validation_inputs_v1',))
             or manifest.get('split') != 'validation'
             or manifest.get('train_split_sha256') != EXPECTED['train']
-            or manifest.get('val_split_sha256') != EXPECTED['val']
-            or manifest.get('input_files') != 15076):
+            or manifest.get('val_split_sha256') != EXPECTED['val']):
         raise ValueError('Full validation manifest differs from the frozen inputs')
     ids = manifest.get('frame_ids', [])
-    if len(ids) != 3769 or len(set(ids)) != 3769 or not all(
+    if ((not partial and (len(ids) != 3769 or manifest.get('input_files') != 15076))
+            or (partial and (not ids or manifest.get('input_files') != 4 * len(ids)
+                             or manifest.get('parent_manifest_sha256') is None))
+            or len(set(ids)) != len(ids) or not all(
             isinstance(fid, str) and len(fid) == 6 and fid.isdigit() for fid in ids):
         raise ValueError('Expected 3769 unique validation IDs')
     return ids
+
+
+def provenance_for(manifest, manifest_path):
+    parent = manifest.get('parent_manifest_sha256')
+    return dict(input_manifest_sha256=parent or sha256(manifest_path), **EXPECTED)
 
 
 def to_json(annotation):
@@ -90,7 +100,7 @@ def main():
         raise ValueError('Use the frozen Ultralytics 8.4.132 camera inference')
 
     manifest = json.loads(args.manifest.read_text())
-    ids = verify_manifest(manifest)
+    ids = verify_manifest(manifest, allow_partial=True)
     if (sha256(args.config) != EXPECTED['config']
             or sha256(args.pointpillars_checkpoint) != EXPECTED['pointpillars']
             or sha256(args.yolo_weights) != EXPECTED['yolo']
@@ -116,7 +126,7 @@ def main():
     camera = YOLO(str(args.yolo_weights))
 
     args.output.mkdir(parents=True, exist_ok=True)
-    provenance = dict(input_manifest_sha256=sha256(args.manifest), **EXPECTED)
+    provenance = provenance_for(manifest, args.manifest)
     created = reused = 0
     started = time.monotonic()
     for index, fid in enumerate(ids, 1):
