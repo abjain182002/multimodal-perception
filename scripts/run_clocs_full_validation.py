@@ -52,7 +52,7 @@ def verify_manifest(manifest, allow_partial=False):
             or (partial and (not ids or manifest.get('input_files') != 4 * len(ids)
                              or manifest.get('parent_manifest_sha256') is None))
             or len(set(ids)) != len(ids) or not all(
-            isinstance(fid, str) and len(fid) == 6 and fid.isdigit() for fid in ids):
+            isinstance(fid, str) and len(fid) == 6 and fid.isdigit() for fid in ids)):
         raise ValueError('Expected 3769 unique validation IDs')
     return ids
 
