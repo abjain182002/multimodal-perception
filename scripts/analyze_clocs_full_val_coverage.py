@@ -143,7 +143,8 @@ def main():
     (args.output_dir / 'coverage_diagnostic.json').write_text(
         json.dumps(report, indent=2) + '\n')
     with (args.output_dir / 'coverage_frames.csv').open('w', newline='') as stream:
-        writer = csv.DictWriter(stream, fieldnames=tuple(frame_rows[0]),\n                                lineterminator='\\n')
+        writer = csv.DictWriter(stream, fieldnames=tuple(frame_rows[0]),
+                                lineterminator='\n')
         writer.writeheader()
         writer.writerows(frame_rows)
     make_figure(report, args.output_dir)
