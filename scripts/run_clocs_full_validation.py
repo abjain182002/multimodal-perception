@@ -202,12 +202,13 @@ def main():
             if (len(samples) != len(old['score']) or np.any(samples != index - 1)
                     or len(old['score']) != len(now['score'])):
                 raise ValueError(f'Historical baseline count/index mismatch: {fid}')
-            for field, tolerance in (('score', 1e-5), ('bbox', 1e-3),
-                                     ('dimensions', 1e-4), ('location', 1e-4),
-                                     ('rotation_y', 1e-5)):
-                if not np.allclose(np.asarray(old[field]), np.asarray(now[field]),
-                                   rtol=0, atol=tolerance):
-                    raise ValueError(f'Historical baseline {field} mismatch: {fid}')
+            if len(old['score']):
+                for field, tolerance in (('score', 1e-5), ('bbox', 1e-3),
+                                         ('dimensions', 1e-4), ('location', 1e-4),
+                                         ('rotation_y', 1e-5)):
+                    if not np.allclose(np.asarray(old[field]), np.asarray(now[field]),
+                                       rtol=0, atol=tolerance):
+                        raise ValueError(f'Historical baseline {field} mismatch: {fid}')
         item = dict(frame_id=fid, provenance=provenance,
                     ground_truth=to_json(gt_annotation(files['label_2'])),
                     detections=detected,
