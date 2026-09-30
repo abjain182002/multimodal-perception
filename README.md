@@ -8,7 +8,7 @@ As of 30 September 2026, YOLO26x+CLOCs has been trained on 128 train-only frames
 
 **Car strict IoU 0.70 3D AP40:** PointPillars 90.3449 / 79.1299 / 76.1566; CLOCs 90.1409 / 79.2542 / 73.6326 (Easy / Moderate / Hard). Moderate improves by 0.1243 points; Hard decreases by 2.5239 points. This is a mixed single-checkpoint result, not general fusion superiority. See [findings and limitations](docs/CLOCS_BASELINE_MATCHED_RESULT_2026-09-29.md).
 
-Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measure separate tasks. OpenPCDet/PV-RCNN feasibility is the next gate; Azitt weights, nuScenes/BEVFusion, semantic fusion, robustness and standardized runtime remain unmeasured. NVIDIA optimization is future work. Experiment targets remain subject to these gates; report drafting can proceed using frozen verified evidence.
+Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measure separate tasks. Official pretrained OpenPCDet PV-RCNN completed all 3,769 validation frames, scoring Car 3D AP40 **92.1047 / 84.3604 / 82.4830** (Easy / Moderate / Hard). Native OpenPCDet and the pinned common evaluator agree exactly across all nine metrics. [Comparison and findings](results/pv_rcnn_kitti/FINDINGS.md) distinguish this LiDAR-only reproduction from Azitt/PV-RCNN++. Azitt weights, nuScenes/BEVFusion, semantic fusion, robustness and standardized runtime remain unmeasured. NVIDIA optimization is future work. Experiment targets remain subject to these gates; report drafting can proceed using frozen verified evidence.
 
 ## Project Records
 
@@ -18,6 +18,8 @@ Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measu
 - [`requirements/ENVIRONMENTS.md`](requirements/ENVIRONMENTS.md) — environment strategy and reproducibility notes.
 
 ## Frozen Results
+
+- [Three-model KITTI AP40 comparison](results/pv_rcnn_kitti/comparison.png) and [CSV](results/pv_rcnn_kitti/comparison.csv)
 
 - [Baseline-matched CLOCs AP40 figure](results/clocs_full_val_reduced/matched_ap40.png) and [CSV](results/clocs_full_val_reduced/matched_ap40.csv)
 - [CLOCs range/occlusion coverage figure](results/clocs_full_val_reduced/matched_coverage.png)

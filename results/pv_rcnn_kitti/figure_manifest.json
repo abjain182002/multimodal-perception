@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "baseline_ap40": "220a1dd158493ff9f89a469dc1ccf50b03f6b451c9d92b7d4c8ac0d03b408594",
+    "plot_script": "eb40e2dad282e5c68188f4034d5e566eb68e4dcbbc0344f0402f3a063eba5e79",
+    "archive": "709f818e3528acbb41e47cbb59fb0d541a188ac324d0269b7dd02ded017813a1"
+  },
+  "output_sha256": {
+    "FINDINGS.md": "685f1d4985eee8489b4dfcf1f46179aa7ae3c4e5bdc416e86afe58e3090f393e",
+    "archive_receipt.json": "8102506c56e7edf3ba9e1584aec23157708e3e840a145a4bd7cf228549522133",
+    "common_ap40.json": "c5bbf1191ec7ab4a5dc2c082f646eac3052333fd8da83a7f4661270e0959becc",
+    "comparison.csv": "fef9141dfe7c27b94ba575d1d60458688efd1434ba315f9168150a4a61adfefb",
+    "comparison.pdf": "fd76bcc5ec427862ddd57bd3d53ea387726b8db032146029a0b4c227c9b7732b",
+    "comparison.png": "cfbfbc328a2dd6164bccc1d87dba0b2245dba06c7b68bdfbc4999062452d793b",
+    "environment.txt": "1a8b974df6ca3c0f374ea39535f47eb6af8720d9cf8b46b56fe67dc403e00228",
+    "inference_audit.json": "a07a7cd044c6a5fceab4c3340b06ffbc63407812ca2cc73355c2c04faa4903cf",
+    "metadata_audit.json": "beaebd9b5be28688664863187e6a0b04083a6711bfb3c7da4a86883df3c2b210",
+    "native_ap40.json": "77c6ebedfdd8a251440af61026deecaef636d0d744ff9d2d094a3d9dc140aaf1",
+    "protocol.json": "cb22f4eae0a4b25fde69e98c86c1c0427d12f722053e280811875c240707d8eb"
+  }
+}

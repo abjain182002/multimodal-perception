@@ -1,5 +1,7 @@
 # Validated Experimental Results
 
+> **PV-RCNN update (30 September 2026):** Official pretrained OpenPCDet PV-RCNN achieved Car strict IoU 0.70 3D AP40 **92.1047 / 84.3604 / 82.4830** on the same 3,769-frame validation split. Native and pinned MMDetection3D evaluation agreed exactly across all nine metrics. This is a LiDAR-only reproduction, not PV-RCNN++/Azitt or an equal-training-budget ablation. See [findings and comparison](pv_rcnn_kitti/FINDINGS.md).
+
 > **Current CLOCs status (30 September 2026):** Baseline-matched reduced-FOV validation is complete on 3,769 frames. All nine historical PointPillars AP40 metrics reproduce exactly (maximum error 0.0). Car 3D Moderate is 79.1299 → 79.2542 (+0.1243 points); Hard is 76.1566 → 73.6326 (-2.5239). This mixed result supersedes the earlier raw-cloud diagnostic for the historical-baseline comparison. See [verified findings and limitations](../docs/CLOCS_BASELINE_MATCHED_RESULT_2026-09-29.md).
 
 > 
