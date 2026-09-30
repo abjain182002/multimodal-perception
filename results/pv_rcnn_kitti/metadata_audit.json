@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "frames": 3769,
+  "same_ordered_manifest_ids": true,
+  "metadata_action": "CREATED",
+  "metadata_sha256": "5e3ea7475013ffa136f203388a3fccd5ebd210c375fa3083c158c1c38db3a2bd",
+  "input_manifest_sha256": "2f68c2591d41aa320f1d4abe65a3e73e4af05212435a81bf83327203704327a7",
+  "fov_points_only": true,
+  "point_cloud_range": [
+    0,
+    -40,
+    -3,
+    70.4,
+    40,
+    1
+  ],
+  "source_commit": "233f849829b6ac19afb8af8837a0246890908755",
+  "scope": "Validation metadata preparation; no AP measured."
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "pv_rcnn_kitti_common_evaluator_v1",
+  "status": "PASS",
+  "frames": 3769,
+  "model": "Official OpenPCDet PV-RCNN",
+  "scope": "Car strict IoU 0.70 validation AP40",
+  "common_evaluator_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "checkpoint_sha256": "08552932026855bcc10f66dbc45409f139d3208fd0095c2aab1f459f055fe463",
+  "predictions_sha256": "80dbeef521b289607f635df07062b4c9171576491709731b63351eaf03dd7381",
+  "metadata_sha256": "5e3ea7475013ffa136f203388a3fccd5ebd210c375fa3083c158c1c38db3a2bd",
+  "ap40_strict_iou_070": {
+    "2D": {
+      "easy": 98.26616025993518,
+      "moderate": 94.4208292369684,
+      "hard": 92.27645933080709
+    },
+    "BEV": {
+      "easy": 93.02390456969715,
+      "moderate": 90.32551365888324,
+      "hard": 88.53190407355068
+    },
+    "3D": {
+      "easy": 92.10472058013262,
+      "moderate": 84.36044205944499,
+      "hard": 82.48301857656134
+    }
+  },
+  "common_minus_native_ap_points": {
+    "2D": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    },
+    "BEV": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    },
+    "3D": {
+      "easy": 0.0,
+      "moderate": 0.0,
+      "hard": 0.0
+    }
+  },
+  "maximum_absolute_ap_difference": 0.0,
+  "evaluator_source_sha256": {
+    "eval.py": "7e11cf61b807e8e5811dbf5dc9c5114e8c138c3cbc718cb21013844674768425",
+    "rotate_iou.py": "284c6e6fb54a1eb787544e5c845a5fe1275d3418300871fe756c9ff5ad77322c"
+  }
+}

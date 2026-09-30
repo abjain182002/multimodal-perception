@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "frames": 3769,
+  "archive_sha256": "709f818e3528acbb41e47cbb59fb0d541a188ac324d0269b7dd02ded017813a1",
+  "archive_bytes": 9318732,
+  "members_verified": 3791,
+  "interpretation": "Official pretrained PV-RCNN validation; exact native/common evaluator parity."
+}

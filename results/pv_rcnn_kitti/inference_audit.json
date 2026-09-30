@@ -1,0 +1,30 @@
+{
+  "status": "INFERENCE_COMPLETE",
+  "frames": 3769,
+  "detections_all_classes": 34787,
+  "car_detections": 23509,
+  "predictions_sha256": "80dbeef521b289607f635df07062b4c9171576491709731b63351eaf03dd7381",
+  "protocol": {
+    "checkpoint_sha256": "08552932026855bcc10f66dbc45409f139d3208fd0095c2aab1f459f055fe463",
+    "metadata_sha256": "5e3ea7475013ffa136f203388a3fccd5ebd210c375fa3083c158c1c38db3a2bd",
+    "source_commit": "233f849829b6ac19afb8af8837a0246890908755",
+    "seed": 20260930,
+    "class_names": [
+      "Car",
+      "Pedestrian",
+      "Cyclist"
+    ],
+    "point_cloud_range": [
+      0,
+      -40,
+      -3,
+      70.4,
+      40,
+      1
+    ],
+    "fov_points_only": true,
+    "torch": "2.1.2+cu121",
+    "gpu": "Tesla T4"
+  },
+  "interpretation": "Full validation inference; AP not yet evaluated."
+}
