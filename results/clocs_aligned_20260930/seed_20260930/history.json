@@ -1,0 +1,170 @@
+[
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.0027066157483108424,
+      "mean_frame_focal_loss": 0.0005603367108801827,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 1,
+    "mean_training_selected_loss": 0.023250929642869272,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.47435045923876207,
+      "mean_frame_focal_loss": 0.00035393012865636564,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 2,
+    "mean_training_selected_loss": 0.0003612084015131023,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8196994240631985,
+      "mean_frame_focal_loss": 0.00015167237847349413,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 3,
+    "mean_training_selected_loss": 0.00020141058845024595,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8408801451696742,
+      "mean_frame_focal_loss": 0.00011021052476789528,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 4,
+    "mean_training_selected_loss": 9.814872290218879e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8475291040702572,
+      "mean_frame_focal_loss": 0.00010067700876925656,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 5,
+    "mean_training_selected_loss": 8.58508635206608e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8515490148860622,
+      "mean_frame_focal_loss": 0.00010046982653211245,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 6,
+    "mean_training_selected_loss": 8.311402674758088e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8546864646216285,
+      "mean_frame_focal_loss": 9.585036783255063e-05,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 7,
+    "mean_training_selected_loss": 8.128747864396176e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8579320801216119,
+      "mean_frame_focal_loss": 9.419974692015387e-05,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 8,
+    "mean_training_selected_loss": 7.904117789192533e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8609649145723504,
+      "mean_frame_focal_loss": 9.960640506090357e-05,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 9,
+    "mean_training_selected_loss": 7.940711273035639e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8628798171270063,
+      "mean_frame_focal_loss": 9.912512809773233e-05,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 10,
+    "mean_training_selected_loss": 7.926825108484081e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8648879269934968,
+      "mean_frame_focal_loss": 9.549031154998389e-05,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 11,
+    "mean_training_selected_loss": 7.694548038861271e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  },
+  {
+    "dev": {
+      "evaluated_candidates": 3425680,
+      "frames": 32,
+      "fusion_candidate_ap": 0.8667512385464708,
+      "mean_frame_focal_loss": 8.928781090200566e-05,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "positive_candidates": 2378
+    },
+    "epoch": 12,
+    "mean_training_selected_loss": 7.652904741728417e-05,
+    "selected_negative": 10272648,
+    "selected_positive": 5798
+  }
+]

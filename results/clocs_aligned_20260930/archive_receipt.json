@@ -1,0 +1,9 @@
+{
+  "status": "VERIFIED",
+  "evidence_archive_sha256": "f71f018fff13e6e76024811ced533f97b4a44e9d480e91ffbec8efd05f2e138c",
+  "evidence_archive_bytes": 8872354,
+  "prediction_files_verified": 3769,
+  "baseline_max_absolute_ap40_error": 0.0,
+  "bulk_archive_sha256": "17f1a3de3f5f6ab8409366cfd3007bd5790485e1599bac28fcce7b03888e3dd2",
+  "bulk_archive_verification": "Matching Kaggle and Mac SHA-256 reported in session."
+}

@@ -1,0 +1,7 @@
+{
+  "selected_seed": 20260928,
+  "checkpoint_sha256": "327ee41ca416ab6e6006ea9084f63657939b259568402811033a2537fbe39921",
+  "selection_basis": "Highest best-epoch internal development candidate AP.",
+  "development_candidate_ap": 0.8779349990320148,
+  "validation_results_used_for_selection": false
+}

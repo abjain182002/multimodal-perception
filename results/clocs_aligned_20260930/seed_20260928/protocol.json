@@ -1,0 +1,35 @@
+{
+  "environment": {
+    "gpu": "Tesla T4",
+    "numpy": "1.26.4",
+    "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+    "torch": "2.1.2+cu121"
+  },
+  "interpretation": "Internal development candidate ranking; not official KITTI AP40.",
+  "loss": "Focal alpha=0.25 gamma=2; mean over selected candidates per frame; evaluation uses all nonignored candidates.",
+  "reproducibility": "Fixed seeds and deterministic selection; cross-device bitwise equality is not guaranteed.",
+  "sampling": "All positives; half top PointPillars-score negatives, half random remaining negatives; ratio 0 uses all valid candidates.",
+  "schema_version": "clocs_128_training_protocol_v1",
+  "settings": {
+    "background_cap": 256,
+    "batch_manifest": "/kaggle/input/datasets/abhishekjain18/multimodal-perception-128-export-code-zip/results/clocs_train_export_128_manifest.json",
+    "data_dir": "/kaggle/working/clocs_aligned_training_examples",
+    "device": "cuda",
+    "epochs": 12,
+    "learning_rate": 0.002,
+    "negative_ratio": 0,
+    "output_dir": "/kaggle/working/clocs_aligned_seed_study/seed_20260928",
+    "seed": 20260928,
+    "split_seed": 20260928,
+    "train_ids": "/kaggle/input/datasets/abhishekjain18/clocs-train-export-128-tar-gz/splits/train.txt",
+    "val_ids": "/kaggle/input/datasets/abhishekjain18/clocs-train-export-128-tar-gz/splits/val.txt"
+  },
+  "source_sha256": {
+    "/kaggle/working/clocs_aligned_training_code/scripts/train_clocs_128.py": "23e798e098a639f70e582093a20a93e56bb2b7a8f1db7033c2de96f6a60f54db",
+    "fusion/clocs_network.py": "70aff0741cde3b8dfce09a3376970b605fc5647eb7a7e28aed9679dfe0c03ac0",
+    "fusion/clocs_sampling.py": "2a45f642da5e4dc703074130cec03299ab9049a1b20467cac83c8ad73aba0a9a",
+    "fusion/clocs_training.py": "76dd61c6480b92aa935c64fe59331ad41918a1e56dfa4683a422ba0954effe8e",
+    "scripts/train_clocs_pilot.py": "485382b3be2e50997edf57acfcc458bccbfb8ee5337ab803aba6f384f9496935"
+  }
+}

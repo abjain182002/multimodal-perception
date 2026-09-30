@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "Fixed 96/32 split; internal development candidate AP, not KITTI AP40.",
+  "runs": [
+    {
+      "seed": 20260928,
+      "best_epoch": 12,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "fusion_candidate_ap": 0.8779349990320148,
+      "checkpoint_sha256": "327ee41ca416ab6e6006ea9084f63657939b259568402811033a2537fbe39921"
+    },
+    {
+      "seed": 20260929,
+      "best_epoch": 12,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "fusion_candidate_ap": 0.8669604195528139,
+      "checkpoint_sha256": "f3bf73bf3d2e58b61fa107c8e703cb7eb916b243d3efdb7053c06c5af2fbe4ff"
+    },
+    {
+      "seed": 20260930,
+      "best_epoch": 12,
+      "pointpillars_candidate_ap": 0.7776601671493377,
+      "fusion_candidate_ap": 0.8667512385464708,
+      "checkpoint_sha256": "6c511ba9211784f3bba6553e8a780f7eeace6de7fb6831414fa0947048ea4671"
+    }
+  ],
+  "mean_best_dev_candidate_ap": 0.8705488857104332,
+  "sample_standard_deviation": 0.006397416796863215,
+  "minimum": 0.8667512385464708,
+  "maximum": 0.8779349990320148,
+  "limitation": "Three seeds on one small training subset; no training-size conclusion."
+}

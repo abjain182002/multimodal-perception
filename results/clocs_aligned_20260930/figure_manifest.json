@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "results/clocs_aligned_20260930/ap40.json": "765ae2246e9585d96085accbef18dc97748a68a77f2e2fd1a331390165351008",
+    "results/clocs_aligned_20260930/seed_comparison.json": "f76203cd60ab6779efaa8caf9dd531eb9615f1a5d7c21332be8f978ce0aa6371",
+    "results/pv_rcnn_kitti/common_ap40.json": "c5bbf1191ec7ab4a5dc2c082f646eac3052333fd8da83a7f4661270e0959becc"
+  },
+  "outputs": {
+    "three_model_3d_ap40.svg": "a8fd3d85c97f716d428021920d91cbce30e8e56c020a9e0dda4e88dd063bf978",
+    "seed_learning_curves.svg": "e613a1ea22dffe76f608ac6dc9acaa18f851cc7aafd6955bad94b01910150f7f",
+    "ap40_comparison.csv": "304eaec01409a22b87306c37e54c5b30445a6a4e79a6095061b00dc91623d85e",
+    "seed_learning_curves.csv": "60af90c1116d27cc6abfedcbc6a3eaa0b5661ce69b8435cd23d17181f3f10229",
+    "FINDINGS.md": "bbe2febaa432f2936712c67bd0d0b56601b376f06ee1ed71d2006b8fec891b08"
+  }
+}
