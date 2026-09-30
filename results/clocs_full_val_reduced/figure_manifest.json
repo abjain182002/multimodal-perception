@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "frames": 3769,
+  "sha256": {
+    "results/clocs_full_val_reduced/ap40.json": "220a1dd158493ff9f89a469dc1ccf50b03f6b451c9d92b7d4c8ac0d03b408594",
+    "results/clocs_full_val_reduced/coverage_diagnostic.json": "f60d862e956b86758cc0eccef9cf8682498953a30a270e2dd888b38c5e266d24",
+    "scripts/plot_clocs_reduced_results.py": "847a6c38cf844415045c6ac58ee90ad92c1885c4205d9a17a9c012796dedc480",
+    "results/clocs_full_val_reduced/archive_receipt.json": "bb30d6796d3004299934c238b5795433bff09c27c957534fa152f45754525a85",
+    "results/clocs_full_val_reduced/matched_ap40.png": "34f91753e3d8c20351672eb6a8fde1d5933e47d3dc891aaf439a7a8957e883d2",
+    "results/clocs_full_val_reduced/matched_ap40.pdf": "32f4a0f90c32358a4382369437831c11b8c4c4d6b3b5a2bacc8906de6528d2fc",
+    "results/clocs_full_val_reduced/matched_ap40.csv": "0a5d7d37220ab086d61289f6a4126bb2f724634af73be3787bc6503ec04675d0",
+    "results/clocs_full_val_reduced/matched_coverage.png": "a2341f3672cf39265af2ffc8c1d53d60534feb6a05f7829dd5f6673c104be221",
+    "results/clocs_full_val_reduced/matched_coverage.pdf": "688bbf84515cca69d04b5e119705cc62fc3abc97bc40888b340465d3b7b0ba4f",
+    "results/clocs_full_val_reduced/matched_coverage.csv": "bdb7f5665231ac727ddbcade88c8c795b1324507a24e8220dfba98af44dfef65",
+    "results/clocs_full_val_reduced/figure_captions.md": "e41f5ec3d914cdfc8311d0b18dca96c98c370a393b24be1fcff0b1da0b895095"
+  }
+}
