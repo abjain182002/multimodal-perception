@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490">
+<rect width="1000" height="490" fill="white"/>
+<g font-family="Arial,sans-serif" fill="#222">
+<text x="30" y="32" font-size="22">PV-RCNN latency: one Tesla T4, batch size 1</text>
+<text x="30" y="59" font-size="15">10 warm-up calls; 32 KITTI frames × 3 passes; GPU-synchronized wall time</text>
+<line x1="275.0" x2="275.0" y1="85" y2="390" stroke="#dddddd"/>
+<text x="275.0" y="413" text-anchor="middle" font-size="13">0</text>
+<line x1="432.5" x2="432.5" y1="85" y2="390" stroke="#dddddd"/>
+<text x="432.5" y="413" text-anchor="middle" font-size="13">50</text>
+<line x1="590.0" x2="590.0" y1="85" y2="390" stroke="#dddddd"/>
+<text x="590.0" y="413" text-anchor="middle" font-size="13">100</text>
+<line x1="747.5" x2="747.5" y1="85" y2="390" stroke="#dddddd"/>
+<text x="747.5" y="413" text-anchor="middle" font-size="13">150</text>
+<line x1="905.0" x2="905.0" y1="85" y2="390" stroke="#dddddd"/>
+<text x="905.0" y="413" text-anchor="middle" font-size="13">200</text>
+<text x="20" y="127" font-size="15">Preprocessing</text>
+<rect x="275" y="98" width="82.400" height="21" fill="#2864a0"/>
+<text x="364.400" y="114" font-size="13">26.16</text>
+<rect x="275" y="125" width="92.622" height="21" fill="#df7926"/>
+<text x="374.622" y="141" font-size="13">29.40</text>
+<text x="20" y="202" font-size="15">GPU transfer</text>
+<rect x="275" y="173" width="4.303" height="21" fill="#2864a0"/>
+<text x="286.303" y="189" font-size="13">1.37</text>
+<rect x="275" y="200" width="4.932" height="21" fill="#df7926"/>
+<text x="286.932" y="216" font-size="13">1.57</text>
+<text x="20" y="277" font-size="15">Inference + postprocessing</text>
+<rect x="275" y="248" width="470.772" height="21" fill="#2864a0"/>
+<text x="752.772" y="264" font-size="13">149.45</text>
+<rect x="275" y="275" width="529.353" height="21" fill="#df7926"/>
+<text x="811.353" y="291" font-size="13">168.05</text>
+<text x="20" y="352" font-size="15">Measured pipeline</text>
+<rect x="275" y="323" width="555.376" height="21" fill="#2864a0"/>
+<text x="837.376" y="339" font-size="13">176.31</text>
+<rect x="275" y="350" width="617.917" height="21" fill="#df7926"/>
+<text x="899.917" y="366" font-size="13">196.16</text>
+<text x="550" y="440" font-size="15">Latency (ms); axis starts at zero</text>
+<rect x="275" y="455" width="15" height="15" fill="#2864a0"/>
+<text x="299" y="468" font-size="14">Median</text>
+<rect x="390" y="455" width="15" height="15" fill="#df7926"/>
+<text x="414" y="468" font-size="14">p95</text>
+</g></svg>

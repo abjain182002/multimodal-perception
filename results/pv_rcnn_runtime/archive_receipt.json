@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "archive_sha256": "23bd999fa5c64cc825d6780e6a5c4322cc701d55ae2903e21d2dac16c924efd7",
+  "archive_bytes": 9590,
+  "members": 6,
+  "measured_calls_verified": 96,
+  "unique_frames": 32,
+  "csv_statistics_recomputed": true,
+  "members_sha256": {
+    "environment.txt": "1a8b974df6ca3c0f374ea39535f47eb6af8720d9cf8b46b56fe67dc403e00228",
+    "latency.csv": "daaabc55cdfbcbeacf3a0de2a1f912b9119e0da7d284bd881c4e26cd7c20e7da",
+    "model_loading.log": "731236c19dd29734b2b5ebb5d78767defecc86e98dbdd68778f55fefff61daae",
+    "nvidia_smi.txt": "fb943908970f9207d36ae2a02b9f8e3acbdf5afce0dcb23a8a33e4c40005e97f",
+    "runtime.json": "85f8565f4025f0c5924af2b832a49a7e5928e2d9bb7d197e501f1a1ae8f47c75",
+    "benchmark_pv_rcnn_local.py": "ae21482500d575acb88939b289d2770fffed3cb0edd80e8e380264661889d30b"
+  }
+}

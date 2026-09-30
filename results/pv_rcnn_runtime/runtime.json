@@ -1,0 +1,97 @@
+{
+  "schema_version": "pv_rcnn_runtime_v1",
+  "status": "PASS",
+  "model": "Official pretrained OpenPCDet PV-RCNN",
+  "batch_size": 1,
+  "warmup_calls": 10,
+  "unique_frames": 32,
+  "repeats": 3,
+  "measured_calls": 96,
+  "seed": 20260930,
+  "frame_ids": [
+    "000001",
+    "000265",
+    "000480",
+    "000737",
+    "000991",
+    "001218",
+    "001450",
+    "001709",
+    "001952",
+    "002185",
+    "002432",
+    "002686",
+    "002917",
+    "003156",
+    "003404",
+    "003658",
+    "003926",
+    "004162",
+    "004398",
+    "004638",
+    "004859",
+    "005081",
+    "005321",
+    "005582",
+    "005854",
+    "006075",
+    "006348",
+    "006570",
+    "006796",
+    "007030",
+    "007265",
+    "007480"
+  ],
+  "machine": {
+    "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+    "gpu": "Tesla T4",
+    "torch": "2.1.2+cu121",
+    "torch_cuda": "12.1",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true
+  },
+  "latency": {
+    "preprocessing_ms": {
+      "mean": 26.351654968730525,
+      "median": 26.158813999700214,
+      "p95": 29.403871500107925,
+      "min": 12.719253000796016,
+      "max": 33.67274799984443
+    },
+    "transfer_ms": {
+      "mean": 1.4737475624902647,
+      "median": 1.3658924999617739,
+      "p95": 1.565743250239393,
+      "min": 0.8952339994721115,
+      "max": 3.9716789997328306
+    },
+    "inference_ms": {
+      "mean": 152.59299804172124,
+      "median": 149.4514330001948,
+      "p95": 168.04869699990377,
+      "min": 139.68905700039613,
+      "max": 279.0748520001216
+    },
+    "pipeline_ms": {
+      "mean": 180.41840057294203,
+      "median": 176.3097265002216,
+      "p95": 196.16411150013846,
+      "min": 161.64322000076936,
+      "max": 307.2801899998012
+    }
+  },
+  "serial_pipeline_calls_per_second": 5.542671904996221,
+  "peak_torch_allocated_bytes": 846474752,
+  "source_commit": "233f849829b6ac19afb8af8837a0246890908755",
+  "source_sha256": {
+    "script": "ae21482500d575acb88939b289d2770fffed3cb0edd80e8e380264661889d30b",
+    "checkpoint": "08552932026855bcc10f66dbc45409f139d3208fd0095c2aab1f459f055fe463",
+    "metadata": "5e3ea7475013ffa136f203388a3fccd5ebd210c375fa3083c158c1c38db3a2bd",
+    "config": "0bb1415a52dd51a575516feba8abad9c92d8e349934efc65ad20c574744ff96a",
+    "dataset_config": "a6c44a7b0f15b94e135946cecbd8b5541906a69d37811705e9884a411e7b1797"
+  },
+  "scope": "Synchronized serial latency: official dataset preparation/collation, GPU transfer and forward including detector postprocessing. Excludes loading, KITTI annotation conversion and output writing.",
+  "limitations": "One session; repeated reads may be cached. Dataset preprocessing includes GT bookkeeping. Serial call rate is not asynchronous throughput. Torch memory excludes some external CUDA allocations."
+}
