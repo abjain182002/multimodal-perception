@@ -4,7 +4,7 @@ The official pretrained OpenPCDet PV-RCNN checkpoint scored 92.1047 / 84.3604 / 
 
 Relative to the verified PointPillars baseline, PV-RCNN gained 1.7598 / 5.2306 / 6.3265 3D AP points. This establishes a stronger LiDAR-only baseline in this experiment. It does not establish an advantage from fusion, equal training budgets, statistical significance or universal model superiority. Both detectors are pretrained; the CLOCs fusion head used 96 optimization and 32 development frames. Checkpoint-specific upstream training provenance should accompany the comparison.
 
-The model is PV-RCNN, not PV-RCNN++ or Azitt. No PV-RCNN camera fusion, retraining, standardized runtime benchmark or cross-dataset evaluation has yet been measured. Inference progress timing is not a controlled runtime benchmark.
+The model is PV-RCNN, not PV-RCNN++ or Azitt. No PV-RCNN camera fusion, retraining or cross-dataset evaluation has yet been measured. A separate synchronized batch-one T4 runtime benchmark is now recorded in [runtime findings](../pv_rcnn_runtime/FINDINGS.md): 96 calls after 10 warm-ups, pipeline median 176.31 ms and p95 196.16 ms. It is not a cross-model runtime comparison.
 
 The implementation reused OpenPCDet commit 233f849829b6ac19afb8af8837a0246890908755 and its official KITTI model-zoo checkpoint. All 367/367 checkpoint parameters loaded. Camera-FOV filtering, voxelization and KITTI prediction conversion used upstream code. The local wrapper provides headless/resumable inference, integrity checks and cross-framework evaluator verification.
 
