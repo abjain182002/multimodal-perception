@@ -229,3 +229,19 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Completed synchronized batch-one runtime measurements: 10 warm-up calls, 32 fixed validation frames, three passes (96 calls), one Tesla T4. Pipeline median 176.31 ms, p95 196.16 ms; forward/postprocessing median 149.45 ms, p95 168.05 ms. Serial measured rate 5.54 calls/s. Excludes loading, annotation conversion and writing; repeated reads can be cached.
 - Recomputed statistics from raw CSV and verified executed source/ZIP hash (`23bd999fa5c64cc825d6780e6a5c4322cc701d55ae2903e21d2dac16c924efd7`). Runtime evidence and SVG figure were pushed at `1e695b1`, under `results/pv_rcnn_runtime/`. Runtime comparisons with other models remain pending.
 - Next priority after feedback: audit checkpoint-specific training-split provenance and camera pilot overlap; test CLOCs training adequacy with aligned preprocessing, a frozen internal dev split, multiple seeds and a larger train-only subset. Validation has already been inspected and must not be treated as untouched final test data. No new CLOCs training or semantic-fusion result is claimed.
+
+## 30 September 2026 — Aligned CLOCs training study
+
+- Re-exported 128 training frames with camera-FOV-reduced clouds and verified dense candidates, feature rows and targets. Fixed 96 optimization / 32 development frames across three initialization seeds; all valid candidates used, 12 epochs, Adam LR 0.002.
+- Development candidate AP: 0.877935 / 0.866960 / 0.866751. Selected seed 20260928 using development AP before its full-validation run. Candidate AP is not KITTI AP40.
+- Selected seed achieved Moderate 3D AP40 79.8616 against paired PointPillars 79.1299; Hard decreased to 74.8719. Full baseline parity error 0.0. Reports, learning curves and comparison figures preserved at `0b8674a` under `results/clocs_aligned_20260930/`.
+
+## 1 October 2026 — Full-validation seed variability and epoch extension
+
+- Full re-inference and AP40 evaluation for seeds 20260929 and 20260930 completed on all 3,769 frames. Combined epoch-12 Moderate 3D AP40: 79.8616 / 76.2666 / 78.7616, versus PointPillars 79.1299. Only one seed improves Moderate; all three reduce Hard. Three runs support descriptive consistency analysis, not significance testing.
+- Verified 516 saved bulk-training files against their manifest. Restored seed 20260928 epoch-12 model and Adam state; development AP reload error 0.0. Continued epochs 13–24 at constant LR 0.002 with no scheduler, preserving the original 96/32 split. Original checkpoint lacks RNG states; continuation is not claimed to be bitwise uninterrupted reproduction.
+- Development candidate AP increased from 0.877935 to 0.883568; best epoch remained the final epoch 24, so plateau remains unestablished. Full epoch-24 3D AP40: 90.2610 / 79.4874 / 74.7797. Moderate fell 0.3741 points versus epoch 12. Candidate ranking improvement did not translate into improved 3D detection AP40 in this diagnostic.
+- All new full-validation evaluations reproduce all nine historical PointPillars AP40 metrics exactly. Validation is iterative, not an untouched final test. Results concern this small-data implementation; they do not establish general CLOCs or fusion failure.
+- Mac independently verified and restored both full evidence archives. Three-seed ZIP SHA-256: `05e9312e6d3d2e0e91340b6f74395707cfc7e40b9f2f32536768cea8a79f12f2`; epoch-24 full-validation ZIP: `68d419a06222d8f22b40483cddedae78e37a84e1a4effcd7f1d9d2a85d44a559`.
+- Committed 17 compact result/source files, exact comparison CSV, two SVG figures, receipts and findings at `66584df`. Figure generation completed; final visual inspection remains required before dissertation use. Evidence: `results/clocs_seed_diagnostics_20261001/`.
+- Frozen this diagnostic stage; larger-frame adequacy remains untested. Next integration requires an official source/checkpoint and data feasibility gate, with reuse of existing repositories.
