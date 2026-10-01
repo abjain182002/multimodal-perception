@@ -1,8 +1,10 @@
 # Validated Experimental Results
 
+> **Current CLOCs status (1 October 2026):** Three aligned epoch-12 seeds completed full 3,769-frame validation with exact baseline parity. Moderate 3D AP40 = 79.8616 / 76.2666 / 78.7616, against PointPillars 79.1299. Only one seed improves Moderate; all three reduce Hard. Seed 20260928's epoch-24 continuation improved development candidate AP but reduced Moderate detection AP40 to 79.4874. Report descriptive seed variability, not statistical significance. This current diagnostic qualifies the earlier single-checkpoint results preserved below. See [findings](clocs_seed_diagnostics_20261001/FINDINGS.md) and [all metrics](clocs_seed_diagnostics_20261001/ap40_comparison.csv).
+
 > **PV-RCNN update (30 September 2026):** Official pretrained OpenPCDet PV-RCNN achieved Car strict IoU 0.70 3D AP40 **92.1047 / 84.3604 / 82.4830** on the same 3,769-frame validation split. Native and pinned MMDetection3D evaluation agreed exactly across all nine metrics. This is a LiDAR-only reproduction, not PV-RCNN++/Azitt or an equal-training-budget ablation. See [findings and comparison](pv_rcnn_kitti/FINDINGS.md).
 
-> **Current CLOCs status (30 September 2026):** Baseline-matched reduced-FOV validation is complete on 3,769 frames. All nine historical PointPillars AP40 metrics reproduce exactly (maximum error 0.0). Car 3D Moderate is 79.1299 → 79.2542 (+0.1243 points); Hard is 76.1566 → 73.6326 (-2.5239). This mixed result supersedes the earlier raw-cloud diagnostic for the historical-baseline comparison. See [verified findings and limitations](../docs/CLOCS_BASELINE_MATCHED_RESULT_2026-09-29.md).
+> **Historical CLOCs checkpoint (28–29 September 2026):** Baseline-matched reduced-FOV validation is complete on 3,769 frames. All nine historical PointPillars AP40 metrics reproduce exactly (maximum error 0.0). Car 3D Moderate is 79.1299 → 79.2542 (+0.1243 points); Hard is 76.1566 → 73.6326 (-2.5239). This mixed result supersedes the earlier raw-cloud diagnostic for the historical-baseline comparison. See [verified findings and limitations](../docs/CLOCS_BASELINE_MATCHED_RESULT_2026-09-29.md).
 
 > 
 >
