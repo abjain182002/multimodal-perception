@@ -1,0 +1,9 @@
+{
+  "script_sha256": "09a569a7e7ef2641ddb8bbf2b81da2731b740879b44797b9291671a60596375b",
+  "artifacts": {
+    "ap40_comparison.csv": "06c07a57ee6d54118a2d30a2387c40292393f3920c95a467e68a98203d6a852b",
+    "three_seed_and_epoch24_3d_deltas.svg": "59cffaac909eaa187973f36f3c6c2040bc2065065f445107cea92dfe92dc9690",
+    "epoch12_to24_candidate_ap.svg": "46dc376f1ab1b4b06766aeffc03315f2cc6bbff05bdd595007c389f1460540cc",
+    "FINDINGS.md": "50ff3d34c5829ab7403b138a8ef301e5a28a72d418d4e2a241163293df999346"
+  }
+}

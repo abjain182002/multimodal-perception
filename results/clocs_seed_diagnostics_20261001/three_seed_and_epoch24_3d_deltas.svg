@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="white"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="40" y="38" font-size="23">CLOCs 3D AP40: difference from PointPillars</text>
+<text x="40" y="66" font-size="14">3,769 KITTI validation frames; Car IoU 0.70; exact baseline parity in every run</text>
+<line x1="100" y1="420.0" x2="940" y2="420.0" stroke="#dce1e8"/>
+<text x="85" y="425.0" text-anchor="end" font-size="13">-8</text>
+<line x1="100" y1="362.0" x2="940" y2="362.0" stroke="#dce1e8"/>
+<text x="85" y="367.0" text-anchor="end" font-size="13">-6</text>
+<line x1="100" y1="304.0" x2="940" y2="304.0" stroke="#dce1e8"/>
+<text x="85" y="309.0" text-anchor="end" font-size="13">-4</text>
+<line x1="100" y1="246.0" x2="940" y2="246.0" stroke="#dce1e8"/>
+<text x="85" y="251.0" text-anchor="end" font-size="13">-2</text>
+<line x1="100" y1="188.0" x2="940" y2="188.0" stroke="#dce1e8"/>
+<text x="85" y="193.0" text-anchor="end" font-size="13">+0</text>
+<line x1="100" y1="130.0" x2="940" y2="130.0" stroke="#dce1e8"/>
+<text x="85" y="135.0" text-anchor="end" font-size="13">+2</text>
+<line x1="100" y1="188.0" x2="940" y2="188.0" stroke="#172033" stroke-width="2"/>
+<text x="240" y="451" text-anchor="middle" font-size="16">Easy</text>
+<rect x="140" y="175.71853675265373" width="42" height="12.281463247346267" fill="#2563eb"/>
+<text x="161" y="168.71853675265373" text-anchor="middle" font-size="12">+0.42</text>
+<rect x="192" y="188.0" width="42" height="225.81870669833614" fill="#d97706"/>
+<text x="213" y="430.81870669833614" text-anchor="middle" font-size="12">-7.79</text>
+<rect x="244" y="188.0" width="42" height="15.653431205846744" fill="#059669"/>
+<text x="265" y="220.65343120584674" text-anchor="middle" font-size="12">-0.54</text>
+<rect x="296" y="188.0" width="42" height="2.431971547996909" fill="#9333ea"/>
+<text x="317" y="207.4319715479969" text-anchor="middle" font-size="12">-0.08</text>
+<text x="520" y="451" text-anchor="middle" font-size="16">Moderate</text>
+<rect x="420" y="166.78116961025702" width="42" height="21.218830389742976" fill="#2563eb"/>
+<text x="441" y="159.78116961025702" text-anchor="middle" font-size="12">+0.73</text>
+<rect x="472" y="188.0" width="42" height="83.03437271568731" fill="#d97706"/>
+<text x="493" y="288.0343727156873" text-anchor="middle" font-size="12">-2.86</text>
+<rect x="524" y="188.0" width="42" height="10.678643254704696" fill="#059669"/>
+<text x="545" y="215.6786432547047" text-anchor="middle" font-size="12">-0.37</text>
+<rect x="576" y="177.63080740110382" width="42" height="10.369192598896177" fill="#9333ea"/>
+<text x="597" y="170.63080740110382" text-anchor="middle" font-size="12">+0.36</text>
+<text x="800" y="451" text-anchor="middle" font-size="16">Hard</text>
+<rect x="700" y="188.0" width="42" height="37.254006441049114" fill="#2563eb"/>
+<text x="721" y="242.2540064410491" text-anchor="middle" font-size="12">-1.28</text>
+<rect x="752" y="188.0" width="42" height="87.10305550166902" fill="#d97706"/>
+<text x="773" y="292.103055501669" text-anchor="middle" font-size="12">-3.00</text>
+<rect x="804" y="188.0" width="42" height="78.06029736132706" fill="#059669"/>
+<text x="825" y="283.06029736132706" text-anchor="middle" font-size="12">-2.69</text>
+<rect x="856" y="188.0" width="42" height="39.92887820922516" fill="#9333ea"/>
+<text x="877" y="244.92887820922516" text-anchor="middle" font-size="12">-1.38</text>
+<rect x="100" y="480" width="14" height="14" fill="#2563eb"/>
+<text x="123" y="492" font-size="13">Seed 20260928, epoch 12</text>
+<rect x="530" y="480" width="14" height="14" fill="#d97706"/>
+<text x="553" y="492" font-size="13">Seed 20260929, epoch 12</text>
+<rect x="100" y="505" width="14" height="14" fill="#059669"/>
+<text x="123" y="517" font-size="13">Seed 20260930, epoch 12</text>
+<rect x="530" y="505" width="14" height="14" fill="#9333ea"/>
+<text x="553" y="517" font-size="13">Seed 20260928, epoch 24</text>
+</g></svg>

@@ -1,0 +1,81 @@
+{
+  "before_dev": {
+    "evaluated_candidates": 3425680,
+    "frames": 32,
+    "fusion_candidate_ap": 0.8779349990320148,
+    "mean_frame_focal_loss": 8.943550805962097e-05,
+    "pointpillars_candidate_ap": 0.7776601671493377,
+    "positive_candidates": 2378
+  },
+  "best_checkpoint_sha256": "bf2ed68b7b05bbe963c1c8c63e50ff232e5cf1cf83543ce374b483c5c1c527d7",
+  "best_dev": {
+    "evaluated_candidates": 3425680,
+    "frames": 32,
+    "fusion_candidate_ap": 0.8835684063580764,
+    "mean_frame_focal_loss": 7.861119114760395e-05,
+    "pointpillars_candidate_ap": 0.7776601671493377,
+    "positive_candidates": 2378
+  },
+  "best_epoch": 24,
+  "final_dev": {
+    "evaluated_candidates": 3425680,
+    "frames": 32,
+    "fusion_candidate_ap": 0.8835684063580764,
+    "mean_frame_focal_loss": 7.861119114760395e-05,
+    "pointpillars_candidate_ap": 0.7776601671493377,
+    "positive_candidates": 2378
+  },
+  "final_epoch": 24,
+  "interpretation": "Epoch extension diagnostic; candidate AP, not KITTI AP40.",
+  "last_checkpoint_sha256": "e5a29254dae6f0b642b04df6ed60e958fa768e1054b8075ea1d931806b49c042",
+  "parent_epoch": 12,
+  "protocol": {
+    "environment": {
+      "gpu": "Tesla T4",
+      "numpy": "1.26.4",
+      "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+      "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+      "torch": "2.1.2+cu121"
+    },
+    "extension": {
+      "end_epoch": 24,
+      "epoch12_reload_ap_absolute_error": 0.0,
+      "extension_script_sha256": "0ed2404671bac739b50e46c38c90fb254d6227b6c4e13599e613f0d0ba738c62",
+      "learning_rate": 0.002,
+      "limitation": "Original checkpoint did not save RNG states. Seeds are reset; this is not claimed as a bitwise uninterrupted training reproduction.",
+      "optimizer_state_restored": true,
+      "parent_checkpoint_sha256": "3f8df1dcb0e2851eb31d7f707ed6ac01e0a0bd618414c75c75463b9637b111a5",
+      "parent_protocol_sha256": "398d4550eed424f1e5106e32e1ff5270a9d94556986b8887cd01a67f0bf19015",
+      "scheduler": null,
+      "start_epoch": 13
+    },
+    "interpretation": "Internal development candidate ranking; not official KITTI AP40.",
+    "loss": "Focal alpha=0.25 gamma=2; mean over selected candidates per frame; evaluation uses all nonignored candidates.",
+    "reproducibility": "Fixed seeds and deterministic selection; cross-device bitwise equality is not guaranteed.",
+    "sampling": "All positives; half top PointPillars-score negatives, half random remaining negatives; ratio 0 uses all valid candidates.",
+    "schema_version": "clocs_128_training_protocol_v1",
+    "settings": {
+      "background_cap": 256,
+      "batch_manifest": "/kaggle/input/datasets/abhishekjain18/multimodal-perception-128-export-code-zip/results/clocs_train_export_128_manifest.json",
+      "data_dir": "/kaggle/input/datasets/abhishekjain18/clocs-aligned-training-bulk-zip/clocs_aligned_training_examples",
+      "device": "cuda",
+      "epochs": 24,
+      "learning_rate": 0.002,
+      "negative_ratio": 0,
+      "output_dir": "/kaggle/working/clocs_epoch24_extension/results",
+      "seed": 20260928,
+      "split_seed": 20260928,
+      "train_ids": "/kaggle/input/datasets/abhishekjain18/clocs-train-export-128-tar-gz/splits/train.txt",
+      "val_ids": "/kaggle/input/datasets/abhishekjain18/clocs-train-export-128-tar-gz/splits/val.txt"
+    },
+    "source_sha256": {
+      "/kaggle/working/clocs_aligned_training_code/scripts/train_clocs_128.py": "23e798e098a639f70e582093a20a93e56bb2b7a8f1db7033c2de96f6a60f54db",
+      "fusion/clocs_network.py": "70aff0741cde3b8dfce09a3376970b605fc5647eb7a7e28aed9679dfe0c03ac0",
+      "fusion/clocs_sampling.py": "2a45f642da5e4dc703074130cec03299ab9049a1b20467cac83c8ad73aba0a9a",
+      "fusion/clocs_training.py": "76dd61c6480b92aa935c64fe59331ad41918a1e56dfa4683a422ba0954effe8e",
+      "scripts/train_clocs_pilot.py": "485382b3be2e50997edf57acfcc458bccbfb8ee5337ab803aba6f384f9496935"
+    }
+  },
+  "reload_ap_absolute_error": 0.0,
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "three_seed": {
+    "archive": "clocs_three_seed_validation_verified.zip",
+    "sha256": "05e9312e6d3d2e0e91340b6f74395707cfc7e40b9f2f32536768cea8a79f12f2",
+    "bytes": 17030539,
+    "verified_members": 7550
+  },
+  "epoch24": {
+    "archive": "clocs_epoch24_full_validation_verified.zip",
+    "sha256": "68d419a06222d8f22b40483cddedae78e37a84e1a4effcd7f1d9d2a85d44a559",
+    "bytes": 8102617,
+    "verified_members": 3783
+  }
+}

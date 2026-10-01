@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="white"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="40" y="38" font-size="23">Epoch extension: development candidate AP</text>
+<text x="40" y="66" font-size="14">Seed 20260928; fixed 32-frame development set; restored Adam; constant LR 0.002</text>
+<line x1="110" y1="420.0" x2="930" y2="420.0" stroke="#dce1e8"/>
+<text x="95" y="425.0" text-anchor="end" font-size="13">0.8750</text>
+<line x1="110" y1="347.50000000000153" x2="930" y2="347.50000000000153" stroke="#dce1e8"/>
+<text x="95" y="352.50000000000153" text-anchor="end" font-size="13">0.8775</text>
+<line x1="110" y1="274.9999999999999" x2="930" y2="274.9999999999999" stroke="#dce1e8"/>
+<text x="95" y="279.9999999999999" text-anchor="end" font-size="13">0.8800</text>
+<line x1="110" y1="202.50000000000142" x2="930" y2="202.50000000000142" stroke="#dce1e8"/>
+<text x="95" y="207.50000000000142" text-anchor="end" font-size="13">0.8825</text>
+<line x1="110" y1="129.99999999999972" x2="930" y2="129.99999999999972" stroke="#dce1e8"/>
+<text x="95" y="134.99999999999972" text-anchor="end" font-size="13">0.8850</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="110.0,334.8850280715716 178.33333333333331,334.4976732126685 246.66666666666666,306.16485427960777 315.0,282.43902639316394 383.3333333333333,294.6516821853962 451.6666666666667,276.9716302784651 520.0,241.47305562309992 588.3333333333334,234.23801673485073 656.6666666666666,206.36618333956943 725.0,207.63744985098927 793.3333333333334,194.9882053866447 861.6666666666666,190.21431165482124 930.0,171.51621561578352"/>
+<circle cx="110.0" cy="334.8850280715716" r="4" fill="#2563eb"/>
+<text x="110.0" y="449" text-anchor="middle" font-size="13">12</text>
+<circle cx="178.33333333333331" cy="334.4976732126685" r="4" fill="#2563eb"/>
+<circle cx="246.66666666666666" cy="306.16485427960777" r="4" fill="#2563eb"/>
+<text x="246.66666666666666" y="449" text-anchor="middle" font-size="13">14</text>
+<circle cx="315.0" cy="282.43902639316394" r="4" fill="#2563eb"/>
+<circle cx="383.3333333333333" cy="294.6516821853962" r="4" fill="#2563eb"/>
+<text x="383.3333333333333" y="449" text-anchor="middle" font-size="13">16</text>
+<circle cx="451.6666666666667" cy="276.9716302784651" r="4" fill="#2563eb"/>
+<circle cx="520.0" cy="241.47305562309992" r="4" fill="#2563eb"/>
+<text x="520.0" y="449" text-anchor="middle" font-size="13">18</text>
+<circle cx="588.3333333333334" cy="234.23801673485073" r="4" fill="#2563eb"/>
+<circle cx="656.6666666666666" cy="206.36618333956943" r="4" fill="#2563eb"/>
+<text x="656.6666666666666" y="449" text-anchor="middle" font-size="13">20</text>
+<circle cx="725.0" cy="207.63744985098927" r="4" fill="#2563eb"/>
+<circle cx="793.3333333333334" cy="194.9882053866447" r="4" fill="#2563eb"/>
+<text x="793.3333333333334" y="449" text-anchor="middle" font-size="13">22</text>
+<circle cx="861.6666666666666" cy="190.21431165482124" r="4" fill="#2563eb"/>
+<circle cx="930.0" cy="171.51621561578352" r="4" fill="#2563eb"/>
+<text x="930.0" y="449" text-anchor="middle" font-size="13">24</text>
+<text x="520" y="480" text-anchor="middle" font-size="15">Epoch</text>
+<text x="110" y="516" font-size="13">Truncated AP axis: 0.875–0.885. Candidate AP is not KITTI detection AP40.</text>
+</g></svg>
