@@ -1,0 +1,19 @@
+{
+  "status": "METADATA_PASS",
+  "version": "v1.0-mini",
+  "converter_max_sweeps": 10,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "splits": {
+    "train": {
+      "frames": 323,
+      "path": "/content/datasets/nuscenes/mmdet3d_infos/nuscenes_infos_train.pkl",
+      "sha256": "9dc8c04db783b07bcfbb926872e4f8d2b796520db828e32c2a51af09ef9d7b0b"
+    },
+    "val": {
+      "frames": 81,
+      "path": "/content/datasets/nuscenes/mmdet3d_infos/nuscenes_infos_val.pkl",
+      "sha256": "8d94949c5bfcd2caa2b98a592f6ca1fccec45aba5787df216636a42d39ea68d1"
+    }
+  },
+  "scope": "Official mini split metadata; no inference or accuracy measured."
+}

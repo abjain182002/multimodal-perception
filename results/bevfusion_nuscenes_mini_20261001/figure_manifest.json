@@ -1,0 +1,9 @@
+{
+  "script_sha256": "6eb588e72a492b6b0e7d3d29aaea1e498e1db7f80ceeb570426749499471e252",
+  "artifacts": {
+    "comparison.csv": "db02d03266f5e8d9c7e99361b50f311c93a7075086c4c83a9ca5d2be6f94abde",
+    "per_class_ap.csv": "19e867d68623e8220d765f6ae3a679916a4628ee4b686afc4ee4bda2cff378f8",
+    "comparison.svg": "ad593ea460b539674d32e50a861af1b92d801b26e16a5d62fe0df5d37819924c",
+    "FINDINGS.md": "7cec5f8514ea3e1d4f7bc24816e58d3c49f6462c1484f0eeb86050a25cc55cf8"
+  }
+}

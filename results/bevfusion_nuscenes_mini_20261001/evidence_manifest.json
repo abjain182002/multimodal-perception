@@ -1,0 +1,847 @@
+{
+  "status": "PAIRED_MINI_EVIDENCE",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "scope": "81-sample mini_val pretrained-checkpoint pilot; not full validation.",
+  "members": {
+    "bevfusion_mini_validation/evaluate.py": {
+      "bytes": 5052,
+      "sha256": "83e7895a9eef978f82e0fb16c9a5ad1c1d139bf084dc6412beaaef855cdb993e"
+    },
+    "bevfusion_mini_validation/evaluation.log": {
+      "bytes": 19832,
+      "sha256": "3bfb2b11dad44a2b41452e6f177b202ae9fa5cf2f2f3ab4aee158319b63cfdcb"
+    },
+    "bevfusion_mini_validation/lidar/evaluation_audit.json": {
+      "bytes": 7850,
+      "sha256": "717e44919975ba75bf448fa7863b851edc591614c70bb0e8dc9aa524833d1358"
+    },
+    "bevfusion_mini_validation/lidar/official_results/pred_instances_3d/metrics_details.json": {
+      "bytes": 637799,
+      "sha256": "facb70689c226e02403da172cb878734b5d092da6343f51dba576e71e9a0c700"
+    },
+    "bevfusion_mini_validation/lidar/official_results/pred_instances_3d/metrics_summary.json": {
+      "bytes": 4761,
+      "sha256": "452688b0089ece8439efffff49ba9e0ed7a7ff59a8d3b760fe8ed97a83f83015"
+    },
+    "bevfusion_mini_validation/lidar/official_results/pred_instances_3d/results_nusc.json": {
+      "bytes": 5762887,
+      "sha256": "d0a5ce6a4e2f0f0463c726ab50a978ebccd4921873fee099d2bdfe5ad40a2dd4"
+    },
+    "bevfusion_mini_validation/lidar/predictions/000.json": {
+      "bytes": 42335,
+      "sha256": "677255572a14ba83c8cdb5ecf98bd18a355d3de5893bfa144c50582bae760c13"
+    },
+    "bevfusion_mini_validation/lidar/predictions/001.json": {
+      "bytes": 42212,
+      "sha256": "3b56cd7c267ee22e5f967e79feffd6990b90a26423ccabe079f073013187e4d9"
+    },
+    "bevfusion_mini_validation/lidar/predictions/002.json": {
+      "bytes": 42286,
+      "sha256": "a0861c838c0dd04dc8fe1a9b53865468019bd7d54f0a0ee441762aec9537c1fa"
+    },
+    "bevfusion_mini_validation/lidar/predictions/003.json": {
+      "bytes": 42309,
+      "sha256": "fe05c90a2d543a91d8daae57b44b35123baafaf8d5c0f86f34ac85f945cea89c"
+    },
+    "bevfusion_mini_validation/lidar/predictions/004.json": {
+      "bytes": 42145,
+      "sha256": "4800623f2d53a52b0f72d68c89fd72fbbce6f0e637926d4d0cb7bda70bb6fbe1"
+    },
+    "bevfusion_mini_validation/lidar/predictions/005.json": {
+      "bytes": 42278,
+      "sha256": "60fa0e3dc2dcb644c776f38ff1c419cb63e1041d15ca88354347d3e1db66c71c"
+    },
+    "bevfusion_mini_validation/lidar/predictions/006.json": {
+      "bytes": 42330,
+      "sha256": "78402d42173ebfd887ede23e50872869e39147b1c63c09892effdba61348fbc4"
+    },
+    "bevfusion_mini_validation/lidar/predictions/007.json": {
+      "bytes": 42384,
+      "sha256": "9145ac6add4b1ee15a9a1c362c4621732a3c6f31f7bfc2a7b0c05100a2c9cde7"
+    },
+    "bevfusion_mini_validation/lidar/predictions/008.json": {
+      "bytes": 42392,
+      "sha256": "25e849f720ad139ba275de464d1d2b6ef9537e0ff48457dcc48a53eed2acf356"
+    },
+    "bevfusion_mini_validation/lidar/predictions/009.json": {
+      "bytes": 42375,
+      "sha256": "38c07fb80549d800132202a8c4c9a1687be7559a932b102579b8cbb05a5c80f8"
+    },
+    "bevfusion_mini_validation/lidar/predictions/010.json": {
+      "bytes": 42328,
+      "sha256": "10d5ca7d4e2caaf331d5867d466e3654d3a75b282a18be30f481465eef9a0389"
+    },
+    "bevfusion_mini_validation/lidar/predictions/011.json": {
+      "bytes": 42315,
+      "sha256": "0577be6557f27021692de0e3ac685e20dfcda9a22b91b18eca364108738f02d0"
+    },
+    "bevfusion_mini_validation/lidar/predictions/012.json": {
+      "bytes": 42423,
+      "sha256": "af6513e93788bc4efa02c42adb97a9508fca3592a661b37d5d61a9dd762e434f"
+    },
+    "bevfusion_mini_validation/lidar/predictions/013.json": {
+      "bytes": 42421,
+      "sha256": "5a504fd8c6d7027d4a921e5848072adb625349e906c2803be3c299a13fca2a02"
+    },
+    "bevfusion_mini_validation/lidar/predictions/014.json": {
+      "bytes": 42392,
+      "sha256": "6c04dc65d840678f934f6f7f79c45f0333f615fa6760ee1b54433747efcb9157"
+    },
+    "bevfusion_mini_validation/lidar/predictions/015.json": {
+      "bytes": 42389,
+      "sha256": "f8b2f6133ac262a420a2d33ef1ee838d2f648b08b8585252cd6f43328f421648"
+    },
+    "bevfusion_mini_validation/lidar/predictions/016.json": {
+      "bytes": 42341,
+      "sha256": "3a3fb223749b75596a1040653bf34617ecf42bb28f00bae47fe94f6b8f01ea51"
+    },
+    "bevfusion_mini_validation/lidar/predictions/017.json": {
+      "bytes": 42303,
+      "sha256": "5a948db643d9f7dc50438bfde6baeecdd28f6bb81e74b619448fa68f50397f4d"
+    },
+    "bevfusion_mini_validation/lidar/predictions/018.json": {
+      "bytes": 42371,
+      "sha256": "b3607696d590bff120c71e257a4884fb52af5bce89a3979f78e4b37074c8cabb"
+    },
+    "bevfusion_mini_validation/lidar/predictions/019.json": {
+      "bytes": 42368,
+      "sha256": "d2099e25b996fa937bf1303f2a8f33f50c660d6f58eef7ffae9fcc8df9f34089"
+    },
+    "bevfusion_mini_validation/lidar/predictions/020.json": {
+      "bytes": 42390,
+      "sha256": "01f4fea3b77221f5098464e1c0b6bd94d98f12b1771591c5ae7b3b1cdf21837d"
+    },
+    "bevfusion_mini_validation/lidar/predictions/021.json": {
+      "bytes": 42337,
+      "sha256": "35a6daacc7ac6f7e48ddecf53dab57698aa63f82f680636765198ce0a154f65f"
+    },
+    "bevfusion_mini_validation/lidar/predictions/022.json": {
+      "bytes": 42342,
+      "sha256": "0dd93f39c291ec7f2f7517422372db3e2d75649031581e28cdcc170fd6721d3e"
+    },
+    "bevfusion_mini_validation/lidar/predictions/023.json": {
+      "bytes": 42343,
+      "sha256": "540965b583bf1209b1297cb13b86b01e3e1d080c61eb23615d7d67cd4d61b520"
+    },
+    "bevfusion_mini_validation/lidar/predictions/024.json": {
+      "bytes": 42286,
+      "sha256": "f7ecec612c7d7ccd8adb94160aaed2bcc9d47b44db8c3eaf6cd4510c1e7a5830"
+    },
+    "bevfusion_mini_validation/lidar/predictions/025.json": {
+      "bytes": 42297,
+      "sha256": "b45b6906db856addf4e1ee0f319304a87a85884e2c7e6bd899894d1fe622168e"
+    },
+    "bevfusion_mini_validation/lidar/predictions/026.json": {
+      "bytes": 42338,
+      "sha256": "72df54b1a6c7fb472baa3a7c0f57df0c9489897f9f07e051b8904bdbf0516e5e"
+    },
+    "bevfusion_mini_validation/lidar/predictions/027.json": {
+      "bytes": 42371,
+      "sha256": "68ecbb6371eaba951d0735ca35dad706847f1452b8524ef5b33ee952bc803869"
+    },
+    "bevfusion_mini_validation/lidar/predictions/028.json": {
+      "bytes": 42354,
+      "sha256": "8c560dc20443f1585b5bdad3a24be6a8ed2c136c80f5625ab5f03de34adfffed"
+    },
+    "bevfusion_mini_validation/lidar/predictions/029.json": {
+      "bytes": 42349,
+      "sha256": "a0d077f8522fc244769fe8e127a52963809973496433c5383195b4c8b01d202a"
+    },
+    "bevfusion_mini_validation/lidar/predictions/030.json": {
+      "bytes": 42404,
+      "sha256": "8f4cbbfe0252675415b3bfb1c5a1ac7b597ba76d31dedbe38e22295dbbf19e8b"
+    },
+    "bevfusion_mini_validation/lidar/predictions/031.json": {
+      "bytes": 42354,
+      "sha256": "b23069e286e97aab405f8f8f133df2c3d81c6e8c2e9da0bb65ef10df2b519ddb"
+    },
+    "bevfusion_mini_validation/lidar/predictions/032.json": {
+      "bytes": 42346,
+      "sha256": "97c70a44acedc82986e58f73a0ef7113f755124e01ea1fe7fe133011c903bb59"
+    },
+    "bevfusion_mini_validation/lidar/predictions/033.json": {
+      "bytes": 42381,
+      "sha256": "47735ba633354961dd15df2f7bd9c536e64f674df27182823a23d760dd2bc19c"
+    },
+    "bevfusion_mini_validation/lidar/predictions/034.json": {
+      "bytes": 42431,
+      "sha256": "c8edbf18d5976b52d28ff2d43ecf40a287fd322a2ea73f55d8d63fbeacda5540"
+    },
+    "bevfusion_mini_validation/lidar/predictions/035.json": {
+      "bytes": 42409,
+      "sha256": "e7bb4d38b5e404eb7c0e622802a84ef982f36845459b1ffe28e78aa4df62f84d"
+    },
+    "bevfusion_mini_validation/lidar/predictions/036.json": {
+      "bytes": 42362,
+      "sha256": "0741bbb73d0fb20a4937d5ca6c5229d191d8dcba3db619a8d196a2aa2e790d68"
+    },
+    "bevfusion_mini_validation/lidar/predictions/037.json": {
+      "bytes": 42404,
+      "sha256": "212f506b217d8832fca7af0601c5f38bd530390e7ee2ddd24b819fe4a5b29e6d"
+    },
+    "bevfusion_mini_validation/lidar/predictions/038.json": {
+      "bytes": 42451,
+      "sha256": "159262a0c017b911b3476fb5fdc0941335d1a58f47909a0b208ce70e615a8f4e"
+    },
+    "bevfusion_mini_validation/lidar/predictions/039.json": {
+      "bytes": 42419,
+      "sha256": "dcdf8474fe91dad7658949ed109c6eac4d0a8a7da17ada8d7f3ab1fb8bb8d321"
+    },
+    "bevfusion_mini_validation/lidar/predictions/040.json": {
+      "bytes": 42484,
+      "sha256": "2b47dd55bb662830b304b4cc322e94ed43611b8ce88c2c2c715050c485ed3363"
+    },
+    "bevfusion_mini_validation/lidar/predictions/041.json": {
+      "bytes": 42156,
+      "sha256": "8347c3175b1fac8f27982053b8417c781b23da88446a593db77a6623b9365c70"
+    },
+    "bevfusion_mini_validation/lidar/predictions/042.json": {
+      "bytes": 42229,
+      "sha256": "ffd213b666986643586ce781d3087682cdbddecabde7e0067f3648fbcb4c6dd5"
+    },
+    "bevfusion_mini_validation/lidar/predictions/043.json": {
+      "bytes": 42321,
+      "sha256": "8058170f700a6bac730cf4df8dd4a52c69d0393873d4d7153f51776dfc42ca66"
+    },
+    "bevfusion_mini_validation/lidar/predictions/044.json": {
+      "bytes": 42433,
+      "sha256": "af52db7afb54149f0e6189d056ef03ba9f980e5884bb40de674c09ba7085f3e4"
+    },
+    "bevfusion_mini_validation/lidar/predictions/045.json": {
+      "bytes": 42430,
+      "sha256": "ca8daa3e46724b2d18c52fe20bcf8913754b739eac3b1bad74169175081ff723"
+    },
+    "bevfusion_mini_validation/lidar/predictions/046.json": {
+      "bytes": 42532,
+      "sha256": "dab25fbc4d2b2c84684e7650b50e5a70602141d8521602ba13798f34a2a12194"
+    },
+    "bevfusion_mini_validation/lidar/predictions/047.json": {
+      "bytes": 42462,
+      "sha256": "34a1b16bf9b7d7f3e6458c604db63149a302c8d340f07eae0558b5d5d5c145ac"
+    },
+    "bevfusion_mini_validation/lidar/predictions/048.json": {
+      "bytes": 42365,
+      "sha256": "d4e0abc74d7343bcefff0950d248b6e507fa8794f50f251acaa25d9d88d02231"
+    },
+    "bevfusion_mini_validation/lidar/predictions/049.json": {
+      "bytes": 42408,
+      "sha256": "bce3aa7d270d93e7bf1f841803a47189d8265090ab048861092ad8987ddaf745"
+    },
+    "bevfusion_mini_validation/lidar/predictions/050.json": {
+      "bytes": 42502,
+      "sha256": "0d770c31a76cf96795eab38f71bd65e96840da938a4becb757711181f3da2096"
+    },
+    "bevfusion_mini_validation/lidar/predictions/051.json": {
+      "bytes": 42465,
+      "sha256": "0eb60d45940b7b2a0c998cdd8aeab86aca4a9cb2f9b5325617da415c050e0aba"
+    },
+    "bevfusion_mini_validation/lidar/predictions/052.json": {
+      "bytes": 42402,
+      "sha256": "d8e52603075ce7e47b0086718aa357066c5243e03c954efb48a436a94a94edb6"
+    },
+    "bevfusion_mini_validation/lidar/predictions/053.json": {
+      "bytes": 42391,
+      "sha256": "7410e9b8538ac7170438fec686b8072a9428b6c3d772d316c6820424ed7b9570"
+    },
+    "bevfusion_mini_validation/lidar/predictions/054.json": {
+      "bytes": 42292,
+      "sha256": "81f7598807fef09b0c971ee01e71275081dd595b225cc082f5612ab21db35fbc"
+    },
+    "bevfusion_mini_validation/lidar/predictions/055.json": {
+      "bytes": 42200,
+      "sha256": "d946563e07755711bab97d40c8bfeb97041874d7c777e83c2889500575be66fe"
+    },
+    "bevfusion_mini_validation/lidar/predictions/056.json": {
+      "bytes": 42386,
+      "sha256": "b79484acb0f425aa926f27a86a16f27cefd3294213635dbdde624521b8f742aa"
+    },
+    "bevfusion_mini_validation/lidar/predictions/057.json": {
+      "bytes": 42317,
+      "sha256": "5646b48da314c042bea7d8048d568307cebd3c06394ed8a68be56ad3b513868e"
+    },
+    "bevfusion_mini_validation/lidar/predictions/058.json": {
+      "bytes": 42260,
+      "sha256": "be96a4008d44f31ea51ac28b19d8abb86cd38b773e7c6acba2e730fb995e4025"
+    },
+    "bevfusion_mini_validation/lidar/predictions/059.json": {
+      "bytes": 42442,
+      "sha256": "c956755e5e9dbbbfb2cbf0b82d7509cc0a2ed28ecd756d94e1adde5337d3a01e"
+    },
+    "bevfusion_mini_validation/lidar/predictions/060.json": {
+      "bytes": 42396,
+      "sha256": "ac0cbbca053f27a661b055a67afed4d16d2d9387c0d687c378441f7936c28fb5"
+    },
+    "bevfusion_mini_validation/lidar/predictions/061.json": {
+      "bytes": 42487,
+      "sha256": "9dec0e800456cea66a21a2de36e5a01a127577caf49297a30330f51b8cc835d7"
+    },
+    "bevfusion_mini_validation/lidar/predictions/062.json": {
+      "bytes": 42469,
+      "sha256": "85fa6778efc1441484255c6305a0a5929ccac8430d2f7a867272ab556b13ebf8"
+    },
+    "bevfusion_mini_validation/lidar/predictions/063.json": {
+      "bytes": 42463,
+      "sha256": "0efa643c895e07145fde94f43a16f1a6e8f8555452f13dc6ffef713e88fc51dd"
+    },
+    "bevfusion_mini_validation/lidar/predictions/064.json": {
+      "bytes": 42444,
+      "sha256": "e26a9d96d8813f0e6185dbea2a1ac4619b2763fc7b3cbaa1a221c7d66823a217"
+    },
+    "bevfusion_mini_validation/lidar/predictions/065.json": {
+      "bytes": 42443,
+      "sha256": "bd06cefc953e6052a2b5eb965ce4d6c25a13abfc83ae70a791e96ff5810604c6"
+    },
+    "bevfusion_mini_validation/lidar/predictions/066.json": {
+      "bytes": 42462,
+      "sha256": "a67e9f58a156325b29f53667243a6b0938a7927f28e9b1c6b7ccd3ffaa3ffa4a"
+    },
+    "bevfusion_mini_validation/lidar/predictions/067.json": {
+      "bytes": 42459,
+      "sha256": "75935c388d7f4b37d6cf45daf8fe2115f8b3f2d3db1bddf5b495d009423c9e53"
+    },
+    "bevfusion_mini_validation/lidar/predictions/068.json": {
+      "bytes": 42355,
+      "sha256": "2f1a5946417e6742a1bedcc5319a1610facb7efd9c1f845542294456b29c9cc0"
+    },
+    "bevfusion_mini_validation/lidar/predictions/069.json": {
+      "bytes": 42481,
+      "sha256": "78d445ad318f35f286cd15330e7c3979d3c048ecdcf4d2146d359d17b997808b"
+    },
+    "bevfusion_mini_validation/lidar/predictions/070.json": {
+      "bytes": 42344,
+      "sha256": "6598b2da815a8b52bf713e0a9d928260570a7acefdb7a95cac87cf9122d12929"
+    },
+    "bevfusion_mini_validation/lidar/predictions/071.json": {
+      "bytes": 42416,
+      "sha256": "a4ef587b6b01a7fa85008d487cb5ad6a0d94aad5605bc2b6e7648c058bb9cecb"
+    },
+    "bevfusion_mini_validation/lidar/predictions/072.json": {
+      "bytes": 42469,
+      "sha256": "396c7065f97c2805576f3de40ce2da025fc70dffff8030293168e3739159177a"
+    },
+    "bevfusion_mini_validation/lidar/predictions/073.json": {
+      "bytes": 42404,
+      "sha256": "0f639dea80529fd7a4e741e517ea1f8746ea15bd12d599dcc7467986e8b59127"
+    },
+    "bevfusion_mini_validation/lidar/predictions/074.json": {
+      "bytes": 42370,
+      "sha256": "faa8609d541fbeba28ed5272ea71902bf36993c664692bc78fc7629ad621a1e6"
+    },
+    "bevfusion_mini_validation/lidar/predictions/075.json": {
+      "bytes": 42440,
+      "sha256": "bec3b9c0195e8796ebc4d2a872438a2638c8b3353b5bc70d80a30fc6a2095864"
+    },
+    "bevfusion_mini_validation/lidar/predictions/076.json": {
+      "bytes": 42414,
+      "sha256": "04b557f6d306287a73826aa922e1f2d93001d35d7abeca155afd360d48f0941c"
+    },
+    "bevfusion_mini_validation/lidar/predictions/077.json": {
+      "bytes": 42514,
+      "sha256": "29262c095ba0a064a350240eb62b71ee40e6353d4595a74368864f3cd2b45292"
+    },
+    "bevfusion_mini_validation/lidar/predictions/078.json": {
+      "bytes": 42479,
+      "sha256": "9c73e736c74f5f9aaac4eba854a10b1544e846e2697c22d58af1fc6b5b6bbb92"
+    },
+    "bevfusion_mini_validation/lidar/predictions/079.json": {
+      "bytes": 42397,
+      "sha256": "ef08eaebc5683ab3573f4d9e7847aea8165a96d739b5b2720158cf7047943d1a"
+    },
+    "bevfusion_mini_validation/lidar/predictions/080.json": {
+      "bytes": 42403,
+      "sha256": "2bf4934cb887367d27b1793297d0b5b66f7eb30cf09e9653977e8485438feeb8"
+    },
+    "bevfusion_mini_validation/lidar_camera/evaluation_audit.json": {
+      "bytes": 7862,
+      "sha256": "d4a664ac93bd5296058505e1449e45242161a703cc038800b7a271c9a654baab"
+    },
+    "bevfusion_mini_validation/lidar_camera/official_results/pred_instances_3d/metrics_details.json": {
+      "bytes": 632622,
+      "sha256": "1cc2712f07c8df76a607cd51e723343f4fa20f599a0971d368954ffad902dad7"
+    },
+    "bevfusion_mini_validation/lidar_camera/official_results/pred_instances_3d/metrics_summary.json": {
+      "bytes": 4741,
+      "sha256": "10fb41307243faa6e3be1fbe685fbb12b02b68b448262ff1ef52faa483a884d8"
+    },
+    "bevfusion_mini_validation/lidar_camera/official_results/pred_instances_3d/results_nusc.json": {
+      "bytes": 5902159,
+      "sha256": "f3d35ea4768d04158f177ebc6f4c5d04807328756d3f9a8a8873ec28f0e17b1e"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/000.json": {
+      "bytes": 42213,
+      "sha256": "141eca282f2c9924bc9490604da632cfe1265b11eb7f8076b48178a8388dc16b"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/001.json": {
+      "bytes": 42267,
+      "sha256": "1ed48d24ab5b31a329ad3b1d34d7a2a04bdcb192cd8cfb3ecf395998674d7f41"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/002.json": {
+      "bytes": 42287,
+      "sha256": "b228c10530c28c36aca1cea6f10addf36358f927bb6041f776985608843fafa9"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/003.json": {
+      "bytes": 42271,
+      "sha256": "4d47da69e16e30dba3aeff7d41eb0a5d0d086b99b9b69393eb8b99544639e4b1"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/004.json": {
+      "bytes": 42278,
+      "sha256": "0906d35f8e2903ad52823763809b23ccf99d5c7837e356e453933043c09c4a14"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/005.json": {
+      "bytes": 42322,
+      "sha256": "eb023f3d2c7410f96612e10423bfeaed88a6243cfd8ca63dd98f50dc72c1e69d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/006.json": {
+      "bytes": 42023,
+      "sha256": "7d0774db144f8c78c5e56a07c684e8c718e489d3c9d71f30966127dfa4fc1e4f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/007.json": {
+      "bytes": 42358,
+      "sha256": "2eae18f6fb5a285a66676a53a91baea7934b7ed7e107a63181d71974a55dde8d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/008.json": {
+      "bytes": 42397,
+      "sha256": "82d21c5c79b3019b784df110bec1ac78c64453b58a733298292eb6eecf5afc2f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/009.json": {
+      "bytes": 42367,
+      "sha256": "b0baee1f888fad672a4259bbc9dd789d677bf41b66c182bd1dc8e89bf3c561d1"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/010.json": {
+      "bytes": 42325,
+      "sha256": "ba89a6186a95c22a600add3a39bb00a2064d545229a0d7534eaf56c6703f50b7"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/011.json": {
+      "bytes": 42270,
+      "sha256": "ee7fbdb2ba805520e1cf099a7d741cdb89dfc7801293c8cf213444b78ef78c25"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/012.json": {
+      "bytes": 42253,
+      "sha256": "85dc683b6b01760ea9f3ec4c142201c8301f544a77ac01429a21324fc474b88d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/013.json": {
+      "bytes": 42409,
+      "sha256": "a4792a771bb064294ddcc960e8447de06502d41ab54ccd8ffc012abc7445a4bc"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/014.json": {
+      "bytes": 42282,
+      "sha256": "396967d34c00077bd4e1d45b66bd61d478f423c8b1118ec8806e98536667a1dc"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/015.json": {
+      "bytes": 42276,
+      "sha256": "c909111e1ff8a70f44691ba12aa15b18207648a92ecd95b663c5088d6c7d8edf"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/016.json": {
+      "bytes": 42280,
+      "sha256": "5e0e0ed717615e46e95ec5b6d78681f78b8d2365d8182c7bb28646edb910b04f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/017.json": {
+      "bytes": 42301,
+      "sha256": "140b2dfd2f1b93cb88ba307a664d89e1e3492f61ebc7fd889d728e84b75ceed0"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/018.json": {
+      "bytes": 42298,
+      "sha256": "31ef7d689c2fffc642da28950f63eb53acf1e7c00053dbd5f499c7d576f65ef4"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/019.json": {
+      "bytes": 42349,
+      "sha256": "ac8848a72c7d2e322e91c0cfd8f486c11e4f575668a0fb9096b06d7068c7a6ad"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/020.json": {
+      "bytes": 42398,
+      "sha256": "da25c55d45d59b677c427b4336e190aebd7f6e4f63ee34cddbfae595590f3fa2"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/021.json": {
+      "bytes": 42297,
+      "sha256": "2026a8df2a7eae8c462c1181d4db3136c431f323235a3f8057fa730bfbc877f6"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/022.json": {
+      "bytes": 42328,
+      "sha256": "89f315067a11fc65d5ad68d165f673e68ea486bb1209879333f8af5bf01c2db7"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/023.json": {
+      "bytes": 42317,
+      "sha256": "f2fc63058da0ac77905f560714ed5f5d7ead61fa3c656f1816797624c94c8e88"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/024.json": {
+      "bytes": 42292,
+      "sha256": "0caf87d76cbcc880b130243700c1516712521ed079f6cca2026cefa74753771d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/025.json": {
+      "bytes": 42297,
+      "sha256": "bf2bd82d3003650305bedc2068ab6c75204a1abf51fa82b19d879cbe7f72f34d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/026.json": {
+      "bytes": 42302,
+      "sha256": "7203133080466f9a4861170f926ad88911b7683c7fdc866b41caa862fd514517"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/027.json": {
+      "bytes": 42318,
+      "sha256": "bdb82009f187802f55b7ecb38e7b128573eed2eb1603824bd62e40bab0401961"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/028.json": {
+      "bytes": 42337,
+      "sha256": "dc6b04dd66840b041aeb42e0e3d440b0a28fe95f58ebda7cb4af7f86f42eae38"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/029.json": {
+      "bytes": 42370,
+      "sha256": "651479ac66dbd84edc6989aa101c9bd5d09b198f13638b799c77cf5c53646e25"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/030.json": {
+      "bytes": 42327,
+      "sha256": "da07070e4f89e5521345a77ebd81e694c3c42fde2f222d87b80bed9427fa1b0c"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/031.json": {
+      "bytes": 42396,
+      "sha256": "3e9f46cad9e0c45c4d0501d26d1123faab665fbd8f900c271197a7a017cba0f2"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/032.json": {
+      "bytes": 42405,
+      "sha256": "7af75b6098377f888626fdd3b1c440a5b1ba753841b252a7dfabbfc6fdea06f1"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/033.json": {
+      "bytes": 42471,
+      "sha256": "6757f856c8f3d19fb492b67ba8fab20e8809827b347ec93c16cfc954219c2611"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/034.json": {
+      "bytes": 42477,
+      "sha256": "b32795670671d5b4487cf364c34e69765e4fdafe2029274abf5350e8a7523013"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/035.json": {
+      "bytes": 42414,
+      "sha256": "edc4dc290913a86af6ab71adc6322119094af2afc5bfff7b3ff5698a6bf5f2a5"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/036.json": {
+      "bytes": 42422,
+      "sha256": "d174c61da43704de762aa7ffa7b43cc5325e2a88817843c193ec30b0027bb610"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/037.json": {
+      "bytes": 42416,
+      "sha256": "8982e7b4951a5d6f3466f9a84c0dfd32317be28c00b2847769d7cbd3d8d6dd93"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/038.json": {
+      "bytes": 42432,
+      "sha256": "3355297343a902df5d11e9fe536fd94089742279109821ec798d40bd4f90fc1c"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/039.json": {
+      "bytes": 42491,
+      "sha256": "8bab2e087dbe3349fb4747c198dfecdb5a292db6713a003bb8310b646442daff"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/040.json": {
+      "bytes": 42458,
+      "sha256": "48d5f085c99ae966ea3e2ee1e1a0ccda304f2afdbfb6b23d498ae60e15358599"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/041.json": {
+      "bytes": 42190,
+      "sha256": "2e76c2577a584d2f8c4eef9c50e98b1ab86f824cbbdb9384886d408d1df33961"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/042.json": {
+      "bytes": 42232,
+      "sha256": "449d7c139115077e2ee008d034e932117beae8feca4cbefa8d327d9c933c1e6b"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/043.json": {
+      "bytes": 42319,
+      "sha256": "a6a34742a0e672eedc2bde29f3038cfb4d392d16cbdc15ef5c74c62ab89c946f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/044.json": {
+      "bytes": 42442,
+      "sha256": "57ff7e4c965bf5f06b1a3c5fd8181956f69bc747d0c77a8cbcf397742b8c8f52"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/045.json": {
+      "bytes": 42428,
+      "sha256": "35e8eceabe350fcfb453f02259b057d30fb1c25e98b3393d9776221c2ae9ecc2"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/046.json": {
+      "bytes": 42492,
+      "sha256": "1c4aa2af567ee5472634298f20fd8b0cb2eb59932d61b0ec208ff1168942f4e3"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/047.json": {
+      "bytes": 42455,
+      "sha256": "11b6f6faccbaa43b378cd0e7d7e7347f2e3ce2f18f83a2d56fdc34ed3a17b005"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/048.json": {
+      "bytes": 42469,
+      "sha256": "c3774d53bc5175c36bdad225e8801ef5352334fe112b2864b606343a5f7e5a7f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/049.json": {
+      "bytes": 42520,
+      "sha256": "b77f4c2ede95441ca5b442762aae1047b924b5231b821ea1be7d171a9b2dd229"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/050.json": {
+      "bytes": 42513,
+      "sha256": "bb6abd4a3d46727593a3414b37ff3bfe8de0f95ab84a7886e16c005dad578946"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/051.json": {
+      "bytes": 42543,
+      "sha256": "5091748bb321dd6f77c13b4418cc4ba9399b03150646c4fe63b29e8f3d29cd0c"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/052.json": {
+      "bytes": 42484,
+      "sha256": "8be267de3ba6df36796304cfe12dec0049679802bf8da1176801378681902089"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/053.json": {
+      "bytes": 42463,
+      "sha256": "72b05e615c6bbcf74a029ea3274745675204f61245269c0ed8116f0fdd1d1806"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/054.json": {
+      "bytes": 42484,
+      "sha256": "1e99bfe6cc74a403a3b66fbd5dcfc5e3118e720a4e2a92ab9d6aad231a63cc67"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/055.json": {
+      "bytes": 42415,
+      "sha256": "d59b5a336fce61eed076f5d31be54fe524f9a1d4f217e1c9fef312fd268f459e"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/056.json": {
+      "bytes": 42435,
+      "sha256": "d2a6e755213dd9e99990dbc92ba74af96dc1d13dbc2021f3007a743683853925"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/057.json": {
+      "bytes": 42308,
+      "sha256": "2bfbd47e39cb86e0f61aed30df2df65b9a9bccac6babebfda9f4599569076b5f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/058.json": {
+      "bytes": 42340,
+      "sha256": "fb487ef0e69d4d198c8cdb3087b874bfb2061786efeaa7778ff2234185cb0f6c"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/059.json": {
+      "bytes": 42379,
+      "sha256": "9e1801c4ef4fba9fc1fe2e98ba93c53a4114769cbe149067236db1eedad03096"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/060.json": {
+      "bytes": 42445,
+      "sha256": "2c551106e82b02bc6b5b2008e70703ab6327833efdda62be8217e6cf60ed0339"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/061.json": {
+      "bytes": 42469,
+      "sha256": "49e8b571ad9fa3962f64da6028338f49a1d92b1d307b85c8aaab3afd74b42c5f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/062.json": {
+      "bytes": 42553,
+      "sha256": "aa54146a6154ef1079bdac8bd9cfecd3c082bf902fb3172928163be36b443113"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/063.json": {
+      "bytes": 42536,
+      "sha256": "a5b322cf8d2c77601cf331deb8451b29b514a73f1a91375f32f415f9715f84e1"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/064.json": {
+      "bytes": 42505,
+      "sha256": "e3f7f5605bec73183220395ca839e59c809d66bfc02018ec7217011b08ec388c"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/065.json": {
+      "bytes": 42494,
+      "sha256": "9ba393fe07bb2187c4cc2692a43434e0a7254984c334f6698cea78bdd16c453d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/066.json": {
+      "bytes": 42531,
+      "sha256": "76c8b268bb2c800f987d02efb491a1703ce26c1c24ce589ea36f81b6dbfba151"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/067.json": {
+      "bytes": 42544,
+      "sha256": "ff7df53f0ef7b146cf671f89d094544f6f9fd8f04b7b91346dbd69a1a1536880"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/068.json": {
+      "bytes": 42525,
+      "sha256": "45d68cf60f2f49381d661696bbb493cfa91a1c45a79168854df7189a338bffac"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/069.json": {
+      "bytes": 42457,
+      "sha256": "f89d2f81db02eeaef876ef0458d0b72f02dc7b263bae596aca7ef3831f6d7400"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/070.json": {
+      "bytes": 42442,
+      "sha256": "b8085bf129f08d7f0cf4da1d9c4162f67953b848785ea8a15880d0abc432785d"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/071.json": {
+      "bytes": 42493,
+      "sha256": "14daa23cf46f2a0201b27de9c31e58cdbba77be0d3aed5351bb62b602ba76c1f"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/072.json": {
+      "bytes": 42541,
+      "sha256": "4313c668f8e957b35da11a9ef1a4faed6a86bdfc805c980415e53518caaf68b2"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/073.json": {
+      "bytes": 42569,
+      "sha256": "6671d7bbeaea29b76fdfd98871bae7cebdc86e43b5ccce9458fac19548d240b3"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/074.json": {
+      "bytes": 42464,
+      "sha256": "e03f61dd3416cd1b8a190bcf6528917ead3c9d20521def511f0a5d047641a85b"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/075.json": {
+      "bytes": 42507,
+      "sha256": "535424c158e375f485441be36e120d1b4d841dde267279e52300862e8e1765e4"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/076.json": {
+      "bytes": 42536,
+      "sha256": "1d10c17fc353d1df852fe6a0da9373ef68d769a7cbdd6fe890ce0861f65d1545"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/077.json": {
+      "bytes": 42459,
+      "sha256": "e867b0aa16fb04c3de251694a28bd0ea597a01923106b967b8af31dfd5ba14a4"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/078.json": {
+      "bytes": 42532,
+      "sha256": "8faef9c2863436efcdcb0a5807cd19529a13663e2c0e497feee059de205be20b"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/079.json": {
+      "bytes": 42500,
+      "sha256": "3ffa634943e586d52753dd1b11a106835bb406e0f988e56be04e52951e103bcf"
+    },
+    "bevfusion_mini_validation/lidar_camera/predictions/080.json": {
+      "bytes": 42499,
+      "sha256": "1262c45407f890c6244d08b10c5df98509cecfcbf2b2b1a2c188521be0ad9283"
+    },
+    "bevfusion_mini_validation/paired_evaluation.json": {
+      "bytes": 19986,
+      "sha256": "bb191812a098b41b301d77abc94340d24221de11bfbe0fa65f2f08d72b573f66"
+    },
+    "bevfusion_mini_smoke/lidar_camera_prediction.json": {
+      "bytes": 56801,
+      "sha256": "cd1fa9d6a08a2fc6cb74041c9f0993f30731e1f45e9b5ecd435c96cbece915cb"
+    },
+    "bevfusion_mini_smoke/lidar_prediction.json": {
+      "bytes": 56923,
+      "sha256": "eb0a621e4bb0504ec954c8a5437d1297c762e4d66ae03e3eb6c2702b4d19bc71"
+    },
+    "bevfusion_mini_smoke/smoke.log": {
+      "bytes": 4995,
+      "sha256": "f8ff450335d54f971bfde817cc5dc3930ee36bced70b3a2f426568db8f26652a"
+    },
+    "bevfusion_mini_smoke/smoke.py": {
+      "bytes": 3750,
+      "sha256": "27a7b29f48d5ff626e2e5d23b225fab8cda1a4678fabd80da6806aaf4b94c2e5"
+    },
+    "bevfusion_mini_smoke/smoke_audit.json": {
+      "bytes": 926,
+      "sha256": "ed5727eaf348c57e5973aaa92dd824ee1a25a0f43a6ae8ddb4a8af821411c218"
+    },
+    "setup/bevfusion_environment.txt": {
+      "bytes": 2468,
+      "sha256": "b13181d508532cb940150775ca13f64be4f9d7aa066267566762f43fd682dd98"
+    },
+    "setup/bevfusion_constraints.txt": {
+      "bytes": 124,
+      "sha256": "7ffbaeaa81d1b5a4b7cca3c4575d6f032aa7adcf1b392b400acc5492413f3719"
+    },
+    "setup/bevfusion_cuda_build.log": {
+      "bytes": 16857,
+      "sha256": "04de6e898ba37ad5d07cc31c527e2f8fc1beb21b5fc52f16de4278e9daf9fc70"
+    },
+    "setup/nuscenes_mini_metadata.log": {
+      "bytes": 67217,
+      "sha256": "6feac7470f7da5488359508b39612b0d159d6bbbc3a75fb9b2cbf2d511d10507"
+    },
+    "setup/checkpoint_download_receipt.json": {
+      "bytes": 933,
+      "sha256": "53f710f15e1063201dd832d9edab28ab735080b8b5ef7de1db29c3857d41520a"
+    },
+    "metadata/metadata_audit.json": {
+      "bytes": 661,
+      "sha256": "0fe358cc08a1aa68427ab0702ba4c810fbc9cde138cc3f38cc270582f69ad29a"
+    },
+    "metadata/nuscenes_infos_train.pkl": {
+      "bytes": 14546527,
+      "sha256": "9dc8c04db783b07bcfbb926872e4f8d2b796520db828e32c2a51af09ef9d7b0b"
+    },
+    "metadata/nuscenes_infos_val.pkl": {
+      "bytes": 4472785,
+      "sha256": "8d94949c5bfcd2caa2b98a592f6ca1fccec45aba5787df216636a42d39ea68d1"
+    },
+    "source/projects/BEVFusion/bevfusion/__init__.py": {
+      "bytes": 970,
+      "sha256": "5ccaae7537a63605cd1c6f8e20562068299f697e4049591672f800c88e972c6d"
+    },
+    "source/projects/BEVFusion/bevfusion/bevfusion.py": {
+      "bytes": 10838,
+      "sha256": "62e8e2b6155dede677343c6268d188c531dd92fd199d2eea2116d83d29501e9e"
+    },
+    "source/projects/BEVFusion/bevfusion/bevfusion_necks.py": {
+      "bytes": 3301,
+      "sha256": "1e97c00194cd0917b0a399b6c4abb1687b99362540b1add0ddfbe1f8b8afd454"
+    },
+    "source/projects/BEVFusion/bevfusion/depth_lss.py": {
+      "bytes": 13829,
+      "sha256": "258af64e166ccfa97bfce69b190c9fa5238491601de9945a39f05e94a7b911ae"
+    },
+    "source/projects/BEVFusion/bevfusion/loading.py": {
+      "bytes": 9856,
+      "sha256": "7596b075d6d2a41d9444548acb12f0d33fe10a1d5e5650a87f75e5c4ccb7bc52"
+    },
+    "source/projects/BEVFusion/bevfusion/ops/__init__.py": {
+      "bytes": 213,
+      "sha256": "bc458bb1c448ed42b56512badc8d79aa93b69460b7632b3ee47d2f9873d64cac"
+    },
+    "source/projects/BEVFusion/bevfusion/ops/bev_pool/__init__.py": {
+      "bytes": 55,
+      "sha256": "3be2a83be8ea38b65417ac35b4d377f914c3d2edc087758ab7dcfefe2c1e9a2e"
+    },
+    "source/projects/BEVFusion/bevfusion/ops/bev_pool/bev_pool.py": {
+      "bytes": 2596,
+      "sha256": "ca12d7cafd98e1bf707f7435abfe27dd799062db369b5dde054e9d65f46ed5e4"
+    },
+    "source/projects/BEVFusion/bevfusion/ops/voxel/__init__.py": {
+      "bytes": 190,
+      "sha256": "daa16f1184d7368c0f5744f1c23e80cb7b0c25e25ec159d773b51c071a4e211a"
+    },
+    "source/projects/BEVFusion/bevfusion/ops/voxel/scatter_points.py": {
+      "bytes": 4212,
+      "sha256": "f06943b7b971ce1ce8df1341721649add83b830e5ac5a520c28de6ebcf9aa841"
+    },
+    "source/projects/BEVFusion/bevfusion/ops/voxel/voxelize.py": {
+      "bytes": 6602,
+      "sha256": "6c48f281343e5e7417bc14538d39192e669c91a08b2d4840577ff81391a30309"
+    },
+    "source/projects/BEVFusion/bevfusion/sparse_encoder.py": {
+      "bytes": 6131,
+      "sha256": "3ccc5734480ce487f31ff3e630ca7084a4bf60b5354f776e5132a0b824aadd34"
+    },
+    "source/projects/BEVFusion/bevfusion/transformer.py": {
+      "bytes": 4716,
+      "sha256": "635d3a6246bda512895f33ba4c8560aff9b9a7c4f04c7b5744a7ddf6ac18f4a8"
+    },
+    "source/projects/BEVFusion/bevfusion/transforms_3d.py": {
+      "bytes": 9358,
+      "sha256": "db8bebd84050615642fd405e535838af09908afa71710bde520f3173cb7ac7e3"
+    },
+    "source/projects/BEVFusion/bevfusion/transfusion_head.py": {
+      "bytes": 36530,
+      "sha256": "7712b2c65649f2fcd5f9bd852a8f4406e4081af8e9137001a565261d9d3699f1"
+    },
+    "source/projects/BEVFusion/bevfusion/utils.py": {
+      "bytes": 12305,
+      "sha256": "3fc385b4563d0c194f3f3387df74ebd19a9c1e7ab8660336bb4ac8c1fe5c9740"
+    },
+    "source/projects/BEVFusion/configs/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d.py": {
+      "bytes": 7040,
+      "sha256": "57cf5ef7230ba2180a1ef893baaa2558fa162e722da4c505899c7e7e82ac6e1a"
+    },
+    "source/projects/BEVFusion/configs/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d.py": {
+      "bytes": 12676,
+      "sha256": "a08b4a124f1b71bf63f81199f7f5c4f0478c9e2b3eed4bca618495dda887873f"
+    },
+    "source/projects/BEVFusion/demo/multi_modality_demo.py": {
+      "bytes": 2568,
+      "sha256": "446bff5f05f16fa182270ebeba7aaa23b21249f2a84ee218312e39834fd5af82"
+    },
+    "source/projects/BEVFusion/setup.py": {
+      "bytes": 2275,
+      "sha256": "a8eea39bfa0eb8ee163abca4de917406b251774f2a0d8e610cd64a973a3d71e6"
+    },
+    "source/mmdet3d/evaluation/metrics/nuscenes_metric.py": {
+      "bytes": 32405,
+      "sha256": "39d15be04e1055fbf195eeac2163a37d6b338ecb31a2b9ef0269e43d2e7700c7"
+    },
+    "source/tools/dataset_converters/nuscenes_converter.py": {
+      "bytes": 24694,
+      "sha256": "b7d54aa128462d3d2fd845987ccfdaea7e70904cfeec0eb7ffc223eb52670a03"
+    },
+    "source/tools/dataset_converters/update_infos_to_v2.py": {
+      "bytes": 49931,
+      "sha256": "ec94a73d7b9e185f414f76ae188574c2e4639129f1c4f470d1f278d8fb52599b"
+    },
+    "source/configs/_base_/default_runtime.py": {
+      "bytes": 655,
+      "sha256": "9e31d3fd56e316a0c4f061791c0d2107236f1e069de3c226456b2dbe2fb436fe"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "REAL_SAMPLE_SMOKE_PASS",
+  "version": "v1.0-mini",
+  "models": [
+    {
+      "model": "lidar",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "validation_samples": 81,
+      "strict_checkpoint_load": "PASS",
+      "detections": 200,
+      "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+      "prediction_sha256": "eb0a621e4bb0504ec954c8a5437d1297c762e4d66ae03e3eb6c2702b4d19bc71"
+    },
+    {
+      "model": "lidar_camera",
+      "sample_token": "3e8750f331d7499e9b5123e9eb70f2e2",
+      "validation_samples": 81,
+      "strict_checkpoint_load": "PASS",
+      "detections": 200,
+      "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+      "prediction_sha256": "cd1fa9d6a08a2fc6cb74041c9f0993f30731e1f45e9b5ecd435c96cbece915cb"
+    }
+  ],
+  "scope": "One shared validation sample; accuracy not yet evaluated."
+}
