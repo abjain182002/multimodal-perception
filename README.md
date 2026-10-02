@@ -4,11 +4,11 @@ MSc Major Project: Software-only deep learning pipeline for multi-modal object d
 
 ## Project Status
 
-As of 1 October 2026, aligned YOLO26x+CLOCs training used 128 train-only KITTI frames (96 optimization / 32 internal development), with three initialization seeds and full 3,769-frame validation for each. All nine frozen PointPillars baseline AP40 metrics reproduce exactly in every run.
+As of 2 October 2026, aligned YOLO26x+CLOCs training used 128 train-only KITTI frames (96 optimization / 32 internal development), with three initialization seeds and full 3,769-frame validation for each. All nine frozen PointPillars baseline AP40 metrics reproduce exactly in every run.
 
 **Car strict IoU 0.70 Moderate 3D AP40:** PointPillars **79.1299**; epoch-12 CLOCs seeds **79.8616 / 76.2666 / 78.7616**. Only one seed improves Moderate; all three reduce Hard AP. Extending seed 20260928 to epoch 24 increases development candidate AP from 0.877935 to 0.883568 but reduces Moderate detection AP40 from 79.8616 to 79.4874. These diagnostics show inconsistent gains in this small-data implementation, not general fusion superiority or failure. Validation was inspected iteratively, not held as an untouched final test. See [seed and epoch findings](results/clocs_seed_diagnostics_20261001/FINDINGS.md). Earlier checkpoint results remain preserved as historical experiments.
 
-Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measure separate tasks. Official pretrained OpenPCDet PV-RCNN completed all 3,769 validation frames, scoring Car 3D AP40 **92.1047 / 84.3604 / 82.4830** (Easy / Moderate / Hard). Native OpenPCDet and the pinned common evaluator agree exactly across all nine metrics. [Comparison and findings](results/pv_rcnn_kitti/FINDINGS.md) distinguish this LiDAR-only reproduction from Azitt/PV-RCNN++. Azitt weights, nuScenes/BEVFusion, semantic fusion and robustness remain unmeasured. A synchronized PV-RCNN T4 runtime benchmark is complete; comparable runtime measurements for other models remain pending. NVIDIA optimization is future work. Experiment targets remain subject to these gates; report drafting can proceed using frozen verified evidence.
+Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measure separate tasks. Official pretrained OpenPCDet PV-RCNN completed all 3,769 validation frames, scoring Car 3D AP40 **92.1047 / 84.3604 / 82.4830** (Easy / Moderate / Hard). Native OpenPCDet and the pinned common evaluator agree exactly across all nine metrics. [Comparison and findings](results/pv_rcnn_kitti/FINDINGS.md) distinguish this LiDAR-only reproduction from Azitt/PV-RCNN++. Azitt weights, semantic fusion and robustness remain unmeasured. BEVFusion has completed paired pretrained-pipeline evaluation on nuScenes mini (81 samples) and an availability-selected official validation subset (1,231 samples / 31 complete scenes). Subset mAP is 64.2114 → 67.8147 and NDS is 69.2087 → 71.1543 (metrics × 100). Full nuScenes validation remains pending; this is not a controlled camera ablation. See [subset findings](results/bevfusion_nuscenes_subset_20261002/FINDINGS.md) and [mini findings](results/bevfusion_nuscenes_mini_20261001/FINDINGS.md). A synchronized PV-RCNN T4 runtime benchmark is complete; comparable runtime measurements for other models remain pending. NVIDIA optimization is future work. Experiment targets remain subject to these gates; report drafting can proceed using frozen verified evidence.
 
 ## Project Records
 
@@ -18,6 +18,9 @@ Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measu
 - [`requirements/ENVIRONMENTS.md`](requirements/ENVIRONMENTS.md) — environment strategy and reproducibility notes.
 
 ## Frozen Results
+
+- [BEVFusion nuScenes subset findings](results/bevfusion_nuscenes_subset_20261002/FINDINGS.md), [metric comparison](results/bevfusion_nuscenes_subset_20261002/comparison.svg), and [class support](results/bevfusion_nuscenes_subset_20261002/class_support.svg)
+- [BEVFusion nuScenes mini pilot](results/bevfusion_nuscenes_mini_20261001/FINDINGS.md)
 
 - [CLOCs seed and epoch diagnostics](results/clocs_seed_diagnostics_20261001/FINDINGS.md), [3D AP differences](results/clocs_seed_diagnostics_20261001/three_seed_and_epoch24_3d_deltas.svg), and [comparison CSV](results/clocs_seed_diagnostics_20261001/ap40_comparison.csv)
 
@@ -46,3 +49,4 @@ See [`results/README.md`](results/README.md) for the artifact-storage policy.
 ## Storage Policy
 
 Datasets, virtual environments, model weights, and bulk generated `model_outputs/` are intentionally excluded from Git history. Source code, evaluation scripts, compact numerical results, dissertation-ready figures, and selected qualitative examples are version-controlled.
+

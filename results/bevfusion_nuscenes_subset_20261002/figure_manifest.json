@@ -1,0 +1,13 @@
+{
+  "script_sha256": "005ce946e945b9d4ce5a9b5f42fa7f54e4bb0c25ed1dd1efc287c653521e3e52",
+  "input_sha256": "043b568d0a00f62b7c13250b26192c399f475619f7937b09b786445056c33b3c",
+  "artifacts": {
+    "comparison.csv": "9242ca770b1ab5374577e375fc97b10f07d47dfa72d3e6c7fc87ef13919f76d2",
+    "comparison.svg": "1e9b284b5c121f9a3959693e115f683c97c056d533a0b406d6151a45d69eac7f",
+    "comparison.png": "df23e88ab326bc99937dacd5aa6d18f1cddd064cf54fc2e11fc95e0071d45d70",
+    "comparison.pdf": "e721a2fa3b0176bc0115fc9b56f2cddc7d96536de0ad7a70a273423714e9f78c",
+    "class_support.svg": "031cf03edf178fc71f928882f4164975f6acc16cf1353500faf68d44dd45bd06",
+    "class_support.png": "bdb6429821c22bf7ba119f412750d2e00a801f1a0537ac3184c2cb4c97c60b0e",
+    "class_support.pdf": "8b80e4dd6357783f13adfba05b3a70e571047dc770f17c4c29e06b665f7882e0"
+  }
+}

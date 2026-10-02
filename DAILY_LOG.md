@@ -245,3 +245,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Mac independently verified and restored both full evidence archives. Three-seed ZIP SHA-256: `05e9312e6d3d2e0e91340b6f74395707cfc7e40b9f2f32536768cea8a79f12f2`; epoch-24 full-validation ZIP: `68d419a06222d8f22b40483cddedae78e37a84e1a4effcd7f1d9d2a85d44a559`.
 - Committed 17 compact result/source files, exact comparison CSV, two SVG figures, receipts and findings at `66584df`. Figure generation completed; final visual inspection remains required before dissertation use. Evidence: `results/clocs_seed_diagnostics_20261001/`.
 - Frozen this diagnostic stage; larger-frame adequacy remains untested. Next integration requires an official source/checkpoint and data feasibility gate, with reuse of existing repositories.
+
+
+## 2 October 2026 — Paired BEVFusion nuScenes subset evaluation
+
+- Restored hash-verified parts 01–02 sensor backup and froze 1,231 samples from 31 complete official validation scenes (20.45% coverage). Availability-selected, not random; part 03 excluded.
+- Converted metadata with up to nine preceding LiDAR sweeps. Preserved full SDK lookup tables while restricting conversion iteration; corrected dataset-token checks for serialized MMEngine data.
+- Verified CUDA operations and strict loading of both official pretrained checkpoints. Generated and backed up all predictions. Fixed explicit CPU conversion before official result formatting; reused saved LiDAR predictions.
+- Official custom-split evaluation confirmed exact prediction/GT token equality for each pipeline. LiDAR mAP/NDS = 0.6421140063400634 / 0.6920865595499972; camera–LiDAR = 0.6781470812751105 / 0.7115433802870929. Differences = +3.6033 mAP points / +1.9457 NDS points. Filtered GT has 32,276 boxes across all ten classes.
+- Metrics and official curves were verified on Drive. Added a compact summary transcribed from execution output, comparison CSV, two figures in SVG/PNG/PDF, plotting script and figure hashes. Raw evaluation files have not yet been imported into this commit; their reported hashes and Drive location are recorded.
+- Updated stale README status to distinguish completed mini/subset measurements from pending full validation. No extrapolation or controlled camera-ablation claim is made.
