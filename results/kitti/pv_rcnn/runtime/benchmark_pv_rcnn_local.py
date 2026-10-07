@@ -158,4 +158,3 @@ with (out / "latency.csv").open("w", newline="") as stream:
     writer.writerows(rows)
 
 print(json.dumps(report, indent=2), flush=True)
-

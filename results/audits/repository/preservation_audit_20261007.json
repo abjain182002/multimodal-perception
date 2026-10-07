@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "date": "2026-10-07",
+  "baseline_commit": "c9875c504f0d0b21152b67dcec90a365e32ddfc0",
+  "checked_tree": "62294a8d4229bd6bc1f401faef12a7224a8683c1",
+  "baseline_files": 550,
+  "files_after_organization": 572,
+  "moved_files": 411,
+  "missing_files": [],
+  "frozen_result_files_checked": 404,
+  "frozen_result_hash_mismatches": [],
+  "method": "Compare repository Git blob identities using the complete old-to-new path migration map. All non-Markdown result files must retain their original blob SHA.",
+  "scope": "GitHub repository only. This does not inspect the user's Mac model_outputs directory or Google Drive.",
+  "correction": "Restored original blobs for seven archived TXT/Python records whose path strings had been rewritten. Documentation and active script path changes remain intentional."
+}

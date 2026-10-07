@@ -271,3 +271,5 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Physically grouped 411 result files under KITTI, nuScenes and shared audits. Related camera/depth studies, PointPillars cases, CLOCs pilots and final diagnostics now have separate folders.
 - Added experiment READMEs, a figure gallery, scripts guide and complete path migration map. Shortened the root README and retained its detailed content in docs/PROJECT_GUIDE.md.
 - Updated active script defaults and documentation references. Frozen metrics, figures, original source and provenance manifests retain their original bytes. This is an organization change, not new experimental evidence.
+
+- Follow-up preservation audit: every one of the 550 baseline repository files is present at its mapped path; all 404 non-Markdown result blobs match the pre-organization originals. Restored seven archived TXT/Python records to their original blobs after detecting path-only rewrites. Saved the repository preservation audit under results/audits/repository/.
