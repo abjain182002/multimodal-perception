@@ -1,0 +1,12 @@
+{
+  "model": "lidar_camera",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "annotation_sha256": "63c1f89db06bb16e59fa8f2c7e3f5b29f31fe32db62a94df07bc1be909e67925",
+  "tokens_sha256": "8ff45978c8226f9762e1b79677e1bf37bec50da31d00ebc791c196249d9b8d28",
+  "resolved_config_sha256": "63efbecd704eb983188ca690ec440d1e192d46894a6030fdf5e8e665a2916b48",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "seed": 20261002,
+  "torch": "2.1.2+cu121",
+  "gpu": "Tesla T4",
+  "scope": "Frozen parts 01\u201302 validation subset; 1231 samples."
+}

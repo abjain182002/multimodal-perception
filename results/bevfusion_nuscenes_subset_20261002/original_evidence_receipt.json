@@ -1,0 +1,16 @@
+{
+  "status": "ARCHIVE_AND_STORED_VALUES_VERIFIED",
+  "archive": "bevfusion_subset_original_evidence.zip",
+  "archive_bytes": 65968262,
+  "archive_sha256": "7d7db1743cabb1b905baf3feefb46b63a510bbd532a04645b2b3db33ad60ab6e",
+  "members_verified": 84,
+  "samples": 1231,
+  "checks": [
+    "All archived members match their manifest sizes and SHA-256",
+    "Both prediction token sets exactly equal frozen tokens",
+    "Prediction and metric hashes match original evaluation audits",
+    "Stored mAP and NDS agree with stored class APs and TP scores"
+  ],
+  "accuracy_replay_from_ground_truth": false,
+  "exclusions": "Large prediction JSON, converted annotation pickle, sensor manifest, logs and remaining PR/TP PDFs remain in the verified source archive. RESUME_NOTE.json is historical and predates evaluation completion."
+}

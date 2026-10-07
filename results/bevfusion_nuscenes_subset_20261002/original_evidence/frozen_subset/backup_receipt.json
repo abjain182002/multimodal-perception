@@ -1,0 +1,17 @@
+{
+  "status": "FROZEN_SUBSET_BACKUP_PASS",
+  "files": {
+    "sample_tokens.txt": {
+      "bytes": 40623,
+      "sha256": "8ff45978c8226f9762e1b79677e1bf37bec50da31d00ebc791c196249d9b8d28"
+    },
+    "sample_manifest.json": {
+      "bytes": 2045801,
+      "sha256": "2553b5d091a54e01e834925c897dcfb33f3c7f2dee028be48096fff919cddc76"
+    },
+    "subset_audit.json": {
+      "bytes": 600,
+      "sha256": "2261e447fe58b79a1ddc645476744e3c0855961ff298928ea4046a199c5a6726"
+    }
+  }
+}

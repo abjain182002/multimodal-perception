@@ -1,0 +1,261 @@
+{
+  "status": "SUBSET_SCENE_COVERAGE_PASS",
+  "samples": 1231,
+  "official_validation_samples": 6019,
+  "validation_sample_coverage_percent": 20.451902309353713,
+  "selected_scenes": 31,
+  "complete_scenes": 31,
+  "partial_scenes": 0,
+  "all_samples_in_official_validation": true,
+  "selection": "Input availability in verified parts 01\u201302; not random.",
+  "scenes": [
+    {
+      "scene_name": "scene-0003",
+      "scene_token": "e7ef871f77f44331aefdebc24ec034b7",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Parking lot, barrier, exit parking lot"
+    },
+    {
+      "scene_name": "scene-0012",
+      "scene_token": "265f002f02d447ad9074813292eef75e",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Nature, bus stop, parked cars, bus exits from the intersection"
+    },
+    {
+      "scene_name": "scene-0013",
+      "scene_token": "41fde20fedcd4d22ab26811688612870",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Follow bus, parked cars, trash cans, parked bicycles, nature"
+    },
+    {
+      "scene_name": "scene-0014",
+      "scene_token": "d1e57234fd6a463d963670938f9f556e",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Follow bus, cross intersection, nature"
+    },
+    {
+      "scene_name": "scene-0015",
+      "scene_token": "813213458a214a39a1d1fc77fa52fa34",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Narrow road, following bus, bus on opposite lane, parked cars"
+    },
+    {
+      "scene_name": "scene-0016",
+      "scene_token": "efa5c96f05594f41a2498eb9f2e7ad99",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Turn left, people on both sides, parked vans"
+    },
+    {
+      "scene_name": "scene-0017",
+      "scene_token": "3dd9ad3f963e4f588d75c112cbf07f56",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Barriers, peds, arriving at busy intersection"
+    },
+    {
+      "scene_name": "scene-0018",
+      "scene_token": "b51869782c0e464b8021eb798609f35f",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Merge left, turn into unloading zone"
+    },
+    {
+      "scene_name": "scene-0035",
+      "scene_token": "3dd2be428534403ba150a0b60abc6a0a",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Parking lots, trash can, bump, scooter, peds, potential jaywalkers, bus stop, oncoming bus"
+    },
+    {
+      "scene_name": "scene-0036",
+      "scene_token": "5a0dd8908a3a459b83ec5eb6ac7d0f82",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Parked bicycle, construction, peds, workers, construction vehicle, bike racks"
+    },
+    {
+      "scene_name": "scene-0038",
+      "scene_token": "2f56eb47c64f43df8902d9f88aa8a019",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Parked construction vehicles, peds, garbage"
+    },
+    {
+      "scene_name": "scene-0039",
+      "scene_token": "8edbc31083ab4fb187626e5b3c0411f7",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Busy street, parked cars, parking lot, ped sitting at bus stop, motorcycle driving"
+    },
+    {
+      "scene_name": "scene-0092",
+      "scene_token": "7365495b74464629813b41eacdb711af",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Drive through passage, peds walking alongside lane"
+    },
+    {
+      "scene_name": "scene-0093",
+      "scene_token": "cba3ddd5c3664a43b6a08e586e094900",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Turn right, parking lots, cross intersection"
+    },
+    {
+      "scene_name": "scene-0094",
+      "scene_token": "91c071bcc1ad4fa1b555399e1cfbab79",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Oncoming cyclist, cars, wait at intersection"
+    },
+    {
+      "scene_name": "scene-0095",
+      "scene_token": "b4b82c4d338a4b6d86835388ce076345",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Wait at intersection, peds occluded, start driving"
+    },
+    {
+      "scene_name": "scene-0096",
+      "scene_token": "68e79a88244f447f993a72da444b29ba",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Cross busy intersection, cyclist nearby, construction barriers and cones"
+    },
+    {
+      "scene_name": "scene-0097",
+      "scene_token": "2eb4d7f00e584a548aa0b899638bfb0a",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Wait at red light, turns green, cross intersection"
+    },
+    {
+      "scene_name": "scene-0098",
+      "scene_token": "c65c4acf86954f8cbd53a3541a3bfa3a",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Parked cars, peds, bus stop, bicycle rack, sign trailer, bicyclist, ped carrying object, bridge"
+    },
+    {
+      "scene_name": "scene-0099",
+      "scene_token": "5af9c7f124d84e7e9ac729fafa40ea01",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Parked vans, switch lane, construction zone in the right, bike following in rear, passed by active motorcycle"
+    },
+    {
+      "scene_name": "scene-0100",
+      "scene_token": "afd73f70ff7d46d6b772d341c08e31a5",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Wait at red light, oncoming cyclist, peds, parked bicycle, parked construction car"
+    },
+    {
+      "scene_name": "scene-0101",
+      "scene_token": "01452fbfbf4543af8acdfd3e8a1ee806",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Concrete mixer spinning, traffic cones, wait at red light, move onto bridge, lane change"
+    },
+    {
+      "scene_name": "scene-0102",
+      "scene_token": "ddb615d9bb22484cabc6545b632a1025",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Turn right at intersection, cross bridge, many peds"
+    },
+    {
+      "scene_name": "scene-0103",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Many peds right, wait for turning car, long bike rack left, cyclist"
+    },
+    {
+      "scene_name": "scene-0104",
+      "scene_token": "c525507ee2ef4c6d8bb64b0e0cf0dd32",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Start car, cross intersection, skyscraper occluded by traffic light, parked bicycles, parked cars, cross intersection"
+    },
+    {
+      "scene_name": "scene-0105",
+      "scene_token": "2ed0fcbfc214478ca3b3ce013e7723ba",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Parking lots, peds, parked cars, cars on elevated bridge, truck"
+    },
+    {
+      "scene_name": "scene-0106",
+      "scene_token": "bed67ef03c4a4066a74f6c0117d512ee",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Drive between buildings under construction, slow down at intersection, several traffic cones and temporary barriers"
+    },
+    {
+      "scene_name": "scene-0107",
+      "scene_token": "3b2ee26cb8484f77895bc336663df502",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Cross busy intersection, bendy bus changing lane"
+    },
+    {
+      "scene_name": "scene-0108",
+      "scene_token": "a178a1b5415f45c08d179bd2cacdf284",
+      "selected_samples": 39,
+      "total_scene_samples": 39,
+      "complete_scene": true,
+      "description": "Construction zone, waiting for car to pass, turn right"
+    },
+    {
+      "scene_name": "scene-0109",
+      "scene_token": "fb73d1a6c16147ee9416faf6b310fadb",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Cross roundabout, construction vehicle, ped walking along the road side"
+    },
+    {
+      "scene_name": "scene-0110",
+      "scene_token": "d87ec0461e3f4c4ea29b0f0c0ede5167",
+      "selected_samples": 40,
+      "total_scene_samples": 40,
+      "complete_scene": true,
+      "description": "Parked car with open bonnet, parked cars, oncoming truck, oncoming cyclists"
+    }
+  ]
+}

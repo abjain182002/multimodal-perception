@@ -1,0 +1,9 @@
+{
+  "status": "SUBSET_INPUT_PREFLIGHT_PASS",
+  "samples": 1231,
+  "unique_required_sensor_files": 19205,
+  "sample_tokens_sha256": "8ff45978c8226f9762e1b79677e1bf37bec50da31d00ebc791c196249d9b8d28",
+  "source_manifest_sha256": "c64995d9569e7816ec658ae1ae6b553eef5e3d81887c5b1248cd23076df81db1",
+  "selection": "Complete required inputs present in the verified parts 01\u201302 backup; part 03 excluded.",
+  "scope": "Filename and file-size verification against the hash-verified backup. Availability-selected validation subset; not full validation and not a random sample. No inference performed."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PAIRED_SUBSET_SMOKE_PASS",
+  "samples": 1231,
+  "scenes": 31,
+  "models": [
+    {
+      "model": "lidar",
+      "sample_token": "000868a72138448191b4092f75ed7776",
+      "validation_samples": 1231,
+      "strict_checkpoint_load": "PASS",
+      "finite_predictions": "PASS",
+      "detections": 200,
+      "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+      "prediction_sha256": "c09a9f0b26ee600ba79360a6638ad8afed23149d36e52319968e9ff4c4b2ac11"
+    },
+    {
+      "model": "lidar_camera",
+      "sample_token": "000868a72138448191b4092f75ed7776",
+      "validation_samples": 1231,
+      "strict_checkpoint_load": "PASS",
+      "finite_predictions": "PASS",
+      "detections": 200,
+      "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+      "prediction_sha256": "c0aba700255009029ee58508b0fa13b7f39fc4357aa8825ea21ab070977b89f0"
+    }
+  ],
+  "scope": "One shared frozen-subset sample; accuracy not yet evaluated."
+}

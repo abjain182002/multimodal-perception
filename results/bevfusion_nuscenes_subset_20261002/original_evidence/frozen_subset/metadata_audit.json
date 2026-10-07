@@ -1,0 +1,12 @@
+{
+  "status": "SUBSET_METADATA_PASS",
+  "version": "v1.0-trainval",
+  "samples": 1231,
+  "scenes": 31,
+  "maximum_preceding_lidar_sweeps": 9,
+  "same_ordered_frozen_tokens": true,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "annotation_path": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_parts01_02_infos_val.pkl",
+  "annotation_sha256": "63c1f89db06bb16e59fa8f2c7e3f5b29f31fe32db62a94df07bc1be909e67925",
+  "scope": "Parts 01\u201302 availability-selected validation subset; not full validation. No accuracy measured."
+}

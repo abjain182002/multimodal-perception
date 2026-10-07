@@ -1,0 +1,31 @@
+{
+  "status": "SUBSET_EVALUATION_PASS",
+  "model": "lidar_camera",
+  "samples": 1231,
+  "scenes": 31,
+  "eval_set": "val_parts01_02_frozen",
+  "prediction_gt_token_equality": true,
+  "predictions_sha256": "d29975a62a898f294dba343de79f7e3b4b7f62e3bce9d4cfcf14b39ac16ca66d",
+  "metrics_summary_sha256": "ee0e3432034fd6258660c5a8aa3c3e10d68e607b0c604f51f6faaa59dcb28e6f",
+  "filtered_gt_counts": {
+    "car": 11222,
+    "truck": 1638,
+    "bus": 308,
+    "trailer": 246,
+    "construction_vehicle": 478,
+    "pedestrian": 7210,
+    "motorcycle": 165,
+    "bicycle": 644,
+    "traffic_cone": 5402,
+    "barrier": 4963
+  },
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "mAP": 0.6781470812751105,
+  "NDS": 0.7115433802870929,
+  "scope": "Availability-selected parts 01\u201302 validation subset; not full nuScenes validation."
+}

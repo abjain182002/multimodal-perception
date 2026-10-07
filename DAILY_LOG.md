@@ -255,3 +255,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Official custom-split evaluation confirmed exact prediction/GT token equality for each pipeline. LiDAR mAP/NDS = 0.6421140063400634 / 0.6920865595499972; camera–LiDAR = 0.6781470812751105 / 0.7115433802870929. Differences = +3.6033 mAP points / +1.9457 NDS points. Filtered GT has 32,276 boxes across all ten classes.
 - Metrics and official curves were verified on Drive. Added a compact summary transcribed from execution output, comparison CSV, two figures in SVG/PNG/PDF, plotting script and figure hashes. Raw evaluation files have not yet been imported into this commit; their reported hashes and Drive location are recorded.
 - Updated stale README status to distinguish completed mini/subset measurements from pending full validation. No extrapolation or controlled camera-ablation claim is made.
+
+
+## 7 October 2026 — Original nuScenes subset evidence import
+
+- Opened the supplied 65,968,262-byte evidence ZIP; SHA-256 `7d7db1743cabb1b905baf3feefb46b63a510bbd532a04645b2b3db33ad60ab6e` matched the receipt. All 84 members matched manifest sizes and hashes.
+- Both prediction token sets equal the frozen 1,231 samples. Prediction and metric-summary hashes match original evaluation audits; stored mAP/NDS arithmetic matches stored class APs and TP scores within 1e-12.
+- Imported compact original metric summaries, scripts/configurations, audits, frozen tokens/custom split, environment record and both official summary PDFs. Preserved a complete source-member manifest and verification receipt; large predictions and annotation data remain in the verified archive.
+- This verifies saved evidence, not recomputed accuracy from ground truth. CPU evaluation replay and full-validation expansion remain pending.

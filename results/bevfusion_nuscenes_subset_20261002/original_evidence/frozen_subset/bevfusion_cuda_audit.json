@@ -1,0 +1,14 @@
+{
+  "status": "BEVFUSION_CUDA_OPERATIONS_PASS",
+  "torch": "2.1.2+cu121",
+  "torch_cuda": "12.1",
+  "gpu": "Tesla T4",
+  "bev_pool_output": [
+    4.0,
+    6.0
+  ],
+  "voxel_point_counts": [
+    2,
+    1
+  ]
+}

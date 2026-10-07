@@ -1,0 +1,11 @@
+{
+  "status": "SUBSET_INFERENCE_AND_FORMATTING_PASS",
+  "model": "lidar",
+  "samples": 1231,
+  "created": 0,
+  "reused": 1231,
+  "result_path": "/content/bevfusion_subset_validation/lidar/official_results/pred_instances_3d/results_nusc.json",
+  "results_sha256": "16cbf8c35c81571d3990867b0148fd42c8bebcac626a8c0363431cde96abf07b",
+  "protocol_sha256": "3ec894c84b294e504e3794205fa7e65d87b2433e3ff2b8d04fdfaf21e1e98c54",
+  "scope": "Inference complete; accuracy evaluation pending."
+}

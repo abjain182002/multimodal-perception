@@ -32,14 +32,24 @@ Figure captions:
   distance, point-support and bike-rack filtering; counts do not measure accuracy.
 
 Reproduce with `python3 -m scripts.plot_bevfusion_subset_results` (matplotlib).
-The exact headline values, checkpoint identities and reported output hashes are
-in evaluation_summary.json. This compact summary is transcribed from the supplied
-Colab execution output. The original metric JSON files, predictions, official
-PR/TP curves, scripts and audits were verified on Drive by the execution workflow;
-they were not independently opened or imported into this Git commit. Figure hashes
-verify the derived figures, not those original evaluation files.
+The exact headline values and reported output hashes are in evaluation_summary.json.
+On 7 October 2026, the original evidence archive was opened and all 84 members
+were verified against their recorded sizes and SHA-256 hashes. Both prediction
+files contain exactly the frozen 1,231 tokens; prediction and metric hashes match
+the original evaluation audits. Stored mAP/NDS arithmetic was checked against
+the stored class APs and TP scores. This is saved-evidence verification, not a
+fresh accuracy evaluation from predictions and ground truth.
+
+Original metric summaries, evaluation/inference audits, resolved configurations,
+scripts, frozen tokens, split and scene records, and official summary curves are
+now imported under original_evidence/. The complete archive manifest and the
+new verification receipt record provenance and exclusions. Large predictions,
+converted annotation pickle, sensor manifest, logs and other PR/TP curves remain
+in the hash-verified source archive. A CPU ground-truth evaluation replay is still
+pending. Historical RESUME_NOTE.json predates completed accuracy evaluation.
 
 Full evidence remains in the project Drive folder:
-`Major_Project/nuscenes_full_validation/bevfusion_subset_validation/`.
+`Major_Project/nuscenes_full_validation/bevfusion_subset_validation/` and
+`bevfusion_subset_original_evidence.zip` in its parent folder.
 Full nuScenes validation remains pending. Mini results are a separate pilot;
 this subset result does not replace the mini record or imply full coverage.

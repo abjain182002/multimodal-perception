@@ -1,0 +1,11 @@
+{
+  "status": "SUBSET_INFERENCE_AND_FORMATTING_PASS",
+  "model": "lidar_camera",
+  "samples": 1231,
+  "created": 1231,
+  "reused": 0,
+  "result_path": "/content/bevfusion_subset_validation/lidar_camera/official_results/pred_instances_3d/results_nusc.json",
+  "results_sha256": "d29975a62a898f294dba343de79f7e3b4b7f62e3bce9d4cfcf14b39ac16ca66d",
+  "protocol_sha256": "fa00c56eb46be6017ca1e64549bd040e0de1d4e43368048106cdb3b918f9f8e9",
+  "scope": "Inference complete; accuracy evaluation pending."
+}

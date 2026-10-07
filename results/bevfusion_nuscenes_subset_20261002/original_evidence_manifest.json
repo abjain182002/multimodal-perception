@@ -1,0 +1,338 @@
+{
+  "evaluation/RESUME_NOTE.json": {
+    "bytes": 554,
+    "sha256": "51b61f31c503653c2ea5575f44f0d5e5891f1711d87b26100ebfc2a1cc296b38"
+  },
+  "evaluation/evaluate_subset.py": {
+    "bytes": 5099,
+    "sha256": "03697d52a87f36463682c164f085a87166f3518ea7b061bb86988106587d4352"
+  },
+  "evaluation/inference.log": {
+    "bytes": 4784,
+    "sha256": "6b585795a60df4decb06cdc7817a1eafac3b4808da1fb92eb899384d98236c30"
+  },
+  "evaluation/inference.py": {
+    "bytes": 9095,
+    "sha256": "c8a532eb354e025d68e236c2aaa785a450ebea1669e5a4d8230801e01f3dccb7"
+  },
+  "evaluation/inference_resumed.log": {
+    "bytes": 206400,
+    "sha256": "755499c350e38ecf6de81b7a06b4d14452a5f44554524498cb54b957f2f2627a"
+  },
+  "evaluation/lidar/inference_audit.json": {
+    "bytes": 484,
+    "sha256": "18daf4d0b89cd2ef26bf76ec6897e2ee3361a64da134995d5e4fd9afe418d751"
+  },
+  "evaluation/lidar/protocol.json": {
+    "bytes": 589,
+    "sha256": "bd55cfbe5c170b8439c5012f836d70e7a3a8aaf27090aaedfd92f986d0ebd559"
+  },
+  "evaluation/lidar/resolved_config.py": {
+    "bytes": 28242,
+    "sha256": "13a102820894c03b7e5ea528998e5633284efe6f3a9b1bbf00a6b1a35d14a358"
+  },
+  "evaluation/lidar/results_nusc.json": {
+    "bytes": 72143377,
+    "sha256": "16cbf8c35c81571d3990867b0148fd42c8bebcac626a8c0363431cde96abf07b"
+  },
+  "evaluation/lidar/subset_evaluation/evaluation_audit.json": {
+    "bytes": 1197,
+    "sha256": "da173b05f7ca24cab57c51262bc346aa07e440d70d1c8658952f55f94c11928e"
+  },
+  "evaluation/lidar/subset_evaluation/metrics_details.json": {
+    "bytes": 769200,
+    "sha256": "88243499e40efc3cc21237ce9db08afd64a2c501b44c329a8d472f5dc5579bed"
+  },
+  "evaluation/lidar/subset_evaluation/metrics_summary.json": {
+    "bytes": 5210,
+    "sha256": "e245cd7f625e4b27935064aa64d1586ce0183efe7878d289e84dd5bd24025cf0"
+  },
+  "evaluation/lidar/subset_evaluation/plots/barrier_pr.pdf": {
+    "bytes": 15068,
+    "sha256": "e0f9324111f565153b554abe5da0ab6b42df445152b9f6452380a6c61882ea22"
+  },
+  "evaluation/lidar/subset_evaluation/plots/barrier_tp.pdf": {
+    "bytes": 17483,
+    "sha256": "22acd64bd85a2f78ae59c54640358497ce99a2b74fe332e991747fab5450430c"
+  },
+  "evaluation/lidar/subset_evaluation/plots/bicycle_pr.pdf": {
+    "bytes": 13494,
+    "sha256": "112e1ff2a2b0d7bb82fa9fdeb4ca22596d2db9964e73b5eb3e253a440d6aa449"
+  },
+  "evaluation/lidar/subset_evaluation/plots/bicycle_tp.pdf": {
+    "bytes": 17931,
+    "sha256": "5572d555aad411778b2f283e54dcae379729833a1dffe92aba1838620783e5c5"
+  },
+  "evaluation/lidar/subset_evaluation/plots/bus_pr.pdf": {
+    "bytes": 14725,
+    "sha256": "10b5d6d1aff7c1e9fe98c7ca9572f6d75f91ea84829f8ae03a64326dfa816b2c"
+  },
+  "evaluation/lidar/subset_evaluation/plots/bus_tp.pdf": {
+    "bytes": 18262,
+    "sha256": "b4cfb1e5a00198929c5ebec5cf670360ffe458b4c88b5db54583f8d07da4a5ef"
+  },
+  "evaluation/lidar/subset_evaluation/plots/car_pr.pdf": {
+    "bytes": 15007,
+    "sha256": "b103394263c34ef3462d5f2483babbfa1f04b25f30d6c60bc1aa980ded891848"
+  },
+  "evaluation/lidar/subset_evaluation/plots/car_tp.pdf": {
+    "bytes": 18813,
+    "sha256": "2cbceebe681f51eb09562e298b9e441566d58e76b1ca4f3a2df972fe86ad0797"
+  },
+  "evaluation/lidar/subset_evaluation/plots/construction_vehicle_pr.pdf": {
+    "bytes": 15310,
+    "sha256": "cc5d40c11532cf0be0623768aff44d09ee2709c9de01e3836a78ad4a3cfa0d10"
+  },
+  "evaluation/lidar/subset_evaluation/plots/construction_vehicle_tp.pdf": {
+    "bytes": 18620,
+    "sha256": "fc2336dc3abd684ee62041a6b2fd8e1a62c150c1cf9c1b3b0c7e500cb92fb422"
+  },
+  "evaluation/lidar/subset_evaluation/plots/dist_pr_0.5.pdf": {
+    "bytes": 21163,
+    "sha256": "b1a827b8a30036f36ea28a0cb96e4ee5926bfed1204f39b3f0d71cfbcd73bd3f"
+  },
+  "evaluation/lidar/subset_evaluation/plots/dist_pr_1.0.pdf": {
+    "bytes": 21910,
+    "sha256": "4bd4a27d776959e17e2d34aa13101d0d426cb0cb0d16747653b5531f008db4cd"
+  },
+  "evaluation/lidar/subset_evaluation/plots/dist_pr_2.0.pdf": {
+    "bytes": 22079,
+    "sha256": "d7550db2017a9bfc58be6558ee3cc94e826b1b41d43a01e7539ae7543086b067"
+  },
+  "evaluation/lidar/subset_evaluation/plots/dist_pr_4.0.pdf": {
+    "bytes": 21967,
+    "sha256": "154a9db025399e11372c04915a0e5e59759e6f7b092342c6ada13a7a3c0df4d0"
+  },
+  "evaluation/lidar/subset_evaluation/plots/motorcycle_pr.pdf": {
+    "bytes": 13810,
+    "sha256": "9038659b9bbc1b7ee3ffbf56fa99d7184f0439b351ea8f7d8719f0d092dc23fa"
+  },
+  "evaluation/lidar/subset_evaluation/plots/motorcycle_tp.pdf": {
+    "bytes": 17898,
+    "sha256": "a003171423ddaaf3fdbad2f3d6da0dbced9b9a152a0248464faecb3816beaab8"
+  },
+  "evaluation/lidar/subset_evaluation/plots/pedestrian_pr.pdf": {
+    "bytes": 14808,
+    "sha256": "91c2472b9cf9640d4e571b9f03648f5cd988ca27897ecdc5d3d058577b4ae2a6"
+  },
+  "evaluation/lidar/subset_evaluation/plots/pedestrian_tp.pdf": {
+    "bytes": 19261,
+    "sha256": "a2b4e1040b76fef20c05d496dbb79bc6f448f8a2da453b235161f44239caa550"
+  },
+  "evaluation/lidar/subset_evaluation/plots/summary.pdf": {
+    "bytes": 84631,
+    "sha256": "ea8d188476f277e82067fc3e22949be75b62b71d9cc0d81a9096439aca8452a8"
+  },
+  "evaluation/lidar/subset_evaluation/plots/traffic_cone_pr.pdf": {
+    "bytes": 14699,
+    "sha256": "af85be32df1ad32e64322726e8c038b8ddbea1205a7065317f399fd504ab31b0"
+  },
+  "evaluation/lidar/subset_evaluation/plots/traffic_cone_tp.pdf": {
+    "bytes": 16329,
+    "sha256": "7a210b3a087c4efd78b58e6c01a3381eb7f0bae2812f100f32f1a1a4a8bbb8b6"
+  },
+  "evaluation/lidar/subset_evaluation/plots/trailer_pr.pdf": {
+    "bytes": 14500,
+    "sha256": "dbc641d5e81eadf1cc1d0afe88584d2fd85ce1921d9b23e50152609ee1d4023f"
+  },
+  "evaluation/lidar/subset_evaluation/plots/trailer_tp.pdf": {
+    "bytes": 18201,
+    "sha256": "405eaa6e74831861ed6c8cd37d69f4914553047096289ba0df75fa986f73d4fc"
+  },
+  "evaluation/lidar/subset_evaluation/plots/truck_pr.pdf": {
+    "bytes": 15505,
+    "sha256": "d65643cf4163044ca0f3ce21e5de579ecac8f8ba40815f1a067470fd228fad32"
+  },
+  "evaluation/lidar/subset_evaluation/plots/truck_tp.pdf": {
+    "bytes": 18283,
+    "sha256": "7f612a723978ffe5cde6b91435bfea18511b92aef090f5d36e9f54f769cbb1d5"
+  },
+  "evaluation/lidar_camera/inference_audit.json": {
+    "bytes": 498,
+    "sha256": "f6a2c414f9ff2f63a34962445f55e0d7e70e5598511a9a1f853a6f269fc8732d"
+  },
+  "evaluation/lidar_camera/protocol.json": {
+    "bytes": 596,
+    "sha256": "319f61f87ea7ad0a628cdbbfefaaa792e14ea4db23bbba0c32f77d1b8c41b22c"
+  },
+  "evaluation/lidar_camera/resolved_config.py": {
+    "bytes": 29890,
+    "sha256": "63efbecd704eb983188ca690ec440d1e192d46894a6030fdf5e8e665a2916b48"
+  },
+  "evaluation/lidar_camera/results_nusc.json": {
+    "bytes": 72239934,
+    "sha256": "d29975a62a898f294dba343de79f7e3b4b7f62e3bce9d4cfcf14b39ac16ca66d"
+  },
+  "evaluation/lidar_camera/subset_evaluation/evaluation_audit.json": {
+    "bytes": 1204,
+    "sha256": "4da6bdafb61c4ab66d377af08f5f0b7f00b6995c8fd08c6732a683d7f9a3f576"
+  },
+  "evaluation/lidar_camera/subset_evaluation/metrics_details.json": {
+    "bytes": 771499,
+    "sha256": "27e8f35b80518b6bd7bf2a77620e08b982180ad9289d45e223fa88b9efefb639"
+  },
+  "evaluation/lidar_camera/subset_evaluation/metrics_summary.json": {
+    "bytes": 5206,
+    "sha256": "ee0e3432034fd6258660c5a8aa3c3e10d68e607b0c604f51f6faaa59dcb28e6f"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/barrier_pr.pdf": {
+    "bytes": 15507,
+    "sha256": "ad430c6b8b4b34b3c52a124dec06cf40b2318b6f1d81d7ec405e2160395736db"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/barrier_tp.pdf": {
+    "bytes": 17255,
+    "sha256": "851fbd2de1943a002565d11fff45550e89b9848d0f2e6f4416ddcbb08595b124"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/bicycle_pr.pdf": {
+    "bytes": 13843,
+    "sha256": "7ce93336ce73efc5540d7414bcd65d7894bd61afbce2dafd849802d990392c02"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/bicycle_tp.pdf": {
+    "bytes": 18457,
+    "sha256": "10a4a870468a4cf62e9e1b318da0dad22212f12533030a0b48f08fc7ef95f503"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/bus_pr.pdf": {
+    "bytes": 14310,
+    "sha256": "89cf53e3e67963e1b70a972040a57d68a286fd890b5c9fdab2f579963f6f0a3e"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/bus_tp.pdf": {
+    "bytes": 18828,
+    "sha256": "47dfe3a7430d716450f68d7f47e0bc85104806033946204b03f3fb5ce97e28a3"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/car_pr.pdf": {
+    "bytes": 14988,
+    "sha256": "be47655ccde712e2f032a0080ff26b113c146a95939fa4ce9673246443187418"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/car_tp.pdf": {
+    "bytes": 18655,
+    "sha256": "73fb9582482fc3ee8dc9e8ad2e4f856719a15fb45eb7eafa7b354cbb877a79cc"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/construction_vehicle_pr.pdf": {
+    "bytes": 15306,
+    "sha256": "3284e62a95a1a12ef15f274a336d0b4d387f5b520919bdcd186af7cfb7b4d615"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/construction_vehicle_tp.pdf": {
+    "bytes": 18071,
+    "sha256": "4c6b122e4b5f57a02d1b762f120bb3122891e5cca3ad8656fee8d8968be626ee"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/dist_pr_0.5.pdf": {
+    "bytes": 21561,
+    "sha256": "e8ebc6af2aa7bff57ca1becb0c18efc629abb834556cb0fb22944865fa424584"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/dist_pr_1.0.pdf": {
+    "bytes": 22029,
+    "sha256": "8cdb2ec00c798ac333b7c20f90061c9f5ab0208b61f8be5a941b31dce81b08e0"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/dist_pr_2.0.pdf": {
+    "bytes": 21930,
+    "sha256": "d2704296734d3897535810871bd42fe2e6b800625df71033572b4fcbed08ddf1"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/dist_pr_4.0.pdf": {
+    "bytes": 21686,
+    "sha256": "8c12c34f86cf655582709e3e4fc5d75b7edc56791236c2569dd419004cebe57f"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/motorcycle_pr.pdf": {
+    "bytes": 14460,
+    "sha256": "af0f93e802cfcc7fb2d7f8240fc972af4c8c5ff2157e8b5d0223d7beeae0e43e"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/motorcycle_tp.pdf": {
+    "bytes": 18401,
+    "sha256": "3591742ff5179f300249b4d4ca3578047af8f3436c0c3e795b4213025f0b565f"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/pedestrian_pr.pdf": {
+    "bytes": 15326,
+    "sha256": "5a1a558490221213349dc119789af0c783dc2550019ec8b7fffa8853fe2850ff"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/pedestrian_tp.pdf": {
+    "bytes": 18634,
+    "sha256": "e529df544fd4d373a387fc1fb18883ff78b4a856315bd30ed0983d7bc309d46a"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/summary.pdf": {
+    "bytes": 85918,
+    "sha256": "d2ae1e26a5312e063f817d02eb3a5352f2f07e49bd88be7c10942055c23094bb"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/traffic_cone_pr.pdf": {
+    "bytes": 15390,
+    "sha256": "c2e05196e397dfbe0488f594c4b5ae1c7b4d40ef3137988c568aa15ac6da9033"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/traffic_cone_tp.pdf": {
+    "bytes": 16328,
+    "sha256": "5f91f1e282d02666a0efe6a6677bbad3e9cb5dde6a3a5ff22e62a9411d11f142"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/trailer_pr.pdf": {
+    "bytes": 14152,
+    "sha256": "7a68bc1c83ba3cd5c34a85bd5907b6ecd821516ba5b3a7b1d416512efa799dc5"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/trailer_tp.pdf": {
+    "bytes": 17667,
+    "sha256": "feb237b6684a83a211156b04441bc6d295a3f18225e51431c825455ca806193a"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/truck_pr.pdf": {
+    "bytes": 14594,
+    "sha256": "276c2b4f1b5a2ae35056f542f98dffa42446b356fbda631efb5a573acff7268f"
+  },
+  "evaluation/lidar_camera/subset_evaluation/plots/truck_tp.pdf": {
+    "bytes": 18488,
+    "sha256": "a9a9d3c76855e6991d40c6599779988878accb1e5b52671e6bc94f03d82fa3ee"
+  },
+  "evaluation/paired_evaluation.json": {
+    "bytes": 3041,
+    "sha256": "4054c9b2db1162661cb67af86dfcd1cc7b9c59d9b982715f016ab198652b3212"
+  },
+  "evaluation/paired_inference.json": {
+    "bytes": 1194,
+    "sha256": "91ada52294a2e4c6618173a200cd4c2c0777e2a4afeed65d3695b4134a4b98b0"
+  },
+  "evaluation/smoke/smoke.log": {
+    "bytes": 5240,
+    "sha256": "94dbe34c3e433c850245c4177ac414aa37f93abed3938c9afa0b40ff1995acfb"
+  },
+  "evaluation/smoke/smoke.py": {
+    "bytes": 3967,
+    "sha256": "05b8a78b24a3fd945f61438d60414a26591deef11a9a409908a9617230fe9eb0"
+  },
+  "evaluation/smoke/smoke_audit.json": {
+    "bytes": 1016,
+    "sha256": "cff47bbd4151a091bcd3e8c379f16b06befe0fb224b8c838cb86046d4cfe9900"
+  },
+  "frozen_subset/backup_receipt.json": {
+    "bytes": 481,
+    "sha256": "0e198c05a0b11172fe4bc34a58f1906cfea7f9ef3f51839609772bbbc72f5635"
+  },
+  "frozen_subset/bevfusion_cuda_audit.json": {
+    "bytes": 209,
+    "sha256": "1f842f84a56e0565a1a0699b7804a805cfef4a15cd1f87ff6951dc19bf88b6a3"
+  },
+  "frozen_subset/bevfusion_environment.txt": {
+    "bytes": 2576,
+    "sha256": "5259c5fed08ff834b288e7c85acabfcaa5140b42aee7d56bf19f564ab8782378"
+  },
+  "frozen_subset/metadata_audit.json": {
+    "bytes": 554,
+    "sha256": "16fa567e831a531ee52b77c02419171349b68ef310946dc1e4635b1bfa637efd"
+  },
+  "frozen_subset/nuscenes_parts01_02_infos_val.pkl": {
+    "bytes": 52763066,
+    "sha256": "63c1f89db06bb16e59fa8f2c7e3f5b29f31fe32db62a94df07bc1be909e67925"
+  },
+  "frozen_subset/sample_manifest.json": {
+    "bytes": 2045801,
+    "sha256": "2553b5d091a54e01e834925c897dcfb33f3c7f2dee028be48096fff919cddc76"
+  },
+  "frozen_subset/sample_tokens.txt": {
+    "bytes": 40623,
+    "sha256": "8ff45978c8226f9762e1b79677e1bf37bec50da31d00ebc791c196249d9b8d28"
+  },
+  "frozen_subset/scene_coverage_audit.json": {
+    "bytes": 9251,
+    "sha256": "b77880e6e9c60e225b2eff5e4f66afd463ac8f823cade718ef67673526915a14"
+  },
+  "frozen_subset/splits.json": {
+    "bytes": 594,
+    "sha256": "0492c5451a66350e59419033f379f8f42bf5e63f71fe618e3e774e4b88b253ac"
+  },
+  "frozen_subset/subset_audit.json": {
+    "bytes": 600,
+    "sha256": "2261e447fe58b79a1ddc645476744e3c0855961ff298928ea4046a199c5a6726"
+  }
+}
