@@ -10,8 +10,8 @@ This is a dated engineering checklist. A date is a target, not evidence that an 
 ## Current verified starting point (25 September)
 
 - The Mac pulled `6b913a1`, passed **100/100** repository tests in **0.551 s**, and reported a clean `main...origin/main` tree.
-- The canonical SECOND split has 3,712 training and 3,769 validation frames without overlap. The full KITTI CLOCs GT audit covered 7,481 labelled frames and retained 28,374 exact Car GT boxes after range filtering; see `results/kitti_clocs_gt_audit.json`.
-- PointPillars-only KITTI Car Moderate 3D AP40 at IoU 0.70 is **79.1299%** on the full validation split, as recorded in `results/pointpillars_kitti_ap40_strict_summary.csv`. This is a pretrained LiDAR baseline, not a learned-fusion result.
+- The canonical SECOND split has 3,712 training and 3,769 validation frames without overlap. The full KITTI CLOCs GT audit covered 7,481 labelled frames and retained 28,374 exact Car GT boxes after range filtering; see `results/kitti/clocs/training_exports/kitti_clocs_gt_audit.json`.
+- PointPillars-only KITTI Car Moderate 3D AP40 at IoU 0.70 is **79.1299%** on the full validation split, as recorded in `results/kitti/pointpillars/pointpillars_kitti_ap40_strict_summary.csv`. This is a pretrained LiDAR baseline, not a learned-fusion result.
 - CPU 3D IoU, aligned camera-box extraction, and the guarded target-example builder are implemented. The saved `reference_structural_smoke` archive has placeholder zero IoUs and cannot be used for training. **Genuine aligned dense 3D boxes from Colab are the immediate gate.**
 
 ## Locked project scope retained from the 29 August plan
@@ -57,3 +57,4 @@ The 29 August screenshot also named Mac environment setup and running the initia
 - The full agreed Phase 1 scope remains the target. With GPU access unavailable as of the 25 September checkpoint, completion of every GPU experiment by 10 October cannot be guaranteed; record the risk and seek supervisor guidance rather than silently shrinking the work.
 
 **Related records:** `PROJECT_HISTORY.md`, `DAILY_LOG.md`, `results/VALIDATED_RESULTS.md`, `docs/CLOCS_TARGET_PREPARATION.md`, `configs/splits/kitti_second_split.json`.
+

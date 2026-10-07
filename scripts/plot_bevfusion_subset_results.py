@@ -9,7 +9,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "results/bevfusion_nuscenes_subset_20261002"
+OUT = ROOT / "results/nuscenes/bevfusion/validation_subset"
 
 
 def main():
@@ -81,3 +81,4 @@ def save(fig, name):
 
 if __name__ == "__main__":
     main()
+

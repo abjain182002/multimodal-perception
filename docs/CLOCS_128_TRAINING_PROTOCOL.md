@@ -58,7 +58,7 @@ pilot. MMDetection3D is not needed for training on these cached features.
 ```bash
 python -m scripts.train_clocs_128 \
   --data-dir /kaggle/working/clocs_yolo26_train_128 \
-  --batch-manifest results/clocs_train_export_128_manifest.json \
+  --batch-manifest results/kitti/clocs/training_exports/clocs_train_export_128_manifest.json \
   --train-ids /kaggle/input/datasets/abhishekjain18/clocs-train-export-128-tar-gz/splits/train.txt \
   --val-ids /kaggle/input/datasets/abhishekjain18/clocs-train-export-128-tar-gz/splits/val.txt \
   --output-dir /kaggle/working/clocs_128_ratio0_seed20260928 \
@@ -66,3 +66,4 @@ python -m scripts.train_clocs_128 \
 ```
 
 Then repeat with `--negative-ratio 8` and a new output directory ending `ratio8_seed20260928`.
+

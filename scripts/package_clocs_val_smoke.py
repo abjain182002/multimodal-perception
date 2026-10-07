@@ -62,9 +62,9 @@ def main():
     parser.add_argument('--dataset', type=Path, required=True)
     parser.add_argument('--train', type=Path, required=True)
     parser.add_argument('--val', type=Path, required=True)
-    parser.add_argument('--preflight', type=Path, default=Path('results/clocs_validation_input_preflight.json'))
+    parser.add_argument('--preflight', type=Path, default=Path('results/kitti/clocs/smoke_validation/clocs_validation_input_preflight.json'))
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--manifest-output', type=Path, default=Path('results/clocs_val_smoke_4_manifest.json'))
+    parser.add_argument('--manifest-output', type=Path, default=Path('results/kitti/clocs/smoke_validation/clocs_val_smoke_4_manifest.json'))
     args = parser.parse_args()
     audit = json.loads(args.preflight.read_text())
     train_ids = set(args.train.read_text().split())
@@ -120,3 +120,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

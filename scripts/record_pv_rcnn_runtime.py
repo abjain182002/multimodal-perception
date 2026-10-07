@@ -70,7 +70,7 @@ def main():
         if not math.isclose(rate, runtime["serial_pipeline_calls_per_second"], rel_tol=1e-10):
             raise ValueError("Serial pipeline rate differs")
         root = Path(__file__).resolve().parents[1]
-        out = root / "results/pv_rcnn_runtime"
+        out = root / "results/kitti/pv_rcnn/runtime"
         out.mkdir(parents=True, exist_ok=True)
         for name in ("runtime.json", "latency.csv", "environment.txt", "nvidia_smi.txt",
                      "model_loading.log", "benchmark_pv_rcnn_local.py"):
@@ -137,3 +137,4 @@ The executed benchmark source, environment, raw latency CSV, machine snapshot an
 
 if __name__ == "__main__":
     main()
+

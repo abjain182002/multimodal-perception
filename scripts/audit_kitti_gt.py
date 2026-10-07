@@ -120,7 +120,7 @@ def main():
         "--manifest", default="configs/splits/kitti_second_split.json",
     )
     parser.add_argument(
-        "--output", default="results/kitti_clocs_gt_audit.json",
+        "--output", default="results/kitti/clocs/training_exports/kitti_clocs_gt_audit.json",
     )
     args = parser.parse_args()
 
@@ -144,3 +144,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

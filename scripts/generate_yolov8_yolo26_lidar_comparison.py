@@ -8,12 +8,12 @@ RESULTS_DIR = Path("results")
 
 CSV_PATH = (
     RESULTS_DIR
-    / "yolov8_yolo26_lidar_comparison.csv"
+    / "kitti/camera/lidar_depth_comparison/yolov8_yolo26_lidar_comparison.csv"
 )
 
 FIGURE_PATH = (
     RESULTS_DIR
-    / "yolov8_yolo26_lidar_comparison.png"
+    / "kitti/camera/lidar_depth_comparison/figures/yolov8_yolo26_lidar_comparison.png"
 )
 
 
@@ -107,6 +107,9 @@ def make_figure(rows):
 
 
 def main():
+    CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
+    FIGURE_PATH.parent.mkdir(parents=True, exist_ok=True)
+
     rows = load_results()
 
     make_figure(rows)
@@ -117,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -24,11 +24,11 @@ def main():
     parser.add_argument('--train', type=Path, required=True)
     parser.add_argument('--val', type=Path, required=True)
     parser.add_argument('--fusion-checkpoint', type=Path, required=True)
-    parser.add_argument('--baseline-evidence', type=Path, default=Path('results/pointpillars_evidence_manifest.json'))
+    parser.add_argument('--baseline-evidence', type=Path, default=Path('results/kitti/pointpillars/pointpillars_evidence_manifest.json'))
     parser.add_argument('--split-manifest', type=Path, default=Path('configs/splits/kitti_second_split.json'))
-    parser.add_argument('--train-batch', type=Path, default=Path('results/clocs_train_export_128_manifest.json'))
-    parser.add_argument('--fusion-report', type=Path, default=Path('results/clocs_128_comparison/ratio0/report.json'))
-    parser.add_argument('--output', type=Path, default=Path('results/clocs_validation_input_preflight.json'))
+    parser.add_argument('--train-batch', type=Path, default=Path('results/kitti/clocs/training_exports/clocs_train_export_128_manifest.json'))
+    parser.add_argument('--fusion-report', type=Path, default=Path('results/kitti/clocs/training_comparison/ratio0/report.json'))
+    parser.add_argument('--output', type=Path, default=Path('results/kitti/clocs/smoke_validation/clocs_validation_input_preflight.json'))
     args = parser.parse_args()
     evidence = json.loads(args.baseline_evidence.read_text())
     split_manifest = json.loads(args.split_manifest.read_text())
@@ -89,3 +89,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

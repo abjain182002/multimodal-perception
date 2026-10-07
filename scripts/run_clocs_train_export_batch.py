@@ -18,7 +18,7 @@ def main():
     source = Path('/content/datasets/KITTI/training')
     split_root = Path('/content/datasets/KITTI/splits')
     drive = Path('/content/drive/MyDrive/Major Project/cloud transfer/clocs_stage5_checkpoints')
-    batch_file = code / 'results/clocs_train_export_batch_manifest.json'
+    batch_file = code / 'results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json'
     reduced_file = drive / 'clocs_train_16_reduced_cloud_audit.json'
     split_file = code / 'configs/splits/kitti_second_split.json'
     train, val = split_root / 'train.txt', split_root / 'val.txt'
@@ -99,7 +99,7 @@ def main():
                 '--dataset', str(stage), '--frame-id', fid, '--config', str(config),
                 '--checkpoint', str(checkpoint), '--train', str(train), '--val', str(val),
                 '--manifest', str(split_file), '--evidence',
-                str(code / 'results/pointpillars_evidence_manifest.json'), '--output', str(temporary),
+                str(code / 'results/kitti/pointpillars/pointpillars_evidence_manifest.json'), '--output', str(temporary),
             ]
             subprocess.run(command, check=True, cwd=code, env={**os.environ, 'MPLBACKEND': 'Agg'})
             details = verify_npz(temporary, fid)
@@ -132,3 +132,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

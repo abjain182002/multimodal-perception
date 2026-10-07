@@ -17,7 +17,7 @@ python -m scripts.prepare_clocs_train_export_batch \
   --train "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/train.txt" \
   --val "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/val.txt" \
   --size 16 --seed 20260926 --include 000000 000149 \
-  --output results/clocs_train_export_batch_manifest.json
+  --output results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json
 ```
 
 The command verifies the exact frozen split, reads range-filtered Car labels
@@ -43,7 +43,7 @@ Mac (the archive itself stays outside Git):
 
 ```bash
 python -m scripts.package_clocs_train_export_batch pack \
-  --manifest results/clocs_train_export_batch_manifest.json \
+  --manifest results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json \
   --dataset "$HOME/Major_Project/datasets/KITTI/training" \
   --train "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/train.txt" \
   --val "$HOME/Major_Project/external/CLOCs/second/data/ImageSets/val.txt" \
@@ -61,7 +61,7 @@ the manifest on Colab, verify and restore it with Python (no GPU needed):
 
 ```bash
 python -m scripts.package_clocs_train_export_batch verify \
-  --manifest results/clocs_train_export_batch_manifest.json \
+  --manifest results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json \
   --archive /content/clocs_train_export_16.tar.gz \
   --extract-to /content/datasets/KITTI
 ```
@@ -72,3 +72,4 @@ the pinned splits. The verifier rejects missing, extra, duplicated,
 non-regular and modified archive members before extraction. Compare the
 printed archive SHA-256 with the Mac run. Transfer is an input milestone only:
 the CUDA model and pinned evaluator still require a compatible GPU runtime.
+

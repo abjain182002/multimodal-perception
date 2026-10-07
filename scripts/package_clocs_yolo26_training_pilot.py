@@ -72,7 +72,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data-dir', type=Path, required=True)
     parser.add_argument('--summary', type=Path,
-                        default=Path('results/clocs_yolo26_train_16_training_example_audit.json'))
+                        default=Path('results/kitti/clocs/training_exports/clocs_yolo26_train_16_training_example_audit.json'))
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     if args.output.exists():
@@ -116,3 +116,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

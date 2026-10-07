@@ -47,7 +47,7 @@ def main():
     parser.add_argument("--train", required=True, help="Canonical SECOND train.txt")
     parser.add_argument("--val", required=True, help="Canonical SECOND val.txt")
     parser.add_argument("--manifest", default="configs/splits/kitti_second_split.json")
-    parser.add_argument("--evidence", default="results/pointpillars_evidence_manifest.json")
+    parser.add_argument("--evidence", default="results/kitti/pointpillars/pointpillars_evidence_manifest.json")
     parser.add_argument("--output", required=True, help="External-storage candidate NPZ")
     args = parser.parse_args()
 
@@ -106,3 +106,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

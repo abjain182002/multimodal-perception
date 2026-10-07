@@ -95,9 +95,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", required=True)
     parser.add_argument("--candidates", required=True)
-    parser.add_argument("--audit", default="results/clocs_real_frame_000149_audit.json")
-    parser.add_argument("--output", default="results/clocs_000149_iou_scipy_audit.json")
-    parser.add_argument("--figure", default="results/clocs_000149_iou_scipy_parity.png")
+    parser.add_argument("--audit", default="results/kitti/clocs/training_targets/frame_audits/clocs_real_frame_000149_audit.json")
+    parser.add_argument("--output", default="results/kitti/clocs/training_exports/clocs_000149_iou_scipy_audit.json")
+    parser.add_argument("--figure", default="results/kitti/clocs/training_exports/figures/clocs_000149_iou_scipy_parity.png")
     parser.add_argument("--per-group", type=int, default=64)
     args = parser.parse_args()
 
@@ -175,3 +175,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

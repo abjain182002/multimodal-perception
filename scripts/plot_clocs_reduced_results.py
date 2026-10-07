@@ -14,7 +14,7 @@ import numpy as np
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    out = root / "results/clocs_full_val_reduced"
+    out = root / "results/kitti/clocs/baseline_matched_validation"
     ap_path = out / "ap40.json"
     coverage_path = out / "coverage_diagnostic.json"
     ap = json.loads(ap_path.read_text())
@@ -105,3 +105,4 @@ Coverage figure: All 14,385 labelled Cars, grouped by camera depth and occlusion
 
 if __name__ == "__main__":
     main()
+

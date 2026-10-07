@@ -66,7 +66,7 @@ def main():
     parser.add_argument("--historical", type=Path, required=True)
     parser.add_argument("--paired-archive", type=Path, required=True)
     parser.add_argument("--output", type=Path,
-                        default=Path("results/clocs_full_val_paired/historical_prediction_comparison.json"))
+                        default=Path("results/kitti/clocs/historical_raw_cloud_validation/historical_prediction_comparison.json"))
     args = parser.parse_args()
     if sha256(args.historical) != HISTORICAL_SHA256:
         raise ValueError("Historical pickle SHA-256 mismatch; refusing to unpickle")
@@ -114,3 +114,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

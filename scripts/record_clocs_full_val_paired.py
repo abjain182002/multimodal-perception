@@ -137,7 +137,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--archive', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path,
-                        default=Path('results/clocs_full_val_paired'))
+                        default=Path('results/kitti/clocs/historical_raw_cloud_validation'))
     args = parser.parse_args()
     parity, paired, ordered = verify_archive(args.archive)
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -166,3 +166,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

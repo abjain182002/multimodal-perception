@@ -7,12 +7,12 @@ from pathlib import Path
 
 
 def main():
-    root = Path('results/clocs_aligned_20260930')
+    root = Path('results/kitti/clocs/aligned_seed_study')
     ap = json.loads((root / 'ap40.json').read_text())
     seeds = json.loads((root / 'seed_comparison.json').read_text())
     assert ap['status'] == seeds['status'] == 'PASS'
     assert ap['frames'] == 3769 and ap['baseline_max_absolute_ap40_error'] == 0
-    pv = json.loads(Path('results/pv_rcnn_kitti/common_ap40.json').read_text())
+    pv = json.loads(Path('results/kitti/pv_rcnn/validation/common_ap40.json').read_text())
     assert pv['status'] == 'PASS' and pv['maximum_absolute_ap_difference'] == 0
     methods = [('PointPillars', ap['ap40_strict_iou_070']['pointpillars']),
                ('Aligned CLOCs', ap['ap40_strict_iou_070']['fusion']),
@@ -92,12 +92,12 @@ Official PV-RCNN Moderate 3D AP40 was 84.3604 under the common evaluator, 4.4989
 
 Only 96 frames optimized the fusion head. Seed repeats do not answer the training-size question. Validation had already been inspected in earlier experiments, so these results are an iterative validation comparison rather than an untouched final test. The observed improvement over the earlier checkpoint does not isolate preprocessing as a causal effect because training environment and checkpoint selection also differ.
 
-Sources: ap40.json, seed_comparison.json, study_protocol.json, validation_selection.json and each seed's history.json; PV-RCNN: ../pv_rcnn_kitti/common_ap40.json. SVG figures preserve editable vector output; CSV tables retain unrounded values.
+Sources: ap40.json, seed_comparison.json, study_protocol.json, validation_selection.json and each seed's history.json; PV-RCNN: ../../pv_rcnn/validation/common_ap40.json. SVG figures preserve editable vector output; CSV tables retain unrounded values.
 '''
     (root / 'FINDINGS.md').write_text(findings)
     generated = ['three_model_3d_ap40.svg','seed_learning_curves.svg','ap40_comparison.csv','seed_learning_curves.csv','FINDINGS.md']
     manifest = {'sources': {}, 'outputs': {}}
-    for path in [root/'ap40.json',root/'seed_comparison.json',Path('results/pv_rcnn_kitti/common_ap40.json')]:
+    for path in [root/'ap40.json',root/'seed_comparison.json',Path('results/kitti/pv_rcnn/validation/common_ap40.json')]:
         manifest['sources'][str(path)] = hashlib.sha256(path.read_bytes()).hexdigest()
     for name in generated:
         manifest['outputs'][name] = hashlib.sha256((root/name).read_bytes()).hexdigest()
@@ -107,3 +107,4 @@ Sources: ap40.json, seed_comparison.json, study_protocol.json, validation_select
 
 if __name__ == '__main__':
     main()
+

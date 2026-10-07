@@ -17,7 +17,7 @@ Calibration is selected on the 12 optimization frames only. A logit-prior score 
 | Holdout candidates | 427,994 |
 | Holdout positive candidates | 508 |
 
-The four holdout frame IDs are 000149, 000972, 002496 and 004838. The optimization frame IDs and full parameter grid are recorded in results/clocs_yolo26_pilot_calibration_split.json.
+The four holdout frame IDs are 000149, 000972, 002496 and 004838. The optimization frame IDs and full parameter grid are recorded in results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_calibration_split.json.
 
 ## Interpretation
 
@@ -27,10 +27,10 @@ This is not a full KITTI validation AP and does not establish generalisation to 
 
 ## Provenance
 
-- Training report: results/clocs_yolo26_pilot_report.json
-- Learning curve: results/clocs_yolo26_pilot_learning_curve.csv
-- Leakage-controlled audit: results/clocs_yolo26_pilot_calibration_split.json
-- Figure: results/clocs_yolo26_pilot_calibration_split.png
+- Training report: results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_report.json
+- Learning curve: results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_learning_curve.csv
+- Leakage-controlled audit: results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_calibration_split.json
+- Figure: results/kitti/clocs/pilot_calibration/figures/clocs_yolo26_pilot_calibration_split.png
 - Pilot trainer: scripts/train_clocs_pilot.py
 - Calibration audit: scripts/audit_clocs_pilot_calibration_split.py
 - Frozen camera identity: YOLO26x, Ultralytics 8.4.132, project weight SHA-256 recorded in the training report

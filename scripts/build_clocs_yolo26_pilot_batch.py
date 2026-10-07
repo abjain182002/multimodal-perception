@@ -88,12 +88,12 @@ def main():
     parser.add_argument('--train', required=True)
     parser.add_argument('--val', required=True)
     parser.add_argument('--output-dir', required=True)
-    parser.add_argument('--audit-dir', default='results')
+    parser.add_argument('--audit-dir', default='results/kitti/clocs/training_targets/frame_audits')
     parser.add_argument('--device', default='mps')
     parser.add_argument('--manifest', default='configs/splits/kitti_second_split.json')
-    parser.add_argument('--batch', default='results/clocs_train_export_batch_manifest.json')
-    parser.add_argument('--receipt', default='results/clocs_train_16_dense_export_stdout_receipt.json')
-    parser.add_argument('--summary', default='results/clocs_yolo26_train_16_training_example_audit.json')
+    parser.add_argument('--batch', default='results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json')
+    parser.add_argument('--receipt', default='results/kitti/clocs/training_exports/clocs_train_16_dense_export_stdout_receipt.json')
+    parser.add_argument('--summary', default='results/kitti/clocs/training_exports/clocs_yolo26_train_16_training_example_audit.json')
     args = parser.parse_args()
 
     from importlib.metadata import version
@@ -201,4 +201,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

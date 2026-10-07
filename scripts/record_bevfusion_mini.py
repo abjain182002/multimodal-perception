@@ -27,7 +27,7 @@ def main():
     if digest != EXPECTED:
         raise ValueError(f'Archive hash mismatch: {digest}')
     root = Path(__file__).resolve().parents[1]
-    output = root / 'results/bevfusion_nuscenes_mini_20261001'
+    output = root / 'results/nuscenes/bevfusion/mini'
 
     with zipfile.ZipFile(args.archive) as bundle:
         names = bundle.namelist()
@@ -157,3 +157,4 @@ and both official results_nusc.json files outside Git.
 
 if __name__ == '__main__':
     main()
+

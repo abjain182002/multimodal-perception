@@ -30,10 +30,11 @@ The fusion model was trained using raw-cloud candidates and evaluated using redu
 
 ## Evidence and figures
 
-- Numerical source: `results/clocs_full_val_reduced/ap40.json`.
-- Coverage source: `results/clocs_full_val_reduced/coverage_diagnostic.json`.
-- Archive receipt: `results/clocs_full_val_reduced/archive_receipt.json`.
+- Numerical source: `results/kitti/clocs/baseline_matched_validation/ap40.json`.
+- Coverage source: `results/kitti/clocs/baseline_matched_validation/coverage_diagnostic.json`.
+- Archive receipt: `results/kitti/clocs/baseline_matched_validation/archive_receipt.json`.
 - Figure sources: `matched_ap40.csv`, `matched_coverage.csv`, and `figure_manifest.json` in the same directory.
 - Report figures: `matched_ap40.png/pdf` and `matched_coverage.png/pdf`; captions in `figure_captions.md`.
 
 Regenerate from the repository root with `python3 scripts/plot_clocs_reduced_results.py` (NumPy and Matplotlib required). The script checks frame counts, AP parity and coverage arithmetic, then records source/output hashes.
+

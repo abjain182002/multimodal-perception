@@ -1,60 +1,51 @@
-# Multimodal Perception
+# Multimodal Object Detection and Robotic Perception
 
-MSc Major Project: Software-only deep learning pipeline for multi-modal object detection and robotic perception using camera and LiDAR fusion.
+A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KITTI and nuScenes. The aim is to examine detection accuracy, depth estimation, failure cases and computational cost relevant to robotic perception. Robot navigation or hardware deployment has not been demonstrated.
 
-## Project Status
+## Start here
 
-As of 2 October 2026, aligned YOLO26x+CLOCs training used 128 train-only KITTI frames (96 optimization / 32 internal development), with three initialization seeds and full 3,769-frame validation for each. All nine frozen PointPillars baseline AP40 metrics reproduce exactly in every run.
+| What you need | Where to go |
+|---|---|
+| Benchmark results and experiment folders | [Results overview](results/README.md) |
+| Figures and selected case studies | [Figure gallery](docs/FIGURE_GALLERY.md) |
+| Measured results and limitations | [Validated results](results/VALIDATED_RESULTS.md) |
+| Technical setup and detailed project status | [Project guide](docs/PROJECT_GUIDE.md) |
+| Code entry points | [Scripts guide](scripts/README.md) |
+| Environment versions and external sources | [Requirements](requirements/ENVIRONMENTS.md), [external repositories](requirements/EXTERNAL_REPOSITORIES.md) |
+| Decisions and chronological records | [Project history](PROJECT_HISTORY.md), [daily log](DAILY_LOG.md) |
 
-**Car strict IoU 0.70 Moderate 3D AP40:** PointPillars **79.1299**; epoch-12 CLOCs seeds **79.8616 / 76.2666 / 78.7616**. Only one seed improves Moderate; all three reduce Hard AP. Extending seed 20260928 to epoch 24 increases development candidate AP from 0.877935 to 0.883568 but reduces Moderate detection AP40 from 79.8616 to 79.4874. These diagnostics show inconsistent gains in this small-data implementation, not general fusion superiority or failure. Validation was inspected iteratively, not held as an untouched final test. See [seed and epoch findings](results/clocs_seed_diagnostics_20261001/FINDINGS.md). Earlier checkpoint results remain preserved as historical experiments.
+## Main measured comparisons
 
-Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measure separate tasks. Official pretrained OpenPCDet PV-RCNN completed all 3,769 validation frames, scoring Car 3D AP40 **92.1047 / 84.3604 / 82.4830** (Easy / Moderate / Hard). Native OpenPCDet and the pinned common evaluator agree exactly across all nine metrics. [Comparison and findings](results/pv_rcnn_kitti/FINDINGS.md) distinguish this LiDAR-only reproduction from Azitt/PV-RCNN++. Azitt weights, semantic fusion and robustness remain unmeasured. BEVFusion has completed paired pretrained-pipeline evaluation on nuScenes mini (81 samples) and an availability-selected official validation subset (1,231 samples / 31 complete scenes). Subset mAP is 64.2114 → 67.8147 and NDS is 69.2087 → 71.1543 (metrics × 100). Full nuScenes validation remains pending; this is not a controlled camera ablation. See [subset findings](results/bevfusion_nuscenes_subset_20261002/FINDINGS.md) and [mini findings](results/bevfusion_nuscenes_mini_20261001/FINDINGS.md). A synchronized PV-RCNN T4 runtime benchmark is complete; comparable runtime measurements for other models remain pending. NVIDIA optimization is future work. Experiment targets remain subject to these gates; report drafting can proceed with evidence status stated explicitly.
+Each row is a separate evaluation; KITTI AP40 and nuScenes metrics are not interchangeable.
 
-### Verification scope and outstanding analysis
+| Experiment | Evaluation scope | Result | Evidence |
+|---|---|---|---|
+| PointPillars vs PV-RCNN | KITTI Car, 3,769 validation frames, strict IoU 0.70 | Moderate 3D AP40: 79.13 vs 84.36 | [PV-RCNN comparison](results/kitti/pv_rcnn/validation/FINDINGS.md) |
+| CLOCs on PointPillars, three seeds | Same KITTI validation; 96 optimization / 32 development frames | Moderate AP40: 79.86 / 76.27 / 78.76; baseline 79.13. Only one seed improves Moderate; all reduce Hard | [Seed diagnostics](results/kitti/clocs/seed_diagnostics/FINDINGS.md) |
+| BEVFusion LiDAR vs camera–LiDAR | Availability-selected nuScenes validation subset: 1,231 samples, 31 scenes | mAP × 100: 64.21 vs 67.81; NDS × 100: 69.21 vs 71.15 | [Subset findings](results/nuscenes/bevfusion/validation_subset/FINDINGS.md) |
+| BEVFusion mini pilot | 81 mini_val samples | mAP × 100: 54.50 vs 57.04; NDS × 100: 56.62 vs 57.62 | [Mini findings](results/nuscenes/bevfusion/mini/FINDINGS.md) |
 
-PointPillars baseline parity in fresh CLOCs runs checks reproduction against frozen results using the same evaluator. PV-RCNN native-versus-common agreement checks evaluator agreement on the same saved predictions. These checks answer different questions; neither establishes universal correctness or bitwise determinism, and shared evaluator ancestry has not yet been audited.
+## Evidence status — 7 October 2026
 
-The nuScenes subset summary and initial figures were transcribed from execution output. On 7 October, all 84 original archive members were hash-verified and compact original metrics, scripts, audits, split records and summary curves were imported. Prediction tokens and stored metric arithmetic were checked; a fresh ground-truth evaluation replay remains pending. Large prediction files remain in the verified source archive. Mini/subset scene overlap remains unchecked; do not describe them as independent or the availability-selected subset as representative.
+- PointPillars baseline parity checks reproduction against frozen results with the same evaluator. PV-RCNN native-versus-common checks evaluator agreement on the same predictions. These are different verification scopes.
+- Original nuScenes subset evidence has been hash-verified and compact metrics, scripts, audits and summary curves imported. A fresh ground-truth accuracy replay remains pending.
+- The nuScenes subset is selected by sensor availability, not randomly, and is not full validation. BEVFusion compares two pretrained pipelines, not a controlled camera ablation. Mini/subset overlap is unchecked.
+- CLOCs seed-29's Easy decline remains unexplained; full-AP40 score-blend testing, robustness, semantic fusion and comparable runtime across models remain pending. Validation was inspected iteratively.
+- Full nuScenes validation and the dissertation are still in progress. Existing detector architectures are reused; the contribution is integration, evaluation and analysis.
 
-Seed 20260929's Easy-AP decline remains unexplained pending an existing-log audit. The score-blending pilot has not completed full AP40 validation. Any blend settings must be chosen on development data, with subsequent validation described as iterative. Larger-frame CLOCs training adequacy remains untested. These are open analyses, not established causes or completed experiments.
+## Repository layout
 
-## Project Records
+| Folder | Contents |
+|---|---|
+| `adapters/` | Detector interfaces |
+| `fusion/` | CLOCs network, training, sampling and geometry |
+| `configs/` | Split and configuration records |
+| `scripts/` | Preparation, evaluation, auditing and plotting commands |
+| `tests/` | Implementation checks |
+| `results/kitti/` | Camera, depth, PointPillars, PV-RCNN and CLOCs studies |
+| `results/nuscenes/` | BEVFusion mini and validation-subset studies |
+| `results/audits/` | Shared split and environment checks |
+| `docs/` | Technical guides, figure gallery and migration map |
+| `requirements/` | Environment and source provenance |
 
-- [`PROJECT_HISTORY.md`](PROJECT_HISTORY.md) — master technical/dissertation record: project rationale, experiments, numerical results, failures, fixes, design decisions, limitations, and supported interpretations.
-- [`DAILY_LOG.md`](DAILY_LOG.md) — chronological work-session record for new experiments and engineering changes.
-- [`docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md`](docs/PHASE1_DAILY_TARGETS_2026-09-25_TO_10-10.md) — dated Phase 1 engineering targets, evidence gates, and GitHub checkpoint routine.
-- [`requirements/ENVIRONMENTS.md`](requirements/ENVIRONMENTS.md) — environment strategy and reproducibility notes.
-
-## Frozen Results
-
-- [BEVFusion nuScenes subset findings](results/bevfusion_nuscenes_subset_20261002/FINDINGS.md), [metric comparison](results/bevfusion_nuscenes_subset_20261002/comparison.svg), and [class support](results/bevfusion_nuscenes_subset_20261002/class_support.svg)
-- [BEVFusion nuScenes mini pilot](results/bevfusion_nuscenes_mini_20261001/FINDINGS.md)
-
-- [CLOCs seed and epoch diagnostics](results/clocs_seed_diagnostics_20261001/FINDINGS.md), [3D AP differences](results/clocs_seed_diagnostics_20261001/three_seed_and_epoch24_3d_deltas.svg), and [comparison CSV](results/clocs_seed_diagnostics_20261001/ap40_comparison.csv)
-
-- [Three-model KITTI AP40 comparison](results/pv_rcnn_kitti/comparison.png) and [CSV](results/pv_rcnn_kitti/comparison.csv)
-
-- [Baseline-matched CLOCs AP40 figure](results/clocs_full_val_reduced/matched_ap40.png) and [CSV](results/clocs_full_val_reduced/matched_ap40.csv)
-- [CLOCs range/occlusion coverage figure](results/clocs_full_val_reduced/matched_coverage.png)
-- [OpenPCDet feasibility gate](docs/OPENPCDET_FEASIBILITY_2026-09-30.md)
-
-
-- [`results/depth_method_comparison.csv`](results/depth_method_comparison.csv)
-- [`results/depth_method_comparison.png`](results/depth_method_comparison.png)
-- [`results/camera_detector_comparison.csv`](results/camera_detector_comparison.csv)
-- [`results/camera_detector_comparison.png`](results/camera_detector_comparison.png)
-- [`results/yolov8_falcon_lidar_comparison.csv`](results/yolov8_falcon_lidar_comparison.csv)
-- [`results/yolov8_falcon_lidar_comparison.png`](results/yolov8_falcon_lidar_comparison.png)
-- [`results/yolov8_yolo26_lidar_comparison.csv`](results/yolov8_yolo26_lidar_comparison.csv)
-- [`results/yolov8_yolo26_lidar_comparison.png`](results/yolov8_yolo26_lidar_comparison.png)
-- [`results/pointpillars_kitti_ap40_strict_summary.csv`](results/pointpillars_kitti_ap40_strict_summary.csv)
-- [`results/pointpillars_kitti_ap40_strict.png`](results/pointpillars_kitti_ap40_strict.png)
-- [`results/pointpillars_distance_diagnostic.png`](results/pointpillars_distance_diagnostic.png)
-- [`results/pointpillars_evidence_manifest.json`](results/pointpillars_evidence_manifest.json)
-
-See [`results/README.md`](results/README.md) for the artifact-storage policy.
-
-## Storage Policy
-
-Datasets, virtual environments, model weights, and bulk generated `model_outputs/` are intentionally excluded from Git history. Source code, evaluation scripts, compact numerical results, dissertation-ready figures, and selected qualitative examples are version-controlled.
-
+Datasets, model checkpoints, virtual environments and bulk predictions are stored outside Git. See the [artifact policy](results/README.md#artifact-policy).

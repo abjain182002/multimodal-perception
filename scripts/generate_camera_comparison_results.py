@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 RESULTS_DIR = Path("results")
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-CSV_PATH = RESULTS_DIR / "camera_detector_comparison.csv"
-FIGURE_PATH = RESULTS_DIR / "camera_detector_comparison.png"
+CSV_PATH = RESULTS_DIR / "kitti/camera/detector_comparison/camera_detector_comparison.csv"
+FIGURE_PATH = RESULTS_DIR / "kitti/camera/detector_comparison/figures/camera_detector_comparison.png"
 
 
 # Frozen results from the controlled KITTI pilot experiment.
@@ -266,6 +266,9 @@ def make_figure():
 
 
 def main():
+    CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
+    FIGURE_PATH.parent.mkdir(parents=True, exist_ok=True)
+
     save_csv()
     make_figure()
 
@@ -280,3 +283,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

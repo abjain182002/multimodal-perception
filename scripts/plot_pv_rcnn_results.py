@@ -12,8 +12,8 @@ def digest(data):
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    out = root / "results/pv_rcnn_kitti"
-    baseline_path = root / "results/clocs_full_val_reduced/ap40.json"
+    out = root / "results/kitti/pv_rcnn/validation"
+    baseline_path = root / "results/kitti/clocs/baseline_matched_validation/ap40.json"
     baseline = json.loads(baseline_path.read_text())
     common = json.loads((out / "common_ap40.json").read_text())
     native = json.loads((out / "native_ap40.json").read_text())
@@ -98,3 +98,4 @@ Sources: [OpenPCDet](https://github.com/open-mmlab/OpenPCDet/tree/233f849829b6ac
 
 if __name__ == "__main__":
     main()
+

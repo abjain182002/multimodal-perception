@@ -29,7 +29,7 @@ def main():
                 + ". Use an environment containing NumPy and Matplotlib before recording."
             )
     root = Path(__file__).resolve().parents[1]
-    out = root / "results/pv_rcnn_kitti"
+    out = root / "results/kitti/pv_rcnn/validation"
     expected = "709f818e3528acbb41e47cbb59fb0d541a188ac324d0269b7dd02ded017813a1"
     if digest(args.archive.read_bytes()) != expected:
         raise ValueError("Archive SHA-256 mismatch")
@@ -71,7 +71,7 @@ def main():
             raise ValueError("Unexpected checkpoint")
         if inference["protocol"]["checkpoint_sha256"] != checkpoint:
             raise ValueError("Inference checkpoint differs")
-        baseline_path = root / "results/clocs_full_val_reduced/ap40.json"
+        baseline_path = root / "results/kitti/clocs/baseline_matched_validation/ap40.json"
         baseline = json.loads(baseline_path.read_text())
         if baseline["status"] != "PASS" or baseline["frames"] != 3769:
             raise ValueError("CLOCs baseline-matched result unavailable")
@@ -116,3 +116,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

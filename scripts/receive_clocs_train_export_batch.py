@@ -21,7 +21,7 @@ def digest_file(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--archive', required=True)
-    parser.add_argument('--receipt', default='results/clocs_train_16_dense_export_stdout_receipt.json')
+    parser.add_argument('--receipt', default='results/kitti/clocs/training_exports/clocs_train_16_dense_export_stdout_receipt.json')
     parser.add_argument('--output-dir', required=True)
     args = parser.parse_args()
 
@@ -117,3 +117,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

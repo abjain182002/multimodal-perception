@@ -38,7 +38,7 @@ for ratio in (0, 8):
     runs.append(output)
     command = [sys.executable, '-m', 'scripts.train_clocs_128',
         '--data-dir', str(data),
-        '--batch-manifest', str(repo / 'results/clocs_train_export_128_manifest.json'),
+        '--batch-manifest', str(repo / 'results/kitti/clocs/training_exports/clocs_train_export_128_manifest.json'),
         '--train-ids', str(inputs / 'splits/train.txt'),
         '--val-ids', str(inputs / 'splits/val.txt'),
         '--output-dir', str(output), '--negative-ratio', str(ratio),
@@ -59,3 +59,4 @@ print('SHA-256:', digest.hexdigest())
 If either run fails, preserve its output and share the error; do not delete runs
 or manufacture a PASS report. CPU tests have exercised the trainer, but this
 release has not been run here on real KITTI data or Kaggle CUDA.
+

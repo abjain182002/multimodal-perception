@@ -1,10 +1,10 @@
 # Validated Experimental Results
 
-> **BEVFusion update (2 October 2026):** Official pretrained pipelines completed the same availability-selected 1,231-sample / 31-scene nuScenes validation subset. LiDAR / camera–LiDAR mAP × 100 = **64.2114 / 67.8147**; NDS × 100 = **69.2087 / 71.1543**. Differences are +3.6033 and +1.9457 points. All ten classes have filtered GT support. This is 20.45% of official validation, not random, not full validation and not a controlled camera ablation. [Findings and provenance](bevfusion_nuscenes_subset_20261002/FINDINGS.md). The separate [81-sample mini pilot](bevfusion_nuscenes_mini_20261001/FINDINGS.md) is also measured.
+> **BEVFusion update (2 October 2026):** Official pretrained pipelines completed the same availability-selected 1,231-sample / 31-scene nuScenes validation subset. LiDAR / camera–LiDAR mAP × 100 = **64.2114 / 67.8147**; NDS × 100 = **69.2087 / 71.1543**. Differences are +3.6033 and +1.9457 points. All ten classes have filtered GT support. This is 20.45% of official validation, not random, not full validation and not a controlled camera ablation. [Findings and provenance](nuscenes/bevfusion/validation_subset/FINDINGS.md). The separate [81-sample mini pilot](nuscenes/bevfusion/mini/FINDINGS.md) is also measured.
 
-> **Current CLOCs status (1 October 2026):** Three aligned epoch-12 seeds completed full 3,769-frame validation with exact baseline parity. Moderate 3D AP40 = 79.8616 / 76.2666 / 78.7616, against PointPillars 79.1299. Only one seed improves Moderate; all three reduce Hard. Seed 20260928's epoch-24 continuation improved development candidate AP but reduced Moderate detection AP40 to 79.4874. Report descriptive seed variability, not statistical significance. This current diagnostic qualifies the earlier single-checkpoint results preserved below. See [findings](clocs_seed_diagnostics_20261001/FINDINGS.md) and [all metrics](clocs_seed_diagnostics_20261001/ap40_comparison.csv).
+> **Current CLOCs status (1 October 2026):** Three aligned epoch-12 seeds completed full 3,769-frame validation with exact baseline parity. Moderate 3D AP40 = 79.8616 / 76.2666 / 78.7616, against PointPillars 79.1299. Only one seed improves Moderate; all three reduce Hard. Seed 20260928's epoch-24 continuation improved development candidate AP but reduced Moderate detection AP40 to 79.4874. Report descriptive seed variability, not statistical significance. This current diagnostic qualifies the earlier single-checkpoint results preserved below. See [findings](kitti/clocs/seed_diagnostics/FINDINGS.md) and [all metrics](kitti/clocs/seed_diagnostics/ap40_comparison.csv).
 
-> **PV-RCNN update (30 September 2026):** Official pretrained OpenPCDet PV-RCNN achieved Car strict IoU 0.70 3D AP40 **92.1047 / 84.3604 / 82.4830** on the same 3,769-frame validation split. Native and pinned MMDetection3D evaluation agreed exactly across all nine metrics. This is a LiDAR-only reproduction, not PV-RCNN++/Azitt or an equal-training-budget ablation. See [findings and comparison](pv_rcnn_kitti/FINDINGS.md).
+> **PV-RCNN update (30 September 2026):** Official pretrained OpenPCDet PV-RCNN achieved Car strict IoU 0.70 3D AP40 **92.1047 / 84.3604 / 82.4830** on the same 3,769-frame validation split. Native and pinned MMDetection3D evaluation agreed exactly across all nine metrics. This is a LiDAR-only reproduction, not PV-RCNN++/Azitt or an equal-training-budget ablation. See [findings and comparison](kitti/pv_rcnn/validation/FINDINGS.md).
 
 > **Historical CLOCs checkpoint (28–29 September 2026):** Baseline-matched reduced-FOV validation is complete on 3,769 frames. All nine historical PointPillars AP40 metrics reproduce exactly (maximum error 0.0). Car 3D Moderate is 79.1299 → 79.2542 (+0.1243 points); Hard is 76.1566 → 73.6326 (-2.5239). This mixed result supersedes the earlier raw-cloud diagnostic for the historical-baseline comparison. See [verified findings and limitations](../docs/CLOCS_BASELINE_MATCHED_RESULT_2026-09-29.md).
 
@@ -92,8 +92,8 @@ V3 did not improve holdout MAE or RMSE, so the small development gain was not tr
 
 Tracked artifacts:
 
-- [depth_method_comparison.csv](depth_method_comparison.csv)
-- [depth_method_comparison.png](depth_method_comparison.png)
+- [depth_method_comparison.csv](kitti/depth/method_comparison/depth_method_comparison.csv)
+- [depth_method_comparison.png](kitti/depth/method_comparison/figures/depth_method_comparison.png)
 
 ## 2.4 Signed depth bias
 
@@ -256,8 +256,8 @@ Holdout mean prediction time: **0.058 s/frame**, approximately **17.216 FPS**.
 
 Tracked artifacts:
 
-- [camera_detector_comparison.csv](camera_detector_comparison.csv)
-- [camera_detector_comparison.png](camera_detector_comparison.png)
+- [camera_detector_comparison.csv](kitti/camera/detector_comparison/camera_detector_comparison.csv)
+- [camera_detector_comparison.png](kitti/camera/detector_comparison/figures/camera_detector_comparison.png)
 
 ## 4.3 Controlled camera interpretation
 
@@ -446,8 +446,8 @@ Runtime is not included in the formal comparison artifact because the present YO
 
 Tracked artifacts:
 
-- [yolov8_falcon_lidar_comparison.csv](yolov8_falcon_lidar_comparison.csv)
-- [yolov8_falcon_lidar_comparison.png](yolov8_falcon_lidar_comparison.png)
+- [yolov8_falcon_lidar_comparison.csv](kitti/camera/lidar_depth_comparison/yolov8_falcon_lidar_comparison.csv)
+- [yolov8_falcon_lidar_comparison.png](kitti/camera/lidar_depth_comparison/figures/yolov8_falcon_lidar_comparison.png)
 
 Relevant scripts:
 
@@ -492,19 +492,19 @@ For a professor or reviewer, the most useful files are:
 - `PROJECT_HISTORY.md` — detailed chronological technical record, decisions, failures and interpretations.
 - `DAILY_LOG.md` — dated working log.
 - `results/VALIDATED_RESULTS.md` — this consolidated numerical summary.
-- `results/depth_method_comparison.csv` — frozen V1/V2/V3 depth comparison.
-- `results/depth_method_comparison.png` — figure for the depth-method comparison.
-- `results/camera_detector_comparison.csv` — frozen YOLOv8x vs Falcon camera pilot.
-- `results/camera_detector_comparison.png` — figure for the camera comparison.
-- `results/yolov8_falcon_lidar_comparison.csv` — frozen controlled multimodal detector comparison.
-- `results/yolov8_falcon_lidar_comparison.png` — figure for the controlled multimodal comparison.
+- `results/kitti/depth/method_comparison/depth_method_comparison.csv` — frozen V1/V2/V3 depth comparison.
+- `results/kitti/depth/method_comparison/figures/depth_method_comparison.png` — figure for the depth-method comparison.
+- `results/kitti/camera/detector_comparison/camera_detector_comparison.csv` — frozen YOLOv8x vs Falcon camera pilot.
+- `results/kitti/camera/detector_comparison/figures/camera_detector_comparison.png` — figure for the camera comparison.
+- `results/kitti/camera/lidar_depth_comparison/yolov8_falcon_lidar_comparison.csv` — frozen controlled multimodal detector comparison.
+- `results/kitti/camera/lidar_depth_comparison/figures/yolov8_falcon_lidar_comparison.png` — figure for the controlled multimodal comparison.
 - `scripts/evaluate_yolov8_lidar_multiframe.py` — YOLOv8x+LiDAR development evaluator.
 - `scripts/evaluate_yolov8_lidar_holdout.py` — YOLOv8x+LiDAR independent holdout evaluator.
 - `scripts/evaluate_falcon_lidar_multiframe.py` — Falcon+LiDAR development evaluator.
 - `scripts/evaluate_falcon_lidar_holdout.py` — Falcon+LiDAR independent holdout evaluator.
-- `results/clocs_full_val_paired/paired_diagnostic.json` — full same-run AP40 measurements and historical baseline discrepancy.
-- `results/clocs_full_val_paired/coverage_diagnostic.json` — all-labelled-Car best-IoU coverage by range and occlusion, not AP40.
-- `results/clocs_full_val_paired/cases/case_studies.json` — audited rescue/loss examples.
+- `results/kitti/clocs/historical_raw_cloud_validation/paired_diagnostic.json` — full same-run AP40 measurements and historical baseline discrepancy.
+- `results/kitti/clocs/historical_raw_cloud_validation/coverage_diagnostic.json` — all-labelled-Car best-IoU coverage by range and occlusion, not AP40.
+- `results/kitti/clocs/historical_raw_cloud_validation/cases/case_studies.json` — audited rescue/loss examples.
 - `docs/CLOCS_FULL_VALIDATION_PAIRED_RESULT_2026-09-29.md` — interpretation and limitations.
 
 Bulk generated outputs and datasets are intentionally excluded from Git because of size and reproducibility policy.
@@ -525,24 +525,25 @@ The repository records:
 - scripts used for the Falcon+LiDAR and YOLOv8x+LiDAR controlled experiments,
 - version-controlled frozen result tables and figures for the depth, camera-detector and multimodal comparison studies.
 
-The 128-frame trained YOLO26x+CLOCs checkpoint has now completed reduced-FOV validation on all 3,769 frames with exact aggregate historical PointPillars AP parity. The accepted results are in `results/clocs_full_val_reduced/`. Preserve `results/clocs_full_val_paired/` as the earlier raw-cloud diagnostic, including its mismatch; its figures and case studies must not be presented as corrected-run evidence.
+The 128-frame trained YOLO26x+CLOCs checkpoint has now completed reduced-FOV validation on all 3,769 frames with exact aggregate historical PointPillars AP parity. The accepted results are in `results/kitti/clocs/baseline_matched_validation/`. Preserve `results/kitti/clocs/historical_raw_cloud_validation/` as the earlier raw-cloud diagnostic, including its mismatch; its figures and case studies must not be presented as corrected-run evidence.
 
 ---
 
 # 10. PointPillars baseline and CLOCs target preparation
 
-The pinned PointPillars LiDAR-only baseline was independently verified on the frozen SECOND KITTI validation split. At strict Car IoU 0.70, **3D AP40 = 90.3449 / 79.1299 / 76.1566** for Easy / Moderate / Hard. These are LiDAR-only detection metrics, not CLOCs fusion results. See `results/pointpillars_kitti_ap40_strict_summary.csv` and `results/pointpillars_evidence_manifest.json` for experiment details.
+The pinned PointPillars LiDAR-only baseline was independently verified on the frozen SECOND KITTI validation split. At strict Car IoU 0.70, **3D AP40 = 90.3449 / 79.1299 / 76.1566** for Easy / Moderate / Hard. These are LiDAR-only detection metrics, not CLOCs fusion results. See `results/kitti/pointpillars/pointpillars_kitti_ap40_strict_summary.csv` and `results/kitti/pointpillars/pointpillars_evidence_manifest.json` for experiment details.
 
-The full CLOCs GT audit processed **7,481** KITTI labelled frames (train **3,712**, validation **3,769**, overlap **0**). Exact Car GT counts were **28,742 before** and **28,374 after** the detector range filter, with **14,144** retained in training and **14,230** in validation. **859** frames have no retained Car GT. Source: `results/kitti_clocs_gt_audit.json` (commit `96c3a37`). The audit verifies GT preparation and split integrity; it is not an evaluation of CLOCs accuracy.
+The full CLOCs GT audit processed **7,481** KITTI labelled frames (train **3,712**, validation **3,769**, overlap **0**). Exact Car GT counts were **28,742 before** and **28,374 after** the detector range filter, with **14,144** retained in training and **14,230** in validation. **859** frames have no retained Car GT. Source: `results/kitti/clocs/training_exports/kitti_clocs_gt_audit.json` (commit `96c3a37`). The audit verifies GT preparation and split integrity; it is not an evaluation of CLOCs accuracy.
 
-Aligned real PointPillars dense candidates are available for two canonical training frames. Frame `000000` is a valid empty-Car/empty-YOLO negative control; frame `000149` has 10 retained Car GT, 9 YOLO Car detections, 107,136 candidate anchors, 158,838 feature rows, and 179 positive / 106,798 negative / 159 ignored candidates. On `000149`, a hash-verified 258-anchor stratified CPU comparison against independent SciPy/Qhull geometry passed with zero label disagreements and maximum absolute IoU error `2.968672907499581e-08` versus tolerance `0.0005`. This verifies a single real-frame geometry implementation, **not** the pinned CUDA evaluator, trained CLOCs, or KITTI AP. The CUDA reference crashed with signal 11 before producing a result. The earlier all-negative `reference_structural_smoke` uses placeholder zero IoU and remains excluded from training. Sources: `results/clocs_real_frame_000000_audit.json`, `results/clocs_real_frame_000149_audit.json`, and `results/clocs_000149_iou_scipy_audit.json`.
+Aligned real PointPillars dense candidates are available for two canonical training frames. Frame `000000` is a valid empty-Car/empty-YOLO negative control; frame `000149` has 10 retained Car GT, 9 YOLO Car detections, 107,136 candidate anchors, 158,838 feature rows, and 179 positive / 106,798 negative / 159 ignored candidates. On `000149`, a hash-verified 258-anchor stratified CPU comparison against independent SciPy/Qhull geometry passed with zero label disagreements and maximum absolute IoU error `2.968672907499581e-08` versus tolerance `0.0005`. This verifies a single real-frame geometry implementation, **not** the pinned CUDA evaluator, trained CLOCs, or KITTI AP. The CUDA reference crashed with signal 11 before producing a result. The earlier all-negative `reference_structural_smoke` uses placeholder zero IoU and remains excluded from training. Sources: `results/kitti/clocs/training_targets/frame_audits/clocs_real_frame_000000_audit.json`, `results/kitti/clocs/training_targets/frame_audits/clocs_real_frame_000149_audit.json`, and `results/kitti/clocs/training_exports/clocs_000149_iou_scipy_audit.json`.
 
 
 ---
 
 # 11. Additional controlled camera-model pilot
 
-A tracked YOLOv8x versus YOLO26x projected-LiDAR pilot used the same 10-frame development and 10-frame holdout comparison sets. At the fixed matched-detection operating point, YOLOv8x / YOLO26x had development depth MAE **1.492 / 1.272 m** (45 / 44 matched cars) and holdout MAE **1.789 / 1.669 m** (41 / 41 matched cars). The matching denominators are shown to avoid treating conditional depth error as full detection accuracy. The sets of matched cars need not be identical, so the lower observed MAE is not a paired improvement claim. These are not official 3D AP results. See `results/yolov8_yolo26_lidar_comparison.csv` and `.png`.
+A tracked YOLOv8x versus YOLO26x projected-LiDAR pilot used the same 10-frame development and 10-frame holdout comparison sets. At the fixed matched-detection operating point, YOLOv8x / YOLO26x had development depth MAE **1.492 / 1.272 m** (45 / 44 matched cars) and holdout MAE **1.789 / 1.669 m** (41 / 41 matched cars). The matching denominators are shown to avoid treating conditional depth error as full detection accuracy. The sets of matched cars need not be identical, so the lower observed MAE is not a paired improvement claim. These are not official 3D AP results. See `results/kitti/camera/lidar_depth_comparison/yolov8_yolo26_lidar_comparison.csv` and `.png`.
 
 A role-by-role inventory of the tracked result figures, backing numerical files, and limitations is kept in `docs/RESULT_FIGURE_INVENTORY.md`. Presence in Git does not certify visual legibility; inspect final figure exports before choosing dissertation and poster panels.
+
 

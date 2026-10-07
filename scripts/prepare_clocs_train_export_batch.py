@@ -142,11 +142,11 @@ def main():
     parser.add_argument("--train", required=True)
     parser.add_argument("--val", required=True)
     parser.add_argument("--manifest", default="configs/splits/kitti_second_split.json")
-    parser.add_argument("--evidence", default="results/pointpillars_evidence_manifest.json")
+    parser.add_argument("--evidence", default="results/kitti/pointpillars/pointpillars_evidence_manifest.json")
     parser.add_argument("--size", type=int, default=16)
     parser.add_argument("--seed", type=int, default=20260926)
     parser.add_argument("--include", nargs="*", default=[])
-    parser.add_argument("--output", default="results/clocs_train_export_batch_manifest.json")
+    parser.add_argument("--output", default="results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json")
     args = parser.parse_args()
     result = build_export_batch(args.dataset, args.train, args.val, args.manifest,
                                 args.evidence, args.size, args.seed, args.include)
@@ -168,3 +168,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

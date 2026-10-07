@@ -4,7 +4,7 @@ import csv
 import hashlib
 import json
 
-root = Path("results/clocs_seed_diagnostics_20261001")
+root = Path("results/kitti/clocs/seed_diagnostics")
 load = lambda name: json.loads((root / name).read_text())
 runs = [
     ("Seed 20260928, epoch 12", load("seed_20260928_ap40.json")),
@@ -139,3 +139,4 @@ manifest = {
 }
 (root / "figure_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 print("FIGURES, COMPARISON AND FINDINGS SAVED:", root)
+

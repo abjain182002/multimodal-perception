@@ -110,8 +110,8 @@ def audit_dependencies(root, manifest):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", required=True, help="Home of datasets/ and external/")
-    parser.add_argument("--manifest", default="results/clocs_train_export_batch_manifest.json")
-    parser.add_argument("--output", default="results/phase1_mac_dependency_inventory.json")
+    parser.add_argument("--manifest", default="results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json")
+    parser.add_argument("--output", default="results/audits/environment/phase1_mac_dependency_inventory.json")
     args = parser.parse_args()
     report = audit_dependencies(args.root, args.manifest)
     output = Path(args.output)
@@ -122,3 +122,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

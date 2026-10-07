@@ -13,8 +13,8 @@ From `azitt310` at the repository root:
 ```bash
 python -m scripts.audit_phase1_mac_dependencies \
   --root "$HOME/Major_Project" \
-  --manifest results/clocs_train_export_batch_manifest.json \
-  --output results/phase1_mac_dependency_inventory.json
+  --manifest results/kitti/clocs/training_exports/clocs_train_export_batch_manifest.json \
+  --output results/audits/environment/phase1_mac_dependency_inventory.json
 ```
 
 The JSON lists actual checkout SHAs (when a checkout exists), relevant config
@@ -65,3 +65,4 @@ Inspect the Mac dependency JSON and the SHA-verified 16-frame archive. Save
 small reviewed manifests in GitHub; keep the raw KITTI archive outside Git.
 On the next available CUDA runtime, verify the archive first, then process
 the fixed train-only queue. No validation-frame hyperparameter decisions.
+

@@ -19,8 +19,8 @@ RESULTS_DIR = (
 )
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-TABLE_OUTPUT = RESULTS_DIR / "depth_method_comparison.csv"
-FIGURE_OUTPUT = RESULTS_DIR / "depth_method_comparison.png"
+TABLE_OUTPUT = RESULTS_DIR / "kitti/depth/method_comparison/depth_method_comparison.csv"
+FIGURE_OUTPUT = RESULTS_DIR / "kitti/depth/method_comparison/figures/depth_method_comparison.png"
 
 
 def load_errors(path):
@@ -219,6 +219,9 @@ def print_summary(rows):
 
 
 def main():
+    TABLE_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    FIGURE_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+
     dev_rows = evaluate_split(
         "Development",
         DEV_CSV,
@@ -238,3 +241,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

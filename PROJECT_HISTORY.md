@@ -481,8 +481,8 @@ Occlusion level 2 was associated with materially larger V1 errors.
 
 A dissertation-ready comparison artifact was generated:
 
-- `results/depth_method_comparison.csv`
-- `results/depth_method_comparison.png`
+- `results/kitti/depth/method_comparison/depth_method_comparison.csv`
+- `results/kitti/depth/method_comparison/figures/depth_method_comparison.png`
 
 Exact frozen table:
 
@@ -910,8 +910,8 @@ The dissertation should **not** frame the goal as making Falcon win. The academi
 
 Frozen pilot artifacts:
 
-- `results/camera_detector_comparison.csv`
-- `results/camera_detector_comparison.png`
+- `results/kitti/camera/detector_comparison/camera_detector_comparison.csv`
+- `results/kitti/camera/detector_comparison/figures/camera_detector_comparison.png`
 
 Figure title:
 
@@ -1465,8 +1465,8 @@ This was a code-conversion issue rather than a detector, dataset, calibration or
 
 Created:
 
-- `results/yolov8_falcon_lidar_comparison.csv`
-- `results/yolov8_falcon_lidar_comparison.png`
+- `results/kitti/camera/lidar_depth_comparison/yolov8_falcon_lidar_comparison.csv`
+- `results/kitti/camera/lidar_depth_comparison/figures/yolov8_falcon_lidar_comparison.png`
 
 The comparison figure contains the depth-error metrics only.
 
@@ -1563,8 +1563,8 @@ A separate standardized runtime benchmark will be performed later.
 
 Created:
 
-- `results/yolov8_yolo26_lidar_comparison.csv`
-- `results/yolov8_yolo26_lidar_comparison.png`
+- `results/kitti/camera/lidar_depth_comparison/yolov8_yolo26_lidar_comparison.csv`
+- `results/kitti/camera/lidar_depth_comparison/figures/yolov8_yolo26_lidar_comparison.png`
 - `scripts/evaluate_yolo26_lidar_multiframe.py`
 - `scripts/evaluate_yolo26_lidar_holdout.py`
 - `scripts/generate_yolov8_yolo26_lidar_comparison.py`
@@ -1783,19 +1783,19 @@ The analysis also shows why apparent unmatched predictions must be interpreted u
 
 Compact GitHub artifacts include:
 
-- `results/pointpillars_kitti_ap40_strict_summary.csv`
-- `results/pointpillars_kitti_ap40_strict.png`
-- `results/pointpillars_kitti_ap40_strict.pdf`
-- `results/kitti_full_metrics.json`
-- `results/kitti_full_results.txt`
-- `results/pointpillars_distance_diagnostic.png`
-- `results/pointpillars_distance_diagnostic.pdf`
-- `results/kitti_split_overlap_audit.json`
-- `results/pointpillars_evidence_manifest.json`
-- `results/pointpillars_moderate_failure_summary.json`
-- `results/pointpillars_prediction_diagnostics_summary.json`
-- `results/pointpillars_high_conf_unmatched_refined.json`
-- `results/pointpillars_final_case_studies.json`
+- `results/kitti/pointpillars/pointpillars_kitti_ap40_strict_summary.csv`
+- `results/kitti/pointpillars/figures/pointpillars_kitti_ap40_strict.png`
+- `results/kitti/pointpillars/figures/pointpillars_kitti_ap40_strict.pdf`
+- `results/kitti/pointpillars/kitti_full_metrics.json`
+- `results/kitti/pointpillars/kitti_full_results.txt`
+- `results/kitti/pointpillars/figures/pointpillars_distance_diagnostic.png`
+- `results/kitti/pointpillars/figures/pointpillars_distance_diagnostic.pdf`
+- `results/audits/kitti/kitti_split_overlap_audit.json`
+- `results/kitti/pointpillars/pointpillars_evidence_manifest.json`
+- `results/kitti/pointpillars/pointpillars_moderate_failure_summary.json`
+- `results/kitti/pointpillars/pointpillars_prediction_diagnostics_summary.json`
+- `results/kitti/pointpillars/pointpillars_high_conf_unmatched_refined.json`
+- `results/kitti/pointpillars/pointpillars_final_case_studies.json`
 - three frozen qualitative case-study figures in PNG and PDF form
 
 Bulk predictions, model weights and datasets remain outside Git history.
@@ -1814,7 +1814,7 @@ Local repository transfer and integrity verification completed. Milestone commit
 
 ## 2026-09-25 — Full KITTI CLOCs GT audit and CPU 3D-IoU reference
 
-The canonical SECOND train/validation manifest was verified with 3,712 training and 3,769 validation frames and no overlap. The Mac audit `scripts/audit_kitti_gt.py` processed all 7,481 KITTI labelled frames and saved `results/kitti_clocs_gt_audit.json` (commit `96c3a37`). For the exact Car class, 28,742 GT boxes precede the pinned CLOCs/SECOND BEV range filter; 28,374 remain, with 368 filtered out. Training retains 14,144 Cars and validation retains 14,230. There are 859 frames with no Car GT after filtering; these can legitimately yield all-negative candidate targets.
+The canonical SECOND train/validation manifest was verified with 3,712 training and 3,769 validation frames and no overlap. The Mac audit `scripts/audit_kitti_gt.py` processed all 7,481 KITTI labelled frames and saved `results/kitti/clocs/training_exports/kitti_clocs_gt_audit.json` (commit `96c3a37`). For the exact Car class, 28,742 GT boxes precede the pinned CLOCs/SECOND BEV range filter; 28,374 remain, with 368 filtered out. Training retains 14,144 Cars and validation retains 14,230. There are 859 frames with no Car GT after filtering; these can legitimately yield all-negative candidate targets.
 
 The GT audit and 84-test Mac suite passed at `96c3a37`. The saved `000001_dataset_schema_compatibility.npz` is a structural smoke test only: its 107,136 candidates all have placeholder zero IoU and negative labels. It must not be used to train or evaluate a fusion model.
 
@@ -1839,3 +1839,4 @@ The Mac confirmed commit `6b913a1`: 100/100 tests passed in 0.551 seconds and th
 ### 2026-09-25 — Reconciled locked 29 August scope
 
 The user supplied the earlier locked-plan screenshot and reaffirmed MMDetection3D, the Azitt fusion baseline, Falcon, OpenPCDet, BEVFusion and MultiCorrupt; YOLOv8 reproduction and a modern YOLO baseline; PV-RCNN++/PointPillars; KITTI and nuScenes; semantic fusion, robustness, ablations, runtime and a Glasgow demo. NVIDIA-specific optimisation was designated **stretch only**. The daily schedule was amended to name each method explicitly and require its own measured evidence or exact blocker. Existing projected-LiDAR, YOLO, Falcon and PointPillars results remain separate from unverified Azitt/PV-RCNN++/BEVFusion reproductions. The old screenshot's Mac environment setup is already complete; real aligned dense 3D candidates remain the next gate. Previously generated figures will be inventoried and preserved before new images are produced from verified runs.
+

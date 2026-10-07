@@ -19,7 +19,7 @@ All output paths must be new; existing artifacts cause an error before inference
 
 Use the existing 000149 dense candidates for the first YOLO26 example. Store
 new rows/targets under `model_outputs/clocs_stage5_checkpoints/yolo26x/` and the
-small audit as `results/clocs_yolo26_frame_000149_audit.json`. The unchanged GT
+small audit as `results/kitti/clocs/training_targets/frame_audits/clocs_yolo26_frame_000149_audit.json`. The unchanged GT
 and candidates should retain 107136 candidates and positive/negative/ignored
 counts 179/106798/159. Camera detection and feature-row counts can differ.
 Compare actual output with those control counts before expanding the pilot.
@@ -50,7 +50,8 @@ camera `yolo26x`, Ultralytics 8.4.132, MPS and confidence threshold 0.25.
 The unchanged labels agree with the existing YOLOv8 control. There are 147 fewer
 feature rows than the YOLOv8 example (158838); this is a camera-association
 change, not evidence of improved detector accuracy. The original small audit
-is `results/clocs_yolo26_frame_000149_audit.json` on the Mac, awaiting its own
+is `results/kitti/clocs/training_targets/frame_audits/clocs_yolo26_frame_000149_audit.json` on the Mac, awaiting its own
 commit at the time of this receipt. Large files remain in the separate
 `yolo26x` directory outside Git. This receipt records reported execution;
 it is not an independent rerun of the local artifacts.
+

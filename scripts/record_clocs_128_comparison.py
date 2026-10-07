@@ -63,7 +63,7 @@ def read_run(root, ratio):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--runs', type=Path, required=True)
-    parser.add_argument('--output', type=Path, default=Path('results/clocs_128_comparison'))
+    parser.add_argument('--output', type=Path, default=Path('results/kitti/clocs/training_comparison'))
     args = parser.parse_args()
     runs = {ratio: read_run(args.runs, ratio) for ratio in EXPECTED}
     base, sampled = runs[0], runs[8]
@@ -139,3 +139,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

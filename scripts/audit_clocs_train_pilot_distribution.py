@@ -80,11 +80,11 @@ def inspect_frame(frame, root):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--summary', default='results/clocs_train_16_training_example_audit.json')
+    parser.add_argument('--summary', default='results/kitti/clocs/training_exports/clocs_train_16_training_example_audit.json')
     parser.add_argument('--data-dir', required=True)
-    parser.add_argument('--output', default='results/clocs_train_16_distribution_audit.json')
-    parser.add_argument('--png', default='results/clocs_train_16_distribution.png')
-    parser.add_argument('--pdf', default='results/clocs_train_16_distribution.pdf')
+    parser.add_argument('--output', default='results/kitti/clocs/training_exports/clocs_train_16_distribution_audit.json')
+    parser.add_argument('--png', default='results/kitti/clocs/training_exports/figures/clocs_train_16_distribution.png')
+    parser.add_argument('--pdf', default='results/kitti/clocs/training_exports/figures/clocs_train_16_distribution.pdf')
     args = parser.parse_args()
 
     summary = json.loads(Path(args.summary).read_text(encoding='utf-8'))
@@ -214,3 +214,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

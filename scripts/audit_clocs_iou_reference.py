@@ -137,7 +137,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", required=True, help="KITTI training directory containing calib/ and label_2/")
     parser.add_argument("--candidates", required=True, help="Original dense export NPZ")
-    parser.add_argument("--audit", default="results/clocs_real_frame_000149_audit.json")
+    parser.add_argument("--audit", default="results/kitti/clocs/training_targets/frame_audits/clocs_real_frame_000149_audit.json")
     parser.add_argument("--mmdet3d-root", default="/content/mmdetection3d")
     parser.add_argument("--output", default="results/clocs_000149_iou_reference_audit.json")
     parser.add_argument("--figure", default="results/clocs_000149_iou_parity.png")
@@ -233,3 +233,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
