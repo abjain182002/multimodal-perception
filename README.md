@@ -31,7 +31,7 @@ Each row is a separate evaluation; KITTI AP40 and nuScenes metrics are not inter
 - Original nuScenes subset evidence has been hash-verified and compact metrics, scripts, audits and summary curves imported. A CPU ground-truth replay reproduced both subset headline metrics exactly on 8 October; [replay evidence](results/nuscenes/bevfusion/validation_subset/replay_20261008/README.md) records the same-evaluator verification.
 - The nuScenes subset is selected by sensor availability, not randomly, and is not full validation. BEVFusion compares two pretrained pipelines, not a controlled camera ablation. Mini/subset overlap is unchecked.
 - CLOCs seed-29's Easy decline remains unexplained; full-AP40 score-blend testing, robustness, semantic fusion and comparable runtime across models remain pending. Validation was inspected iteratively.
-- Full nuScenes validation and the dissertation are still in progress. Existing detector architectures are reused; the contribution is integration, evaluation and analysis.
+- Parts 1–6 backups contain complete inputs for 3,273 / 6,019 validation samples (82 scenes; 54.38%). [Staging audit](results/nuscenes/preparation/parts01_06_20261008/README.md) records input availability; accuracy remains measured on the original 1,231-sample subset. Full nuScenes validation and the dissertation are still in progress. Existing detector architectures are reused; the contribution is integration, evaluation and analysis.
 
 ## Repository layout
 

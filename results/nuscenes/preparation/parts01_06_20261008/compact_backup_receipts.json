@@ -1,0 +1,101 @@
+{
+  "receipts/queue_v1.0-trainval03_blobs_lidar_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval03_blobs_lidar.tgz",
+    "source_archive_sha256": "b5ea4d8c73ef923f08e76a7437504b6fc5abce9d683fc5b7bd4247ab35e11597",
+    "backup": "queue_v1.0-trainval03_blobs_lidar_verified.zip",
+    "bytes": 3163149071,
+    "sha256": "c76deb1f0b272a91fec0fdd776064bcc7609a23699356d0082c88f7ee7e5a80e",
+    "selected_files": 4552,
+    "selected_bytes": 3161017600,
+    "scanned_tar_entries": 32832,
+    "restored": 4077,
+    "reused": 475
+  },
+  "receipts/queue_v1.0-trainval03_keyframes_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval03_keyframes.tgz",
+    "source_archive_sha256": "caa143a4895a540ae54f0b2a4c1b7b5defa1f641962aa2e6ebc87f45aea40227",
+    "backup": "queue_v1.0-trainval03_keyframes_verified.zip",
+    "bytes": 766188588,
+    "sha256": "5e223f2ecd52262dc25cf7f9aacbe902d4a0a7506c088e76e0cbf0b63e8d4517"
+  },
+  "receipts/queue_v1.0-trainval04_blobs_lidar_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval04_blobs_lidar.tgz",
+    "source_archive_sha256": "987b0d89eb896c2fdadd0959ff861536351f39f5182df96bf1459d9687ee9033",
+    "backup": "queue_v1.0-trainval04_blobs_lidar_verified.zip",
+    "bytes": 1854728834,
+    "sha256": "da1a3cd1c79f4643c91f93fb771fcaed5bd091130b669e682e17a3fc559ce39d",
+    "selected_files": 2669,
+    "selected_bytes": 1853489280,
+    "scanned_tar_entries": 33178,
+    "restored": 2393,
+    "reused": 276
+  },
+  "receipts/queue_v1.0-trainval04_keyframes_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval04_keyframes.tgz",
+    "source_archive_sha256": "f968f8fdcf72798d87eccc880c888985e2ef5fa29572e088c55b19c71083fd81",
+    "backup": "queue_v1.0-trainval04_keyframes_verified.zip",
+    "bytes": 434378047,
+    "sha256": "12c74c07ba3de7ca5bade02322df0dbbc07988dd025364abaae76e808b1c2f40",
+    "selected_files": 1932,
+    "selected_bytes": 433463926,
+    "scanned_tar_entries": 40923,
+    "restored": 1932,
+    "reused": 0
+  },
+  "receipts/queue_v1.0-trainval05_blobs_lidar_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval05_blobs_lidar.tgz",
+    "source_archive_sha256": "155f4fd5a019e8e82b732aaad05d907fae7709af85ffedd4043c5a9033978865",
+    "backup": "queue_v1.0-trainval05_blobs_lidar_verified.zip",
+    "bytes": 1630901887,
+    "sha256": "bd78d8e76e643b4982813acc3a7327e736a5ebbee681f2420d4d021bdd2bb822",
+    "selected_files": 2347,
+    "selected_bytes": 1629811840,
+    "scanned_tar_entries": 33457,
+    "restored": 2104,
+    "reused": 243
+  },
+  "receipts/queue_v1.0-trainval05_keyframes_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval05_keyframes.tgz",
+    "source_archive_sha256": "fe1dcdf1acf15691692952f7afc8691f034efa52ce61c49abb235a5f6db5d941",
+    "backup": "queue_v1.0-trainval05_keyframes_verified.zip",
+    "bytes": 371415936,
+    "sha256": "f401bd4be9663cb26aec7aebb97a20117dc40a4e476875380e9a22071b8935a9",
+    "selected_files": 1701,
+    "selected_bytes": 370611107,
+    "scanned_tar_entries": 41353,
+    "restored": 1701,
+    "reused": 0
+  },
+  "receipts/queue_v1.0-trainval06_blobs_lidar_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval06_blobs_lidar.tgz",
+    "source_archive_sha256": "4168aabf4337aa114ee1811982a27bc73e4af4fc6bbbd2a42718e272861dfb6b",
+    "backup": "queue_v1.0-trainval06_blobs_lidar_verified.zip",
+    "bytes": 7036474734,
+    "sha256": "afd67eb9fa277b6d31d046683cdfaa2cc4fab22122c84e374d3d5921d49b836d",
+    "selected_files": 10126,
+    "selected_bytes": 7031688320,
+    "scanned_tar_entries": 33485,
+    "restored": 9078,
+    "reused": 1048
+  },
+  "receipts/queue_v1.0-trainval06_keyframes_verified.zip.receipt.json": {
+    "status": "DRIVE_BACKUP_VERIFIED",
+    "source_archive": "v1.0-trainval06_keyframes.tgz",
+    "source_archive_sha256": "7af5ffc6ed7b4abdaaa153180af13218fda2bc031bf4bb4c7be68e2c993239dc",
+    "backup": "queue_v1.0-trainval06_keyframes_verified.zip",
+    "bytes": 1519180900,
+    "sha256": "2d3b284630f077e41dbd44d3a49f5094304148df164fab07add91cdbb42ed98d",
+    "selected_files": 7336,
+    "selected_bytes": 1515712083,
+    "scanned_tar_entries": 41343,
+    "restored": 7336,
+    "reused": 0
+  }
+}

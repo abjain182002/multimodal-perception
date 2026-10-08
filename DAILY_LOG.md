@@ -283,3 +283,12 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Verified the supplied 1,161,924-byte replay ZIP SHA-256 aa421f2e9fb092fabf56a004f26a54da1d6a7fdd755631ab22bbe33674728726, ZIP CRC, all 60 manifest member hashes/sizes and consistency of scripts/audits/stored metrics.
 - Imported compact replay records under results/nuscenes/bevfusion/validation_subset/replay_20261008/. Complete detailed metric arrays and PR/TP PDFs remain in the verified Drive ZIP; its complete member manifest is committed.
 - Same-evaluator reproduction is now verified. Full-validation expansion, subset representativeness, and mini/subset overlap remain unresolved; no additional ground-truth evaluation was performed during this import.
+
+
+## 8 October 2026 — nuScenes parts 03–06 staging and backup coverage
+
+- Reused the hash-verified part-03 keyframe backup; selectively extracted and verified required validation sensor files from the remaining part-03 LiDAR and parts 04–06 keyframe/LiDAR archives. All eight backups have verified Drive receipts. Temporary downloaded archives and duplicate local backup ZIPs were removed after verification; sensor files and Drive backups were retained.
+- The union of parts 01–06 backup indexes covers 51,151 / 94,180 required files and complete inputs for 3,273 / 6,019 samples (54.3778%), across 82 complete scenes, with zero partial scenes. All original 1,231 frozen tokens remain covered.
+- Coverage verification uses ZIP indexes, sizes and previously verified receipts; it does not repeat all sensor-content or full archive hashes. New inference/accuracy evaluation remains pending.
+- Verified the supplied 1,998,546-byte staging evidence ZIP SHA-256 df02691f4838549e020c7deda00bfd5342334c5702ae652eefd9c9ced8e9a108, CRC, all 12 source-member hashes/sizes, coverage totals and eight receipt/archive provenance matches.
+- Imported compact audit, scene/sample records, receipt summaries and complete source-member manifest under results/nuscenes/preparation/parts01_06_20261008/. Full sensor-member maps and available-file list remain in the verified Drive evidence ZIP; no measured accuracy records were changed.

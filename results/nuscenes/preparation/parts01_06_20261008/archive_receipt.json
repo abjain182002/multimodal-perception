@@ -1,0 +1,22 @@
+{
+  "status": "STAGING_ARCHIVE_AND_MEMBERS_VERIFIED",
+  "date": "2026-10-08",
+  "archive": "nuscenes_parts03_06_staging_verified.zip",
+  "bytes": 1998546,
+  "sha256": "df02691f4838549e020c7deda00bfd5342334c5702ae652eefd9c9ced8e9a108",
+  "zip_entries": 13,
+  "source_members_verified": 12,
+  "checks": [
+    "ZIP CRC",
+    "Exact manifest membership and every source member hash and size",
+    "Unique sample and filename counts",
+    "Scene and sample totals",
+    "Receipt and coverage audit provenance consistency"
+  ],
+  "excluded_from_compact_import": [
+    "available_required_files.txt",
+    "Full per-sensor member maps in eight backup receipts"
+  ],
+  "complete_archive_drive_path": "Major_Project/nuscenes_full_validation/nuscenes_parts03_06_staging_verified.zip",
+  "scope": "Verification of supplied staging evidence. Sensor archives and full metadata were not accessed or rechecked during import. No accuracy evaluation."
+}
