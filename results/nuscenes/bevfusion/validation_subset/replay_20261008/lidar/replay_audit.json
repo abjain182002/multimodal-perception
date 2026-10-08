@@ -1,0 +1,29 @@
+{
+  "status": "GROUND_TRUTH_REPLAY_PASS",
+  "samples": 1231,
+  "scenes": 31,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 11222,
+    "pedestrian": 7210,
+    "traffic_cone": 5402,
+    "bicycle": 644,
+    "bus": 308,
+    "truck": 1638,
+    "construction_vehicle": 478,
+    "barrier": 4963,
+    "motorcycle": 165,
+    "trailer": 246
+  },
+  "mAP": 0.6421140063400634,
+  "NDS": 0.6920865595499972,
+  "maximum_absolute_errors": {
+    "metrics_summary.json": 5.551115123125783e-17,
+    "metrics_details.json": 8.881784197001252e-16
+  },
+  "comparison_tolerance": 1e-12,
+  "excluded_from_comparison": [
+    "eval_time"
+  ],
+  "predictions_sha256": "16cbf8c35c81571d3990867b0148fd42c8bebcac626a8c0363431cde96abf07b"
+}

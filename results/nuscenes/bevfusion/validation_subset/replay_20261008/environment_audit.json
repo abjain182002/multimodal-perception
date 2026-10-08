@@ -1,0 +1,18 @@
+{
+  "status": "CPU_EVALUATOR_SOURCE_PASS",
+  "python": "3.10.22 (main, Oct  3 2026, 01:32:06) [Clang 22.1.3 ]",
+  "packages": {
+    "nuscenes-devkit": "1.2.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "matplotlib": "3.8.4",
+    "scikit-learn": "1.7.2",
+    "shapely": "2.0.7"
+  },
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  }
+}

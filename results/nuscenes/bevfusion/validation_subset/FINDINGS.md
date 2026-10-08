@@ -45,8 +45,14 @@ scripts, frozen tokens, split and scene records, and official summary curves are
 now imported under original_evidence/. The complete archive manifest and the
 new verification receipt record provenance and exclusions. Large predictions,
 converted annotation pickle, sensor manifest, logs and other PR/TP curves remain
-in the hash-verified source archive. A CPU ground-truth evaluation replay is still
-pending. Historical RESUME_NOTE.json predates completed accuracy evaluation.
+in the hash-verified source archive. A CPU ground-truth evaluation replay passed on 8 October; see
+[replay evidence](replay_20261008/README.md). Both headline scores reproduced
+exactly; the maximum summary/detail absolute difference was
+8.881784197001252e-16, below 1e-12, excluding evaluation time. This checks
+reproduction with the same evaluator, not independent cross-implementation
+agreement. Compact replay records and the complete archive member manifest
+are preserved; detailed metric arrays and all curves remain in the verified
+replay ZIP on Drive. Historical RESUME_NOTE.json predates completed accuracy evaluation.
 
 Full evidence remains in the project Drive folder:
 `Major_Project/nuscenes_full_validation/bevfusion_subset_validation/` and

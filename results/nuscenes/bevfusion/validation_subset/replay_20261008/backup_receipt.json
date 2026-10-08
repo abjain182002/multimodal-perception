@@ -1,0 +1,245 @@
+{
+  "status": "REPLAY_DRIVE_BACKUP_VERIFIED",
+  "files": {
+    "environment_audit.json": {
+      "bytes": 715,
+      "sha256": "2044445a8e8ec107eb67c854af6d0d28604225fb7cf0804875624252e17ce50e"
+    },
+    "lidar/metrics_details.json": {
+      "bytes": 769148,
+      "sha256": "894d63adc46f1993ae6afb977314e87a596d3363c415c9e0949f8bfe51f6a66b"
+    },
+    "lidar/metrics_summary.json": {
+      "bytes": 5211,
+      "sha256": "2466921421ac0d1b808a82da17f8846a72b6b125351c1bc5280246028171b938"
+    },
+    "lidar/plots/barrier_pr.pdf": {
+      "bytes": 15068,
+      "sha256": "ef712aa7568a850e84bde4edfd99287b7ad57109921a50554031ea7272406fb5"
+    },
+    "lidar/plots/barrier_tp.pdf": {
+      "bytes": 17483,
+      "sha256": "cd4167c006047924c16079f6cb04d01112a1b49bc33146ad3532f7763266de48"
+    },
+    "lidar/plots/bicycle_pr.pdf": {
+      "bytes": 13494,
+      "sha256": "4550365eedbe3c823e4b2cfa7502f2b5bc3f69fb73510112db83a0389fd6c4b8"
+    },
+    "lidar/plots/bicycle_tp.pdf": {
+      "bytes": 17931,
+      "sha256": "e1a9bbceb79c5cad9dcb8daa9835472a5bc8f3f285d196c29a606b6c24d57fab"
+    },
+    "lidar/plots/bus_pr.pdf": {
+      "bytes": 14725,
+      "sha256": "71c536a4068baae67ee13a664ccadcdc852033e12c7ea3f92e3863482255bc3b"
+    },
+    "lidar/plots/bus_tp.pdf": {
+      "bytes": 18262,
+      "sha256": "48fe67900e2f1e539ce0774794978a92560bda81cf74effe3d44b15cac151428"
+    },
+    "lidar/plots/car_pr.pdf": {
+      "bytes": 15007,
+      "sha256": "b1e7a58be7226eb964bf5789053065b6daa93bfc34a878e55707336bc53d4916"
+    },
+    "lidar/plots/car_tp.pdf": {
+      "bytes": 18813,
+      "sha256": "7a919756987d4afeec07f17aeca51cae6237f71da363f95b98fc3f9bb7b52147"
+    },
+    "lidar/plots/construction_vehicle_pr.pdf": {
+      "bytes": 15310,
+      "sha256": "ec37085df9eebe3d88fd52df4632e73b4fee79677745bcfeb0668d93511a6985"
+    },
+    "lidar/plots/construction_vehicle_tp.pdf": {
+      "bytes": 18620,
+      "sha256": "e1c49ef7eb3744b6c0f964c8c63aaade7dee48660f4c42bbd6cd86c6a3176448"
+    },
+    "lidar/plots/dist_pr_0.5.pdf": {
+      "bytes": 21163,
+      "sha256": "f5490fdad60abd43c2c7bbb34a437e2e70367dd861885925e87de9cfdaab1bce"
+    },
+    "lidar/plots/dist_pr_1.0.pdf": {
+      "bytes": 21910,
+      "sha256": "9575cbbf42a04e9cce50456427b8e92fe1e473920eabb89adaa3e79a76a3475b"
+    },
+    "lidar/plots/dist_pr_2.0.pdf": {
+      "bytes": 22079,
+      "sha256": "c48d14e0de95be92963dac2f79a96ba8f0e3976747dc244f0e5bd87e017bcb53"
+    },
+    "lidar/plots/dist_pr_4.0.pdf": {
+      "bytes": 21967,
+      "sha256": "191b199d6d15f55e4e9aaa8bc21aba464a2272de0c484c226e23787a23cae131"
+    },
+    "lidar/plots/motorcycle_pr.pdf": {
+      "bytes": 13810,
+      "sha256": "a184d601059429c94ad4bbcbb062f56fabaa08ee45e7a3651e1b2099c95781db"
+    },
+    "lidar/plots/motorcycle_tp.pdf": {
+      "bytes": 17898,
+      "sha256": "08e61bda87294ac23b3db5c54d4287ac1db347391cce9db49d5d8b7620615fdb"
+    },
+    "lidar/plots/pedestrian_pr.pdf": {
+      "bytes": 14808,
+      "sha256": "7caa12adb2a8d8d42bc59ee44b9c6ac67455bf9d1f0ffd61f069aa6ad39499d8"
+    },
+    "lidar/plots/pedestrian_tp.pdf": {
+      "bytes": 19261,
+      "sha256": "85270a846eae806e3a1f14541f9c5475abb181af4b45e791133d3f79c23a4fb1"
+    },
+    "lidar/plots/summary.pdf": {
+      "bytes": 84631,
+      "sha256": "d173ea0b0db16acfa5f764c50641a08c4f737a37450f638d23b37f1a66076226"
+    },
+    "lidar/plots/traffic_cone_pr.pdf": {
+      "bytes": 14699,
+      "sha256": "9229d2454b478ef7d1072a0a4d427433d0accbc4ea3fc5dc6b2d2a72c42cf045"
+    },
+    "lidar/plots/traffic_cone_tp.pdf": {
+      "bytes": 16329,
+      "sha256": "a22b6470ad80c04eef5ce55bd5df84adf4bd10f2997f1e1e1485d247b06bca37"
+    },
+    "lidar/plots/trailer_pr.pdf": {
+      "bytes": 14500,
+      "sha256": "4ea80725f35dd1e0a35ea02becf543ad73cc0c5e47091796fd7bcb2ebca05cd4"
+    },
+    "lidar/plots/trailer_tp.pdf": {
+      "bytes": 18201,
+      "sha256": "fea87af4afeecd1e52070ccd51cab67ef50fd3b3adfb4fe8f63bee3b26e11cbd"
+    },
+    "lidar/plots/truck_pr.pdf": {
+      "bytes": 15505,
+      "sha256": "5ed15fcf8fbcd8a7733fd6deb7279577ad9dab4ae22aa39af6f1b0ca5c12b4a1"
+    },
+    "lidar/plots/truck_tp.pdf": {
+      "bytes": 18283,
+      "sha256": "391545f152b8462b44a926aa3ad70a10d3d7bbe4aeed9e26cebd4fd18efcfcfc"
+    },
+    "lidar/replay_audit.json": {
+      "bytes": 741,
+      "sha256": "0f9f236346a879f97a98e77a428664d0498402c59bae81e0e2db9aad69a238d4"
+    },
+    "lidar_camera/metrics_details.json": {
+      "bytes": 771300,
+      "sha256": "c15fb2896703525554d0517ca6914020fc56681310ec46cc168796c7a86f77db"
+    },
+    "lidar_camera/metrics_summary.json": {
+      "bytes": 5205,
+      "sha256": "a050e7e8347da9b8dbbf747ea6fd81012cd1f51cff9f67c5406c307f351b4f60"
+    },
+    "lidar_camera/plots/barrier_pr.pdf": {
+      "bytes": 15507,
+      "sha256": "ff4683fb4dafdb6a30f2946e8c647610ec1673212ee9faa8adf2da2ed3e38297"
+    },
+    "lidar_camera/plots/barrier_tp.pdf": {
+      "bytes": 17255,
+      "sha256": "6a50a86deb7674f917ff30c6534b225c34edc02635cb053489c7644c7f29656b"
+    },
+    "lidar_camera/plots/bicycle_pr.pdf": {
+      "bytes": 13843,
+      "sha256": "330e80e89ef8b74950ae98751c4d9ccf478aa5f5507e37a39cf7c8227d02dbc3"
+    },
+    "lidar_camera/plots/bicycle_tp.pdf": {
+      "bytes": 18457,
+      "sha256": "7594a39d8dbb71f6b7d9c89dfda8d5bed800b9af5b0efcfde66f158fe3fbda87"
+    },
+    "lidar_camera/plots/bus_pr.pdf": {
+      "bytes": 14310,
+      "sha256": "6a7b662e7b888e427f8c609fb7a5df4ecfdb97b56b8ead7af1ebe2991f863fca"
+    },
+    "lidar_camera/plots/bus_tp.pdf": {
+      "bytes": 18828,
+      "sha256": "d73d886ff5f12963a6c9d6f801b562375143c079128c43669812b76a5ca7d48a"
+    },
+    "lidar_camera/plots/car_pr.pdf": {
+      "bytes": 14988,
+      "sha256": "fd677594b33afdf04fe2062d48e631e3b29c15eadb219c06a8273c0c3bcf3b1e"
+    },
+    "lidar_camera/plots/car_tp.pdf": {
+      "bytes": 18655,
+      "sha256": "5b9cf3c6024a4008bb98fd36eabbac951fa2c07321af77a066e9b4770ff2fb8d"
+    },
+    "lidar_camera/plots/construction_vehicle_pr.pdf": {
+      "bytes": 15306,
+      "sha256": "df83c2d7c9e01bd19335f090a0fc43663ee94bad230d9abefb2b8dd0d335dd7b"
+    },
+    "lidar_camera/plots/construction_vehicle_tp.pdf": {
+      "bytes": 18071,
+      "sha256": "aa09906c61c7b6363bdc43456dae6f0d75159fd7414dc654f6e63b0018fcbb70"
+    },
+    "lidar_camera/plots/dist_pr_0.5.pdf": {
+      "bytes": 21561,
+      "sha256": "62bd6f8feb9154b39cb424708db1b0f4b2fa245fc2b7cf772c9375a50175679c"
+    },
+    "lidar_camera/plots/dist_pr_1.0.pdf": {
+      "bytes": 22029,
+      "sha256": "c7a2c7034f5cbb614b64c8f7c06cbbc8a73f4cc662fe76e2802a3fe69b91fc81"
+    },
+    "lidar_camera/plots/dist_pr_2.0.pdf": {
+      "bytes": 21930,
+      "sha256": "1e60ff93172ae310a0089c4f10263456b83414bf60da2e3b76246ae46cb6b966"
+    },
+    "lidar_camera/plots/dist_pr_4.0.pdf": {
+      "bytes": 21686,
+      "sha256": "727d619c3c11e9239ce6c2afe6303ab0fede439341657dab838351ebda6acae7"
+    },
+    "lidar_camera/plots/motorcycle_pr.pdf": {
+      "bytes": 14460,
+      "sha256": "d0a62c749c28e897ae99bbf23428b35671781a54bf85af41ad04eb51007d01c8"
+    },
+    "lidar_camera/plots/motorcycle_tp.pdf": {
+      "bytes": 18401,
+      "sha256": "56b9912ce7d77a4003a9cf265b57752d17b5016dd5cca4ad302c06ddcdb7b334"
+    },
+    "lidar_camera/plots/pedestrian_pr.pdf": {
+      "bytes": 15326,
+      "sha256": "932b65bff3b55b8d57e59d4fc8812518ab33a44f6502f18da5c300c1d04f9d1f"
+    },
+    "lidar_camera/plots/pedestrian_tp.pdf": {
+      "bytes": 18634,
+      "sha256": "4d44a41ff35a4f4810fdc993937068eb18351ee9a7e3b45317e556eab40a1b5d"
+    },
+    "lidar_camera/plots/summary.pdf": {
+      "bytes": 85918,
+      "sha256": "14f15070ef5187da568cec5c5950112d13ed85b6d03b058dbfe2b787e460cd5c"
+    },
+    "lidar_camera/plots/traffic_cone_pr.pdf": {
+      "bytes": 15390,
+      "sha256": "35f81dcd9f1690aa7d73199935d7ca9dc1fa2eea01895a9720b8b33ad3aeabc6"
+    },
+    "lidar_camera/plots/traffic_cone_tp.pdf": {
+      "bytes": 16328,
+      "sha256": "7c82d2a16527be758532e0906737b8b83fa8866b42cbdd3cd56f7e67a91a7822"
+    },
+    "lidar_camera/plots/trailer_pr.pdf": {
+      "bytes": 14152,
+      "sha256": "606d3306b31df2ad04e4e3e026ae2d98ae2158ff00f0e2c62b7519168f1c9924"
+    },
+    "lidar_camera/plots/trailer_tp.pdf": {
+      "bytes": 17667,
+      "sha256": "451faae1522eba26fdee73c5555e3a56087e59d4c1ae7951354a61de3c09b5e8"
+    },
+    "lidar_camera/plots/truck_pr.pdf": {
+      "bytes": 14594,
+      "sha256": "9dab92a8cd0ea0ea043bf0ad7659bdd12838082df530b24c943223b10094974b"
+    },
+    "lidar_camera/plots/truck_tp.pdf": {
+      "bytes": 18488,
+      "sha256": "3c8be1c40c60e8aaf48243ccb3336bd14bb5caa3dc352475ca6a6bca5bb6c5d0"
+    },
+    "lidar_camera/replay_audit.json": {
+      "bytes": 741,
+      "sha256": "44a92a970d70f24d6748f53f6dc97acca733281fbde3f36cbc99b4f71e3f26a2"
+    },
+    "paired_replay_audit.json": {
+      "bytes": 2585,
+      "sha256": "d006d75874ef713e5fe2790a17851fc62dd6a9525e147d672864e6dfaf3dcbf9"
+    },
+    "replay.log": {
+      "bytes": 9944,
+      "sha256": "3664b4449684f3221c8dd1ac8191cd12949974baaf14517b04195d021ed06be7"
+    },
+    "replay.py": {
+      "bytes": 7383,
+      "sha256": "435391c3abbf8d6c6146062ae8fd6c0c5114028ce5d13b3d09ef8e52522ac910"
+    }
+  }
+}

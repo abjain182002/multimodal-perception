@@ -1,0 +1,234 @@
+PAIRED REPLAY INPUTS PASS
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 79.784 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 13.2 seconds.
+======
+EXACT FROZEN SCENE / METADATA TOKEN MATCH PASS
+REPLAYING: lidar
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/bevfusion_subset_validation/lidar/results_nusc.json. Found detections for 1231 samples.
+
+  0%|          | 0/1231 [00:00<?, ?it/s]
+  2%|▏         | 21/1231 [00:00<00:06, 201.66it/s]
+  4%|▍         | 48/1231 [00:00<00:04, 241.08it/s]
+ 15%|█▌        | 186/1231 [00:00<00:01, 752.54it/s]
+ 21%|██▏       | 262/1231 [00:00<00:02, 457.94it/s]
+ 26%|██▌       | 319/1231 [00:01<00:03, 234.13it/s]
+ 29%|██▉       | 360/1231 [00:01<00:03, 257.59it/s]
+ 32%|███▏      | 400/1231 [00:01<00:03, 253.50it/s]
+ 38%|███▊      | 467/1231 [00:01<00:02, 328.51it/s]
+ 42%|████▏     | 512/1231 [00:01<00:02, 342.29it/s]
+ 45%|████▌     | 555/1231 [00:01<00:02, 281.00it/s]
+ 49%|████▉     | 604/1231 [00:01<00:01, 322.06it/s]
+ 52%|█████▏    | 644/1231 [00:02<00:01, 310.41it/s]
+ 55%|█████▌    | 681/1231 [00:02<00:02, 245.98it/s]
+ 58%|█████▊    | 711/1231 [00:02<00:02, 223.44it/s]
+ 60%|██████    | 743/1231 [00:02<00:02, 241.81it/s]
+ 63%|██████▎   | 772/1231 [00:02<00:01, 249.74it/s]
+ 65%|██████▍   | 800/1231 [00:02<00:01, 217.18it/s]
+ 67%|██████▋   | 825/1231 [00:03<00:01, 205.09it/s]
+ 69%|██████▉   | 848/1231 [00:03<00:01, 192.41it/s]
+ 71%|███████   | 869/1231 [00:03<00:01, 188.33it/s]
+ 74%|███████▎  | 906/1231 [00:03<00:01, 230.66it/s]
+ 77%|███████▋  | 942/1231 [00:03<00:01, 263.04it/s]
+ 79%|███████▉  | 972/1231 [00:03<00:00, 270.46it/s]
+ 81%|████████▏ | 1003/1231 [00:03<00:00, 276.83it/s]
+ 84%|████████▍ | 1032/1231 [00:03<00:00, 232.23it/s]
+ 86%|████████▌ | 1057/1231 [00:03<00:00, 213.34it/s]
+ 88%|████████▊ | 1086/1231 [00:04<00:00, 230.95it/s]
+ 91%|█████████ | 1121/1231 [00:04<00:00, 260.29it/s]
+ 93%|█████████▎| 1149/1231 [00:04<00:00, 264.06it/s]
+ 96%|█████████▌| 1182/1231 [00:04<00:00, 279.88it/s]
+100%|█████████▉| 1227/1231 [00:04<00:00, 326.25it/s]
+100%|██████████| 1231/1231 [00:04<00:00, 272.74it/s]
+Loaded ground truth annotations for 1231 samples.
+Filtering predictions
+=> Original number of boxes: 155664
+=> After distance based filtering: 155624
+=> After LIDAR and RADAR points based filtering: 155624
+=> After bike rack filtering: 155516
+Filtering ground truth annotations
+=> Original number of boxes: 47064
+=> After distance based filtering: 35491
+=> After LIDAR and RADAR points based filtering: 32286
+=> After bike rack filtering: 32276
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/nuscenes_subset_replay/lidar
+mAP: 0.6421
+mATE: 0.2721
+mASE: 0.2406
+mAOE: 0.2770
+mAVE: 0.3533
+mAAE: 0.1466
+NDS: 0.6921
+Eval time: 39.5s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.881 	0.163 	0.154 	0.072 	0.326 	0.173 
+truck               	0.513 	0.328 	0.202 	0.157 	0.318 	0.151 
+bus                 	0.714 	0.363 	0.135 	0.043 	0.669 	0.106 
+trailer             	0.428 	0.458 	0.158 	0.069 	0.230 	0.250 
+construction_vehicle	0.370 	0.646 	0.390 	1.150 	0.067 	0.393 
+pedestrian          	0.902 	0.122 	0.290 	0.402 	0.224 	0.070 
+motorcycle          	0.536 	0.172 	0.294 	0.110 	0.658 	0.008 
+bicycle             	0.608 	0.169 	0.213 	0.442 	0.335 	0.023 
+traffic_cone        	0.860 	0.110 	0.309 	nan   	nan   	nan   
+barrier             	0.609 	0.190 	0.259 	0.048 	nan   	nan   
+{
+  "status": "GROUND_TRUTH_REPLAY_PASS",
+  "samples": 1231,
+  "scenes": 31,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 11222,
+    "pedestrian": 7210,
+    "traffic_cone": 5402,
+    "bicycle": 644,
+    "bus": 308,
+    "truck": 1638,
+    "construction_vehicle": 478,
+    "barrier": 4963,
+    "motorcycle": 165,
+    "trailer": 246
+  },
+  "mAP": 0.6421140063400634,
+  "NDS": 0.6920865595499972,
+  "maximum_absolute_errors": {
+    "metrics_summary.json": 5.551115123125783e-17,
+    "metrics_details.json": 8.881784197001252e-16
+  },
+  "comparison_tolerance": 1e-12,
+  "excluded_from_comparison": [
+    "eval_time"
+  ],
+  "predictions_sha256": "16cbf8c35c81571d3990867b0148fd42c8bebcac626a8c0363431cde96abf07b"
+}
+REPLAYING: lidar_camera
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/bevfusion_subset_validation/lidar_camera/results_nusc.json. Found detections for 1231 samples.
+
+  0%|          | 0/1231 [00:00<?, ?it/s]
+  2%|▏         | 20/1231 [00:00<00:06, 197.26it/s]
+  3%|▎         | 40/1231 [00:00<00:06, 190.08it/s]
+ 15%|█▍        | 182/1231 [00:00<00:01, 734.95it/s]
+ 21%|██        | 257/1231 [00:00<00:01, 498.91it/s]
+ 26%|██▌       | 316/1231 [00:01<00:03, 241.19it/s]
+ 29%|██▉       | 358/1231 [00:01<00:03, 255.11it/s]
+ 32%|███▏      | 396/1231 [00:01<00:03, 243.48it/s]
+ 37%|███▋      | 455/1231 [00:01<00:02, 304.69it/s]
+ 41%|████      | 500/1231 [00:01<00:02, 332.75it/s]
+ 44%|████▍     | 542/1231 [00:01<00:02, 281.48it/s]
+ 47%|████▋     | 578/1231 [00:01<00:02, 292.30it/s]
+ 50%|█████     | 616/1231 [00:02<00:01, 310.66it/s]
+ 53%|█████▎    | 652/1231 [00:02<00:01, 300.57it/s]
+ 56%|█████▌    | 686/1231 [00:02<00:02, 232.76it/s]
+ 58%|█████▊    | 714/1231 [00:02<00:02, 224.87it/s]
+ 61%|██████▏   | 754/1231 [00:02<00:01, 262.11it/s]
+ 64%|██████▎   | 784/1231 [00:02<00:01, 249.16it/s]
+ 66%|██████▌   | 812/1231 [00:02<00:01, 225.36it/s]
+ 68%|██████▊   | 837/1231 [00:03<00:01, 219.79it/s]
+ 70%|██████▉   | 861/1231 [00:03<00:02, 183.56it/s]
+ 72%|███████▏  | 881/1231 [00:03<00:01, 182.26it/s]
+ 73%|███████▎  | 901/1231 [00:03<00:01, 185.56it/s]
+ 75%|███████▌  | 926/1231 [00:03<00:01, 201.09it/s]
+ 77%|███████▋  | 948/1231 [00:03<00:01, 182.80it/s]
+ 79%|███████▊  | 968/1231 [00:03<00:01, 181.97it/s]
+ 80%|████████  | 987/1231 [00:03<00:01, 179.15it/s]
+ 82%|████████▏ | 1006/1231 [00:04<00:01, 167.00it/s]
+ 83%|████████▎ | 1024/1231 [00:04<00:01, 134.82it/s]
+ 84%|████████▍ | 1039/1231 [00:04<00:01, 121.23it/s]
+ 85%|████████▌ | 1052/1231 [00:04<00:01, 110.21it/s]
+ 87%|████████▋ | 1067/1231 [00:04<00:01, 117.64it/s]
+ 88%|████████▊ | 1082/1231 [00:04<00:01, 124.78it/s]
+ 91%|█████████ | 1122/1231 [00:04<00:00, 193.44it/s]
+ 94%|█████████▎| 1152/1231 [00:04<00:00, 220.19it/s]
+ 96%|█████████▌| 1183/1231 [00:05<00:00, 243.80it/s]
+100%|█████████▉| 1227/1231 [00:05<00:00, 297.70it/s]
+100%|██████████| 1231/1231 [00:05<00:00, 237.44it/s]
+Loaded ground truth annotations for 1231 samples.
+Filtering predictions
+=> Original number of boxes: 155776
+=> After distance based filtering: 155735
+=> After LIDAR and RADAR points based filtering: 155735
+=> After bike rack filtering: 155615
+Filtering ground truth annotations
+=> Original number of boxes: 47064
+=> After distance based filtering: 35491
+=> After LIDAR and RADAR points based filtering: 32286
+=> After bike rack filtering: 32276
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/nuscenes_subset_replay/lidar_camera
+mAP: 0.6781
+mATE: 0.2663
+mASE: 0.2452
+mAOE: 0.2696
+mAVE: 0.3471
+mAAE: 0.1470
+NDS: 0.7115
+Eval time: 36.7s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.902 	0.158 	0.150 	0.056 	0.334 	0.162 
+truck               	0.573 	0.313 	0.198 	0.147 	0.334 	0.162 
+bus                 	0.751 	0.367 	0.134 	0.058 	0.619 	0.102 
+trailer             	0.439 	0.453 	0.151 	0.050 	0.225 	0.262 
+construction_vehicle	0.413 	0.624 	0.417 	1.113 	0.078 	0.370 
+pedestrian          	0.910 	0.122 	0.299 	0.415 	0.228 	0.079 
+motorcycle          	0.660 	0.174 	0.301 	0.128 	0.648 	0.019 
+bicycle             	0.650 	0.164 	0.222 	0.413 	0.312 	0.021 
+traffic_cone        	0.879 	0.110 	0.316 	nan   	nan   	nan   
+barrier             	0.604 	0.179 	0.266 	0.048 	nan   	nan   
+{
+  "status": "GROUND_TRUTH_REPLAY_PASS",
+  "samples": 1231,
+  "scenes": 31,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 11222,
+    "pedestrian": 7210,
+    "traffic_cone": 5402,
+    "bicycle": 644,
+    "bus": 308,
+    "truck": 1638,
+    "construction_vehicle": 478,
+    "barrier": 4963,
+    "motorcycle": 165,
+    "trailer": 246
+  },
+  "mAP": 0.6781470812751105,
+  "NDS": 0.7115433802870929,
+  "maximum_absolute_errors": {
+    "metrics_summary.json": 4.440892098500626e-16,
+    "metrics_details.json": 8.881784197001252e-16
+  },
+  "comparison_tolerance": 1e-12,
+  "excluded_from_comparison": [
+    "eval_time"
+  ],
+  "predictions_sha256": "d29975a62a898f294dba343de79f7e3b4b7f62e3bce9d4cfcf14b39ac16ca66d"
+}
+PAIRED GROUND-TRUTH REPLAY PASS
+REPLAY DRIVE BACKUP VERIFIED
+Drive folder: /content/drive/MyDrive/Major_Project/nuscenes_full_validation/evaluation_replay_20261008

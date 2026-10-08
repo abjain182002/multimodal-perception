@@ -1,0 +1,72 @@
+{
+  "status": "PAIRED_GROUND_TRUTH_REPLAY_PASS",
+  "models": {
+    "lidar": {
+      "status": "GROUND_TRUTH_REPLAY_PASS",
+      "samples": 1231,
+      "scenes": 31,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 11222,
+        "pedestrian": 7210,
+        "traffic_cone": 5402,
+        "bicycle": 644,
+        "bus": 308,
+        "truck": 1638,
+        "construction_vehicle": 478,
+        "barrier": 4963,
+        "motorcycle": 165,
+        "trailer": 246
+      },
+      "mAP": 0.6421140063400634,
+      "NDS": 0.6920865595499972,
+      "maximum_absolute_errors": {
+        "metrics_summary.json": 5.551115123125783e-17,
+        "metrics_details.json": 8.881784197001252e-16
+      },
+      "comparison_tolerance": 1e-12,
+      "excluded_from_comparison": [
+        "eval_time"
+      ],
+      "predictions_sha256": "16cbf8c35c81571d3990867b0148fd42c8bebcac626a8c0363431cde96abf07b"
+    },
+    "lidar_camera": {
+      "status": "GROUND_TRUTH_REPLAY_PASS",
+      "samples": 1231,
+      "scenes": 31,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 11222,
+        "pedestrian": 7210,
+        "traffic_cone": 5402,
+        "bicycle": 644,
+        "bus": 308,
+        "truck": 1638,
+        "construction_vehicle": 478,
+        "barrier": 4963,
+        "motorcycle": 165,
+        "trailer": 246
+      },
+      "mAP": 0.6781470812751105,
+      "NDS": 0.7115433802870929,
+      "maximum_absolute_errors": {
+        "metrics_summary.json": 4.440892098500626e-16,
+        "metrics_details.json": 8.881784197001252e-16
+      },
+      "comparison_tolerance": 1e-12,
+      "excluded_from_comparison": [
+        "eval_time"
+      ],
+      "predictions_sha256": "d29975a62a898f294dba343de79f7e3b4b7f62e3bce9d4cfcf14b39ac16ca66d"
+    }
+  },
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "custom_split_sha256": "0492c5451a66350e59419033f379f8f42bf5e63f71fe618e3e774e4b88b253ac",
+  "frozen_tokens_sha256": "8ff45978c8226f9762e1b79677e1bf37bec50da31d00ebc791c196249d9b8d28",
+  "scope": "Recomputed accuracy on the same availability-selected 1,231 samples / 31 scenes. Not full nuScenes validation or an independent evaluator cross-check."
+}

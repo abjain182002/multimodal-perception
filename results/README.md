@@ -18,7 +18,7 @@ Results are physically grouped by dataset, method and experiment. Open an experi
 | Study | Folder | Status |
 |---|---|---|
 | BEVFusion mini | [Mini](nuscenes/bevfusion/mini/) | 81-sample mini_val pilot |
-| BEVFusion frozen validation subset | [Subset](nuscenes/bevfusion/validation_subset/) | 1,231 samples / 31 scenes; original evidence imported, replay pending |
+| BEVFusion frozen validation subset | [Subset](nuscenes/bevfusion/validation_subset/) | 1,231 samples / 31 scenes; original evidence imported; same-evaluator ground-truth replay passed |
 
 ## Shared records
 

@@ -273,3 +273,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Updated active script defaults and documentation references. Frozen metrics, figures, original source and provenance manifests retain their original bytes. This is an organization change, not new experimental evidence.
 
 - Follow-up preservation audit: every one of the 550 baseline repository files is present at its mapped path; all 404 non-Markdown result blobs match the pre-organization originals. Restored seven archived TXT/Python records to their original blobs after detecting path-only rewrites. Saved the repository preservation audit under results/audits/repository/.
+
+
+## 8 October 2026 — nuScenes subset ground-truth replay
+
+- Restored hash-verified full metadata and the frozen 31-scene custom split. Created a CPU Python 3.10.22 evaluator environment; all four recorded nuScenes-devkit source hashes matched.
+- Recomputed metrics from the unchanged paired predictions and ground truth for exactly 1,231 frozen tokens. Filtered GT counts match the original evaluation.
+- Both headline mAP/NDS values reproduced exactly. Maximum summary/detail absolute error was 8.881784197001252e-16, below the 1e-12 tolerance; wall-clock evaluation time was excluded.
+- Verified the supplied 1,161,924-byte replay ZIP SHA-256 aa421f2e9fb092fabf56a004f26a54da1d6a7fdd755631ab22bbe33674728726, ZIP CRC, all 60 manifest member hashes/sizes and consistency of scripts/audits/stored metrics.
+- Imported compact replay records under results/nuscenes/bevfusion/validation_subset/replay_20261008/. Complete detailed metric arrays and PR/TP PDFs remain in the verified Drive ZIP; its complete member manifest is committed.
+- Same-evaluator reproduction is now verified. Full-validation expansion, subset representativeness, and mini/subset overlap remain unresolved; no additional ground-truth evaluation was performed during this import.

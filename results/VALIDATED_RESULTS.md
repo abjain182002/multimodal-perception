@@ -1,5 +1,7 @@
 # Validated Experimental Results
 
+> **Verification update (8 October 2026):** CPU ground-truth replay reproduced the frozen nuScenes subset headline metrics exactly; all compared summary/detail values agree within 1e-12 (maximum absolute error 8.881784197001252e-16), excluding evaluation time. This is same-evaluator reproduction, not independent cross-implementation verification. [Replay evidence](nuscenes/bevfusion/validation_subset/replay_20261008/README.md).
+
 > **BEVFusion update (2 October 2026):** Official pretrained pipelines completed the same availability-selected 1,231-sample / 31-scene nuScenes validation subset. LiDAR / camera–LiDAR mAP × 100 = **64.2114 / 67.8147**; NDS × 100 = **69.2087 / 71.1543**. Differences are +3.6033 and +1.9457 points. All ten classes have filtered GT support. This is 20.45% of official validation, not random, not full validation and not a controlled camera ablation. [Findings and provenance](nuscenes/bevfusion/validation_subset/FINDINGS.md). The separate [81-sample mini pilot](nuscenes/bevfusion/mini/FINDINGS.md) is also measured.
 
 > **Current CLOCs status (1 October 2026):** Three aligned epoch-12 seeds completed full 3,769-frame validation with exact baseline parity. Moderate 3D AP40 = 79.8616 / 76.2666 / 78.7616, against PointPillars 79.1299. Only one seed improves Moderate; all three reduce Hard. Seed 20260928's epoch-24 continuation improved development candidate AP but reduced Moderate detection AP40 to 79.4874. Report descriptive seed variability, not statistical significance. This current diagnostic qualifies the earlier single-checkpoint results preserved below. See [findings](kitti/clocs/seed_diagnostics/FINDINGS.md) and [all metrics](kitti/clocs/seed_diagnostics/ap40_comparison.csv).
@@ -479,8 +481,8 @@ The following should **not** be claimed from the current evidence:
 - universal superiority of YOLO over Falcon or Falcon over YOLO,
 - a standardized end-to-end runtime ratio,
 - completion of the full Azitt PV-RCNN++ pipeline on macOS,
-- completed OpenPCDet or BEVFusion fusion results,
-- completed nuScenes cross-dataset results,
+- completion of PV-RCNN++/Azitt or full-validation BEVFusion reproduction,
+- full nuScenes validation results or generalization beyond the measured mini/subset scopes,
 - completed robustness evaluation.
 
 ---

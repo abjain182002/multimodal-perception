@@ -1,0 +1,19 @@
+{
+  "status": "ARCHIVE_AND_MEMBERS_VERIFIED",
+  "date": "2026-10-08",
+  "archive": "bevfusion_subset_replay_verified.zip",
+  "bytes": 1161924,
+  "sha256": "aa421f2e9fb092fabf56a004f26a54da1d6a7fdd755631ab22bbe33674728726",
+  "zip_members": 61,
+  "manifest_members_verified": 60,
+  "zip_crc": "PASS",
+  "checks": [
+    "Exact manifest coverage and unique safe member paths",
+    "All manifest member sizes and SHA-256 hashes",
+    "Replay script syntax",
+    "Paired and per-model audit equality",
+    "Stored metric summary and audit headline equality"
+  ],
+  "complete_archive_drive_path": "Major_Project/nuscenes_full_validation/bevfusion_subset_replay_verified.zip",
+  "scope": "Archive and stored replay evidence verification. No additional ground-truth evaluation was run during repository import."
+}
