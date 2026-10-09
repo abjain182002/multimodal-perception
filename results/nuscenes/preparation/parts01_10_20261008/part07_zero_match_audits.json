@@ -1,0 +1,26 @@
+[
+  {
+    "status": "ZERO_REQUIRED_FILE_MATCHES",
+    "source_archive": "v1.0-trainval07_keyframes.tgz",
+    "source_archive_bytes": 4177675764,
+    "source_archive_sha256": "5b93fb90fcb87c14648e9b2a100cc32e17c0c1a00d322b14ee812d54118a48d5",
+    "required_inventory_sha256": "17a6128ed25b3a761ddc5074b427eb6769dfe3f61e6b0862a9fd0cf86adfede0",
+    "regular_files_scanned": 41294,
+    "exact_matches": 0,
+    "normalized_matches": 0,
+    "basename_matches": 0,
+    "scope": "Archive paths and filenames checked against the required validation-input inventory. No required files found. Source hash previously verified; no accuracy measured."
+  },
+  {
+    "status": "ZERO_REQUIRED_FILE_MATCHES",
+    "source_archive": "v1.0-trainval07_blobs_lidar.tgz",
+    "source_archive_bytes": 13263905100,
+    "source_archive_sha256": "1efa59fc352d87b1f6891229ff4948c9f43d5384629fa6ef328bdb16e5402340",
+    "required_inventory_sha256": "17a6128ed25b3a761ddc5074b427eb6769dfe3f61e6b0862a9fd0cf86adfede0",
+    "regular_files_scanned": 33403,
+    "exact_matches": 0,
+    "normalized_matches": 0,
+    "basename_matches": 0,
+    "scope": "Source archive hash verified; all regular-file paths checked against the required validation inventory. No required files found; no accuracy measured."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "ARCHIVE_AND_MEMBERS_VERIFIED",
+  "archive": "nuscenes_full_staging_evidence_verified.zip",
+  "bytes": 4072624,
+  "sha256": "78f6ba980a6ab52e62087f48006e08395eda77a448cbadc8693a46fbc6b8b0f3",
+  "members_verified": 21,
+  "imported_on": "2026-10-09",
+  "scope": "Uploaded staging records verified; sensor backups not accessed or rehashed during import."
+}

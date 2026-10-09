@@ -1,0 +1,89 @@
+{
+  "scope": "Staging evidence only; full accuracy evaluation pending.",
+  "members": {
+    "audits/coverage_audit.json": {
+      "bytes": 5269,
+      "sha256": "c7e4629dd9865cbc517d8b5759abc830f40ac4d8d10e9db27c23aabbbc1027da"
+    },
+    "audits/scene_coverage.json": {
+      "bytes": 18753,
+      "sha256": "5de2f4c724db3b8357b8ef0e58d3c8e96cd112c243c41787901ce8de7f246f0e"
+    },
+    "audits/complete_input_sample_tokens.txt": {
+      "bytes": 198627,
+      "sha256": "c409767f05e5a066717bead05e502ab7083be92007746c49ea5841bdb3fe0fd4"
+    },
+    "audits/missing_required_files.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "receipts/nuscenes_validation_parts_01_02_verified.zip.receipt.json": {
+      "bytes": 282,
+      "sha256": "c916d005b40c13238ae41f5abeb56838bb79c96eef1a39e51a8c3283fe0d6473"
+    },
+    "receipts/queue_v1.0-trainval03_keyframes_verified.zip.receipt.json": {
+      "bytes": 695290,
+      "sha256": "01edef38db676255f20d6cb287753e9df271a75f50a373c86fb3832d629825d0"
+    },
+    "receipts/queue_v1.0-trainval03_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 938688,
+      "sha256": "d8019aa15316e956b0f70a8f7e8e015299a49fced3cbf31cada21ca672cd869c"
+    },
+    "receipts/queue_v1.0-trainval04_keyframes_verified.zip.receipt.json": {
+      "bytes": 404258,
+      "sha256": "b61d49f59fa61dfdbfbfbb9679f615dd9f63da57e1ac8f80d2b63224e0ceb518"
+    },
+    "receipts/queue_v1.0-trainval04_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 550591,
+      "sha256": "575b4f2aa209f2b0d3f3e8716b03efc5add81800d110e432724df3a9b3402968"
+    },
+    "receipts/queue_v1.0-trainval05_keyframes_verified.zip.receipt.json": {
+      "bytes": 355950,
+      "sha256": "89a55f7f785d87678559fa78d0d3ca47d5f843c7d60fb80cd2068fe1dd656725"
+    },
+    "receipts/queue_v1.0-trainval05_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 484226,
+      "sha256": "b62d0258e1b9c4b29a5bef6f464bb87c50ab65719b1adc50f6ea15420c8b6899"
+    },
+    "receipts/queue_v1.0-trainval06_keyframes_verified.zip.receipt.json": {
+      "bytes": 1532300,
+      "sha256": "4c38dfe7b21db2ae7018ca4e61eb407cc082144e6789e3708aa0a22f0466f45c"
+    },
+    "receipts/queue_v1.0-trainval06_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 2087507,
+      "sha256": "dcbda65569f905ae9d083e575220244b84213da62b50cbed671531ffc216cfef"
+    },
+    "receipts/queue_v1.0-trainval08_keyframes_verified.zip.receipt.json": {
+      "bytes": 1064084,
+      "sha256": "7b792e2a0870da35e38f1a15164bdc0cc25687561e685062259bce82cfd8e616"
+    },
+    "receipts/queue_v1.0-trainval08_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 1450644,
+      "sha256": "d5b6786599670fc64ef9e37202afa376779316b26620ad1b9af9fd5535d3fb74"
+    },
+    "receipts/queue_v1.0-trainval09_keyframes_verified.zip.receipt.json": {
+      "bytes": 2073083,
+      "sha256": "bd04d996d1dcfc4962d2aec37c03cf2c5ff5862950b555ada1c36f3297ff31ee"
+    },
+    "receipts/queue_v1.0-trainval09_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 2820825,
+      "sha256": "a9cbff83ef7a62c52ff6cd38cd355d4dc28d2ffec00d7129a1e1ddddb8371587"
+    },
+    "receipts/queue_v1.0-trainval10_keyframes_verified.zip.receipt.json": {
+      "bytes": 881221,
+      "sha256": "2892aa29a24dc31be949f11a300a3e863c23112bd9ff068d6d9bcf332a1344e6"
+    },
+    "receipts/queue_v1.0-trainval10_blobs_lidar_verified.zip.receipt.json": {
+      "bytes": 1202701,
+      "sha256": "75d4d2310bb3e85333e0b76159ba5fdd186c1aa6a32da703d69667b1ecc819fb"
+    },
+    "zero_match_audits/v1.0-trainval07_keyframes.tgz.zero_match_audit.json": {
+      "bytes": 617,
+      "sha256": "0e218df9ad746f3966183f3e9dd70f6d17a53b0382c2a2b36651c35bbd996511"
+    },
+    "zero_match_audits/v1.0-trainval07_blobs_lidar.tgz.zero_match_audit.json": {
+      "bytes": 606,
+      "sha256": "fa826fecff266a367b0999ded8dcbcbf7b68c2f1249a751ad1c35277ac442e74"
+    }
+  }
+}

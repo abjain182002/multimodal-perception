@@ -292,3 +292,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Coverage verification uses ZIP indexes, sizes and previously verified receipts; it does not repeat all sensor-content or full archive hashes. New inference/accuracy evaluation remains pending.
 - Verified the supplied 1,998,546-byte staging evidence ZIP SHA-256 df02691f4838549e020c7deda00bfd5342334c5702ae652eefd9c9ced8e9a108, CRC, all 12 source-member hashes/sizes, coverage totals and eight receipt/archive provenance matches.
 - Imported compact audit, scene/sample records, receipt summaries and complete source-member manifest under results/nuscenes/preparation/parts01_06_20261008/. Full sensor-member maps and available-file list remain in the verified Drive evidence ZIP; no measured accuracy records were changed.
+
+
+## 9 October 2026 — Import complete nuScenes validation input staging evidence
+
+- Verified the supplied 4,072,624-byte ZIP SHA-256 78f6ba980a6ab52e62087f48006e08395eda77a448cbadc8693a46fbc6b8b0f3, CRC and all 21 source-member hashes/sizes.
+- The original 8 October backup-index audit covers 94,180 / 94,180 required files, 6,019 unique validation sample tokens and 150 complete scenes, with zero missing required inputs. Receipt archive identities and scene/sample totals agree. Both part-07 archives had zero required-file matches; their audits are preserved.
+- Imported compact coverage records, receipt summaries, zero-match audits and full source-member manifest under results/nuscenes/preparation/parts01_10_20261008/. Full receipt sensor-member maps remain in the supplied source ZIP and Drive backups.
+- This import verifies saved staging records, not current sensor contents or fresh archive hashes. Full validation inference and accuracy evaluation remain pending. Previous measured metrics and historical staging records remain unchanged.

@@ -25,13 +25,13 @@ Each row is a separate evaluation; KITTI AP40 and nuScenes metrics are not inter
 | BEVFusion LiDAR vs camera–LiDAR | Availability-selected nuScenes validation subset: 1,231 samples, 31 scenes | mAP × 100: 64.21 vs 67.81; NDS × 100: 69.21 vs 71.15 | [Subset findings](results/nuscenes/bevfusion/validation_subset/FINDINGS.md) |
 | BEVFusion mini pilot | 81 mini_val samples | mAP × 100: 54.50 vs 57.04; NDS × 100: 56.62 vs 57.62 | [Mini findings](results/nuscenes/bevfusion/mini/FINDINGS.md) |
 
-## Evidence status — 8 October 2026
+## Evidence status — 9 October 2026
 
 - PointPillars baseline parity checks reproduction against frozen results with the same evaluator. PV-RCNN native-versus-common checks evaluator agreement on the same predictions. These are different verification scopes.
 - Original nuScenes subset evidence has been hash-verified and compact metrics, scripts, audits and summary curves imported. A CPU ground-truth replay reproduced both subset headline metrics exactly on 8 October; [replay evidence](results/nuscenes/bevfusion/validation_subset/replay_20261008/README.md) records the same-evaluator verification.
 - The nuScenes subset is selected by sensor availability, not randomly, and is not full validation. BEVFusion compares two pretrained pipelines, not a controlled camera ablation. Mini/subset overlap is unchecked.
 - CLOCs seed-29's Easy decline remains unexplained; full-AP40 score-blend testing, robustness, semantic fusion and comparable runtime across models remain pending. Validation was inspected iteratively.
-- Parts 1–6 backups contain complete inputs for 3,273 / 6,019 validation samples (82 scenes; 54.38%). [Staging audit](results/nuscenes/preparation/parts01_06_20261008/README.md) records input availability; accuracy remains measured on the original 1,231-sample subset. Full nuScenes validation and the dissertation are still in progress. Existing detector architectures are reused; the contribution is integration, evaluation and analysis.
+- The completed backup-index audit covers all 94,180 required files for 6,019 / 6,019 validation samples across 150 scenes, with zero missing required files. [Full input staging audit](results/nuscenes/preparation/parts01_10_20261008/README.md) records input availability; full-split inference/evaluation remain pending and accuracy remains measured on the original 1,231-sample subset. Full nuScenes validation and the dissertation are still in progress. Existing detector architectures are reused; the contribution is integration, evaluation and analysis.
 
 ## Repository layout
 

@@ -20,7 +20,7 @@ Results are physically grouped by dataset, method and experiment. Open an experi
 | BEVFusion mini | [Mini](nuscenes/bevfusion/mini/) | 81-sample mini_val pilot |
 | BEVFusion frozen validation subset | [Subset](nuscenes/bevfusion/validation_subset/) | 1,231 samples / 31 scenes; original evidence imported; same-evaluator ground-truth replay passed |
 
-Input preparation is recorded separately: [parts 1–6 staging audit](nuscenes/preparation/parts01_06_20261008/README.md) covers complete inputs for 3,273 samples / 82 scenes (54.38%). It adds no accuracy results.
+Input preparation is recorded separately: [full validation staging audit](nuscenes/preparation/parts01_10_20261008/README.md) covers 94,180 required files, 6,019 samples and 150 scenes with zero missing required inputs. Full-split inference and accuracy evaluation remain pending. The historical [parts 1–6 staging audit](nuscenes/preparation/parts01_06_20261008/README.md) covers complete inputs for 3,273 samples / 82 scenes (54.38%). It adds no accuracy results.
 
 ## Shared records
 

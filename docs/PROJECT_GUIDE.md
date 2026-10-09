@@ -10,7 +10,11 @@ As of 2 October 2026, aligned YOLO26x+CLOCs training used 128 train-only KITTI f
 
 Camera baselines, projected-LiDAR depth comparisons and Falcon experiments measure separate tasks. Official pretrained OpenPCDet PV-RCNN completed all 3,769 validation frames, scoring Car 3D AP40 **92.1047 / 84.3604 / 82.4830** (Easy / Moderate / Hard). Native OpenPCDet and the pinned common evaluator agree exactly across all nine metrics. [Comparison and findings](../results/kitti/pv_rcnn/validation/FINDINGS.md) distinguish this LiDAR-only reproduction from Azitt/PV-RCNN++. Azitt weights, semantic fusion and robustness remain unmeasured. BEVFusion has completed paired pretrained-pipeline evaluation on nuScenes mini (81 samples) and an availability-selected official validation subset (1,231 samples / 31 complete scenes). Subset mAP is 64.2114 → 67.8147 and NDS is 69.2087 → 71.1543 (metrics × 100). Full nuScenes validation remains pending; this is not a controlled camera ablation. See [subset findings](../results/nuscenes/bevfusion/validation_subset/FINDINGS.md) and [mini findings](../results/nuscenes/bevfusion/mini/FINDINGS.md). A synchronized PV-RCNN T4 runtime benchmark is complete; comparable runtime measurements for other models remain pending. NVIDIA optimization is future work. Experiment targets remain subject to these gates; report drafting can proceed with evidence status stated explicitly.
 
-### Sensor staging — 8 October 2026
+### Full sensor staging — 8 October 2026; evidence imported 9 October
+
+The completed backup-index audit covers all 94,180 required files for 6,019 validation samples across all 150 validation scenes, with zero missing required files. Both part-07 archives had zero required-file matches; their audits are preserved. Full-split inference and accuracy evaluation remain pending. See [full staging evidence and scope](../results/nuscenes/preparation/parts01_10_20261008/README.md). Large sensor archives were not rehashed during the compact evidence import.
+
+### Historical parts 1–6 staging — 8 October 2026
 
 The parts 1–6 backup-index audit finds complete required inputs for 3,273 / 6,019 validation samples across 82 complete scenes, with no partial scenes. All original 1,231 frozen tokens remain covered. This is 54.38% input coverage, not new accuracy evidence. Parts 3–6 were selectively staged and backed up. Full validation and new paired inference remain pending; see [staging evidence and scope](../results/nuscenes/preparation/parts01_06_20261008/README.md).
 
