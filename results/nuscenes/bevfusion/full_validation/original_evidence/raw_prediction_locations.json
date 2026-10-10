@@ -1,0 +1,16 @@
+[
+  {
+    "model": "lidar",
+    "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/full_validation_merged/lidar/results_nusc.json",
+    "bytes": 346934776,
+    "sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+    "included_in_compact_archive": false
+  },
+  {
+    "model": "lidar_camera",
+    "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/full_validation_merged/lidar_camera/results_nusc.json",
+    "bytes": 359097147,
+    "sha256": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd",
+    "included_in_compact_archive": false
+  }
+]

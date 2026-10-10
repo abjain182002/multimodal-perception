@@ -2,6 +2,20 @@
 
 [Results overview](../results/README.md)
 
+## BEVFusion full nuScenes validation
+
+6,019 samples / 150 scenes; two official pretrained pipelines.
+
+![Full-validation metric comparison](../results/nuscenes/bevfusion/full_validation/figures/comparison.png)
+
+![Full-validation class AP comparison](../results/nuscenes/bevfusion/full_validation/figures/class_ap.png)
+
+![Full-validation true-positive errors](../results/nuscenes/bevfusion/full_validation/figures/tp_errors.png)
+
+![Filtered class support](../results/nuscenes/bevfusion/full_validation/figures/class_support.png)
+
+[Findings and PDF/SVG downloads](../results/nuscenes/bevfusion/full_validation/README.md). Selected nuScenes visual case studies remain pending.
+
 ## PointPillars benchmark and diagnostics
 
 ### pointpillars distance diagnostic

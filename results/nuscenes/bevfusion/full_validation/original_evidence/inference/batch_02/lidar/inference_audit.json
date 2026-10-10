@@ -1,0 +1,11 @@
+{
+  "status": "BATCH_INFERENCE_AND_FORMATTING_PASS",
+  "model": "lidar",
+  "samples": 2368,
+  "created": 2368,
+  "reused": 0,
+  "result_path": "/content/bevfusion_full_validation/batch_02/lidar/official_results/pred_instances_3d/results_nusc.json",
+  "results_sha256": "bb9e80d25ec602e98428ee614636fbde4b4e0300522af432dcf5b447605aebf2",
+  "protocol_sha256": "9de400523e8e3b5c11d2f126ac43e82cab074655f814ae44052cd1c999c27331",
+  "scope": "Inference complete; accuracy evaluation pending."
+}

@@ -300,3 +300,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - The original 8 October backup-index audit covers 94,180 / 94,180 required files, 6,019 unique validation sample tokens and 150 complete scenes, with zero missing required inputs. Receipt archive identities and scene/sample totals agree. Both part-07 archives had zero required-file matches; their audits are preserved.
 - Imported compact coverage records, receipt summaries, zero-match audits and full source-member manifest under results/nuscenes/preparation/parts01_10_20261008/. Full receipt sensor-member maps remain in the supplied source ZIP and Drive backups.
 - This import verifies saved staging records, not current sensor contents or fresh archive hashes. Full validation inference and accuracy evaluation remain pending. Previous measured metrics and historical staging records remain unchanged.
+
+
+## 9–10 October 2026 — Full nuScenes validation and original evidence import
+
+- Restored and hash-verified the required sensors in three scene-complete storage batches: 2,368 / 2,368 / 1,283 samples, covering 150 scenes. Rebuilt pinned Python 3.10 / Torch 2.1.2+cu121 / MMDetection3D fe25f7a5 with CUDA 12.1 and GCC 11; synthetic BEV pooling and voxelization tests passed.
+- Completed paired official pretrained LiDAR / camera–LiDAR inference. Verified all six batch prediction hashes and exact tokens, consistent model/configuration/seed, duplicate-free merge and equality with the 6,019 official validation sample tokens. Global evaluation followed merging; batch metrics were not averaged.
+- Full mAP ×100 = 64.4301 / 68.3099; NDS ×100 = 69.2353 / 71.1352. Gains +3.8798 / +1.8998 points. Class AP rises for all ten classes; scale, orientation and attribute TP errors slightly worsen.
+- Verified supplied 2,118,593-byte original evidence ZIP SHA-256 37a5882333283e882d21d8f165b308f79a5039a8e1064334ad480b93bd665269 and all 111 member hashes/sizes. Stored mAP/NDS arithmetic agrees within 1e-12; this import does not replay GT evaluation. Raw merged predictions remain separately on Drive with recorded hashes.
+- Imported all original compact evidence bytes, four visually reviewed figures in PNG/PDF/SVG, exact CSV tables and plotting source under results/nuscenes/bevfusion/full_validation/. Updated current status indexes while preserving prior subset/mini and historical logs.
+- Full accuracy evaluation is complete; separate full-split replay, selected nuScenes case studies, comparable runtime, robustness and open CLOCs analyses remain pending. This compares pretrained pipelines, not a controlled camera ablation or project training.

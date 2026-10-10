@@ -1,0 +1,81 @@
+{
+  "status": "PAIRED_FULL_VALIDATION_MERGE_PASS",
+  "samples": 6019,
+  "scenes": 150,
+  "exact_official_validation_token_match": true,
+  "duplicate_tokens": 0,
+  "plan_sha256": "5a2cf6e65df7bb7e9e7652ad74cd411647e1324af106294e5de62c025473212b",
+  "models": [
+    {
+      "model": "lidar",
+      "samples": 6019,
+      "scenes": 150,
+      "results_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+      "result_path": "/content/bevfusion_full_validation/merged/lidar/results_nusc.json",
+      "sources": [
+        {
+          "batch": 1,
+          "samples": 2368,
+          "results_sha256": "76c7a9e9d5507b5e494df93ac0136b65477c9064f395457bb74b3c0e4b0384cc",
+          "protocol_sha256": "1ca606ea4ea27c2350b6b269c6dfae72fdc74c6af92df2714e6f7de70e6d287b"
+        },
+        {
+          "batch": 2,
+          "samples": 2368,
+          "results_sha256": "bb9e80d25ec602e98428ee614636fbde4b4e0300522af432dcf5b447605aebf2",
+          "protocol_sha256": "9de400523e8e3b5c11d2f126ac43e82cab074655f814ae44052cd1c999c27331"
+        },
+        {
+          "batch": 3,
+          "samples": 1283,
+          "results_sha256": "3b647fea8b2ba92ae5fef8e4d14e53d64da122bd914e03133a57d94050f90d46",
+          "protocol_sha256": "9c7b497d6d6693d22131a8cec1557dd0708eff01cf78a6b0a7984e1bb3826356"
+        }
+      ],
+      "common_protocol": {
+        "model": "lidar",
+        "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+        "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+        "seed": 20261002,
+        "torch": "2.1.2+cu121"
+      },
+      "configuration_consistency": "PASS"
+    },
+    {
+      "model": "lidar_camera",
+      "samples": 6019,
+      "scenes": 150,
+      "results_sha256": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd",
+      "result_path": "/content/bevfusion_full_validation/merged/lidar_camera/results_nusc.json",
+      "sources": [
+        {
+          "batch": 1,
+          "samples": 2368,
+          "results_sha256": "378c7d6df18e799b80b77916c474e0639f72b296cd62e70fb794006cd322ba7f",
+          "protocol_sha256": "32f4b6a6838ef7d1301bfb2b4dc2fbe0228fab08b1df23e2b59cb67fd0c81aa2"
+        },
+        {
+          "batch": 2,
+          "samples": 2368,
+          "results_sha256": "347070d9e035732f32d51c1cf293f922191cf2e326c6cc69f2e34d91bc97a515",
+          "protocol_sha256": "6f5f85dead5d483ad5d991192398a9a03b4f1e4400650a43a223fa7cef9a2c13"
+        },
+        {
+          "batch": 3,
+          "samples": 1283,
+          "results_sha256": "5f2ad16d601410fdd7e7810e326712a1550a93e2b3edb71b0567cf645b64ef16",
+          "protocol_sha256": "47127dad3ef7934dbc7f73a367b85f11f90adfabd4709f0a1ac6c8593433b745"
+        }
+      ],
+      "common_protocol": {
+        "model": "lidar_camera",
+        "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+        "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+        "seed": 20261002,
+        "torch": "2.1.2+cu121"
+      },
+      "configuration_consistency": "PASS"
+    }
+  ],
+  "scope": "Full predictions merged and verified; accuracy pending."
+}

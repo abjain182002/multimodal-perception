@@ -1,0 +1,114 @@
+{
+  "status": "PAIRED_FULL_VALIDATION_EVALUATION_PASS",
+  "samples": 6019,
+  "scenes": 150,
+  "models": {
+    "lidar": {
+      "status": "FULL_VALIDATION_EVALUATION_PASS",
+      "model": "lidar",
+      "samples": 6019,
+      "scenes": 150,
+      "eval_set": "val",
+      "prediction_gt_token_equality": true,
+      "predictions_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+      "metrics_summary_sha256": "9892bf4cdeb0f599838eb3ac90cb8bd4cc896e096afc379faed9c7053da2c500",
+      "metrics_details_sha256": "1b1c8ef97978c9c223dbd55887e49d9d3cb68c51b5a8eea10b3d31b6efe369b7",
+      "filtered_gt_counts": {
+        "car": 53043,
+        "pedestrian": 23500,
+        "traffic_cone": 10570,
+        "bicycle": 1824,
+        "bus": 2062,
+        "truck": 9260,
+        "construction_vehicle": 1513,
+        "barrier": 15903,
+        "motorcycle": 1855,
+        "trailer": 2331
+      },
+      "mAP": 0.6443012674636525,
+      "NDS": 0.6923533233234365,
+      "per_class_AP": {
+        "car": 0.8697370483949505,
+        "truck": 0.5961075217033981,
+        "bus": 0.7304842167078951,
+        "trailer": 0.44600842201074997,
+        "construction_vehicle": 0.2546894459813788,
+        "pedestrian": 0.8637210894379352,
+        "motorcycle": 0.6954500858629779,
+        "bicycle": 0.5487338837280569,
+        "traffic_cone": 0.740325425364918,
+        "barrier": 0.6977555354442639
+      },
+      "tp_errors": {
+        "trans_err": 0.28372089077535695,
+        "scale_err": 0.25239775490441113,
+        "orient_err": 0.2949896513681881,
+        "vel_err": 0.28029230964635055,
+        "attr_err": 0.18657249738959195
+      },
+      "evaluator_source_sha256": {
+        "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+        "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+        "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+        "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+      },
+      "scope": "Official full nuScenes validation split; two pretrained pipelines, not a controlled camera ablation."
+    },
+    "lidar_camera": {
+      "status": "FULL_VALIDATION_EVALUATION_PASS",
+      "model": "lidar_camera",
+      "samples": 6019,
+      "scenes": 150,
+      "eval_set": "val",
+      "prediction_gt_token_equality": true,
+      "predictions_sha256": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd",
+      "metrics_summary_sha256": "0c0754a74a6c1dc8fde2bd8d8878894a5956d1ba93406f0ec0c6e592feb6fcf9",
+      "metrics_details_sha256": "e2de25334352dbe870d4e1e01ecfb3817db42336db24e0f5dded87a668c8fb46",
+      "filtered_gt_counts": {
+        "car": 53043,
+        "pedestrian": 23500,
+        "traffic_cone": 10570,
+        "bicycle": 1824,
+        "bus": 2062,
+        "truck": 9260,
+        "construction_vehicle": 1513,
+        "barrier": 15903,
+        "motorcycle": 1855,
+        "trailer": 2331
+      },
+      "mAP": 0.6830990666994801,
+      "NDS": 0.7113516737651924,
+      "per_class_AP": {
+        "car": 0.8936231769604025,
+        "truck": 0.6397159137536589,
+        "bus": 0.7636575075017359,
+        "trailer": 0.4770991505981909,
+        "construction_vehicle": 0.2885444770783401,
+        "pedestrian": 0.8786709968805456,
+        "motorcycle": 0.7565428997180781,
+        "bicycle": 0.6251540245636596,
+        "traffic_cone": 0.7912755698429181,
+        "barrier": 0.7167069500972709
+      },
+      "tp_errors": {
+        "trans_err": 0.278898648001475,
+        "scale_err": 0.25475275007665826,
+        "orient_err": 0.3022633086681563,
+        "vel_err": 0.2794045628519657,
+        "attr_err": 0.18665932624722145
+      },
+      "evaluator_source_sha256": {
+        "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+        "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+        "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+        "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+      },
+      "scope": "Official full nuScenes validation split; two pretrained pipelines, not a controlled camera ablation."
+    }
+  },
+  "camera_lidar_minus_lidar_points": {
+    "mAP": 3.87977992358276,
+    "NDS": 1.8998350441755907
+  },
+  "limitations": "Comparison of two official pretrained pipelines; not a controlled camera ablation or independent training reproduction."
+}

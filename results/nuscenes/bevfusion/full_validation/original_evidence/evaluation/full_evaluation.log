@@ -1,0 +1,326 @@
+PINNED EVALUATOR SOURCE HASHES PASS
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 69.695 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 11.7 seconds.
+======
+
+EVALUATING FULL VALIDATION: lidar
+Initializing nuScenes detection evaluation
+Loaded results from /content/bevfusion_full_validation/merged/lidar/results_nusc.json. Found detections for 6019 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+  0%|          | 0/6019 [00:00<?, ?it/s]  0%|          | 21/6019 [00:00<00:28, 207.03it/s]  1%|▏         | 77/6019 [00:00<00:14, 413.41it/s]  3%|▎         | 207/6019 [00:00<00:07, 814.66it/s]  5%|▍         | 289/6019 [00:00<00:16, 352.71it/s]  6%|▌         | 346/6019 [00:01<00:19, 283.73it/s]  6%|▋         | 390/6019 [00:01<00:20, 279.93it/s]  8%|▊         | 457/6019 [00:01<00:15, 348.82it/s]  8%|▊         | 505/6019 [00:01<00:14, 373.46it/s]  9%|▉         | 553/6019 [00:01<00:17, 304.45it/s] 10%|█         | 602/6019 [00:01<00:15, 339.57it/s] 11%|█         | 657/6019 [00:01<00:13, 384.54it/s] 12%|█▏        | 703/6019 [00:01<00:14, 366.96it/s] 13%|█▎        | 771/6019 [00:02<00:11, 440.77it/s] 14%|█▎        | 821/6019 [00:02<00:12, 421.61it/s] 14%|█▍        | 868/6019 [00:02<00:14, 353.16it/s] 15%|█▌        | 912/6019 [00:02<00:13, 371.94it/s] 16%|█▌        | 953/6019 [00:02<00:13, 367.56it/s] 17%|█▋        | 994/6019 [00:02<00:13, 376.33it/s] 17%|█▋        | 1034/6019 [00:02<00:16, 307.29it/s] 18%|█▊        | 1068/6019 [00:03<00:17, 284.36it/s] 19%|█▊        | 1115/6019 [00:03<00:15, 325.82it/s] 19%|█▉        | 1152/6019 [00:03<00:14, 335.33it/s] 20%|█▉        | 1188/6019 [00:03<00:14, 323.83it/s] 21%|██        | 1273/6019 [00:03<00:10, 460.21it/s] 22%|██▏       | 1342/6019 [00:03<00:08, 521.97it/s] 23%|██▎       | 1408/6019 [00:03<00:08, 559.46it/s] 25%|██▌       | 1510/6019 [00:03<00:06, 688.20it/s] 26%|██▋       | 1581/6019 [00:04<00:09, 474.74it/s] 27%|██▋       | 1639/6019 [00:04<00:11, 384.19it/s] 28%|██▊       | 1687/6019 [00:04<00:11, 388.15it/s] 29%|██▉       | 1737/6019 [00:04<00:10, 410.27it/s] 30%|██▉       | 1800/6019 [00:04<00:09, 460.08it/s] 31%|███       | 1852/6019 [00:04<00:09, 425.90it/s] 32%|███▏      | 1899/6019 [00:04<00:10, 391.03it/s] 32%|███▏      | 1942/6019 [00:05<00:12, 326.56it/s] 33%|███▎      | 2007/6019 [00:05<00:10, 395.99it/s] 34%|███▍      | 2052/6019 [00:05<00:10, 390.77it/s] 35%|███▍      | 2095/6019 [00:05<00:10, 375.52it/s] 35%|███▌      | 2135/6019 [00:05<00:10, 376.03it/s] 36%|███▌      | 2175/6019 [00:05<00:10, 352.85it/s] 37%|███▋      | 2212/6019 [00:05<00:11, 338.77it/s] 38%|███▊      | 2274/6019 [00:05<00:09, 410.47it/s] 38%|███▊      | 2317/6019 [00:06<00:09, 390.76it/s] 39%|███▉      | 2358/6019 [00:06<00:09, 391.73it/s] 40%|███▉      | 2399/6019 [00:06<00:09, 371.20it/s] 41%|████▏     | 2483/6019 [00:06<00:07, 495.43it/s] 42%|████▏     | 2535/6019 [00:06<00:07, 484.78it/s] 43%|████▎     | 2602/6019 [00:06<00:06, 534.91it/s] 44%|████▍     | 2657/6019 [00:06<00:07, 451.71it/s] 45%|████▍     | 2706/6019 [00:06<00:07, 432.47it/s] 46%|████▌     | 2752/6019 [00:06<00:07, 419.28it/s] 46%|████▋     | 2796/6019 [00:07<00:07, 423.96it/s] 47%|████▋     | 2846/6019 [00:07<00:07, 441.93it/s] 48%|████▊     | 2914/6019 [00:07<00:06, 505.97it/s] 49%|████▉     | 2966/6019 [00:07<00:06, 455.42it/s] 51%|█████     | 3066/6019 [00:07<00:04, 597.13it/s] 52%|█████▏    | 3129/6019 [00:07<00:06, 474.87it/s] 53%|█████▎    | 3184/6019 [00:07<00:05, 492.19it/s] 54%|█████▍    | 3238/6019 [00:07<00:05, 500.09it/s] 55%|█████▍    | 3304/6019 [00:08<00:05, 541.14it/s] 56%|█████▌    | 3361/6019 [00:08<00:05, 523.83it/s] 57%|█████▋    | 3424/6019 [00:08<00:04, 551.28it/s] 58%|█████▊    | 3498/6019 [00:08<00:04, 603.65it/s] 59%|█████▉    | 3560/6019 [00:08<00:04, 590.41it/s] 60%|██████    | 3621/6019 [00:08<00:04, 550.22it/s] 61%|██████    | 3678/6019 [00:08<00:04, 538.69it/s] 62%|██████▏   | 3733/6019 [00:08<00:04, 514.73it/s] 64%|██████▎   | 3827/6019 [00:08<00:03, 629.19it/s] 66%|██████▌   | 3950/6019 [00:09<00:02, 796.19it/s] 67%|██████▋   | 4033/6019 [00:09<00:02, 741.73it/s] 68%|██████▊   | 4110/6019 [00:09<00:02, 666.36it/s] 69%|██████▉   | 4180/6019 [00:09<00:02, 670.17it/s] 71%|███████   | 4250/6019 [00:09<00:02, 663.69it/s] 72%|███████▏  | 4318/6019 [00:09<00:02, 572.63it/s] 73%|███████▎  | 4379/6019 [00:09<00:03, 524.93it/s] 74%|███████▎  | 4434/6019 [00:09<00:03, 458.31it/s] 75%|███████▍  | 4488/6019 [00:10<00:03, 474.39it/s] 75%|███████▌  | 4538/6019 [00:10<00:03, 440.51it/s] 78%|███████▊  | 4714/6019 [00:10<00:01, 762.39it/s] 81%|████████  | 4864/6019 [00:10<00:01, 952.90it/s] 83%|████████▎ | 4969/6019 [00:10<00:01, 838.78it/s] 84%|████████▍ | 5071/6019 [00:10<00:01, 880.63it/s] 86%|████████▌ | 5166/6019 [00:10<00:01, 763.01it/s] 87%|████████▋ | 5250/6019 [00:11<00:01, 674.50it/s] 88%|████████▊ | 5324/6019 [00:11<00:01, 602.52it/s] 90%|████████▉ | 5390/6019 [00:11<00:01, 551.54it/s] 93%|█████████▎| 5577/6019 [00:11<00:00, 842.07it/s] 97%|█████████▋| 5822/6019 [00:11<00:00, 1225.52it/s] 99%|█████████▉| 5970/6019 [00:11<00:00, 1287.73it/s]100%|██████████| 6019/6019 [00:11<00:00, 514.96it/s] 
+Loaded ground truth annotations for 6019 samples.
+Filtering predictions
+=> Original number of boxes: 746703
+=> After distance based filtering: 746458
+=> After LIDAR and RADAR points based filtering: 746458
+=> After bike rack filtering: 746293
+Filtering ground truth annotations
+=> Original number of boxes: 187528
+=> After distance based filtering: 134565
+=> After LIDAR and RADAR points based filtering: 121871
+=> After bike rack filtering: 121861
+EXACT FULL PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/bevfusion_full_validation/full_evaluation/lidar
+mAP: 0.6443
+mATE: 0.2837
+mASE: 0.2524
+mAOE: 0.2950
+mAVE: 0.2803
+mAAE: 0.1866
+NDS: 0.6924
+Eval time: 135.1s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.870 	0.172 	0.152 	0.088 	0.292 	0.192 
+truck               	0.596 	0.320 	0.183 	0.094 	0.247 	0.226 
+bus                 	0.730 	0.332 	0.186 	0.052 	0.467 	0.236 
+trailer             	0.446 	0.528 	0.216 	0.555 	0.188 	0.160 
+construction_vehicle	0.255 	0.691 	0.410 	0.859 	0.127 	0.322 
+pedestrian          	0.864 	0.131 	0.285 	0.387 	0.226 	0.098 
+motorcycle          	0.695 	0.184 	0.237 	0.210 	0.471 	0.250 
+bicycle             	0.549 	0.154 	0.250 	0.349 	0.224 	0.010 
+traffic_cone        	0.740 	0.126 	0.322 	nan   	nan   	nan   
+barrier             	0.698 	0.197 	0.283 	0.059 	nan   	nan   
+{
+  "status": "FULL_VALIDATION_EVALUATION_PASS",
+  "model": "lidar",
+  "samples": 6019,
+  "scenes": 150,
+  "eval_set": "val",
+  "prediction_gt_token_equality": true,
+  "predictions_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+  "metrics_summary_sha256": "9892bf4cdeb0f599838eb3ac90cb8bd4cc896e096afc379faed9c7053da2c500",
+  "metrics_details_sha256": "1b1c8ef97978c9c223dbd55887e49d9d3cb68c51b5a8eea10b3d31b6efe369b7",
+  "filtered_gt_counts": {
+    "car": 53043,
+    "pedestrian": 23500,
+    "traffic_cone": 10570,
+    "bicycle": 1824,
+    "bus": 2062,
+    "truck": 9260,
+    "construction_vehicle": 1513,
+    "barrier": 15903,
+    "motorcycle": 1855,
+    "trailer": 2331
+  },
+  "mAP": 0.6443012674636525,
+  "NDS": 0.6923533233234365,
+  "per_class_AP": {
+    "car": 0.8697370483949505,
+    "truck": 0.5961075217033981,
+    "bus": 0.7304842167078951,
+    "trailer": 0.44600842201074997,
+    "construction_vehicle": 0.2546894459813788,
+    "pedestrian": 0.8637210894379352,
+    "motorcycle": 0.6954500858629779,
+    "bicycle": 0.5487338837280569,
+    "traffic_cone": 0.740325425364918,
+    "barrier": 0.6977555354442639
+  },
+  "tp_errors": {
+    "trans_err": 0.28372089077535695,
+    "scale_err": 0.25239775490441113,
+    "orient_err": 0.2949896513681881,
+    "vel_err": 0.28029230964635055,
+    "attr_err": 0.18657249738959195
+  },
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "scope": "Official full nuScenes validation split; two pretrained pipelines, not a controlled camera ablation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar
+
+EVALUATING FULL VALIDATION: lidar_camera
+Initializing nuScenes detection evaluation
+Loaded results from /content/bevfusion_full_validation/merged/lidar_camera/results_nusc.json. Found detections for 6019 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+  0%|          | 0/6019 [00:00<?, ?it/s]  0%|          | 30/6019 [00:00<00:20, 292.95it/s]  3%|▎         | 209/6019 [00:00<00:05, 1161.05it/s]  5%|▌         | 326/6019 [00:00<00:11, 495.05it/s]   7%|▋         | 403/6019 [00:00<00:10, 516.91it/s]  8%|▊         | 494/6019 [00:00<00:09, 604.06it/s]  9%|▉         | 571/6019 [00:00<00:09, 562.96it/s] 11%|█         | 645/6019 [00:01<00:08, 603.26it/s] 12%|█▏        | 715/6019 [00:01<00:10, 510.23it/s] 13%|█▎        | 780/6019 [00:01<00:09, 536.85it/s] 14%|█▍        | 840/6019 [00:01<00:11, 464.95it/s] 15%|█▍        | 892/6019 [00:01<00:12, 415.63it/s] 16%|█▌        | 938/6019 [00:01<00:12, 402.25it/s] 16%|█▋        | 981/6019 [00:01<00:13, 383.71it/s] 17%|█▋        | 1021/6019 [00:02<00:14, 337.76it/s] 18%|█▊        | 1057/6019 [00:02<00:17, 290.29it/s] 18%|█▊        | 1089/6019 [00:02<00:16, 296.44it/s] 19%|█▉        | 1133/6019 [00:02<00:14, 329.39it/s] 19%|█▉        | 1172/6019 [00:02<00:14, 344.44it/s] 20%|██        | 1210/6019 [00:02<00:13, 352.59it/s] 22%|██▏       | 1304/6019 [00:02<00:09, 511.89it/s] 23%|██▎       | 1358/6019 [00:02<00:09, 509.39it/s] 24%|██▍       | 1441/6019 [00:03<00:07, 599.11it/s] 25%|██▌       | 1517/6019 [00:03<00:07, 641.06it/s] 26%|██▋       | 1583/6019 [00:03<00:11, 383.64it/s] 27%|██▋       | 1635/6019 [00:03<00:16, 270.02it/s] 28%|██▊       | 1676/6019 [00:04<00:16, 263.02it/s] 28%|██▊       | 1712/6019 [00:04<00:15, 273.80it/s] 29%|██▉       | 1747/6019 [00:04<00:15, 269.86it/s] 30%|██▉       | 1792/6019 [00:04<00:13, 305.45it/s] 30%|███       | 1828/6019 [00:04<00:14, 280.12it/s] 31%|███       | 1860/6019 [00:04<00:15, 269.98it/s] 31%|███▏      | 1890/6019 [00:04<00:17, 237.41it/s] 32%|███▏      | 1916/6019 [00:05<00:20, 198.16it/s] 32%|███▏      | 1938/6019 [00:05<00:24, 167.11it/s] 33%|███▎      | 1993/6019 [00:05<00:16, 239.91it/s] 34%|███▎      | 2023/6019 [00:05<00:17, 227.85it/s] 34%|███▍      | 2050/6019 [00:05<00:17, 227.06it/s] 34%|███▍      | 2076/6019 [00:05<00:17, 222.79it/s] 35%|███▍      | 2105/6019 [00:05<00:16, 236.87it/s] 35%|███▌      | 2131/6019 [00:05<00:16, 231.29it/s] 36%|███▌      | 2156/6019 [00:06<00:17, 218.11it/s] 36%|███▌      | 2179/6019 [00:06<00:20, 185.61it/s] 37%|███▋      | 2199/6019 [00:06<00:20, 186.12it/s] 37%|███▋      | 2226/6019 [00:06<00:18, 206.24it/s] 38%|███▊      | 2266/6019 [00:06<00:14, 254.89it/s] 38%|███▊      | 2293/6019 [00:06<00:15, 240.41it/s] 39%|███▊      | 2319/6019 [00:06<00:16, 229.79it/s] 39%|███▉      | 2343/6019 [00:06<00:16, 221.62it/s] 39%|███▉      | 2366/6019 [00:07<00:16, 216.18it/s] 40%|███▉      | 2388/6019 [00:07<00:18, 191.14it/s] 40%|████      | 2424/6019 [00:07<00:15, 232.82it/s] 41%|████      | 2476/6019 [00:07<00:11, 305.60it/s] 42%|████▏     | 2509/6019 [00:07<00:11, 299.90it/s] 42%|████▏     | 2544/6019 [00:07<00:11, 311.74it/s] 43%|████▎     | 2582/6019 [00:07<00:10, 328.47it/s] 43%|████▎     | 2616/6019 [00:07<00:10, 320.35it/s] 44%|████▍     | 2649/6019 [00:08<00:13, 246.52it/s] 44%|████▍     | 2677/6019 [00:08<00:14, 225.49it/s] 45%|████▌     | 2710/6019 [00:08<00:13, 249.32it/s] 46%|████▌     | 2746/6019 [00:08<00:11, 275.85it/s] 46%|████▌     | 2783/6019 [00:08<00:10, 299.49it/s] 47%|████▋     | 2838/6019 [00:08<00:08, 366.13it/s] 48%|████▊     | 2890/6019 [00:08<00:07, 408.54it/s] 49%|████▉     | 2938/6019 [00:08<00:07, 424.90it/s] 50%|█████     | 3024/6019 [00:08<00:05, 549.63it/s] 51%|█████▏    | 3085/6019 [00:09<00:05, 563.12it/s] 52%|█████▏    | 3143/6019 [00:09<00:06, 465.36it/s] 53%|█████▎    | 3207/6019 [00:09<00:05, 507.36it/s] 54%|█████▍    | 3261/6019 [00:09<00:05, 470.17it/s] 55%|█████▌    | 3332/6019 [00:09<00:05, 529.31it/s] 56%|█████▋    | 3388/6019 [00:09<00:04, 526.24it/s] 58%|█████▊    | 3461/6019 [00:09<00:04, 581.10it/s] 59%|█████▊    | 3522/6019 [00:09<00:04, 588.62it/s] 60%|█████▉    | 3583/6019 [00:09<00:04, 570.12it/s] 61%|██████    | 3642/6019 [00:10<00:04, 566.25it/s] 61%|██████▏   | 3700/6019 [00:10<00:04, 541.89it/s] 62%|██████▏   | 3755/6019 [00:10<00:04, 523.81it/s] 64%|██████▍   | 3849/6019 [00:10<00:03, 636.36it/s] 65%|██████▌   | 3936/6019 [00:10<00:02, 701.30it/s] 67%|██████▋   | 4018/6019 [00:10<00:02, 730.20it/s] 68%|██████▊   | 4092/6019 [00:10<00:02, 643.46it/s] 69%|██████▉   | 4159/6019 [00:10<00:03, 596.14it/s] 70%|███████   | 4234/6019 [00:10<00:02, 634.74it/s] 71%|███████▏  | 4300/6019 [00:11<00:02, 585.63it/s] 72%|███████▏  | 4361/6019 [00:11<00:02, 572.84it/s] 73%|███████▎  | 4420/6019 [00:11<00:03, 434.47it/s] 74%|███████▍  | 4480/6019 [00:11<00:03, 470.00it/s] 75%|███████▌  | 4533/6019 [00:11<00:03, 427.89it/s] 78%|███████▊  | 4721/6019 [00:11<00:01, 764.76it/s] 81%|████████  | 4882/6019 [00:11<00:01, 974.30it/s] 83%|████████▎ | 4993/6019 [00:12<00:01, 896.78it/s] 85%|████████▍ | 5093/6019 [00:12<00:01, 882.26it/s] 86%|████████▌ | 5189/6019 [00:12<00:01, 756.68it/s] 88%|████████▊ | 5273/6019 [00:12<00:01, 670.85it/s] 89%|████████▉ | 5347/6019 [00:12<00:01, 557.98it/s] 90%|████████▉ | 5410/6019 [00:12<00:01, 554.44it/s] 95%|█████████▌| 5729/6019 [00:12<00:00, 1139.34it/s] 98%|█████████▊| 5899/6019 [00:13<00:00, 1273.93it/s]100%|██████████| 6019/6019 [00:13<00:00, 458.94it/s] 
+Loaded ground truth annotations for 6019 samples.
+Filtering predictions
+=> Original number of boxes: 772434
+=> After distance based filtering: 772172
+=> After LIDAR and RADAR points based filtering: 772172
+=> After bike rack filtering: 771972
+Filtering ground truth annotations
+=> Original number of boxes: 187528
+=> After distance based filtering: 134565
+=> After LIDAR and RADAR points based filtering: 121871
+=> After bike rack filtering: 121861
+EXACT FULL PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/bevfusion_full_validation/full_evaluation/lidar_camera
+mAP: 0.6831
+mATE: 0.2789
+mASE: 0.2548
+mAOE: 0.3023
+mAVE: 0.2794
+mAAE: 0.1867
+NDS: 0.7114
+Eval time: 133.1s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.894 	0.169 	0.150 	0.063 	0.294 	0.186 
+truck               	0.640 	0.318 	0.181 	0.088 	0.255 	0.224 
+bus                 	0.764 	0.331 	0.185 	0.055 	0.468 	0.260 
+trailer             	0.477 	0.506 	0.210 	0.616 	0.181 	0.171 
+construction_vehicle	0.289 	0.691 	0.424 	0.843 	0.131 	0.305 
+pedestrian          	0.879 	0.130 	0.293 	0.396 	0.230 	0.105 
+motorcycle          	0.757 	0.184 	0.238 	0.263 	0.467 	0.233 
+bicycle             	0.625 	0.154 	0.256 	0.339 	0.210 	0.009 
+traffic_cone        	0.791 	0.121 	0.326 	nan   	nan   	nan   
+barrier             	0.717 	0.184 	0.285 	0.058 	nan   	nan   
+{
+  "status": "FULL_VALIDATION_EVALUATION_PASS",
+  "model": "lidar_camera",
+  "samples": 6019,
+  "scenes": 150,
+  "eval_set": "val",
+  "prediction_gt_token_equality": true,
+  "predictions_sha256": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd",
+  "metrics_summary_sha256": "0c0754a74a6c1dc8fde2bd8d8878894a5956d1ba93406f0ec0c6e592feb6fcf9",
+  "metrics_details_sha256": "e2de25334352dbe870d4e1e01ecfb3817db42336db24e0f5dded87a668c8fb46",
+  "filtered_gt_counts": {
+    "car": 53043,
+    "pedestrian": 23500,
+    "traffic_cone": 10570,
+    "bicycle": 1824,
+    "bus": 2062,
+    "truck": 9260,
+    "construction_vehicle": 1513,
+    "barrier": 15903,
+    "motorcycle": 1855,
+    "trailer": 2331
+  },
+  "mAP": 0.6830990666994801,
+  "NDS": 0.7113516737651924,
+  "per_class_AP": {
+    "car": 0.8936231769604025,
+    "truck": 0.6397159137536589,
+    "bus": 0.7636575075017359,
+    "trailer": 0.4770991505981909,
+    "construction_vehicle": 0.2885444770783401,
+    "pedestrian": 0.8786709968805456,
+    "motorcycle": 0.7565428997180781,
+    "bicycle": 0.6251540245636596,
+    "traffic_cone": 0.7912755698429181,
+    "barrier": 0.7167069500972709
+  },
+  "tp_errors": {
+    "trans_err": 0.278898648001475,
+    "scale_err": 0.25475275007665826,
+    "orient_err": 0.3022633086681563,
+    "vel_err": 0.2794045628519657,
+    "attr_err": 0.18665932624722145
+  },
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "scope": "Official full nuScenes validation split; two pretrained pipelines, not a controlled camera ablation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_camera
+{
+  "status": "PAIRED_FULL_VALIDATION_EVALUATION_PASS",
+  "samples": 6019,
+  "scenes": 150,
+  "models": {
+    "lidar": {
+      "status": "FULL_VALIDATION_EVALUATION_PASS",
+      "model": "lidar",
+      "samples": 6019,
+      "scenes": 150,
+      "eval_set": "val",
+      "prediction_gt_token_equality": true,
+      "predictions_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+      "metrics_summary_sha256": "9892bf4cdeb0f599838eb3ac90cb8bd4cc896e096afc379faed9c7053da2c500",
+      "metrics_details_sha256": "1b1c8ef97978c9c223dbd55887e49d9d3cb68c51b5a8eea10b3d31b6efe369b7",
+      "filtered_gt_counts": {
+        "car": 53043,
+        "pedestrian": 23500,
+        "traffic_cone": 10570,
+        "bicycle": 1824,
+        "bus": 2062,
+        "truck": 9260,
+        "construction_vehicle": 1513,
+        "barrier": 15903,
+        "motorcycle": 1855,
+        "trailer": 2331
+      },
+      "mAP": 0.6443012674636525,
+      "NDS": 0.6923533233234365,
+      "per_class_AP": {
+        "car": 0.8697370483949505,
+        "truck": 0.5961075217033981,
+        "bus": 0.7304842167078951,
+        "trailer": 0.44600842201074997,
+        "construction_vehicle": 0.2546894459813788,
+        "pedestrian": 0.8637210894379352,
+        "motorcycle": 0.6954500858629779,
+        "bicycle": 0.5487338837280569,
+        "traffic_cone": 0.740325425364918,
+        "barrier": 0.6977555354442639
+      },
+      "tp_errors": {
+        "trans_err": 0.28372089077535695,
+        "scale_err": 0.25239775490441113,
+        "orient_err": 0.2949896513681881,
+        "vel_err": 0.28029230964635055,
+        "attr_err": 0.18657249738959195
+      },
+      "evaluator_source_sha256": {
+        "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+        "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+        "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+        "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+      },
+      "scope": "Official full nuScenes validation split; two pretrained pipelines, not a controlled camera ablation."
+    },
+    "lidar_camera": {
+      "status": "FULL_VALIDATION_EVALUATION_PASS",
+      "model": "lidar_camera",
+      "samples": 6019,
+      "scenes": 150,
+      "eval_set": "val",
+      "prediction_gt_token_equality": true,
+      "predictions_sha256": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd",
+      "metrics_summary_sha256": "0c0754a74a6c1dc8fde2bd8d8878894a5956d1ba93406f0ec0c6e592feb6fcf9",
+      "metrics_details_sha256": "e2de25334352dbe870d4e1e01ecfb3817db42336db24e0f5dded87a668c8fb46",
+      "filtered_gt_counts": {
+        "car": 53043,
+        "pedestrian": 23500,
+        "traffic_cone": 10570,
+        "bicycle": 1824,
+        "bus": 2062,
+        "truck": 9260,
+        "construction_vehicle": 1513,
+        "barrier": 15903,
+        "motorcycle": 1855,
+        "trailer": 2331
+      },
+      "mAP": 0.6830990666994801,
+      "NDS": 0.7113516737651924,
+      "per_class_AP": {
+        "car": 0.8936231769604025,
+        "truck": 0.6397159137536589,
+        "bus": 0.7636575075017359,
+        "trailer": 0.4770991505981909,
+        "construction_vehicle": 0.2885444770783401,
+        "pedestrian": 0.8786709968805456,
+        "motorcycle": 0.7565428997180781,
+        "bicycle": 0.6251540245636596,
+        "traffic_cone": 0.7912755698429181,
+        "barrier": 0.7167069500972709
+      },
+      "tp_errors": {
+        "trans_err": 0.278898648001475,
+        "scale_err": 0.25475275007665826,
+        "orient_err": 0.3022633086681563,
+        "vel_err": 0.2794045628519657,
+        "attr_err": 0.18665932624722145
+      },
+      "evaluator_source_sha256": {
+        "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+        "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+        "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+        "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+      },
+      "scope": "Official full nuScenes validation split; two pretrained pipelines, not a controlled camera ablation."
+    }
+  },
+  "camera_lidar_minus_lidar_points": {
+    "mAP": 3.87977992358276,
+    "NDS": 1.8998350441755907
+  },
+  "limitations": "Comparison of two official pretrained pipelines; not a controlled camera ablation or independent training reproduction."
+}
+FULL VALIDATION METRICS AND CURVES PRESERVED

@@ -1,0 +1,14 @@
+{
+  "status": "BATCH_METADATA_PASS",
+  "batch": 1,
+  "version": "v1.0-trainval",
+  "samples": 2368,
+  "scenes": 59,
+  "maximum_preceding_lidar_sweeps": 9,
+  "same_ordered_batch_tokens": true,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "annotation_path": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch01_infos_val.pkl",
+  "annotation_sha256": "6f56a007c9ac31954c3be51eb8e1e092e65d5cc398c1873977cb2889ae3e4631",
+  "plan_sha256": "5a2cf6e65df7bb7e9e7652ad74cd411647e1324af106294e5de62c025473212b",
+  "scope": "Batch 1 of full-validation inference; accuracy pending."
+}

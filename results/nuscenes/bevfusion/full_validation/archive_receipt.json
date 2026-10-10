@@ -1,0 +1,9 @@
+{
+  "status": "ARCHIVE_AND_ALL_MEMBERS_VERIFIED",
+  "archive": "nuscenes_full_validation_evidence_20261010.zip",
+  "bytes": 2118593,
+  "sha256": "37a5882333283e882d21d8f165b308f79a5039a8e1064334ad480b93bd665269",
+  "members_verified": 111,
+  "stored_metric_arithmetic_tolerance": 1e-12,
+  "scope": "Original evidence integrity and stored arithmetic verified; this import does not replay ground-truth evaluation. Raw predictions remain separately on Drive."
+}

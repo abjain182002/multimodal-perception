@@ -1,0 +1,12 @@
+{
+  "model": "lidar",
+  "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+  "annotation_sha256": "b28fbd5498577d282077ba430a58a31947066819e07736861ffa266a9394e557",
+  "tokens_sha256": "54c47626ea2175be7ee13cbfdc14e906684d150357009b7a59d8e66ee49766a8",
+  "resolved_config_sha256": "bcb52cb54bf6b6f797724c3bd03cbce038ec7019c2c8ccbe4ee1cff19d050436",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "seed": 20261002,
+  "torch": "2.1.2+cu121",
+  "gpu": "Tesla T4",
+  "scope": "Batch 2 of full official validation; 2368 samples."
+}

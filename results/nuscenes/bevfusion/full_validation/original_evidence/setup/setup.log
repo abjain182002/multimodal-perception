@@ -1,0 +1,173 @@
+MMCV GPU RECHECK PASS
+W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu noble InRelease' does not seem to provide it (sources.list entry misspelt?)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.15).
+The following additional packages will be installed:
+  cpp-11 gcc-11-base libasan6 libgcc-11-dev libstdc++-11-dev libtsan0
+Suggested packages:
+  gcc-11-locales g++-11-multilib gcc-11-doc gcc-11-multilib libstdc++-11-doc
+The following NEW packages will be installed:
+  cpp-11 g++-11 gcc-11 gcc-11-base libasan6 libgcc-11-dev libstdc++-11-dev
+  libtsan0
+0 upgraded, 8 newly installed, 0 to remove and 64 not upgraded.
+Need to get 50.7 MB of archives.
+After this operation, 160 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 gcc-11-base amd64 11.5.0-1ubuntu1~24.04.1 [45.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 cpp-11 amd64 11.5.0-1ubuntu1~24.04.1 [9,999 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libasan6 amd64 11.5.0-1ubuntu1~24.04.1 [2,264 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libtsan0 amd64 11.5.0-1ubuntu1~24.04.1 [2,268 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libgcc-11-dev amd64 11.5.0-1ubuntu1~24.04.1 [2,481 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 gcc-11 amd64 11.5.0-1ubuntu1~24.04.1 [20.1 MB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 libstdc++-11-dev amd64 11.5.0-1ubuntu1~24.04.1 [2,094 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 g++-11 amd64 11.5.0-1ubuntu1~24.04.1 [11.4 MB]
+Fetched 50.7 MB in 7s (7,386 kB/s)
+Selecting previously unselected package gcc-11-base:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 127332 files and directories currently installed.)
+Preparing to unpack .../0-gcc-11-base_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking gcc-11-base:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package cpp-11.
+Preparing to unpack .../1-cpp-11_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking cpp-11 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package libasan6:amd64.
+Preparing to unpack .../2-libasan6_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking libasan6:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../3-libtsan0_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking libtsan0:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package libgcc-11-dev:amd64.
+Preparing to unpack .../4-libgcc-11-dev_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking libgcc-11-dev:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package gcc-11.
+Preparing to unpack .../5-gcc-11_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking gcc-11 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package libstdc++-11-dev:amd64.
+Preparing to unpack .../6-libstdc++-11-dev_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking libstdc++-11-dev:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Selecting previously unselected package g++-11.
+Preparing to unpack .../7-g++-11_11.5.0-1ubuntu1~24.04.1_amd64.deb ...
+Unpacking g++-11 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up gcc-11-base:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up libasan6:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up libtsan0:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up cpp-11 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up libgcc-11-dev:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up gcc-11 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up libstdc++-11-dev:amd64 (11.5.0-1ubuntu1~24.04.1) ...
+Setting up g++-11 (11.5.0-1ubuntu1~24.04.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+/sbin/ldconfig.real: /usr/local/lib/libtbbmalloc.so.2 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libhwloc.so.15 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtcm_debug.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libumf.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libur_loader.so.0 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtcm.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtbb.so.12 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtbbbind_2_5.so.3 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtbbbind.so.3 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtbbmalloc_proxy.so.2 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libur_adapter_level_zero.so.0 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libur_adapter_level_zero_v2.so.0 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libtbbbind_2_0.so.3 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/local/lib/libur_adapter_opencl.so.0 is not a symbolic link
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 4117M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 4117M    3  136M    0     0   118M      0  0:00:34  0:00:01  0:00:33  118M  9 4117M    9  399M    0     0   184M      0  0:00:22  0:00:02  0:00:20  184M 16 4117M   16  661M    0     0   208M      0  0:00:19  0:00:03  0:00:16  208M 22 4117M   22  935M    0     0   223M      0  0:00:18  0:00:04  0:00:14  223M 28 4117M   28 1173M    0     0   226M      0  0:00:18  0:00:05  0:00:13  262M 32 4117M   32 1349M    0     0   169M      0  0:00:24  0:00:07  0:00:17  178M 34 4117M   34 1430M    0     0   175M      0  0:00:23  0:00:08  0:00:15  171M 42 4117M   42 1730M    0     0   188M      0  0:00:21  0:00:09  0:00:12  177M 47 4117M   47 1955M    0     0   192M      0  0:00:21  0:00:10  0:00:11  170M 51 4117M   51 2139M    0     0   191M      0  0:00:21  0:00:11  0:00:10  160M 54 4117M   54 2239M    0     0   182M      0  0:00:22  0:00:12  0:00:10  206M 58 4117M   58 2389M    0     0   181M      0  0:00:22  0:00:13  0:00:09  191M 63 4117M   63 2610M    0     0   184M      0  0:00:22  0:00:14  0:00:08  176M 69 4117M   69 2854M    0     0   187M      0  0:00:21  0:00:15  0:00:06  178M 75 4117M   75 3112M    0     0   161M      0  0:00:25  0:00:19  0:00:06  120M 75 4117M   75 3122M    0     0   153M      0  0:00:26  0:00:20  0:00:06  109M 82 4117M   82 3389M    0     0   160M      0  0:00:25  0:00:21  0:00:04  125M 88 4117M   88 3642M    0     0   164M      0  0:00:25  0:00:22  0:00:03  128M 95 4117M   95 3928M    0     0   169M      0  0:00:24  0:00:23  0:00:01  134M100 4117M  100 4117M    0     0   171M      0  0:00:23  0:00:23 --:--:--  213M
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Mon_Apr__3_17:16:06_PDT_2023
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
+running build_ext
+/content/bevfusion310/lib/python3.10/site-packages/torch/utils/cpp_extension.py:424: UserWarning: There are no /usr/bin/g++-11 version bounds defined for CUDA version 12.1
+  warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+building 'projects.BEVFusion.bevfusion.ops.bev_pool.bev_pool_ext' extension
+creating /content/mmdetection3d/build
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/src
+Emitting ninja build file /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/build.ninja...
+Compiling objects...
+Using envvar MAX_JOBS (2) as the number of workers...
+[1/2] /usr/local/cuda-12.1/bin/nvcc  -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool_cuda.cu -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_75,code=sm_75 -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_86,code=sm_86 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=bev_pool_ext -D_GLIBCXX_USE_CXX11_ABI=0 -ccbin /usr/bin/gcc-11 -std=c++17
+[2/2] /usr/bin/g++-11 -MMD -MF /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool.o.d -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool.cpp -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=bev_pool_ext -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+creating build/lib.linux-x86_64-cpython-310
+creating build/lib.linux-x86_64-cpython-310/projects
+creating build/lib.linux-x86_64-cpython-310/projects/BEVFusion
+creating build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion
+creating build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops
+creating build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool
+/usr/bin/g++-11 -shared -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=sha1 -Wl,--exclude-libs,ALL /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool.o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/src/bev_pool_cuda.o -L/content/bevfusion310/lib/python3.10/site-packages/torch/lib -L/usr/local/cuda-12.1/lib64 -L/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/bev_pool_ext.cpython-310-x86_64-linux-gnu.so
+building 'projects.BEVFusion.bevfusion.ops.voxel.voxel_layer' extension
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel
+creating /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src
+Emitting ninja build file /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/build.ninja...
+Compiling objects...
+Using envvar MAX_JOBS (2) as the number of workers...
+[1/5] /usr/bin/g++-11 -MMD -MF /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cpu.o.d -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cpu.cpp -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=voxel_layer -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[2/5] /usr/bin/g++-11 -MMD -MF /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization.o.d -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization.cpp -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=voxel_layer -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[3/5] /usr/local/cuda-12.1/bin/nvcc  -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cuda.cu -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_75,code=sm_75 -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_86,code=sm_86 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=voxel_layer -D_GLIBCXX_USE_CXX11_ABI=0 -ccbin /usr/bin/gcc-11 -std=c++17
+[4/5] /usr/bin/g++-11 -MMD -MF /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.o.d -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -O3 -fstack-protector -fstack-clash-protection -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -fPIC -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=voxel_layer -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp: In instantiation of ‘void {anonymous}::dynamic_voxelize_kernel(at::TensorAccessor<T, 2>, at::TensorAccessor<T_int, 2>, std::vector<float, std::allocator<float> >, std::vector<float, std::allocator<float> >, std::vector<int>, int, int, int) [with T = double; T_int = int]’:
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp:163:3:   required from here
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp:15:13: warning: unused variable ‘ndim_minus_1’ [-Wunused-variable]
+   15 |   const int ndim_minus_1 = NDim - 1;
+      |             ^~~~~~~~~~~~
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp: In instantiation of ‘void {anonymous}::dynamic_voxelize_kernel(at::TensorAccessor<T, 2>, at::TensorAccessor<T_int, 2>, std::vector<float, std::allocator<float> >, std::vector<float, std::allocator<float> >, std::vector<int>, int, int, int) [with T = float; T_int = int]’:
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp:163:3:   required from here
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp:15:13: warning: unused variable ‘ndim_minus_1’ [-Wunused-variable]
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp: In instantiation of ‘void {anonymous}::dynamic_voxelize_kernel(at::TensorAccessor<T, 2>, at::TensorAccessor<T_int, 2>, std::vector<float, std::allocator<float> >, std::vector<float, std::allocator<float> >, std::vector<int>, int, int, int) [with T = c10::Half; T_int = int]’:
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp:163:3:   required from here
+/content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.cpp:15:13: warning: unused variable ‘ndim_minus_1’ [-Wunused-variable]
+[5/5] /usr/local/cuda-12.1/bin/nvcc  -DWITH_CUDA -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/TH -I/content/bevfusion310/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda-12.1/include -I/content/bevfusion310/include -I/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/include/python3.10 -c -c /content/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cuda.cu -o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_75,code=sm_75 -gencode=arch=compute_80,code=sm_80 -gencode=arch=compute_86,code=sm_86 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=voxel_layer -D_GLIBCXX_USE_CXX11_ABI=0 -ccbin /usr/bin/gcc-11 -std=c++17
+creating build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel
+/usr/bin/g++-11 -shared -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,--build-id=sha1 -Wl,--exclude-libs,ALL /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cpu.o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/scatter_points_cuda.o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization.o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cpu.o /content/mmdetection3d/build/temp.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/src/voxelization_cuda.o -L/content/bevfusion310/lib/python3.10/site-packages/torch/lib -L/usr/local/cuda-12.1/lib64 -L/root/.local/share/uv/python/cpython-3.10.22-linux-x86_64-gnu/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/voxel_layer.cpython-310-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/bev_pool/bev_pool_ext.cpython-310-x86_64-linux-gnu.so -> projects/BEVFusion/bevfusion/ops/bev_pool
+copying build/lib.linux-x86_64-cpython-310/projects/BEVFusion/bevfusion/ops/voxel/voxel_layer.cpython-310-x86_64-linux-gnu.so -> projects/BEVFusion/bevfusion/ops/voxel
+{
+  "status": "BEVFUSION_CUDA_OPERATIONS_PASS",
+  "torch": "2.1.2+cu121",
+  "torch_cuda": "12.1",
+  "gpu": "Tesla T4",
+  "bev_pool_output": [
+    4.0,
+    6.0
+  ],
+  "voxel_coordinates": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "voxel_point_counts": [
+    2,
+    1
+  ],
+  "scope": "Synthetic CUDA operation checks; inference pending."
+}

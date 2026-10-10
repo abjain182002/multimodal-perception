@@ -1,0 +1,12 @@
+{
+  "model": "lidar_camera",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "annotation_sha256": "76761a70a59f175531a6abc1860ae457c5316c689ae4a5c24037ad9186773204",
+  "tokens_sha256": "07abeacb4e3705b5f2be4b760480558c40b3531c5932b99406f810e68fff4701",
+  "resolved_config_sha256": "ae1dcd48e15d644edc40e0b5441cab9b81a53bb047fc14141e5b232e960eec13",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "seed": 20261002,
+  "torch": "2.1.2+cu121",
+  "gpu": "Tesla T4",
+  "scope": "Batch 3 of full official validation; 1283 samples."
+}

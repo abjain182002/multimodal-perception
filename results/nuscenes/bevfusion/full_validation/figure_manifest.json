@@ -1,0 +1,19 @@
+{
+  "source": "original_evidence/evaluation/paired_evaluation.json",
+  "source_sha256": "9307819eeb2c1816492b5e6c1a8112b7c079fb4fc09318c97471b467db69b05b",
+  "files": {
+    "figures/class_ap.pdf": "e1a18dc540c7cd0b44f0c2f6cf7dc1d8177e05b8636393d7e59a2f278fdb0310",
+    "figures/class_ap.png": "97d22d7adeaf29ec8e46f61b2a398d81d0a1ed854a5e0b5d83866ed8b988edf4",
+    "figures/class_ap.svg": "7f72d25b95e387d8155558c304fbc7963dc708fd5931dbe2f719444873237ff6",
+    "figures/class_support.pdf": "bc38fce639a735a2c64e35ee8defacfc4f2d6b0968dfaed407c0b2154e15d040",
+    "figures/class_support.png": "82643870b70733a845eaefdc5a23240ab4bb1414e088d9066f02dcc0638c7b71",
+    "figures/class_support.svg": "6ab9214bfc08b1d4f15799084fd68eefb165e2fef735b1e659f98c3ea540feed",
+    "figures/comparison.pdf": "2146e0b32719aba5457d4c7141c4e87af8d5f5e5660ee1537582d8ffe7156146",
+    "figures/comparison.png": "28c3257f7bd482139fdc1054ee5873bd88cc48dd92de8b0330cbf3a3861839a7",
+    "figures/comparison.svg": "1e08daa2c685d875dbe3ffeab609e765fa9dfd1c1033ae66f3a76285447038ed",
+    "figures/tp_errors.pdf": "17042367e43e6aaa5ee051e5cfe6046b4b2f38c6de9e4c2d265b37e0a90bf7fc",
+    "figures/tp_errors.png": "f6572f6261678de9ea1271e833756b42cdc2ebf2c4ba74f20424c080b0900980",
+    "figures/tp_errors.svg": "c4207623c14ee92bcd712977aec632b4c3c9c18daf695bdaadb18235ba86310c"
+  },
+  "scope": "Descriptive single evaluation; no confidence intervals or significance claims."
+}

@@ -1,5 +1,7 @@
 # Validated Experimental Results
 
+> **Full nuScenes update (10 October 2026):** Official pretrained LiDAR / camera–LiDAR pipelines evaluated all 6,019 validation samples / 150 scenes. mAP ×100 = **64.4301 / 68.3099**; NDS ×100 = **69.2353 / 71.1352**; differences +3.8798 / +1.8998 points. All ten class APs increase; scale, orientation and attribute errors slightly worsen. Original 111-member evidence archive and stored arithmetic verified. A fresh full-split replay is not claimed. [Full findings](nuscenes/bevfusion/full_validation/FINDINGS.md).
+
 > **Verification update (8 October 2026):** CPU ground-truth replay reproduced the frozen nuScenes subset headline metrics exactly; all compared summary/detail values agree within 1e-12 (maximum absolute error 8.881784197001252e-16), excluding evaluation time. This is same-evaluator reproduction, not independent cross-implementation verification. [Replay evidence](nuscenes/bevfusion/validation_subset/replay_20261008/README.md).
 
 > **BEVFusion update (2 October 2026):** Official pretrained pipelines completed the same availability-selected 1,231-sample / 31-scene nuScenes validation subset. LiDAR / camera–LiDAR mAP × 100 = **64.2114 / 67.8147**; NDS × 100 = **69.2087 / 71.1543**. Differences are +3.6033 and +1.9457 points. All ten classes have filtered GT support. This is 20.45% of official validation, not random, not full validation and not a controlled camera ablation. [Findings and provenance](nuscenes/bevfusion/validation_subset/FINDINGS.md). The separate [81-sample mini pilot](nuscenes/bevfusion/mini/FINDINGS.md) is also measured.
@@ -482,7 +484,7 @@ The following should **not** be claimed from the current evidence:
 - a standardized end-to-end runtime ratio,
 - completion of the full Azitt PV-RCNN++ pipeline on macOS,
 - completion of PV-RCNN++/Azitt or full-validation BEVFusion reproduction,
-- full nuScenes validation results or generalization beyond the measured mini/subset scopes,
+- generalization beyond the measured full nuScenes validation and KITTI scopes,
 - completed robustness evaluation.
 
 ---
