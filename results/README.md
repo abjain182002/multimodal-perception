@@ -33,3 +33,7 @@ Input preparation is recorded separately: [full validation staging audit](nuscen
 ## Artifact policy
 
 Commit compact metrics, selected figures and cases, source/protocol records and verification audits. Keep datasets, weights, environments, bulk predictions and generated frame collections outside Git. Archived manifests retain original bytes and historical paths; the migration map records current locations. File moves do not create new experimental evidence.
+
+## Supervisor benchmark comparisons
+
+[Source-checked benchmark tables](benchmarks/BENCHMARK_COMPARISONS.md) separate full nuScenes checkpoint-linked references from measured KITTI AP40 results. AP11 and unspecified upstream AP values are context only; no cross-protocol deltas are claimed. Case-study visuals remain pending.

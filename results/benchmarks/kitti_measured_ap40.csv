@@ -1,0 +1,7 @@
+pipeline,easy_ap40,moderate_ap40,hard_ap40,validation_frames,class,3d_iou,scope
+PointPillars,90.34490342609234,79.12987417920098,76.15655595797031,3769,Car,0.7,Complete pipeline comparison; validation inspected iteratively
+PV-RCNN,92.10472058013262,84.36044205944499,82.48301857656134,3769,Car,0.7,Complete pipeline comparison; validation inspected iteratively
+"CLOCs + YOLO26x; Seed 20260928, epoch 12",90.76840215875946,79.86155798574384,74.87193504621,3769,Car,0.7,Complete pipeline comparison; validation inspected iteratively
+"CLOCs + YOLO26x; Seed 20260929, epoch 12",82.5580514709773,76.26661994762556,73.15300231998172,3769,Car,0.7,Complete pipeline comparison; validation inspected iteratively
+"CLOCs + YOLO26x; Seed 20260930, epoch 12",89.80512993623556,78.76164510145254,73.46482156620041,3769,Car,0.7,Complete pipeline comparison; validation inspected iteratively
+"CLOCs + YOLO26x; Seed 20260928, epoch 24",90.26104233823038,79.48743254468016,74.77969808868669,3769,Car,0.7,Complete pipeline comparison; validation inspected iteratively

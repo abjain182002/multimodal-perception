@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "mmdet3d_bevfusion",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/projects/BEVFusion/README.md",
+      "retrieved_date": "2026-10-10",
+      "fetched_text_sha256": "81f1d4b65dcd0c6c6653bcbdb0bfd56faf017f25b5c790babea8f8cebb5147cd"
+    },
+    {
+      "id": "mmdet3d_pointpillars",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/configs/pointpillars/README.md",
+      "retrieved_date": "2026-10-10",
+      "fetched_text_sha256": "aa07b02086505f22411d2d259466c237425cb9a92888d8c876adf146e6776157"
+    },
+    {
+      "id": "openpcdet",
+      "url": "https://github.com/open-mmlab/OpenPCDet/blob/233f849829b6ac19afb8af8837a0246890908755/README.md",
+      "retrieved_date": "2026-10-10",
+      "fetched_text_sha256": "70a23f56f41d75834a18e4cfd61c9b3aedb0bd8fb85bb1c709265e8a0a785ffa"
+    },
+    {
+      "id": "nuscenes_metrics",
+      "url": "https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/eval/detection/README.md",
+      "retrieved_date": "2026-10-10",
+      "fetched_text_sha256": "67e4d405bf8e5574553d78968ec3830e71940a6fd6bc9b8344ba2387b13201b5"
+    }
+  ],
+  "scope": "Primary documentation inspected; upstream training/evaluation logs and complete cross-framework configuration equivalence have not been audited."
+}

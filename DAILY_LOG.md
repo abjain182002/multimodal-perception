@@ -310,3 +310,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Verified supplied 2,118,593-byte original evidence ZIP SHA-256 37a5882333283e882d21d8f165b308f79a5039a8e1064334ad480b93bd665269 and all 111 member hashes/sizes. Stored mAP/NDS arithmetic agrees within 1e-12; this import does not replay GT evaluation. Raw merged predictions remain separately on Drive with recorded hashes.
 - Imported all original compact evidence bytes, four visually reviewed figures in PNG/PDF/SVG, exact CSV tables and plotting source under results/nuscenes/bevfusion/full_validation/. Updated current status indexes while preserving prior subset/mini and historical logs.
 - Full accuracy evaluation is complete; separate full-split replay, selected nuScenes case studies, comparable runtime, robustness and open CLOCs analyses remain pending. This compares pretrained pipelines, not a controlled camera ablation or project training.
+
+
+## 10 October 2026 — Source-checked supervisor benchmark tables
+
+- Added `results/benchmarks/BENCHMARK_COMPARISONS.md`, two numerical CSVs, source URLs/text hashes and a compact manifest.
+- Compared full nuScenes measurements with the same checkpoint-linked MMDetection3D reference: mAP/NDS deficits approximately 0.47/0.36 points (LiDAR) and 0.29/0.26 points (camera–LiDAR). Cause unresolved; rounded upstream values are not exact replay targets.
+- Preserved all three aligned CLOCs seeds and epoch-24 continuation in the measured KITTI AP40 table. OpenPCDet AP11 and MMDetection3D unspecified AP are separate context, with no direct AP40 deltas.
+- No new inference, ground-truth replay, case-study rendering, training or deletion performed. Case studies and outstanding diagnostics remain next work.

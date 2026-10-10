@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_CHECKED_BENCHMARK_TABLES",
+  "date": "2026-10-10",
+  "project_source_commit": "d1c88526bfc3fe6ef8b3ac65d3817942347f4426",
+  "scope": "No new inference or evaluation; measured values reused from frozen evidence. AP11 and ambiguous upstream AP values are context only.",
+  "files": {
+    "sources.json": {
+      "bytes": 1396,
+      "sha256": "5a9b0c47a043955825ef87375d9cb7399554ae4d0e4c72702e26266f22bb186c"
+    },
+    "nuscenes_checkpoint_comparison.csv": {
+      "bytes": 802,
+      "sha256": "db030bdf6b97bd556a9d3b78445f485522a8c4398109e9a72109b3fff7ef1fdd"
+    },
+    "BENCHMARK_COMPARISONS.md": {
+      "bytes": 8755,
+      "sha256": "f091ec4d3183ec1dfa816a6afdb5d9962d2c5f5503e0e263725fd193cd68e9c5"
+    },
+    "kitti_measured_ap40.csv": {
+      "bytes": 1056,
+      "sha256": "4da4a8716be343011cf7d0034c81a6b80d4c609071cf80b97910726ec5831e64"
+    }
+  }
+}
