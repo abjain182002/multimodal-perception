@@ -54,3 +54,8 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## Annotated nuScenes cases
 
 [Six case studies with camera crops and paired bird's-eye views](results/nuscenes/bevfusion/case_studies/20261013/README.md) illustrate benefits, regressions and shared failures. Captions separate observations from untested causal explanations.
+
+## Camera availability experiment
+
+[600-frame paired camera-masking study](results/nuscenes/bevfusion/camera_availability/20261014/README.md): intact six-view fusion scores 68.13 mAP / 71.29 NDS; front/back retained with four views masked scores 63.63 / 68.76; front masked scores 64.84 / 69.44. Same fusion weights and tokens; missing-view robustness, with six-view computation retained.
+

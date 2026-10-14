@@ -1,0 +1,289 @@
+LOADING MODEL: lidar
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth
+10/14 08:34:12 - mmengine - WARNING - v1.0-trainval is not a meta file, simply parsed as meta information
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth
+STRICT CHECKPOINT LOAD PASS: lidar
+10/14 08:34:15 - mmengine - INFO - ------------------------------
+10/14 08:34:15 - mmengine - INFO - The length of test dataset: 600
+10/14 08:34:15 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+{
+  "condition": "lidar_baseline",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "strict_checkpoint_load": true,
+  "finite_predictions": true,
+  "detections": 200,
+  "prediction_sha256": "72de8663fef442e335dce9e724d89335781ef917e9f58dc63c3d9c6a89fdbfe8",
+  "input_check": {
+    "points_sha256": [
+      "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+    ]
+  }
+}
+LOADING MODEL: lidar_camera
+10/14 08:34:22 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Downloading: "https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth" to /root/.cache/torch/hub/checkpoints/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+STRICT CHECKPOINT LOAD PASS: lidar_camera
+10/14 08:34:28 - mmengine - INFO - ------------------------------
+10/14 08:34:28 - mmengine - INFO - The length of test dataset: 600
+10/14 08:34:28 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+{
+  "condition": "fusion_six_cameras",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "strict_checkpoint_load": true,
+  "finite_predictions": true,
+  "detections": 200,
+  "prediction_sha256": "47cf8a66a047553e3fb29eb26dc2d17203e12aa752242419668ee0f0f11f4f43",
+  "input_check": {
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ],
+    "masked_channels": [],
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "unmasked_views_unchanged": true,
+    "lidar_and_geometry_unchanged_across_fusion_conditions": true,
+    "points_sha256": [
+      "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+    ]
+  }
+}
+/content/mmdetection3d/projects/BEVFusion/bevfusion/utils.py:120: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+{
+  "condition": "fusion_front_back_only",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "strict_checkpoint_load": true,
+  "finite_predictions": true,
+  "detections": 200,
+  "prediction_sha256": "e59d1c9241c87ecfc934941cb71c9869a38576693777c0b1691fdac8eb843b76",
+  "input_check": {
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ],
+    "masked_channels": [
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ],
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "unmasked_views_unchanged": true,
+    "lidar_and_geometry_unchanged_across_fusion_conditions": true,
+    "points_sha256": [
+      "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+    ]
+  }
+}
+{
+  "condition": "fusion_front_camera_missing",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "strict_checkpoint_load": true,
+  "finite_predictions": true,
+  "detections": 200,
+  "prediction_sha256": "dc7514dd4f166429cff63a4427124767c444ff7c4655355df43cfad58a974f07",
+  "input_check": {
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_FRONT_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_BACK_RIGHT"
+    ],
+    "masked_channels": [
+      "CAM_FRONT"
+    ],
+    "image_shape": [
+      1,
+      6,
+      3,
+      256,
+      704
+    ],
+    "unmasked_views_unchanged": true,
+    "lidar_and_geometry_unchanged_across_fusion_conditions": true,
+    "points_sha256": [
+      "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+    ]
+  }
+}
+{
+  "status": "FOUR_CONDITION_MODEL_AND_MASK_SMOKE_PASS",
+  "samples_in_frozen_subset": 600,
+  "smoke_sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "protocol_sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d",
+  "conditions": [
+    {
+      "condition": "lidar_baseline",
+      "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+      "strict_checkpoint_load": true,
+      "finite_predictions": true,
+      "detections": 200,
+      "prediction_sha256": "72de8663fef442e335dce9e724d89335781ef917e9f58dc63c3d9c6a89fdbfe8",
+      "input_check": {
+        "points_sha256": [
+          "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+        ]
+      }
+    },
+    {
+      "condition": "fusion_six_cameras",
+      "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+      "strict_checkpoint_load": true,
+      "finite_predictions": true,
+      "detections": 200,
+      "prediction_sha256": "47cf8a66a047553e3fb29eb26dc2d17203e12aa752242419668ee0f0f11f4f43",
+      "input_check": {
+        "camera_order": [
+          "CAM_FRONT",
+          "CAM_FRONT_RIGHT",
+          "CAM_FRONT_LEFT",
+          "CAM_BACK",
+          "CAM_BACK_LEFT",
+          "CAM_BACK_RIGHT"
+        ],
+        "masked_channels": [],
+        "image_shape": [
+          1,
+          6,
+          3,
+          256,
+          704
+        ],
+        "unmasked_views_unchanged": true,
+        "lidar_and_geometry_unchanged_across_fusion_conditions": true,
+        "points_sha256": [
+          "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+        ]
+      }
+    },
+    {
+      "condition": "fusion_front_back_only",
+      "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+      "strict_checkpoint_load": true,
+      "finite_predictions": true,
+      "detections": 200,
+      "prediction_sha256": "e59d1c9241c87ecfc934941cb71c9869a38576693777c0b1691fdac8eb843b76",
+      "input_check": {
+        "camera_order": [
+          "CAM_FRONT",
+          "CAM_FRONT_RIGHT",
+          "CAM_FRONT_LEFT",
+          "CAM_BACK",
+          "CAM_BACK_LEFT",
+          "CAM_BACK_RIGHT"
+        ],
+        "masked_channels": [
+          "CAM_FRONT_RIGHT",
+          "CAM_FRONT_LEFT",
+          "CAM_BACK_LEFT",
+          "CAM_BACK_RIGHT"
+        ],
+        "image_shape": [
+          1,
+          6,
+          3,
+          256,
+          704
+        ],
+        "unmasked_views_unchanged": true,
+        "lidar_and_geometry_unchanged_across_fusion_conditions": true,
+        "points_sha256": [
+          "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+        ]
+      }
+    },
+    {
+      "condition": "fusion_front_camera_missing",
+      "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+      "strict_checkpoint_load": true,
+      "finite_predictions": true,
+      "detections": 200,
+      "prediction_sha256": "dc7514dd4f166429cff63a4427124767c444ff7c4655355df43cfad58a974f07",
+      "input_check": {
+        "camera_order": [
+          "CAM_FRONT",
+          "CAM_FRONT_RIGHT",
+          "CAM_FRONT_LEFT",
+          "CAM_BACK",
+          "CAM_BACK_LEFT",
+          "CAM_BACK_RIGHT"
+        ],
+        "masked_channels": [
+          "CAM_FRONT"
+        ],
+        "image_shape": [
+          1,
+          6,
+          3,
+          256,
+          704
+        ],
+        "unmasked_views_unchanged": true,
+        "lidar_and_geometry_unchanged_across_fusion_conditions": true,
+        "points_sha256": [
+          "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+        ]
+      }
+    }
+  ],
+  "scope": "One shared sample checked; subset accuracy pending."
+}
+SMOKE SCRIPT, CONFIGURATIONS AND PREDICTIONS VERIFIED ON DRIVE

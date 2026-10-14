@@ -41,3 +41,8 @@ Commit compact metrics, selected figures and cases, source/protocol records and 
 ## nuScenes case studies
 
 [Six annotated cases](nuscenes/bevfusion/case_studies/20261013/README.md): figures, object records, plotting code and hashes from existing full-validation predictions. No new accuracy evaluation or sensor-ablation experiment.
+
+## Camera availability and robustness
+
+[600-frame nuScenes camera-availability study](nuscenes/bevfusion/camera_availability/20261014/README.md) includes three comparison figures, exact tables, frozen selection, model/mask checks and original evaluator records. Accuracy completed; controlled runtime and cost analysis remain pending.
+

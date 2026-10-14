@@ -121,3 +121,17 @@
 ## Reading the figures
 
 KITTI AP40 and nuScenes mAP/NDS are different metrics. Selected case studies illustrate individual outcomes, not their prevalence. The nuScenes subset is availability-selected; neither mini nor subset is full validation. Historical raw-cloud CLOCs plots are intentionally excluded from this review gallery. Read each experiment’s findings for the supported interpretation.
+
+
+## Camera availability on 600 nuScenes frames
+
+Same four selected frames per validation scene; existing six-camera checkpoint with specified missing-view masks.
+
+![Camera availability metrics](../results/nuscenes/bevfusion/camera_availability/20261014/figures/metric_comparison.png)
+
+![Per-class AP and support](../results/nuscenes/bevfusion/camera_availability/20261014/figures/class_ap.png)
+
+![Per-class masking effects](../results/nuscenes/bevfusion/camera_availability/20261014/figures/class_mask_delta.png)
+
+[Findings, PDF/SVG files and original evidence](../results/nuscenes/bevfusion/camera_availability/20261014/README.md). No controlled runtime or hardware-cost result is measured by these figures.
+

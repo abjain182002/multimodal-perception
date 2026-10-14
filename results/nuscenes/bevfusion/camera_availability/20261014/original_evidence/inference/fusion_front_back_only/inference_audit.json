@@ -1,0 +1,10 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "fusion_front_back_only",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "b6d71c619ea333cae328ac9d24e847dd896be3b62fc07cd3ed548eafe9aa3c41",
+  "protocol_sha256": "de68940e6d944f97caabfc190bbc35ebcd4e5c6842bdb5ca0f3f7b6846b634d7",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

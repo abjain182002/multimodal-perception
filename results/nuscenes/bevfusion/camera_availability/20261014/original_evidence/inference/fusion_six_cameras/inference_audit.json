@@ -1,0 +1,10 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "fusion_six_cameras",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "4c6ed44c980e839bf256d611efa0bdc184b5c2f262cb9e5391ad4836eba3a876",
+  "protocol_sha256": "0aafc3d5c2fa54297696c8e8fb5ea098cd1b5aca93b305a90281016d84ae8f95",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

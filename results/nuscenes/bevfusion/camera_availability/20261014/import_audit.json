@@ -1,0 +1,16 @@
+{
+  "status": "COMPACT_EVIDENCE_IMPORT_AND_FIGURE_CHECK_PASS",
+  "archive": "camera_availability_600_evidence_20261014.zip",
+  "archive_bytes": 3122281,
+  "archive_sha256": "4bd26e3c5d9ecdb18c103073be8203548270051209a4c0e092c42305b8828eba",
+  "verified_archive_members": 160,
+  "verified_manifest_members": 158,
+  "figure_count": 3,
+  "figure_formats": [
+    "PNG",
+    "PDF",
+    "SVG"
+  ],
+  "metric_arithmetic_tolerance": 1e-12,
+  "scope": "Original compact evidence integrity, stored metric arithmetic and figure review; no new inference or GT replay."
+}

@@ -1,0 +1,131 @@
+{
+  "status": "FOUR_CONDITION_SUBSET_EVALUATION_PASS",
+  "samples_per_condition": 600,
+  "scenes": 150,
+  "protocol_sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d",
+  "conditions": {
+    "lidar_baseline": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_baseline",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "886fd8b825382e38f3d594c1306d20b9c2ce512a00ee4315bdb36a5b31f79342",
+      "metrics_summary_sha256": "03fb96688ff2028efb838e3535a179ffb1076f2449d40870f002999dc9f7dd34",
+      "mAP": 0.6430758632271194,
+      "NDS": 0.6944296538649078,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "fusion_six_cameras": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "fusion_six_cameras",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "4c6ed44c980e839bf256d611efa0bdc184b5c2f262cb9e5391ad4836eba3a876",
+      "metrics_summary_sha256": "9d6f41812144921b29b40a6972902976ed797d667e0f8e7a492c8bdf927a407f",
+      "mAP": 0.6813178591375254,
+      "NDS": 0.7129133082033198,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "fusion_front_back_only": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "fusion_front_back_only",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "b6d71c619ea333cae328ac9d24e847dd896be3b62fc07cd3ed548eafe9aa3c41",
+      "metrics_summary_sha256": "d7cc9a70c5a5d16e7efd9bac9fbf8c3cdd5d998d3378c7d5d3b879d9c4c06b1e",
+      "mAP": 0.6362684494172769,
+      "NDS": 0.6876381584383323,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "fusion_front_camera_missing": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "fusion_front_camera_missing",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "a8e0a2b2a6cdc11de95970e09e2568db04863aae099d3bf4ac5caf1fbf14c50d",
+      "metrics_summary_sha256": "615e99384ac411f14d0c10520e324ba3f77583fc9bdb26cbe953b1c1a15e76f4",
+      "mAP": 0.6483704973786877,
+      "NDS": 0.6944301244753374,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    }
+  },
+  "difference_from_six_camera_baseline_points": {
+    "lidar_baseline": {
+      "mAP": -3.8241995910406,
+      "NDS": -1.8483654338411926
+    },
+    "fusion_six_cameras": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "fusion_front_back_only": {
+      "mAP": -4.504940972024851,
+      "NDS": -2.527514976498746
+    },
+    "fusion_front_camera_missing": {
+      "mAP": -3.2947361758837723,
+      "NDS": -1.848318372798241
+    }
+  },
+  "official_evaluator_source_sha256": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+  "limitations": [
+    "600 selected frames; not full-validation metrics.",
+    "Equal sampling per scene differs from full-split frame weighting.",
+    "Masked conditions assess the existing six-camera checkpoint.",
+    "Camera masking retains six-view computation.",
+    "LiDAR-only versus fusion uses two different pretrained checkpoints.",
+    "No controlled runtime or sensor-cost result measured here."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "fusion_six_cameras",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "4c6ed44c980e839bf256d611efa0bdc184b5c2f262cb9e5391ad4836eba3a876",
+  "metrics_summary_sha256": "9d6f41812144921b29b40a6972902976ed797d667e0f8e7a492c8bdf927a407f",
+  "mAP": 0.6813178591375254,
+  "NDS": 0.7129133082033198,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}

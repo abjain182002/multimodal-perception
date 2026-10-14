@@ -1,0 +1,12 @@
+{
+  "status": "CAMERA_AVAILABILITY_METADATA_PASS",
+  "samples": 600,
+  "scenes": 150,
+  "maximum_preceding_lidar_sweeps": 9,
+  "same_ordered_frozen_tokens": true,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "annotation_path": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_camera_availability600_infos_val.pkl",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "protocol_sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d",
+  "scope": "Annotations prepared; model and mask checks pending."
+}

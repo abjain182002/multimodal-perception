@@ -1,0 +1,22 @@
+{
+  "lidar_baseline": {
+    "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/camera_availability_600_20261014/inference/lidar_baseline/results_nusc.json",
+    "bytes": 34811358,
+    "sha256": "886fd8b825382e38f3d594c1306d20b9c2ce512a00ee4315bdb36a5b31f79342"
+  },
+  "fusion_six_cameras": {
+    "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/camera_availability_600_20261014/inference/fusion_six_cameras/results_nusc.json",
+    "bytes": 36086677,
+    "sha256": "4c6ed44c980e839bf256d611efa0bdc184b5c2f262cb9e5391ad4836eba3a876"
+  },
+  "fusion_front_back_only": {
+    "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/camera_availability_600_20261014/inference/fusion_front_back_only/results_nusc.json",
+    "bytes": 35640662,
+    "sha256": "b6d71c619ea333cae328ac9d24e847dd896be3b62fc07cd3ed548eafe9aa3c41"
+  },
+  "fusion_front_camera_missing": {
+    "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/camera_availability_600_20261014/inference/fusion_front_camera_missing/results_nusc.json",
+    "bytes": 37467416,
+    "sha256": "a8e0a2b2a6cdc11de95970e09e2568db04863aae099d3bf4ac5caf1fbf14c50d"
+  }
+}

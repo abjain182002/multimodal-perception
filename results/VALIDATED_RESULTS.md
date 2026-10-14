@@ -551,3 +551,18 @@ A tracked YOLOv8x versus YOLO26x projected-LiDAR pilot used the same 10-frame de
 A role-by-role inventory of the tracked result figures, backing numerical files, and limitations is kept in `docs/RESULT_FIGURE_INVENTORY.md`. Presence in Git does not certify visual legibility; inspect final figure exports before choosing dissertation and poster panels.
 
 
+
+
+## 14 October 2026 — frozen 600-frame camera-availability study
+
+Four timestamp-selected keyframes per official validation scene (600 frames / 150 scenes). Exact paired prediction/GT tokens and filtered class counts match.
+
+| Condition | mAP (%) | NDS (%) |
+|---|---:|---:|
+| LiDAR-only checkpoint | 64.31 | 69.44 |
+| Fusion, intact six camera views | 68.13 | 71.29 |
+| Fusion, front/back retained; four masked | 63.63 | 68.76 |
+| Fusion, front masked; five retained | 64.84 | 69.44 |
+
+[Original evidence, exact values, figures and limitations](nuscenes/bevfusion/camera_availability/20261014/README.md). Masked fusion conditions share one checkpoint; normalized images are zeroed after preprocessing. The separate LiDAR-only checkpoint is a pipeline comparison. These are subset missing-view results; they do not demonstrate purpose-trained two-camera accuracy or computational/hardware savings. Import verified the archive SHA-256, 158 member hashes, mAP/NDS arithmetic and figure rendering; a fresh accuracy replay and statistical uncertainty remain pending.
+

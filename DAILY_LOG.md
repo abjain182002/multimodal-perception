@@ -327,3 +327,14 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Added a visual case index and navigation links. Existing result files retained.
 - Diagnostic operating point: confidence >=0.30, same-class XY centre distance <2 m. Selected examples are not population estimates or controlled camera ablations; visible conditions are not proven causes.
 - Next: freeze a separate robustness protocol and sample set; full-validation replay and remaining CLOCs diagnostics remain pending.
+
+
+## 2026-10-14 — camera-availability subset evaluation and preservation
+
+- Froze 600 samples at four timestamp positions in each of 150 official validation scenes, independent of prediction outcomes. Restored and verified 9,600 sensors (4.70 GB).
+- Restored pinned core framework/source/checkpoint versions. Current nvcc 12.1.66 differs from previous 12.1.105; compiler, GPU and synthetic custom operations checks passed, and environment records are retained.
+- Strict checkpoint loads and one-sample camera-mask checks passed; inferred 600 frames for each of four conditions and backed up outputs every 50 frames.
+- Evaluated identical 600-token GT sets using nuScenes-devkit with restricted GT sample iteration. mAP/NDS (%): LiDAR 64.31/69.44; intact fusion 68.13/71.29; front/back retained 63.63/68.76; front missing 64.84/69.44.
+- Imported all 160 compact archive members with archive SHA-256 and all 158 manifest hashes verified. Recomputed stored mAP/NDS arithmetic within 1e-12 and reviewed three figures, saved in PNG/PDF/SVG with CSV tables and plotting code.
+- [Experiment folder](results/nuscenes/bevfusion/camera_availability/20261014/README.md) distinguishes missing-view robustness from purpose-trained sensor configurations and computational-cost claims. Raw predictions and replaceable sensor backups remain on Drive. Controlled runtime/cost analysis, accuracy replay and remaining diagnostics are still open.
+

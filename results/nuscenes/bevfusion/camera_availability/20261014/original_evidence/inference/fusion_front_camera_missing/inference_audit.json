@@ -1,0 +1,10 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "fusion_front_camera_missing",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "a8e0a2b2a6cdc11de95970e09e2568db04863aae099d3bf4ac5caf1fbf14c50d",
+  "protocol_sha256": "369c99a128a11c148685e9b44c24e348f5e7a3eaac7ffb3e445b74c32392538b",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

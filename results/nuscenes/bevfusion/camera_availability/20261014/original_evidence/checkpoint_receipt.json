@@ -1,0 +1,16 @@
+{
+  "lidar": {
+    "path": "/content/bevfusion_checkpoints/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth",
+    "source": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth",
+    "bytes": 46332893,
+    "sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+    "status": "CHECKPOINT_HASH_PASS"
+  },
+  "lidar_camera": {
+    "path": "/content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth",
+    "source": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth",
+    "bytes": 167113973,
+    "sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+    "status": "CHECKPOINT_HASH_PASS"
+  }
+}

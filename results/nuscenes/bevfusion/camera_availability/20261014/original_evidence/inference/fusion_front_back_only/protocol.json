@@ -1,0 +1,17 @@
+{
+  "condition": {
+    "name": "fusion_front_back_only",
+    "model": "lidar_camera",
+    "available_cameras": [
+      "CAM_FRONT",
+      "CAM_BACK"
+    ],
+    "mask": "Zero the other four image tensors after normalization"
+  },
+  "frozen_protocol_sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "torch": "2.1.2+cu121",
+  "seed": 20261002,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b"
+}

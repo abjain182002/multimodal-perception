@@ -1,0 +1,634 @@
+{
+  "original_evidence/checkpoint_receipt.json": {
+    "bytes": 907,
+    "sha256": "49b0c9eb462a35f5158778ab66e9a248c2776ed5d6677517d0c7b7cedb6fb480"
+  },
+  "original_evidence/evaluation/detection_config.json": {
+    "bytes": 439,
+    "sha256": "85648bcef19182a72def0039942cb2e6077142610f7bd503a71433864737986e"
+  },
+  "original_evidence/evaluation/evaluate_600.py": {
+    "bytes": 6465,
+    "sha256": "820a06e43644d3653d5de42fffad62a5177d70129adf0529feaf9327a558c68e"
+  },
+  "original_evidence/evaluation/evaluation.log": {
+    "bytes": 18708,
+    "sha256": "d3a3c1e7122708969664ce4d01b24b690f3a41229bf648db678fade68fb87724"
+  },
+  "original_evidence/evaluation/four_condition_evaluation.json": {
+    "bytes": 4595,
+    "sha256": "3590d840a0b272e26d45eb019f5a774e1e44febd01fabf6dc7adf5d466b88138"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/evaluation_audit.json": {
+    "bytes": 737,
+    "sha256": "9d2006b560923431fc723c42e2fc836e8e74e96d79f08d2bc7c083391abde5e5"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/metrics_details.json": {
+    "bytes": 767165,
+    "sha256": "3bd206b44348d833561d196518486ea4cb24c1c47e9c24ba39d1024eb9d0e699"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/metrics_summary.json": {
+    "bytes": 5207,
+    "sha256": "d7cc9a70c5a5d16e7efd9bac9fbf8c3cdd5d998d3378c7d5d3b879d9c4c06b1e"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/barrier_pr.pdf": {
+    "bytes": 14978,
+    "sha256": "f64cf58e2868d1f2b252d0f10ddcb49b84e62f45ebb326fdba4478f8a75758c6"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/barrier_tp.pdf": {
+    "bytes": 17375,
+    "sha256": "dc0fecd347ff7cff95a14a2f4eea007006e70f33448abf62abf1afdc4a094f6f"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/bicycle_pr.pdf": {
+    "bytes": 14054,
+    "sha256": "0d1ec7f0fb1f2ee6b701e0a53df4413829b5adafea448e827e8e4aa572ae872a"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/bicycle_tp.pdf": {
+    "bytes": 18034,
+    "sha256": "387dee0147ce6eee5a9c1bfa6c709919b03f040c085216d1fbb7a5f3176826d2"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/bus_pr.pdf": {
+    "bytes": 14720,
+    "sha256": "2a9f28e5cad58daa1e6b8e0620bf214e83e94f56f24c1c29e883e49c9600010e"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/bus_tp.pdf": {
+    "bytes": 19092,
+    "sha256": "1788b87b33d4e42c8350f70e5be0553fb04d07ecb3ef3bf1e12a524956a55621"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/car_pr.pdf": {
+    "bytes": 15069,
+    "sha256": "e9fe11923684f27d089c40d00f35b09d8f3450692b2a07931e4c8700ff6c370b"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/car_tp.pdf": {
+    "bytes": 19260,
+    "sha256": "7637c86504fa5e9a4892c0dab273feb9a801ca4937e6011ca2f610b3d8c0b5ce"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/construction_vehicle_pr.pdf": {
+    "bytes": 15154,
+    "sha256": "24aaeba3e3404fce3b4d02f48be28fd326e74a30c42aa0d6bda152d42886fe76"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/construction_vehicle_tp.pdf": {
+    "bytes": 18079,
+    "sha256": "818c6f8425b440bcfaea875664b8d113e9015f091e6009d1432fd80a4fb1428f"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/dist_pr_0.5.pdf": {
+    "bytes": 21284,
+    "sha256": "6eb52ce5f9adadd80bf024ea1d7b35ea2e70c484019df955d420377473d8be65"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/dist_pr_1.0.pdf": {
+    "bytes": 21805,
+    "sha256": "6eb24e45c1f389b27507038a8a7d5b88d3475a49bf59450267c48f622290b118"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/dist_pr_2.0.pdf": {
+    "bytes": 22005,
+    "sha256": "d3ac43ffec817f7aceca76d173ed16025435d2390c2707cfd761512d8112e34d"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/dist_pr_4.0.pdf": {
+    "bytes": 22132,
+    "sha256": "e1e09180c77990e7a92d3556b7c9838c6813486db24b14bc786c02bb7f61860f"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/motorcycle_pr.pdf": {
+    "bytes": 14008,
+    "sha256": "56a35d642dfa00c4d0bbb94d33985ff810be9f1511980a8068b5996e03e1af0e"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/motorcycle_tp.pdf": {
+    "bytes": 18613,
+    "sha256": "f42d43b86b0b4bcfbb4f1234456079ef5360ffe2900dec84e9175b87a2781295"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/pedestrian_pr.pdf": {
+    "bytes": 15153,
+    "sha256": "70497daa5ce3c4040ef7aefd9b5c98814863506d94edd45fd2ed9f58da1199c7"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/pedestrian_tp.pdf": {
+    "bytes": 19170,
+    "sha256": "56620ae6e6ba3f5fa11b7ced801bb074cea9cb7f4624fc164ae311b47a97c8e2"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/summary.pdf": {
+    "bytes": 84240,
+    "sha256": "35926d55ebd7930722456efd09568450dde0d07b552475796bfab078edaef040"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/traffic_cone_pr.pdf": {
+    "bytes": 15624,
+    "sha256": "5dd70ff8b2078287e1495c35f1d769bb233088f66c683285b4672728c365ee19"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/traffic_cone_tp.pdf": {
+    "bytes": 16220,
+    "sha256": "f67ea484f87e02fd285ef905b26011f8249e3a40050a530d6529a8ad877087d2"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/trailer_pr.pdf": {
+    "bytes": 14338,
+    "sha256": "2751e5ce145829ff4f2b66b823acebc03ee17f7503fa23f537d19a5fc64587a5"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/trailer_tp.pdf": {
+    "bytes": 17628,
+    "sha256": "b07395156872f40921cc55dfbcc86cdf5556bb029b54a01a01ec8df41bc81a8a"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/truck_pr.pdf": {
+    "bytes": 15622,
+    "sha256": "cd7806d7980105ce576cdb4e00a5df9dd5364ce417021da9168b7c1b8a0ffc0b"
+  },
+  "original_evidence/evaluation/fusion_front_back_only/plots/truck_tp.pdf": {
+    "bytes": 18227,
+    "sha256": "cb20ada46ab5aca4544dd315a5da055755cf964bf9b100cce14f2e2b6a87d7da"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/evaluation_audit.json": {
+    "bytes": 742,
+    "sha256": "a2e3031a6e83826a74b80b2286286693506761212d9a5ed7161089cbd9537b3d"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/metrics_details.json": {
+    "bytes": 766650,
+    "sha256": "ef8c2f66010be7526126cf336c627b3d47700e5c0ae464a1a0f739af9722437e"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/metrics_summary.json": {
+    "bytes": 5195,
+    "sha256": "615e99384ac411f14d0c10520e324ba3f77583fc9bdb26cbe953b1c1a15e76f4"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/barrier_pr.pdf": {
+    "bytes": 14444,
+    "sha256": "16dceab44e5b2db6422484b6602777dec3e026c0ff0ad23f0ee05ca7b7b8c8bb"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/barrier_tp.pdf": {
+    "bytes": 17186,
+    "sha256": "b3d1d975c6b0142b222aaf2fd373d422051eaf9de69f87262bafdaa211b0a7bd"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/bicycle_pr.pdf": {
+    "bytes": 13864,
+    "sha256": "1927b6aacaa9bcbd05d8718cfeaef775477aeb89adb225fd995c3e6fe7255634"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/bicycle_tp.pdf": {
+    "bytes": 18474,
+    "sha256": "83b6088abb64c7486168decef2619841ac75bfb30e95d571929fa836e40dafef"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/bus_pr.pdf": {
+    "bytes": 14725,
+    "sha256": "51904e83ceb7824b7a792b5dd51f1f9cdca7b5c0979bb7c279d670020416962b"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/bus_tp.pdf": {
+    "bytes": 18822,
+    "sha256": "9b49f1665f6674e9ddc892c5628e52c308664f7eef8cc81e98b4ca84ccbf64d0"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/car_pr.pdf": {
+    "bytes": 14722,
+    "sha256": "84f15d2dca10ccb1fd0e55532f95513548c0c361b1e458c7d5cd0c6c91442b73"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/car_tp.pdf": {
+    "bytes": 18886,
+    "sha256": "be38979ea2a14bbc7bed951b354601a49d8a35eff323e60999452271bb0e6271"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/construction_vehicle_pr.pdf": {
+    "bytes": 14646,
+    "sha256": "035ab40f5001e2d82b422377b8c01a346f310a2c14fc6e98b8049f5b41c99c9d"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/construction_vehicle_tp.pdf": {
+    "bytes": 18179,
+    "sha256": "028f9533b40a8d38d8453559c84576e22f4b0d857e8d1ba5ef5576003afa276e"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/dist_pr_0.5.pdf": {
+    "bytes": 21298,
+    "sha256": "be17357637c28f3ed6c13346979e949e81b5268d78468f2858d647d7dc461702"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/dist_pr_1.0.pdf": {
+    "bytes": 21872,
+    "sha256": "1b285d15c6566deeff38125aaa98fe3aae8507e99ec59cf58fc07f3e827fbb50"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/dist_pr_2.0.pdf": {
+    "bytes": 22056,
+    "sha256": "f67d2d470657fcfe8b6afc468454dcf876b8cd2d0d0b1fcc08bb6baa311096a7"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/dist_pr_4.0.pdf": {
+    "bytes": 22122,
+    "sha256": "93b580219ee5722440c40dc55a7f010eadc71a7ba9dac3d0eb1a4a21ef94c7e1"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/motorcycle_pr.pdf": {
+    "bytes": 14288,
+    "sha256": "810efbd4a5fc2eb7b0d023a1ea470985955d4512672cbb77fa1d742f794d9e43"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/motorcycle_tp.pdf": {
+    "bytes": 18842,
+    "sha256": "4c378fb45ab9af48dd78f3043d9b13d09fee6da653168ff81f11f3df0a5de8d1"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/pedestrian_pr.pdf": {
+    "bytes": 14491,
+    "sha256": "14c2bacb5a91f8228fff0d9a0aa6b9cbe5d3874686c0449721f69308a18d647a"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/pedestrian_tp.pdf": {
+    "bytes": 19033,
+    "sha256": "64c3bbdb3ac98d2257cc8b9df6053701dbad10be178f8f0ca318f40d77171645"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/summary.pdf": {
+    "bytes": 83948,
+    "sha256": "9d4112d76d36f7745a815b976773781c4ea282954676da037361e4c3a1f4e4ae"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/traffic_cone_pr.pdf": {
+    "bytes": 15772,
+    "sha256": "b49352ff4dd4cb97dd7d2e3c1049ef963c6bfab82796db2aa279ff2d8f91d775"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/traffic_cone_tp.pdf": {
+    "bytes": 16264,
+    "sha256": "b56bed5813d7a32704006fecbd60f87bbad2e9f22ff39e5e023241579497af3d"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/trailer_pr.pdf": {
+    "bytes": 14519,
+    "sha256": "58a5c431027382d270cae79fc3739cefbb3fa3914c557d99aec547a31cd89214"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/trailer_tp.pdf": {
+    "bytes": 18097,
+    "sha256": "9bf6c0f301dc1651dea4260d8d3498564a6dfeb50c6b29cd4b3f84f5f7d89a39"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/truck_pr.pdf": {
+    "bytes": 15246,
+    "sha256": "04eab8c94b1079387b717568887e14af0830fa33a3753f2d2f9a7ab6be76ecb7"
+  },
+  "original_evidence/evaluation/fusion_front_camera_missing/plots/truck_tp.pdf": {
+    "bytes": 18257,
+    "sha256": "4278bbd9938a1c95aee24136a4e64103498b362fea78d8a52ada5a06f2a80644"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/evaluation_audit.json": {
+    "bytes": 733,
+    "sha256": "9478d531fd5adce38a15b879f72151d088c6f11dc0e03a3bd0825b3a9cd15447"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/metrics_details.json": {
+    "bytes": 768169,
+    "sha256": "6ee9f8f767e85654ef7cad0f5f0682cb2ca747c9a44b09c77195d242959e8b86"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/metrics_summary.json": {
+    "bytes": 5201,
+    "sha256": "9d6f41812144921b29b40a6972902976ed797d667e0f8e7a492c8bdf927a407f"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/barrier_pr.pdf": {
+    "bytes": 14909,
+    "sha256": "5b9726497d00c42097dee31f7ba4fd0ccd8c4f36f5661aca24251ac2ae593ea8"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/barrier_tp.pdf": {
+    "bytes": 17182,
+    "sha256": "fbcd07de62a1cb18bab62541467a77fdf645a61e86167db90b59c3332cad794b"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/bicycle_pr.pdf": {
+    "bytes": 14282,
+    "sha256": "3cd3db7968c4298d47154fa6d690f3e4b5f49aa5ad7e0e60c057b2c09cf444a0"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/bicycle_tp.pdf": {
+    "bytes": 18225,
+    "sha256": "ac7096bb6c82db296051e9ca4c2e909e351095cc7694fa2e934eeac8146e759e"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/bus_pr.pdf": {
+    "bytes": 14711,
+    "sha256": "be23d34e14fee7320f551ea2f30beca1d5328fdffc9614314d67e0e045ed1cf5"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/bus_tp.pdf": {
+    "bytes": 19357,
+    "sha256": "f4ac7b280629be128f168ed0812768a22a8ae22c193af4785a6b65dd7f05b19f"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/car_pr.pdf": {
+    "bytes": 14914,
+    "sha256": "2e9e341b6b948a706b0c5bb45fca023142cf73798b84183bf073ee153b867ca8"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/car_tp.pdf": {
+    "bytes": 18909,
+    "sha256": "e5e164289811135c950170d0b977650ef129aee874c4a59ec36417720c90c024"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/construction_vehicle_pr.pdf": {
+    "bytes": 15195,
+    "sha256": "26f4c98f2c3d7567684fa016d11f1ad813e3c3bab80f757a33869f450bf64307"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/construction_vehicle_tp.pdf": {
+    "bytes": 17816,
+    "sha256": "9d6637dcf6ac2e6fa171dd60313deed284fd8cdb9c98b1ca321ced762c1c3983"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/dist_pr_0.5.pdf": {
+    "bytes": 21338,
+    "sha256": "13b64faa13db60d1dfb2e8773517b8c24096ab8310a9964adea8b26024f766bf"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/dist_pr_1.0.pdf": {
+    "bytes": 21852,
+    "sha256": "f62f0ba688deca3eafc4a612e75f4f7a0e31780bdfe46769d2c716b16d62d989"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/dist_pr_2.0.pdf": {
+    "bytes": 22042,
+    "sha256": "e8ac00c545656bd0c1b5a86226a84851a627325eef08a8a5b0da94759ec99765"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/dist_pr_4.0.pdf": {
+    "bytes": 22073,
+    "sha256": "af758c0da8e8c3ba24af6491af96ac10072ff177922eb8fe372e6a8695c08b91"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/motorcycle_pr.pdf": {
+    "bytes": 13533,
+    "sha256": "113d0fa8ebb8790f52785dfc8b149e4ba067cb43187684572d7ab2ae4c07ed96"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/motorcycle_tp.pdf": {
+    "bytes": 18469,
+    "sha256": "ad106d30be4b0ac794d34100d4254fa18e0afee1668fadff5039db5caaf43130"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/pedestrian_pr.pdf": {
+    "bytes": 15334,
+    "sha256": "1b843ea8b26b2df16f11b67893abd2b330b005b2e4bd2b3ed4ebbcaff3f3b015"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/pedestrian_tp.pdf": {
+    "bytes": 19279,
+    "sha256": "87aa7974e7ac784e876681e1ec9899a1e86dec489c379ada967b567dd29d276e"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/summary.pdf": {
+    "bytes": 84496,
+    "sha256": "16e073794c6ea2a330efeced5f53c85b0e903e75866830716819bbe945ade187"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/traffic_cone_pr.pdf": {
+    "bytes": 15350,
+    "sha256": "d4c2e6e8375f42d0c70021cb6e19ba400fa54257496e53adb274be5f33dabfc2"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/traffic_cone_tp.pdf": {
+    "bytes": 16302,
+    "sha256": "0b2fb0e401e751c94047e6dde3dc7c601ba7cace9c4e2ed36d323a19107ef031"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/trailer_pr.pdf": {
+    "bytes": 14699,
+    "sha256": "3585007a30cc0de2fb42918c8357504c912a19bf40be555661b0d4ef73a322db"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/trailer_tp.pdf": {
+    "bytes": 17463,
+    "sha256": "27a9fb0d19a41f7cd1eb5b96707cdbf2c3f800b6ab212221466c5bc2c4166359"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/truck_pr.pdf": {
+    "bytes": 15201,
+    "sha256": "0388c25485734263723f7a3b0e1602336cb1271a7eb05343ba1463cf2ad54d79"
+  },
+  "original_evidence/evaluation/fusion_six_cameras/plots/truck_tp.pdf": {
+    "bytes": 18243,
+    "sha256": "11d8683e1ee7f7868808838a543d307042bf6e2bf9c66c2bd3beb1f2db2406a9"
+  },
+  "original_evidence/evaluation/lidar_baseline/evaluation_audit.json": {
+    "bytes": 729,
+    "sha256": "11d50c9a8405c948fc980802aa72fd8876a7737949b1e9126db879c81e8acfec"
+  },
+  "original_evidence/evaluation/lidar_baseline/metrics_details.json": {
+    "bytes": 764444,
+    "sha256": "ef1229d07c36bfe7b6a2784bf5e0cc06ec570dcd7596495cbab5d1dbe8db5dd1"
+  },
+  "original_evidence/evaluation/lidar_baseline/metrics_summary.json": {
+    "bytes": 5199,
+    "sha256": "03fb96688ff2028efb838e3535a179ffb1076f2449d40870f002999dc9f7dd34"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/barrier_pr.pdf": {
+    "bytes": 14595,
+    "sha256": "3742cfe1199f963c8e98cd77ad452ee33eb8d59cf50155c3f67d184dce516693"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/barrier_tp.pdf": {
+    "bytes": 17021,
+    "sha256": "5cefeab5bd049093c790003a0cfc55f977a307fb7050c5b80e31cdc34894b227"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/bicycle_pr.pdf": {
+    "bytes": 13341,
+    "sha256": "b71325964abfe132743a55f210c47f5fc01e6807166131acb19b110ecf576398"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/bicycle_tp.pdf": {
+    "bytes": 18249,
+    "sha256": "e945bf5244c3faa0ad4954cfa0296260033796417440f184308e03e3f8a7fcf9"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/bus_pr.pdf": {
+    "bytes": 14296,
+    "sha256": "f9456135f4a13f606592689a1520ec279a5ae88ecf8c937244041daffc713d8d"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/bus_tp.pdf": {
+    "bytes": 19200,
+    "sha256": "d60cec9f9d59a313c78e63fab68d0671e57364b5612fad861b21cf15aae30281"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/car_pr.pdf": {
+    "bytes": 14596,
+    "sha256": "c97df0691fcbc9404d70205b6e20f099a29aa46d5d6e5e93b9f5b27df380733d"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/car_tp.pdf": {
+    "bytes": 19292,
+    "sha256": "58d5ddb7101fce168d06e9d859dd855b7b04b9c9f98b46008931882a4c9a8a94"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/construction_vehicle_pr.pdf": {
+    "bytes": 14887,
+    "sha256": "7c0b269d48592aab120eba89362885689bab9e7f890a93fe7e091cec82763780"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/construction_vehicle_tp.pdf": {
+    "bytes": 17806,
+    "sha256": "21e0c27647b85ada25a82c5f012c8557c009eaeebdb0e9ced38f31ffeb0aab3d"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/dist_pr_0.5.pdf": {
+    "bytes": 21219,
+    "sha256": "b1f1cfa574febba939af1a78bf2d0660e8fe0a0f7a899ad27285a716937607f1"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/dist_pr_1.0.pdf": {
+    "bytes": 21656,
+    "sha256": "16720ad9a36875ae4ac4dad3c587dff7667686f01ec9c8e623276c705ee76ae8"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/dist_pr_2.0.pdf": {
+    "bytes": 21872,
+    "sha256": "f25aa8040e9c448e29b7666f59231ada3017a0890e6bc26af14740506fff6f4e"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/dist_pr_4.0.pdf": {
+    "bytes": 21907,
+    "sha256": "39483016c7ddabfe5aaeaa3dae3a109d5760ed114ff06a5e7124c23090ca1432"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/motorcycle_pr.pdf": {
+    "bytes": 13111,
+    "sha256": "b9101a605e6dfbaf3ffafb0ff71e5cfcc1bb3d471e08c6eb908392fe0568e42e"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/motorcycle_tp.pdf": {
+    "bytes": 18553,
+    "sha256": "91d3503eed96786adb3f0b4c43af33519a38b17642ec3acd196c68da6332400a"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/pedestrian_pr.pdf": {
+    "bytes": 14404,
+    "sha256": "4e4df060a3195968af31b5328799e41837e21fa45ae4a4224162644a8761b343"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/pedestrian_tp.pdf": {
+    "bytes": 18616,
+    "sha256": "43eacc2da978fd772827237ae0f56e0474895a0ef46b32b73382df54a3aa34b7"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/summary.pdf": {
+    "bytes": 83074,
+    "sha256": "0f59cb4f1792c60cdbe2e590e468cc2417a3e80ed26e37c030b9c98cb772f09d"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/traffic_cone_pr.pdf": {
+    "bytes": 15270,
+    "sha256": "c5021792726a4e777c626764b60273d6ec0ef80f3ca71b1bc019e2dc3fa15aee"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/traffic_cone_tp.pdf": {
+    "bytes": 16278,
+    "sha256": "58a2d34c8cb5883472195d41019bdeab1fc86bc84b22c316621a44d6e75f9743"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/trailer_pr.pdf": {
+    "bytes": 14470,
+    "sha256": "199c631cdc89e74f0a6c561d9aa690846fc9707e925a9313534e0c7da744b9df"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/trailer_tp.pdf": {
+    "bytes": 18472,
+    "sha256": "d1d91792e3fba1ea761b5613817d81d3d85a0aac8eaa36555726ccadf9fe3a76"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/truck_pr.pdf": {
+    "bytes": 15103,
+    "sha256": "deb1a5df1aa49e9daf78541a068b6d329a182a8a4378e21fea2b20954ce23df3"
+  },
+  "original_evidence/evaluation/lidar_baseline/plots/truck_tp.pdf": {
+    "bytes": 18174,
+    "sha256": "0435b6dddd6faa801271b99d8583b556fb20ef5f88f5be79b8fbd361ab059830"
+  },
+  "original_evidence/inference/four_condition_inference.json": {
+    "bytes": 1918,
+    "sha256": "510a734cd18e6747eaa6e614af2196d7cba7cfb66e0594df811a453e97bd375f"
+  },
+  "original_evidence/inference/fusion_front_back_only/inference_audit.json": {
+    "bytes": 392,
+    "sha256": "50eb7279b25a296c2bbc2dabe6d6d68763aec32610a2ec7e94a5142a88b62201"
+  },
+  "original_evidence/inference/fusion_front_back_only/protocol.json": {
+    "bytes": 617,
+    "sha256": "de68940e6d944f97caabfc190bbc35ebcd4e5c6842bdb5ca0f3f7b6846b634d7"
+  },
+  "original_evidence/inference/fusion_front_back_only/resolved_config.py": {
+    "bytes": 29524,
+    "sha256": "90641fb3f99372b08e92580b1c6db50eac0375db86b20ccf923dcf89054a4234"
+  },
+  "original_evidence/inference/fusion_front_camera_missing/inference_audit.json": {
+    "bytes": 397,
+    "sha256": "f68fc097bcedfdede70426ebeada013d91913827bbf7644b035eccccdc1be6eb"
+  },
+  "original_evidence/inference/fusion_front_camera_missing/protocol.json": {
+    "bytes": 693,
+    "sha256": "369c99a128a11c148685e9b44c24e348f5e7a3eaac7ffb3e445b74c32392538b"
+  },
+  "original_evidence/inference/fusion_front_camera_missing/resolved_config.py": {
+    "bytes": 29524,
+    "sha256": "90641fb3f99372b08e92580b1c6db50eac0375db86b20ccf923dcf89054a4234"
+  },
+  "original_evidence/inference/fusion_six_cameras/inference_audit.json": {
+    "bytes": 388,
+    "sha256": "2cf06ee79eea72b90103be45572b26229c86fac237742d4c463b1ac9125ca597"
+  },
+  "original_evidence/inference/fusion_six_cameras/protocol.json": {
+    "bytes": 660,
+    "sha256": "0aafc3d5c2fa54297696c8e8fb5ea098cd1b5aca93b305a90281016d84ae8f95"
+  },
+  "original_evidence/inference/fusion_six_cameras/resolved_config.py": {
+    "bytes": 29524,
+    "sha256": "90641fb3f99372b08e92580b1c6db50eac0375db86b20ccf923dcf89054a4234"
+  },
+  "original_evidence/inference/inference.log": {
+    "bytes": 209704,
+    "sha256": "7ffc30a92fdbb2177021167060fa16a9e5ebad407c00a8fd69ba9f52d533decd"
+  },
+  "original_evidence/inference/inference.py": {
+    "bytes": 10599,
+    "sha256": "308d44e4f4b8f93310dcffaaa031497e440cde8507c9de716f2a0ba3df2aeeff"
+  },
+  "original_evidence/inference/lidar_baseline/inference_audit.json": {
+    "bytes": 384,
+    "sha256": "91fe68db5ef352e33530fb2658309235c238f39aaca615c4e23bcb2301040864"
+  },
+  "original_evidence/inference/lidar_baseline/protocol.json": {
+    "bytes": 547,
+    "sha256": "ee98a97107cc0f2ba8e986136d780872464b83a03cbc8d67cc2f435a35042c12"
+  },
+  "original_evidence/inference/lidar_baseline/resolved_config.py": {
+    "bytes": 27859,
+    "sha256": "c71bf1268843ad7287ace5a7147a1f02d7117dc0476adca10dae22a68ac2b760"
+  },
+  "original_evidence/metadata/metadata_audit.json": {
+    "bytes": 590,
+    "sha256": "d286bf9205c0bbc718c4cf7a5f35568c6cab20f82fc1bda1ac521d8c49e07a57"
+  },
+  "original_evidence/metadata/preparation.log": {
+    "bytes": 97959,
+    "sha256": "7882b515d1de44a8fd800b2cbf99455ecc40e5694b4206c27a91c155968b712b"
+  },
+  "original_evidence/metadata/prepare_600.py": {
+    "bytes": 4727,
+    "sha256": "ed2897307086666d9577a01be3f2f1cbb8c2e6b2e32678157c7770cdf862fdf6"
+  },
+  "original_evidence/protocol.json": {
+    "bytes": 2557,
+    "sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d"
+  },
+  "original_evidence/required_sensor_files.txt": {
+    "bytes": 819059,
+    "sha256": "008308a36dabec38e2f3a7647fe866ae4a77c6f59c7708b84c891fc8f06f6dbc"
+  },
+  "original_evidence/sample_tokens.txt": {
+    "bytes": 19800,
+    "sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f"
+  },
+  "original_evidence/scene_selection.json": {
+    "bytes": 72067,
+    "sha256": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9"
+  },
+  "original_evidence/selected_input_manifest.json": {
+    "bytes": 1009862,
+    "sha256": "320789fff22aa126aff7b516a05d601410c1047fe0bb538acee4efcb98e39105"
+  },
+  "original_evidence/selection_audit.json": {
+    "bytes": 712,
+    "sha256": "860dc6693e19f6ff9b3ff958def3bdc6637a69c84dff8789b07b08bbabc20ae0"
+  },
+  "original_evidence/sensor_restoration_audit.json": {
+    "bytes": 2694353,
+    "sha256": "e87e547e2805443cae5c09411f23a81daf779dd4c55dcc0fbd70cbf100aa6643"
+  },
+  "original_evidence/setup/01_python_torch_setup.log": {
+    "bytes": 7892,
+    "sha256": "d8ae314476ad67eecafbf2a9fe01fd2051ca931177ad7e51b33629fb38563164"
+  },
+  "original_evidence/setup/02_mmdet3d_dependencies.log": {
+    "bytes": 49183,
+    "sha256": "6f1f6ab184aba9c1f90469c7541f59183b2f91dfae706e38078249f24a4798eb"
+  },
+  "original_evidence/setup/03_cuda_toolkit_setup.log": {
+    "bytes": 15342,
+    "sha256": "4659805e1ba6375177b56c2cce10c38192f98fa8a3534f54672d6883785597dc"
+  },
+  "original_evidence/setup/04_custom_operations.log": {
+    "bytes": 17391,
+    "sha256": "f850d0456874912bc35a2688f3faa98370623962d0a4bc29932903d709c92940"
+  },
+  "original_evidence/setup/cuda_installer_sha256.txt": {
+    "bytes": 107,
+    "sha256": "64e02d6102341d7fab5ef405dc30cfb202f375c33b4535e0bdab7a4dc165e623"
+  },
+  "original_evidence/setup/cuda_operations_audit.json": {
+    "bytes": 1019,
+    "sha256": "d6c311c2e277e1e27b4c655097f9d3f706a11a7d1b567f3993f9190e53882936"
+  },
+  "original_evidence/setup/environment.txt": {
+    "bytes": 2747,
+    "sha256": "468b6dbeca08112564475ad8c7972366714682fafa134a058e2da05424f4d3dc"
+  },
+  "original_evidence/smoke/fusion_front_back_only_prediction.json": {
+    "bytes": 56955,
+    "sha256": "e59d1c9241c87ecfc934941cb71c9869a38576693777c0b1691fdac8eb843b76"
+  },
+  "original_evidence/smoke/fusion_front_camera_missing_prediction.json": {
+    "bytes": 56861,
+    "sha256": "dc7514dd4f166429cff63a4427124767c444ff7c4655355df43cfad58a974f07"
+  },
+  "original_evidence/smoke/fusion_six_cameras_prediction.json": {
+    "bytes": 56918,
+    "sha256": "47cf8a66a047553e3fb29eb26dc2d17203e12aa752242419668ee0f0f11f4f43"
+  },
+  "original_evidence/smoke/lidar_baseline_prediction.json": {
+    "bytes": 56896,
+    "sha256": "72de8663fef442e335dce9e724d89335781ef917e9f58dc63c3d9c6a89fdbfe8"
+  },
+  "original_evidence/smoke/lidar_camera_resolved_config.py": {
+    "bytes": 29524,
+    "sha256": "90641fb3f99372b08e92580b1c6db50eac0375db86b20ccf923dcf89054a4234"
+  },
+  "original_evidence/smoke/lidar_resolved_config.py": {
+    "bytes": 27859,
+    "sha256": "c71bf1268843ad7287ace5a7147a1f02d7117dc0476adca10dae22a68ac2b760"
+  },
+  "original_evidence/smoke/smoke.log": {
+    "bytes": 10279,
+    "sha256": "d44b917d061639deec9287072dc55faa94cd0877786cdb338fa9e2913e338222"
+  },
+  "original_evidence/smoke/smoke.py": {
+    "bytes": 7762,
+    "sha256": "9711c1da4746992e96c8d3d33d122f8ce3b7508ee0d039be78fd4ec915c22a01"
+  },
+  "original_evidence/smoke/smoke_audit.json": {
+    "bytes": 3610,
+    "sha256": "e7d03c020f9c0692df4cb0a0a12f3b282b0c2cc72dc1068d65c4d3af1f7f0202"
+  }
+}

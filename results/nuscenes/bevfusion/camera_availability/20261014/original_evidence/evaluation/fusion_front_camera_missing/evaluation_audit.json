@@ -1,0 +1,24 @@
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "fusion_front_camera_missing",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "a8e0a2b2a6cdc11de95970e09e2568db04863aae099d3bf4ac5caf1fbf14c50d",
+  "metrics_summary_sha256": "615e99384ac411f14d0c10520e324ba3f77583fc9bdb26cbe953b1c1a15e76f4",
+  "mAP": 0.6483704973786877,
+  "NDS": 0.6944301244753374,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
