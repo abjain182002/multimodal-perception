@@ -14,7 +14,7 @@
 
 ![Filtered class support](../results/nuscenes/bevfusion/full_validation/figures/class_support.png)
 
-[Findings and PDF/SVG downloads](../results/nuscenes/bevfusion/full_validation/README.md). Selected nuScenes visual case studies remain pending.
+[Findings and PDF/SVG downloads](../results/nuscenes/bevfusion/full_validation/README.md). [Six annotated nuScenes visual case studies](../results/nuscenes/bevfusion/case_studies/20261013/README.md) are available with captions, object records and limitations.
 
 ## PointPillars benchmark and diagnostics
 

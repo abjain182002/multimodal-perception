@@ -50,3 +50,7 @@ Each row is a separate evaluation; KITTI AP40 and nuScenes metrics are not inter
 | `requirements/` | Environment and source provenance |
 
 Datasets, model checkpoints, virtual environments and bulk predictions are stored outside Git. See the [artifact policy](results/README.md#artifact-policy).
+
+## Annotated nuScenes cases
+
+[Six case studies with camera crops and paired bird's-eye views](results/nuscenes/bevfusion/case_studies/20261013/README.md) illustrate benefits, regressions and shared failures. Captions separate observations from untested causal explanations.

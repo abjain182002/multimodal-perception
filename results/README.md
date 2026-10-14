@@ -37,3 +37,7 @@ Commit compact metrics, selected figures and cases, source/protocol records and 
 ## Supervisor benchmark comparisons
 
 [Source-checked benchmark tables](benchmarks/BENCHMARK_COMPARISONS.md) separate full nuScenes checkpoint-linked references from measured KITTI AP40 results. AP11 and unspecified upstream AP values are context only; no cross-protocol deltas are claimed. Case-study visuals remain pending.
+
+## nuScenes case studies
+
+[Six annotated cases](nuscenes/bevfusion/case_studies/20261013/README.md): figures, object records, plotting code and hashes from existing full-validation predictions. No new accuracy evaluation or sensor-ablation experiment.

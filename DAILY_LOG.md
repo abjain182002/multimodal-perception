@@ -318,3 +318,12 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Compared full nuScenes measurements with the same checkpoint-linked MMDetection3D reference: mAP/NDS deficits approximately 0.47/0.36 points (LiDAR) and 0.29/0.26 points (camera–LiDAR). Cause unresolved; rounded upstream values are not exact replay targets.
 - Preserved all three aligned CLOCs seeds and epoch-24 continuation in the measured KITTI AP40 table. OpenPCDet AP11 and MMDetection3D unspecified AP are separate context, with no direct AP40 deltas.
 - No new inference, ground-truth replay, case-study rendering, training or deletion performed. Case studies and outstanding diagnostics remain next work.
+
+
+## 2026-10-14 — preserve case studies prepared on 13 October
+
+- Preserved six annotated nuScenes figures, captions, exact object records, plotting code, input archive hash and output manifest under [case studies](results/nuscenes/bevfusion/case_studies/20261013/README.md).
+- Verified all output manifest hashes and Git blob hashes before publishing.
+- Added a visual case index and navigation links. Existing result files retained.
+- Diagnostic operating point: confidence >=0.30, same-class XY centre distance <2 m. Selected examples are not population estimates or controlled camera ablations; visible conditions are not proven causes.
+- Next: freeze a separate robustness protocol and sample set; full-validation replay and remaining CLOCs diagnostics remain pending.
