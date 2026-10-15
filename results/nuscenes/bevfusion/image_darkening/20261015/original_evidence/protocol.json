@@ -1,0 +1,64 @@
+{
+  "status": "IMAGE_DARKENING_PROTOCOL_FROZEN",
+  "samples": 600,
+  "scenes": 150,
+  "source_selection_sha256": "860dc6693e19f6ff9b3ff958def3bdc6637a69c84dff8789b07b08bbabc20ae0",
+  "source_tokens_sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f",
+  "model": "lidar_camera",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "seed": 20261002,
+  "conditions": [
+    {
+      "name": "clean",
+      "image_value_multiplier": 1.0
+    },
+    {
+      "name": "darkening_050",
+      "image_value_multiplier": 0.5
+    },
+    {
+      "name": "darkening_025",
+      "image_value_multiplier": 0.25
+    }
+  ],
+  "transformation": {
+    "operation": "Multiply resized image tensor values by fixed gain",
+    "position": "Before model data-preprocessor normalization",
+    "arithmetic": "Float32; preserve shape and channel order",
+    "views": "All six camera views",
+    "original_files_modified": false,
+    "physical_interpretation": "Encoded-image brightness perturbation; multiplier does not represent an equivalent physical light reduction."
+  },
+  "controls": {
+    "fresh_clean_baseline": true,
+    "identical_ordered_tokens": true,
+    "identical_lidar_inputs": true,
+    "identical_calibration": true,
+    "identical_checkpoint": true,
+    "batch_size": 1,
+    "model_eval_mode": true,
+    "autocast": false,
+    "tf32": false,
+    "cudnn_benchmark": false,
+    "training": false
+  },
+  "evaluation": {
+    "configuration": "detection_cvpr_2019",
+    "metrics": [
+      "mAP",
+      "NDS",
+      "per-class AP",
+      "TP errors"
+    ],
+    "comparison": "Each darkened condition minus fresh clean baseline",
+    "ground_truth": "Exact same frozen 600 tokens"
+  },
+  "limitations": [
+    "Synthetic darkening is not a real-night benchmark.",
+    "No sensor noise, motion blur or exposure adaptation simulated.",
+    "Selected four frames per scene; not full validation.",
+    "No training for darkened inputs.",
+    "No runtime or hardware-cost claim from this accuracy test."
+  ]
+}

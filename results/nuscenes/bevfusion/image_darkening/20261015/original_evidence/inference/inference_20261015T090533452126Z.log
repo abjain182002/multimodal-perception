@@ -1,0 +1,2002 @@
+DARKENING INFERENCE PREFLIGHT PASS
+
+STARTING CONDITION: clean
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+10/15 09:05:56 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 09:05:56 - mmengine - WARNING - v1.0-trainval is not a meta file, simply parsed as meta information
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 09:06:00 - mmengine - INFO - ------------------------------
+10/15 09:06:00 - mmengine - INFO - The length of test dataset: 600
+10/15 09:06:00 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+/content/mmdetection3d/projects/BEVFusion/bevfusion/utils.py:120: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+{"condition": "clean", "index": 50, "total": 600, "created": 50, "reused": 0, "backed_up": 50, "elapsed_seconds": 56.6}
+{"condition": "clean", "index": 100, "total": 600, "created": 100, "reused": 0, "backed_up": 100, "elapsed_seconds": 103.9}
+{"condition": "clean", "index": 150, "total": 600, "created": 150, "reused": 0, "backed_up": 150, "elapsed_seconds": 152.8}
+{"condition": "clean", "index": 200, "total": 600, "created": 200, "reused": 0, "backed_up": 200, "elapsed_seconds": 201.6}
+{"condition": "clean", "index": 250, "total": 600, "created": 250, "reused": 0, "backed_up": 250, "elapsed_seconds": 253.0}
+{"condition": "clean", "index": 300, "total": 600, "created": 300, "reused": 0, "backed_up": 300, "elapsed_seconds": 304.4}
+{"condition": "clean", "index": 350, "total": 600, "created": 350, "reused": 0, "backed_up": 350, "elapsed_seconds": 355.5}
+{"condition": "clean", "index": 400, "total": 600, "created": 400, "reused": 0, "backed_up": 400, "elapsed_seconds": 407.1}
+{"condition": "clean", "index": 450, "total": 600, "created": 450, "reused": 0, "backed_up": 450, "elapsed_seconds": 458.2}
+{"condition": "clean", "index": 500, "total": 600, "created": 500, "reused": 0, "backed_up": 500, "elapsed_seconds": 509.7}
+{"condition": "clean", "index": 550, "total": 600, "created": 550, "reused": 0, "backed_up": 550, "elapsed_seconds": 560.7}
+{"condition": "clean", "index": 600, "total": 600, "created": 600, "reused": 0, "backed_up": 600, "elapsed_seconds": 612.0}
+FORMATTING: clean
+
+Formating bboxes of pred_instances_3d
+Start to convert detection format...
+[                                                  ] 0/600, elapsed: 0s, ETA:
+[                                ] 1/600, 11.5 task/s, elapsed: 0s, ETA:    52s
+[                                ] 2/600, 11.8 task/s, elapsed: 0s, ETA:    51s
+[                                ] 3/600, 11.4 task/s, elapsed: 0s, ETA:    52s
+[                                ] 4/600, 11.1 task/s, elapsed: 0s, ETA:    53s
+[                                ] 5/600, 11.5 task/s, elapsed: 0s, ETA:    52s
+[                                ] 6/600, 11.5 task/s, elapsed: 1s, ETA:    51s
+[                                 ] 7/600, 7.5 task/s, elapsed: 1s, ETA:    79s
+[                                 ] 8/600, 7.9 task/s, elapsed: 1s, ETA:    75s
+[                                 ] 9/600, 8.1 task/s, elapsed: 1s, ETA:    73s
+[                                ] 10/600, 8.4 task/s, elapsed: 1s, ETA:    70s
+[                                ] 11/600, 8.5 task/s, elapsed: 1s, ETA:    69s
+[                                ] 12/600, 8.7 task/s, elapsed: 1s, ETA:    68s
+[                                ] 13/600, 9.0 task/s, elapsed: 1s, ETA:    65s
+[                                ] 14/600, 9.2 task/s, elapsed: 2s, ETA:    64s
+[                                ] 15/600, 9.3 task/s, elapsed: 2s, ETA:    63s
+[                                ] 16/600, 9.5 task/s, elapsed: 2s, ETA:    62s
+[                                ] 17/600, 9.5 task/s, elapsed: 2s, ETA:    62s
+[                                ] 18/600, 9.5 task/s, elapsed: 2s, ETA:    61s
+[>                               ] 19/600, 9.5 task/s, elapsed: 2s, ETA:    61s
+[>                               ] 20/600, 9.5 task/s, elapsed: 2s, ETA:    61s
+[>                               ] 21/600, 9.5 task/s, elapsed: 2s, ETA:    61s
+[>                               ] 22/600, 9.7 task/s, elapsed: 2s, ETA:    60s
+[>                               ] 23/600, 9.8 task/s, elapsed: 2s, ETA:    59s
+[>                               ] 24/600, 9.9 task/s, elapsed: 2s, ETA:    58s
+[>                              ] 25/600, 10.0 task/s, elapsed: 3s, ETA:    58s
+[>                              ] 26/600, 10.0 task/s, elapsed: 3s, ETA:    57s
+[>                              ] 27/600, 10.1 task/s, elapsed: 3s, ETA:    57s
+[>                              ] 28/600, 10.2 task/s, elapsed: 3s, ETA:    56s
+[>                              ] 29/600, 10.2 task/s, elapsed: 3s, ETA:    56s
+[>                              ] 30/600, 10.3 task/s, elapsed: 3s, ETA:    56s
+[>                              ] 31/600, 10.3 task/s, elapsed: 3s, ETA:    55s
+[>                              ] 32/600, 10.4 task/s, elapsed: 3s, ETA:    55s
+[>                              ] 33/600, 10.5 task/s, elapsed: 3s, ETA:    54s
+[>                              ] 34/600, 10.5 task/s, elapsed: 3s, ETA:    54s
+[>                              ] 35/600, 10.6 task/s, elapsed: 3s, ETA:    53s
+[>                              ] 36/600, 10.6 task/s, elapsed: 3s, ETA:    53s
+[>                              ] 37/600, 10.6 task/s, elapsed: 3s, ETA:    53s
+[>                              ] 38/600, 10.7 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 39/600, 10.7 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 40/600, 10.7 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 41/600, 10.7 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 42/600, 10.7 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 43/600, 10.7 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 44/600, 10.8 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 45/600, 10.8 task/s, elapsed: 4s, ETA:    51s
+[>>                             ] 46/600, 10.8 task/s, elapsed: 4s, ETA:    51s
+[>>                             ] 47/600, 10.9 task/s, elapsed: 4s, ETA:    51s
+[>>                             ] 48/600, 10.9 task/s, elapsed: 4s, ETA:    51s
+[>>                             ] 49/600, 10.9 task/s, elapsed: 4s, ETA:    51s
+[>>                             ] 50/600, 10.9 task/s, elapsed: 5s, ETA:    50s
+[>>                             ] 51/600, 11.0 task/s, elapsed: 5s, ETA:    50s
+[>>                             ] 52/600, 11.0 task/s, elapsed: 5s, ETA:    50s
+[>>                             ] 53/600, 11.0 task/s, elapsed: 5s, ETA:    50s
+[>>                             ] 54/600, 10.9 task/s, elapsed: 5s, ETA:    50s
+[>>                             ] 55/600, 11.0 task/s, elapsed: 5s, ETA:    50s
+[>>                             ] 56/600, 11.0 task/s, elapsed: 5s, ETA:    49s
+[>>                             ] 57/600, 11.0 task/s, elapsed: 5s, ETA:    49s
+[>>                             ] 58/600, 11.0 task/s, elapsed: 5s, ETA:    49s
+[>>>                            ] 59/600, 11.0 task/s, elapsed: 5s, ETA:    49s
+[>>>                            ] 60/600, 11.1 task/s, elapsed: 5s, ETA:    49s
+[>>>                            ] 61/600, 11.1 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 62/600, 11.1 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 63/600, 11.1 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 64/600, 11.1 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 65/600, 11.1 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 66/600, 11.1 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 67/600, 11.1 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 68/600, 11.2 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 69/600, 11.2 task/s, elapsed: 6s, ETA:    48s
+[>>>                            ] 70/600, 11.2 task/s, elapsed: 6s, ETA:    47s
+[>>>                            ] 71/600, 11.2 task/s, elapsed: 6s, ETA:    47s
+[>>>                            ] 72/600, 11.2 task/s, elapsed: 6s, ETA:    47s
+[>>>                            ] 73/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>                            ] 74/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>                            ] 75/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>                            ] 76/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>                            ] 77/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>>                           ] 78/600, 11.1 task/s, elapsed: 7s, ETA:    47s
+[>>>>                           ] 79/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>>                           ] 80/600, 11.2 task/s, elapsed: 7s, ETA:    47s
+[>>>>                           ] 81/600, 11.2 task/s, elapsed: 7s, ETA:    46s
+[>>>>                           ] 82/600, 11.2 task/s, elapsed: 7s, ETA:    46s
+[>>>>                           ] 83/600, 11.2 task/s, elapsed: 7s, ETA:    46s
+[>>>>                           ] 84/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 85/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 86/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 87/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 88/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 89/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 90/600, 11.1 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 91/600, 11.2 task/s, elapsed: 8s, ETA:    46s
+[>>>>                           ] 92/600, 11.2 task/s, elapsed: 8s, ETA:    45s
+[>>>>                           ] 93/600, 11.2 task/s, elapsed: 8s, ETA:    45s
+[>>>>                           ] 94/600, 11.2 task/s, elapsed: 8s, ETA:    45s
+[>>>>                           ] 95/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>                           ] 96/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                          ] 97/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                          ] 98/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                          ] 99/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                         ] 100/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                         ] 101/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                         ] 102/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                         ] 103/600, 11.2 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                         ] 104/600, 11.2 task/s, elapsed: 9s, ETA:    44s
+[>>>>>                         ] 105/600, 11.2 task/s, elapsed: 9s, ETA:    44s
+[>>>>>                         ] 106/600, 11.2 task/s, elapsed: 9s, ETA:    44s
+[>>>>>                        ] 107/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 108/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 109/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 110/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 111/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 112/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 113/600, 11.2 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 114/600, 11.2 task/s, elapsed: 10s, ETA:    43s
+[>>>>>                        ] 115/600, 11.2 task/s, elapsed: 10s, ETA:    43s
+[>>>>>                        ] 116/600, 11.2 task/s, elapsed: 10s, ETA:    43s
+[>>>>>                        ] 117/600, 11.2 task/s, elapsed: 10s, ETA:    43s
+[>>>>>                        ] 118/600, 11.2 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 119/600, 11.2 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 120/600, 11.2 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 121/600, 11.2 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 122/600, 11.2 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 123/600, 11.2 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 124/600, 11.2 task/s, elapsed: 11s, ETA:    42s
+[>>>>>>                       ] 125/600, 11.2 task/s, elapsed: 11s, ETA:    42s
+[>>>>>>                       ] 126/600, 11.2 task/s, elapsed: 11s, ETA:    42s
+[>>>>>>                       ] 127/600, 11.2 task/s, elapsed: 11s, ETA:    42s
+[>>>>>>                       ] 128/600, 11.2 task/s, elapsed: 11s, ETA:    42s
+[>>>>>>                       ] 129/600, 11.2 task/s, elapsed: 11s, ETA:    42s
+[>>>>>>                       ] 130/600, 11.2 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 131/600, 11.2 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 132/600, 11.2 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 133/600, 11.2 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 134/600, 11.2 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 135/600, 11.2 task/s, elapsed: 12s, ETA:    41s
+[>>>>>>                       ] 136/600, 11.2 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 137/600, 11.2 task/s, elapsed: 12s, ETA:    41s
+[>>>>>>                       ] 138/600, 11.2 task/s, elapsed: 12s, ETA:    41s
+[>>>>>>                       ] 139/600, 11.2 task/s, elapsed: 12s, ETA:    41s
+[>>>>>>                       ] 140/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>                       ] 141/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>                       ] 142/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>                       ] 143/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>                       ] 144/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 145/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 146/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 147/600, 11.2 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 148/600, 11.2 task/s, elapsed: 13s, ETA:    40s
+[>>>>>>>                      ] 149/600, 11.2 task/s, elapsed: 13s, ETA:    40s
+[>>>>>>>                      ] 150/600, 11.2 task/s, elapsed: 13s, ETA:    40s
+[>>>>>>>                      ] 151/600, 11.2 task/s, elapsed: 13s, ETA:    40s
+[>>>>>>>                      ] 152/600, 11.2 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 153/600, 11.2 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 154/600, 11.2 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 155/600, 11.2 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 156/600, 11.2 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 157/600, 11.2 task/s, elapsed: 14s, ETA:    39s
+[>>>>>>>                      ] 158/600, 11.2 task/s, elapsed: 14s, ETA:    39s
+[>>>>>>>                      ] 159/600, 11.2 task/s, elapsed: 14s, ETA:    39s
+[>>>>>>>                      ] 160/600, 11.2 task/s, elapsed: 14s, ETA:    39s
+[>>>>>>>                      ] 161/600, 11.2 task/s, elapsed: 14s, ETA:    39s
+[>>>>>>>                      ] 162/600, 11.2 task/s, elapsed: 14s, ETA:    39s
+[>>>>>>>                      ] 163/600, 11.2 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>                      ] 164/600, 11.2 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>                      ] 165/600, 11.2 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 166/600, 11.3 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 167/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 168/600, 11.2 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 169/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 170/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 171/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 172/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 173/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 174/600, 11.3 task/s, elapsed: 15s, ETA:    38s
+[>>>>>>>>                     ] 175/600, 11.3 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 176/600, 11.3 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 177/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 178/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 179/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 180/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 181/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 182/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 183/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 184/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 185/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 186/600, 11.3 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>>                    ] 187/600, 11.3 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 188/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 189/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 190/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 191/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 192/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 193/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 194/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 195/600, 11.3 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 196/600, 11.4 task/s, elapsed: 17s, ETA:    36s
+[>>>>>>>>>                    ] 197/600, 11.4 task/s, elapsed: 17s, ETA:    35s
+[>>>>>>>>>                    ] 198/600, 11.4 task/s, elapsed: 17s, ETA:    35s
+[>>>>>>>>>                    ] 199/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 200/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 201/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 202/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 203/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 204/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 205/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>                    ] 206/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>>                   ] 207/600, 11.4 task/s, elapsed: 18s, ETA:    35s
+[>>>>>>>>>>                   ] 208/600, 11.4 task/s, elapsed: 18s, ETA:    34s
+[>>>>>>>>>>                   ] 209/600, 11.4 task/s, elapsed: 18s, ETA:    34s
+[>>>>>>>>>>                   ] 210/600, 11.4 task/s, elapsed: 18s, ETA:    34s
+[>>>>>>>>>>                   ] 211/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 212/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 213/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 214/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 215/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 216/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 217/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 218/600, 11.4 task/s, elapsed: 19s, ETA:    34s
+[>>>>>>>>>>                   ] 219/600, 11.4 task/s, elapsed: 19s, ETA:    33s
+[>>>>>>>>>>                   ] 220/600, 11.4 task/s, elapsed: 19s, ETA:    33s
+[>>>>>>>>>>                   ] 221/600, 11.4 task/s, elapsed: 19s, ETA:    33s
+[>>>>>>>>>>                   ] 222/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>                   ] 223/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>                   ] 224/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>                   ] 225/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>                   ] 226/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>                   ] 227/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>>                  ] 228/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>>                  ] 229/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>>                  ] 230/600, 11.4 task/s, elapsed: 20s, ETA:    33s
+[>>>>>>>>>>>                  ] 231/600, 11.4 task/s, elapsed: 20s, ETA:    32s
+[>>>>>>>>>>>                  ] 232/600, 11.4 task/s, elapsed: 20s, ETA:    32s
+[>>>>>>>>>>>                  ] 233/600, 11.4 task/s, elapsed: 20s, ETA:    32s
+[>>>>>>>>>>>                  ] 234/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 235/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 236/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 237/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 238/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 239/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 240/600, 11.4 task/s, elapsed: 21s, ETA:    32s
+[>>>>>>>>>>>                  ] 241/600, 11.4 task/s, elapsed: 21s, ETA:    31s
+[>>>>>>>>>>>                  ] 242/600, 11.4 task/s, elapsed: 21s, ETA:    31s
+[>>>>>>>>>>>                  ] 243/600, 11.4 task/s, elapsed: 21s, ETA:    31s
+[>>>>>>>>>>>                  ] 244/600, 11.4 task/s, elapsed: 21s, ETA:    31s
+[>>>>>>>>>>>                  ] 245/600, 11.4 task/s, elapsed: 21s, ETA:    31s
+[>>>>>>>>>>>                  ] 246/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>                  ] 247/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>                  ] 248/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>>                 ] 249/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>>                 ] 250/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>>                 ] 251/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>>                 ] 252/600, 11.4 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>>                 ] 253/600, 11.4 task/s, elapsed: 22s, ETA:    30s
+[>>>>>>>>>>>>                 ] 254/600, 11.4 task/s, elapsed: 22s, ETA:    30s
+[>>>>>>>>>>>>                 ] 255/600, 11.4 task/s, elapsed: 22s, ETA:    30s
+[>>>>>>>>>>>>                 ] 256/600, 11.4 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 257/600, 11.3 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 258/600, 11.3 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 259/600, 11.3 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 260/600, 11.3 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 261/600, 11.4 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 262/600, 11.4 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 263/600, 11.4 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 264/600, 11.4 task/s, elapsed: 23s, ETA:    30s
+[>>>>>>>>>>>>                 ] 265/600, 11.4 task/s, elapsed: 23s, ETA:    29s
+[>>>>>>>>>>>>                 ] 266/600, 11.4 task/s, elapsed: 23s, ETA:    29s
+[>>>>>>>>>>>>                 ] 267/600, 11.4 task/s, elapsed: 23s, ETA:    29s
+[>>>>>>>>>>>>                 ] 268/600, 11.4 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 269/600, 11.4 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 270/600, 11.4 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 271/600, 11.4 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 272/600, 11.4 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 273/600, 11.2 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 274/600, 11.2 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 275/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 276/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 277/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 278/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 279/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 280/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 281/600, 11.2 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 282/600, 11.2 task/s, elapsed: 25s, ETA:    28s
+[>>>>>>>>>>>>>                ] 283/600, 11.2 task/s, elapsed: 25s, ETA:    28s
+[>>>>>>>>>>>>>                ] 284/600, 11.2 task/s, elapsed: 25s, ETA:    28s
+[>>>>>>>>>>>>>                ] 285/600, 11.2 task/s, elapsed: 25s, ETA:    28s
+[>>>>>>>>>>>>>                ] 286/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 287/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 288/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 289/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 290/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 291/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 292/600, 11.2 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 293/600, 11.2 task/s, elapsed: 26s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 294/600, 11.2 task/s, elapsed: 26s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 295/600, 11.2 task/s, elapsed: 26s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 296/600, 11.2 task/s, elapsed: 26s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 297/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 298/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 299/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 300/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 301/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 302/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 303/600, 11.2 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 304/600, 11.2 task/s, elapsed: 27s, ETA:    26s
+[>>>>>>>>>>>>>>               ] 305/600, 11.2 task/s, elapsed: 27s, ETA:    26s
+[>>>>>>>>>>>>>>               ] 306/600, 11.2 task/s, elapsed: 27s, ETA:    26s
+[>>>>>>>>>>>>>>               ] 307/600, 11.2 task/s, elapsed: 27s, ETA:    26s
+[>>>>>>>>>>>>>>               ] 308/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>               ] 309/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>               ] 310/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 311/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 312/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 313/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 314/600, 11.2 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 315/600, 11.2 task/s, elapsed: 28s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 316/600, 11.2 task/s, elapsed: 28s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 317/600, 11.2 task/s, elapsed: 28s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 318/600, 11.2 task/s, elapsed: 28s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 319/600, 11.2 task/s, elapsed: 28s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 320/600, 11.2 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 321/600, 11.2 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 322/600, 11.2 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 323/600, 11.2 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 324/600, 11.2 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 325/600, 11.2 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 326/600, 11.2 task/s, elapsed: 29s, ETA:    24s
+[>>>>>>>>>>>>>>>              ] 327/600, 11.2 task/s, elapsed: 29s, ETA:    24s
+[>>>>>>>>>>>>>>>              ] 328/600, 11.2 task/s, elapsed: 29s, ETA:    24s
+[>>>>>>>>>>>>>>>              ] 329/600, 11.2 task/s, elapsed: 29s, ETA:    24s
+[>>>>>>>>>>>>>>>              ] 330/600, 11.2 task/s, elapsed: 29s, ETA:    24s
+[>>>>>>>>>>>>>>>              ] 331/600, 11.2 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 332/600, 11.2 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 333/600, 11.2 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 334/600, 11.2 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 335/600, 11.2 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 336/600, 11.2 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 337/600, 11.2 task/s, elapsed: 30s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 338/600, 11.2 task/s, elapsed: 30s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 339/600, 11.2 task/s, elapsed: 30s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 340/600, 11.2 task/s, elapsed: 30s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 341/600, 11.2 task/s, elapsed: 30s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 342/600, 11.2 task/s, elapsed: 30s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 343/600, 11.2 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 344/600, 11.2 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 345/600, 11.2 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 346/600, 11.2 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 347/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>             ] 348/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>             ] 349/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>             ] 350/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>             ] 351/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 352/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 353/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 354/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 355/600, 11.3 task/s, elapsed: 31s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 356/600, 11.3 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 357/600, 11.3 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 358/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 359/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 360/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 361/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 362/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 363/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 364/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 365/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 366/600, 11.3 task/s, elapsed: 32s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 367/600, 11.3 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 368/600, 11.3 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 369/600, 11.3 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 370/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>            ] 371/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>            ] 372/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 373/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 374/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 375/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 376/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 377/600, 11.3 task/s, elapsed: 33s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 378/600, 11.3 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 379/600, 11.3 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 380/600, 11.3 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 381/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 382/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 383/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 384/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 385/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 386/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 387/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 388/600, 11.3 task/s, elapsed: 34s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 389/600, 11.3 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 390/600, 11.3 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 391/600, 11.3 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 392/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>           ] 393/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 394/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 395/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 396/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 397/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 398/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 399/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 400/600, 11.3 task/s, elapsed: 35s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 401/600, 11.3 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 402/600, 11.3 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 403/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 404/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 405/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 406/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 407/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 408/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 409/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 410/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 411/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 412/600, 11.3 task/s, elapsed: 36s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 413/600, 11.3 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 414/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 415/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 416/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 417/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 418/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 419/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 420/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 421/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 422/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 423/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 424/600, 11.3 task/s, elapsed: 37s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 425/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 426/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 427/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 428/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 429/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 430/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 431/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 432/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 433/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 434/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 435/600, 11.3 task/s, elapsed: 38s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 436/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 437/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 438/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 439/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 440/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 441/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 442/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 443/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 444/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 445/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 446/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 447/600, 11.3 task/s, elapsed: 39s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 448/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 449/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 450/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 451/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 452/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 453/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 454/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 455/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 456/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 457/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 458/600, 11.3 task/s, elapsed: 40s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 459/600, 11.3 task/s, elapsed: 40s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 460/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 461/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 462/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 463/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 464/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 465/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 466/600, 11.4 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 467/600, 11.4 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 468/600, 11.4 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 469/600, 11.3 task/s, elapsed: 41s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 470/600, 11.3 task/s, elapsed: 41s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 471/600, 11.4 task/s, elapsed: 41s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 472/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 473/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 474/600, 11.3 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 475/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 476/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 477/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 478/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 479/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 480/600, 11.4 task/s, elapsed: 42s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 481/600, 11.4 task/s, elapsed: 42s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 482/600, 11.4 task/s, elapsed: 42s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 483/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 484/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 485/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 486/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 487/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 488/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 489/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 490/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 491/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 492/600, 11.3 task/s, elapsed: 43s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 493/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 494/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 495/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 496/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 497/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 498/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 499/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 500/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 501/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 502/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 503/600, 11.3 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 504/600, 11.3 task/s, elapsed: 44s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 505/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 506/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 507/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 508/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 509/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 510/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 511/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 512/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 513/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 514/600, 11.3 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 515/600, 11.3 task/s, elapsed: 45s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 516/600, 11.3 task/s, elapsed: 45s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 517/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 518/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 519/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 520/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 521/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 522/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 523/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 524/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 525/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 526/600, 11.3 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 527/600, 11.3 task/s, elapsed: 46s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 528/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 529/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 530/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 531/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 532/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 533/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 534/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 535/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 536/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 537/600, 11.3 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 538/600, 11.3 task/s, elapsed: 47s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 539/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 540/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 541/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 542/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 543/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 544/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 545/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 546/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 547/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 548/600, 11.3 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 549/600, 11.3 task/s, elapsed: 48s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 550/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 551/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 552/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 553/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 554/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 555/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 556/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 557/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 558/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 559/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 560/600, 11.3 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 561/600, 11.3 task/s, elapsed: 49s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 562/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 563/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 564/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 565/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 566/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 567/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 568/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 569/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 570/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 571/600, 11.3 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 572/600, 11.3 task/s, elapsed: 50s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 573/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 574/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 575/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 576/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 577/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 578/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 579/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 580/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 581/600, 11.3 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 582/600, 11.4 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 583/600, 11.4 task/s, elapsed: 51s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 584/600, 11.4 task/s, elapsed: 51s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 585/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 586/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 587/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 588/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 589/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 590/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 591/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 592/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 593/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 594/600, 11.4 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 595/600, 11.4 task/s, elapsed: 52s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 596/600, 11.4 task/s, elapsed: 52s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 597/600, 11.4 task/s, elapsed: 53s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 598/600, 11.3 task/s, elapsed: 53s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 599/600, 11.3 task/s, elapsed: 53s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 600/600, 11.3 task/s, elapsed: 53s, ETA:     0s
+Results writes to /content/image_darkening600/inference/clean/official_results/pred_instances_3d/results_nusc.json
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "clean",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "a46d646072d93375bdbfee55052807ccc1d6f87c0ed3a17c8c61d87de8828999",
+  "protocol_sha256": "81e1a146401d2de784f64c9eceadbf79696b11f4b2e7cb4d487f0a8987676940",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}
+CONDITION RESULTS VERIFIED ON DRIVE: clean
+
+STARTING CONDITION: darkening_050
+10/15 09:17:15 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 09:17:17 - mmengine - INFO - ------------------------------
+10/15 09:17:17 - mmengine - INFO - The length of test dataset: 600
+10/15 09:17:17 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+{"condition": "darkening_050", "index": 50, "total": 600, "created": 50, "reused": 0, "backed_up": 50, "elapsed_seconds": 50.0}
+{"condition": "darkening_050", "index": 100, "total": 600, "created": 100, "reused": 0, "backed_up": 100, "elapsed_seconds": 99.0}
+{"condition": "darkening_050", "index": 150, "total": 600, "created": 150, "reused": 0, "backed_up": 150, "elapsed_seconds": 148.4}
+{"condition": "darkening_050", "index": 200, "total": 600, "created": 200, "reused": 0, "backed_up": 200, "elapsed_seconds": 197.6}
+{"condition": "darkening_050", "index": 250, "total": 600, "created": 250, "reused": 0, "backed_up": 250, "elapsed_seconds": 246.9}
+{"condition": "darkening_050", "index": 300, "total": 600, "created": 300, "reused": 0, "backed_up": 300, "elapsed_seconds": 295.4}
+{"condition": "darkening_050", "index": 350, "total": 600, "created": 350, "reused": 0, "backed_up": 350, "elapsed_seconds": 344.0}
+{"condition": "darkening_050", "index": 400, "total": 600, "created": 400, "reused": 0, "backed_up": 400, "elapsed_seconds": 393.1}
+{"condition": "darkening_050", "index": 450, "total": 600, "created": 450, "reused": 0, "backed_up": 450, "elapsed_seconds": 441.8}
+{"condition": "darkening_050", "index": 500, "total": 600, "created": 500, "reused": 0, "backed_up": 500, "elapsed_seconds": 491.1}
+{"condition": "darkening_050", "index": 550, "total": 600, "created": 550, "reused": 0, "backed_up": 550, "elapsed_seconds": 540.8}
+{"condition": "darkening_050", "index": 600, "total": 600, "created": 600, "reused": 0, "backed_up": 600, "elapsed_seconds": 591.0}
+FORMATTING: darkening_050
+
+Formating bboxes of pred_instances_3d
+Start to convert detection format...
+[                                                  ] 0/600, elapsed: 0s, ETA:
+[                                ] 1/600, 11.2 task/s, elapsed: 0s, ETA:    54s
+[                                 ] 2/600, 9.7 task/s, elapsed: 0s, ETA:    62s
+[                                 ] 3/600, 8.7 task/s, elapsed: 0s, ETA:    68s
+[                                 ] 4/600, 8.9 task/s, elapsed: 0s, ETA:    67s
+[                                 ] 5/600, 9.4 task/s, elapsed: 1s, ETA:    64s
+[                                 ] 6/600, 9.7 task/s, elapsed: 1s, ETA:    61s
+[                                 ] 7/600, 9.7 task/s, elapsed: 1s, ETA:    61s
+[                                ] 8/600, 10.0 task/s, elapsed: 1s, ETA:    59s
+[                                ] 9/600, 10.0 task/s, elapsed: 1s, ETA:    59s
+[                               ] 10/600, 10.0 task/s, elapsed: 1s, ETA:    59s
+[                               ] 11/600, 10.1 task/s, elapsed: 1s, ETA:    58s
+[                               ] 12/600, 10.1 task/s, elapsed: 1s, ETA:    58s
+[                               ] 13/600, 10.4 task/s, elapsed: 1s, ETA:    57s
+[                               ] 14/600, 10.4 task/s, elapsed: 1s, ETA:    56s
+[                               ] 15/600, 10.5 task/s, elapsed: 1s, ETA:    56s
+[                               ] 16/600, 10.5 task/s, elapsed: 2s, ETA:    55s
+[                               ] 17/600, 10.6 task/s, elapsed: 2s, ETA:    55s
+[                               ] 18/600, 10.5 task/s, elapsed: 2s, ETA:    55s
+[                               ] 19/600, 10.6 task/s, elapsed: 2s, ETA:    55s
+[>                              ] 20/600, 10.7 task/s, elapsed: 2s, ETA:    54s
+[>                              ] 21/600, 10.7 task/s, elapsed: 2s, ETA:    54s
+[>                              ] 22/600, 10.8 task/s, elapsed: 2s, ETA:    53s
+[>                              ] 23/600, 10.9 task/s, elapsed: 2s, ETA:    53s
+[>                              ] 24/600, 10.9 task/s, elapsed: 2s, ETA:    53s
+[>                              ] 25/600, 11.0 task/s, elapsed: 2s, ETA:    52s
+[>                               ] 26/600, 9.5 task/s, elapsed: 3s, ETA:    61s
+[>                               ] 27/600, 9.5 task/s, elapsed: 3s, ETA:    60s
+[>                               ] 28/600, 9.7 task/s, elapsed: 3s, ETA:    59s
+[>                               ] 29/600, 9.7 task/s, elapsed: 3s, ETA:    59s
+[>                               ] 30/600, 9.8 task/s, elapsed: 3s, ETA:    58s
+[>                               ] 31/600, 9.9 task/s, elapsed: 3s, ETA:    58s
+[>                               ] 32/600, 9.9 task/s, elapsed: 3s, ETA:    57s
+[>                               ] 33/600, 9.9 task/s, elapsed: 3s, ETA:    57s
+[>                              ] 34/600, 10.0 task/s, elapsed: 3s, ETA:    57s
+[>                              ] 35/600, 10.0 task/s, elapsed: 3s, ETA:    56s
+[>                              ] 36/600, 10.1 task/s, elapsed: 4s, ETA:    56s
+[>                              ] 37/600, 10.1 task/s, elapsed: 4s, ETA:    56s
+[>                              ] 38/600, 10.2 task/s, elapsed: 4s, ETA:    55s
+[>>                             ] 39/600, 10.2 task/s, elapsed: 4s, ETA:    55s
+[>>                             ] 40/600, 10.2 task/s, elapsed: 4s, ETA:    55s
+[>>                             ] 41/600, 10.2 task/s, elapsed: 4s, ETA:    55s
+[>>                             ] 42/600, 10.3 task/s, elapsed: 4s, ETA:    54s
+[>>                             ] 43/600, 10.3 task/s, elapsed: 4s, ETA:    54s
+[>>                             ] 44/600, 10.3 task/s, elapsed: 4s, ETA:    54s
+[>>                             ] 45/600, 10.3 task/s, elapsed: 4s, ETA:    54s
+[>>                             ] 46/600, 10.4 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 47/600, 10.4 task/s, elapsed: 5s, ETA:    53s
+[>>                             ] 48/600, 10.4 task/s, elapsed: 5s, ETA:    53s
+[>>                             ] 49/600, 10.4 task/s, elapsed: 5s, ETA:    53s
+[>>                             ] 50/600, 10.5 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 51/600, 10.5 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 52/600, 10.5 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 53/600, 10.4 task/s, elapsed: 5s, ETA:    53s
+[>>                             ] 54/600, 10.4 task/s, elapsed: 5s, ETA:    53s
+[>>                             ] 55/600, 10.4 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 56/600, 10.4 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 57/600, 10.4 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 58/600, 10.4 task/s, elapsed: 6s, ETA:    52s
+[>>>                            ] 59/600, 10.5 task/s, elapsed: 6s, ETA:    52s
+[>>>                            ] 60/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 61/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 62/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 63/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 64/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 65/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 66/600, 10.5 task/s, elapsed: 6s, ETA:    51s
+[>>>                            ] 67/600, 10.6 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 68/600, 10.6 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 69/600, 10.6 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 70/600, 10.6 task/s, elapsed: 7s, ETA:    50s
+[>>>                            ] 71/600, 10.7 task/s, elapsed: 7s, ETA:    50s
+[>>>                            ] 72/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>                            ] 73/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>                            ] 74/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>                            ] 75/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>                            ] 76/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>                            ] 77/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>>                           ] 78/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>>                           ] 79/600, 10.7 task/s, elapsed: 7s, ETA:    49s
+[>>>>                           ] 80/600, 10.8 task/s, elapsed: 7s, ETA:    48s
+[>>>>                           ] 81/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 82/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 83/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 84/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 85/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 86/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 87/600, 10.8 task/s, elapsed: 8s, ETA:    48s
+[>>>>                           ] 88/600, 10.8 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 89/600, 10.8 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 90/600, 10.8 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 91/600, 10.8 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 92/600, 10.8 task/s, elapsed: 9s, ETA:    47s
+[>>>>                           ] 93/600, 10.8 task/s, elapsed: 9s, ETA:    47s
+[>>>>                           ] 94/600, 10.8 task/s, elapsed: 9s, ETA:    47s
+[>>>>                           ] 95/600, 10.8 task/s, elapsed: 9s, ETA:    47s
+[>>>>                           ] 96/600, 10.8 task/s, elapsed: 9s, ETA:    47s
+[>>>>>                          ] 97/600, 10.8 task/s, elapsed: 9s, ETA:    47s
+[>>>>>                          ] 98/600, 10.8 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                          ] 99/600, 10.8 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 100/600, 10.8 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 101/600, 10.8 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 102/600, 10.8 task/s, elapsed: 9s, ETA:    46s
+[>>>>                         ] 103/600, 10.8 task/s, elapsed: 10s, ETA:    46s
+[>>>>>                        ] 104/600, 10.8 task/s, elapsed: 10s, ETA:    46s
+[>>>>>                        ] 105/600, 10.8 task/s, elapsed: 10s, ETA:    46s
+[>>>>>                        ] 106/600, 10.8 task/s, elapsed: 10s, ETA:    46s
+[>>>>>                        ] 107/600, 10.8 task/s, elapsed: 10s, ETA:    46s
+[>>>>>                        ] 108/600, 10.8 task/s, elapsed: 10s, ETA:    46s
+[>>>>>                        ] 109/600, 10.8 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 110/600, 10.8 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 111/600, 10.8 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 112/600, 10.8 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 113/600, 10.8 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 114/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 115/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 116/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 117/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 118/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 119/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 120/600, 10.8 task/s, elapsed: 11s, ETA:    45s
+[>>>>>                        ] 121/600, 10.8 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 122/600, 10.8 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 123/600, 10.8 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 124/600, 10.8 task/s, elapsed: 11s, ETA:    44s
+[>>>>>>                       ] 125/600, 10.8 task/s, elapsed: 12s, ETA:    44s
+[>>>>>>                       ] 126/600, 10.8 task/s, elapsed: 12s, ETA:    44s
+[>>>>>>                       ] 127/600, 10.8 task/s, elapsed: 12s, ETA:    44s
+[>>>>>>                       ] 128/600, 10.8 task/s, elapsed: 12s, ETA:    44s
+[>>>>>>                       ] 129/600, 10.8 task/s, elapsed: 12s, ETA:    44s
+[>>>>>>                       ] 130/600, 10.8 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 131/600, 10.8 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 132/600, 10.8 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 133/600, 10.8 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 134/600, 10.8 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 135/600, 10.8 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 136/600, 10.8 task/s, elapsed: 13s, ETA:    43s
+[>>>>>>                       ] 137/600, 10.8 task/s, elapsed: 13s, ETA:    43s
+[>>>>>>                       ] 138/600, 10.8 task/s, elapsed: 13s, ETA:    43s
+[>>>>>>                       ] 139/600, 10.8 task/s, elapsed: 13s, ETA:    43s
+[>>>>>>                       ] 140/600, 10.8 task/s, elapsed: 13s, ETA:    43s
+[>>>>>>                       ] 141/600, 10.8 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 142/600, 10.8 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 143/600, 10.8 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 144/600, 10.8 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>>                      ] 145/600, 10.8 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>>                      ] 146/600, 10.8 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>>                      ] 147/600, 10.8 task/s, elapsed: 14s, ETA:    42s
+[>>>>>>>                      ] 148/600, 10.9 task/s, elapsed: 14s, ETA:    42s
+[>>>>>>>                      ] 149/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 150/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 151/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 152/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 153/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 154/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 155/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 156/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 157/600, 10.9 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 158/600, 10.9 task/s, elapsed: 15s, ETA:    41s
+[>>>>>>>                      ] 159/600, 10.9 task/s, elapsed: 15s, ETA:    41s
+[>>>>>>>                      ] 160/600, 10.9 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 161/600, 10.9 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 162/600, 10.9 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 163/600, 10.9 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 164/600, 10.9 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 165/600, 10.8 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>>                     ] 166/600, 10.8 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>>                     ] 167/600, 10.8 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>>                     ] 168/600, 10.8 task/s, elapsed: 16s, ETA:    40s
+[>>>>>>>>                     ] 169/600, 10.8 task/s, elapsed: 16s, ETA:    40s
+[>>>>>>>>                     ] 170/600, 10.8 task/s, elapsed: 16s, ETA:    40s
+[>>>>>>>>                     ] 171/600, 10.8 task/s, elapsed: 16s, ETA:    40s
+[>>>>>>>>                     ] 172/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 173/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 174/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 175/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 176/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 177/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 178/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 179/600, 10.9 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 180/600, 10.9 task/s, elapsed: 17s, ETA:    39s
+[>>>>>>>>                     ] 181/600, 10.9 task/s, elapsed: 17s, ETA:    39s
+[>>>>>>>>                     ] 182/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>                     ] 183/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>                     ] 184/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>                     ] 185/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>                     ] 186/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>>                    ] 187/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>>                    ] 188/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>>                    ] 189/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>>                    ] 190/600, 10.9 task/s, elapsed: 17s, ETA:    38s
+[>>>>>>>>>                    ] 191/600, 10.9 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 192/600, 10.9 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 193/600, 10.9 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 194/600, 10.9 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 195/600, 10.9 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 196/600, 10.9 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 197/600, 11.0 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 198/600, 11.0 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 199/600, 11.0 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 200/600, 11.0 task/s, elapsed: 18s, ETA:    37s
+[>>>>>>>>>                    ] 201/600, 11.0 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 202/600, 11.0 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 203/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>                    ] 204/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>                    ] 205/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>                    ] 206/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>>                   ] 207/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>>                   ] 208/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>>                   ] 209/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>>                   ] 210/600, 11.0 task/s, elapsed: 19s, ETA:    36s
+[>>>>>>>>>>                   ] 211/600, 11.0 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 212/600, 11.0 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 213/600, 11.0 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 214/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 215/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 216/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 217/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 218/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 219/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 220/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 221/600, 11.0 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 222/600, 11.0 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 223/600, 11.0 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 224/600, 11.0 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 225/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>                   ] 226/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>                   ] 227/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 228/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 229/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 230/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 231/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 232/600, 11.0 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 233/600, 11.0 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 234/600, 11.0 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 235/600, 11.0 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 236/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 237/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 238/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 239/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 240/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 241/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 242/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 243/600, 11.0 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 244/600, 11.0 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 245/600, 11.0 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 246/600, 11.0 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 247/600, 11.0 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 248/600, 11.0 task/s, elapsed: 23s, ETA:    32s
+[>>>>>>>>>>>>                 ] 249/600, 11.0 task/s, elapsed: 23s, ETA:    32s
+[>>>>>>>>>>>>                 ] 250/600, 11.0 task/s, elapsed: 23s, ETA:    32s
+[>>>>>>>>>>>>                 ] 251/600, 11.0 task/s, elapsed: 23s, ETA:    32s
+[>>>>>>>>>>>>                 ] 252/600, 11.0 task/s, elapsed: 23s, ETA:    32s
+[>>>>>>>>>>>>                 ] 253/600, 11.0 task/s, elapsed: 23s, ETA:    32s
+[>>>>>>>>>>>>                 ] 254/600, 11.0 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 255/600, 11.0 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 256/600, 11.0 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 257/600, 11.0 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 258/600, 11.0 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 259/600, 11.0 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 260/600, 11.0 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 261/600, 11.0 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 262/600, 11.0 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 263/600, 11.0 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 264/600, 11.0 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 265/600, 11.0 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 266/600, 11.0 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 267/600, 11.0 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 268/600, 11.0 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>>                ] 269/600, 11.0 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>>                ] 270/600, 11.0 task/s, elapsed: 25s, ETA:    30s
+[>>>>>>>>>>>>>                ] 271/600, 11.0 task/s, elapsed: 25s, ETA:    30s
+[>>>>>>>>>>>>>                ] 272/600, 11.0 task/s, elapsed: 25s, ETA:    30s
+[>>>>>>>>>>>>>                ] 273/600, 11.0 task/s, elapsed: 25s, ETA:    30s
+[>>>>>>>>>>>>>                ] 274/600, 11.0 task/s, elapsed: 25s, ETA:    30s
+[>>>>>>>>>>>>>                ] 275/600, 11.0 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 276/600, 11.0 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 277/600, 11.0 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 278/600, 11.0 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 279/600, 11.0 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 280/600, 11.0 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 281/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 282/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 283/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 284/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 285/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 286/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 287/600, 11.0 task/s, elapsed: 26s, ETA:    29s
+[>>>>>>>>>>>>>                ] 288/600, 11.0 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 289/600, 11.0 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 290/600, 11.0 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 291/600, 11.0 task/s, elapsed: 27s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 292/600, 11.0 task/s, elapsed: 27s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 293/600, 11.0 task/s, elapsed: 27s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 294/600, 11.0 task/s, elapsed: 27s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 295/600, 10.9 task/s, elapsed: 27s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 296/600, 10.9 task/s, elapsed: 27s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 297/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 298/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 299/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 300/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 301/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 302/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 303/600, 10.8 task/s, elapsed: 28s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 304/600, 10.8 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 305/600, 10.8 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 306/600, 10.8 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 307/600, 10.8 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 308/600, 10.8 task/s, elapsed: 29s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 309/600, 10.8 task/s, elapsed: 29s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 310/600, 10.8 task/s, elapsed: 29s, ETA:    27s
+[>>>>>>>>>>>>>>>              ] 311/600, 10.8 task/s, elapsed: 29s, ETA:    27s
+[>>>>>>>>>>>>>>>              ] 312/600, 10.8 task/s, elapsed: 29s, ETA:    27s
+[>>>>>>>>>>>>>>>              ] 313/600, 10.8 task/s, elapsed: 29s, ETA:    27s
+[>>>>>>>>>>>>>>>              ] 314/600, 10.8 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 315/600, 10.8 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 316/600, 10.8 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 317/600, 10.8 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 318/600, 10.8 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 319/600, 10.8 task/s, elapsed: 30s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 320/600, 10.8 task/s, elapsed: 30s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 321/600, 10.8 task/s, elapsed: 30s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 322/600, 10.8 task/s, elapsed: 30s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 323/600, 10.8 task/s, elapsed: 30s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 324/600, 10.8 task/s, elapsed: 30s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 325/600, 10.8 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 326/600, 10.8 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 327/600, 10.8 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 328/600, 10.8 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 329/600, 10.8 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 330/600, 10.8 task/s, elapsed: 31s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 331/600, 10.8 task/s, elapsed: 31s, ETA:    25s
+[>>>>>>>>>>>>>>>>             ] 332/600, 10.8 task/s, elapsed: 31s, ETA:    25s
+[>>>>>>>>>>>>>>>>             ] 333/600, 10.8 task/s, elapsed: 31s, ETA:    25s
+[>>>>>>>>>>>>>>>>             ] 334/600, 10.8 task/s, elapsed: 31s, ETA:    25s
+[>>>>>>>>>>>>>>>>             ] 335/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 336/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 337/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 338/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 339/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 340/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 341/600, 10.8 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 342/600, 10.8 task/s, elapsed: 32s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 343/600, 10.9 task/s, elapsed: 32s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 344/600, 10.9 task/s, elapsed: 32s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 345/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 346/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 347/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 348/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 349/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 350/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 351/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 352/600, 10.9 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 353/600, 10.9 task/s, elapsed: 33s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 354/600, 10.9 task/s, elapsed: 33s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 355/600, 10.9 task/s, elapsed: 33s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 356/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 357/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 358/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 359/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 360/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 361/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 362/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 363/600, 10.9 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 364/600, 10.9 task/s, elapsed: 34s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 365/600, 10.9 task/s, elapsed: 34s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 366/600, 10.9 task/s, elapsed: 34s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 367/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 368/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 369/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 370/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 371/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 372/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 373/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 374/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 375/600, 10.9 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 376/600, 10.9 task/s, elapsed: 35s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 377/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 378/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 379/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 380/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 381/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 382/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 383/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 384/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 385/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 386/600, 10.9 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 387/600, 10.9 task/s, elapsed: 36s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 388/600, 10.9 task/s, elapsed: 36s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 389/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 390/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 391/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 392/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 393/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 394/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 395/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 396/600, 10.9 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 397/600, 10.9 task/s, elapsed: 37s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 398/600, 10.9 task/s, elapsed: 37s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 399/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 400/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 401/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 402/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 403/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 404/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 405/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 406/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 407/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 408/600, 10.9 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 409/600, 10.9 task/s, elapsed: 38s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 410/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 411/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 412/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 413/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 414/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 415/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 416/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 417/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 418/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 419/600, 10.9 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 420/600, 10.9 task/s, elapsed: 39s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 421/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 422/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 423/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 424/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 425/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 426/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 427/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 428/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 429/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 430/600, 10.9 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 431/600, 10.9 task/s, elapsed: 40s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 432/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 433/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 434/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 435/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 436/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 437/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 438/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 439/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 440/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 441/600, 10.9 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 442/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 443/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 444/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 445/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 446/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 447/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 448/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 449/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 450/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 451/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 452/600, 10.9 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 453/600, 10.9 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 454/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 455/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 456/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 457/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 458/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 459/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 460/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 461/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 462/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 463/600, 10.9 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 464/600, 10.9 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 465/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 466/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 467/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 468/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 469/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 470/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 471/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 472/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 473/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 474/600, 10.9 task/s, elapsed: 43s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 475/600, 10.9 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 476/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 477/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 478/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 479/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 480/600, 11.0 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 481/600, 11.0 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 482/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 483/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 484/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 485/600, 10.9 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 486/600, 10.9 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 487/600, 10.9 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 488/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 489/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 490/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 491/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 492/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 493/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 494/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 495/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 496/600, 10.9 task/s, elapsed: 45s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 497/600, 10.9 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 498/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 499/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 500/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 501/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 502/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 503/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 504/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 505/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 506/600, 10.9 task/s, elapsed: 46s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 507/600, 10.9 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 508/600, 10.9 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 509/600, 10.9 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 510/600, 10.9 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 511/600, 10.9 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 512/600, 10.9 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 513/600, 10.9 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 514/600, 10.9 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 515/600, 11.0 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 516/600, 11.0 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 517/600, 11.0 task/s, elapsed: 47s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 518/600, 11.0 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 519/600, 11.0 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 520/600, 11.0 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 521/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 522/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 523/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 524/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 525/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 526/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 527/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 528/600, 11.0 task/s, elapsed: 48s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 529/600, 11.0 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 530/600, 11.0 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 531/600, 11.0 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 532/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 533/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 534/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 535/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 536/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 537/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 538/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 539/600, 11.0 task/s, elapsed: 49s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 540/600, 11.0 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 541/600, 11.0 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 542/600, 11.0 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 543/600, 11.0 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 544/600, 10.9 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 545/600, 10.9 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 546/600, 10.9 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 547/600, 11.0 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 548/600, 11.0 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 549/600, 11.0 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 550/600, 11.0 task/s, elapsed: 50s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 551/600, 11.0 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 552/600, 11.0 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 553/600, 11.0 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 554/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 555/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 556/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 557/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 558/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 559/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 560/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 561/600, 11.0 task/s, elapsed: 51s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 562/600, 11.0 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 563/600, 11.0 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 564/600, 11.0 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 565/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 566/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 567/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 568/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 569/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 570/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 571/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 572/600, 11.0 task/s, elapsed: 52s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 573/600, 11.0 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 574/600, 11.0 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 575/600, 11.0 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 576/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 577/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 578/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 579/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 580/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 581/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 582/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 583/600, 11.0 task/s, elapsed: 53s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 584/600, 11.0 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 585/600, 11.0 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 586/600, 11.0 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 587/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 588/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 589/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 590/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 591/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 592/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 593/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 594/600, 11.0 task/s, elapsed: 54s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 595/600, 11.0 task/s, elapsed: 54s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 596/600, 11.0 task/s, elapsed: 54s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 597/600, 11.0 task/s, elapsed: 54s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 598/600, 11.0 task/s, elapsed: 55s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 599/600, 11.0 task/s, elapsed: 55s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 600/600, 11.0 task/s, elapsed: 55s, ETA:     0s
+Results writes to /content/image_darkening600/inference/darkening_050/official_results/pred_instances_3d/results_nusc.json
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "darkening_050",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "711c950ef13e40b7c707c07eb0b15dddc1a09c553b802b6b74ea0fcae9be28d4",
+  "protocol_sha256": "3644d682dd74365430e6301d159a926994ef037571e525c1e9749bff6f6c5536",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}
+CONDITION RESULTS VERIFIED ON DRIVE: darkening_050
+
+STARTING CONDITION: darkening_025
+10/15 09:28:13 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 09:28:16 - mmengine - INFO - ------------------------------
+10/15 09:28:16 - mmengine - INFO - The length of test dataset: 600
+10/15 09:28:16 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+{"condition": "darkening_025", "index": 50, "total": 600, "created": 50, "reused": 0, "backed_up": 50, "elapsed_seconds": 50.6}
+{"condition": "darkening_025", "index": 100, "total": 600, "created": 100, "reused": 0, "backed_up": 100, "elapsed_seconds": 99.2}
+{"condition": "darkening_025", "index": 150, "total": 600, "created": 150, "reused": 0, "backed_up": 150, "elapsed_seconds": 148.5}
+{"condition": "darkening_025", "index": 200, "total": 600, "created": 200, "reused": 0, "backed_up": 200, "elapsed_seconds": 197.3}
+{"condition": "darkening_025", "index": 250, "total": 600, "created": 250, "reused": 0, "backed_up": 250, "elapsed_seconds": 246.3}
+{"condition": "darkening_025", "index": 300, "total": 600, "created": 300, "reused": 0, "backed_up": 300, "elapsed_seconds": 295.2}
+{"condition": "darkening_025", "index": 350, "total": 600, "created": 350, "reused": 0, "backed_up": 350, "elapsed_seconds": 344.1}
+{"condition": "darkening_025", "index": 400, "total": 600, "created": 400, "reused": 0, "backed_up": 400, "elapsed_seconds": 393.0}
+{"condition": "darkening_025", "index": 450, "total": 600, "created": 450, "reused": 0, "backed_up": 450, "elapsed_seconds": 442.3}
+{"condition": "darkening_025", "index": 500, "total": 600, "created": 500, "reused": 0, "backed_up": 500, "elapsed_seconds": 491.4}
+{"condition": "darkening_025", "index": 550, "total": 600, "created": 550, "reused": 0, "backed_up": 550, "elapsed_seconds": 540.2}
+{"condition": "darkening_025", "index": 600, "total": 600, "created": 600, "reused": 0, "backed_up": 600, "elapsed_seconds": 589.0}
+FORMATTING: darkening_025
+
+Formating bboxes of pred_instances_3d
+Start to convert detection format...
+[                                                  ] 0/600, elapsed: 0s, ETA:
+[                                ] 1/600, 10.4 task/s, elapsed: 0s, ETA:    58s
+[                                ] 2/600, 10.8 task/s, elapsed: 0s, ETA:    55s
+[                                ] 3/600, 10.6 task/s, elapsed: 0s, ETA:    56s
+[                                ] 4/600, 10.5 task/s, elapsed: 0s, ETA:    57s
+[                                ] 5/600, 10.8 task/s, elapsed: 0s, ETA:    55s
+[                                ] 6/600, 11.0 task/s, elapsed: 1s, ETA:    54s
+[                                ] 7/600, 11.0 task/s, elapsed: 1s, ETA:    54s
+[                                ] 8/600, 11.1 task/s, elapsed: 1s, ETA:    53s
+[                                ] 9/600, 10.7 task/s, elapsed: 1s, ETA:    55s
+[                               ] 10/600, 10.7 task/s, elapsed: 1s, ETA:    55s
+[                               ] 11/600, 10.7 task/s, elapsed: 1s, ETA:    55s
+[                               ] 12/600, 10.7 task/s, elapsed: 1s, ETA:    55s
+[                               ] 13/600, 10.9 task/s, elapsed: 1s, ETA:    54s
+[                               ] 14/600, 11.0 task/s, elapsed: 1s, ETA:    53s
+[                               ] 15/600, 11.0 task/s, elapsed: 1s, ETA:    53s
+[                               ] 16/600, 11.0 task/s, elapsed: 1s, ETA:    53s
+[                               ] 17/600, 11.1 task/s, elapsed: 2s, ETA:    53s
+[                               ] 18/600, 11.1 task/s, elapsed: 2s, ETA:    52s
+[                               ] 19/600, 11.2 task/s, elapsed: 2s, ETA:    52s
+[>                              ] 20/600, 11.2 task/s, elapsed: 2s, ETA:    52s
+[>                              ] 21/600, 11.2 task/s, elapsed: 2s, ETA:    52s
+[>                              ] 22/600, 11.2 task/s, elapsed: 2s, ETA:    51s
+[>                              ] 23/600, 11.3 task/s, elapsed: 2s, ETA:    51s
+[>                              ] 24/600, 11.4 task/s, elapsed: 2s, ETA:    51s
+[>                              ] 25/600, 11.4 task/s, elapsed: 2s, ETA:    51s
+[>                              ] 26/600, 11.4 task/s, elapsed: 2s, ETA:    50s
+[>                              ] 27/600, 11.4 task/s, elapsed: 2s, ETA:    50s
+[>                              ] 28/600, 11.4 task/s, elapsed: 2s, ETA:    50s
+[>                              ] 29/600, 10.0 task/s, elapsed: 3s, ETA:    57s
+[>                              ] 30/600, 10.1 task/s, elapsed: 3s, ETA:    57s
+[>                              ] 31/600, 10.1 task/s, elapsed: 3s, ETA:    56s
+[>                              ] 32/600, 10.2 task/s, elapsed: 3s, ETA:    56s
+[>                              ] 33/600, 10.2 task/s, elapsed: 3s, ETA:    55s
+[>                              ] 34/600, 10.3 task/s, elapsed: 3s, ETA:    55s
+[>                              ] 35/600, 10.3 task/s, elapsed: 3s, ETA:    55s
+[>                              ] 36/600, 10.3 task/s, elapsed: 3s, ETA:    55s
+[>                              ] 37/600, 10.4 task/s, elapsed: 4s, ETA:    54s
+[>                              ] 38/600, 10.4 task/s, elapsed: 4s, ETA:    54s
+[>>                             ] 39/600, 10.5 task/s, elapsed: 4s, ETA:    54s
+[>>                             ] 40/600, 10.5 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 41/600, 10.5 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 42/600, 10.5 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 43/600, 10.5 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 44/600, 10.5 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 45/600, 10.6 task/s, elapsed: 4s, ETA:    53s
+[>>                             ] 46/600, 10.6 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 47/600, 10.6 task/s, elapsed: 4s, ETA:    52s
+[>>                             ] 48/600, 10.6 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 49/600, 10.6 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 50/600, 10.7 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 51/600, 10.6 task/s, elapsed: 5s, ETA:    52s
+[>>                             ] 52/600, 10.7 task/s, elapsed: 5s, ETA:    51s
+[>>                             ] 53/600, 10.7 task/s, elapsed: 5s, ETA:    51s
+[>>                             ] 54/600, 10.7 task/s, elapsed: 5s, ETA:    51s
+[>>                             ] 55/600, 10.7 task/s, elapsed: 5s, ETA:    51s
+[>>                             ] 56/600, 10.7 task/s, elapsed: 5s, ETA:    51s
+[>>                             ] 57/600, 10.7 task/s, elapsed: 5s, ETA:    51s
+[>>                             ] 58/600, 10.7 task/s, elapsed: 5s, ETA:    50s
+[>>>                            ] 59/600, 10.8 task/s, elapsed: 5s, ETA:    50s
+[>>>                            ] 60/600, 10.8 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 61/600, 10.8 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 62/600, 10.8 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 63/600, 10.8 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 64/600, 10.8 task/s, elapsed: 6s, ETA:    50s
+[>>>                            ] 65/600, 10.8 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 66/600, 10.8 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 67/600, 10.9 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 68/600, 10.9 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 69/600, 10.9 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 70/600, 10.9 task/s, elapsed: 6s, ETA:    49s
+[>>>                            ] 71/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>                            ] 72/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>                            ] 73/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>                            ] 74/600, 10.8 task/s, elapsed: 7s, ETA:    49s
+[>>>                            ] 75/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>                            ] 76/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>                            ] 77/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>>                           ] 78/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>>                           ] 79/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>>                           ] 80/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>>                           ] 81/600, 10.9 task/s, elapsed: 7s, ETA:    48s
+[>>>>                           ] 82/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 83/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 84/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 85/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 86/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 87/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 88/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 89/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 90/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 91/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 92/600, 10.9 task/s, elapsed: 8s, ETA:    47s
+[>>>>                           ] 93/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>                           ] 94/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>                           ] 95/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>                           ] 96/600, 11.0 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                          ] 97/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                          ] 98/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                          ] 99/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 100/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 101/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 102/600, 10.9 task/s, elapsed: 9s, ETA:    46s
+[>>>>>                         ] 103/600, 10.9 task/s, elapsed: 9s, ETA:    45s
+[>>>>>                        ] 104/600, 10.9 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 105/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 106/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 107/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 108/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 109/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 110/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 111/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 112/600, 11.0 task/s, elapsed: 10s, ETA:    45s
+[>>>>>                        ] 113/600, 11.0 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 114/600, 11.0 task/s, elapsed: 10s, ETA:    44s
+[>>>>>                        ] 115/600, 11.0 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 116/600, 11.0 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 117/600, 10.9 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 118/600, 10.9 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 119/600, 10.9 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 120/600, 11.0 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 121/600, 11.0 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 122/600, 11.0 task/s, elapsed: 11s, ETA:    44s
+[>>>>>                        ] 123/600, 11.0 task/s, elapsed: 11s, ETA:    43s
+[>>>>>                        ] 124/600, 11.0 task/s, elapsed: 11s, ETA:    43s
+[>>>>>>                       ] 125/600, 11.0 task/s, elapsed: 11s, ETA:    43s
+[>>>>>>                       ] 126/600, 11.0 task/s, elapsed: 11s, ETA:    43s
+[>>>>>>                       ] 127/600, 11.0 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 128/600, 11.0 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 129/600, 11.0 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 130/600, 11.0 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 131/600, 11.0 task/s, elapsed: 12s, ETA:    43s
+[>>>>>>                       ] 132/600, 11.0 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 133/600, 11.0 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 134/600, 11.0 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 135/600, 11.1 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 136/600, 11.0 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 137/600, 11.0 task/s, elapsed: 12s, ETA:    42s
+[>>>>>>                       ] 138/600, 11.0 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 139/600, 11.0 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 140/600, 11.0 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 141/600, 11.0 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 142/600, 11.0 task/s, elapsed: 13s, ETA:    42s
+[>>>>>>                       ] 143/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>                       ] 144/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 145/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 146/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 147/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 148/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 149/600, 11.0 task/s, elapsed: 13s, ETA:    41s
+[>>>>>>>                      ] 150/600, 11.1 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 151/600, 11.1 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 152/600, 11.1 task/s, elapsed: 14s, ETA:    41s
+[>>>>>>>                      ] 153/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 154/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 155/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 156/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 157/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 158/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 159/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 160/600, 11.1 task/s, elapsed: 14s, ETA:    40s
+[>>>>>>>                      ] 161/600, 11.1 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 162/600, 11.1 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 163/600, 11.0 task/s, elapsed: 15s, ETA:    40s
+[>>>>>>>                      ] 164/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>                      ] 165/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 166/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 167/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 168/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 169/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 170/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 171/600, 11.1 task/s, elapsed: 15s, ETA:    39s
+[>>>>>>>>                     ] 172/600, 11.1 task/s, elapsed: 16s, ETA:    39s
+[>>>>>>>>                     ] 173/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 174/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 175/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 176/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 177/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 178/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 179/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 180/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 181/600, 11.1 task/s, elapsed: 16s, ETA:    38s
+[>>>>>>>>                     ] 182/600, 11.1 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 183/600, 11.2 task/s, elapsed: 16s, ETA:    37s
+[>>>>>>>>                     ] 184/600, 11.2 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>                     ] 185/600, 11.2 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>                     ] 186/600, 11.2 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 187/600, 11.2 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 188/600, 11.2 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 189/600, 11.1 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 190/600, 11.1 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 191/600, 11.1 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 192/600, 11.1 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 193/600, 11.1 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 194/600, 11.1 task/s, elapsed: 17s, ETA:    37s
+[>>>>>>>>>                    ] 195/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 196/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 197/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 198/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 199/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 200/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 201/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 202/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 203/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 204/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 205/600, 11.1 task/s, elapsed: 18s, ETA:    36s
+[>>>>>>>>>                    ] 206/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 207/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 208/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 209/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 210/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 211/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 212/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 213/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 214/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 215/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 216/600, 11.1 task/s, elapsed: 19s, ETA:    35s
+[>>>>>>>>>>                   ] 217/600, 11.1 task/s, elapsed: 20s, ETA:    35s
+[>>>>>>>>>>                   ] 218/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 219/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 220/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 221/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 222/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 223/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 224/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 225/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 226/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>                   ] 227/600, 11.1 task/s, elapsed: 20s, ETA:    34s
+[>>>>>>>>>>>                  ] 228/600, 11.1 task/s, elapsed: 21s, ETA:    34s
+[>>>>>>>>>>>                  ] 229/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 230/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 231/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 232/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 233/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 234/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 235/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 236/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 237/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 238/600, 11.1 task/s, elapsed: 21s, ETA:    33s
+[>>>>>>>>>>>                  ] 239/600, 11.1 task/s, elapsed: 22s, ETA:    33s
+[>>>>>>>>>>>                  ] 240/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 241/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 242/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 243/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 244/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 245/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 246/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 247/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>                  ] 248/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>>                 ] 249/600, 11.1 task/s, elapsed: 22s, ETA:    32s
+[>>>>>>>>>>>>                 ] 250/600, 11.1 task/s, elapsed: 22s, ETA:    31s
+[>>>>>>>>>>>>                 ] 251/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 252/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 253/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 254/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 255/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 256/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 257/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 258/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 259/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 260/600, 11.1 task/s, elapsed: 23s, ETA:    31s
+[>>>>>>>>>>>>                 ] 261/600, 11.1 task/s, elapsed: 24s, ETA:    31s
+[>>>>>>>>>>>>                 ] 262/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 263/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 264/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 265/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 266/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 267/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>                 ] 268/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>>                ] 269/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>>                ] 270/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>>                ] 271/600, 11.1 task/s, elapsed: 24s, ETA:    30s
+[>>>>>>>>>>>>>                ] 272/600, 11.1 task/s, elapsed: 24s, ETA:    29s
+[>>>>>>>>>>>>>                ] 273/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 274/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 275/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 276/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 277/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 278/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 279/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 280/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 281/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 282/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 283/600, 11.1 task/s, elapsed: 25s, ETA:    29s
+[>>>>>>>>>>>>>                ] 284/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 285/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 286/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 287/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 288/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>                ] 289/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 290/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 291/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 292/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 293/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 294/600, 11.1 task/s, elapsed: 26s, ETA:    28s
+[>>>>>>>>>>>>>>               ] 295/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 296/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 297/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 298/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 299/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 300/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 301/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 302/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 303/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 304/600, 11.1 task/s, elapsed: 27s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 305/600, 10.9 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 306/600, 10.9 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 307/600, 10.9 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 308/600, 10.9 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 309/600, 10.9 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>               ] 310/600, 10.9 task/s, elapsed: 28s, ETA:    27s
+[>>>>>>>>>>>>>>>              ] 311/600, 10.9 task/s, elapsed: 28s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 312/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 313/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 314/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 315/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 316/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 317/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 318/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 319/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 320/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 321/600, 10.9 task/s, elapsed: 29s, ETA:    26s
+[>>>>>>>>>>>>>>>              ] 322/600, 10.9 task/s, elapsed: 29s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 323/600, 10.9 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 324/600, 10.9 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 325/600, 11.0 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 326/600, 11.0 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 327/600, 11.0 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 328/600, 10.9 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 329/600, 10.9 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 330/600, 11.0 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>              ] 331/600, 11.0 task/s, elapsed: 30s, ETA:    25s
+[>>>>>>>>>>>>>>>>             ] 332/600, 11.0 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 333/600, 11.0 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 334/600, 11.0 task/s, elapsed: 30s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 335/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 336/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 337/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 338/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 339/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 340/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 341/600, 11.0 task/s, elapsed: 31s, ETA:    24s
+[>>>>>>>>>>>>>>>>             ] 342/600, 11.0 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 343/600, 11.0 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 344/600, 11.0 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 345/600, 11.0 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 346/600, 11.0 task/s, elapsed: 31s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 347/600, 11.0 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 348/600, 11.0 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 349/600, 11.0 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 350/600, 11.0 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>             ] 351/600, 11.0 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 352/600, 11.0 task/s, elapsed: 32s, ETA:    23s
+[>>>>>>>>>>>>>>>>>            ] 353/600, 11.0 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 354/600, 11.0 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 355/600, 11.0 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 356/600, 11.0 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 357/600, 11.0 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 358/600, 11.0 task/s, elapsed: 32s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 359/600, 11.0 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 360/600, 11.0 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 361/600, 11.0 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 362/600, 11.0 task/s, elapsed: 33s, ETA:    22s
+[>>>>>>>>>>>>>>>>>            ] 363/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 364/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 365/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 366/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 367/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 368/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 369/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 370/600, 11.0 task/s, elapsed: 33s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 371/600, 11.1 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>            ] 372/600, 11.1 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 373/600, 11.1 task/s, elapsed: 34s, ETA:    21s
+[>>>>>>>>>>>>>>>>>>           ] 374/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 375/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 376/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 377/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 378/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 379/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 380/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 381/600, 11.1 task/s, elapsed: 34s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 382/600, 11.0 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 383/600, 11.0 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 384/600, 11.0 task/s, elapsed: 35s, ETA:    20s
+[>>>>>>>>>>>>>>>>>>           ] 385/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 386/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 387/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 388/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 389/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 390/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 391/600, 11.0 task/s, elapsed: 35s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 392/600, 11.0 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>           ] 393/600, 11.0 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 394/600, 11.0 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 395/600, 11.0 task/s, elapsed: 36s, ETA:    19s
+[>>>>>>>>>>>>>>>>>>>          ] 396/600, 11.0 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 397/600, 11.0 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 398/600, 11.0 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 399/600, 11.1 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 400/600, 11.1 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 401/600, 11.1 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 402/600, 11.1 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 403/600, 11.1 task/s, elapsed: 36s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 404/600, 11.1 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 405/600, 11.1 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 406/600, 11.1 task/s, elapsed: 37s, ETA:    18s
+[>>>>>>>>>>>>>>>>>>>          ] 407/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 408/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 409/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 410/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 411/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 412/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>          ] 413/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 414/600, 11.1 task/s, elapsed: 37s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 415/600, 11.1 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 416/600, 11.1 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 417/600, 11.1 task/s, elapsed: 38s, ETA:    17s
+[>>>>>>>>>>>>>>>>>>>>         ] 418/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 419/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 420/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 421/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 422/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 423/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 424/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 425/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 426/600, 11.1 task/s, elapsed: 38s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 427/600, 11.1 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 428/600, 11.1 task/s, elapsed: 39s, ETA:    16s
+[>>>>>>>>>>>>>>>>>>>>         ] 429/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 430/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 431/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 432/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 433/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>         ] 434/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 435/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 436/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 437/600, 11.1 task/s, elapsed: 39s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 438/600, 11.1 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 439/600, 11.1 task/s, elapsed: 40s, ETA:    15s
+[>>>>>>>>>>>>>>>>>>>>>        ] 440/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 441/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 442/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 443/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 444/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 445/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 446/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 447/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 448/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 449/600, 11.1 task/s, elapsed: 40s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 450/600, 11.1 task/s, elapsed: 41s, ETA:    14s
+[>>>>>>>>>>>>>>>>>>>>>        ] 451/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 452/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 453/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 454/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>        ] 455/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 456/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 457/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 458/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 459/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 460/600, 11.1 task/s, elapsed: 41s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 461/600, 11.1 task/s, elapsed: 42s, ETA:    13s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 462/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 463/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 464/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 465/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 466/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 467/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 468/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 469/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 470/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 471/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 472/600, 11.1 task/s, elapsed: 42s, ETA:    12s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 473/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 474/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>       ] 475/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 476/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 477/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 478/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 479/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 480/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 481/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 482/600, 11.1 task/s, elapsed: 43s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 483/600, 11.1 task/s, elapsed: 44s, ETA:    11s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 484/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 485/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 486/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 487/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 488/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 489/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 490/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 491/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 492/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 493/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 494/600, 11.1 task/s, elapsed: 44s, ETA:    10s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 495/600, 11.1 task/s, elapsed: 44s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>      ] 496/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 497/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 498/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 499/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 500/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 501/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 502/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 503/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 504/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 505/600, 11.1 task/s, elapsed: 45s, ETA:     9s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 506/600, 11.1 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 507/600, 11.2 task/s, elapsed: 45s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 508/600, 11.1 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 509/600, 11.1 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 510/600, 11.1 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 511/600, 11.2 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 512/600, 11.2 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 513/600, 11.2 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 514/600, 11.2 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 515/600, 11.2 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 516/600, 11.2 task/s, elapsed: 46s, ETA:     8s
+[>>>>>>>>>>>>>>>>>>>>>>>>     ] 517/600, 11.2 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 518/600, 11.2 task/s, elapsed: 46s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 519/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 520/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 521/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 522/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 523/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 524/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 525/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 526/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 527/600, 11.2 task/s, elapsed: 47s, ETA:     7s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 528/600, 11.1 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 529/600, 11.1 task/s, elapsed: 47s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 530/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 531/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 532/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 533/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 534/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 535/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 536/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>    ] 537/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 538/600, 11.1 task/s, elapsed: 48s, ETA:     6s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 539/600, 11.1 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 540/600, 11.1 task/s, elapsed: 48s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 541/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 542/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 543/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 544/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 545/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 546/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 547/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 548/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 549/600, 11.1 task/s, elapsed: 49s, ETA:     5s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 550/600, 11.1 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 551/600, 11.1 task/s, elapsed: 49s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 552/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 553/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 554/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 555/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 556/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 557/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 558/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 559/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 560/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 561/600, 11.1 task/s, elapsed: 50s, ETA:     4s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 562/600, 11.1 task/s, elapsed: 50s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 563/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 564/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 565/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 566/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 567/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 568/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 569/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 570/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 571/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 572/600, 11.1 task/s, elapsed: 51s, ETA:     3s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 573/600, 11.1 task/s, elapsed: 51s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 574/600, 11.1 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 575/600, 11.1 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 576/600, 11.1 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 577/600, 11.1 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 578/600, 11.1 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 579/600, 11.1 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 580/600, 11.2 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 581/600, 11.2 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 582/600, 11.2 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 583/600, 11.2 task/s, elapsed: 52s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 584/600, 11.2 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 585/600, 11.2 task/s, elapsed: 52s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 586/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 587/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 588/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 589/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 590/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 591/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 592/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 593/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 594/600, 11.2 task/s, elapsed: 53s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 595/600, 11.2 task/s, elapsed: 53s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 596/600, 11.2 task/s, elapsed: 53s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 597/600, 11.2 task/s, elapsed: 53s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 598/600, 11.2 task/s, elapsed: 54s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 599/600, 11.2 task/s, elapsed: 54s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 600/600, 11.2 task/s, elapsed: 54s, ETA:     0s
+Results writes to /content/image_darkening600/inference/darkening_025/official_results/pred_instances_3d/results_nusc.json
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "darkening_025",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "1d8897a654895b007bac6c32e94d223d9c04f2189f5e0210ba34016dbff9a89e",
+  "protocol_sha256": "a2db231c5c9e949ef33b912239551f47595231a707278658a6f1d839607fcca8",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}
+CONDITION RESULTS VERIFIED ON DRIVE: darkening_025
+{
+  "status": "IMAGE_DARKENING_THREE_CONDITION_INFERENCE_PASS",
+  "samples_per_condition": 600,
+  "scenes": 150,
+  "conditions": [
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "clean",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "a46d646072d93375bdbfee55052807ccc1d6f87c0ed3a17c8c61d87de8828999",
+      "protocol_sha256": "81e1a146401d2de784f64c9eceadbf79696b11f4b2e7cb4d487f0a8987676940",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "darkening_050",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "711c950ef13e40b7c707c07eb0b15dddc1a09c553b802b6b74ea0fcae9be28d4",
+      "protocol_sha256": "3644d682dd74365430e6301d159a926994ef037571e525c1e9749bff6f6c5536",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "darkening_025",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "1d8897a654895b007bac6c32e94d223d9c04f2189f5e0210ba34016dbff9a89e",
+      "protocol_sha256": "a2db231c5c9e949ef33b912239551f47595231a707278658a6f1d839607fcca8",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    }
+  ],
+  "scope": "Inference and formatting complete; accuracy pending."
+}
+ALL THREE DARKENING CONDITIONS PRESERVED ON DRIVE

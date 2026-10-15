@@ -1,5 +1,15 @@
 # Figures and selected case studies
 
+## Controlled image darkening — 600 frames
+
+![Accuracy under image darkening](../results/nuscenes/bevfusion/image_darkening/20261015/figures/comparison.png)
+
+![Class AP changes under image darkening](../results/nuscenes/bevfusion/image_darkening/20261015/figures/class_ap_delta.png)
+
+![True-positive errors under image darkening](../results/nuscenes/bevfusion/image_darkening/20261015/figures/tp_errors.png)
+
+[Study findings, CSV tables and PDF/SVG figures](../results/nuscenes/bevfusion/image_darkening/20261015/README.md). Synthetic image-gain perturbation, not physical light levels or real-night evaluation.
+
 [Results overview](../results/README.md)
 
 ## BEVFusion full nuScenes validation
@@ -154,4 +164,5 @@ Same four selected frames per validation scene; existing six-camera checkpoint w
 ![Pinned BEVFusion inference flow](architecture/bevfusion_inference.png)
 
 [Sources, ownership distinctions and PDF/SVG diagrams](architecture/README.md).
+
 

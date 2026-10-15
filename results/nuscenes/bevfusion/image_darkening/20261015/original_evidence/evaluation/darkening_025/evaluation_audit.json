@@ -1,0 +1,24 @@
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "darkening_025",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "1d8897a654895b007bac6c32e94d223d9c04f2189f5e0210ba34016dbff9a89e",
+  "metrics_summary_sha256": "98ebba5df1bfd045fa4ff256bf478335a6c6dcfaf21016768eab3234fe29bf53",
+  "mAP": 0.6451504056883814,
+  "NDS": 0.6919820232755097,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}

@@ -1,0 +1,24 @@
+{
+  "condition": {
+    "name": "clean",
+    "image_value_multiplier": 1.0
+  },
+  "frozen_protocol_sha256": "e4f63cc095c4bb76d7355e7bc1adbbdfb1005e5a630d6538f8b4e4425588a391",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "torch": "2.1.2+cu121",
+  "seed": 20261002,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "script_sha256": "870598c95a6960e6a5c2e5cfdfe5341e882de62d30bfcee1e8f9690e1c95db97",
+  "transformation": {
+    "operation": "Multiply resized image tensor values by fixed gain",
+    "position": "Before model data-preprocessor normalization",
+    "arithmetic": "Float32; preserve shape and channel order",
+    "views": "All six camera views",
+    "original_files_modified": false,
+    "physical_interpretation": "Encoded-image brightness perturbation; multiplier does not represent an equivalent physical light reduction."
+  },
+  "autocast": false,
+  "tf32": false,
+  "cudnn_benchmark": false
+}

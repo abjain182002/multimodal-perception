@@ -1,5 +1,9 @@
 # Validated Experimental Results
 
+## Controlled image darkening — 15 October 2026
+
+Same frozen 600 frames / 150 scenes and official fusion checkpoint. Fresh clean / gain 0.50 / gain 0.25: mAP ×100 **68.1300 / 67.2352 / 64.5150**; NDS ×100 **71.2886 / 70.8179 / 69.1982**. Gain 0.25 changes mAP/NDS by **−3.6150 / −2.0904 points**; all ten class APs decrease. At gain 0.50, three classes show small increases despite aggregate decline. [Findings](nuscenes/bevfusion/image_darkening/20261015/FINDINGS.md). Archive/member integrity and stored metric arithmetic checked on import; raw predictions retained separately on Drive. No fresh import-time ground-truth replay, real-night benchmark or statistical significance claim.
+
 > **Full nuScenes update (10 October 2026):** Official pretrained LiDAR / camera–LiDAR pipelines evaluated all 6,019 validation samples / 150 scenes. mAP ×100 = **64.4301 / 68.3099**; NDS ×100 = **69.2353 / 71.1352**; differences +3.8798 / +1.8998 points. All ten class APs increase; scale, orientation and attribute errors slightly worsen. Original 111-member evidence archive and stored arithmetic verified. A fresh full-split replay is not claimed. [Full findings](nuscenes/bevfusion/full_validation/FINDINGS.md).
 
 > **Verification update (8 October 2026):** CPU ground-truth replay reproduced the frozen nuScenes subset headline metrics exactly; all compared summary/detail values agree within 1e-12 (maximum absolute error 8.881784197001252e-16), excluding evaluation time. This is same-evaluator reproduction, not independent cross-implementation verification. [Replay evidence](nuscenes/bevfusion/validation_subset/replay_20261008/README.md).
@@ -578,4 +582,5 @@ Same 150 frames, one per validation scene; three fresh-process sessions/model, b
 | Camera–LiDAR fusion | 544.98 | 2,231.80 | 3,278.00 |
 
 Latency ratio 1.8935×; allocated-memory ratio 3.6598×. All six raw files, stored summaries, ordered tokens and paired point counts verified on import. [Evidence, figures and limitations](nuscenes/bevfusion/runtime/20261015/README.md). Colab clock snapshots varied; no locked-clock, energy or end-to-end robot measurement. Accuracy–compute plots use separately measured 600-frame accuracy and 150-frame timing, not a new joint evaluation. [Sensor-price research](cost_performance/README.md) has begun; a matched monetary comparison remains incomplete.
+
 

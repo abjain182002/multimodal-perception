@@ -1,0 +1,9 @@
+{
+  "status": "UPLOADED_ARCHIVE_HASH_AND_MEMBER_VERIFICATION_PASS",
+  "archive": "image_darkening600_evidence_20261015.zip",
+  "bytes": 2491849,
+  "sha256": "0d0a5ddd05185e856b9704df84c2a109af9e8cf6a16a44f2a99ad7b2aa9dd6b3",
+  "verified_members": 120,
+  "manifest_listed_members": 119,
+  "raw_predictions_included": false
+}

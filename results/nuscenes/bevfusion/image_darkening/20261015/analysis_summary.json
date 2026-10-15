@@ -1,0 +1,95 @@
+{
+  "status": "STORED_EVIDENCE_AND_METRIC_ARITHMETIC_PASS",
+  "archive_manifest_members": 119,
+  "samples": 600,
+  "scenes": 150,
+  "conditions": {
+    "clean": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "clean",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "a46d646072d93375bdbfee55052807ccc1d6f87c0ed3a17c8c61d87de8828999",
+      "metrics_summary_sha256": "a2ab34f6c1a96a790016e1c1c31328d099da36ab4c59418f903b5f2093834801",
+      "mAP": 0.6812999875826672,
+      "NDS": 0.7128862225430982,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "darkening_050": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "darkening_050",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "711c950ef13e40b7c707c07eb0b15dddc1a09c553b802b6b74ea0fcae9be28d4",
+      "metrics_summary_sha256": "b8a87994b76524baaee5ce53386640a339f476fd8adae0a0671f945281372de5",
+      "mAP": 0.672352076463959,
+      "NDS": 0.7081790845565812,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "darkening_025": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "darkening_025",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "1d8897a654895b007bac6c32e94d223d9c04f2189f5e0210ba34016dbff9a89e",
+      "metrics_summary_sha256": "98ebba5df1bfd045fa4ff256bf478335a6c6dcfaf21016768eab3234fe29bf53",
+      "mAP": 0.6451504056883814,
+      "NDS": 0.6919820232755097,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    }
+  },
+  "differences": {
+    "clean": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "darkening_050": {
+      "mAP": -0.8947911118708185,
+      "NDS": -0.4707137986517007
+    },
+    "darkening_025": {
+      "mAP": -3.6149581894285743,
+      "NDS": -2.0904199267588464
+    }
+  },
+  "scope": "Compact evidence hashes and stored metric arithmetic checked; raw predictions are separate on Drive. No fresh inference, ground-truth replay or statistical significance test performed by this plotting script."
+}

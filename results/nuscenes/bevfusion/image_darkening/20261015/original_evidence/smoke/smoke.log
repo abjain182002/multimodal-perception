@@ -1,0 +1,34 @@
+LOADING FUSION MODEL...
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+10/15 08:56:34 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 08:56:34 - mmengine - WARNING - v1.0-trainval is not a meta file, simply parsed as meta information
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 08:56:41 - mmengine - INFO - ------------------------------
+10/15 08:56:41 - mmengine - INFO - The length of test dataset: 600
+10/15 08:56:41 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+
+CHECKING CONDITION: clean
+Traceback (most recent call last):
+  File "/content/image_darkening600/smoke/smoke.py", line 119, in <module>
+    assert repr(sample["data_samples"].metainfo) == original_metadata
+AssertionError

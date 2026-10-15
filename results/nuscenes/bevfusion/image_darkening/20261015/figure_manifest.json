@@ -1,0 +1,50 @@
+{
+  "figures/class_ap_delta.pdf": {
+    "bytes": 15225,
+    "sha256": "7234571b97f7c1e9cee6d934b6c08c4ba0af6221f09cfb9804192edb73c530ce"
+  },
+  "figures/class_ap_delta.png": {
+    "bytes": 113189,
+    "sha256": "e46e032b557eef8056052b6d063f49c75faf6d02fad79681f27e1d199fd89395"
+  },
+  "figures/class_ap_delta.svg": {
+    "bytes": 21746,
+    "sha256": "c3a1d625027ffdd959d6551107bc49c18ca885ee2d225d73dc0d25d3fdb27b7d"
+  },
+  "figures/comparison.pdf": {
+    "bytes": 19833,
+    "sha256": "55f12a212c61e2445cbd92f12d92e5b6a7efdab8631d0d0589380712d4e2380a"
+  },
+  "figures/comparison.png": {
+    "bytes": 100874,
+    "sha256": "ad4cc8151cfc195b895c3ccb20b1307c76583978255896dd394e8ec5e9195ca4"
+  },
+  "figures/comparison.svg": {
+    "bytes": 20227,
+    "sha256": "e862397bf63f2e4ab3b215c53db7a76fc19afa6f7e893fb120a2cb856e65fa6d"
+  },
+  "figures/tp_errors.pdf": {
+    "bytes": 16505,
+    "sha256": "cfaec5cd101b9563dfba10a9ee76c236226a24ab371d38684307bd22d92aa21b"
+  },
+  "figures/tp_errors.png": {
+    "bytes": 128066,
+    "sha256": "d26aa1ae3544a9d44ee8739b3531bc59cb701091b9d103ff8afef23cc1e71874"
+  },
+  "figures/tp_errors.svg": {
+    "bytes": 41392,
+    "sha256": "4a188ec05cf8e63fcab3ce5beb938a52c760ace7fff5a5516e5716023538dbc8"
+  },
+  "tables/class_ap.csv": {
+    "bytes": 1222,
+    "sha256": "3100bbd50c667f7272fae819c0b4aabbc403ca15f2f9fbfa34f6f119e1d9c13b"
+  },
+  "tables/headline_metrics.csv": {
+    "bytes": 354,
+    "sha256": "3fa36ac5be1c088135a41a7a848ba3201318bbfe037bc590b3d14af400f92022"
+  },
+  "tables/tp_errors.csv": {
+    "bytes": 386,
+    "sha256": "fbf5a24f19a02ce456510d6c262b96ac3291cbd45b958e0bec76f2e9e10c9a3f"
+  }
+}

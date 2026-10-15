@@ -1,0 +1,10 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "clean",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "a46d646072d93375bdbfee55052807ccc1d6f87c0ed3a17c8c61d87de8828999",
+  "protocol_sha256": "81e1a146401d2de784f64c9eceadbf79696b11f4b2e7cb4d487f0a8987676940",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

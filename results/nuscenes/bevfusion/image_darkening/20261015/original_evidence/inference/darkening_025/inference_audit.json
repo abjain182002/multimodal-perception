@@ -1,0 +1,10 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "darkening_025",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "1d8897a654895b007bac6c32e94d223d9c04f2189f5e0210ba34016dbff9a89e",
+  "protocol_sha256": "a2db231c5c9e949ef33b912239551f47595231a707278658a6f1d839607fcca8",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

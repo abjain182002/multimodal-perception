@@ -1,0 +1,482 @@
+{
+  "status": "IMAGE_DARKENING_COMPACT_EVIDENCE_MANIFEST",
+  "members": {
+    "evaluation/clean/evaluation_audit.json": {
+      "bytes": 720,
+      "sha256": "aeca4619137315c96bb2aadc332d50eec8bc3ad4a58a3dbe0bd3da3fd2d9d18f"
+    },
+    "evaluation/clean/metrics_details.json": {
+      "bytes": 768112,
+      "sha256": "731a2db89d641cdf9ae8c3abbd8335fca476b7283a2f82282cf0393aaae4ce36"
+    },
+    "evaluation/clean/metrics_summary.json": {
+      "bytes": 5198,
+      "sha256": "a2ab34f6c1a96a790016e1c1c31328d099da36ab4c59418f903b5f2093834801"
+    },
+    "evaluation/clean/plots/barrier_pr.pdf": {
+      "bytes": 14912,
+      "sha256": "debd0e0c73f4a70ad2a93c78ea1f45b395b5082d3bc91adb9a714a391cd59794"
+    },
+    "evaluation/clean/plots/barrier_tp.pdf": {
+      "bytes": 17174,
+      "sha256": "570599ad30c06e50453c28914cad29a0a81fec92712be97a9f3c7ad334fc0c5e"
+    },
+    "evaluation/clean/plots/bicycle_pr.pdf": {
+      "bytes": 14277,
+      "sha256": "cba230f38f8ff888f4658ba72df626e493dc18d5cd6d3cde4e2de5e34cf02d68"
+    },
+    "evaluation/clean/plots/bicycle_tp.pdf": {
+      "bytes": 18244,
+      "sha256": "fb58c37d2ec44b1d683c74110e1fd050560b515976eb5ebeac0303fda0642ea5"
+    },
+    "evaluation/clean/plots/bus_pr.pdf": {
+      "bytes": 14705,
+      "sha256": "aa02fda34be3d99138bf7787141ae1d7bcd6943bcc2c0b6006c9e5a41ffb9ac8"
+    },
+    "evaluation/clean/plots/bus_tp.pdf": {
+      "bytes": 19366,
+      "sha256": "d952ec5d227cbcbf9e723648f7e66903cc8ff19c99aa42bd934e359b24ce961a"
+    },
+    "evaluation/clean/plots/car_pr.pdf": {
+      "bytes": 14918,
+      "sha256": "718dbc6dac696fdccdbbebb3f9230faf5226f32f2a9fefaedcdae3858c800b2f"
+    },
+    "evaluation/clean/plots/car_tp.pdf": {
+      "bytes": 18859,
+      "sha256": "19f44c4e16450c2742d76e73cb0fdab13670ff9c3a8b216d2f32228d7c916886"
+    },
+    "evaluation/clean/plots/construction_vehicle_pr.pdf": {
+      "bytes": 15197,
+      "sha256": "6ef7e5cbb1e3b8ac819a35b2de43a1e8e6b6aaf13b1e15dda9753d99e511392f"
+    },
+    "evaluation/clean/plots/construction_vehicle_tp.pdf": {
+      "bytes": 17788,
+      "sha256": "4eea18297db4f8b63a6d3927ba40262d16f9047ee3522115008d29df95892baf"
+    },
+    "evaluation/clean/plots/dist_pr_0.5.pdf": {
+      "bytes": 21358,
+      "sha256": "6896fb24470aaf309428404f5f8298299406cab31bc80f1b94468193dccf0733"
+    },
+    "evaluation/clean/plots/dist_pr_1.0.pdf": {
+      "bytes": 21870,
+      "sha256": "535e74d51ed00f3b8a7f8cc440434cb9e8fb4ec80782d52b9e2315526608375a"
+    },
+    "evaluation/clean/plots/dist_pr_2.0.pdf": {
+      "bytes": 22037,
+      "sha256": "23236b03cb89eb3724faa3c04873fb01c768eb441ef4515d191da6d35fb9dcac"
+    },
+    "evaluation/clean/plots/dist_pr_4.0.pdf": {
+      "bytes": 22084,
+      "sha256": "8ade481ab2aed9481c7a040df4884eb9e22b1cbde9a1fd194571a4dc321df40c"
+    },
+    "evaluation/clean/plots/motorcycle_pr.pdf": {
+      "bytes": 13531,
+      "sha256": "8c8fb9002c4c45853dff0c3506c621616848c9b92a98a56a0b234294c6bd76e7"
+    },
+    "evaluation/clean/plots/motorcycle_tp.pdf": {
+      "bytes": 18457,
+      "sha256": "032d088f30924cfe6f7445b0bc8259bf49c6794a21197900e57b6bb4fa1b4950"
+    },
+    "evaluation/clean/plots/pedestrian_pr.pdf": {
+      "bytes": 15328,
+      "sha256": "ea372516078c1384d1621b01fe4732d0f01c87f472d2093d5052f0a2e691105b"
+    },
+    "evaluation/clean/plots/pedestrian_tp.pdf": {
+      "bytes": 19256,
+      "sha256": "3c0ac5e0b627b3cfec5fa64180e04426d93abc27bba8d1cb6401a43858cac290"
+    },
+    "evaluation/clean/plots/summary.pdf": {
+      "bytes": 84497,
+      "sha256": "f5796aec7203cc36ca4ad9808c8216b749238e46d38376489ab022478a93c97d"
+    },
+    "evaluation/clean/plots/traffic_cone_pr.pdf": {
+      "bytes": 15367,
+      "sha256": "1cd96804ecc95809d682d9fdb5448a3ef1a042d9bff899514bd5fbe446c9ae7b"
+    },
+    "evaluation/clean/plots/traffic_cone_tp.pdf": {
+      "bytes": 16287,
+      "sha256": "0415f0414ddfb704ab19f17e898ca66f69f3c7129e366be6d2abc3e87c31e676"
+    },
+    "evaluation/clean/plots/trailer_pr.pdf": {
+      "bytes": 14694,
+      "sha256": "2472b90ad23e5c34c2ddfdcf893a23091b5b35ad43dd93204eef7f0bc5abd336"
+    },
+    "evaluation/clean/plots/trailer_tp.pdf": {
+      "bytes": 17469,
+      "sha256": "978c0f50cc1f558823d90394ccc78707549f00c7a59696a6c54bc8fd8327b473"
+    },
+    "evaluation/clean/plots/truck_pr.pdf": {
+      "bytes": 15194,
+      "sha256": "41ec00154024c7b7bd192116780421e401fb89932aa99004a453e36002e5e18b"
+    },
+    "evaluation/clean/plots/truck_tp.pdf": {
+      "bytes": 18212,
+      "sha256": "3c0124ee4726bb513f5565469a7ea6371e30f2c994df34276025e8e2d1670e29"
+    },
+    "evaluation/darkening_025/evaluation_audit.json": {
+      "bytes": 728,
+      "sha256": "9cc60530903582df4fc81a27f46e95a852260359cd210d6126409009af57c343"
+    },
+    "evaluation/darkening_025/metrics_details.json": {
+      "bytes": 766131,
+      "sha256": "15d84255552686d9fa6c86dbe6e4044311658222f99ca03af198adce99a720f0"
+    },
+    "evaluation/darkening_025/metrics_summary.json": {
+      "bytes": 5202,
+      "sha256": "98ebba5df1bfd045fa4ff256bf478335a6c6dcfaf21016768eab3234fe29bf53"
+    },
+    "evaluation/darkening_025/plots/barrier_pr.pdf": {
+      "bytes": 15080,
+      "sha256": "0ecdf59cd48da23e50e2aa461a1c3d8187eb23410d92f2e731d355abde71271f"
+    },
+    "evaluation/darkening_025/plots/barrier_tp.pdf": {
+      "bytes": 17402,
+      "sha256": "464a9b07d22316f6eeea3e1605a90b07d966aee3902e56d5166e2908d5787c31"
+    },
+    "evaluation/darkening_025/plots/bicycle_pr.pdf": {
+      "bytes": 13911,
+      "sha256": "b983923c5029e37d93be43a96ba30ab46f9d45b0d98415ce9093fa1a21061c94"
+    },
+    "evaluation/darkening_025/plots/bicycle_tp.pdf": {
+      "bytes": 18092,
+      "sha256": "117d6931814e5e9b16d2944c109e6043a36bc9eadb7c71386f7b7db5eaba0420"
+    },
+    "evaluation/darkening_025/plots/bus_pr.pdf": {
+      "bytes": 14906,
+      "sha256": "dddd1d089940ecb88ca0d04b8c68c76fd1a0d3401854d8566936d968bfaeb48a"
+    },
+    "evaluation/darkening_025/plots/bus_tp.pdf": {
+      "bytes": 19081,
+      "sha256": "9395ab1a4c23dd0518bf4999687cb13698b440de584cffe23f1b158d97f60809"
+    },
+    "evaluation/darkening_025/plots/car_pr.pdf": {
+      "bytes": 14972,
+      "sha256": "7a27a9d7e571db0475b92374745d6665bf17c64037cca6f6c0dfe59189dc9b5e"
+    },
+    "evaluation/darkening_025/plots/car_tp.pdf": {
+      "bytes": 19333,
+      "sha256": "a5f6325514e5123c9a628a30cb59adc3122bb5b6d381392012cb2dd42e77b49d"
+    },
+    "evaluation/darkening_025/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14744,
+      "sha256": "dbb7768fb67989f50048efd5a6313ecb9806224574002426a044616a165b95b2"
+    },
+    "evaluation/darkening_025/plots/construction_vehicle_tp.pdf": {
+      "bytes": 17999,
+      "sha256": "333014ed5b19d0cda4c2da67a3e8bf3319640f96fde2444cc6f3837449003b52"
+    },
+    "evaluation/darkening_025/plots/dist_pr_0.5.pdf": {
+      "bytes": 21302,
+      "sha256": "40e80a2575c01d28d97a6c56c309a5a9ccb82dc843e75aa97749b174bd1df864"
+    },
+    "evaluation/darkening_025/plots/dist_pr_1.0.pdf": {
+      "bytes": 21819,
+      "sha256": "97983bf894c9a1f6d39b3f071e1d498a4a884280c5fa266ec37ef7aaf7e2a055"
+    },
+    "evaluation/darkening_025/plots/dist_pr_2.0.pdf": {
+      "bytes": 21976,
+      "sha256": "8926adcc6a811af06cb6cdd698fc6aad01444e24761836b93418936544b48103"
+    },
+    "evaluation/darkening_025/plots/dist_pr_4.0.pdf": {
+      "bytes": 22000,
+      "sha256": "7c3f9e18fbc0f80d5b33ec719ee872e72d98f338fd28acc973b80e25973e29b4"
+    },
+    "evaluation/darkening_025/plots/motorcycle_pr.pdf": {
+      "bytes": 14154,
+      "sha256": "fefa2ff67e492664c9104ba355ac49dfb5d0c551377aee932e2778c8d494851c"
+    },
+    "evaluation/darkening_025/plots/motorcycle_tp.pdf": {
+      "bytes": 18335,
+      "sha256": "2cc616c00e98747614bf828fac5f19d9f7bcb9b9866bb2d6cd9343d6b5d5a41d"
+    },
+    "evaluation/darkening_025/plots/pedestrian_pr.pdf": {
+      "bytes": 14592,
+      "sha256": "07a9806d0d955dfd84c223647fda2bacdf27f0e9072d768768bf0fd6966c7716"
+    },
+    "evaluation/darkening_025/plots/pedestrian_tp.pdf": {
+      "bytes": 19046,
+      "sha256": "64c3f7f14196cc20e23531ee66287da450f485684924123848010ebdad9f4b79"
+    },
+    "evaluation/darkening_025/plots/summary.pdf": {
+      "bytes": 83722,
+      "sha256": "3bf3ceb1585b4a30f40c40ccae67a65dcd1d63d1793b7970bdf416df8bf20dfe"
+    },
+    "evaluation/darkening_025/plots/traffic_cone_pr.pdf": {
+      "bytes": 15351,
+      "sha256": "4ad73d778a44ba1d148539ce7979cb791df0deeeabdbd512531c7d76a1bd0460"
+    },
+    "evaluation/darkening_025/plots/traffic_cone_tp.pdf": {
+      "bytes": 16285,
+      "sha256": "7ac161f1e18e3f035d8676c3d1532f87783528b165fc1c37f2fab5fdcd4f6220"
+    },
+    "evaluation/darkening_025/plots/trailer_pr.pdf": {
+      "bytes": 14651,
+      "sha256": "66bedd4da07f587887b1e6a3fac642a290c8358bcc18a52f19c5b2e4649c2c0a"
+    },
+    "evaluation/darkening_025/plots/trailer_tp.pdf": {
+      "bytes": 17398,
+      "sha256": "006361831f058adab9cb8a2e04db4db0466e838197e315d64373b19d47afe050"
+    },
+    "evaluation/darkening_025/plots/truck_pr.pdf": {
+      "bytes": 14785,
+      "sha256": "9a1645b2f0a0c5d47c807eadaa0e99b8d9243a726cf9040d08b165cc69d9a409"
+    },
+    "evaluation/darkening_025/plots/truck_tp.pdf": {
+      "bytes": 18604,
+      "sha256": "216c26fd2694b362157dcde82df4c8f96fb5842b26fa5cce75eb2f743d695b67"
+    },
+    "evaluation/darkening_050/evaluation_audit.json": {
+      "bytes": 727,
+      "sha256": "c48ec8fd3ad8c8f1a65a633cc50d0ba09b1abf40d7301a547d0c23a804ed79b5"
+    },
+    "evaluation/darkening_050/metrics_details.json": {
+      "bytes": 767526,
+      "sha256": "5ef612e1430710236219eda08b5124a41b8ce45f58241de9c97dfe987ce7465c"
+    },
+    "evaluation/darkening_050/metrics_summary.json": {
+      "bytes": 5193,
+      "sha256": "b8a87994b76524baaee5ce53386640a339f476fd8adae0a0671f945281372de5"
+    },
+    "evaluation/darkening_050/plots/barrier_pr.pdf": {
+      "bytes": 14641,
+      "sha256": "6337fc011e950fec94c5de55521111177dca56006c8c77db21ef6fdc13d6a7bd"
+    },
+    "evaluation/darkening_050/plots/barrier_tp.pdf": {
+      "bytes": 16999,
+      "sha256": "b9caac02816c64ec4189b2a326906c14e00450cd41b788bd36546bf5e8fc416c"
+    },
+    "evaluation/darkening_050/plots/bicycle_pr.pdf": {
+      "bytes": 13305,
+      "sha256": "9c1381bb43d14e422ca44a45f3b7a3c7e725762f1acbd0348d68621ee660c1b4"
+    },
+    "evaluation/darkening_050/plots/bicycle_tp.pdf": {
+      "bytes": 18105,
+      "sha256": "b9da353307a30463bf30416289bb5a4e489b71946dfe4426578de2025f403367"
+    },
+    "evaluation/darkening_050/plots/bus_pr.pdf": {
+      "bytes": 14821,
+      "sha256": "a2a59298120875d843792c647eec5e5ad326935027e330e2698156e175b456e0"
+    },
+    "evaluation/darkening_050/plots/bus_tp.pdf": {
+      "bytes": 19336,
+      "sha256": "0e6ece5291ed4a514f0dd941742f1163c71a7336dbedc263763ed0b649cc645c"
+    },
+    "evaluation/darkening_050/plots/car_pr.pdf": {
+      "bytes": 14968,
+      "sha256": "f11b4727256c8b92e78e4a9f8760be8812ee4e55f2b8dc4825d3367cbf9202a2"
+    },
+    "evaluation/darkening_050/plots/car_tp.pdf": {
+      "bytes": 18876,
+      "sha256": "c26eaf29f997469696da4062fbed430aad424f98d3f238057096b93842c82219"
+    },
+    "evaluation/darkening_050/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14582,
+      "sha256": "81d32f358dd0cb4280fd96194690f7359dfc335844b78f72ea85131060968b50"
+    },
+    "evaluation/darkening_050/plots/construction_vehicle_tp.pdf": {
+      "bytes": 18071,
+      "sha256": "5a546a89305de2ac6d2aa3a81515e40244fc81d00a2910838a65a10f1d8cd3c5"
+    },
+    "evaluation/darkening_050/plots/dist_pr_0.5.pdf": {
+      "bytes": 20833,
+      "sha256": "0619c43963f4dc502f708ffcc99de233d105840149e08dccb8fb684766f6dbfd"
+    },
+    "evaluation/darkening_050/plots/dist_pr_1.0.pdf": {
+      "bytes": 21772,
+      "sha256": "0b9cd82d5740af39af97029d6aa1ad17ec41a84b9b8b38c0828fa7adb0f310d3"
+    },
+    "evaluation/darkening_050/plots/dist_pr_2.0.pdf": {
+      "bytes": 21941,
+      "sha256": "45e6925334c4177f84bb7b3c97ede042c752115e308f7fa11ced65a79807f11a"
+    },
+    "evaluation/darkening_050/plots/dist_pr_4.0.pdf": {
+      "bytes": 21986,
+      "sha256": "8d326caf4050d993216dadf4bc2fd9b40ec43202dde0f3036edf7e0489c19352"
+    },
+    "evaluation/darkening_050/plots/motorcycle_pr.pdf": {
+      "bytes": 14087,
+      "sha256": "8a93b828c71a02a64b95323db7889b2ac568f38b0eda3eedac15ad5b22803ca9"
+    },
+    "evaluation/darkening_050/plots/motorcycle_tp.pdf": {
+      "bytes": 18610,
+      "sha256": "1e7204c0ff7fa4aefe4061b3f81bdd99f2fb9899d2f156a19bf2672693ac7863"
+    },
+    "evaluation/darkening_050/plots/pedestrian_pr.pdf": {
+      "bytes": 14818,
+      "sha256": "3d45602123c56a0fd86923af2ed12a5b3ac0b25116bc817dbed84e0dfacf9001"
+    },
+    "evaluation/darkening_050/plots/pedestrian_tp.pdf": {
+      "bytes": 19242,
+      "sha256": "c964ea90e2884a8bf31483a5cabb2e9070ae876444c8de6b85b1fe1f1e4e6884"
+    },
+    "evaluation/darkening_050/plots/summary.pdf": {
+      "bytes": 84554,
+      "sha256": "9c9288f9f38048eb54d3640cf3ec7229682edc6d233a3435e87d63d3fa00c735"
+    },
+    "evaluation/darkening_050/plots/traffic_cone_pr.pdf": {
+      "bytes": 15325,
+      "sha256": "75d76769ff950b95b83483ad773199592c03946e6cc480edc25f2a98da537af5"
+    },
+    "evaluation/darkening_050/plots/traffic_cone_tp.pdf": {
+      "bytes": 16326,
+      "sha256": "631758286b738b9cca44138ecff324558bb0b0e0a9e322eb6a4e3fa16f88020b"
+    },
+    "evaluation/darkening_050/plots/trailer_pr.pdf": {
+      "bytes": 14308,
+      "sha256": "0453faa9e113c306d7f8858ec210b4ae39c615988ab01259160058ce0d225d51"
+    },
+    "evaluation/darkening_050/plots/trailer_tp.pdf": {
+      "bytes": 18044,
+      "sha256": "bd5da57ef4f23419199f8acfd6691099e0ee49a9a4c5b3f770b25b9e275a1d11"
+    },
+    "evaluation/darkening_050/plots/truck_pr.pdf": {
+      "bytes": 15208,
+      "sha256": "72042121c51a93b099f593a86ae0f5731b4e6d59fc8e19909aa12cf2aadd011b"
+    },
+    "evaluation/darkening_050/plots/truck_tp.pdf": {
+      "bytes": 18250,
+      "sha256": "7e039ec2abd704997fabb91960a80664e87741e0e7b4ddadf5a684ea560f30c1"
+    },
+    "evaluation/detection_config.json": {
+      "bytes": 439,
+      "sha256": "85648bcef19182a72def0039942cb2e6077142610f7bd503a71433864737986e"
+    },
+    "evaluation/evaluate_darkening600.py": {
+      "bytes": 6685,
+      "sha256": "ca4f7a4d39e0a41f8bca547ed10a26507ce08aba281f0c238d58377e41e27b4a"
+    },
+    "evaluation/evaluation_20261015T095122696154Z.log": {
+      "bytes": 14103,
+      "sha256": "91faf7a83ba74de4a9efa04a5bd3479f3dac50ae1ac13c9941589ba7909d58f0"
+    },
+    "evaluation/three_condition_evaluation.json": {
+      "bytes": 3464,
+      "sha256": "b4c23a09b81f7ed6ed9644105c44142ee27a892c0de6c3b4a8d73a112240bdc7"
+    },
+    "evaluation_metadata_audit.json": {
+      "bytes": 3370,
+      "sha256": "0149fd1a9d18bb30ed6074d599ffe07c898fd139fbb78d7e392076f05351233e"
+    },
+    "inference/clean/inference_audit.json": {
+      "bytes": 375,
+      "sha256": "6bc56383b74c01b7341eff4303a8129344155b60a2c4615932c765c429364af5"
+    },
+    "inference/clean/protocol.json": {
+      "bytes": 1062,
+      "sha256": "81e1a146401d2de784f64c9eceadbf79696b11f4b2e7cb4d487f0a8987676940"
+    },
+    "inference/clean/resolved_config.py": {
+      "bytes": 29508,
+      "sha256": "b0af4d2886ded80a78d2f5baa58b2f9ac590ea73bca258b97587aaccc646b716"
+    },
+    "inference/darkening_025/inference_audit.json": {
+      "bytes": 383,
+      "sha256": "5fc4ae25e2f8eb37a8dd89b183cba2a5316446a972b3a5db267ab18a7534aca0"
+    },
+    "inference/darkening_025/protocol.json": {
+      "bytes": 1071,
+      "sha256": "a2db231c5c9e949ef33b912239551f47595231a707278658a6f1d839607fcca8"
+    },
+    "inference/darkening_025/resolved_config.py": {
+      "bytes": 29508,
+      "sha256": "b0af4d2886ded80a78d2f5baa58b2f9ac590ea73bca258b97587aaccc646b716"
+    },
+    "inference/darkening_050/inference_audit.json": {
+      "bytes": 383,
+      "sha256": "d2e5c3281fad595d752e3a295cf4fe8d2225a6635d0c90930bc0e5fdf174a099"
+    },
+    "inference/darkening_050/protocol.json": {
+      "bytes": 1070,
+      "sha256": "3644d682dd74365430e6301d159a926994ef037571e525c1e9749bff6f6c5536"
+    },
+    "inference/darkening_050/resolved_config.py": {
+      "bytes": 29508,
+      "sha256": "b0af4d2886ded80a78d2f5baa58b2f9ac590ea73bca258b97587aaccc646b716"
+    },
+    "inference/inference.py": {
+      "bytes": 11094,
+      "sha256": "870598c95a6960e6a5c2e5cfdfe5341e882de62d30bfcee1e8f9690e1c95db97"
+    },
+    "inference/inference_20261015T090533452126Z.log": {
+      "bytes": 157317,
+      "sha256": "933909dd171003e6ea4b8c93308584b420b1ae5d540d65c67fe5cd5ea6e4c96d"
+    },
+    "inference/three_condition_inference.json": {
+      "bytes": 1467,
+      "sha256": "0806e5430e9d41caccdc7f4738b024bdfc3de7ae375201e58f611746518b4148"
+    },
+    "protocol.json": {
+      "bytes": 2113,
+      "sha256": "e4f63cc095c4bb76d7355e7bc1adbbdfb1005e5a630d6538f8b4e4425588a391"
+    },
+    "required_sensor_files.txt": {
+      "bytes": 819059,
+      "sha256": "008308a36dabec38e2f3a7647fe866ae4a77c6f59c7708b84c891fc8f06f6dbc"
+    },
+    "sample_tokens.txt": {
+      "bytes": 19800,
+      "sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f"
+    },
+    "scene_selection.json": {
+      "bytes": 72067,
+      "sha256": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9"
+    },
+    "selected_input_manifest.json": {
+      "bytes": 1009862,
+      "sha256": "320789fff22aa126aff7b516a05d601410c1047fe0bb538acee4efcb98e39105"
+    },
+    "selection_audit.json": {
+      "bytes": 697,
+      "sha256": "f38824df8726e2c15ed3985bf78be023ded7d7714f702a176f7fa79d4a544224"
+    },
+    "sensor_restoration_audit.json": {
+      "bytes": 2696248,
+      "sha256": "93f92c52b13d7e7bf062a8bb944160a65a6fc8fd775a08be1c2994879ac6f989"
+    },
+    "smoke/smoke.log": {
+      "bytes": 2412,
+      "sha256": "3be933874740b92fbbe53aebbc3ef1ad3f609e606bda9e850475d9e480ecea63"
+    },
+    "smoke/smoke.py": {
+      "bytes": 8628,
+      "sha256": "0570631d89e231338fd8e3cafaaf719a5dff308c56b395f64fee11874e4867c9"
+    },
+    "smoke_v2/smoke.log": {
+      "bytes": 2840,
+      "sha256": "641d778c0e49ec75352da0de85995eb27e468c4aa849ae492cf9c70552209014"
+    },
+    "smoke_v2/smoke.py": {
+      "bytes": 10328,
+      "sha256": "4140901d6e88fad239f6eac210a003e2eb7ee29caa7f416e4e511548187ac597"
+    },
+    "smoke_v3/clean_prediction.json": {
+      "bytes": 56938,
+      "sha256": "786c59138708066541e7d67044d9f65dc07f754a552a6ffd864864780fa8ad00"
+    },
+    "smoke_v3/darkening_025_prediction.json": {
+      "bytes": 56934,
+      "sha256": "802a195a9d5d7621f3218f302723c4afb026f504b1c3c54a03633dbe398aff2c"
+    },
+    "smoke_v3/darkening_050_prediction.json": {
+      "bytes": 56987,
+      "sha256": "a37a0844c63d1f23e54c361a17cddf8a4d7a7a1d47550176a5a0493f4e9fa07b"
+    },
+    "smoke_v3/resolved_config.py": {
+      "bytes": 29508,
+      "sha256": "b0af4d2886ded80a78d2f5baa58b2f9ac590ea73bca258b97587aaccc646b716"
+    },
+    "smoke_v3/smoke.log": {
+      "bytes": 5464,
+      "sha256": "7aabb52c1e92ee91dec320cb8f81f3f9fff77851dc367a4b17031cbe25fedb62"
+    },
+    "smoke_v3/smoke.py": {
+      "bytes": 10762,
+      "sha256": "14c4e1323a1957ea4a81a8b7e3640ad4e77e1fe1645c5fc83d8da351325b9b99"
+    },
+    "smoke_v3/smoke_audit.json": {
+      "bytes": 4013,
+      "sha256": "0d9e2f3c08b180455baf4cd5dbd98d3aa1672196993346162311031525cea0a9"
+    }
+  },
+  "scope": "Protocols, scripts, successful and failed smoke records, inference audits, evaluation metrics, curves and logs. Raw predictions and sensor backups remain separately on Drive."
+}

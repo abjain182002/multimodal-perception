@@ -1,5 +1,9 @@
 # Multimodal Object Detection and Robotic Perception
 
+## Image-darkening challenge — 15 October 2026
+
+[Controlled 600-frame study](results/nuscenes/bevfusion/image_darkening/20261015/README.md): clean / gain 0.50 / gain 0.25 mAP ×100 = **68.1300 / 67.2352 / 64.5150**; NDS ×100 = **71.2886 / 70.8179 / 69.1982**. Same fusion checkpoint and frozen inputs; synthetic image brightness perturbation, not a real-night benchmark.
+
 A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KITTI and nuScenes. The aim is to examine detection accuracy, depth estimation, failure cases and computational cost relevant to robotic perception. Robot navigation or hardware deployment has not been demonstrated.
 
 ## Start here
@@ -63,4 +67,5 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## Runtime, memory and architecture
 
 [Three-session T4 benchmark](results/nuscenes/bevfusion/runtime/20261015/README.md): median-of-session-medians latency is 287.81 ms (LiDAR) versus 544.98 ms (fusion); maximum allocated GPU memory is 609.82 versus 2,231.80 MiB. Same 150-frame runtime subset; file loading excluded. [Architecture diagrams](docs/architecture/README.md) identify reused model components and project orchestration. [Hardware cost framework](results/cost_performance/README.md) records initial sources and unresolved price assumptions.
+
 

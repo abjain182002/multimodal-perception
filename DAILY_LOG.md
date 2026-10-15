@@ -349,3 +349,15 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Verified original ZIP SHA-256 and all 52 manifest-member hashes (53 members including manifest). Reproduced per-session latency/loading statistics and paired token/point-count checks. Generated three runtime figures and two architecture diagrams, in PNG/PDF/SVG, with CSV tables and reproducible scripts.
 - [Runtime evidence](results/nuscenes/bevfusion/runtime/20261015/README.md), [architecture](docs/architecture/README.md), [initial cost framework](results/cost_performance/README.md). Current matched monetary sensor costs, additional challenge conditions and remaining evidence diagnostics are still open.
 
+
+## 15 October 2026 — controlled image-darkening challenge
+
+- Frozen the same 600 frames / 150 validation scenes used for camera-availability analysis; fresh clean baseline plus image-value gains 0.50 and 0.25.
+- Applied float32 multiplication to six resized camera tensors before normalization; files, LiDAR inputs, calibration and checkpoint unchanged. Autocast/TF32 disabled; no training.
+- Preserved two failed smoke checks caused by metadata-comparison serialization, then successful corrected three-condition checks; failures occurred before prediction.
+- Completed and Drive-verified 1,800 predictions and same-token nuScenes-devkit 1.2.0 evaluations.
+- Clean / 0.50 / 0.25 mAP ×100: 68.1300 / 67.2352 / 64.5150; NDS ×100: 71.2886 / 70.8179 / 69.1982.
+- Verified the 2,491,849-byte evidence ZIP SHA-256 `0d0a5ddd05185e856b9704df84c2a109af9e8cf6a16a44f2a99ad7b2aa9dd6b3`, all 120 members, and stored metric arithmetic; generated three figures in PNG/PDF/SVG and three CSV tables.
+- Preserved original evidence and navigation links. Raw predictions and sensor backups remain on Drive. Synthetic darkening is not a real-night test; no confidence intervals or runtime claim.
+- Remaining supervisor work includes other controlled robustness challenges, state-of-the-art/failure-handling synthesis, cost analysis and camera-only/multiple-LiDAR feasibility.
+
