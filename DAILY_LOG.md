@@ -338,3 +338,14 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Imported all 160 compact archive members with archive SHA-256 and all 158 manifest hashes verified. Recomputed stored mAP/NDS arithmetic within 1e-12 and reviewed three figures, saved in PNG/PDF/SVG with CSV tables and plotting code.
 - [Experiment folder](results/nuscenes/bevfusion/camera_availability/20261014/README.md) distinguishes missing-view robustness from purpose-trained sensor configurations and computational-cost claims. Raw predictions and replaceable sensor backups remain on Drive. Controlled runtime/cost analysis, accuracy replay and remaining diagnostics are still open.
 
+
+
+## 2026-10-15 — runtime benchmark, architecture and initial cost sources
+
+- Restored pinned Python/PyTorch/framework/source/checkpoints and compiled CUDA 12.1.66 operations; GPU checks passed.
+- Froze 150 samples (second selected timestamp position per scene from the prior 600-frame study); restored and individually hash-verified 2,400 sensors, 1.17 GB. Prior backup sizes/receipt hashes checked; full archives not rehashed in this restoration.
+- Completed six isolated sessions (L/F, F/L, L/F), 20 untimed warm-ups and 150 timed frames/session. Three passes/model give 900 measured rows. Primary test_step timing excludes file loading; TF32/autocast disabled, single CPU thread.
+- Median-of-session-medians latency: 287.81/544.98 ms; peak allocated memory: 609.82/2,231.80 MiB for LiDAR/fusion. End-session SM-clock snapshots vary; shared-cloud and temperature limits recorded.
+- Verified original ZIP SHA-256 and all 52 manifest-member hashes (53 members including manifest). Reproduced per-session latency/loading statistics and paired token/point-count checks. Generated three runtime figures and two architecture diagrams, in PNG/PDF/SVG, with CSV tables and reproducible scripts.
+- [Runtime evidence](results/nuscenes/bevfusion/runtime/20261015/README.md), [architecture](docs/architecture/README.md), [initial cost framework](results/cost_performance/README.md). Current matched monetary sensor costs, additional challenge conditions and remaining evidence diagnostics are still open.
+

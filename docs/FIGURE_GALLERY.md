@@ -135,3 +135,23 @@ Same four selected frames per validation scene; existing six-camera checkpoint w
 
 [Findings, PDF/SVG files and original evidence](../results/nuscenes/bevfusion/camera_availability/20261014/README.md). No controlled runtime or hardware-cost result is measured by these figures.
 
+
+
+## BEVFusion runtime and memory — 15 October
+
+![Latency sessions](../results/nuscenes/bevfusion/runtime/20261015/figures/latency_sessions.png)
+
+![GPU memory](../results/nuscenes/bevfusion/runtime/20261015/figures/gpu_memory.png)
+
+![Accuracy and latency, separate scopes](../results/nuscenes/bevfusion/runtime/20261015/figures/accuracy_latency.png)
+
+[Original measurements, PDF/SVG figures and comparison tables](../results/nuscenes/bevfusion/runtime/20261015/README.md). Accuracy uses 600 frames; timing uses a nested 150 frames.
+
+## Architecture
+
+![Software study branches](architecture/study_overview.png)
+
+![Pinned BEVFusion inference flow](architecture/bevfusion_inference.png)
+
+[Sources, ownership distinctions and PDF/SVG diagrams](architecture/README.md).
+

@@ -1,0 +1,14 @@
+{
+  "status": "RUNTIME_SELECTION_AND_PROTOCOL_PASS",
+  "samples": 150,
+  "scenes": 150,
+  "required_sensor_files": 2400,
+  "measured_predictions_per_model": 450,
+  "record_sha256": {
+    "protocol.json": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+    "sample_tokens.txt": "b0c4559b15342bb9fb7bc78cc77890d116eeded28fbc00e36ec88b318dc516fa",
+    "selected_input_manifest.json": "8f10b302ca8cbc8d63f2a8ad578b39352286b376bb088abf670773a834b9ce1e",
+    "required_sensor_files.txt": "72697605a5c70d1786cfe1dd4cbb71e19214556f91661e7eb5b3a92a930541f7"
+  },
+  "scope": "Protocol frozen; no timing measurements taken."
+}

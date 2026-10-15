@@ -1,0 +1,26 @@
+{
+  "bevfusion_inference.pdf": {
+    "bytes": 25747,
+    "sha256": "3476f4a35c76e0fd60fa3b91c86a5f3e05d145bbef9cb2dd647f788b821c157b"
+  },
+  "bevfusion_inference.png": {
+    "bytes": 243969,
+    "sha256": "6e692b5615586bb3afb9b334b75177f80d3a62f2b72415e81f006005eb50405f"
+  },
+  "bevfusion_inference.svg": {
+    "bytes": 14145,
+    "sha256": "1a472b148e42386899c87ec2fbf72ee78f68e5de957af21c30f8f7e979a7a91e"
+  },
+  "study_overview.pdf": {
+    "bytes": 25959,
+    "sha256": "0f2f4d7cbeffc36dc1e040784c291f10f98f6f4700128700ac6e550fa9e30b0f"
+  },
+  "study_overview.png": {
+    "bytes": 300801,
+    "sha256": "548626cae349820b01fc62bb549dd963a444509cd623662ac31f5f9ec717cbdd"
+  },
+  "study_overview.svg": {
+    "bytes": 15380,
+    "sha256": "81bbd5095916ff231402531c0095e471082c6a1c43eb0bb5ee991f0c5f6e1d52"
+  }
+}

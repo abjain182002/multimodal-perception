@@ -1,0 +1,76 @@
+{
+  "status": "CAMERA_AVAILABILITY_PROTOCOL_FROZEN",
+  "samples": 600,
+  "scenes": 150,
+  "selection": {
+    "rule": "Four timestamp-ordered frames per scene",
+    "indices": "floor(k*(n-1)/5), k=1,2,3,4",
+    "scene_order": "Ascending scene token",
+    "uses_prediction_outcomes": false
+  },
+  "conditions": [
+    {
+      "name": "lidar_baseline",
+      "model": "lidar",
+      "available_cameras": [],
+      "mask": "Not applicable to LiDAR-only checkpoint"
+    },
+    {
+      "name": "fusion_six_cameras",
+      "model": "lidar_camera",
+      "available_cameras": [
+        "CAM_FRONT",
+        "CAM_FRONT_RIGHT",
+        "CAM_FRONT_LEFT",
+        "CAM_BACK",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT"
+      ],
+      "mask": "None"
+    },
+    {
+      "name": "fusion_front_back_only",
+      "model": "lidar_camera",
+      "available_cameras": [
+        "CAM_FRONT",
+        "CAM_BACK"
+      ],
+      "mask": "Zero the other four image tensors after normalization"
+    },
+    {
+      "name": "fusion_front_camera_missing",
+      "model": "lidar_camera",
+      "available_cameras": [
+        "CAM_FRONT_RIGHT",
+        "CAM_FRONT_LEFT",
+        "CAM_BACK",
+        "CAM_BACK_LEFT",
+        "CAM_BACK_RIGHT"
+      ],
+      "mask": "Zero CAM_FRONT image tensor after normalization"
+    }
+  ],
+  "controls": {
+    "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+    "seed": 20261002,
+    "lidar_checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+    "fusion_checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+    "identical_sample_tokens": true,
+    "retain_six_view_geometry": true,
+    "lidar_inputs_unchanged_between_fusion_conditions": true,
+    "no_training_or_checkpoint_changes": true
+  },
+  "evaluation": {
+    "accuracy": "nuScenes detection metrics on these exact 600 tokens",
+    "runtime": "Same GPU, batch size 1; separate timing protocol pending"
+  },
+  "limitations": [
+    "Equal frames per scene does not reproduce full-split frame weighting.",
+    "This is an exploratory subset, not full validation.",
+    "Masking measures missing-view robustness of the six-camera checkpoint.",
+    "Zero normalized tensors represent mean-colour input, not raw black images.",
+    "All six views remain in the computation; camera masking does not establish compute savings.",
+    "The front/back pair is one fixed configuration, not an optimal camera pair."
+  ],
+  "source_manifest_sha256": "c64995d9569e7816ec658ae1ae6b553eef5e3d81887c5b1248cd23076df81db1"
+}

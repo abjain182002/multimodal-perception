@@ -1,0 +1,62 @@
+{
+  "status": "RUNTIME_ANALYSIS_PASS",
+  "samples": 150,
+  "sessions": 6,
+  "timed_predictions": 900,
+  "models": {
+    "lidar": {
+      "median_of_session_medians_ms": 287.8115974999673,
+      "pooled_mean_ms": 282.8383892999975,
+      "pooled_median_ms": 285.00266100013505,
+      "pooled_p95_ms": 330.93809095007595,
+      "session_medians_ms": [
+        278.69027449992245,
+        288.80576500000643,
+        287.8115974999673
+      ],
+      "session_p95_ms": [
+        313.32746030002454,
+        332.82043685023837,
+        331.3836991500466
+      ],
+      "pooled_loading_mean_ms": 63.97717071111098,
+      "max_peak_allocated_MiB": 609.818359375,
+      "max_peak_reserved_MiB": 864.0
+    },
+    "lidar_camera": {
+      "median_of_session_medians_ms": 544.9785609998798,
+      "pooled_mean_ms": 541.8674488444342,
+      "pooled_median_ms": 544.3195469999864,
+      "pooled_p95_ms": 588.7322348000225,
+      "session_medians_ms": [
+        541.2600135002776,
+        544.9785609998798,
+        545.9939365000537
+      ],
+      "session_p95_ms": [
+        584.5640765997814,
+        593.5297780999235,
+        589.0798408498313
+      ],
+      "pooled_loading_mean_ms": 355.42880418888564,
+      "max_peak_allocated_MiB": 2231.7978515625,
+      "max_peak_reserved_MiB": 3278.0
+    }
+  },
+  "ratio_of_median_session_medians": 1.8935253677536108,
+  "peak_allocated_ratio": 3.6597747792471504,
+  "paired_latency_ratios": {
+    "median": 1.9170394523189178,
+    "p05": 1.743681120678054,
+    "p95": 2.163882952792755
+  },
+  "accuracy_scope": "600-frame subset, not newly evaluated on 150",
+  "limitations": [
+    "Shared Colab runtime; clocks not locked.",
+    "End-session environment snapshots are not continuous telemetry.",
+    "Three repeats are not 450 independent scenes.",
+    "Timing excludes file loading and CPU validation.",
+    "Memory is PyTorch allocated/reserved, not total device memory.",
+    "Runtime TF32 disabled; accuracy context was measured separately."
+  ]
+}

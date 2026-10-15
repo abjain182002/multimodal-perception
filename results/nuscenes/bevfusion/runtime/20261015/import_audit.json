@@ -1,0 +1,15 @@
+{
+  "status": "RUNTIME_COMPACT_EVIDENCE_IMPORT_PASS",
+  "archive": "runtime_benchmark150_evidence_20261015.zip",
+  "archive_bytes": 312829,
+  "archive_sha256": "6a0f24d8668bc0064b569e4a95b9250e92d506dce29ea6698561af72c3ac4b3d",
+  "verified_members": 53,
+  "verified_manifest_members": 52,
+  "sessions": 6,
+  "raw_timed_rows": 900,
+  "summary_recomputation_tolerance": 1e-09,
+  "paired_tokens_and_point_counts": "PASS",
+  "runtime_figures": 3,
+  "architecture_figures": 2,
+  "scope": "Integrity and stored timing-statistic reproduction; no new runtime or accuracy run."
+}

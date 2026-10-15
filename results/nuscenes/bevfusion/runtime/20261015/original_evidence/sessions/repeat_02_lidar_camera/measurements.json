@@ -1,0 +1,1502 @@
+[
+  {
+    "sample_index": 0,
+    "sample_token": "eaad6827a3c44cdab111ea7d912c9947",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 355.3236499997183,
+    "test_step_latency_ms": 549.533958000211,
+    "input_points": 255454,
+    "detections": 200
+  },
+  {
+    "sample_index": 1,
+    "sample_token": "86a69236763d42bf9da6247b8bcd88bb",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 348.20150999985344,
+    "test_step_latency_ms": 593.5614949999035,
+    "input_points": 267391,
+    "detections": 200
+  },
+  {
+    "sample_index": 2,
+    "sample_token": "3f8c45e9f1b84f5abc2d4898f20c60b6",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 356.57277499967677,
+    "test_step_latency_ms": 568.1119630003195,
+    "input_points": 265835,
+    "detections": 200
+  },
+  {
+    "sample_index": 3,
+    "sample_token": "03efe801d95443e7a6edce0971394776",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.4510959995787,
+    "test_step_latency_ms": 577.5300719997176,
+    "input_points": 249300,
+    "detections": 200
+  },
+  {
+    "sample_index": 4,
+    "sample_token": "a7753324e1e44e4598ed2b9a9c26c4c1",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 331.27749699997366,
+    "test_step_latency_ms": 598.8099639998836,
+    "input_points": 260821,
+    "detections": 200
+  },
+  {
+    "sample_index": 5,
+    "sample_token": "160faaad600249d7ab8f95ee44648e6f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 337.66022700001486,
+    "test_step_latency_ms": 591.1823259998528,
+    "input_points": 261040,
+    "detections": 200
+  },
+  {
+    "sample_index": 6,
+    "sample_token": "823fda8d134347afae8f1ef5087c0abe",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 341.1482460001025,
+    "test_step_latency_ms": 521.9694300003539,
+    "input_points": 220838,
+    "detections": 200
+  },
+  {
+    "sample_index": 7,
+    "sample_token": "f4a78e352cb74deca0bf4e1669aec42a",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 364.196143999834,
+    "test_step_latency_ms": 601.4856390002024,
+    "input_points": 247033,
+    "detections": 200
+  },
+  {
+    "sample_index": 8,
+    "sample_token": "35c031b027b54e5f8f7d4ef13c0150be",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.687199999953,
+    "test_step_latency_ms": 547.425851999833,
+    "input_points": 230037,
+    "detections": 200
+  },
+  {
+    "sample_index": 9,
+    "sample_token": "e047043bba0b4b0984297cc597d4a337",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 335.8467279999786,
+    "test_step_latency_ms": 556.808933999946,
+    "input_points": 249156,
+    "detections": 200
+  },
+  {
+    "sample_index": 10,
+    "sample_token": "f9cb1bb0d3404b5da0779811146b3924",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.1439900002006,
+    "test_step_latency_ms": 601.3895989999583,
+    "input_points": 253924,
+    "detections": 200
+  },
+  {
+    "sample_index": 11,
+    "sample_token": "815d072a4ff24e4db5f487150c37da38",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.7134959999639,
+    "test_step_latency_ms": 544.5456449997437,
+    "input_points": 235531,
+    "detections": 200
+  },
+  {
+    "sample_index": 12,
+    "sample_token": "41ce99072e8242c0b4fd7840f772f9fd",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 338.4139300001152,
+    "test_step_latency_ms": 487.89135600009104,
+    "input_points": 195302,
+    "detections": 200
+  },
+  {
+    "sample_index": 13,
+    "sample_token": "98e1aaf252bd49faba80f5bd33ada9c5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 352.7532030002476,
+    "test_step_latency_ms": 515.2626480003164,
+    "input_points": 212389,
+    "detections": 200
+  },
+  {
+    "sample_index": 14,
+    "sample_token": "e1e84a1a464844cd80f144faa700c067",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 360.6314129997372,
+    "test_step_latency_ms": 577.6174499997069,
+    "input_points": 239463,
+    "detections": 200
+  },
+  {
+    "sample_index": 15,
+    "sample_token": "19eea651c57e43ebbade7c4b92a6e4da",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 358.9132039996912,
+    "test_step_latency_ms": 575.0341489997481,
+    "input_points": 233087,
+    "detections": 200
+  },
+  {
+    "sample_index": 16,
+    "sample_token": "661e92f2f19f44c283f0b540e68fdef8",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 363.849301999835,
+    "test_step_latency_ms": 561.9427500000711,
+    "input_points": 226035,
+    "detections": 200
+  },
+  {
+    "sample_index": 17,
+    "sample_token": "d7a3d23645c745d4b873823f66eafe9b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 334.8693029997776,
+    "test_step_latency_ms": 554.6872889999577,
+    "input_points": 260348,
+    "detections": 200
+  },
+  {
+    "sample_index": 18,
+    "sample_token": "ae81961b714544968078764ec81112f9",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.4961430001713,
+    "test_step_latency_ms": 573.1815330000245,
+    "input_points": 248017,
+    "detections": 200
+  },
+  {
+    "sample_index": 19,
+    "sample_token": "6269703390624957869e9bc071f16e17",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.06471599984434,
+    "test_step_latency_ms": 609.9538759999632,
+    "input_points": 262494,
+    "detections": 200
+  },
+  {
+    "sample_index": 20,
+    "sample_token": "d95cd82a499c4d68b23babd951f06600",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 340.2900520000003,
+    "test_step_latency_ms": 559.3765270000404,
+    "input_points": 234104,
+    "detections": 200
+  },
+  {
+    "sample_index": 21,
+    "sample_token": "ecb9d6d3ce7944bc9d6a599aa9d25abc",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 341.47111799984486,
+    "test_step_latency_ms": 584.5589479999944,
+    "input_points": 245880,
+    "detections": 200
+  },
+  {
+    "sample_index": 22,
+    "sample_token": "71a74ae092364afebe91caaee4ed2af3",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.4236059999166,
+    "test_step_latency_ms": 580.0851220001277,
+    "input_points": 244602,
+    "detections": 200
+  },
+  {
+    "sample_index": 23,
+    "sample_token": "8ef17257025146b19306abed70229687",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 387.10830499985605,
+    "test_step_latency_ms": 493.0249929998354,
+    "input_points": 207173,
+    "detections": 200
+  },
+  {
+    "sample_index": 24,
+    "sample_token": "43d141efa6e3497488b3e705abdeba6d",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 350.50133999993704,
+    "test_step_latency_ms": 508.85239999979603,
+    "input_points": 202161,
+    "detections": 200
+  },
+  {
+    "sample_index": 25,
+    "sample_token": "abe76951d0a0458d84d59e689d8ecfab",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 356.33419799978583,
+    "test_step_latency_ms": 583.8122860000112,
+    "input_points": 255080,
+    "detections": 200
+  },
+  {
+    "sample_index": 26,
+    "sample_token": "c6b4a9f61c3a48ffa0977f238bd7e0d6",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 342.0290409999325,
+    "test_step_latency_ms": 518.7611500000457,
+    "input_points": 205433,
+    "detections": 200
+  },
+  {
+    "sample_index": 27,
+    "sample_token": "8c31c49fd6fe439990f79d3bc26edc52",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 350.98758000003727,
+    "test_step_latency_ms": 586.492439000267,
+    "input_points": 258400,
+    "detections": 200
+  },
+  {
+    "sample_index": 28,
+    "sample_token": "39eacd4116b3499baf1bb28898064f3e",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 341.8595510001978,
+    "test_step_latency_ms": 593.491012999948,
+    "input_points": 261775,
+    "detections": 200
+  },
+  {
+    "sample_index": 29,
+    "sample_token": "a19a80c905674faab7203a3a4e0f5246",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.2204589998473,
+    "test_step_latency_ms": 564.2309059999207,
+    "input_points": 240191,
+    "detections": 200
+  },
+  {
+    "sample_index": 30,
+    "sample_token": "4639543918e84082b89a8a3369c02353",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 334.4659770000362,
+    "test_step_latency_ms": 528.1060460001754,
+    "input_points": 218081,
+    "detections": 200
+  },
+  {
+    "sample_index": 31,
+    "sample_token": "9a7d7c466a524c349d31b3f0773113e4",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 356.8474150001748,
+    "test_step_latency_ms": 538.6831119999442,
+    "input_points": 219451,
+    "detections": 200
+  },
+  {
+    "sample_index": 32,
+    "sample_token": "e49b120c397d4f20ad72b3c6e87103bc",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 358.6403879999125,
+    "test_step_latency_ms": 596.1388350001471,
+    "input_points": 260103,
+    "detections": 200
+  },
+  {
+    "sample_index": 33,
+    "sample_token": "141a69c7937849e59d9942e0eafc8be5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 395.76863299998877,
+    "test_step_latency_ms": 552.216125999621,
+    "input_points": 252399,
+    "detections": 200
+  },
+  {
+    "sample_index": 34,
+    "sample_token": "282c9a7666364d0ea079beec830e951c",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 348.10760400023355,
+    "test_step_latency_ms": 539.1647540000122,
+    "input_points": 250558,
+    "detections": 200
+  },
+  {
+    "sample_index": 35,
+    "sample_token": "9e9a96e83b11478fae99ffaf1b65c1ff",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 332.6657030002025,
+    "test_step_latency_ms": 495.7066839997424,
+    "input_points": 233097,
+    "detections": 200
+  },
+  {
+    "sample_index": 36,
+    "sample_token": "3212edb0603244e89934a93c5cbc1bd3",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 342.58658199996717,
+    "test_step_latency_ms": 527.5712900001963,
+    "input_points": 219077,
+    "detections": 200
+  },
+  {
+    "sample_index": 37,
+    "sample_token": "af571c22d255499db27ca444d6b9cef9",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 349.71508799981166,
+    "test_step_latency_ms": 584.4049950001136,
+    "input_points": 244173,
+    "detections": 200
+  },
+  {
+    "sample_index": 38,
+    "sample_token": "f274b48b3f8245669f97556d66ce468b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 359.14270300008866,
+    "test_step_latency_ms": 556.516560000091,
+    "input_points": 246088,
+    "detections": 200
+  },
+  {
+    "sample_index": 39,
+    "sample_token": "56a74470839d4c24b2878a7c5d0116e1",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 361.6199130001405,
+    "test_step_latency_ms": 550.6100840002546,
+    "input_points": 269106,
+    "detections": 200
+  },
+  {
+    "sample_index": 40,
+    "sample_token": "db21166eb84f4362bb51ecfe855b4a33",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 351.4075939997383,
+    "test_step_latency_ms": 518.2697440000084,
+    "input_points": 235611,
+    "detections": 200
+  },
+  {
+    "sample_index": 41,
+    "sample_token": "4635c393dbdc4aa589b221fad153d427",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.4944529996974,
+    "test_step_latency_ms": 558.3922119999443,
+    "input_points": 237649,
+    "detections": 200
+  },
+  {
+    "sample_index": 42,
+    "sample_token": "65877dfa033d428b9b89877b269a19fa",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.69904100003623,
+    "test_step_latency_ms": 493.46441300031074,
+    "input_points": 229104,
+    "detections": 200
+  },
+  {
+    "sample_index": 43,
+    "sample_token": "a28e0c7cea63422d90949688e172ad3f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 357.0365820000916,
+    "test_step_latency_ms": 544.2868039999667,
+    "input_points": 238106,
+    "detections": 200
+  },
+  {
+    "sample_index": 44,
+    "sample_token": "6386a730c1ba4b1ab87c9f17c25755e6",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 380.76046800006225,
+    "test_step_latency_ms": 519.209169000078,
+    "input_points": 252672,
+    "detections": 200
+  },
+  {
+    "sample_index": 45,
+    "sample_token": "766371d32e7849518a2783c86af7c817",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.743443000174,
+    "test_step_latency_ms": 515.3340459996798,
+    "input_points": 228744,
+    "detections": 199
+  },
+  {
+    "sample_index": 46,
+    "sample_token": "8241b3611ed54eb69baae32f655ade02",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 359.51833499984787,
+    "test_step_latency_ms": 487.89561700004924,
+    "input_points": 228628,
+    "detections": 200
+  },
+  {
+    "sample_index": 47,
+    "sample_token": "b1e9743b56a3421b92120ad4cd2edb2c",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 351.0966189996907,
+    "test_step_latency_ms": 509.7340379998059,
+    "input_points": 232523,
+    "detections": 200
+  },
+  {
+    "sample_index": 48,
+    "sample_token": "b727a6877efc424c8b6593098edb728f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.63021600019783,
+    "test_step_latency_ms": 541.5283869997438,
+    "input_points": 253589,
+    "detections": 200
+  },
+  {
+    "sample_index": 49,
+    "sample_token": "ceb32049bc214effb30ea4d9d152efae",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.7554110000274,
+    "test_step_latency_ms": 538.4068309999748,
+    "input_points": 246564,
+    "detections": 200
+  },
+  {
+    "sample_index": 50,
+    "sample_token": "1ad4839353ea4f98a55a2e62295a1323",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.6059850002239,
+    "test_step_latency_ms": 520.626595000067,
+    "input_points": 223768,
+    "detections": 200
+  },
+  {
+    "sample_index": 51,
+    "sample_token": "eb60a132b3b844788070acf04596941d",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.8240719999376,
+    "test_step_latency_ms": 502.3187669999061,
+    "input_points": 244821,
+    "detections": 200
+  },
+  {
+    "sample_index": 52,
+    "sample_token": "6f8d7a927c524cb8b3526b9b798a5a53",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 362.47045099980824,
+    "test_step_latency_ms": 567.7537229998961,
+    "input_points": 260782,
+    "detections": 200
+  },
+  {
+    "sample_index": 53,
+    "sample_token": "a9b8176bf0b546a4bc46afc631979805",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 357.86239200024283,
+    "test_step_latency_ms": 516.4441889996851,
+    "input_points": 230812,
+    "detections": 200
+  },
+  {
+    "sample_index": 54,
+    "sample_token": "63e40c4a678d4bf49031458d5ba6e01b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.8491110000068,
+    "test_step_latency_ms": 519.2864250002458,
+    "input_points": 251394,
+    "detections": 200
+  },
+  {
+    "sample_index": 55,
+    "sample_token": "b85450b2361b42ce8ef41708ab5e3e45",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 353.48865900004967,
+    "test_step_latency_ms": 517.940445000022,
+    "input_points": 258606,
+    "detections": 200
+  },
+  {
+    "sample_index": 56,
+    "sample_token": "cb99af540b404ad6b03c86ffc6604017",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 369.20892800026195,
+    "test_step_latency_ms": 546.1924299997918,
+    "input_points": 259382,
+    "detections": 200
+  },
+  {
+    "sample_index": 57,
+    "sample_token": "ce60ca0e7f1749f380461559de3e8113",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.2358199997907,
+    "test_step_latency_ms": 494.94839399994817,
+    "input_points": 244561,
+    "detections": 200
+  },
+  {
+    "sample_index": 58,
+    "sample_token": "0181321478f94908b4b668b47b492519",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 354.4893839998622,
+    "test_step_latency_ms": 582.0927399995526,
+    "input_points": 258292,
+    "detections": 200
+  },
+  {
+    "sample_index": 59,
+    "sample_token": "0a0371e14a8e4fbeb32ddd5df9707016",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 365.34514200002377,
+    "test_step_latency_ms": 529.2929530000947,
+    "input_points": 250283,
+    "detections": 200
+  },
+  {
+    "sample_index": 60,
+    "sample_token": "5edf36a058ce4849bc6371629bea8a69",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 369.48811100000967,
+    "test_step_latency_ms": 510.9669980001854,
+    "input_points": 220942,
+    "detections": 200
+  },
+  {
+    "sample_index": 61,
+    "sample_token": "5d09f3c467a44b828c7dba79832fbb5b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 353.9222610002071,
+    "test_step_latency_ms": 542.3221289997855,
+    "input_points": 257410,
+    "detections": 200
+  },
+  {
+    "sample_index": 62,
+    "sample_token": "81cef0d9225a412cb8decaecc2271f34",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 353.74665700010155,
+    "test_step_latency_ms": 558.7928159998228,
+    "input_points": 250534,
+    "detections": 200
+  },
+  {
+    "sample_index": 63,
+    "sample_token": "4c1be72a4c89421eb18a303c284828df",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.8345190001637,
+    "test_step_latency_ms": 579.5645500002138,
+    "input_points": 269599,
+    "detections": 200
+  },
+  {
+    "sample_index": 64,
+    "sample_token": "60321e7996b64926bfb9afd9c53b4170",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.9205869998623,
+    "test_step_latency_ms": 492.2851989999799,
+    "input_points": 224713,
+    "detections": 200
+  },
+  {
+    "sample_index": 65,
+    "sample_token": "05bc09f952ab4cf8b754405f20d503c5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 336.8930790002196,
+    "test_step_latency_ms": 490.65648500027237,
+    "input_points": 231110,
+    "detections": 200
+  },
+  {
+    "sample_index": 66,
+    "sample_token": "d6297a6fb5da4257935e7792c5ac2ad1",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 349.4614669998555,
+    "test_step_latency_ms": 567.5715949996629,
+    "input_points": 269177,
+    "detections": 200
+  },
+  {
+    "sample_index": 67,
+    "sample_token": "862da57e490a440b8dd37d0b6e886efc",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 385.19662199996674,
+    "test_step_latency_ms": 529.9118009997983,
+    "input_points": 243883,
+    "detections": 200
+  },
+  {
+    "sample_index": 68,
+    "sample_token": "f1ad72cddc6a452fae44f666693945e1",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.8174610002279,
+    "test_step_latency_ms": 462.80195500003174,
+    "input_points": 180518,
+    "detections": 200
+  },
+  {
+    "sample_index": 69,
+    "sample_token": "1ecb668fec5d4f27bdcd6832ac687dce",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 340.49970700016274,
+    "test_step_latency_ms": 557.2637860000214,
+    "input_points": 264586,
+    "detections": 200
+  },
+  {
+    "sample_index": 70,
+    "sample_token": "9d440112ee6246fab7d2a370a7b3a17b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 352.2980429997915,
+    "test_step_latency_ms": 573.4318929999063,
+    "input_points": 262983,
+    "detections": 200
+  },
+  {
+    "sample_index": 71,
+    "sample_token": "39ca468b47a84e2aa946e4d6d08ed68f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 337.80158900026436,
+    "test_step_latency_ms": 451.3901509999414,
+    "input_points": 192782,
+    "detections": 200
+  },
+  {
+    "sample_index": 72,
+    "sample_token": "6a1d73c793e24ab3b9df8e9e0299d06b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 353.8178889998562,
+    "test_step_latency_ms": 490.6410989997312,
+    "input_points": 200899,
+    "detections": 200
+  },
+  {
+    "sample_index": 73,
+    "sample_token": "54f30ff0370b482b823ffedbb19efc2a",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 370.71636200016655,
+    "test_step_latency_ms": 563.5987569999088,
+    "input_points": 256627,
+    "detections": 200
+  },
+  {
+    "sample_index": 74,
+    "sample_token": "a00699393a4b4cf39e0b992da8dd2715",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.3811280000991,
+    "test_step_latency_ms": 578.5808150003504,
+    "input_points": 260030,
+    "detections": 200
+  },
+  {
+    "sample_index": 75,
+    "sample_token": "031c053948164a549c7cc5f5c835610e",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 354.93085500002053,
+    "test_step_latency_ms": 563.1152450000627,
+    "input_points": 260847,
+    "detections": 200
+  },
+  {
+    "sample_index": 76,
+    "sample_token": "6e75580faac94693acd7ece6419dcb88",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 330.0920550000228,
+    "test_step_latency_ms": 509.43553600018276,
+    "input_points": 229426,
+    "detections": 200
+  },
+  {
+    "sample_index": 77,
+    "sample_token": "211466503dcd4723bc58b9d3717ed3a8",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.8559789999308,
+    "test_step_latency_ms": 539.2221789998075,
+    "input_points": 243598,
+    "detections": 200
+  },
+  {
+    "sample_index": 78,
+    "sample_token": "5eeaeb688f274b839865198f96968bb5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 358.35784200025955,
+    "test_step_latency_ms": 523.324268000124,
+    "input_points": 249194,
+    "detections": 200
+  },
+  {
+    "sample_index": 79,
+    "sample_token": "51c1eef6e74f405c8510c96358e6126f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.9052340001326,
+    "test_step_latency_ms": 498.34833700015224,
+    "input_points": 217461,
+    "detections": 200
+  },
+  {
+    "sample_index": 80,
+    "sample_token": "c437abdd39f94ecca54ecab3d458999f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 364.00868500004435,
+    "test_step_latency_ms": 572.5585269997282,
+    "input_points": 256332,
+    "detections": 200
+  },
+  {
+    "sample_index": 81,
+    "sample_token": "cc6d0652e2eb4240b6f07ad1be99109c",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 345.6243840000752,
+    "test_step_latency_ms": 524.451979999867,
+    "input_points": 241393,
+    "detections": 200
+  },
+  {
+    "sample_index": 82,
+    "sample_token": "23cd0004606a4127acc8505a8de5c282",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.9521820000664,
+    "test_step_latency_ms": 563.1866110002193,
+    "input_points": 249072,
+    "detections": 200
+  },
+  {
+    "sample_index": 83,
+    "sample_token": "5af88bc810cf4c74adac1b65ba1f5582",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 349.784064999767,
+    "test_step_latency_ms": 504.1401839998798,
+    "input_points": 229180,
+    "detections": 200
+  },
+  {
+    "sample_index": 84,
+    "sample_token": "3ac754275f3747fa9b49da9c38dff909",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 335.1577510002244,
+    "test_step_latency_ms": 522.5021060000472,
+    "input_points": 232547,
+    "detections": 200
+  },
+  {
+    "sample_index": 85,
+    "sample_token": "5406def86e684bd5b01b2499c6e8670f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 337.0212849999916,
+    "test_step_latency_ms": 488.7218659996506,
+    "input_points": 194845,
+    "detections": 200
+  },
+  {
+    "sample_index": 86,
+    "sample_token": "7dfa2547d5ff46aeb0229c166234dabf",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 359.54463699999906,
+    "test_step_latency_ms": 553.1792330002645,
+    "input_points": 242161,
+    "detections": 200
+  },
+  {
+    "sample_index": 87,
+    "sample_token": "4c687bbe18104da1b9eef242d5abbe6b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 363.2968560000336,
+    "test_step_latency_ms": 538.0766749999566,
+    "input_points": 237160,
+    "detections": 200
+  },
+  {
+    "sample_index": 88,
+    "sample_token": "15f664ac78d3419b923732521129a5ec",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 348.59459000017523,
+    "test_step_latency_ms": 539.0446890000931,
+    "input_points": 238517,
+    "detections": 200
+  },
+  {
+    "sample_index": 89,
+    "sample_token": "ad8a760fd8104effa036a20e260be50d",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 341.367746999822,
+    "test_step_latency_ms": 527.6819199998499,
+    "input_points": 234422,
+    "detections": 200
+  },
+  {
+    "sample_index": 90,
+    "sample_token": "bae5604f746f40228879ca54052bbaf9",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 392.14772200011794,
+    "test_step_latency_ms": 559.4246159998875,
+    "input_points": 248521,
+    "detections": 200
+  },
+  {
+    "sample_index": 91,
+    "sample_token": "dd1015f9ccd8470690b405f7dd0bd021",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 360.98180900035004,
+    "test_step_latency_ms": 580.3459859998839,
+    "input_points": 264335,
+    "detections": 200
+  },
+  {
+    "sample_index": 92,
+    "sample_token": "c5f1d2b3307c4757bbdb3e2040981d03",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 348.545151000053,
+    "test_step_latency_ms": 533.2731599996805,
+    "input_points": 260335,
+    "detections": 200
+  },
+  {
+    "sample_index": 93,
+    "sample_token": "4ea42d9dcb2548658a950769437f108b",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 371.2343020001754,
+    "test_step_latency_ms": 568.6514130002251,
+    "input_points": 251607,
+    "detections": 200
+  },
+  {
+    "sample_index": 94,
+    "sample_token": "fac8be41b6fe45c8ad71604ed218149f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 349.64951299980385,
+    "test_step_latency_ms": 493.6197480001283,
+    "input_points": 221663,
+    "detections": 200
+  },
+  {
+    "sample_index": 95,
+    "sample_token": "1d374f780d43407790ff6053b90f3716",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 365.9495380002227,
+    "test_step_latency_ms": 550.9909590000461,
+    "input_points": 244076,
+    "detections": 199
+  },
+  {
+    "sample_index": 96,
+    "sample_token": "ca37a1ae2ef1461d9c3dadf826e78706",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 370.37161800026297,
+    "test_step_latency_ms": 581.6138329996647,
+    "input_points": 261473,
+    "detections": 200
+  },
+  {
+    "sample_index": 97,
+    "sample_token": "89a955227e014f1bb6c592c7e847b92a",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.758789000025,
+    "test_step_latency_ms": 570.2827719997003,
+    "input_points": 253353,
+    "detections": 200
+  },
+  {
+    "sample_index": 98,
+    "sample_token": "fcc71bcf364f4ec788608ed7d2d59467",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 341.89038599970445,
+    "test_step_latency_ms": 508.6746909996691,
+    "input_points": 235105,
+    "detections": 200
+  },
+  {
+    "sample_index": 99,
+    "sample_token": "6604fe23b41045689750cd824718907a",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 329.9662899999021,
+    "test_step_latency_ms": 521.6586299998198,
+    "input_points": 229357,
+    "detections": 200
+  },
+  {
+    "sample_index": 100,
+    "sample_token": "6c6c21246e5249edb225218c1e0cd1ce",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.9695909998336,
+    "test_step_latency_ms": 522.2578529997008,
+    "input_points": 235084,
+    "detections": 200
+  },
+  {
+    "sample_index": 101,
+    "sample_token": "e1d7a25b494944779d8a28c4300f6ab9",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.70567699988896,
+    "test_step_latency_ms": 474.5418040001823,
+    "input_points": 189358,
+    "detections": 200
+  },
+  {
+    "sample_index": 102,
+    "sample_token": "89804ee2815f452ca2c60a3a05d2aed3",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 357.04297799975393,
+    "test_step_latency_ms": 548.7615239999286,
+    "input_points": 255113,
+    "detections": 200
+  },
+  {
+    "sample_index": 103,
+    "sample_token": "bb9c0abebf574b4892f1e0fab92004d1",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.2385350000877,
+    "test_step_latency_ms": 540.2818150000712,
+    "input_points": 244947,
+    "detections": 200
+  },
+  {
+    "sample_index": 104,
+    "sample_token": "bda037b61da14296b0b7c7d2a2293cba",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 352.7066429996921,
+    "test_step_latency_ms": 534.2047919998549,
+    "input_points": 259404,
+    "detections": 200
+  },
+  {
+    "sample_index": 105,
+    "sample_token": "43b92f490cb64c2f98f0534678db42a2",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 362.5320890000694,
+    "test_step_latency_ms": 580.9803860001921,
+    "input_points": 260117,
+    "detections": 200
+  },
+  {
+    "sample_index": 106,
+    "sample_token": "b32fbd9e38c74aaf9ca5e733d359281c",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 358.03783499977726,
+    "test_step_latency_ms": 535.7891049998216,
+    "input_points": 257219,
+    "detections": 200
+  },
+  {
+    "sample_index": 107,
+    "sample_token": "505485d0d0e14cdd9203e07e8e86d529",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.7029990003757,
+    "test_step_latency_ms": 531.1305790000915,
+    "input_points": 225722,
+    "detections": 200
+  },
+  {
+    "sample_index": 108,
+    "sample_token": "18b3ef8c389240f39196a55621eb1930",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 354.08400100004656,
+    "test_step_latency_ms": 503.9222590003192,
+    "input_points": 232938,
+    "detections": 200
+  },
+  {
+    "sample_index": 109,
+    "sample_token": "6611e3ee45484c5d80bd4703d458e518",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 360.22075299979406,
+    "test_step_latency_ms": 558.8506449998931,
+    "input_points": 250298,
+    "detections": 200
+  },
+  {
+    "sample_index": 110,
+    "sample_token": "34dbd470ea9f457c974baa0bc2fc6173",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 366.39398000033907,
+    "test_step_latency_ms": 554.5873179999035,
+    "input_points": 257669,
+    "detections": 200
+  },
+  {
+    "sample_index": 111,
+    "sample_token": "c9bcbb76497742979d7b1df5a17ebe74",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.40966599974854,
+    "test_step_latency_ms": 556.7037249998066,
+    "input_points": 245989,
+    "detections": 200
+  },
+  {
+    "sample_index": 112,
+    "sample_token": "d9288fbf3bfc4385882d8d370ed76bd5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 356.9357729998046,
+    "test_step_latency_ms": 601.9880409999132,
+    "input_points": 272930,
+    "detections": 200
+  },
+  {
+    "sample_index": 113,
+    "sample_token": "277ab77dca7f48eb818a8964db956b23",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.02314700032366,
+    "test_step_latency_ms": 531.9609099997251,
+    "input_points": 230904,
+    "detections": 200
+  },
+  {
+    "sample_index": 114,
+    "sample_token": "18ac9cfe17bb4c58a674139c49ade863",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.18504300008135,
+    "test_step_latency_ms": 521.4079480001601,
+    "input_points": 227870,
+    "detections": 200
+  },
+  {
+    "sample_index": 115,
+    "sample_token": "e1dffaba060040cfab07dec04790fbfa",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 342.6052879999588,
+    "test_step_latency_ms": 544.3222809999497,
+    "input_points": 233754,
+    "detections": 200
+  },
+  {
+    "sample_index": 116,
+    "sample_token": "a522481fa0b8439eb27208e20a914c78",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 364.223796999795,
+    "test_step_latency_ms": 565.4316850000214,
+    "input_points": 252147,
+    "detections": 200
+  },
+  {
+    "sample_index": 117,
+    "sample_token": "4aaaf68b9f9f45968a4e862eb03e17ea",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 361.6486669998267,
+    "test_step_latency_ms": 600.6164929999613,
+    "input_points": 251483,
+    "detections": 200
+  },
+  {
+    "sample_index": 118,
+    "sample_token": "6252789dfad34bd6a33ba8d40be600d5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 358.58742299978985,
+    "test_step_latency_ms": 563.2163639997998,
+    "input_points": 255734,
+    "detections": 200
+  },
+  {
+    "sample_index": 119,
+    "sample_token": "8a0af59b07f543a0a165180a12472d04",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.6752160000651,
+    "test_step_latency_ms": 509.5674819999658,
+    "input_points": 209975,
+    "detections": 200
+  },
+  {
+    "sample_index": 120,
+    "sample_token": "df1e4e87dcd2472e9aa8cb502dc0f320",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 353.3099060000495,
+    "test_step_latency_ms": 541.2137620000976,
+    "input_points": 253343,
+    "detections": 200
+  },
+  {
+    "sample_index": 121,
+    "sample_token": "263b981856fa4e8ca2f54e84710635bd",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.4966940000995,
+    "test_step_latency_ms": 545.411477000016,
+    "input_points": 249200,
+    "detections": 200
+  },
+  {
+    "sample_index": 122,
+    "sample_token": "0305c100b4a84730989c5dda78ddeec9",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.1886959996482,
+    "test_step_latency_ms": 583.4151259996361,
+    "input_points": 258201,
+    "detections": 200
+  },
+  {
+    "sample_index": 123,
+    "sample_token": "938d0ee9763d44b6a01b7dbbe2240c85",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 346.111077000387,
+    "test_step_latency_ms": 542.0781140001054,
+    "input_points": 230800,
+    "detections": 200
+  },
+  {
+    "sample_index": 124,
+    "sample_token": "4600f63ac85949c9a3123d1798888efb",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 399.23584400003165,
+    "test_step_latency_ms": 569.1718979996949,
+    "input_points": 260297,
+    "detections": 200
+  },
+  {
+    "sample_index": 125,
+    "sample_token": "65e61ba2c56b486cbf594a1f382b9ac8",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 369.7024519997285,
+    "test_step_latency_ms": 559.7933090002698,
+    "input_points": 247604,
+    "detections": 200
+  },
+  {
+    "sample_index": 126,
+    "sample_token": "3af22799124845adbb36dac464843d09",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 378.15013799990993,
+    "test_step_latency_ms": 582.2266139998646,
+    "input_points": 249694,
+    "detections": 200
+  },
+  {
+    "sample_index": 127,
+    "sample_token": "a545bf56871047a8852aa9ec3e9a48c1",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 355.1537600001211,
+    "test_step_latency_ms": 501.07812499982174,
+    "input_points": 212592,
+    "detections": 200
+  },
+  {
+    "sample_index": 128,
+    "sample_token": "4f4346641f7e437c889e08b61a0baab3",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 339.59814599984384,
+    "test_step_latency_ms": 529.7966920002182,
+    "input_points": 236765,
+    "detections": 200
+  },
+  {
+    "sample_index": 129,
+    "sample_token": "f809c8838a2f44a58dd0ffc76329e430",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 348.4959739998885,
+    "test_step_latency_ms": 583.3138600000893,
+    "input_points": 259980,
+    "detections": 200
+  },
+  {
+    "sample_index": 130,
+    "sample_token": "7fafcee5a8d1453397d168c3f9568564",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.22690300016257,
+    "test_step_latency_ms": 499.48247500014986,
+    "input_points": 203537,
+    "detections": 200
+  },
+  {
+    "sample_index": 131,
+    "sample_token": "32dbf4593eee4f7384dcf576b2344059",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.07828399980644,
+    "test_step_latency_ms": 499.82041000021127,
+    "input_points": 213675,
+    "detections": 200
+  },
+  {
+    "sample_index": 132,
+    "sample_token": "fcb5d6987a9e4deb80551d2a85e60e20",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 356.06414199992287,
+    "test_step_latency_ms": 561.9928850001088,
+    "input_points": 265096,
+    "detections": 200
+  },
+  {
+    "sample_index": 133,
+    "sample_token": "8dffb9bba025425e9d03fd0384ed1d1f",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 356.8815160001577,
+    "test_step_latency_ms": 532.8173349998906,
+    "input_points": 236197,
+    "detections": 200
+  },
+  {
+    "sample_index": 134,
+    "sample_token": "20f91bd424014298b38029276e0bfb10",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 364.9000440000236,
+    "test_step_latency_ms": 569.2501830003494,
+    "input_points": 260789,
+    "detections": 200
+  },
+  {
+    "sample_index": 135,
+    "sample_token": "6582e6af1b174290b37bbbe623f004d4",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 408.2290760002252,
+    "test_step_latency_ms": 564.739396999812,
+    "input_points": 265943,
+    "detections": 200
+  },
+  {
+    "sample_index": 136,
+    "sample_token": "1ac0914c98b8488cb3521efeba354496",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 349.91843299985703,
+    "test_step_latency_ms": 525.3906580001058,
+    "input_points": 250318,
+    "detections": 200
+  },
+  {
+    "sample_index": 137,
+    "sample_token": "ac0ed47350fd4fa9a2e9e5cfab4db259",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 359.25551600030303,
+    "test_step_latency_ms": 566.5999910002029,
+    "input_points": 265568,
+    "detections": 200
+  },
+  {
+    "sample_index": 138,
+    "sample_token": "7bfe5634a8e54d1bb6f8df22761857a5",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 347.69460600000457,
+    "test_step_latency_ms": 559.7764989997813,
+    "input_points": 263627,
+    "detections": 200
+  },
+  {
+    "sample_index": 139,
+    "sample_token": "247d0121603049bd91f5a7e39f3ec037",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 354.9701060001098,
+    "test_step_latency_ms": 581.7368020002505,
+    "input_points": 254643,
+    "detections": 200
+  },
+  {
+    "sample_index": 140,
+    "sample_token": "b9c1ea3e21174a5ca1c0b9b7a24e3813",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 337.3504099999991,
+    "test_step_latency_ms": 485.69751700006236,
+    "input_points": 235799,
+    "detections": 200
+  },
+  {
+    "sample_index": 141,
+    "sample_token": "ff9eff4389a740848f9a56ad749a4ae8",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 354.1295679997347,
+    "test_step_latency_ms": 546.456944000056,
+    "input_points": 236555,
+    "detections": 200
+  },
+  {
+    "sample_index": 142,
+    "sample_token": "4d53a5c439ef43028f3d4b874adac519",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 368.03441500023837,
+    "test_step_latency_ms": 573.6471659997733,
+    "input_points": 269105,
+    "detections": 200
+  },
+  {
+    "sample_index": 143,
+    "sample_token": "a131cf4a62db40988f518d63e3f35d36",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 367.78273299978537,
+    "test_step_latency_ms": 562.2231600000305,
+    "input_points": 251436,
+    "detections": 200
+  },
+  {
+    "sample_index": 144,
+    "sample_token": "99659242b7984cf7b4d9d986634357bd",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 336.1247819998425,
+    "test_step_latency_ms": 490.62048999985564,
+    "input_points": 229377,
+    "detections": 200
+  },
+  {
+    "sample_index": 145,
+    "sample_token": "9690a81505bd48308b74c1ea94c7ac40",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 344.21074300007604,
+    "test_step_latency_ms": 482.792050000171,
+    "input_points": 187962,
+    "detections": 200
+  },
+  {
+    "sample_index": 146,
+    "sample_token": "b8057780366942b1a2649b502effc975",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 376.6678500001035,
+    "test_step_latency_ms": 546.7290739998134,
+    "input_points": 256892,
+    "detections": 200
+  },
+  {
+    "sample_index": 147,
+    "sample_token": "58472a3476754fb5ab1f0e0a9d9e5408",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 343.11110099997677,
+    "test_step_latency_ms": 516.3881440003024,
+    "input_points": 236949,
+    "detections": 200
+  },
+  {
+    "sample_index": 148,
+    "sample_token": "b22fa0b3c34f47b6a360b60f35d5d567",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 357.10856099967714,
+    "test_step_latency_ms": 558.9842600002157,
+    "input_points": 264285,
+    "detections": 200
+  },
+  {
+    "sample_index": 149,
+    "sample_token": "a29623dd054b4177a9d98b83c0fd23bd",
+    "model": "lidar_camera",
+    "repeat": 2,
+    "loading_and_collation_ms": 363.97681999960696,
+    "test_step_latency_ms": 531.6876609999781,
+    "input_points": 225168,
+    "detections": 200
+  }
+]

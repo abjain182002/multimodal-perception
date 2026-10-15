@@ -1,0 +1,13 @@
+{
+  "python": "3.10.22",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "torch": "2.1.2+cu121",
+  "torch_cuda": "12.1",
+  "gpu": "Tesla T4",
+  "cpu_threads": 1,
+  "interop_threads": 1,
+  "tf32_matmul": false,
+  "tf32_cudnn": false,
+  "cudnn_benchmark": false,
+  "nvidia_smi": "Tesla T4, 580.82.07, 76, P0, 1110 MHz, 5000 MHz, 15360 MiB"
+}

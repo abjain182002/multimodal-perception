@@ -31,7 +31,7 @@ Each row is a separate evaluation; KITTI AP40 and nuScenes metrics are not inter
 - PointPillars baseline parity checks reproduction against frozen results with the same evaluator. PV-RCNN native-versus-common checks evaluator agreement on the same predictions. These are different verification scopes.
 - Original nuScenes subset evidence has been hash-verified and compact metrics, scripts, audits and summary curves imported. A CPU ground-truth replay reproduced both subset headline metrics exactly on 8 October; [replay evidence](results/nuscenes/bevfusion/validation_subset/replay_20261008/README.md) records the same-evaluator verification.
 - The nuScenes subset is selected by sensor availability, not randomly, and is not full validation. BEVFusion compares two pretrained pipelines, not a controlled camera ablation. Mini/subset overlap is unchecked.
-- CLOCs seed-29's Easy decline remains unexplained; full-AP40 score-blend testing, robustness, semantic fusion and comparable runtime across models remain pending. Validation was inspected iteratively.
+- CLOCs seed-29's Easy decline remains unexplained; full-AP40 score-blend testing, robustness, semantic fusion and comparable KITTI runtime across models remain pending. Validation was inspected iteratively.
 - Full nuScenes validation is complete: 6,019 samples / 150 scenes, with identical paired prediction/GT tokens. Original compact evidence and figures are preserved in the [full-validation folder](results/nuscenes/bevfusion/full_validation/README.md). The ZIP import verifies all 111 member hashes and stored metric arithmetic; a separate full-split replay remains pending. Existing architectures are reused; the contribution is integration, evaluation and analysis. The dissertation remains in progress.
 
 ## Repository layout
@@ -58,4 +58,9 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## Camera availability experiment
 
 [600-frame paired camera-masking study](results/nuscenes/bevfusion/camera_availability/20261014/README.md): intact six-view fusion scores 68.13 mAP / 71.29 NDS; front/back retained with four views masked scores 63.63 / 68.76; front masked scores 64.84 / 69.44. Same fusion weights and tokens; missing-view robustness, with six-view computation retained.
+
+
+## Runtime, memory and architecture
+
+[Three-session T4 benchmark](results/nuscenes/bevfusion/runtime/20261015/README.md): median-of-session-medians latency is 287.81 ms (LiDAR) versus 544.98 ms (fusion); maximum allocated GPU memory is 609.82 versus 2,231.80 MiB. Same 150-frame runtime subset; file loading excluded. [Architecture diagrams](docs/architecture/README.md) identify reused model components and project orchestration. [Hardware cost framework](results/cost_performance/README.md) records initial sources and unresolved price assumptions.
 

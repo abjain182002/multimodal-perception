@@ -566,3 +566,16 @@ Four timestamp-selected keyframes per official validation scene (600 frames / 15
 
 [Original evidence, exact values, figures and limitations](nuscenes/bevfusion/camera_availability/20261014/README.md). Masked fusion conditions share one checkpoint; normalized images are zeroed after preprocessing. The separate LiDAR-only checkpoint is a pipeline comparison. These are subset missing-view results; they do not demonstrate purpose-trained two-camera accuracy or computational/hardware savings. Import verified the archive SHA-256, 158 member hashes, mAP/NDS arithmetic and figure rendering; a fresh accuracy replay and statistical uncertainty remain pending.
 
+
+
+## 15 October 2026 — BEVFusion serial runtime and memory
+
+Same 150 frames, one per validation scene; three fresh-process sessions/model, batch size 1, 20 warm-up frames/session. TF32 and autocast disabled. Latency includes synchronized test_step and excludes dataset loading and export.
+
+| Model | Median of session medians (ms) | Maximum allocated (MiB) | Maximum reserved (MiB) |
+|---|---:|---:|---:|
+| LiDAR-only | 287.81 | 609.82 | 864.00 |
+| Camera–LiDAR fusion | 544.98 | 2,231.80 | 3,278.00 |
+
+Latency ratio 1.8935×; allocated-memory ratio 3.6598×. All six raw files, stored summaries, ordered tokens and paired point counts verified on import. [Evidence, figures and limitations](nuscenes/bevfusion/runtime/20261015/README.md). Colab clock snapshots varied; no locked-clock, energy or end-to-end robot measurement. Accuracy–compute plots use separately measured 600-frame accuracy and 150-frame timing, not a new joint evaluation. [Sensor-price research](cost_performance/README.md) has begun; a matched monetary comparison remains incomplete.
+

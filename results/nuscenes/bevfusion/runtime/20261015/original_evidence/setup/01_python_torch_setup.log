@@ -1,0 +1,135 @@
+
+RUNNING: /usr/bin/python3 -m pip install --quiet uv==0.12.23
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.6/20.6 MB 61.9 MB/s eta 0:00:00
+
+RUNNING: /usr/bin/python3 -m uv python install 3.10
+Installed Python 3.10.22 in 1.97s
+ + cpython-3.10.22-linux-x86_64-gnu (python3.10)
+warning: `/root/.local/bin` is not on your PATH. To use installed Python executables, run `export PATH="/root/.local/bin:$PATH"` or `uv python update-shell`.
+
+RUNNING: /usr/bin/python3 -m uv venv --python 3.10 --seed /content/bevfusion310
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Using CPython 3.10.22
+Creating virtual environment with seed packages at: bevfusion310
+ + packaging==26.3
+ + pip==26.2.1
+ + setuptools==84.0.0
+ + wheel==0.48.0
+Activate with: source bevfusion310/bin/activate
+
+RUNNING: /content/bevfusion310/bin/python -m pip install --no-cache-dir setuptools==69.5.1 wheel numpy==1.26.4
+Collecting setuptools==69.5.1
+  Downloading setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+Requirement already satisfied: wheel in ./bevfusion310/lib/python3.10/site-packages (0.48.0)
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Requirement already satisfied: packaging>=24.0 in ./bevfusion310/lib/python3.10/site-packages (from wheel) (26.3)
+Downloading setuptools-69.5.1-py3-none-any.whl (894 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 894.6/894.6 kB 188.7 MB/s  0:00:00
+Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 303.5 MB/s  0:00:00
+Installing collected packages: setuptools, numpy
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 84.0.0
+    Uninstalling setuptools-84.0.0:
+      Successfully uninstalled setuptools-84.0.0
+
+Successfully installed numpy-1.26.4 setuptools-69.5.1
+
+RUNNING: /content/bevfusion310/bin/python -m pip install --no-cache-dir torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cu121
+Looking in indexes: https://download.pytorch.org/whl/cu121
+Collecting torch==2.1.2
+  Downloading torch-2.1.2%2Bcu121-cp310-cp310-linux_x86_64.whl (2200.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 GB 184.9 MB/s  0:00:15
+Collecting torchvision==0.16.2
+  Downloading torchvision-0.16.2%2Bcu121-cp310-cp310-linux_x86_64.whl (6.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 238.8 MB/s  0:00:00
+Collecting filelock (from torch==2.1.2)
+  Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions (from torch==2.1.2)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy (from torch==2.1.2)
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.1.2)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch==2.1.2)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.1.2)
+  Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+Collecting triton==2.1.0 (from torch==2.1.2)
+  Downloading triton-2.1.0-0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.2/89.2 MB 105.0 MB/s  0:00:00
+Requirement already satisfied: numpy in ./bevfusion310/lib/python3.10/site-packages (from torchvision==0.16.2) (1.26.4)
+Collecting requests (from torchvision==0.16.2)
+  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision==0.16.2)
+  Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.1.2)
+  Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting charset-normalizer<3,>=2 (from requests->torchvision==0.16.2)
+  Downloading charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
+Collecting idna<4,>=2.5 (from requests->torchvision==0.16.2)
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+Collecting urllib3<1.27,>=1.21.1 (from requests->torchvision==0.16.2)
+  Downloading urllib3-1.26.13-py2.py3-none-any.whl (140 kB)
+Collecting certifi>=2017.4.17 (from requests->torchvision==0.16.2)
+  Downloading certifi-2022.12.7-py3-none-any.whl (155 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->torch==2.1.2)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Downloading pillow-12.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 206.6 MB/s  0:00:00
+Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 321.9 MB/s  0:00:00
+Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 375.6 MB/s  0:00:00
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 547.8 MB/s  0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Installing collected packages: mpmath, urllib3, typing-extensions, sympy, pillow, networkx, MarkupSafe, idna, fsspec, filelock, charset-normalizer, certifi, triton, requests, jinja2, torch, torchvision
+
+Successfully installed MarkupSafe-3.0.3 certifi-2022.12.7 charset-normalizer-2.1.1 filelock-3.32.3 fsspec-2026.7.0 idna-3.4 jinja2-3.1.6 mpmath-1.3.0 networkx-3.4.2 pillow-12.3.0 requests-2.28.1 sympy-1.14.0 torch-2.1.2+cu121 torchvision-0.16.2+cu121 triton-2.1.0 typing-extensions-4.16.0 urllib3-1.26.13
+
+RUNNING: /content/bevfusion310/bin/python -u -c 
+import json
+import sys
+import numpy
+import torch
+import torchvision
+from pkg_resources import packaging
+from torch.utils.cpp_extension import BuildExtension
+
+assert sys.version_info[:2] == (3, 10)
+assert numpy.__version__ == "1.26.4"
+assert torch.__version__ == "2.1.2+cu121"
+assert torchvision.__version__ == "0.16.2+cu121"
+assert torch.version.cuda == "12.1"
+assert torch.cuda.is_available()
+
+x = torch.tensor([1.0, 2.0], device="cuda")
+assert (x * 2).cpu().tolist() == [2.0, 4.0]
+torch.cuda.synchronize()
+
+print(json.dumps({
+    "status": "PINNED_TORCH_GPU_PASS",
+    "python": sys.version.split()[0],
+    "torch": torch.__version__,
+    "torchvision": torchvision.__version__,
+    "numpy": numpy.__version__,
+    "torch_cuda": torch.version.cuda,
+    "gpu": torch.cuda.get_device_name(0)
+}, indent=2), flush=True)
+
+<string>:7: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+{
+  "status": "PINNED_TORCH_GPU_PASS",
+  "python": "3.10.22",
+  "torch": "2.1.2+cu121",
+  "torchvision": "0.16.2+cu121",
+  "numpy": "1.26.4",
+  "torch_cuda": "12.1",
+  "gpu": "Tesla T4"
+}

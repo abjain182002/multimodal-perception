@@ -1,0 +1,11 @@
+{
+  "status": "RUNTIME_METADATA_PASS",
+  "samples": 150,
+  "scenes": 150,
+  "annotation_path": "/content/runtime_benchmark150/nuscenes_runtime150_infos_val.pkl",
+  "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+  "source_annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+  "same_ordered_frozen_tokens": true,
+  "scope": "Subset of verified 600-frame annotations; no timing yet."
+}

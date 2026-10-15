@@ -1,0 +1,202 @@
+{
+  "status": "SIX_SESSION_RUNTIME_BENCHMARK_PASS",
+  "samples": 150,
+  "scenes": 150,
+  "measured_predictions_per_model": 450,
+  "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+  "sessions": [
+    {
+      "status": "RUNTIME_SESSION_PASS",
+      "session": "repeat_01_lidar",
+      "model": "lidar",
+      "repeat": 1,
+      "samples": 150,
+      "warmup_iterations": 20,
+      "latency_ms": {
+        "mean": 275.31322852000505,
+        "median": 278.69027449992245,
+        "p95": 313.32746030002454,
+        "minimum": 189.24497699981657,
+        "maximum": 456.5948350000326
+      },
+      "loading_and_collation_ms": {
+        "mean": 98.14354628670117,
+        "median": 90.88514450013463,
+        "p95": 143.8252339501105
+      },
+      "memory_bytes": {
+        "allocated_after_warmup": 41840128,
+        "reserved_after_warmup": 903872512,
+        "peak_allocated": 639440896,
+        "peak_reserved": 905969664
+      },
+      "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+      "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+      "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+      "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+      "measurements_sha256": "f53b0cde8819d25440a0b3050d970119360b8454d550607af97535967e1ff0ce",
+      "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+    },
+    {
+      "status": "RUNTIME_SESSION_PASS",
+      "session": "repeat_01_lidar_camera",
+      "model": "lidar_camera",
+      "repeat": 1,
+      "samples": 150,
+      "warmup_iterations": 20,
+      "latency_ms": {
+        "mean": 540.2439253066738,
+        "median": 541.2600135002776,
+        "p95": 584.5640765997814,
+        "minimum": 451.769687000251,
+        "maximum": 595.8554819999335
+      },
+      "loading_and_collation_ms": {
+        "mean": 360.3245577533259,
+        "median": 358.24080499992306,
+        "p95": 385.5152657502458
+      },
+      "memory_bytes": {
+        "allocated_after_warmup": 174199808,
+        "reserved_after_warmup": 3437232128,
+        "peak_allocated": 2340209664,
+        "peak_reserved": 3437232128
+      },
+      "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+      "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+      "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+      "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+      "measurements_sha256": "1e6757d95ba6de9e7a801c341e4a0ece9bdfbc95cf640b9f1405dc177307e9cb",
+      "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+    },
+    {
+      "status": "RUNTIME_SESSION_PASS",
+      "session": "repeat_02_lidar_camera",
+      "model": "lidar_camera",
+      "repeat": 2,
+      "samples": 150,
+      "warmup_iterations": 20,
+      "latency_ms": {
+        "mean": 542.8887226666484,
+        "median": 544.9785609998798,
+        "p95": 593.5297780999235,
+        "minimum": 451.3901509999414,
+        "maximum": 609.9538759999632
+      },
+      "loading_and_collation_ms": {
+        "mean": 352.88262185998974,
+        "median": 349.68230049980775,
+        "p95": 377.48310839999704
+      },
+      "memory_bytes": {
+        "allocated_after_warmup": 174199808,
+        "reserved_after_warmup": 3437232128,
+        "peak_allocated": 2340209664,
+        "peak_reserved": 3437232128
+      },
+      "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+      "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+      "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+      "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+      "measurements_sha256": "22d65c0340780caf12ef0b8a7c6ea048e4a28f834ba6edae21f27c6d1a807767",
+      "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+    },
+    {
+      "status": "RUNTIME_SESSION_PASS",
+      "session": "repeat_02_lidar",
+      "model": "lidar",
+      "repeat": 2,
+      "samples": 150,
+      "warmup_iterations": 20,
+      "latency_ms": {
+        "mean": 287.268505873332,
+        "median": 288.80576500000643,
+        "p95": 332.82043685023837,
+        "minimum": 203.87467999989894,
+        "maximum": 353.5316989996318
+      },
+      "loading_and_collation_ms": {
+        "mean": 46.388031039975125,
+        "median": 45.23940550006955,
+        "p95": 56.86993884989988
+      },
+      "memory_bytes": {
+        "allocated_after_warmup": 41840128,
+        "reserved_after_warmup": 903872512,
+        "peak_allocated": 639440896,
+        "peak_reserved": 905969664
+      },
+      "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+      "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+      "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+      "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+      "measurements_sha256": "ca065a8e52a587eab28cecc08be244e615af94368c1011599617ceb14822fcdf",
+      "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+    },
+    {
+      "status": "RUNTIME_SESSION_PASS",
+      "session": "repeat_03_lidar",
+      "model": "lidar",
+      "repeat": 3,
+      "samples": 150,
+      "warmup_iterations": 20,
+      "latency_ms": {
+        "mean": 285.9334335066554,
+        "median": 287.8115974999673,
+        "p95": 331.3836991500466,
+        "minimum": 202.43267600017134,
+        "maximum": 346.0620609998841
+      },
+      "loading_and_collation_ms": {
+        "mean": 47.39993480665665,
+        "median": 46.53567350010235,
+        "p95": 59.39100724976924
+      },
+      "memory_bytes": {
+        "allocated_after_warmup": 41840128,
+        "reserved_after_warmup": 903872512,
+        "peak_allocated": 639440896,
+        "peak_reserved": 905969664
+      },
+      "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+      "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+      "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+      "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+      "measurements_sha256": "ac73bd8e905cdd84a861d8ee1f5939d6690c6aec24879562637ede454a3b496b",
+      "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+    },
+    {
+      "status": "RUNTIME_SESSION_PASS",
+      "session": "repeat_03_lidar_camera",
+      "model": "lidar_camera",
+      "repeat": 3,
+      "samples": 150,
+      "warmup_iterations": 20,
+      "latency_ms": {
+        "mean": 542.4696985599804,
+        "median": 545.9939365000537,
+        "p95": 589.0798408498313,
+        "minimum": 446.6039690000798,
+        "maximum": 615.7780680000542
+      },
+      "loading_and_collation_ms": {
+        "mean": 353.0792329533415,
+        "median": 351.2169655002708,
+        "p95": 375.7093070500332
+      },
+      "memory_bytes": {
+        "allocated_after_warmup": 174199808,
+        "reserved_after_warmup": 3437232128,
+        "peak_allocated": 2340209664,
+        "peak_reserved": 3437232128
+      },
+      "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+      "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+      "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+      "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+      "measurements_sha256": "f06c0e381f5046df241d0c88a555c7086a1835c8a6414638f9e10c3b36304b95",
+      "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+    }
+  ],
+  "scope": "Six completed sessions with verified Drive records. Cross-session analysis and figures pending."
+}

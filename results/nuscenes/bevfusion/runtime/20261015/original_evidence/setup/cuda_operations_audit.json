@@ -1,0 +1,33 @@
+{
+  "status": "BEVFUSION_CUDA_OPERATIONS_PASS",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "torch": "2.1.2+cu121",
+  "torch_cuda": "12.1",
+  "gpu": "Tesla T4",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2023 NVIDIA Corporation\nBuilt on Tue_Feb__7_19:32:13_PST_2023\nCuda compilation tools, release 12.1, V12.1.66\nBuild cuda_12.1.r12.1/compiler.32415258_0",
+  "bev_pool_output": [
+    4.0,
+    6.0
+  ],
+  "voxel_coordinates": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "voxel_point_counts": [
+    2,
+    1
+  ],
+  "extension_sha256": {
+    "projects/BEVFusion/bevfusion/ops/bev_pool/bev_pool_ext.cpython-310-x86_64-linux-gnu.so": "c409dd0d971c775e941321ed5851520fee28911e81fb1f6ea8d1c7e9f8974bd6",
+    "projects/BEVFusion/bevfusion/ops/voxel/voxel_layer.cpython-310-x86_64-linux-gnu.so": "08e597d4b0040eb4b979c4af8507b6b34b60bf985593acbc72ca800dea6b2833"
+  },
+  "scope": "Synthetic GPU checks; runtime benchmark pending."
+}

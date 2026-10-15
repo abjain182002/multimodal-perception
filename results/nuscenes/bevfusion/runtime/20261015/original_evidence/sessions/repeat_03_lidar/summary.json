@@ -1,0 +1,32 @@
+{
+  "status": "RUNTIME_SESSION_PASS",
+  "session": "repeat_03_lidar",
+  "model": "lidar",
+  "repeat": 3,
+  "samples": 150,
+  "warmup_iterations": 20,
+  "latency_ms": {
+    "mean": 285.9334335066554,
+    "median": 287.8115974999673,
+    "p95": 331.3836991500466,
+    "minimum": 202.43267600017134,
+    "maximum": 346.0620609998841
+  },
+  "loading_and_collation_ms": {
+    "mean": 47.39993480665665,
+    "median": 46.53567350010235,
+    "p95": 59.39100724976924
+  },
+  "memory_bytes": {
+    "allocated_after_warmup": 41840128,
+    "reserved_after_warmup": 903872512,
+    "peak_allocated": 639440896,
+    "peak_reserved": 905969664
+  },
+  "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+  "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+  "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+  "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+  "measurements_sha256": "ac73bd8e905cdd84a861d8ee1f5939d6690c6aec24879562637ede454a3b496b",
+  "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+}

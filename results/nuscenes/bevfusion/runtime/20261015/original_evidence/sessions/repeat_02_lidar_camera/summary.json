@@ -1,0 +1,32 @@
+{
+  "status": "RUNTIME_SESSION_PASS",
+  "session": "repeat_02_lidar_camera",
+  "model": "lidar_camera",
+  "repeat": 2,
+  "samples": 150,
+  "warmup_iterations": 20,
+  "latency_ms": {
+    "mean": 542.8887226666484,
+    "median": 544.9785609998798,
+    "p95": 593.5297780999235,
+    "minimum": 451.3901509999414,
+    "maximum": 609.9538759999632
+  },
+  "loading_and_collation_ms": {
+    "mean": 352.88262185998974,
+    "median": 349.68230049980775,
+    "p95": 377.48310839999704
+  },
+  "memory_bytes": {
+    "allocated_after_warmup": 174199808,
+    "reserved_after_warmup": 3437232128,
+    "peak_allocated": 2340209664,
+    "peak_reserved": 3437232128
+  },
+  "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+  "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+  "measurements_sha256": "22d65c0340780caf12ef0b8a7c6ea048e4a28f834ba6edae21f27c6d1a807767",
+  "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+}

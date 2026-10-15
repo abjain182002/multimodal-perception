@@ -46,3 +46,8 @@ Commit compact metrics, selected figures and cases, source/protocol records and 
 
 [600-frame nuScenes camera-availability study](nuscenes/bevfusion/camera_availability/20261014/README.md) includes three comparison figures, exact tables, frozen selection, model/mask checks and original evaluator records. Accuracy completed; controlled runtime and cost analysis remain pending.
 
+
+## Compute and hardware-cost analysis
+
+[BEVFusion serial runtime and GPU memory](nuscenes/bevfusion/runtime/20261015/README.md): 150 frames, three isolated sessions per model, same T4. Includes raw records, figures and an accuracy–compute matrix with separate sample scopes disclosed. [Initial sensor-cost framework](cost_performance/README.md) distinguishes measured compute from unmeasured financial cost. [Architecture diagrams](../docs/architecture/README.md) explain the study branches and pinned BEVFusion flow.
+

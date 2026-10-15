@@ -1,0 +1,210 @@
+{
+  "accuracy_context/evaluation/four_condition_evaluation.json": {
+    "bytes": 4595,
+    "sha256": "3590d840a0b272e26d45eb019f5a774e1e44febd01fabf6dc7adf5d466b88138"
+  },
+  "accuracy_context/evaluation/fusion_six_cameras/metrics_summary.json": {
+    "bytes": 5201,
+    "sha256": "9d6f41812144921b29b40a6972902976ed797d667e0f8e7a492c8bdf927a407f"
+  },
+  "accuracy_context/evaluation/lidar_baseline/metrics_summary.json": {
+    "bytes": 5199,
+    "sha256": "03fb96688ff2028efb838e3535a179ffb1076f2449d40870f002999dc9f7dd34"
+  },
+  "accuracy_context/protocol.json": {
+    "bytes": 2557,
+    "sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d"
+  },
+  "accuracy_context/sample_tokens.txt": {
+    "bytes": 19800,
+    "sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f"
+  },
+  "accuracy_context/selection_audit.json": {
+    "bytes": 712,
+    "sha256": "860dc6693e19f6ff9b3ff958def3bdc6637a69c84dff8789b07b08bbabc20ae0"
+  },
+  "original_evidence/benchmark_audit.json": {
+    "bytes": 8243,
+    "sha256": "65bf11f6419c28c6b8383d7eb3fc81ab21d0dde8225cd557015707ddff72121d"
+  },
+  "original_evidence/benchmark_session.py": {
+    "bytes": 8640,
+    "sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb"
+  },
+  "original_evidence/checkpoint_receipt.json": {
+    "bytes": 907,
+    "sha256": "49b0c9eb462a35f5158778ab66e9a248c2776ed5d6677517d0c7b7cedb6fb480"
+  },
+  "original_evidence/metadata_audit.json": {
+    "bytes": 550,
+    "sha256": "358ae068f62d3024d1223807f1f53404a800ec892a8fc9456c3b8c095b5cc66c"
+  },
+  "original_evidence/prepare_annotations.py": {
+    "bytes": 1908,
+    "sha256": "87a525acebc0bef5fc36b838ffcfd4102d0b817904074d42ac020841c6d4a10c"
+  },
+  "original_evidence/protocol.json": {
+    "bytes": 2986,
+    "sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09"
+  },
+  "original_evidence/required_sensor_files.txt": {
+    "bytes": 204764,
+    "sha256": "72697605a5c70d1786cfe1dd4cbb71e19214556f91661e7eb5b3a92a930541f7"
+  },
+  "original_evidence/sample_tokens.txt": {
+    "bytes": 4950,
+    "sha256": "b0c4559b15342bb9fb7bc78cc77890d116eeded28fbc00e36ec88b318dc516fa"
+  },
+  "original_evidence/selected_input_manifest.json": {
+    "bytes": 252467,
+    "sha256": "8f10b302ca8cbc8d63f2a8ad578b39352286b376bb088abf670773a834b9ce1e"
+  },
+  "original_evidence/selection_audit.json": {
+    "bytes": 636,
+    "sha256": "17bdd877750ea7cb6593c7489c5a08a37955bb49da8d9e3988d7a6be58d2ca70"
+  },
+  "original_evidence/sensor_restoration_audit.json": {
+    "bytes": 676895,
+    "sha256": "8f76df0bba335d6077fcd25f7a889693ee68c86bd5d84f17cda78ef2cb4f51ff"
+  },
+  "original_evidence/sessions/repeat_01_lidar/environment.json": {
+    "bytes": 348,
+    "sha256": "3c78b2bf9b49dd09eeffb4a084407c7c593a363f45995836bacfbb244bb8408b"
+  },
+  "original_evidence/sessions/repeat_01_lidar/measurements.json": {
+    "bytes": 41532,
+    "sha256": "f53b0cde8819d25440a0b3050d970119360b8454d550607af97535967e1ff0ce"
+  },
+  "original_evidence/sessions/repeat_01_lidar/resolved_config.py": {
+    "bytes": 27831,
+    "sha256": "b2759129774141d0e5e9600138d28b45631fe9141469f790390717a2af6cd1ff"
+  },
+  "original_evidence/sessions/repeat_01_lidar/session.log": {
+    "bytes": 4241,
+    "sha256": "c6dc199df8d324f9fb8b841e97cc3bde7ac422e9b0b5cedfacf2a161a84abe95"
+  },
+  "original_evidence/sessions/repeat_01_lidar/summary.json": {
+    "bytes": 1180,
+    "sha256": "4b59cd350b7f4584fd401e8598183eff548f6d9a919c7100c6f39fcd99a65b91"
+  },
+  "original_evidence/sessions/repeat_01_lidar_camera/environment.json": {
+    "bytes": 347,
+    "sha256": "f6af32a965f0500f3adb0fa0810d2580398e8a3174b364f349fed9194f150233"
+  },
+  "original_evidence/sessions/repeat_01_lidar_camera/measurements.json": {
+    "bytes": 42556,
+    "sha256": "1e6757d95ba6de9e7a801c341e4a0ece9bdfbc95cf640b9f1405dc177307e9cb"
+  },
+  "original_evidence/sessions/repeat_01_lidar_camera/resolved_config.py": {
+    "bytes": 29496,
+    "sha256": "e37d1bf93403e9e8434d95567d1304a66da736c47202cc09673e1f5b9e366633"
+  },
+  "original_evidence/sessions/repeat_01_lidar_camera/session.log": {
+    "bytes": 4686,
+    "sha256": "ab236512e70bf031b41e689d1a3e6455eeb4ffa89b35df67ead875dad992b35d"
+  },
+  "original_evidence/sessions/repeat_01_lidar_camera/summary.json": {
+    "bytes": 1194,
+    "sha256": "3dfe0c053db0d142c0568e62681ab18dadcf7b3add3e8100044b802d903de4cb"
+  },
+  "original_evidence/sessions/repeat_02_lidar/environment.json": {
+    "bytes": 348,
+    "sha256": "46636c0265d1d59b926c3d2b116a907ec75112e1763d3ddccbd1972e6ecb5ef8"
+  },
+  "original_evidence/sessions/repeat_02_lidar/measurements.json": {
+    "bytes": 41545,
+    "sha256": "ca065a8e52a587eab28cecc08be244e615af94368c1011599617ceb14822fcdf"
+  },
+  "original_evidence/sessions/repeat_02_lidar/resolved_config.py": {
+    "bytes": 27831,
+    "sha256": "b2759129774141d0e5e9600138d28b45631fe9141469f790390717a2af6cd1ff"
+  },
+  "original_evidence/sessions/repeat_02_lidar/session.log": {
+    "bytes": 4240,
+    "sha256": "e2c9e9e37bab7d0a4b1b0b3a264894392b96c441eb9b78edf11dbdf06632d74a"
+  },
+  "original_evidence/sessions/repeat_02_lidar/summary.json": {
+    "bytes": 1179,
+    "sha256": "fee5cc31e4bcd8f87f57c56fd15a6c0548f66696aea72accb7b44fb66775d123"
+  },
+  "original_evidence/sessions/repeat_02_lidar_camera/environment.json": {
+    "bytes": 348,
+    "sha256": "67d5c7736291ac255ed02476e0d8f2e7ce645ef23f44dc96a832c601555ff9c1"
+  },
+  "original_evidence/sessions/repeat_02_lidar_camera/measurements.json": {
+    "bytes": 42546,
+    "sha256": "22d65c0340780caf12ef0b8a7c6ea048e4a28f834ba6edae21f27c6d1a807767"
+  },
+  "original_evidence/sessions/repeat_02_lidar_camera/resolved_config.py": {
+    "bytes": 29496,
+    "sha256": "e37d1bf93403e9e8434d95567d1304a66da736c47202cc09673e1f5b9e366633"
+  },
+  "original_evidence/sessions/repeat_02_lidar_camera/session.log": {
+    "bytes": 4502,
+    "sha256": "1aeeafb3e95b405456232a220048c873270fafb083d6f6a140e0f07d9c229001"
+  },
+  "original_evidence/sessions/repeat_02_lidar_camera/summary.json": {
+    "bytes": 1197,
+    "sha256": "faf5e4c45c49ee6bce1784aef1f0818c32820be359577bb094e0308c07c0deea"
+  },
+  "original_evidence/sessions/repeat_03_lidar/environment.json": {
+    "bytes": 348,
+    "sha256": "df2b876e4bb2d523bcf32f48a34e431476b2ecc37a224e34010d3b0212c4acb6"
+  },
+  "original_evidence/sessions/repeat_03_lidar/measurements.json": {
+    "bytes": 41538,
+    "sha256": "ac73bd8e905cdd84a861d8ee1f5939d6690c6aec24879562637ede454a3b496b"
+  },
+  "original_evidence/sessions/repeat_03_lidar/resolved_config.py": {
+    "bytes": 27831,
+    "sha256": "b2759129774141d0e5e9600138d28b45631fe9141469f790390717a2af6cd1ff"
+  },
+  "original_evidence/sessions/repeat_03_lidar/session.log": {
+    "bytes": 4238,
+    "sha256": "664a113da3bc27e84b705cb6a514d621e9baeb124434b0889ebfafa44f85d58a"
+  },
+  "original_evidence/sessions/repeat_03_lidar/summary.json": {
+    "bytes": 1177,
+    "sha256": "3dc219782fe7ec11d281a937884cf9331e7ab1c9273e4c7889c380740fbce374"
+  },
+  "original_evidence/sessions/repeat_03_lidar_camera/environment.json": {
+    "bytes": 348,
+    "sha256": "1f274f420c3bf36cb5f647a88003d32dab83ea6740113386370045248123fb23"
+  },
+  "original_evidence/sessions/repeat_03_lidar_camera/measurements.json": {
+    "bytes": 42545,
+    "sha256": "f06c0e381f5046df241d0c88a555c7086a1835c8a6414638f9e10c3b36304b95"
+  },
+  "original_evidence/sessions/repeat_03_lidar_camera/resolved_config.py": {
+    "bytes": 29496,
+    "sha256": "e37d1bf93403e9e8434d95567d1304a66da736c47202cc09673e1f5b9e366633"
+  },
+  "original_evidence/sessions/repeat_03_lidar_camera/session.log": {
+    "bytes": 4498,
+    "sha256": "9dbe93ca2768fbfb43dad5fdaf35d83c4a5f6c881ed569dd1c34552eeee83ac3"
+  },
+  "original_evidence/sessions/repeat_03_lidar_camera/summary.json": {
+    "bytes": 1194,
+    "sha256": "689f2d3e578316a4fb33eb99709033779c2c0bb261a354d65da3d7217f2bda77"
+  },
+  "original_evidence/setup/01_python_torch_setup.log": {
+    "bytes": 8024,
+    "sha256": "ade6079e62d143cee47a5adbd04d764aae8681e47158e2791cb7232c8b519db8"
+  },
+  "original_evidence/setup/02_mmdet3d_dependencies.log": {
+    "bytes": 49198,
+    "sha256": "6571ce94f5500a1c02a5242d71481e0bae2d1d573a15e01b087bb020853ceb12"
+  },
+  "original_evidence/setup/03_cuda_build_and_checks.log": {
+    "bytes": 29417,
+    "sha256": "953bee90b7dcb4a91d8f741967d61b94b170065e367e2299733aff4f835aa170"
+  },
+  "original_evidence/setup/cuda_operations_audit.json": {
+    "bytes": 1015,
+    "sha256": "c15ee6e324babe32d275d896f5d24377afb377b22d3739b6aee7868ad838fe41"
+  },
+  "original_evidence/setup/environment.txt": {
+    "bytes": 2747,
+    "sha256": "468b6dbeca08112564475ad8c7972366714682fafa134a058e2da05424f4d3dc"
+  }
+}

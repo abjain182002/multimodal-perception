@@ -1,0 +1,109 @@
+{
+  "status": "RUNTIME_BENCHMARK_PROTOCOL_FROZEN",
+  "samples": 150,
+  "scenes": 150,
+  "selection_rule": "Second selected frame from each scene in the frozen 600-frame experiment; ascending scene-token order.",
+  "selection_uses_prediction_outcomes": false,
+  "models": [
+    "lidar",
+    "lidar_camera"
+  ],
+  "camera_condition": "Intact six camera views for fusion",
+  "batch_size": 1,
+  "warmup_iterations_per_session": 20,
+  "warmup_sample_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "measured_passes_per_model": 3,
+  "session_order": [
+    {
+      "repeat": 1,
+      "model": "lidar"
+    },
+    {
+      "repeat": 1,
+      "model": "lidar_camera"
+    },
+    {
+      "repeat": 2,
+      "model": "lidar_camera"
+    },
+    {
+      "repeat": 2,
+      "model": "lidar"
+    },
+    {
+      "repeat": 3,
+      "model": "lidar"
+    },
+    {
+      "repeat": 3,
+      "model": "lidar_camera"
+    }
+  ],
+  "session_isolation": "Fresh subprocess per model and repeat",
+  "gpu": "Tesla T4",
+  "precision": "FP32 model weights; autocast disabled",
+  "tf32": false,
+  "torch_cpu_threads": 1,
+  "seed": 20261002,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "torch": "2.1.2+cu121",
+  "primary_timing": {
+    "clock": "time.perf_counter",
+    "start": "After CPU dataset loading and pseudo_collate; CUDA synchronized",
+    "operation": "model.test_step(batch) under torch.inference_mode",
+    "end": "After torch.cuda.synchronize",
+    "includes": [
+      "CPU-to-GPU transfer",
+      "Model data preprocessing",
+      "Model prediction",
+      "Model prediction postprocessing"
+    ],
+    "excludes": [
+      "Model initialization and checkpoint loading",
+      "Dataset file loading and CPU pipeline",
+      "Prediction copying to CPU for validation",
+      "Result serialization and nuScenes evaluation"
+    ]
+  },
+  "loading_timing": "Record dataset[index] and pseudo_collate separately. Local filesystem and OS-cache effects apply.",
+  "memory": {
+    "metrics": [
+      "torch.cuda.max_memory_allocated",
+      "torch.cuda.max_memory_reserved"
+    ],
+    "reset": "Once after warm-up and before each measured pass",
+    "includes_model_weights": true,
+    "empty_cache_between_measured_frames": false,
+    "limitation": "PyTorch allocator metrics, not total GPU usage or host RAM."
+  },
+  "summaries": [
+    "Per-session mean, median and p95 latency",
+    "Per-session peak allocated and reserved GPU memory",
+    "Across-session variation",
+    "Paired per-sample latency ratios"
+  ],
+  "source_selection_sha256": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9",
+  "source_protocol_sha256": "0ea9d28dcfe4725e4e35bcd75aacb25b78079363bdec841a95d40b629982255d",
+  "scope": "Serial runtime study on 150 samples. Accuracy comes from the separately reported 600-frame experiment; no new accuracy claim or hardware-cost measurement."
+}

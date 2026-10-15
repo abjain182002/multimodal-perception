@@ -1,0 +1,72 @@
+LOADING: repeat_03_lidar_camera
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+10/15 07:57:24 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 07:57:24 - mmengine - WARNING - v1.0-trainval is not a meta file, simply parsed as meta information
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 07:57:25 - mmengine - INFO - ------------------------------
+10/15 07:57:25 - mmengine - INFO - The length of test dataset: 150
+10/15 07:57:25 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 2132   |
+| truck                | 408    |
+| construction_vehicle | 76     |
+| bus                  | 83     |
+| trailer              | 103    |
+| barrier              | 687    |
+| motorcycle           | 68     |
+| bicycle              | 64     |
+| pedestrian           | 982    |
+| traffic_cone         | 411    |
++----------------------+--------+
+STRICT MODEL LOAD AND ORDERED TOKENS PASS
+WARM-UP: 20 samples
+/content/mmdetection3d/projects/BEVFusion/bevfusion/utils.py:120: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+WARM-UP PASSED — STARTING TIMED PASS
+{"session": "repeat_03_lidar_camera", "completed": 25, "total": 150, "median_test_step_ms_so_far": 555.2}
+{"session": "repeat_03_lidar_camera", "completed": 50, "total": 150, "median_test_step_ms_so_far": 555.53}
+{"session": "repeat_03_lidar_camera", "completed": 75, "total": 150, "median_test_step_ms_so_far": 552.02}
+{"session": "repeat_03_lidar_camera", "completed": 100, "total": 150, "median_test_step_ms_so_far": 545.99}
+{"session": "repeat_03_lidar_camera", "completed": 125, "total": 150, "median_test_step_ms_so_far": 544.32}
+{"session": "repeat_03_lidar_camera", "completed": 150, "total": 150, "median_test_step_ms_so_far": 545.99}
+{
+  "status": "RUNTIME_SESSION_PASS",
+  "session": "repeat_03_lidar_camera",
+  "model": "lidar_camera",
+  "repeat": 3,
+  "samples": 150,
+  "warmup_iterations": 20,
+  "latency_ms": {
+    "mean": 542.4696985599804,
+    "median": 545.9939365000537,
+    "p95": 589.0798408498313,
+    "minimum": 446.6039690000798,
+    "maximum": 615.7780680000542
+  },
+  "loading_and_collation_ms": {
+    "mean": 353.0792329533415,
+    "median": 351.2169655002708,
+    "p95": 375.7093070500332
+  },
+  "memory_bytes": {
+    "allocated_after_warmup": 174199808,
+    "reserved_after_warmup": 3437232128,
+    "peak_allocated": 2340209664,
+    "peak_reserved": 3437232128
+  },
+  "protocol_sha256": "93b4c7960b5d6f77c030d5f0ed0fcb62f3f0feffffc2363c7217a56848c25e09",
+  "annotation_sha256": "b8cb0013e15d09ed99f7541360a2df4d11bd9c1f584bac8a37da09a169f3443f",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "benchmark_script_sha256": "aa1ffb8066e9432a748feb9302bcae4b5421a2e193716c034e04603c267d62fb",
+  "measurements_sha256": "f06c0e381f5046df241d0c88a555c7086a1835c8a6414638f9e10c3b36304b95",
+  "scope": "Serial synchronized test_step latency; no new accuracy evaluation."
+}
+SESSION RESULTS VERIFIED ON DRIVE: repeat_03_lidar_camera
