@@ -1,0 +1,49 @@
+{
+  "status": "POINT_REDUCTION_STORED_EVIDENCE_ANALYSIS_PASS",
+  "samples": 600,
+  "scenes": 150,
+  "manifest_listed_members": 217,
+  "all_600_input_pairings_verified": true,
+  "all_600_index_selection_hashes_recomputed": true,
+  "own_baseline_differences": {
+    "lidar_full": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "lidar_keep050": {
+      "mAP": -3.7439075626251928,
+      "NDS": -2.274288666079316
+    },
+    "lidar_keep025": {
+      "mAP": -13.269528465262459,
+      "NDS": -8.335292582885746
+    },
+    "lidar_camera_full": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "lidar_camera_keep050": {
+      "mAP": -2.3370895001597836,
+      "NDS": -1.6345012925307212
+    },
+    "lidar_camera_keep025": {
+      "mAP": -7.896090807229017,
+      "NDS": -5.810051198731148
+    }
+  },
+  "fusion_advantage": {
+    "full": {
+      "mAP": 3.822574112884891,
+      "NDS": 1.8461244465191262
+    },
+    "keep050": {
+      "mAP": 5.2293921753503,
+      "NDS": 2.485911820067721
+    },
+    "keep025": {
+      "mAP": 9.196011770918332,
+      "NDS": 4.3713658306737235
+    }
+  },
+  "scope": "Compact member integrity, stored metric arithmetic and per-frame input records checked. Raw sensor tensors/predictions are separate on Drive; no fresh inference, ground-truth replay or significance test."
+}

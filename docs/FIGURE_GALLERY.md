@@ -1,5 +1,11 @@
 # Figures and selected case studies
 
+## Matched LiDAR point reduction — compact report figure
+
+![mAP and NDS versus point retention](../results/nuscenes/bevfusion/point_reduction/20261015/figures/comparison.png)
+
+This one figure contains two labelled panels for the main report. [Supporting class-level figure, CSV tables and provenance](../results/nuscenes/bevfusion/point_reduction/20261015/README.md). Same frozen 600 frames, matched retained points across models; synthetic thinning is not a physical LiDAR model.
+
 ## Controlled image darkening — 600 frames
 
 ![Accuracy under image darkening](../results/nuscenes/bevfusion/image_darkening/20261015/figures/comparison.png)
@@ -164,5 +170,6 @@ Same four selected frames per validation scene; existing six-camera checkpoint w
 ![Pinned BEVFusion inference flow](architecture/bevfusion_inference.png)
 
 [Sources, ownership distinctions and PDF/SVG diagrams](architecture/README.md).
+
 
 

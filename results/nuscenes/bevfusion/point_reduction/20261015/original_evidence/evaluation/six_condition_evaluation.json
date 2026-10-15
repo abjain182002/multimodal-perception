@@ -1,0 +1,202 @@
+{
+  "status": "PAIRED_POINT_REDUCTION_SIX_CONDITION_EVALUATION_PASS",
+  "samples_per_condition": 600,
+  "scenes": 150,
+  "protocol_sha256": "f6037b05188e2eb8c0b51ef6c3ac76d99085831866f1ad034b348277cb2f43f1",
+  "paired_input_records_verified": true,
+  "conditions": {
+    "lidar_full": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_full",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+      "metrics_summary_sha256": "cb13bee9c78bde7edf09259379e0270513fd9c3b144652edcce8fa5ba3745c80",
+      "mAP": 0.6430758826247222,
+      "NDS": 0.6944296479365084,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_keep050": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_keep050",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "e2f984156e6fffece27b6eff729b22559239cddeb77e17bff3a450b0aa545e10",
+      "metrics_summary_sha256": "f351c809a608e68a44f38389df1081777e75ec1914872628364692124bfac729",
+      "mAP": 0.6056368069984702,
+      "NDS": 0.6716867612757152,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_keep025": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_keep025",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "9bf71ba57b16416f4855e94d0c77f4574c9b984f3d01a04d7c3a396d6e95241b",
+      "metrics_summary_sha256": "baf21c2ca490ec205504f33692913793e3cbda35693ce906857896a00ed3999e",
+      "mAP": 0.5103805979720976,
+      "NDS": 0.611076722107651,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_camera_full": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_camera_full",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "c874e0973861e1599a8456d6f63b4a96eb94ac7102f6f6547d5dea27756ec099",
+      "metrics_summary_sha256": "78db20523409d4d9f5ed278a09a1635395fc779e843f1fb2bc70027697fa5f82",
+      "mAP": 0.6813016237535711,
+      "NDS": 0.7128908924016997,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_camera_keep050": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_camera_keep050",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "0115542f19f83122e1c6af83e1c8e59856efb2c7c3831b7a7cfc32900a4ce5bd",
+      "metrics_summary_sha256": "2f8601bf9fb5d7bf39587e0d3af2e2ee614c5275adf92c3713248397ada0db4e",
+      "mAP": 0.6579307287519732,
+      "NDS": 0.6965458794763925,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_camera_keep025": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_camera_keep025",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "0828a4a8bcaa458daaa7e208ae5402073fd83c117ba0fc17f3585f6cc6e5dc9f",
+      "metrics_summary_sha256": "0d0c13bac1082990ca6fe66c740b92b89210782963d9498b5d17a8ad7768809a",
+      "mAP": 0.6023407156812809,
+      "NDS": 0.6547903804143882,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    }
+  },
+  "difference_from_own_full_baseline_points": {
+    "lidar_full": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "lidar_keep050": {
+      "mAP": -3.7439075626251928,
+      "NDS": -2.274288666079316
+    },
+    "lidar_keep025": {
+      "mAP": -13.269528465262459,
+      "NDS": -8.335292582885746
+    },
+    "lidar_camera_full": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "lidar_camera_keep050": {
+      "mAP": -2.3370895001597836,
+      "NDS": -1.6345012925307212
+    },
+    "lidar_camera_keep025": {
+      "mAP": -7.896090807229017,
+      "NDS": -5.810051198731148
+    }
+  },
+  "fusion_minus_lidar_at_same_retention_points": {
+    "full": {
+      "mAP": 3.822574112884891,
+      "NDS": 1.8461244465191262
+    },
+    "keep050": {
+      "mAP": 5.2293921753503,
+      "NDS": 2.485911820067721
+    },
+    "keep025": {
+      "mAP": 9.196011770918332,
+      "NDS": 4.3713658306737235
+    }
+  },
+  "official_evaluator_source_sha256": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+  "limitations": [
+    "Uniform synthetic point reduction, not a physical LiDAR model.",
+    "Not a multi-LiDAR comparison or measured sensor-cost saving.",
+    "Fusion reduction affects both LiDAR features and camera-depth input.",
+    "One fixed point-selection realization per sample.",
+    "600 selected frames; not full validation.",
+    "No runtime or statistical significance claim."
+  ]
+}

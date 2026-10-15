@@ -1,0 +1,11 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "lidar_full",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+  "protocol_sha256": "591db116283ba14508265a1f8907eae144dce6d985360fcb354a77417cf0ab44",
+  "input_checks_sha256": "5caaffe2c4f4b8960c5a9d74c71b7da28ca5228c932369c310ac5168ff87d9bc",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "UPLOADED_ARCHIVE_HASH_AND_MEMBERS_PASS",
+  "archive": "lidar_point_reduction600_evidence_20261015.zip",
+  "bytes": 4498505,
+  "sha256": "d5086b07200dd4a47668ca95e488129d0d605ce77d8f82fec9fad3a62ad51728",
+  "verified_members": 218,
+  "manifest_listed_members": 217,
+  "raw_predictions_included": false
+}

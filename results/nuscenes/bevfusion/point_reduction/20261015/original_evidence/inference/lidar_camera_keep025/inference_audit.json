@@ -1,0 +1,11 @@
+{
+  "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+  "condition": "lidar_camera_keep025",
+  "samples": 600,
+  "created": 600,
+  "reused": 0,
+  "results_sha256": "0828a4a8bcaa458daaa7e208ae5402073fd83c117ba0fc17f3585f6cc6e5dc9f",
+  "protocol_sha256": "9ee002dcae3a16aed3488545f58fa1bf1d16b8eeafa83749015590744f6a0390",
+  "input_checks_sha256": "f738c2d9a8b8eb14272a7afc55880279b617634ec5337ca3463880377ce431c2",
+  "scope": "Predictions complete; accuracy evaluation pending."
+}

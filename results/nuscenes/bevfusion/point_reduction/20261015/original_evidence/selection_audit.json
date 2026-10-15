@@ -1,0 +1,14 @@
+{
+  "status": "LIDAR_POINT_REDUCTION_PROTOCOL_AND_SELECTION_PASS",
+  "samples": 600,
+  "scenes": 150,
+  "conditions": 6,
+  "record_sha256": {
+    "protocol.json": "f6037b05188e2eb8c0b51ef6c3ac76d99085831866f1ad034b348277cb2f43f1",
+    "sample_tokens.txt": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f",
+    "selected_input_manifest.json": "320789fff22aa126aff7b516a05d601410c1047fe0bb538acee4efcb98e39105",
+    "scene_selection.json": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9",
+    "required_sensor_files.txt": "008308a36dabec38e2f3a7647fe866ae4a77c6f59c7708b84c891fc8f06f6dbc"
+  },
+  "scope": "Protocol frozen before new inference; model checks pending."
+}

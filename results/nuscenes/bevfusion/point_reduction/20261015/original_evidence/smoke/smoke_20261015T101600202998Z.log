@@ -1,0 +1,165 @@
+
+LOADING: lidar
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/content/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth
+10/15 10:16:26 - mmengine - WARNING - v1.0-trainval is not a meta file, simply parsed as meta information
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth
+10/15 10:16:32 - mmengine - INFO - ------------------------------
+10/15 10:16:32 - mmengine - INFO - The length of test dataset: 600
+10/15 10:16:32 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+CHECKING: lidar_full
+{
+  "condition": "lidar_full",
+  "retained_fraction": 1.0,
+  "original_points": 256096,
+  "retained_points": 256096,
+  "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_indices_sha256": "5d4efc2616863484139bc9a4e6e264d7c4fb8d7f4ac35531140cdeae394a5fa2",
+  "detections": 200,
+  "prediction_sha256": "22ccc7663990c3609051bd023c95915c8d9f73f541ca26cabdd3e577a7b7253a",
+  "finite_predictions": true,
+  "calibration_metadata_unchanged": true,
+  "input_checks": {
+    "preprocessing_input_check": true,
+    "processed_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  }
+}
+CHECKING: lidar_keep050
+/content/mmdetection3d/projects/BEVFusion/bevfusion/utils.py:120: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+{
+  "condition": "lidar_keep050",
+  "retained_fraction": 0.5,
+  "original_points": 256096,
+  "retained_points": 128048,
+  "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336",
+  "selected_indices_sha256": "06aebe0f79b359089b99902df6f71f4ff4c39561e1c5678d0d9bd2273e32aa8d",
+  "detections": 200,
+  "prediction_sha256": "df2978c75d77f5d273cdfba9a5f2c5a1cff05bb6ceb6df8d304667115153ad50",
+  "finite_predictions": true,
+  "calibration_metadata_unchanged": true,
+  "input_checks": {
+    "preprocessing_input_check": true,
+    "processed_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336"
+  }
+}
+CHECKING: lidar_keep025
+{
+  "condition": "lidar_keep025",
+  "retained_fraction": 0.25,
+  "original_points": 256096,
+  "retained_points": 64024,
+  "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11",
+  "selected_indices_sha256": "e25b1bed2dbb0384105528997e49fb0ca889cfefe59cb12ade1d6fc2edfb8eaa",
+  "detections": 200,
+  "prediction_sha256": "f2862d89dceaaa41ff78461cfb4f3298c2ed09777ccf6bb342587b204b6c6375",
+  "finite_predictions": true,
+  "calibration_metadata_unchanged": true,
+  "input_checks": {
+    "preprocessing_input_check": true,
+    "processed_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11"
+  }
+}
+
+LOADING: lidar_camera
+10/15 10:16:39 - mmengine - INFO - Loads checkpoint by http backend from path: https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+Loads checkpoint by local backend from path: /content/bevfusion_checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+10/15 10:16:45 - mmengine - INFO - ------------------------------
+10/15 10:16:45 - mmengine - INFO - The length of test dataset: 600
+10/15 10:16:46 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+CHECKING: lidar_camera_full
+{
+  "condition": "lidar_camera_full",
+  "retained_fraction": 1.0,
+  "original_points": 256096,
+  "retained_points": 256096,
+  "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_indices_sha256": "5d4efc2616863484139bc9a4e6e264d7c4fb8d7f4ac35531140cdeae394a5fa2",
+  "detections": 200,
+  "prediction_sha256": "9c076b072ce6111111fc79000651f49c771afd7608a4c07ddd65be2bec7db0e3",
+  "finite_predictions": true,
+  "calibration_metadata_unchanged": true,
+  "input_checks": {
+    "preprocessing_input_check": true,
+    "processed_images_unchanged": true,
+    "processed_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  }
+}
+CHECKING: lidar_camera_keep050
+{
+  "condition": "lidar_camera_keep050",
+  "retained_fraction": 0.5,
+  "original_points": 256096,
+  "retained_points": 128048,
+  "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336",
+  "selected_indices_sha256": "06aebe0f79b359089b99902df6f71f4ff4c39561e1c5678d0d9bd2273e32aa8d",
+  "detections": 200,
+  "prediction_sha256": "5d4b6700b3f9063f8eecc25a578ff5d6575f5a0f9005de14318824f4b7a10b5f",
+  "finite_predictions": true,
+  "calibration_metadata_unchanged": true,
+  "input_checks": {
+    "preprocessing_input_check": true,
+    "processed_images_unchanged": true,
+    "processed_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336"
+  }
+}
+CHECKING: lidar_camera_keep025
+{
+  "condition": "lidar_camera_keep025",
+  "retained_fraction": 0.25,
+  "original_points": 256096,
+  "retained_points": 64024,
+  "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+  "selected_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11",
+  "selected_indices_sha256": "e25b1bed2dbb0384105528997e49fb0ca889cfefe59cb12ade1d6fc2edfb8eaa",
+  "detections": 200,
+  "prediction_sha256": "7ab7b3016351307a67cea8d1e6621154ad23d831663f0bcafc65ff690d5c9e42",
+  "finite_predictions": true,
+  "calibration_metadata_unchanged": true,
+  "input_checks": {
+    "preprocessing_input_check": true,
+    "processed_images_unchanged": true,
+    "processed_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11"
+  }
+}
+
+SIX-CONDITION POINT-REDUCTION SMOKE PASS

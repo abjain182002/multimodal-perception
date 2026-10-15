@@ -1,0 +1,24 @@
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_full",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+  "metrics_summary_sha256": "cb13bee9c78bde7edf09259379e0270513fd9c3b144652edcce8fa5ba3745c80",
+  "mAP": 0.6430758826247222,
+  "NDS": 0.6944296479365084,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}

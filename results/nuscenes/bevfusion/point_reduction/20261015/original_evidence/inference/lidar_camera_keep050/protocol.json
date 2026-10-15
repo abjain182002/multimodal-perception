@@ -1,0 +1,27 @@
+{
+  "condition": {
+    "name": "lidar_camera_keep050",
+    "model": "lidar_camera",
+    "retained_fraction": 0.5
+  },
+  "frozen_protocol_sha256": "f6037b05188e2eb8c0b51ef6c3ac76d99085831866f1ad034b348277cb2f43f1",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "torch": "2.1.2+cu121",
+  "seed": 20261002,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "script_sha256": "d6c92a460f13098144f061bf06222b8c5f0a4a5d4834e40d1838521d1d41cacb",
+  "transformation": {
+    "position": "Packed point tensor before model data preprocessing, voxelization and fusion camera-depth construction",
+    "population": "Keyframe plus loaded preceding LiDAR sweeps",
+    "algorithm": "Per token, seed NumPy PCG64 from the first eight bytes of SHA-256 of UTF-8 text '20261002:' + sample_token, interpreted as an unsigned big-endian integer. Generate one permutation of N row indices. For fraction f retain its first max(1, floor(f*N)) indices, sorted to preserve original row order.",
+    "nested_subsets": true,
+    "same_selected_rows_for_both_models": true,
+    "retained_point_features_unchanged": true,
+    "original_files_modified": false
+  },
+  "autocast": false,
+  "tf32": false,
+  "cudnn_benchmark": false,
+  "numpy": "1.26.4"
+}

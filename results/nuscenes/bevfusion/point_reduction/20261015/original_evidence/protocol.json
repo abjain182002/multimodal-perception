@@ -1,0 +1,88 @@
+{
+  "status": "LIDAR_POINT_REDUCTION_PROTOCOL_FROZEN",
+  "samples": 600,
+  "scenes": 150,
+  "seed": 20261002,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "source_tokens_sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f",
+  "checkpoint_sha256": {
+    "lidar": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+    "lidar_camera": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab"
+  },
+  "conditions": [
+    {
+      "name": "lidar_full",
+      "model": "lidar",
+      "retained_fraction": 1.0
+    },
+    {
+      "name": "lidar_keep050",
+      "model": "lidar",
+      "retained_fraction": 0.5
+    },
+    {
+      "name": "lidar_keep025",
+      "model": "lidar",
+      "retained_fraction": 0.25
+    },
+    {
+      "name": "lidar_camera_full",
+      "model": "lidar_camera",
+      "retained_fraction": 1.0
+    },
+    {
+      "name": "lidar_camera_keep050",
+      "model": "lidar_camera",
+      "retained_fraction": 0.5
+    },
+    {
+      "name": "lidar_camera_keep025",
+      "model": "lidar_camera",
+      "retained_fraction": 0.25
+    }
+  ],
+  "transformation": {
+    "position": "Packed point tensor before model data preprocessing, voxelization and fusion camera-depth construction",
+    "population": "Keyframe plus loaded preceding LiDAR sweeps",
+    "algorithm": "Per token, seed NumPy PCG64 from the first eight bytes of SHA-256 of UTF-8 text '20261002:' + sample_token, interpreted as an unsigned big-endian integer. Generate one permutation of N row indices. For fraction f retain its first max(1, floor(f*N)) indices, sorted to preserve original row order.",
+    "nested_subsets": true,
+    "same_selected_rows_for_both_models": true,
+    "retained_point_features_unchanged": true,
+    "original_files_modified": false
+  },
+  "controls": {
+    "fresh_baseline_per_model": true,
+    "same_ordered_sample_tokens": true,
+    "same_original_points_across_models_required": true,
+    "camera_images_unchanged": true,
+    "calibration_unchanged": true,
+    "batch_size": 1,
+    "model_eval_mode": true,
+    "autocast": false,
+    "tf32": false,
+    "cudnn_benchmark": false,
+    "training": false
+  },
+  "evaluation": {
+    "configuration": "detection_cvpr_2019",
+    "ground_truth": "Same frozen 600 tokens; unchanged GT filtering",
+    "metrics": [
+      "mAP",
+      "NDS",
+      "per-class AP",
+      "TP errors"
+    ],
+    "comparisons": [
+      "Each reduction versus its own model's fresh baseline",
+      "Fusion versus LiDAR-only at each retained fraction"
+    ]
+  },
+  "limitations": [
+    "Uniform synthetic point reduction, not a physical LiDAR model.",
+    "Not a multi-LiDAR comparison or measured sensor-cost saving.",
+    "Fusion reduction affects both LiDAR features and camera-depth input.",
+    "One fixed point-selection realization per sample.",
+    "600 selected frames; not full validation.",
+    "No runtime or statistical significance claim."
+  ]
+}

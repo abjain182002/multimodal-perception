@@ -1,0 +1,77 @@
+{
+  "all_600_original_point_inputs_matched": true,
+  "all_retained_point_subsets_matched_across_models": true,
+  "images_and_metadata_matched_across_retention_levels": true,
+  "status": "PAIRED_POINT_REDUCTION_SIX_CONDITION_INFERENCE_PASS",
+  "samples_per_condition": 600,
+  "scenes": 150,
+  "conditions": [
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "lidar_full",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+      "protocol_sha256": "591db116283ba14508265a1f8907eae144dce6d985360fcb354a77417cf0ab44",
+      "input_checks_sha256": "5caaffe2c4f4b8960c5a9d74c71b7da28ca5228c932369c310ac5168ff87d9bc",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "lidar_keep050",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "e2f984156e6fffece27b6eff729b22559239cddeb77e17bff3a450b0aa545e10",
+      "protocol_sha256": "c494c0e90fc2b322f904d5340d9b9d4d80f4af71ad5fe9c34dfd6daab9ddae3f",
+      "input_checks_sha256": "3907f7d1a990c734cdc58fb24ec1f0d26066a343ec2dc5603cb16ff6a0bae7be",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "lidar_keep025",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "9bf71ba57b16416f4855e94d0c77f4574c9b984f3d01a04d7c3a396d6e95241b",
+      "protocol_sha256": "271741644abf7c09b49f376e298e863a1eff82550bad53e6438207e0fcce30cb",
+      "input_checks_sha256": "43b49e8738409065ed4a2a59981d6d4e0c39219f779bbb2873327eca441632c8",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "lidar_camera_full",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "c874e0973861e1599a8456d6f63b4a96eb94ac7102f6f6547d5dea27756ec099",
+      "protocol_sha256": "d27da408aace20c81da4e3aa8f379314660e8aaf5a0d9f73a7fdadb8cfa37828",
+      "input_checks_sha256": "6375d7892a7a13d12c74330efb4231e1b5307f97a6255e8bef3c6cd4fdaa7fac",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "lidar_camera_keep050",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "0115542f19f83122e1c6af83e1c8e59856efb2c7c3831b7a7cfc32900a4ce5bd",
+      "protocol_sha256": "a3ae91b74882901819db5fbd390cbfefb419acf177287211bf90dd15f12ff3c4",
+      "input_checks_sha256": "dc0bc3d6c58db44ed880d00e6a36c0866a6fcecea2d5a8736b159ba2a454d2bc",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    },
+    {
+      "status": "CONDITION_INFERENCE_AND_FORMATTING_PASS",
+      "condition": "lidar_camera_keep025",
+      "samples": 600,
+      "created": 600,
+      "reused": 0,
+      "results_sha256": "0828a4a8bcaa458daaa7e208ae5402073fd83c117ba0fc17f3585f6cc6e5dc9f",
+      "protocol_sha256": "9ee002dcae3a16aed3488545f58fa1bf1d16b8eeafa83749015590744f6a0390",
+      "input_checks_sha256": "f738c2d9a8b8eb14272a7afc55880279b617634ec5337ca3463880377ce431c2",
+      "scope": "Predictions complete; accuracy evaluation pending."
+    }
+  ],
+  "scope": "Inference and formatting complete; accuracy pending."
+}

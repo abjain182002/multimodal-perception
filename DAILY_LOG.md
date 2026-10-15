@@ -361,3 +361,14 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Preserved original evidence and navigation links. Raw predictions and sensor backups remain on Drive. Synthetic darkening is not a real-night test; no confidence intervals or runtime claim.
 - Remaining supervisor work includes other controlled robustness challenges, state-of-the-art/failure-handling synthesis, cost analysis and camera-only/multiple-LiDAR feasibility.
 
+
+## 15 October 2026 — matched LiDAR point-reduction study
+
+- Froze six conditions on the same 600 frames / 150 scenes: fresh LiDAR-only and fusion baselines, 50% and 25% retained points.
+- Deterministic token-seeded PCG64 permutation yields nested subsets with original row order restored; original point attributes unchanged. The six-condition one-frame smoke check passed.
+- Completed 3,600 predictions, global formatting and six same-token evaluations. Per-frame records confirm identical original/retained points across both models and unchanged image/metadata hashes across retention levels.
+- At 25% retention, LiDAR-only/fusion mAP ×100 = 51.0381 / 60.2341; losses from own baselines = −13.2695 / −7.8961 points. Fusion retains an advantage but also degrades.
+- Verified ZIP SHA-256 d5086b07200dd4a47668ca95e488129d0d605ce77d8f82fec9fad3a62ad51728, 4,498,505 bytes, all 218 members; recomputed stored metric arithmetic and per-token selection-index hashes for all 600 frames.
+- Preserved original evidence, resume checkpoint, compact two-panel accuracy figure, supporting class heatmap and four CSV tables. Raw predictions/sensors remain on Drive.
+- Recorded the 40–50-page report target and combined-figure policy; blur, noise, calibration, critical literature and monetary cost analysis remain planned. Reconciled outdated case-study/runtime status in guide/findings without changing original metric evidence.
+

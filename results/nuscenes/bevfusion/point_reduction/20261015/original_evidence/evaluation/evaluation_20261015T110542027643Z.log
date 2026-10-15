@@ -1,0 +1,714 @@
+PREDICTION HASH AND TOKENS PASS: lidar_full
+PREDICTION HASH AND TOKENS PASS: lidar_keep050
+PREDICTION HASH AND TOKENS PASS: lidar_keep025
+PREDICTION HASH AND TOKENS PASS: lidar_camera_full
+PREDICTION HASH AND TOKENS PASS: lidar_camera_keep050
+PREDICTION HASH AND TOKENS PASS: lidar_camera_keep025
+ALL 600 PAIRED INPUT RECORDS VERIFIED
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 68.765 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 9.9 seconds.
+======
+
+EVALUATING: lidar_full
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/lidar_point_reduction600_20261015/inference/lidar_full/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 11%|█         | 64/600 [00:00<00:00, 622.83it/s]
+ 21%|██        | 127/600 [00:00<00:01, 444.41it/s]
+ 30%|██▉       | 179/600 [00:00<00:00, 470.81it/s]
+ 38%|███▊      | 229/600 [00:00<00:00, 467.24it/s]
+ 48%|████▊     | 287/600 [00:00<00:00, 503.10it/s]
+ 57%|█████▋    | 344/600 [00:00<00:00, 521.35it/s]
+ 66%|██████▋   | 398/600 [00:00<00:00, 488.78it/s]
+ 76%|███████▌  | 453/600 [00:00<00:00, 498.89it/s]
+ 85%|████████▌ | 510/600 [00:01<00:00, 518.19it/s]
+ 94%|█████████▍| 563/600 [00:01<00:00, 521.13it/s]
+100%|██████████| 600/600 [00:01<00:00, 499.24it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 74923
+=> After distance based filtering: 74915
+=> After LIDAR and RADAR points based filtering: 74915
+=> After bike rack filtering: 74903
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+EXACT PAIRED PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/lidar_point_reduction600/evaluation/lidar_full
+mAP: 0.6431
+mATE: 0.2911
+mASE: 0.2529
+mAOE: 0.2805
+mAVE: 0.2624
+mAAE: 0.1842
+NDS: 0.6944
+Eval time: 9.8s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.873 	0.173 	0.152 	0.085 	0.259 	0.188 
+truck               	0.607 	0.313 	0.182 	0.109 	0.225 	0.230 
+bus                 	0.708 	0.361 	0.188 	0.039 	0.435 	0.220 
+trailer             	0.448 	0.580 	0.213 	0.448 	0.189 	0.149 
+construction_vehicle	0.245 	0.713 	0.426 	0.854 	0.125 	0.318 
+pedestrian          	0.869 	0.130 	0.282 	0.364 	0.219 	0.097 
+motorcycle          	0.703 	0.174 	0.232 	0.204 	0.401 	0.267 
+bicycle             	0.546 	0.150 	0.253 	0.367 	0.246 	0.003 
+traffic_cone        	0.721 	0.136 	0.325 	nan   	nan   	nan   
+barrier             	0.710 	0.180 	0.276 	0.054 	nan   	nan   
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_full",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+  "metrics_summary_sha256": "cb13bee9c78bde7edf09259379e0270513fd9c3b144652edcce8fa5ba3745c80",
+  "mAP": 0.6430758826247222,
+  "NDS": 0.6944296479365084,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_full
+
+EVALUATING: lidar_keep050
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/lidar_point_reduction600_20261015/inference/lidar_keep050/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 11%|█         | 64/600 [00:00<00:00, 636.91it/s]
+ 21%|██▏       | 128/600 [00:00<00:01, 448.25it/s]
+ 30%|██▉       | 178/600 [00:00<00:00, 465.72it/s]
+ 38%|███▊      | 227/600 [00:00<00:00, 448.36it/s]
+ 46%|████▌     | 274/600 [00:00<00:00, 451.81it/s]
+ 55%|█████▌    | 331/600 [00:00<00:00, 488.46it/s]
+ 64%|██████▎   | 381/600 [00:00<00:00, 409.35it/s]
+ 72%|███████▏  | 430/600 [00:00<00:00, 430.12it/s]
+ 80%|███████▉  | 479/600 [00:01<00:00, 445.38it/s]
+ 89%|████████▉ | 533/600 [00:01<00:00, 469.25it/s]
+ 98%|█████████▊| 587/600 [00:01<00:00, 488.92it/s]
+100%|██████████| 600/600 [00:01<00:00, 445.15it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 78362
+=> After distance based filtering: 78335
+=> After LIDAR and RADAR points based filtering: 78335
+=> After bike rack filtering: 78324
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+EXACT PAIRED PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/lidar_point_reduction600/evaluation/lidar_keep050
+mAP: 0.6056
+mATE: 0.2904
+mASE: 0.2518
+mAOE: 0.2982
+mAVE: 0.2811
+mAAE: 0.1898
+NDS: 0.6717
+Eval time: 10.7s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.841 	0.181 	0.153 	0.096 	0.261 	0.195 
+truck               	0.583 	0.316 	0.182 	0.113 	0.217 	0.235 
+bus                 	0.705 	0.351 	0.183 	0.048 	0.520 	0.215 
+trailer             	0.418 	0.585 	0.210 	0.454 	0.197 	0.163 
+construction_vehicle	0.244 	0.644 	0.408 	0.951 	0.134 	0.336 
+pedestrian          	0.831 	0.139 	0.286 	0.396 	0.230 	0.113 
+motorcycle          	0.611 	0.185 	0.233 	0.232 	0.431 	0.260 
+bicycle             	0.443 	0.170 	0.253 	0.335 	0.260 	0.002 
+traffic_cone        	0.691 	0.144 	0.332 	nan   	nan   	nan   
+barrier             	0.690 	0.190 	0.279 	0.059 	nan   	nan   
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_keep050",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "e2f984156e6fffece27b6eff729b22559239cddeb77e17bff3a450b0aa545e10",
+  "metrics_summary_sha256": "f351c809a608e68a44f38389df1081777e75ec1914872628364692124bfac729",
+  "mAP": 0.6056368069984702,
+  "NDS": 0.6716867612757152,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_keep050
+
+EVALUATING: lidar_keep025
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/lidar_point_reduction600_20261015/inference/lidar_keep025/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 10%|█         | 62/600 [00:00<00:00, 598.94it/s]
+ 20%|██        | 122/600 [00:00<00:01, 348.78it/s]
+ 27%|██▋       | 164/600 [00:00<00:01, 366.12it/s]
+ 34%|███▍      | 205/600 [00:00<00:01, 378.27it/s]
+ 43%|████▎     | 259/600 [00:00<00:00, 425.15it/s]
+ 52%|█████▏    | 313/600 [00:00<00:00, 459.98it/s]
+ 60%|██████    | 361/600 [00:00<00:00, 461.79it/s]
+ 68%|██████▊   | 409/600 [00:00<00:00, 465.15it/s]
+ 76%|███████▌  | 457/600 [00:01<00:00, 448.27it/s]
+ 86%|████████▌ | 515/600 [00:01<00:00, 482.44it/s]
+ 95%|█████████▌| 570/600 [00:01<00:00, 501.46it/s]
+100%|██████████| 600/600 [00:01<00:00, 447.64it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 83461
+=> After distance based filtering: 83434
+=> After LIDAR and RADAR points based filtering: 83434
+=> After bike rack filtering: 83420
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+EXACT PAIRED PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/lidar_point_reduction600/evaluation/lidar_keep025
+mAP: 0.5104
+mATE: 0.3198
+mASE: 0.2594
+mAOE: 0.3290
+mAVE: 0.3282
+mAAE: 0.2047
+NDS: 0.6111
+Eval time: 10.9s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.776 	0.199 	0.156 	0.116 	0.306 	0.201 
+truck               	0.522 	0.340 	0.188 	0.142 	0.251 	0.238 
+bus                 	0.641 	0.385 	0.183 	0.046 	0.633 	0.241 
+trailer             	0.344 	0.618 	0.217 	0.387 	0.210 	0.184 
+construction_vehicle	0.202 	0.684 	0.429 	0.949 	0.123 	0.360 
+pedestrian          	0.724 	0.157 	0.289 	0.465 	0.272 	0.135 
+motorcycle          	0.410 	0.203 	0.242 	0.271 	0.515 	0.277 
+bicycle             	0.282 	0.209 	0.261 	0.531 	0.316 	0.001 
+traffic_cone        	0.580 	0.176 	0.349 	nan   	nan   	nan   
+barrier             	0.624 	0.227 	0.280 	0.054 	nan   	nan   
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_keep025",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "9bf71ba57b16416f4855e94d0c77f4574c9b984f3d01a04d7c3a396d6e95241b",
+  "metrics_summary_sha256": "baf21c2ca490ec205504f33692913793e3cbda35693ce906857896a00ed3999e",
+  "mAP": 0.5103805979720976,
+  "NDS": 0.611076722107651,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_keep025
+
+EVALUATING: lidar_camera_full
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/lidar_point_reduction600_20261015/inference/lidar_camera_full/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 11%|█         | 64/600 [00:00<00:00, 633.88it/s]
+ 21%|██▏       | 128/600 [00:00<00:00, 479.55it/s]
+ 30%|███       | 180/600 [00:00<00:00, 494.68it/s]
+ 38%|███▊      | 231/600 [00:00<00:00, 460.35it/s]
+ 46%|████▋     | 279/600 [00:00<00:00, 442.55it/s]
+ 56%|█████▌    | 334/600 [00:00<00:00, 473.54it/s]
+ 64%|██████▍   | 383/600 [00:00<00:00, 467.65it/s]
+ 72%|███████▏  | 432/600 [00:00<00:00, 472.76it/s]
+ 80%|████████  | 480/600 [00:01<00:00, 473.93it/s]
+ 88%|████████▊ | 528/600 [00:01<00:00, 452.70it/s]
+ 97%|█████████▋| 580/600 [00:01<00:00, 467.41it/s]
+100%|██████████| 600/600 [00:01<00:00, 449.85it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 77616
+=> After distance based filtering: 77588
+=> After LIDAR and RADAR points based filtering: 77588
+=> After bike rack filtering: 77569
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+EXACT PAIRED PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/lidar_point_reduction600/evaluation/lidar_camera_full
+mAP: 0.6813
+mATE: 0.2843
+mASE: 0.2547
+mAOE: 0.2888
+mAVE: 0.2618
+mAAE: 0.1879
+NDS: 0.7129
+Eval time: 10.8s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.897 	0.170 	0.149 	0.056 	0.259 	0.184 
+truck               	0.657 	0.311 	0.181 	0.104 	0.227 	0.231 
+bus                 	0.755 	0.350 	0.185 	0.085 	0.441 	0.238 
+trailer             	0.488 	0.549 	0.210 	0.521 	0.175 	0.162 
+construction_vehicle	0.278 	0.703 	0.438 	0.840 	0.145 	0.312 
+pedestrian          	0.879 	0.129 	0.290 	0.374 	0.221 	0.111 
+motorcycle          	0.732 	0.183 	0.229 	0.300 	0.399 	0.264 
+bicycle             	0.629 	0.155 	0.257 	0.265 	0.228 	0.002 
+traffic_cone        	0.770 	0.128 	0.328 	nan   	nan   	nan   
+barrier             	0.729 	0.165 	0.279 	0.054 	nan   	nan   
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_camera_full",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "c874e0973861e1599a8456d6f63b4a96eb94ac7102f6f6547d5dea27756ec099",
+  "metrics_summary_sha256": "78db20523409d4d9f5ed278a09a1635395fc779e843f1fb2bc70027697fa5f82",
+  "mAP": 0.6813016237535711,
+  "NDS": 0.7128908924016997,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_camera_full
+
+EVALUATING: lidar_camera_keep050
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/lidar_point_reduction600_20261015/inference/lidar_camera_keep050/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 11%|█         | 64/600 [00:00<00:00, 626.32it/s]
+ 21%|██        | 127/600 [00:00<00:01, 461.75it/s]
+ 29%|██▉       | 176/600 [00:00<00:00, 468.54it/s]
+ 38%|███▊      | 225/600 [00:00<00:00, 470.08it/s]
+ 47%|████▋     | 280/600 [00:00<00:00, 492.62it/s]
+ 56%|█████▌    | 334/600 [00:00<00:00, 506.61it/s]
+ 64%|██████▍   | 386/600 [00:00<00:00, 477.17it/s]
+ 73%|███████▎  | 437/600 [00:00<00:00, 480.76it/s]
+ 81%|████████  | 486/600 [00:01<00:00, 470.71it/s]
+ 89%|████████▉ | 535/600 [00:01<00:00, 475.69it/s]
+ 99%|█████████▉| 595/600 [00:01<00:00, 504.34it/s]
+100%|██████████| 600/600 [00:01<00:00, 477.61it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 80067
+=> After distance based filtering: 80036
+=> After LIDAR and RADAR points based filtering: 80036
+=> After bike rack filtering: 80017
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+EXACT PAIRED PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/lidar_point_reduction600/evaluation/lidar_camera_keep050
+mAP: 0.6579
+mATE: 0.2843
+mASE: 0.2530
+mAOE: 0.3093
+mAVE: 0.2816
+mAAE: 0.1960
+NDS: 0.6965
+Eval time: 10.7s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.878 	0.178 	0.153 	0.065 	0.273 	0.188 
+truck               	0.645 	0.323 	0.183 	0.100 	0.231 	0.231 
+bus                 	0.724 	0.355 	0.185 	0.065 	0.543 	0.233 
+trailer             	0.467 	0.552 	0.205 	0.541 	0.184 	0.181 
+construction_vehicle	0.284 	0.636 	0.408 	0.899 	0.138 	0.340 
+pedestrian          	0.852 	0.135 	0.293 	0.402 	0.235 	0.126 
+motorcycle          	0.714 	0.185 	0.230 	0.278 	0.415 	0.267 
+bicycle             	0.550 	0.169 	0.263 	0.381 	0.233 	0.002 
+traffic_cone        	0.753 	0.135 	0.332 	nan   	nan   	nan   
+barrier             	0.713 	0.176 	0.279 	0.053 	nan   	nan   
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_camera_keep050",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "0115542f19f83122e1c6af83e1c8e59856efb2c7c3831b7a7cfc32900a4ce5bd",
+  "metrics_summary_sha256": "2f8601bf9fb5d7bf39587e0d3af2e2ee614c5275adf92c3713248397ada0db4e",
+  "mAP": 0.6579307287519732,
+  "NDS": 0.6965458794763925,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_camera_keep050
+
+EVALUATING: lidar_camera_keep025
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/lidar_point_reduction600_20261015/inference/lidar_camera_keep025/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 11%|█         | 66/600 [00:00<00:00, 656.73it/s]
+ 22%|██▏       | 132/600 [00:00<00:01, 455.54it/s]
+ 30%|███       | 183/600 [00:00<00:00, 471.19it/s]
+ 39%|███▉      | 233/600 [00:00<00:00, 459.44it/s]
+ 48%|████▊     | 286/600 [00:00<00:00, 478.13it/s]
+ 57%|█████▋    | 340/600 [00:00<00:00, 496.85it/s]
+ 65%|██████▌   | 391/600 [00:00<00:00, 484.82it/s]
+ 74%|███████▎  | 441/600 [00:00<00:00, 467.18it/s]
+ 83%|████████▎ | 499/600 [00:01<00:00, 498.41it/s]
+ 93%|█████████▎| 556/600 [00:01<00:00, 518.97it/s]
+100%|██████████| 600/600 [00:01<00:00, 487.32it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 83179
+=> After distance based filtering: 83153
+=> After LIDAR and RADAR points based filtering: 83153
+=> After bike rack filtering: 83134
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+EXACT PAIRED PREDICTION / GT TOKEN MATCH PASS
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/lidar_point_reduction600/evaluation/lidar_camera_keep025
+mAP: 0.6023
+mATE: 0.3090
+mASE: 0.2585
+mAOE: 0.3523
+mAVE: 0.3397
+mAAE: 0.2043
+NDS: 0.6548
+Eval time: 11.1s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.840 	0.191 	0.158 	0.070 	0.318 	0.192 
+truck               	0.601 	0.335 	0.188 	0.122 	0.289 	0.242 
+bus                 	0.709 	0.361 	0.180 	0.085 	0.659 	0.263 
+trailer             	0.412 	0.585 	0.211 	0.525 	0.216 	0.173 
+construction_vehicle	0.242 	0.696 	0.428 	0.975 	0.133 	0.359 
+pedestrian          	0.785 	0.151 	0.295 	0.472 	0.275 	0.146 
+motorcycle          	0.594 	0.213 	0.235 	0.335 	0.570 	0.256 
+bicycle             	0.457 	0.207 	0.262 	0.534 	0.258 	0.003 
+traffic_cone        	0.707 	0.156 	0.348 	nan   	nan   	nan   
+barrier             	0.675 	0.195 	0.279 	0.054 	nan   	nan   
+{
+  "status": "CONDITION_SUBSET_EVALUATION_PASS",
+  "condition": "lidar_camera_keep025",
+  "samples": 600,
+  "scenes": 150,
+  "prediction_gt_token_equality": true,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "predictions_sha256": "0828a4a8bcaa458daaa7e208ae5402073fd83c117ba0fc17f3585f6cc6e5dc9f",
+  "metrics_summary_sha256": "0d0c13bac1082990ca6fe66c740b92b89210782963d9498b5d17a8ad7768809a",
+  "mAP": 0.6023407156812809,
+  "NDS": 0.6547903804143882,
+  "scope": "Four selected frames per validation scene; subset evaluation."
+}
+METRICS AND CURVES VERIFIED ON DRIVE: lidar_camera_keep025
+{
+  "status": "PAIRED_POINT_REDUCTION_SIX_CONDITION_EVALUATION_PASS",
+  "samples_per_condition": 600,
+  "scenes": 150,
+  "protocol_sha256": "f6037b05188e2eb8c0b51ef6c3ac76d99085831866f1ad034b348277cb2f43f1",
+  "paired_input_records_verified": true,
+  "conditions": {
+    "lidar_full": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_full",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+      "metrics_summary_sha256": "cb13bee9c78bde7edf09259379e0270513fd9c3b144652edcce8fa5ba3745c80",
+      "mAP": 0.6430758826247222,
+      "NDS": 0.6944296479365084,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_keep050": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_keep050",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "e2f984156e6fffece27b6eff729b22559239cddeb77e17bff3a450b0aa545e10",
+      "metrics_summary_sha256": "f351c809a608e68a44f38389df1081777e75ec1914872628364692124bfac729",
+      "mAP": 0.6056368069984702,
+      "NDS": 0.6716867612757152,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_keep025": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_keep025",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "9bf71ba57b16416f4855e94d0c77f4574c9b984f3d01a04d7c3a396d6e95241b",
+      "metrics_summary_sha256": "baf21c2ca490ec205504f33692913793e3cbda35693ce906857896a00ed3999e",
+      "mAP": 0.5103805979720976,
+      "NDS": 0.611076722107651,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_camera_full": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_camera_full",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "c874e0973861e1599a8456d6f63b4a96eb94ac7102f6f6547d5dea27756ec099",
+      "metrics_summary_sha256": "78db20523409d4d9f5ed278a09a1635395fc779e843f1fb2bc70027697fa5f82",
+      "mAP": 0.6813016237535711,
+      "NDS": 0.7128908924016997,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_camera_keep050": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_camera_keep050",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "0115542f19f83122e1c6af83e1c8e59856efb2c7c3831b7a7cfc32900a4ce5bd",
+      "metrics_summary_sha256": "2f8601bf9fb5d7bf39587e0d3af2e2ee614c5275adf92c3713248397ada0db4e",
+      "mAP": 0.6579307287519732,
+      "NDS": 0.6965458794763925,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    },
+    "lidar_camera_keep025": {
+      "status": "CONDITION_SUBSET_EVALUATION_PASS",
+      "condition": "lidar_camera_keep025",
+      "samples": 600,
+      "scenes": 150,
+      "prediction_gt_token_equality": true,
+      "filtered_gt_counts": {
+        "car": 5327,
+        "truck": 922,
+        "bus": 208,
+        "trailer": 237,
+        "construction_vehicle": 155,
+        "pedestrian": 2427,
+        "motorcycle": 184,
+        "bicycle": 195,
+        "traffic_cone": 1059,
+        "barrier": 1604
+      },
+      "predictions_sha256": "0828a4a8bcaa458daaa7e208ae5402073fd83c117ba0fc17f3585f6cc6e5dc9f",
+      "metrics_summary_sha256": "0d0c13bac1082990ca6fe66c740b92b89210782963d9498b5d17a8ad7768809a",
+      "mAP": 0.6023407156812809,
+      "NDS": 0.6547903804143882,
+      "scope": "Four selected frames per validation scene; subset evaluation."
+    }
+  },
+  "difference_from_own_full_baseline_points": {
+    "lidar_full": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "lidar_keep050": {
+      "mAP": -3.7439075626251928,
+      "NDS": -2.274288666079316
+    },
+    "lidar_keep025": {
+      "mAP": -13.269528465262459,
+      "NDS": -8.335292582885746
+    },
+    "lidar_camera_full": {
+      "mAP": 0.0,
+      "NDS": 0.0
+    },
+    "lidar_camera_keep050": {
+      "mAP": -2.3370895001597836,
+      "NDS": -1.6345012925307212
+    },
+    "lidar_camera_keep025": {
+      "mAP": -7.896090807229017,
+      "NDS": -5.810051198731148
+    }
+  },
+  "fusion_minus_lidar_at_same_retention_points": {
+    "full": {
+      "mAP": 3.822574112884891,
+      "NDS": 1.8461244465191262
+    },
+    "keep050": {
+      "mAP": 5.2293921753503,
+      "NDS": 2.485911820067721
+    },
+    "keep025": {
+      "mAP": 9.196011770918332,
+      "NDS": 4.3713658306737235
+    }
+  },
+  "official_evaluator_source_sha256": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+  "limitations": [
+    "Uniform synthetic point reduction, not a physical LiDAR model.",
+    "Not a multi-LiDAR comparison or measured sensor-cost saving.",
+    "Fusion reduction affects both LiDAR features and camera-depth input.",
+    "One fixed point-selection realization per sample.",
+    "600 selected frames; not full validation.",
+    "No runtime or statistical significance claim."
+  ]
+}
+ALL SIX POINT-REDUCTION EVALUATIONS AND DRIVE BACKUPS VERIFIED

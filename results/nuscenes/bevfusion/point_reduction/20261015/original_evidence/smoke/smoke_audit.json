@@ -1,0 +1,120 @@
+{
+  "status": "PAIRED_POINT_REDUCTION_SIX_CONDITION_SMOKE_PASS",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "protocol_sha256": "f6037b05188e2eb8c0b51ef6c3ac76d99085831866f1ad034b348277cb2f43f1",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "numpy": "1.26.4",
+  "torch": "2.1.2+cu121",
+  "identical_original_points_across_models": true,
+  "identical_retained_points_across_models": true,
+  "nested_point_subsets": true,
+  "conditions": [
+    {
+      "condition": "lidar_full",
+      "retained_fraction": 1.0,
+      "original_points": 256096,
+      "retained_points": 256096,
+      "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_indices_sha256": "5d4efc2616863484139bc9a4e6e264d7c4fb8d7f4ac35531140cdeae394a5fa2",
+      "detections": 200,
+      "prediction_sha256": "22ccc7663990c3609051bd023c95915c8d9f73f541ca26cabdd3e577a7b7253a",
+      "finite_predictions": true,
+      "calibration_metadata_unchanged": true,
+      "input_checks": {
+        "preprocessing_input_check": true,
+        "processed_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+      }
+    },
+    {
+      "condition": "lidar_keep050",
+      "retained_fraction": 0.5,
+      "original_points": 256096,
+      "retained_points": 128048,
+      "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336",
+      "selected_indices_sha256": "06aebe0f79b359089b99902df6f71f4ff4c39561e1c5678d0d9bd2273e32aa8d",
+      "detections": 200,
+      "prediction_sha256": "df2978c75d77f5d273cdfba9a5f2c5a1cff05bb6ceb6df8d304667115153ad50",
+      "finite_predictions": true,
+      "calibration_metadata_unchanged": true,
+      "input_checks": {
+        "preprocessing_input_check": true,
+        "processed_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336"
+      }
+    },
+    {
+      "condition": "lidar_keep025",
+      "retained_fraction": 0.25,
+      "original_points": 256096,
+      "retained_points": 64024,
+      "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11",
+      "selected_indices_sha256": "e25b1bed2dbb0384105528997e49fb0ca889cfefe59cb12ade1d6fc2edfb8eaa",
+      "detections": 200,
+      "prediction_sha256": "f2862d89dceaaa41ff78461cfb4f3298c2ed09777ccf6bb342587b204b6c6375",
+      "finite_predictions": true,
+      "calibration_metadata_unchanged": true,
+      "input_checks": {
+        "preprocessing_input_check": true,
+        "processed_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11"
+      }
+    },
+    {
+      "condition": "lidar_camera_full",
+      "retained_fraction": 1.0,
+      "original_points": 256096,
+      "retained_points": 256096,
+      "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_indices_sha256": "5d4efc2616863484139bc9a4e6e264d7c4fb8d7f4ac35531140cdeae394a5fa2",
+      "detections": 200,
+      "prediction_sha256": "9c076b072ce6111111fc79000651f49c771afd7608a4c07ddd65be2bec7db0e3",
+      "finite_predictions": true,
+      "calibration_metadata_unchanged": true,
+      "input_checks": {
+        "preprocessing_input_check": true,
+        "processed_images_unchanged": true,
+        "processed_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+      }
+    },
+    {
+      "condition": "lidar_camera_keep050",
+      "retained_fraction": 0.5,
+      "original_points": 256096,
+      "retained_points": 128048,
+      "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336",
+      "selected_indices_sha256": "06aebe0f79b359089b99902df6f71f4ff4c39561e1c5678d0d9bd2273e32aa8d",
+      "detections": 200,
+      "prediction_sha256": "5d4b6700b3f9063f8eecc25a578ff5d6575f5a0f9005de14318824f4b7a10b5f",
+      "finite_predictions": true,
+      "calibration_metadata_unchanged": true,
+      "input_checks": {
+        "preprocessing_input_check": true,
+        "processed_images_unchanged": true,
+        "processed_points_sha256": "aab1daa3a46de76fc6bd64dd6dd262b8b8a2f42602bebfa29c4a5f52ecd9f336"
+      }
+    },
+    {
+      "condition": "lidar_camera_keep025",
+      "retained_fraction": 0.25,
+      "original_points": 256096,
+      "retained_points": 64024,
+      "original_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "selected_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11",
+      "selected_indices_sha256": "e25b1bed2dbb0384105528997e49fb0ca889cfefe59cb12ade1d6fc2edfb8eaa",
+      "detections": 200,
+      "prediction_sha256": "7ab7b3016351307a67cea8d1e6621154ad23d831663f0bcafc65ff690d5c9e42",
+      "finite_predictions": true,
+      "calibration_metadata_unchanged": true,
+      "input_checks": {
+        "preprocessing_input_check": true,
+        "processed_images_unchanged": true,
+        "processed_points_sha256": "6b873a772bdaf329e09fc66327c5ca1a099dc63201b1444f3a54279109017f11"
+      }
+    }
+  ],
+  "scope": "One shared frame; full 600-frame inference and accuracy pending."
+}

@@ -1,0 +1,42 @@
+{
+  "figures/class_ap_delta.pdf": {
+    "bytes": 22433,
+    "sha256": "d927962d0834fad9585b82bb1a92bc759fe3486c6f5d527931d8a357a2dab2bf"
+  },
+  "figures/class_ap_delta.png": {
+    "bytes": 149800,
+    "sha256": "e15b804ff72c821a7b3eac0281b035bf7937d9c1644a0f83053bb143b66c2e25"
+  },
+  "figures/class_ap_delta.svg": {
+    "bytes": 32213,
+    "sha256": "8b56dc517f890e0f0bb15115386d9e7d7a1c09ce5bec2d90b0b796e5708f78cf"
+  },
+  "figures/comparison.pdf": {
+    "bytes": 17094,
+    "sha256": "5e608ad0a6b65f2409738346772bc0e1a0540bcc8667da1732849d74880e6ce7"
+  },
+  "figures/comparison.png": {
+    "bytes": 156922,
+    "sha256": "302447d3496df705ff46db56e296369edb34b5be06c0a35b50da27140c611a74"
+  },
+  "figures/comparison.svg": {
+    "bytes": 25886,
+    "sha256": "2d469d8b731dde61c43e223edc2a26e365c120efa28350ac9dc7e9ed61ac25df"
+  },
+  "tables/class_ap.csv": {
+    "bytes": 2504,
+    "sha256": "8517938b721604ba9516ab2449a35762880eea04f4b4bf9f0b1f080262711ccd"
+  },
+  "tables/fusion_advantage.csv": {
+    "bytes": 151,
+    "sha256": "9c750f2bfc21e5db514b442997716e6fc351fec55f1f9773d0bfeed311576d2a"
+  },
+  "tables/headline_metrics.csv": {
+    "bytes": 664,
+    "sha256": "6e0cddf36f51425a26f25554edc53aa63511d6f470d9b2d4a5488d56a112ce95"
+  },
+  "tables/point_counts.csv": {
+    "bytes": 490,
+    "sha256": "e824794b725796efdf2e65c1536882e31a5343fad0a47805f045672a83f9db31"
+  }
+}

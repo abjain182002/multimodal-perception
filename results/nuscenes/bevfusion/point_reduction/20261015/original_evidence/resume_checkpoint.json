@@ -1,0 +1,67 @@
+{
+  "status": "POINT_REDUCTION_COMPLETED_AND_RESUME_RECORD_SAVED",
+  "samples_per_condition": 600,
+  "conditions_completed": 6,
+  "protocol_sha256": "f6037b05188e2eb8c0b51ef6c3ac76d99085831866f1ad034b348277cb2f43f1",
+  "inference_report_sha256": "d1fe1b460f367c9bffddbc15811bb8aff82e99b8efccc4128fdc1968a5bf81e7",
+  "evaluation_report_sha256": "f392f55cd7fc2f9e73d3f91c0b60b5f12b5f3ff81c8b2f630eed53ac28a62980",
+  "verified_outputs": [
+    {
+      "condition": "lidar_full",
+      "samples": 600,
+      "predictions_sha256": "9eddac5f5e4adf9db47f6c6f206372d7f5928f8f002e4a8e8b8ebee05c977e40",
+      "input_checks_sha256": "5caaffe2c4f4b8960c5a9d74c71b7da28ca5228c932369c310ac5168ff87d9bc",
+      "metrics_summary_sha256": "cb13bee9c78bde7edf09259379e0270513fd9c3b144652edcce8fa5ba3745c80"
+    },
+    {
+      "condition": "lidar_keep050",
+      "samples": 600,
+      "predictions_sha256": "e2f984156e6fffece27b6eff729b22559239cddeb77e17bff3a450b0aa545e10",
+      "input_checks_sha256": "3907f7d1a990c734cdc58fb24ec1f0d26066a343ec2dc5603cb16ff6a0bae7be",
+      "metrics_summary_sha256": "f351c809a608e68a44f38389df1081777e75ec1914872628364692124bfac729"
+    },
+    {
+      "condition": "lidar_keep025",
+      "samples": 600,
+      "predictions_sha256": "9bf71ba57b16416f4855e94d0c77f4574c9b984f3d01a04d7c3a396d6e95241b",
+      "input_checks_sha256": "43b49e8738409065ed4a2a59981d6d4e0c39219f779bbb2873327eca441632c8",
+      "metrics_summary_sha256": "baf21c2ca490ec205504f33692913793e3cbda35693ce906857896a00ed3999e"
+    },
+    {
+      "condition": "lidar_camera_full",
+      "samples": 600,
+      "predictions_sha256": "c874e0973861e1599a8456d6f63b4a96eb94ac7102f6f6547d5dea27756ec099",
+      "input_checks_sha256": "6375d7892a7a13d12c74330efb4231e1b5307f97a6255e8bef3c6cd4fdaa7fac",
+      "metrics_summary_sha256": "78db20523409d4d9f5ed278a09a1635395fc779e843f1fb2bc70027697fa5f82"
+    },
+    {
+      "condition": "lidar_camera_keep050",
+      "samples": 600,
+      "predictions_sha256": "0115542f19f83122e1c6af83e1c8e59856efb2c7c3831b7a7cfc32900a4ce5bd",
+      "input_checks_sha256": "dc0bc3d6c58db44ed880d00e6a36c0866a6fcecea2d5a8736b159ba2a454d2bc",
+      "metrics_summary_sha256": "2f8601bf9fb5d7bf39587e0d3af2e2ee614c5275adf92c3713248397ada0db4e"
+    },
+    {
+      "condition": "lidar_camera_keep025",
+      "samples": 600,
+      "predictions_sha256": "0828a4a8bcaa458daaa7e208ae5402073fd83c117ba0fc17f3585f6cc6e5dc9f",
+      "input_checks_sha256": "f738c2d9a8b8eb14272a7afc55880279b617634ec5337ca3463880377ce431c2",
+      "metrics_summary_sha256": "0d0c13bac1082990ca6fe66c740b92b89210782963d9498b5d17a8ad7768809a"
+    }
+  ],
+  "reused_input_provenance": {
+    "sensor_restoration_audit.json": {
+      "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/image_darkening600_20261015/sensor_restoration_audit.json",
+      "sha256": "93f92c52b13d7e7bf062a8bb944160a65a6fc8fd775a08be1c2994879ac6f989"
+    },
+    "evaluation_metadata_audit.json": {
+      "drive_path": "/content/drive/MyDrive/Major_Project/nuscenes_full_validation/image_darkening600_20261015/evaluation_metadata_audit.json",
+      "sha256": "0149fd1a9d18bb30ed6074d599ffe07c898fd139fbb78d7e392076f05351233e"
+    }
+  },
+  "next_steps": [
+    "Import compact evidence; generate figures and tables.",
+    "Freeze and validate blur, noise and calibration protocols."
+  ],
+  "scope": "Completed prediction, input-record and metric hashes verified. Sensor contents were not rehashed in this final backup check. Local Colab environment is replaceable."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "POINT_REDUCTION_COMPACT_IMPORT_PASS",
+  "archive": {
+    "status": "UPLOADED_ARCHIVE_HASH_AND_MEMBERS_PASS",
+    "archive": "lidar_point_reduction600_evidence_20261015.zip",
+    "bytes": 4498505,
+    "sha256": "d5086b07200dd4a47668ca95e488129d0d605ce77d8f82fec9fad3a62ad51728",
+    "verified_members": 218,
+    "manifest_listed_members": 217,
+    "raw_predictions_included": false
+  },
+  "all_original_members_preserved": true,
+  "unsafe_or_duplicate_paths": false,
+  "paired_input_record_tokens": 600,
+  "deterministic_selection_hashes_recomputed_for_all_tokens": true,
+  "stored_metric_arithmetic_tolerance": 1e-12,
+  "figures_visually_reviewed": 2,
+  "raw_predictions_and_sensor_tensors_rehashed_on_import": false,
+  "new_ground_truth_replay_on_import": false,
+  "statistical_significance_test": false
+}
