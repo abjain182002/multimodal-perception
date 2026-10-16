@@ -1,0 +1,12 @@
+{
+  "status": "KAGGLE_TRANSFER_INPUT_CONTENTS_PASS",
+  "input_mode": "extracted",
+  "input_location": "/kaggle/input/datasets/abhishekjain18/camera-challenges600-inputs-zip",
+  "samples": 600,
+  "scenes": 150,
+  "sensor_files": 9600,
+  "verified_manifest_members": 9611,
+  "original_zip_hash_checked_here": false,
+  "protocol_sha256": "ab01b793d13d7b2b06dee318cd99ee3d3c39b6d7f04206538052d90c54533d31",
+  "scope": "All manifest-listed file sizes and hashes checked. For automatically extracted input, the original ZIP hash cannot be rechecked without the ZIP. Model smoke pending."
+}

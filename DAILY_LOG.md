@@ -372,3 +372,15 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Preserved original evidence, resume checkpoint, compact two-panel accuracy figure, supporting class heatmap and four CSV tables. Raw predictions/sensors remain on Drive.
 - Recorded the 40–50-page report target and combined-figure policy; blur, noise, calibration, critical literature and monetary cost analysis remain planned. Reconciled outdated case-study/runtime status in guide/findings without changing original metric evidence.
 
+
+
+## 16 October 2026 — blur, noise and calibration challenges
+
+- Froze seven conditions on the existing 600 frames / 150 scenes; CPU transformations and 10,800 calibration checks passed.
+- Restored single-T4 Kaggle inference; retained dependency and sweep-path repairs before successful seven-condition model smoke.
+- Completed 4,200 predictions; input ledgers, raw export hashes and Drive preservation verified.
+- Evaluated all seven against identical 12,318 filtered GT objects. Clean mAP/NDS ×100 68.1018/71.2767; strongest tested blur/noise/yaw mAP losses 2.2198/4.9663/3.4680 points.
+- Imported all 270 original compact evidence members unchanged; rechecked archive/member hashes, stored metric arithmetic and 4,200 input records. No fresh GT replay or raw-prediction rehash on import.
+- Produced one three-panel main-report figure, a supporting class heatmap, vector exports and three CSV tables with a reproducible script.
+- Planned corruption studies complete; literature/failure synthesis, monetary scenarios and camera-only/multi-LiDAR scope remain pending. Report target remains 40–50 pages with combined figures.
+

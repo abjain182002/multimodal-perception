@@ -1,0 +1,136 @@
+
+FIRST SAMPLE KEYS: ['sample_idx', 'token', 'timestamp', 'ego2global', 'images', 'lidar_points', 'lidar_sweeps', 'instances', 'cam_instances']
+FIRST LIDAR RECORD: {
+  "num_pts_feats": 5,
+  "lidar_path": "n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151518047227.pcd.bin",
+  "lidar2ego": [
+    [
+      -0.0005427949945442379,
+      0.9989306926727295,
+      0.046229466795921326,
+      0.9857929944992065
+    ],
+    [
+      -0.9999954700469971,
+      -0.0004056931647937745,
+      -0.0029750114772468805,
+      0.0
+    ],
+    [
+      -0.002953075338155031,
+      -0.046230874955654144,
+      0.9989264011383057,
+      1.840190052986145
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}
+FIRST CAMERA PATHS: {
+  "CAM_FRONT": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151518012404.jpg",
+  "CAM_FRONT_RIGHT": "n008-2018-08-01-15-16-36-0400__CAM_FRONT_RIGHT__1533151518020482.jpg",
+  "CAM_FRONT_LEFT": "n008-2018-08-01-15-16-36-0400__CAM_FRONT_LEFT__1533151518004799.jpg",
+  "CAM_BACK": "n008-2018-08-01-15-16-36-0400__CAM_BACK__1533151518037558.jpg",
+  "CAM_BACK_LEFT": "n008-2018-08-01-15-16-36-0400__CAM_BACK_LEFT__1533151518047405.jpg",
+  "CAM_BACK_RIGHT": "n008-2018-08-01-15-16-36-0400__CAM_BACK_RIGHT__1533151518028113.jpg"
+}
+PRECEDING SWEEPS: 9
+FIRST SWEEP: {
+  "timestamp": 1533151517.997452,
+  "ego2global": [
+    [
+      -0.85884028673172,
+      -0.512243390083313,
+      0.0002764933160506189,
+      593.4276123046875
+    ],
+    [
+      0.512235164642334,
+      -0.8588231801986694,
+      0.006157939322292805,
+      1511.444580078125
+    ],
+    [
+      -0.0029169046320021152,
+      0.005430316086858511,
+      0.9999809861183167,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lidar_points": {
+    "num_pts_feats": null,
+    "lidar_path": "/content/datasets/nuscenes_full/sweeps/LIDAR_TOP/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151517997452.pcd.bin",
+    "lidar2ego": [
+      [
+        -0.0005427949945442379,
+        0.9989306926727295,
+        0.046229466795921326,
+        0.9857929944992065
+      ],
+      [
+        -0.9999954700469971,
+        -0.0004056931647937745,
+        -0.0029750114772468805,
+        0.0
+      ],
+      [
+        -0.002953075338155031,
+        -0.046230874955654144,
+        0.9989264011383057,
+        1.840190052986145
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lidar2sensor": [
+      [
+        1.0,
+        2.5327501134597696e-05,
+        -5.337547918315977e-05,
+        -7.775214180583134e-05
+      ],
+      [
+        -2.5336268663522787e-05,
+        1.0,
+        -0.00016426522051915526,
+        -0.0003102133050560951
+      ],
+      [
+        5.3371317335404456e-05,
+        0.0001642665738472715,
+        1.0,
+        0.00014739348262082785
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "sample_data_token": "fa1c39e5e20745deab12051934ae6d99"
+}
+{
+  "status": "KAGGLE_ORIGINAL_ANNOTATION_AND_TOKENS_PASS",
+  "annotation_path": "/kaggle/input/datasets/abhishekjain18/camera-challenges600-inputs-zip/annotations/nuscenes_camera_availability600_infos_val.pkl",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "samples": 600,
+  "same_ordered_frozen_tokens": true,
+  "sensor_root": "/kaggle/input/datasets/abhishekjain18/camera-challenges600-inputs-zip/dataset",
+  "scope": "Path resolution and actual model smoke remain pending."
+}

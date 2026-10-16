@@ -1,0 +1,151 @@
+LOADING FUSION MODEL...
+/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+10/16 07:34:54 - mmengine - WARNING - No pre-trained weights for SwinTransformer, training start from scratch
+Loads checkpoint by local backend from path: /tmp/camera_challenges/checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+STRICT CHECKPOINT LOAD PASS
+10/16 07:34:56 - mmengine - INFO - ------------------------------
+10/16 07:34:56 - mmengine - INFO - The length of test dataset: 600
+10/16 07:34:56 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+CHECKING ALL PARSED SENSOR PATHS...
+Parsed paths checked: 100/600
+Parsed paths checked: 200/600
+Parsed paths checked: 300/600
+Parsed paths checked: 400/600
+Parsed paths checked: 500/600
+Parsed paths checked: 600/600
+ALL PARSED SENSOR PATHS PASS
+
+CHECKING CONDITION: clean
+{
+  "condition": "clean",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "e1cfe1e4d01031e419cf3d1c72a373a313c73767928d7e82e781f92d23ee3384",
+  "processed_image_sha256": "94c2d95d68a200bab95bed5d1e237db43415cffd25f797976ab90346378f8d3c",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "40bb7860e418316bc39813b93e1dabe275cbeb2988a6b26f8d2e519fae461846",
+  "prediction_sha256": "dbd8aa9a1d1b00f84d7fcfc50d456b591efd9a09cf51a7a57236b4755b041379",
+  "lidar_points_unchanged": true
+}
+
+CHECKING CONDITION: blur_sigma1
+/tmp/camera_challenges/mmdetection3d/projects/BEVFusion/bevfusion/utils.py:120: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+{
+  "condition": "blur_sigma1",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "4f46777d8dfe61d027f575ab25cb2564edf4d3a93d19e6a523fe0f9c256b011c",
+  "processed_image_sha256": "76ab9ba63a7e56fae52dae4bc6fa6a2ba404628716bcb75286e61ab232ac539d",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "40bb7860e418316bc39813b93e1dabe275cbeb2988a6b26f8d2e519fae461846",
+  "prediction_sha256": "82a9c974c26ceaa627de33a55c5b1b572343e3b73043b70fb6dc5a3f0e1be4b0",
+  "lidar_points_unchanged": true
+}
+
+CHECKING CONDITION: blur_sigma2
+{
+  "condition": "blur_sigma2",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "8253ae0e82864a40d6e310df94cf940ae85d75fc8820b33887325954408a20c6",
+  "processed_image_sha256": "283d7465777bf0f688a1ab86ee46cfae824ca505dee360be645259b4e0f1cb16",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "40bb7860e418316bc39813b93e1dabe275cbeb2988a6b26f8d2e519fae461846",
+  "prediction_sha256": "0982e6427027eb7c5d810e685607f3f53040db3c2b3575308dff368583a5207b",
+  "lidar_points_unchanged": true
+}
+
+CHECKING CONDITION: noise_std10
+{
+  "condition": "noise_std10",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "b9e0066edc19102049457ea320a2f09e2bd5fbc2aa84801cde608ffe603a5aee",
+  "processed_image_sha256": "510f21f10a18d99e0f1ca86f8f5fe63281e154e9054891d396840ee7fb48ff97",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "40bb7860e418316bc39813b93e1dabe275cbeb2988a6b26f8d2e519fae461846",
+  "prediction_sha256": "f3add341d090f751741db8a6439f6a7c203a73b52db766317d8a7677cd4f96a0",
+  "lidar_points_unchanged": true
+}
+
+CHECKING CONDITION: noise_std25
+{
+  "condition": "noise_std25",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "59e49e096b5d9486653c335013c4fe5de93cb789b56e272c3296d6bcb60d8a9c",
+  "processed_image_sha256": "4f596e128c1a79bcaf8b3db96f848636cb32ef011e493c9b0e19185873244783",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "40bb7860e418316bc39813b93e1dabe275cbeb2988a6b26f8d2e519fae461846",
+  "prediction_sha256": "7fb5d3d75ad142e960f92fd73cb172a877c5f0339b898a29588ff8c88069ce76",
+  "lidar_points_unchanged": true
+}
+
+CHECKING CONDITION: calibration_yaw1
+{
+  "condition": "calibration_yaw1",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "e1cfe1e4d01031e419cf3d1c72a373a313c73767928d7e82e781f92d23ee3384",
+  "processed_image_sha256": "94c2d95d68a200bab95bed5d1e237db43415cffd25f797976ab90346378f8d3c",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "ec91e6d9113fe6a59e105c6374a1bdb944c268bd7b3d24e69c7cdb95094c9eca",
+  "prediction_sha256": "f5233a58f1a5d3212999020bfc1d040515063f7a261434d12564788ec58779ea",
+  "lidar_points_unchanged": true
+}
+
+CHECKING CONDITION: calibration_yaw3
+{
+  "condition": "calibration_yaw3",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "detections": 200,
+  "finite_predictions": true,
+  "raw_image_sha256": "e1cfe1e4d01031e419cf3d1c72a373a313c73767928d7e82e781f92d23ee3384",
+  "processed_image_sha256": "94c2d95d68a200bab95bed5d1e237db43415cffd25f797976ab90346378f8d3c",
+  "processed_points_sha256": [
+    "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a"
+  ],
+  "metadata_sha256": "3ad6aa2b60fd4d4087d7b168a96bd88f708f4a87b1fa1a6f5ff8a6b7fd15ba4e",
+  "prediction_sha256": "c8e28ae5dc832ce6e81298a18de4284087c329aa3700d0da7d75cc3788319cf6",
+  "lidar_points_unchanged": true
+}
+
+KAGGLE_SEVEN_CONDITION_MODEL_SMOKE_PASS

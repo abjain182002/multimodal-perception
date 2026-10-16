@@ -1,0 +1,51 @@
+{
+  "status": "CAMERA_CHALLENGE_CONDITION_EVALUATION_PASS",
+  "condition": "calibration_yaw3",
+  "samples": 600,
+  "scenes": 150,
+  "filtered_gt_objects": 12318,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "exact_prediction_gt_token_match": true,
+  "protocol_sha256": "ab01b793d13d7b2b06dee318cd99ee3d3c39b6d7f04206538052d90c54533d31",
+  "prediction_sha256": "c9f343093c976972bc858d46f870bfdba7d2ecb3d7c5e61a788c4cc49fec5cb1",
+  "evaluator_source_sha256": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+  "nuscenes_devkit": "1.2.0",
+  "eval_config": "detection_cvpr_2019",
+  "mean_ap": 0.6463385832997005,
+  "nd_score": 0.693172113720756,
+  "delta_map_points_vs_clean": -3.4679725348077617,
+  "delta_nds_points_vs_clean": -1.9594909917587833,
+  "class_ap": {
+    "car": 0.8463213686970418,
+    "truck": 0.6296038750892143,
+    "bus": 0.7338823081036099,
+    "trailer": 0.4942745434678154,
+    "construction_vehicle": 0.26944499411522904,
+    "pedestrian": 0.8645106805404543,
+    "motorcycle": 0.6317157212115299,
+    "bicycle": 0.5588416786865595,
+    "traffic_cone": 0.7248618242183013,
+    "barrier": 0.7099288388672498
+  },
+  "tp_errors": {
+    "trans_err": 0.29124307087543116,
+    "scale_err": 0.2541855222514842,
+    "orient_err": 0.3051288268820327,
+    "vel_err": 0.26453711982725814,
+    "attr_err": 0.1848772394547366
+  },
+  "metrics_summary_sha256": "17d589317500d7026b64e545eee1df6ba69a79edaf979b38883398fd2a33432c",
+  "metrics_details_sha256": "f8984b8c65d3c18e3c56cc2132e4a9264f440ec66144eeb529b41b23fba71d0f",
+  "scope": "nuScenes detection evaluation on the frozen 600-frame subset. Synthetic conditions; not full-validation or physical-system robustness."
+}

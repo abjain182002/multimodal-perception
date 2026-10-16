@@ -1,0 +1,1083 @@
+{
+  "protocol_sha256": "ab01b793d13d7b2b06dee318cd99ee3d3c39b6d7f04206538052d90c54533d31",
+  "members": {
+    "study/annotation_input_audit.json": {
+      "bytes": 527,
+      "sha256": "707b87dc2a612faaccfe04d2728ffcf50fed0b98baa9625f9d1866ba39013a04"
+    },
+    "study/annotation_path_audit.json": {
+      "bytes": 800,
+      "sha256": "e1f7c3118e0aa2ad10eaed80f5fa4ff6fecda53107a9d3f9e9190243f72a8acf"
+    },
+    "study/annotation_path_changes.json": {
+      "bytes": 2914321,
+      "sha256": "01e554cee560d8a9aabba21b2ac76fda425a3ce4c603031341a793eb7ab59053"
+    },
+    "study/checkpoint_receipt.json": {
+      "bytes": 460,
+      "sha256": "403a056a88d3188c0957b4e73dd2667dde6e943085dbab86b81b8baf26016404"
+    },
+    "study/cpu_validation/corruptions.py": {
+      "bytes": 2865,
+      "sha256": "1f81e8fd5979b579ea984bf21b2bce453c29a7cf1e50fe9c072aa1e078a55dd9"
+    },
+    "study/cpu_validation/cpu_validation_audit.json": {
+      "bytes": 1919,
+      "sha256": "b9374f8232d922f64988530d74b3d5cc1e3ad522ed1b76a4da685a1326357447"
+    },
+    "study/cpu_validation/validate_cpu.py": {
+      "bytes": 7789,
+      "sha256": "af1acff6f49dd555942ecf30a5bde5aeb8210b548e1d4dfce0a00e4647628853"
+    },
+    "study/cpu_validation/validation_20261016T045732334008Z.log": {
+      "bytes": 2460,
+      "sha256": "6fa29ad58d2dd84a3b495dfc9f016ed775b1f950646ad9c0886c9d7468b94ee7"
+    },
+    "study/inference/blur_sigma1/inference_audit.json": {
+      "bytes": 951,
+      "sha256": "aee9bb26272febc6e6ceebe305641fd7036146c41c88766c1911725e61a83db6"
+    },
+    "study/inference/blur_sigma1/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "d9d452a8f741f0b9c364ccec61bbcff4bcd65f71ba99040231ea7474526579a9"
+    },
+    "study/inference/blur_sigma1/progress.json": {
+      "bytes": 546,
+      "sha256": "ac764d4e0cad5004a5894f4b4cef53d53a4ab85d6a5e390b6cc806be1493abc7"
+    },
+    "study/inference/blur_sigma1/protocol.json": {
+      "bytes": 655,
+      "sha256": "3dcbcfa04d30afb1db575b05221c5585c2972707af51e032c32e285578f846c3"
+    },
+    "study/inference/blur_sigma2/inference_audit.json": {
+      "bytes": 951,
+      "sha256": "2a387f9371433eea4413ed5b8c9f3a13a7d363ef3cf11a3f662ca14646c36736"
+    },
+    "study/inference/blur_sigma2/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "70f32aa7efa3bd4537e823ac0fcb3367d6b2adf67d16b41eaae9e099b99b34d6"
+    },
+    "study/inference/blur_sigma2/progress.json": {
+      "bytes": 546,
+      "sha256": "18375fb36311e56df61f0eba49c8f657ca96eecd5e8f6cbfab05df2fc63bd21a"
+    },
+    "study/inference/blur_sigma2/protocol.json": {
+      "bytes": 656,
+      "sha256": "6360383fe5f5799137cbfd40b1f576892c050d4c363c8a66d0f32be772cd9cb8"
+    },
+    "study/inference/calibration_yaw1/inference_audit.json": {
+      "bytes": 961,
+      "sha256": "3ceb45479f50de104f33382f500a32c24c9d0d9fcc4299fcde6750e95be89cb3"
+    },
+    "study/inference/calibration_yaw1/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "9eda30d5ea7e7293891ee94a31c77878cca35f5737c9b789823bf9da05ff35af"
+    },
+    "study/inference/calibration_yaw1/progress.json": {
+      "bytes": 551,
+      "sha256": "ac895d81cc5e0b3a7297f1ebdad71634231247464de89d1bf098e5260f4c8ed5"
+    },
+    "study/inference/calibration_yaw1/protocol.json": {
+      "bytes": 644,
+      "sha256": "29b45a8859772de4d435fa0ce31dae913a583010b2dd1775d23eae0b5e9693ac"
+    },
+    "study/inference/calibration_yaw3/inference_audit.json": {
+      "bytes": 961,
+      "sha256": "6cd986e48f9b3fe45c38894beb13ca253e2e061c6dc0598065e25b5bff5782d7"
+    },
+    "study/inference/calibration_yaw3/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "a214be49d31ef85bc4e26cc819ed43e6ae6fbedd34a8e93c256f60504882037c"
+    },
+    "study/inference/calibration_yaw3/progress.json": {
+      "bytes": 551,
+      "sha256": "84f28bbbed0876d4cbdeddd737ecc6edc861fc77dcbca0d24e94a41e5222bb55"
+    },
+    "study/inference/calibration_yaw3/protocol.json": {
+      "bytes": 644,
+      "sha256": "398481ccee7ac6f0fa48cb20db750f244afefa7622b3a4863d5d0647c6374574"
+    },
+    "study/inference/clean/inference_audit.json": {
+      "bytes": 939,
+      "sha256": "54b719684bd5883cd75ef6f21bc11d4828714a63f9ba4d233ca9994274183bdc"
+    },
+    "study/inference/clean/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "f5277dd5ca10cb19c86c7c725fe63c2c7ea9b8877d66d68c9635c7ed55997a70"
+    },
+    "study/inference/clean/progress.json": {
+      "bytes": 540,
+      "sha256": "1d10ab1600055cee50ae981e3ff5de498ce544e7ec69291d52a3528c957e81fb"
+    },
+    "study/inference/clean/protocol.json": {
+      "bytes": 603,
+      "sha256": "eca162755002eea1c8a34ba3913a52df4e4da4ac6be4c500567fc8c78321f1a0"
+    },
+    "study/inference/completed_conditions.json": {
+      "bytes": 6899,
+      "sha256": "da606a45aca34ff03ebdf9adc80390ae4f540368d2c107f9c97e5af4f9510282"
+    },
+    "study/inference/inference.log": {
+      "bytes": 357129,
+      "sha256": "07ddf4f6205e8b5a42c138d51186928532c24c9062d2ba32409404f5eafaf8ec"
+    },
+    "study/inference/inference.py": {
+      "bytes": 17807,
+      "sha256": "b170a37ccad5a4db753fe112beb0a8b7c55f05c5eaeb4ae3618a0bf8d9e55b9f"
+    },
+    "study/inference/noise_std10/inference_audit.json": {
+      "bytes": 951,
+      "sha256": "9fb616a8ce50665da53036fdd273053b6be63294bc498e84f9fa1cfe4144b760"
+    },
+    "study/inference/noise_std10/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "95bab14b8d8e73e8df7dad8bc69caaaefc0ee608c62927bdf05ee15f4ac54f30"
+    },
+    "study/inference/noise_std10/progress.json": {
+      "bytes": 546,
+      "sha256": "5e391ffade015d694edbf56f158afbfc5573fc96d466cfe5924e1b01075aa368"
+    },
+    "study/inference/noise_std10/protocol.json": {
+      "bytes": 653,
+      "sha256": "1cb24aca18e1cdf5a62da38f95dd6b7064f787027594290671bdc11e2b342598"
+    },
+    "study/inference/noise_std25/inference_audit.json": {
+      "bytes": 951,
+      "sha256": "16e233a775ffc5ede86e9c708b063d5fb1a38203a46cdf6b37deda2c61a595a6"
+    },
+    "study/inference/noise_std25/input_checks.json": {
+      "bytes": 530293,
+      "sha256": "3d31af7695c8c366fc54ebbe00b6281eaedeafa8889ff5f86f5fbb952e1e3b58"
+    },
+    "study/inference/noise_std25/progress.json": {
+      "bytes": 546,
+      "sha256": "d0760b0bd598f0f3592e88f2587024d0021cf562eef90843f4aa1849b58a2bfb"
+    },
+    "study/inference/noise_std25/protocol.json": {
+      "bytes": 653,
+      "sha256": "22b1d094c3f36f815f3a6dd719a0169b7f60e2101492b82be4048ca2fbb4f11e"
+    },
+    "study/inference/parsed_sensor_paths.json": {
+      "bytes": 1615862,
+      "sha256": "c8b5606b0ac84a761073a07a6867009f6ddd5e323ee9e6a217a60e0573b6befa"
+    },
+    "study/inference/resolved_config.py": {
+      "bytes": 29349,
+      "sha256": "72081c4c9c667c78cf156e308e1b0632cf1717400d38afebbfc4f6b02bf4ff33"
+    },
+    "study/inference/seven_condition_inference.json": {
+      "bytes": 7804,
+      "sha256": "e427530ae347b10e6beee5b30e621ad6f7e938effb08f0d7f897d9be7c377214"
+    },
+    "study/protocol.json": {
+      "bytes": 4053,
+      "sha256": "ab01b793d13d7b2b06dee318cd99ee3d3c39b6d7f04206538052d90c54533d31"
+    },
+    "study/required_sensor_files.txt": {
+      "bytes": 819059,
+      "sha256": "008308a36dabec38e2f3a7647fe866ae4a77c6f59c7708b84c891fc8f06f6dbc"
+    },
+    "study/sample_tokens.txt": {
+      "bytes": 19800,
+      "sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f"
+    },
+    "study/scene_selection.json": {
+      "bytes": 72067,
+      "sha256": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9"
+    },
+    "study/selected_input_manifest.json": {
+      "bytes": 1009862,
+      "sha256": "320789fff22aa126aff7b516a05d601410c1047fe0bb538acee4efcb98e39105"
+    },
+    "study/smoke/resolved_config.py": {
+      "bytes": 29495,
+      "sha256": "959c7b1ae9102f59c3b5ed7ea3150024f44b43c6cfde609937c535d93a7ddd0a"
+    },
+    "study/smoke/smoke.log": {
+      "bytes": 3538,
+      "sha256": "eb88375da164366f93552e433e5758e726233b09d496e81dddd0d3b93c828f6c"
+    },
+    "study/smoke/smoke.py": {
+      "bytes": 10615,
+      "sha256": "a097b2b8cd49179752e0b7af1712b1808c84571be59fd1c16d0293d01216e5bc"
+    },
+    "study/smoke_v2/parsed_sensor_paths.json": {
+      "bytes": 1615862,
+      "sha256": "c8b5606b0ac84a761073a07a6867009f6ddd5e323ee9e6a217a60e0573b6befa"
+    },
+    "study/smoke_v2/resolved_config.py": {
+      "bytes": 29349,
+      "sha256": "72081c4c9c667c78cf156e308e1b0632cf1717400d38afebbfc4f6b02bf4ff33"
+    },
+    "study/smoke_v2/smoke.log": {
+      "bytes": 7289,
+      "sha256": "198ff10e6d6bc8e2b5bb9d9e3fdb28ed7e611086bf9a90463685620c73983ff7"
+    },
+    "study/smoke_v2/smoke.py": {
+      "bytes": 11501,
+      "sha256": "f113ed5dc41e98dc148f048fa266048aa21d95083b7da4b62752103ad3cb502f"
+    },
+    "study/smoke_v2/smoke_audit.json": {
+      "bytes": 5778,
+      "sha256": "97e14bd1ce071c17abfc39fbe547b16101fb0fe75b581329fa9a7bb750d66ca4"
+    },
+    "setup/all_in_one_operations_check.py": {
+      "bytes": 3335,
+      "sha256": "1d5a05c04aaf8ddae4ac11a43aef7d4dcef047988695dd9e16a682f7d3051b1d"
+    },
+    "setup/all_in_one_setup.log": {
+      "bytes": 78962,
+      "sha256": "98cb7ce86b4c1b6eabbdac382dba8ffba1c3f7f8bbdda7bfd467b5507d82659d"
+    },
+    "setup/annotation_path_resolution.log": {
+      "bytes": 1028,
+      "sha256": "b369a0133552b3a53c04507a60978b430ae9ad6ba13358771118cc735e4fa36c"
+    },
+    "setup/checkpoint_annotation_inspection.log": {
+      "bytes": 3468,
+      "sha256": "0e0a72b5459974c8774630fd45b880be9ca6a8b6297bc1df50602534654b84ce"
+    },
+    "setup/constraints.txt": {
+      "bytes": 324,
+      "sha256": "3fda95ce1b4fe1d3824883dae0b614bf568c6987f38a392864bb20760368ef48"
+    },
+    "setup/cuda_operations_audit.json": {
+      "bytes": 1296,
+      "sha256": "c359ab3f35adb9e472fd7fcb9f0c715fb90cfc211b7c57e4ea3e84bd3ad6f586"
+    },
+    "setup/dependency_repair.log": {
+      "bytes": 4366,
+      "sha256": "8dec2e865529631e99d2affe0b4440aa2053736d74fa485aa5924c2146089e19"
+    },
+    "setup/environment.txt": {
+      "bytes": 2529,
+      "sha256": "4279842e4425e190b222ac65ca9622e51b705881b964d5dd42e64b1fa8ecf8b3"
+    },
+    "setup/inspect_annotation_paths.py": {
+      "bytes": 1676,
+      "sha256": "b4de08403e11b5de776b08fb5adc00151b1b173776d9633a57cb71bdcb1c24a3"
+    },
+    "setup/resolve_annotation_paths.py": {
+      "bytes": 5360,
+      "sha256": "da5ae946a74acc00307bb034959a90295a22dc963e8e223c968f31b49a482837"
+    },
+    "setup/transfer_input_audit.json": {
+      "bytes": 584,
+      "sha256": "8beb2cc20d310e91040fcef99508568b6fa960e05c3fa49ec3dd3f81f2aba7be"
+    },
+    "evaluation_setup/metadata_audit.json": {
+      "bytes": 3500,
+      "sha256": "4c81a0243939af84459c9568920cb7ea63b938b9d075d118fdba0375b52d2e22"
+    },
+    "evaluation_setup/preparation.log": {
+      "bytes": 10070,
+      "sha256": "c3dbad861c09bcd4e28a3b2f35d8bc5e759b42350e94c78e2df62f1f3718147b"
+    },
+    "evaluation/blur_sigma1/evaluation_audit.json": {
+      "bytes": 1902,
+      "sha256": "1bb03424455282167e631c88c74ebc1b11c66efc1e9d4dd1f2a72db0ee1265ea"
+    },
+    "evaluation/blur_sigma1/metrics_details.json": {
+      "bytes": 767184,
+      "sha256": "b2ba1aed0eb202f26af3101bf1f3744b89d015e66942da6072c8a23d39b53e1d"
+    },
+    "evaluation/blur_sigma1/metrics_summary.json": {
+      "bytes": 5198,
+      "sha256": "c01853c56262737647c427704f4cd0a22d98e621dd073800af61f41fdaf4bb6a"
+    },
+    "evaluation/blur_sigma1/plots/barrier_pr.pdf": {
+      "bytes": 15047,
+      "sha256": "c3dd3f8a0d51f24651890ad956b5be4cff2c35fe47f5005f5b6761d61b4f82d3"
+    },
+    "evaluation/blur_sigma1/plots/barrier_tp.pdf": {
+      "bytes": 17218,
+      "sha256": "15c8b04bdebe7c4aea0fcedb0af02b2ea002cfa204bf6a1cac6109cdb57be623"
+    },
+    "evaluation/blur_sigma1/plots/bicycle_pr.pdf": {
+      "bytes": 14293,
+      "sha256": "0a063c489c8b9567ac9c7041565ca127e318eefdd52e9fb81428f9a99dc34d53"
+    },
+    "evaluation/blur_sigma1/plots/bicycle_tp.pdf": {
+      "bytes": 18217,
+      "sha256": "9cf6c1b684fce4701edecdbbffd9556ac2b2ec5a2f45dc9f2285f8eff5d6705b"
+    },
+    "evaluation/blur_sigma1/plots/bus_pr.pdf": {
+      "bytes": 14677,
+      "sha256": "0aad2a190a789128c92480cae4b8d774e8bbd6c958d9348c14ca65e07eed826b"
+    },
+    "evaluation/blur_sigma1/plots/bus_tp.pdf": {
+      "bytes": 19325,
+      "sha256": "47fa4fab1552c71387e0c9426be7a969b7e066a22e85518b9804aa0422e85528"
+    },
+    "evaluation/blur_sigma1/plots/car_pr.pdf": {
+      "bytes": 15097,
+      "sha256": "c627d7f829f67f98cbe6d7201f671160ad6fbdce6a43ddf68a6789c4bf98a069"
+    },
+    "evaluation/blur_sigma1/plots/car_tp.pdf": {
+      "bytes": 19333,
+      "sha256": "a1b904293961e69bc035a64a57f024d63737d7e5cdd0b3a6d08f45ac8ee78970"
+    },
+    "evaluation/blur_sigma1/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14744,
+      "sha256": "ca0cc9adb65cd9fa4e1903f167130ec90e5d186b49fdd2b001196f21ddb14fa9"
+    },
+    "evaluation/blur_sigma1/plots/construction_vehicle_tp.pdf": {
+      "bytes": 17712,
+      "sha256": "423a584465d5e8eecd30a9f5525eabdb2bad60d79aa2ee970c501ba2f5b35c9e"
+    },
+    "evaluation/blur_sigma1/plots/dist_pr_0.5.pdf": {
+      "bytes": 21402,
+      "sha256": "60994dff0c9cab0746548e26a85a5762c3a6b4d67d1ed393d336a348ad1587ba"
+    },
+    "evaluation/blur_sigma1/plots/dist_pr_1.0.pdf": {
+      "bytes": 21815,
+      "sha256": "1644dc4981111393e3a2932c78aaff1fcf05230531c77f969bcc7df3703fa927"
+    },
+    "evaluation/blur_sigma1/plots/dist_pr_2.0.pdf": {
+      "bytes": 21975,
+      "sha256": "0737d9237bdffb0d6139b4664de6810a1cffbb945b97cb6ca0d39d7879a2381f"
+    },
+    "evaluation/blur_sigma1/plots/dist_pr_4.0.pdf": {
+      "bytes": 21966,
+      "sha256": "ab697dda618f4ca1cfd1e72415968a3bb09277c66b476a5d02c252a78b0c4e75"
+    },
+    "evaluation/blur_sigma1/plots/motorcycle_pr.pdf": {
+      "bytes": 13896,
+      "sha256": "e29836c9a88c6072124fcc837c06e3da279a69b9ea0e3e7e601ddcdf1fccc9e3"
+    },
+    "evaluation/blur_sigma1/plots/motorcycle_tp.pdf": {
+      "bytes": 18591,
+      "sha256": "ad89d753214bf97d0e880302011c2705b3e1b998b1e3b23b84c5a96e14d446da"
+    },
+    "evaluation/blur_sigma1/plots/pedestrian_pr.pdf": {
+      "bytes": 14820,
+      "sha256": "724948d9bfda061eb00f430f568353994990d7f9553162101af67b6ebeb21c62"
+    },
+    "evaluation/blur_sigma1/plots/pedestrian_tp.pdf": {
+      "bytes": 19077,
+      "sha256": "af13b07d9791d4e780c02b5e8f257aeb9e56f92776d9d9bf02e3493e4609946e"
+    },
+    "evaluation/blur_sigma1/plots/summary.pdf": {
+      "bytes": 84166,
+      "sha256": "6dabd9b8f78fc62ef3b03db613005d15a2ed2bb4a0947e2633bbedf42ca44919"
+    },
+    "evaluation/blur_sigma1/plots/traffic_cone_pr.pdf": {
+      "bytes": 15419,
+      "sha256": "07022f3535295585586018b73856b6d0ada87efcc87072a10cb55fb9a42b9817"
+    },
+    "evaluation/blur_sigma1/plots/traffic_cone_tp.pdf": {
+      "bytes": 16311,
+      "sha256": "8555e0acebd9f69b0f0a2363516d2bd3e08b457b95d70705f6a7e7941c5b4d06"
+    },
+    "evaluation/blur_sigma1/plots/trailer_pr.pdf": {
+      "bytes": 14298,
+      "sha256": "2028a1e0f876ea8ca01f8a452e692e2c28ef341dea2131341387c12316b46e02"
+    },
+    "evaluation/blur_sigma1/plots/trailer_tp.pdf": {
+      "bytes": 17399,
+      "sha256": "b25413c8af8e1c80a0b2fd7c4cfef2cb96debd9be85c581c10d8ca8524451016"
+    },
+    "evaluation/blur_sigma1/plots/truck_pr.pdf": {
+      "bytes": 15144,
+      "sha256": "fb2b4781beed990420a9437bfa8793bb9e43f87aa633066c7ef718187ac5c49b"
+    },
+    "evaluation/blur_sigma1/plots/truck_tp.pdf": {
+      "bytes": 18666,
+      "sha256": "fb65b89b45141d461c7a57d0da841fb926e09bbde3b4d425f2d7876ad93d8fc2"
+    },
+    "evaluation/blur_sigma2/evaluation_audit.json": {
+      "bytes": 1893,
+      "sha256": "7126643fdfe94be27895249be99dd180f43e5fcd3c92e02fe1fbe9ada2884b90"
+    },
+    "evaluation/blur_sigma2/metrics_details.json": {
+      "bytes": 767279,
+      "sha256": "b0bbf0ca6fcb7f3ba51961691fa043869c1bfe595b4e556861a625c2893f91c5"
+    },
+    "evaluation/blur_sigma2/metrics_summary.json": {
+      "bytes": 5194,
+      "sha256": "a6428d12d2fac17189328ab59f078601b86e99460769bd0d875ff47cbf70aaa1"
+    },
+    "evaluation/blur_sigma2/plots/barrier_pr.pdf": {
+      "bytes": 14977,
+      "sha256": "0d4c6ca2908a7471ccd847d03d6d82d95913570d6f9f0621686248075821d2f7"
+    },
+    "evaluation/blur_sigma2/plots/barrier_tp.pdf": {
+      "bytes": 17185,
+      "sha256": "8e21ed07ba828c00ff2dc0c172beb7ca1b98a4426525519cf0f7e18cb6c4e5b7"
+    },
+    "evaluation/blur_sigma2/plots/bicycle_pr.pdf": {
+      "bytes": 13961,
+      "sha256": "a66bffbd01583b1f4779f25ceac99dc21a24b716c5fadd682fd7b98d0c17e407"
+    },
+    "evaluation/blur_sigma2/plots/bicycle_tp.pdf": {
+      "bytes": 18071,
+      "sha256": "49575c875533e477ddeb60a5a101d0a10564935832e801fe2ca82356e76387b8"
+    },
+    "evaluation/blur_sigma2/plots/bus_pr.pdf": {
+      "bytes": 14751,
+      "sha256": "788026c84b1e2eee873dca38836204e19a4f125104507dc28b680125a135b133"
+    },
+    "evaluation/blur_sigma2/plots/bus_tp.pdf": {
+      "bytes": 19484,
+      "sha256": "7682d7a9c179c4a735582ee1da1c558e7559f351e7fe65e2dbffcdc36827701f"
+    },
+    "evaluation/blur_sigma2/plots/car_pr.pdf": {
+      "bytes": 15078,
+      "sha256": "d11509d8eb164e23b78043c92151d64e6695e8556928af61f07aa21330a4e3fe"
+    },
+    "evaluation/blur_sigma2/plots/car_tp.pdf": {
+      "bytes": 19368,
+      "sha256": "5b82d2949c1781430a667fc5c412ef7c1df015ed8594ff775bbd5aa195f48357"
+    },
+    "evaluation/blur_sigma2/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14724,
+      "sha256": "3c1cc55c9a703354a52bf10d988727fc7f1706cc0a34b8edf19692da8b5e1f6c"
+    },
+    "evaluation/blur_sigma2/plots/construction_vehicle_tp.pdf": {
+      "bytes": 18460,
+      "sha256": "fa62ddeb4f9996abada2674a52d532c171231e4862884f17b6343c2cbfe895fe"
+    },
+    "evaluation/blur_sigma2/plots/dist_pr_0.5.pdf": {
+      "bytes": 21350,
+      "sha256": "07d47dffad33670e2cd92d1845058402d7749f6de6366be47d9b68b42a000eef"
+    },
+    "evaluation/blur_sigma2/plots/dist_pr_1.0.pdf": {
+      "bytes": 21784,
+      "sha256": "4a0333b03668a0ec1bea2190ff65be7d18445c01392d5098ac9159779fd57cdb"
+    },
+    "evaluation/blur_sigma2/plots/dist_pr_2.0.pdf": {
+      "bytes": 21994,
+      "sha256": "a34a57351cea9945f21c47c1b42d86681c9a16f843a9b74f079dfcad6c98c2da"
+    },
+    "evaluation/blur_sigma2/plots/dist_pr_4.0.pdf": {
+      "bytes": 21979,
+      "sha256": "91b2e1d7d079dbb217e1fbc43544ccc364887d35257186fc6b4eab21c8a1fca6"
+    },
+    "evaluation/blur_sigma2/plots/motorcycle_pr.pdf": {
+      "bytes": 13908,
+      "sha256": "8c7377b968bc24589dc5b40bb1f39e4822218a189a36e7613583e5355b5e636f"
+    },
+    "evaluation/blur_sigma2/plots/motorcycle_tp.pdf": {
+      "bytes": 18420,
+      "sha256": "e427ce61d2367ff3cb05b328ef0f08a7d072c8aa4c05f27827cfb0b427b129ad"
+    },
+    "evaluation/blur_sigma2/plots/pedestrian_pr.pdf": {
+      "bytes": 14444,
+      "sha256": "62df0ae5acc402f92fae4292384e95154c96e225e01fdffdb9af9e2d48ecd59f"
+    },
+    "evaluation/blur_sigma2/plots/pedestrian_tp.pdf": {
+      "bytes": 19093,
+      "sha256": "77696cb0302a957fc44402a7bb3bb9d3b3c24d4f3810d9993b42c9275593e6d3"
+    },
+    "evaluation/blur_sigma2/plots/summary.pdf": {
+      "bytes": 84223,
+      "sha256": "1389ae306e3a3e5ea25e81efab0bb3dca7a0d682045d175497afc336efd336da"
+    },
+    "evaluation/blur_sigma2/plots/traffic_cone_pr.pdf": {
+      "bytes": 15839,
+      "sha256": "31627f867b1e863140b70f83f5bf07440221468eb05c69a9983c2c17d9003b36"
+    },
+    "evaluation/blur_sigma2/plots/traffic_cone_tp.pdf": {
+      "bytes": 16302,
+      "sha256": "d65e3460eb792e95d54a4135a6e3f5e810e7f450bfd448f287b244130080691a"
+    },
+    "evaluation/blur_sigma2/plots/trailer_pr.pdf": {
+      "bytes": 14275,
+      "sha256": "7d23e06cbb4f884e01b660661b83107235c5745622567055343d875a675135a8"
+    },
+    "evaluation/blur_sigma2/plots/trailer_tp.pdf": {
+      "bytes": 17560,
+      "sha256": "41cd77cce5d10f421a7539d991666e3c2574a892ae9dc47780250084acd722cb"
+    },
+    "evaluation/blur_sigma2/plots/truck_pr.pdf": {
+      "bytes": 15211,
+      "sha256": "c68f1ad2788c17ba6f3b27329908203b913fa54675efb178862974fbb17c40cf"
+    },
+    "evaluation/blur_sigma2/plots/truck_tp.pdf": {
+      "bytes": 18162,
+      "sha256": "06dc57625ae1236fe280ce679089f62386cdbbe24505287d74275e313f388ef3"
+    },
+    "evaluation/calibration_yaw1/evaluation_audit.json": {
+      "bytes": 1902,
+      "sha256": "ab791ca5d34d89a6f793dce1ed4813b76dd470d7eca780e61b12d959c02e1db7"
+    },
+    "evaluation/calibration_yaw1/metrics_details.json": {
+      "bytes": 766124,
+      "sha256": "6c805599e3181310623229caedd14c6e93fa0527fa5002ab074dc92aab981050"
+    },
+    "evaluation/calibration_yaw1/metrics_summary.json": {
+      "bytes": 5198,
+      "sha256": "d7a8f1ae675129c81ec9b37eab22b9bcc8f1a4c035d7ee95a5f1d8f4ecf099f1"
+    },
+    "evaluation/calibration_yaw1/plots/barrier_pr.pdf": {
+      "bytes": 14483,
+      "sha256": "3bc10bd74e6b9aa2b4db6a9cf4aad3bca61e732c40392187c90a7667ecbc3041"
+    },
+    "evaluation/calibration_yaw1/plots/barrier_tp.pdf": {
+      "bytes": 17194,
+      "sha256": "fc11c823c7bbfd463795022a5e08553fc3936d9309c41bde904267da32ec2d50"
+    },
+    "evaluation/calibration_yaw1/plots/bicycle_pr.pdf": {
+      "bytes": 14147,
+      "sha256": "22ebc90c346cc2a3c1e20237fcfef05c2f005ed5971a77955dff0128e3a1ac52"
+    },
+    "evaluation/calibration_yaw1/plots/bicycle_tp.pdf": {
+      "bytes": 18084,
+      "sha256": "4550a19bf2894c09dd078e4e1e825f2b06318c6a5712b34d43f0e86d7fdb935a"
+    },
+    "evaluation/calibration_yaw1/plots/bus_pr.pdf": {
+      "bytes": 14332,
+      "sha256": "c57e357e1baa391e528d3b37f0705cadf1ddab00d8ac51e940568fa5f222d6c7"
+    },
+    "evaluation/calibration_yaw1/plots/bus_tp.pdf": {
+      "bytes": 18917,
+      "sha256": "7954da58ca0b2d94c2ef358787071875c06c27d2339bfe8712bf2d4bfea2ad1d"
+    },
+    "evaluation/calibration_yaw1/plots/car_pr.pdf": {
+      "bytes": 14994,
+      "sha256": "39165cb0fb3b7b5b5f2116621e90433c2c9b7db436af2191611e1e390d4facc2"
+    },
+    "evaluation/calibration_yaw1/plots/car_tp.pdf": {
+      "bytes": 18941,
+      "sha256": "a017387c64d797b67683246c5274176878eda4d6b63c3259d912bd8f2bd7aae5"
+    },
+    "evaluation/calibration_yaw1/plots/construction_vehicle_pr.pdf": {
+      "bytes": 15209,
+      "sha256": "b45e38cf4cedb0522a8218c5ca5899324fcb1e9e76931fb2f1e47c0ffc98da07"
+    },
+    "evaluation/calibration_yaw1/plots/construction_vehicle_tp.pdf": {
+      "bytes": 18135,
+      "sha256": "7a0bfb130a3bca6223a31f77f6fa8670bf528bf0815322141e06a5d3600ea876"
+    },
+    "evaluation/calibration_yaw1/plots/dist_pr_0.5.pdf": {
+      "bytes": 21266,
+      "sha256": "39e27ec3ba7032557bf2f752f79457e03ccc27561e068124e44e6c6d1057844e"
+    },
+    "evaluation/calibration_yaw1/plots/dist_pr_1.0.pdf": {
+      "bytes": 21323,
+      "sha256": "78591ead9bf4bbc755b5c1639111f6c44e2d705f8d9359414bb4f263709f9446"
+    },
+    "evaluation/calibration_yaw1/plots/dist_pr_2.0.pdf": {
+      "bytes": 21960,
+      "sha256": "48d75604f43e9a950c0df11c084bd7094e9f891c15e9a3bdcd7d7438a345db5f"
+    },
+    "evaluation/calibration_yaw1/plots/dist_pr_4.0.pdf": {
+      "bytes": 22017,
+      "sha256": "bcd87e6b6c92b1a51d775b760ecbbe431940a8c057f4a7df130c5685241d8d82"
+    },
+    "evaluation/calibration_yaw1/plots/motorcycle_pr.pdf": {
+      "bytes": 13992,
+      "sha256": "da0f2666a20d3ba338a336cad7d80792864fa3b64c52db7b1805dd1c3971b427"
+    },
+    "evaluation/calibration_yaw1/plots/motorcycle_tp.pdf": {
+      "bytes": 18773,
+      "sha256": "ee32640f0adf862a1b4ae1bbe1d0219f144ba038a7d5631305cddc87b594d684"
+    },
+    "evaluation/calibration_yaw1/plots/pedestrian_pr.pdf": {
+      "bytes": 15356,
+      "sha256": "91e3e4abd0c1084678f00c287552f3eddbb7e5384ed0ababd2a4a0d4b7ddc6ed"
+    },
+    "evaluation/calibration_yaw1/plots/pedestrian_tp.pdf": {
+      "bytes": 19083,
+      "sha256": "0f13a42dfa950a1cf7d121a184d99b919de1dc7686e7b1bd16ace9bf226b1bf9"
+    },
+    "evaluation/calibration_yaw1/plots/summary.pdf": {
+      "bytes": 84521,
+      "sha256": "e9d87f035fa0fc0dc688f71afc79e752bbc2fe3227085b608062ec675fb4457a"
+    },
+    "evaluation/calibration_yaw1/plots/traffic_cone_pr.pdf": {
+      "bytes": 15843,
+      "sha256": "adb5beb0638adde5fc01e47685bd568b25de0cff29d2de89e337bf717e727ae6"
+    },
+    "evaluation/calibration_yaw1/plots/traffic_cone_tp.pdf": {
+      "bytes": 16276,
+      "sha256": "1625dbf4f8e56a8ce42b3f208a3ce286874bfbc847f64a22551fea77ca351c63"
+    },
+    "evaluation/calibration_yaw1/plots/trailer_pr.pdf": {
+      "bytes": 14706,
+      "sha256": "0d4ed757adfb5721bec93d6686c7e9a716cbccd4a42b1aab78d1121483d698af"
+    },
+    "evaluation/calibration_yaw1/plots/trailer_tp.pdf": {
+      "bytes": 17618,
+      "sha256": "931f93363045c6f3928b977e69e4d3a11986f5d1996f0147790f0173a44c8b08"
+    },
+    "evaluation/calibration_yaw1/plots/truck_pr.pdf": {
+      "bytes": 15625,
+      "sha256": "3f9a1b093608a83d543120405ff54c0ab92260af9ce136f3b5bef39153e0553b"
+    },
+    "evaluation/calibration_yaw1/plots/truck_tp.pdf": {
+      "bytes": 18301,
+      "sha256": "1e09d61222b77795e9cfede876791156549ed15007ab47304fdbaa0d27f47e23"
+    },
+    "evaluation/calibration_yaw3/evaluation_audit.json": {
+      "bytes": 1903,
+      "sha256": "e73b7222e8bb526c2269c57b7dabff43361667afe065045ac082dfc6939e9ab4"
+    },
+    "evaluation/calibration_yaw3/metrics_details.json": {
+      "bytes": 766228,
+      "sha256": "f8984b8c65d3c18e3c56cc2132e4a9264f440ec66144eeb529b41b23fba71d0f"
+    },
+    "evaluation/calibration_yaw3/metrics_summary.json": {
+      "bytes": 5195,
+      "sha256": "17d589317500d7026b64e545eee1df6ba69a79edaf979b38883398fd2a33432c"
+    },
+    "evaluation/calibration_yaw3/plots/barrier_pr.pdf": {
+      "bytes": 14234,
+      "sha256": "5778abf91410370b080c6dc9f5e33f5d9e21ea33b28a0e808e50b528fa6a167e"
+    },
+    "evaluation/calibration_yaw3/plots/barrier_tp.pdf": {
+      "bytes": 17009,
+      "sha256": "16ed3f25d62a2b6e9ab3b7304e923b79b465ea1b9aebd96b80a21ddddb6e39ea"
+    },
+    "evaluation/calibration_yaw3/plots/bicycle_pr.pdf": {
+      "bytes": 13390,
+      "sha256": "a8d53594fe0e29417862bf47af9cb404ae3ade54cac9c8fcbf03cee403242604"
+    },
+    "evaluation/calibration_yaw3/plots/bicycle_tp.pdf": {
+      "bytes": 18008,
+      "sha256": "0c3e41a6faa1985c36d9aee8565cf9f43167558e54604bdb713a034e8b2c8086"
+    },
+    "evaluation/calibration_yaw3/plots/bus_pr.pdf": {
+      "bytes": 14727,
+      "sha256": "cbe38e87742c9c5faf7a0fb2329c54c177759670088693c61b0514c2863f9f7f"
+    },
+    "evaluation/calibration_yaw3/plots/bus_tp.pdf": {
+      "bytes": 19274,
+      "sha256": "c0eff59783ee4703726e613cb871093541ec297d1b8bec273f050a7e3607df64"
+    },
+    "evaluation/calibration_yaw3/plots/car_pr.pdf": {
+      "bytes": 14926,
+      "sha256": "38a97b002320c0d275afb003fc233ad63ac50207d559cc67817bd140244833d1"
+    },
+    "evaluation/calibration_yaw3/plots/car_tp.pdf": {
+      "bytes": 19098,
+      "sha256": "8887f0a4f211ab07921c982c31bbd864e83efd61c34ed224bc188cd00f6a1eae"
+    },
+    "evaluation/calibration_yaw3/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14543,
+      "sha256": "1e56b756a7779cc7df6cb44235e3b27d0dfe981235338f60115aa1323375afd1"
+    },
+    "evaluation/calibration_yaw3/plots/construction_vehicle_tp.pdf": {
+      "bytes": 17807,
+      "sha256": "b6d78fecb52cbed945efaba02e1ff9fca8d444d32e4ad5a93ca8b951700345b7"
+    },
+    "evaluation/calibration_yaw3/plots/dist_pr_0.5.pdf": {
+      "bytes": 21183,
+      "sha256": "23779815b7a8737647a86b250abd8418d22759bd18eff6b36bd046eb3e322b78"
+    },
+    "evaluation/calibration_yaw3/plots/dist_pr_1.0.pdf": {
+      "bytes": 21640,
+      "sha256": "a905baf6c72ec3ffc41046132c9cf6b6cc0933d051627f9fd46bcd974af365f5"
+    },
+    "evaluation/calibration_yaw3/plots/dist_pr_2.0.pdf": {
+      "bytes": 21427,
+      "sha256": "d14d30cf6814939b8caeba10b3056d0abac5d4f32920ca744cc95a618bfe5aad"
+    },
+    "evaluation/calibration_yaw3/plots/dist_pr_4.0.pdf": {
+      "bytes": 21603,
+      "sha256": "af4c2c92f904bb64ef7ea9ef76d4ffb7491cb69aef4ec0ac5f4ded4e9d3be1e2"
+    },
+    "evaluation/calibration_yaw3/plots/motorcycle_pr.pdf": {
+      "bytes": 14573,
+      "sha256": "ee9d6ea3683426f221ffb08b084f64e6a13897ce05bc4f0c1eb4ab83171fa1c8"
+    },
+    "evaluation/calibration_yaw3/plots/motorcycle_tp.pdf": {
+      "bytes": 18689,
+      "sha256": "a138d09f37395baf3b655176168612abc4adb7c89d8655ae89a5e132918a2c37"
+    },
+    "evaluation/calibration_yaw3/plots/pedestrian_pr.pdf": {
+      "bytes": 14455,
+      "sha256": "f06f620dd021e46cfb90efe0fa3e3a7a2cb6e898e8ea262a5adba7779b3451a2"
+    },
+    "evaluation/calibration_yaw3/plots/pedestrian_tp.pdf": {
+      "bytes": 19021,
+      "sha256": "7f84d3db93f28f42247c077cc6dadd0a61bcdc3a20b7556ffdda0b3f8e7340af"
+    },
+    "evaluation/calibration_yaw3/plots/summary.pdf": {
+      "bytes": 83871,
+      "sha256": "565896eb51ae2546a3e01f98396d27236572d3ce495c6078c5a6aa572a4408ce"
+    },
+    "evaluation/calibration_yaw3/plots/traffic_cone_pr.pdf": {
+      "bytes": 15770,
+      "sha256": "66d72270d1b657b88b3ead2f28367a1b792204c997635f5620adccd230b46817"
+    },
+    "evaluation/calibration_yaw3/plots/traffic_cone_tp.pdf": {
+      "bytes": 16276,
+      "sha256": "a02431ba258dc7624f7005d0eaeb93dc5eeb1b615b0841e4edfafce3d23d9be6"
+    },
+    "evaluation/calibration_yaw3/plots/trailer_pr.pdf": {
+      "bytes": 13882,
+      "sha256": "0a69b6481088c569b91be01a940e8d4d2880fda5115d833f25c58855aaaf8e25"
+    },
+    "evaluation/calibration_yaw3/plots/trailer_tp.pdf": {
+      "bytes": 18019,
+      "sha256": "66746eccb35bed7618ad24e7ed301f0ecc4361f6bab2e91baa3e749635b1b1ab"
+    },
+    "evaluation/calibration_yaw3/plots/truck_pr.pdf": {
+      "bytes": 15591,
+      "sha256": "4e9b1af0c2d149d12b501851e4fe06e90618292543431b20e7e0424d3f30a668"
+    },
+    "evaluation/calibration_yaw3/plots/truck_tp.pdf": {
+      "bytes": 18212,
+      "sha256": "7ac826dba21480456f440cbc91e5c16602174c96289664d43e2fd7f10d62e3d3"
+    },
+    "evaluation/clean/evaluation_audit.json": {
+      "bytes": 1857,
+      "sha256": "fa2f629a0afce94eeca30f3cd056ed3184ecfb085050810adb6e1ad67f2e3f46"
+    },
+    "evaluation/clean/metrics_details.json": {
+      "bytes": 768111,
+      "sha256": "d2cab28d14325d232f025b263ee5d2f45e2c1a76b21167d115c5d33904ffef39"
+    },
+    "evaluation/clean/metrics_summary.json": {
+      "bytes": 5197,
+      "sha256": "6d4f92a6f5e10c0bcf166b72c8e5b5d98a76debe1b33ea08d73c035dbea6bfcb"
+    },
+    "evaluation/clean/plots/barrier_pr.pdf": {
+      "bytes": 14896,
+      "sha256": "b91bfbc88ad944e18d477c44deb8cfa5c053f187469e6a76a910ceb61ff3f5e0"
+    },
+    "evaluation/clean/plots/barrier_tp.pdf": {
+      "bytes": 17188,
+      "sha256": "3c74ef34dc7176ca4445f0948eb62b57250c1c26608c52c8554b46970bca37e9"
+    },
+    "evaluation/clean/plots/bicycle_pr.pdf": {
+      "bytes": 14270,
+      "sha256": "35eb2032f2c5ba2e74eb3c6e4dc0983592abe8c9210ed8f0ea113fb9e765cfef"
+    },
+    "evaluation/clean/plots/bicycle_tp.pdf": {
+      "bytes": 18239,
+      "sha256": "577d933727e23c982de103f5d4c8978a36257d1443a8057e3c4184191a8471e0"
+    },
+    "evaluation/clean/plots/bus_pr.pdf": {
+      "bytes": 14708,
+      "sha256": "de89fbc924ac3dab74df76c0902fa789646951c6c1ac50f2463746dbdd11927d"
+    },
+    "evaluation/clean/plots/bus_tp.pdf": {
+      "bytes": 19360,
+      "sha256": "3e49f0ca68eda037ef103a1e0f39e1b5c3b9634e909cc87d083db17874250089"
+    },
+    "evaluation/clean/plots/car_pr.pdf": {
+      "bytes": 14900,
+      "sha256": "9b667362474cc04a6021e6842338010a5adae3faf482ba9a33c1030b26126246"
+    },
+    "evaluation/clean/plots/car_tp.pdf": {
+      "bytes": 18906,
+      "sha256": "f71214ec1294ee07cb06fd3d598a46d975cafff9aa4e1a7cb10675119d25f6c2"
+    },
+    "evaluation/clean/plots/construction_vehicle_pr.pdf": {
+      "bytes": 15194,
+      "sha256": "21cb78567b0040ee144c6d2a2ca5933ef694281f6740adc065108d88a5657706"
+    },
+    "evaluation/clean/plots/construction_vehicle_tp.pdf": {
+      "bytes": 17799,
+      "sha256": "6e50d6fe75a7c54d64af5c6c13c9cd7fb82469edde89fe0a17c269dfb2d37e44"
+    },
+    "evaluation/clean/plots/dist_pr_0.5.pdf": {
+      "bytes": 21342,
+      "sha256": "f6ec690724e0f860f79c7ee7018a5f776b8d1af58cf9ffe3cadbf1396278cd65"
+    },
+    "evaluation/clean/plots/dist_pr_1.0.pdf": {
+      "bytes": 21851,
+      "sha256": "d8fc066c109a2487ec8d6e69e663f985e64b9c53d5630db192b8aa2710f9b987"
+    },
+    "evaluation/clean/plots/dist_pr_2.0.pdf": {
+      "bytes": 22048,
+      "sha256": "b09fd4e088a9171ad538aed4151f45a5e7d60f794a782203a417d04104608412"
+    },
+    "evaluation/clean/plots/dist_pr_4.0.pdf": {
+      "bytes": 22079,
+      "sha256": "f4a107d5dbfc7eb5b324cb6c7d329d18a1ba4e80cfe5b987dd20cfa4959ef195"
+    },
+    "evaluation/clean/plots/motorcycle_pr.pdf": {
+      "bytes": 14189,
+      "sha256": "31b1378f0ffe613c36d897705eb048975f33295dea0494d7f52b338bb5d81270"
+    },
+    "evaluation/clean/plots/motorcycle_tp.pdf": {
+      "bytes": 18474,
+      "sha256": "d4c8baa0eb9853fc3eee12eb945d06f9152d3932fa93722572b9cabd93b179af"
+    },
+    "evaluation/clean/plots/pedestrian_pr.pdf": {
+      "bytes": 15316,
+      "sha256": "5505cc6656d50ddeb244ef5e3b0080bd9e18d8f57d720165728e0205bef0ac68"
+    },
+    "evaluation/clean/plots/pedestrian_tp.pdf": {
+      "bytes": 19276,
+      "sha256": "6d1e74927000ab7acca35f2bf60c31ad0ff19dbbf952dfb44378b139bf19da46"
+    },
+    "evaluation/clean/plots/summary.pdf": {
+      "bytes": 84750,
+      "sha256": "b440c985e0756aec2a267cd8935941a0618ab0ae18b38e3cf9e900154f3041d2"
+    },
+    "evaluation/clean/plots/traffic_cone_pr.pdf": {
+      "bytes": 15363,
+      "sha256": "2d492e31cb2d53d3947f4761c99613aaea7566144b67092f52eb2db09524b51f"
+    },
+    "evaluation/clean/plots/traffic_cone_tp.pdf": {
+      "bytes": 16307,
+      "sha256": "65e69110142d09dc77aef2e86e97d7a153d59b8d909f0abd5dfa8dc523d00a88"
+    },
+    "evaluation/clean/plots/trailer_pr.pdf": {
+      "bytes": 14697,
+      "sha256": "ef95421bd0e4aad899d17e081d35e7c06716b0cf3f9454d2cdfc928aa04b7a5b"
+    },
+    "evaluation/clean/plots/trailer_tp.pdf": {
+      "bytes": 17487,
+      "sha256": "d46e401d5c26517e7d50c91a322e2670f74578fe4a7c1d046a59d5c06cb04b7a"
+    },
+    "evaluation/clean/plots/truck_pr.pdf": {
+      "bytes": 15202,
+      "sha256": "da2f1b94bc4c45a3a4c1aba2fd334428d64477a9d2581d2a29cd0881c02657ce"
+    },
+    "evaluation/clean/plots/truck_tp.pdf": {
+      "bytes": 18238,
+      "sha256": "598f8b0af6daf40a269b2cc6251c01d4437126a7269b39b813aeccc38b19b8cd"
+    },
+    "evaluation/completed_conditions.json": {
+      "bytes": 14199,
+      "sha256": "3202ec966763ae9ae38219b2a94d98e2b23cb2cc6dc8f1aff11da6814451d475"
+    },
+    "evaluation/evaluate_seven_conditions.py": {
+      "bytes": 9474,
+      "sha256": "0703f7362b67af9316f9bad489055a3e73062d942692ac832eab15b3fc00e1a0"
+    },
+    "evaluation/evaluation_20261016T092709Z.log": {
+      "bytes": 21502,
+      "sha256": "188c8e017a97cc2c0bdaa0a77d99e661f3f96a1b1aa1a3ee019330bdc6ef65a2"
+    },
+    "evaluation/headline_metrics.csv": {
+      "bytes": 705,
+      "sha256": "0138ad432be4e3fbc90216fb520530ba2d2bcff628b69fa91abe73cc9aa9f573"
+    },
+    "evaluation/noise_std10/evaluation_audit.json": {
+      "bytes": 1899,
+      "sha256": "5e41a78bb1816079cec34d7a74b051ba601da5904286723a475a5f8281b43641"
+    },
+    "evaluation/noise_std10/metrics_details.json": {
+      "bytes": 766617,
+      "sha256": "fb64c3bf73755a96f851308f05edbaca5683ebd639acdeea2404fde8da25e6d2"
+    },
+    "evaluation/noise_std10/metrics_summary.json": {
+      "bytes": 5202,
+      "sha256": "73c900d68c0e55cd2e0ba50715c17e3c8e4a7ad9834d9c2a9360fc031e52ac74"
+    },
+    "evaluation/noise_std10/plots/barrier_pr.pdf": {
+      "bytes": 14143,
+      "sha256": "2ad78211b23fbd7b94b334c1bb7d8b67bc5b3d448ec5f5e5a1112051c1ea347f"
+    },
+    "evaluation/noise_std10/plots/barrier_tp.pdf": {
+      "bytes": 17010,
+      "sha256": "794dff34fff97b6d42c285e071806562be28d51db6ebfbdfec4f02afff67a837"
+    },
+    "evaluation/noise_std10/plots/bicycle_pr.pdf": {
+      "bytes": 13885,
+      "sha256": "a25ad6528d06b92572a2755b0fd3e80484a73eca8135ad4fd890b30a46ff4911"
+    },
+    "evaluation/noise_std10/plots/bicycle_tp.pdf": {
+      "bytes": 18243,
+      "sha256": "b3b95ff6b285404075c4dddf56c02a3eb22b7286beb9f8976f0dd8169032cb83"
+    },
+    "evaluation/noise_std10/plots/bus_pr.pdf": {
+      "bytes": 14335,
+      "sha256": "5d95bf0ba4bc9c7a72d0d067c088f864c86786ba521e8326c9d7d369aac84cd6"
+    },
+    "evaluation/noise_std10/plots/bus_tp.pdf": {
+      "bytes": 19292,
+      "sha256": "7d6220f058f8d17c2eafe87abe313fa83e13bfd48fcaeec68b1eadbc5a56cbf7"
+    },
+    "evaluation/noise_std10/plots/car_pr.pdf": {
+      "bytes": 14926,
+      "sha256": "6f6a2ba0d44d37bb62591eb3523a569ecb8dda2653817c6d5b572d3df9b161d7"
+    },
+    "evaluation/noise_std10/plots/car_tp.pdf": {
+      "bytes": 18922,
+      "sha256": "21cd4ef015b0c7ae574a7fc9744fe7212fdacd47e4f7b4f0b998293aa846b726"
+    },
+    "evaluation/noise_std10/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14495,
+      "sha256": "996ea1c20373f200e4a4e768e585d1ef8ecd79bb4706715f4f4204ad8180b74a"
+    },
+    "evaluation/noise_std10/plots/construction_vehicle_tp.pdf": {
+      "bytes": 17939,
+      "sha256": "3474b2e2dafc491aaa21bf6f86f1db4571bb99cd7219f8b3018b89d9ad45b0a1"
+    },
+    "evaluation/noise_std10/plots/dist_pr_0.5.pdf": {
+      "bytes": 20919,
+      "sha256": "90b8c663db7910947378360d4e5207cd3a33038149af9482cd493850a062ecf3"
+    },
+    "evaluation/noise_std10/plots/dist_pr_1.0.pdf": {
+      "bytes": 21760,
+      "sha256": "6c74822f628dadfaad3bd06387881f23b6223711f7f6ece4b7f6c56440eba6f9"
+    },
+    "evaluation/noise_std10/plots/dist_pr_2.0.pdf": {
+      "bytes": 22019,
+      "sha256": "9c1a4eb84b43f5bb70d8e1e6dd6880d981e6dfeb11b8af7d961e6eb86a7abfd2"
+    },
+    "evaluation/noise_std10/plots/dist_pr_4.0.pdf": {
+      "bytes": 22065,
+      "sha256": "d3a646e5a81fa0989cd69fd705ac1034f7916240ac388bd1564c6da6a77b75c4"
+    },
+    "evaluation/noise_std10/plots/motorcycle_pr.pdf": {
+      "bytes": 13711,
+      "sha256": "e9185dd1153e7cb2ea7c08175dc3328eb3ccf9e78103832bd19c121c4a898ac5"
+    },
+    "evaluation/noise_std10/plots/motorcycle_tp.pdf": {
+      "bytes": 18858,
+      "sha256": "50b0f8c5b0982f2648cacb0efa610e67b6c7ff2ad0b38ec192bb56b526693328"
+    },
+    "evaluation/noise_std10/plots/pedestrian_pr.pdf": {
+      "bytes": 14872,
+      "sha256": "3d58ebcf37b4c9715ddd5cbb45039f5e610809194e0ea21034c63cf68ed987f3"
+    },
+    "evaluation/noise_std10/plots/pedestrian_tp.pdf": {
+      "bytes": 19079,
+      "sha256": "3b25c34b533921c53d32662ab52dd378062072be582a3cdee846ec7514e1b0aa"
+    },
+    "evaluation/noise_std10/plots/summary.pdf": {
+      "bytes": 83590,
+      "sha256": "e15860c5bf8b06bd31d54d30dce16a7d1f379d1cfcd0585838f95d2e88a449c9"
+    },
+    "evaluation/noise_std10/plots/traffic_cone_pr.pdf": {
+      "bytes": 14934,
+      "sha256": "ee6d55993f18b62f59d8f3f6a33d82496bda38f535f3efa21da9683c71fc0a2f"
+    },
+    "evaluation/noise_std10/plots/traffic_cone_tp.pdf": {
+      "bytes": 16302,
+      "sha256": "019fe8359f496868049ac8b0b95e91b3fd71f8eef3f9d2ae7a914f5d4154ca72"
+    },
+    "evaluation/noise_std10/plots/trailer_pr.pdf": {
+      "bytes": 13821,
+      "sha256": "acd6bbb4b00138df3b91ab978f85d204820d793d5b9f3e97f84180f8fcf9983d"
+    },
+    "evaluation/noise_std10/plots/trailer_tp.pdf": {
+      "bytes": 17677,
+      "sha256": "5385aa32c1a087c6443276be80aa3af371c224f8e626da09be096577b20883d7"
+    },
+    "evaluation/noise_std10/plots/truck_pr.pdf": {
+      "bytes": 15100,
+      "sha256": "c194b41d89f7755ed4a499cf9f31790ae6140fbc390bfb17d972a099237a8107"
+    },
+    "evaluation/noise_std10/plots/truck_tp.pdf": {
+      "bytes": 18515,
+      "sha256": "211122624dde882a0c3edff6221766950bde6452a6dc9c8e828f50beeb8cbe94"
+    },
+    "evaluation/noise_std25/evaluation_audit.json": {
+      "bytes": 1895,
+      "sha256": "a09f2339ccd1f1b7119c4e077e9d68f3894ebf0e9f360308b3fd44f2e3991b8d"
+    },
+    "evaluation/noise_std25/metrics_details.json": {
+      "bytes": 764325,
+      "sha256": "0bda999160d260fb7e798b9dcfa1cdec9fbf24b9a3f222fac8a232b9ddc9c356"
+    },
+    "evaluation/noise_std25/metrics_summary.json": {
+      "bytes": 5197,
+      "sha256": "b3167f19799212c0d182b5b9d3751bf12344b097521e6545a03f1a5d7f8530ea"
+    },
+    "evaluation/noise_std25/plots/barrier_pr.pdf": {
+      "bytes": 14704,
+      "sha256": "ae03280ff1780336cb1a2a621388be499b43130a2a9316b8eab64cab2575e3d6"
+    },
+    "evaluation/noise_std25/plots/barrier_tp.pdf": {
+      "bytes": 16983,
+      "sha256": "c0a8294b30fd7153991ade960fce1578bd769101ada1e8040df10dd6a6c732ae"
+    },
+    "evaluation/noise_std25/plots/bicycle_pr.pdf": {
+      "bytes": 13894,
+      "sha256": "db18d9c09448c1bf790c91993ffb0c78d731b68855369ec4b030d1b9b50219a0"
+    },
+    "evaluation/noise_std25/plots/bicycle_tp.pdf": {
+      "bytes": 18041,
+      "sha256": "c7dd4222d00464ffb7a4ec5d311c5826002699d7218464040ac7ed12b4cec27a"
+    },
+    "evaluation/noise_std25/plots/bus_pr.pdf": {
+      "bytes": 14358,
+      "sha256": "4e4112761dbb14fd7b5b16672719098f0ebb793fe61436ac6a5949c051b1fdfa"
+    },
+    "evaluation/noise_std25/plots/bus_tp.pdf": {
+      "bytes": 19312,
+      "sha256": "105686eb0f1caf8fdc2e28e1823f76995d9ac1f1ad105a52d152e4bb4be7b14a"
+    },
+    "evaluation/noise_std25/plots/car_pr.pdf": {
+      "bytes": 14685,
+      "sha256": "cdacdb6131b1765e02025cd9fffc22c3a5c4e9f1e23617be6b98f75b32da1b95"
+    },
+    "evaluation/noise_std25/plots/car_tp.pdf": {
+      "bytes": 19329,
+      "sha256": "383287afe4500b6e1123d0299352c32255a416ed565a4ae833d0af90fcfcc80f"
+    },
+    "evaluation/noise_std25/plots/construction_vehicle_pr.pdf": {
+      "bytes": 14549,
+      "sha256": "2420da29ec787f2c2515251d16dd5c8bd0b58f93be53921fd9162bb269e1c571"
+    },
+    "evaluation/noise_std25/plots/construction_vehicle_tp.pdf": {
+      "bytes": 18184,
+      "sha256": "60c3987b17554cb8b809141b9ebff4555561f2b5f08a9d2290ec272cbdc2f815"
+    },
+    "evaluation/noise_std25/plots/dist_pr_0.5.pdf": {
+      "bytes": 21162,
+      "sha256": "c10084bcd771016cec86b2dc0a6dfd097ee3b5bc7c21d064cc0b657a96fa34d4"
+    },
+    "evaluation/noise_std25/plots/dist_pr_1.0.pdf": {
+      "bytes": 21625,
+      "sha256": "6d7cda249886cfcf6087d275c7938a95eccfe50efddcf3a17e016133d5f31084"
+    },
+    "evaluation/noise_std25/plots/dist_pr_2.0.pdf": {
+      "bytes": 21855,
+      "sha256": "e2c4dc4898b4d02a2e97cb61e7f513313d3298c176cf638ae1b275e9a4171e00"
+    },
+    "evaluation/noise_std25/plots/dist_pr_4.0.pdf": {
+      "bytes": 21955,
+      "sha256": "f1e5ad329970d137d58b16b25d10858af9a937ce82a662442c0651557b20eac3"
+    },
+    "evaluation/noise_std25/plots/motorcycle_pr.pdf": {
+      "bytes": 14281,
+      "sha256": "f58ea7a84d005179344a41895fdc89e8a375e74975964a9ed8e23dcee9f17742"
+    },
+    "evaluation/noise_std25/plots/motorcycle_tp.pdf": {
+      "bytes": 19029,
+      "sha256": "9794143c9150ddb3e160fb0b8ed1154ec63faa3878624588ae66041a1639148a"
+    },
+    "evaluation/noise_std25/plots/pedestrian_pr.pdf": {
+      "bytes": 14471,
+      "sha256": "4db401a0ec6ddd294d56f7e00047e725f161cb40a9071acab57e453ff090143c"
+    },
+    "evaluation/noise_std25/plots/pedestrian_tp.pdf": {
+      "bytes": 19272,
+      "sha256": "be2d4fabb63806622ede5d859e8a2968eafc18440e297230bb308866ff5e5e9e"
+    },
+    "evaluation/noise_std25/plots/summary.pdf": {
+      "bytes": 82382,
+      "sha256": "0df34f699491e696f2fc869c293a5ba5a33aafb2f150b92cb0d98ceb50b6624c"
+    },
+    "evaluation/noise_std25/plots/traffic_cone_pr.pdf": {
+      "bytes": 15714,
+      "sha256": "c0bf1255a1e1bbe0f8577e9cf863422610399e4e5d81baf26bc99bc0aa0e8fb9"
+    },
+    "evaluation/noise_std25/plots/traffic_cone_tp.pdf": {
+      "bytes": 16249,
+      "sha256": "ed332b5ac27a4b6449ff3c5f5c8a18a9c2148c11392ef30c7bf4d9c2f44332da"
+    },
+    "evaluation/noise_std25/plots/trailer_pr.pdf": {
+      "bytes": 13944,
+      "sha256": "90c5bf397031ca0ea2a54759c2d8e22aeac55794d9b9e69a510f7ad413af3513"
+    },
+    "evaluation/noise_std25/plots/trailer_tp.pdf": {
+      "bytes": 17455,
+      "sha256": "cec00847515338d2ae9a5de7a3ef261741cacb091660d2f30a336fd09803a37e"
+    },
+    "evaluation/noise_std25/plots/truck_pr.pdf": {
+      "bytes": 15263,
+      "sha256": "ea773a5c1ac5f98b2a5cd4e75f92e555146564ca864be142fedaad4bb50ff26b"
+    },
+    "evaluation/noise_std25/plots/truck_tp.pdf": {
+      "bytes": 17954,
+      "sha256": "4f9718843972ca83eb2cc4a0f077bf525322bd13894c2fe1862615f0127035cc"
+    },
+    "evaluation/seven_condition_evaluation.json": {
+      "bytes": 15419,
+      "sha256": "e5b7486028d4902075a15ce6d8d36f27e5a9e451814ca0b78df548a412f3f56c"
+    }
+  },
+  "raw_predictions": "Preserved separately in the verified Drive inference export.",
+  "scope": "Seven-condition evaluation on the frozen 600-frame subset."
+}

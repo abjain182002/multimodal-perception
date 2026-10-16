@@ -1,5 +1,9 @@
 # Validated Experimental Results
 
+## Camera challenges — 16 October 2026
+
+[Preserved seven-condition study](nuscenes/bevfusion/camera_challenges/20261016/README.md): clean mAP/NDS ×100 **68.1018/71.2767**. Blur sigma 2: **65.8820/69.9316**; noise SD 25: **63.1355/68.5923**; yaw +3°: **64.6339/69.3172**. Same frozen 600 frames / 150 scenes / 12,318 filtered GT objects. Compact archive and all 270 original members verified; stored metric arithmetic and 4,200 input-ledger rows checked. This import is not a fresh GT replay. No physical hazard ranking or significance claim.
+
 ## Matched LiDAR point reduction — 15 October 2026
 
 600 frozen frames / 150 scenes, six fresh inference conditions. Retained points 100% / 50% / 25%: LiDAR-only mAP ×100 **64.3076 / 60.5637 / 51.0381**, fusion **68.1302 / 65.7931 / 60.2341**; NDS ×100 **69.4430 / 67.1687 / 61.1077** versus **71.2891 / 69.6546 / 65.4790**. Same original and selected point hashes across models; unchanged images/metadata within each model. Fusion still degrades, with smaller own-baseline losses. [Findings](nuscenes/bevfusion/point_reduction/20261015/FINDINGS.md). Uniform point thinning affects fusion LiDAR features and camera-depth input; not a cheaper-LiDAR or multi-LiDAR experiment. All 218 compact archive members, stored metric arithmetic and 600 selection-index hashes checked on import. No fresh local raw-prediction rehash, GT replay or significance test.
@@ -586,6 +590,7 @@ Same 150 frames, one per validation scene; three fresh-process sessions/model, b
 | Camera–LiDAR fusion | 544.98 | 2,231.80 | 3,278.00 |
 
 Latency ratio 1.8935×; allocated-memory ratio 3.6598×. All six raw files, stored summaries, ordered tokens and paired point counts verified on import. [Evidence, figures and limitations](nuscenes/bevfusion/runtime/20261015/README.md). Colab clock snapshots varied; no locked-clock, energy or end-to-end robot measurement. Accuracy–compute plots use separately measured 600-frame accuracy and 150-frame timing, not a new joint evaluation. [Sensor-price research](cost_performance/README.md) has begun; a matched monetary comparison remains incomplete.
+
 
 
 

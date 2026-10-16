@@ -1,0 +1,30 @@
+{
+  "files": {
+    "figures/class_ap_delta.pdf": {
+      "bytes": 32835,
+      "sha256": "16a8ec1e0434399c11aaae07a914ef8a5777aa4158d59bb9813654ed9014f339"
+    },
+    "figures/class_ap_delta.png": {
+      "bytes": 186643,
+      "sha256": "966f7e41d15b40ae46d3cfb2fd9fd0485c8a28c2d8f76088cf7d34054c71c49d"
+    },
+    "figures/class_ap_delta.svg": {
+      "bytes": 47098,
+      "sha256": "1fa12085324bc7b8118a3398abffdd6ecc6e71638d63c18f81c4d94ea217941a"
+    },
+    "figures/comparison.pdf": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "figures/comparison.png": {
+      "bytes": 164178,
+      "sha256": "0d61c22b6be6818b3ed9e61348a98a39cc2906473af9cc43c423f9876a9c5940"
+    },
+    "figures/comparison.svg": {
+      "bytes": 31813,
+      "sha256": "9305df1315c0445950bd07649322174529ba9573d783e7d130913711dfd06df7"
+    }
+  },
+  "visual_inspection": "Both PNG composites inspected; no clipping or overlap observed.",
+  "reproduction_script": "scripts/plot_camera_challenges_results.py"
+}

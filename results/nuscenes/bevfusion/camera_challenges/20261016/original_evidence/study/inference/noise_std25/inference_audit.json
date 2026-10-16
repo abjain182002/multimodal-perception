@@ -1,0 +1,16 @@
+{
+  "status": "CAMERA_CHALLENGE_CONDITION_INFERENCE_PASS",
+  "protocol_sha256": "ab01b793d13d7b2b06dee318cd99ee3d3c39b6d7f04206538052d90c54533d31",
+  "annotation_sha256": "4f11db818b8d5504fc2bb432fcd51a28b09fec8d0b9c4063f2a017413fbfa99d",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "transform_module_sha256": "1f81e8fd5979b579ea984bf21b2bce453c29a7cf1e50fe9c072aa1e078a55dd9",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "condition": "noise_std25",
+  "samples": 600,
+  "exact_frozen_token_match": true,
+  "results_path": "/kaggle/working/camera_challenges600/inference/noise_std25/results_nusc.json",
+  "results_sha256": "a20918e34e85aaeda59f77852cf4e6680f3e91a98294f1ad8199a073da82a3a9",
+  "input_checks_sha256": "3d31af7695c8c366fc54ebbe00b6281eaedeafa8889ff5f86f5fbb952e1e3b58",
+  "elapsed_seconds": 701.9,
+  "scope": "Inference and saved records checked; accuracy pending."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "CHECKPOINT_HASH_PASS",
+  "model": "lidar_camera",
+  "path": "/tmp/camera_challenges/checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth",
+  "source": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth",
+  "bytes": 167113973,
+  "sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab"
+}

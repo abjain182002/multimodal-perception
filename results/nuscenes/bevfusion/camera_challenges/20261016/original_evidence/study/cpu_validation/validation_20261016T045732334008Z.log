@@ -1,0 +1,51 @@
+TESTING IMAGE TRANSFORMATIONS...
+IMAGE CHECK PASS: clean
+IMAGE CHECK PASS: blur_sigma1
+IMAGE CHECK PASS: blur_sigma2
+IMAGE CHECK PASS: noise_std10
+IMAGE CHECK PASS: noise_std25
+IMAGE CHECK PASS: calibration_yaw1
+IMAGE CHECK PASS: calibration_yaw3
+
+CHECKING ALL ANNOTATION CALIBRATIONS...
+CALIBRATION CHECKS: 100/600 frames
+CALIBRATION CHECKS: 200/600 frames
+CALIBRATION CHECKS: 300/600 frames
+CALIBRATION CHECKS: 400/600 frames
+CALIBRATION CHECKS: 500/600 frames
+CALIBRATION CHECKS: 600/600 frames
+{
+  "status": "CAMERA_CHALLENGES_CPU_TRANSFORMS_PASS",
+  "protocol_sha256": "ab01b793d13d7b2b06dee318cd99ee3d3c39b6d7f04206538052d90c54533d31",
+  "annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "module_sha256": "1f81e8fd5979b579ea984bf21b2bce453c29a7cf1e50fe9c072aa1e078a55dd9",
+  "validation_script_sha256": "af1acff6f49dd555942ecf30a5bde5aeb8210b548e1d4dfce0a00e4647628853",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "image_checks": {
+    "shape_and_float32": true,
+    "original_input_unchanged": true,
+    "constant_image_blur_preserved": true,
+    "blur_does_not_mix_views_or_channels": true,
+    "noise_repeatability": true,
+    "noise_token_specific": true,
+    "shared_noise_realization_across_severities": true,
+    "fixture_input_sha256": "cbe41291db613108c1cbcce3a4f106af0d66ae76c33c1ecf2320c67ccaa7040c",
+    "fixture_output_sha256": {
+      "clean": "cbe41291db613108c1cbcce3a4f106af0d66ae76c33c1ecf2320c67ccaa7040c",
+      "blur_sigma1": "0d0c1310437ba7ea698ba82af69f0d92bf6093b1a3effda1f288ad80a16a6ccc",
+      "blur_sigma2": "80104d0e13e53fabad6d33883cc89e32173e41b6cf835269088343d88f24ece4",
+      "noise_std10": "29e16a854d33b36ecc74a088e00e6c8cedbcb5b9761db39ce311d6af8845cfd2",
+      "noise_std25": "7e5a5a314419dea627c2959471bbb5888c6af2213f9057372f89a3c24ba068e9",
+      "calibration_yaw1": "cbe41291db613108c1cbcce3a4f106af0d66ae76c33c1ecf2320c67ccaa7040c",
+      "calibration_yaw3": "cbe41291db613108c1cbcce3a4f106af0d66ae76c33c1ecf2320c67ccaa7040c"
+    }
+  },
+  "calibration_frames": 600,
+  "camera_transform_checks_including_zero_angle": 10800,
+  "maximum_inverse_error": 1.4993182251288317e-07,
+  "maximum_rotation_orthogonality_error": 8.090877567923371e-08,
+  "scope": "Synthetic image fixtures and all 600 annotation calibrations checked on CPU. Actual packed-image/model smoke checks, GPU inference and accuracy evaluation remain pending."
+}
+
+CPU IMAGE AND CALIBRATION VALIDATION PASS

@@ -1,0 +1,48 @@
+{
+  "status": "KAGGLE_BEVFUSION_CUDA_OPERATIONS_PASS",
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "versions": {
+    "torch": "2.1.2+cu121",
+    "torchvision": "0.16.2+cu121",
+    "numpy": "1.26.4",
+    "setuptools": "69.5.1",
+    "mmengine": "0.10.7",
+    "mmcv": "2.1.0",
+    "mmdet": "3.2.0",
+    "nuscenes-devkit": "1.2.0",
+    "spconv-cu120": "2.3.6",
+    "cumm-cu120": "0.4.11"
+  },
+  "gpu": "Tesla T4",
+  "bev_pool_output": [
+    4.0,
+    6.0
+  ],
+  "voxel_coordinates": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "voxel_point_counts": [
+    2,
+    1
+  ],
+  "extensions": {
+    "projects.BEVFusion.bevfusion.ops.bev_pool.bev_pool_ext": {
+      "path": "/tmp/camera_challenges/mmdetection3d/projects/BEVFusion/bevfusion/ops/bev_pool/bev_pool_ext.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "bfa93e11dc9679b4283059d527283a901a221695b4b0e3605d99d8d9588fc683"
+    },
+    "projects.BEVFusion.bevfusion.ops.voxel.voxel_layer": {
+      "path": "/tmp/camera_challenges/mmdetection3d/projects/BEVFusion/bevfusion/ops/voxel/voxel_layer.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "5f857bafa1ffc2a20ab5514e968f127db18d385096e2ea3da42047e0399830c0"
+    }
+  },
+  "scope": "Synthetic operations passed; model smoke pending."
+}

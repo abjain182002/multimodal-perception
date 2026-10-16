@@ -1,5 +1,9 @@
 # Multimodal Perception
 
+## Current checkpoint — 16 October 2026
+
+The bounded blur/noise/calibration study is complete and preserved: [one compact figure, seven conditions and original evidence](../results/nuscenes/bevfusion/camera_challenges/20261016/README.md). This supersedes earlier entries describing those experiments as planned. Existing masking, darkening, point-reduction, full-validation, runtime and architecture evidence remains unchanged. Next: critical literature/failure-handling synthesis, sourced financial scenarios, camera-only/physical multi-LiDAR scope resolution, and integrated report discussion. Not all supervisor requests are complete.
+
 ## Current analysis status — 15 October 2026
 
 Full-validation accuracy, six annotated visual cases, a 600-frame camera-availability study, image-darkening study, matched point-reduction study and paired 150-frame/three-repeat runtime study are now complete and preserved. See the [results index](../results/README.md), [architecture](architecture/README.md), [point-reduction study](../results/nuscenes/bevfusion/point_reduction/20261015/README.md) and [report evidence/page plan](report/EVIDENCE_AND_PAGE_PLAN.md). Older dated sections below preserve earlier context. Comparable runtime is no longer pending for the evaluated BEVFusion LiDAR/fusion pair. Case studies are no longer pending.
@@ -71,6 +75,7 @@ See [`results/README.md`](../results/README.md) for the artifact-storage policy.
 ## Storage Policy
 
 Datasets, virtual environments, model weights, and bulk generated `model_outputs/` are intentionally excluded from Git history. Source code, evaluation scripts, compact numerical results, dissertation-ready figures, and selected qualitative examples are version-controlled.
+
 
 
 

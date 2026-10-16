@@ -1,5 +1,9 @@
 # Multimodal Object Detection and Robotic Perception
 
+## Camera challenges — 16 October 2026
+
+[Seven-condition study](results/nuscenes/bevfusion/camera_challenges/20261016/README.md): blur, additive Gaussian noise and common extrinsic yaw are now evaluated on the same 600 frames. Fresh clean mAP/NDS ×100: **68.10/71.28**; stronger tested blur, noise and yaw produce mAP losses of **2.22/4.97/3.47 points**. [One compact three-panel figure](results/nuscenes/bevfusion/camera_challenges/20261016/figures/comparison.png). All original evidence retained; synthetic subset results do not establish physical-system robustness.
+
 ## LiDAR point-reduction challenge — 15 October 2026
 
 [Matched 600-frame study](results/nuscenes/bevfusion/point_reduction/20261015/README.md): at 100% / 50% / 25% retention, LiDAR-only mAP ×100 is **64.31 / 60.56 / 51.04**, and fusion is **68.13 / 65.79 / 60.23**. Both degrade; fusion loses fewer points under this synthetic intervention. All 600 paired input records and deterministic selection hashes checked. [Report evidence/page plan](docs/report/EVIDENCE_AND_PAGE_PLAN.md).
@@ -71,6 +75,7 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## Runtime, memory and architecture
 
 [Three-session T4 benchmark](results/nuscenes/bevfusion/runtime/20261015/README.md): median-of-session-medians latency is 287.81 ms (LiDAR) versus 544.98 ms (fusion); maximum allocated GPU memory is 609.82 versus 2,231.80 MiB. Same 150-frame runtime subset; file loading excluded. [Architecture diagrams](docs/architecture/README.md) identify reused model components and project orchestration. [Hardware cost framework](results/cost_performance/README.md) records initial sources and unresolved price assumptions.
+
 
 
 

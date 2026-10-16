@@ -1,0 +1,19 @@
+Resolved sensor paths: 100/600 frames
+Resolved sensor paths: 200/600 frames
+Resolved sensor paths: 300/600 frames
+Resolved sensor paths: 400/600 frames
+Resolved sensor paths: 500/600 frames
+Resolved sensor paths: 600/600 frames
+{
+  "status": "KAGGLE_ANNOTATION_PATH_RESOLUTION_PASS",
+  "samples": 600,
+  "same_ordered_frozen_tokens": true,
+  "original_annotation_sha256": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+  "annotation_path": "/kaggle/working/camera_challenges600/annotations_kaggle.pkl",
+  "annotation_sha256": "4f11db818b8d5504fc2bb432fcd51a28b09fec8d0b9c4063f2a017413fbfa99d",
+  "sensor_root": "/kaggle/input/datasets/abhishekjain18/camera-challenges600-inputs-zip/dataset",
+  "resolved_path_references": 9600,
+  "unique_referenced_sensor_files": 9600,
+  "non_path_annotation_content_unchanged": true,
+  "scope": "All referenced sensors exist. Only sensor path fields changed; sensor contents were verified in the preceding transfer audit. Actual model/corruption smoke remains pending."
+}

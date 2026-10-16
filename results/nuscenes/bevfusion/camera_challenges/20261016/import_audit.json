@@ -1,0 +1,10 @@
+{
+  "status": "CAMERA_CHALLENGES_IMPORT_PASS",
+  "original_members": 270,
+  "all_original_member_bytes_preserved": true,
+  "metric_arithmetic_tolerance": 1e-12,
+  "input_ledger_rows_checked": 4200,
+  "fresh_ground_truth_replay": false,
+  "raw_predictions_rehashed_on_import": false,
+  "scope": "Archive integrity, stored metric arithmetic and recorded input consistency checked; previous Drive raw-prediction verification retained as evidence."
+}

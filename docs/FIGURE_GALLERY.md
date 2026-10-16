@@ -1,5 +1,11 @@
 # Figures and selected case studies
 
+## Camera challenges — one compact main-report figure
+
+![Blur, noise and extrinsic yaw](../results/nuscenes/bevfusion/camera_challenges/20261016/figures/comparison.png)
+
+Three labelled panels contain both mAP and NDS changes. [Exact CSV values, vector exports, supporting class heatmap and limitations](../results/nuscenes/bevfusion/camera_challenges/20261016/README.md). Use supporting detail only where necessary in the 40–50-page report; retain all evidence in the repository.
+
 ## Matched LiDAR point reduction — compact report figure
 
 ![mAP and NDS versus point retention](../results/nuscenes/bevfusion/point_reduction/20261015/figures/comparison.png)
@@ -170,6 +176,7 @@ Same four selected frames per validation scene; existing six-camera checkpoint w
 ![Pinned BEVFusion inference flow](architecture/bevfusion_inference.png)
 
 [Sources, ownership distinctions and PDF/SVG diagrams](architecture/README.md).
+
 
 
 

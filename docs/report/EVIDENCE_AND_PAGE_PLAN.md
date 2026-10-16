@@ -1,4 +1,4 @@
-# Report evidence and page plan — 15 October 2026
+# Report evidence and page plan — updated 16 October 2026
 
 ## Agreed presentation constraint
 
@@ -34,8 +34,8 @@ Figures/tables occupy these allocations; they are not additional pages. This is 
 | Camera availability | 600-frame study complete | Missing-view robustness, not physical two-camera cost |
 | Image darkening | Three-condition study complete | Synthetic brightness, not real-night conditions |
 | LiDAR point reduction | Six conditions complete | Matched inputs, pipeline-specific own baselines |
-| Blur and noise | Planned, not completed | One defined corruption per family, two levels, frozen protocol |
-| Calibration errors | Planned, not completed | Define a consistent transform intervention and two magnitudes |
+| Blur and noise | Seven-condition shared-baseline study complete and preserved | Interpret two tested levels, fixed noise realization and synthetic-image limits |
+| Calibration errors | Common positive yaw +1°/+3° complete and preserved | Explain consistent transforms, unchanged output frame and restricted intervention scope |
 | Runtime/memory | 150-frame paired three-repeat study complete | Timing boundary, hardware, accuracy context and caveats |
 | Monetary cost | Framework/source register only | Scenario, comparable hardware quotes, assumptions and sensitivity |
 | Literature/SOTA | Draft available separately, not finalized | Verify primary papers, recent coverage, critical comparison and failure-handling evidence |
@@ -58,3 +58,8 @@ Keep blur, noise and calibration in the plan as requested, with one well-defined
 The supplied marking matrix (Academic Year 2024–25 onwards) gives technical work/continuous assessment 25%, dissertation 60% and poster 15%. Within dissertation assessment it weights presentation 1, problem/context 2, technical narrative 3 and discussion/conclusion 1. It groups A1–A5 together; it does not supply an A1-specific guarantee. Prioritize the student's technical understanding, critical evaluation and figures that support the narrative. Ethical/societal context, limitations and professional records also need coverage.
 
 This project demonstrates software integration and controlled empirical evaluation using established models. It does not claim a new detector architecture, novel training method, physical robot deployment or experimentally determined optimum physical sensor configuration.
+
+## 16 October checkpoint
+
+All bounded planned corruption studies are complete: missing camera views, darkening, matched point reduction, Gaussian blur/noise and common extrinsic yaw. The new study uses one three-panel main figure and an exact-value CSV table; the class heatmap is supporting material. No new experiments are assumed by this checkpoint. Remaining essentials: critical primary-paper synthesis, failure-handling discussion, sourced monetary scenarios and explicit resolution of comparable camera-only 3D/physical multi-LiDAR scope. These remain separate from the finished challenge experiment target.
+

@@ -1,0 +1,47 @@
+LOADING FUSION MODEL...
+/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:17: UserWarning: ``build_sampler`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_sampler`` would be deprecated soon, please use '
+/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmdet/models/task_modules/builder.py:39: UserWarning: ``build_assigner`` would be deprecated soon, please use ``mmdet.registry.TASK_UTILS.build()`` 
+  warnings.warn('``build_assigner`` would be deprecated soon, please use '
+/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+10/16 07:33:34 - mmengine - WARNING - No pre-trained weights for SwinTransformer, training start from scratch
+Loads checkpoint by local backend from path: /tmp/camera_challenges/checkpoints/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth
+STRICT CHECKPOINT LOAD PASS
+10/16 07:33:36 - mmengine - INFO - ------------------------------
+10/16 07:33:36 - mmengine - INFO - The length of test dataset: 600
+10/16 07:33:36 - mmengine - INFO - The number of instances per category in the dataset:
++----------------------+--------+
+| category             | number |
++----------------------+--------+
+| car                  | 8185   |
+| truck                | 1611   |
+| construction_vehicle | 276    |
+| bus                  | 324    |
+| trailer              | 414    |
+| barrier              | 2804   |
+| motorcycle           | 254    |
+| bicycle              | 261    |
+| pedestrian           | 3591   |
+| traffic_cone         | 1618   |
++----------------------+--------+
+Traceback (most recent call last):
+  File "/kaggle/working/camera_challenges600/smoke/smoke.py", line 159, in <module>
+    original = dataset[0]
+  File "/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmengine/dataset/base_dataset.py", line 403, in __getitem__
+    data = self.prepare_data(idx)
+  File "/tmp/camera_challenges/mmdetection3d/mmdet3d/datasets/det3d_dataset.py", line 385, in prepare_data
+    example = self.pipeline(input_dict)
+  File "/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmengine/dataset/base_dataset.py", line 60, in __call__
+    data = t(data)
+  File "/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmcv/transforms/base.py", line 12, in __call__
+    return self.transform(results)
+  File "/tmp/camera_challenges/mmdetection3d/mmdet3d/datasets/transforms/loading.py", line 435, in transform
+    points_sweep = self._load_points(
+  File "/tmp/camera_challenges/mmdetection3d/mmdet3d/datasets/transforms/loading.py", line 364, in _load_points
+    pts_bytes = get(pts_filename, backend_args=self.backend_args)
+  File "/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmengine/fileio/io.py", line 181, in get
+    return backend.get(filepath)
+  File "/tmp/camera_challenges/bevfusion310/lib/python3.10/site-packages/mmengine/fileio/backends/local_backend.py", line 33, in get
+    with open(filepath, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/input/datasets/abhishekjain18/camera-challenges600-inputs-zip/dataset/n008-2018-08-01-15-16-36-0400__LIDAR_TOP__1533151517997452.pcd.bin'

@@ -1,5 +1,9 @@
 # Results overview
 
+## Camera challenges — 16 October 2026
+
+[Results, compact figure and original evidence](nuscenes/bevfusion/camera_challenges/20261016/README.md). Seven conditions / 600 frames each; blur, noise and consistent yaw intervention complete. Same-study clean baseline; official subset matching/filtering; 12,318 GT objects per condition. Raw predictions separately verified on Drive. Critical literature, financial scenarios and camera-only/multi-LiDAR scope remain outstanding.
+
 ## Matched LiDAR point reduction — 15 October 2026
 
 [Compact two-panel figure, tables and original evidence](nuscenes/bevfusion/point_reduction/20261015/README.md). Six conditions / 600 frames each. At 25% retention, mAP losses relative to own fresh baseline are **−13.2695 points (LiDAR-only)** and **−7.8961 (fusion)**. This is uniform synthetic thinning of keyframe-plus-sweep points, not a physical sensor or cost comparison.
@@ -58,6 +62,7 @@ Commit compact metrics, selected figures and cases, source/protocol records and 
 ## Compute and hardware-cost analysis
 
 [BEVFusion serial runtime and GPU memory](nuscenes/bevfusion/runtime/20261015/README.md): 150 frames, three isolated sessions per model, same T4. Includes raw records, figures and an accuracy–compute matrix with separate sample scopes disclosed. [Initial sensor-cost framework](cost_performance/README.md) distinguishes measured compute from unmeasured financial cost. [Architecture diagrams](../docs/architecture/README.md) explain the study branches and pinned BEVFusion flow.
+
 
 
 

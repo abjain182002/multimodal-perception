@@ -1,0 +1,105 @@
+{
+  "status": "CAMERA_CHALLENGES_PROTOCOL_FROZEN",
+  "samples": 600,
+  "scenes": 150,
+  "model": "lidar_camera",
+  "seed": 20261002,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "checkpoint_sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab",
+  "source_tokens_sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f",
+  "conditions": [
+    {
+      "name": "clean",
+      "family": "clean"
+    },
+    {
+      "name": "blur_sigma1",
+      "family": "blur",
+      "sigma_pixels": 1.0,
+      "kernel_size": 7
+    },
+    {
+      "name": "blur_sigma2",
+      "family": "blur",
+      "sigma_pixels": 2.0,
+      "kernel_size": 13
+    },
+    {
+      "name": "noise_std10",
+      "family": "noise",
+      "standard_deviation_pixel_units": 10.0
+    },
+    {
+      "name": "noise_std25",
+      "family": "noise",
+      "standard_deviation_pixel_units": 25.0
+    },
+    {
+      "name": "calibration_yaw1",
+      "family": "calibration",
+      "yaw_degrees": 1.0
+    },
+    {
+      "name": "calibration_yaw3",
+      "family": "calibration",
+      "yaw_degrees": 3.0
+    }
+  ],
+  "image_transform": {
+    "position": "After existing resizing/cropping to 256x704, before model data-preprocessor normalization",
+    "arithmetic": "Float32; six views; preserve channel order",
+    "blur": "OpenCV GaussianBlur per view/channel, sigmaX=sigmaY, specified odd kernel size, BORDER_REFLECT_101",
+    "noise": "Independent additive standard-normal values across views, channels and pixels; multiply by specified standard deviation; clip to [0,255]. Generate array in (6,3,256,704) order.",
+    "noise_seed": "Unsigned big-endian integer from first eight SHA-256 bytes of UTF-8 text '20261002:camera_noise:' + sample_token",
+    "noise_generator": "NumPy PCG64; standard_normal(shape) then cast to float32. Same underlying noise realization at both severity levels.",
+    "original_files_modified": false
+  },
+  "calibration_transform": {
+    "position": "Packed metadata before model data preprocessing",
+    "convention": "Column vectors; homogeneous transforms; positive right-handed rotation about LiDAR-frame +Z through the LiDAR origin",
+    "operation": "For every camera, C2L_new = Rz(theta) @ C2L_original; L2C_new = inverse(C2L_new); L2IMG_new = K4 @ L2C_new.",
+    "updated_fields": [
+      "cam2lidar",
+      "lidar2cam",
+      "lidar2img"
+    ],
+    "unchanged": "Camera intrinsics, image augmentation matrices, images, point coordinates/features, GT and output coordinate frame",
+    "interpretation": "Common camera-rig-to-LiDAR extrinsic yaw error; not independent rotation about each camera optical centre",
+    "validation": "Check original matrix relationships, zero-angle identity, inverse consistency, rotation validity and projection consistency before accepting nonzero perturbations."
+  },
+  "controls": {
+    "fresh_clean_baseline": true,
+    "one_intervention_family_at_a_time": true,
+    "same_ordered_tokens": true,
+    "same_checkpoint": true,
+    "lidar_points_unchanged": true,
+    "batch_size": 1,
+    "model_eval_mode": true,
+    "autocast": false,
+    "tf32": false,
+    "cudnn_benchmark": false,
+    "training": false,
+    "numpy_version": "1.26.4",
+    "opencv_version": "4.11.0"
+  },
+  "evaluation": {
+    "configuration": "detection_cvpr_2019",
+    "ground_truth": "Exact frozen 600 tokens; unchanged GT filtering",
+    "metrics": [
+      "mAP",
+      "NDS",
+      "per-class AP",
+      "TP errors"
+    ],
+    "comparison": "Each corrupted condition minus fresh clean baseline"
+  },
+  "limitations": [
+    "Synthetic Gaussian blur is not a full motion/defocus model.",
+    "Additive Gaussian noise is not a physical camera-noise model.",
+    "Noise uses one fixed realization per sample.",
+    "Calibration tests only common positive yaw offsets at two magnitudes.",
+    "No combined corruptions or robustness training.",
+    "600 selected frames; not full validation or independent replication.",
+    "No runtime, sensor-cost, safety or statistical significance claim."
+  ]
+}

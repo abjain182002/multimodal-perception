@@ -1,0 +1,496 @@
+Official evaluator source SHA-256: 1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e
+
+LOADING GROUND-TRUTH METADATA...
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 104.031 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 22.2 seconds.
+======
+
+EVALUATING CONDITION: clean
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/clean/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 10%|█         | 63/600 [00:00<00:00, 597.51it/s]
+ 20%|██        | 123/600 [00:00<00:01, 409.71it/s]
+ 28%|██▊       | 168/600 [00:00<00:01, 419.95it/s]
+ 35%|███▌      | 212/600 [00:00<00:00, 405.66it/s]
+ 42%|████▏     | 254/600 [00:00<00:00, 396.09it/s]
+ 51%|█████     | 305/600 [00:00<00:00, 428.91it/s]
+ 59%|█████▉    | 353/600 [00:00<00:00, 442.73it/s]
+ 66%|██████▋   | 398/600 [00:00<00:00, 411.50it/s]
+ 73%|███████▎  | 440/600 [00:01<00:00, 404.24it/s]
+ 82%|████████▏ | 489/600 [00:01<00:00, 427.68it/s]
+ 89%|████████▉ | 534/600 [00:01<00:00, 433.29it/s]
+ 99%|█████████▊| 592/600 [00:01<00:00, 473.72it/s]
+100%|██████████| 600/600 [00:01<00:00, 429.52it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 77604
+=> After distance based filtering: 77578
+=> After LIDAR and RADAR points based filtering: 77578
+=> After bike rack filtering: 77559
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/clean
+mAP: 0.6810
+mATE: 0.2844
+mASE: 0.2548
+mAOE: 0.2886
+mAVE: 0.2618
+mAAE: 0.1878
+NDS: 0.7128
+Eval time: 14.2s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.897 	0.170 	0.149 	0.056 	0.259 	0.184 
+truck               	0.657 	0.311 	0.181 	0.103 	0.227 	0.231 
+bus                 	0.755 	0.350 	0.185 	0.085 	0.441 	0.237 
+trailer             	0.488 	0.549 	0.210 	0.522 	0.175 	0.162 
+construction_vehicle	0.278 	0.703 	0.438 	0.839 	0.145 	0.311 
+pedestrian          	0.879 	0.129 	0.290 	0.374 	0.221 	0.111 
+motorcycle          	0.729 	0.183 	0.229 	0.299 	0.399 	0.264 
+bicycle             	0.629 	0.155 	0.257 	0.266 	0.228 	0.002 
+traffic_cone        	0.770 	0.128 	0.328 	nan   	nan   	nan   
+barrier             	0.729 	0.165 	0.279 	0.054 	nan   	nan   
+{
+  "condition": "clean",
+  "mAP_x100": 68.10183086477781,
+  "NDS_x100": 71.27670236383439,
+  "delta_mAP_points": 0.0,
+  "delta_NDS_points": 0.0,
+  "drive_metrics_verified": true
+}
+
+EVALUATING CONDITION: blur_sigma1
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/blur_sigma1/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 10%|█         | 62/600 [00:00<00:00, 585.90it/s]
+ 20%|██        | 121/600 [00:00<00:01, 393.53it/s]
+ 27%|██▋       | 164/600 [00:00<00:01, 308.61it/s]
+ 33%|███▎      | 198/600 [00:00<00:01, 302.18it/s]
+ 38%|███▊      | 230/600 [00:00<00:01, 261.06it/s]
+ 43%|████▎     | 260/600 [00:00<00:01, 266.91it/s]
+ 48%|████▊     | 288/600 [00:00<00:01, 267.08it/s]
+ 53%|█████▎    | 318/600 [00:01<00:01, 275.31it/s]
+ 59%|█████▉    | 355/600 [00:01<00:00, 299.85it/s]
+ 64%|██████▍   | 386/600 [00:01<00:00, 253.74it/s]
+ 69%|██████▉   | 413/600 [00:01<00:00, 256.24it/s]
+ 73%|███████▎  | 440/600 [00:01<00:00, 248.69it/s]
+ 78%|███████▊  | 470/600 [00:01<00:00, 262.13it/s]
+ 83%|████████▎ | 499/600 [00:01<00:00, 267.79it/s]
+ 88%|████████▊ | 527/600 [00:01<00:00, 262.50it/s]
+ 94%|█████████▍| 563/600 [00:01<00:00, 286.92it/s]
+ 99%|█████████▉| 593/600 [00:02<00:00, 290.36it/s]
+100%|██████████| 600/600 [00:02<00:00, 279.42it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 78628
+=> After distance based filtering: 78606
+=> After LIDAR and RADAR points based filtering: 78606
+=> After bike rack filtering: 78584
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/blur_sigma1
+mAP: 0.6736
+mATE: 0.2837
+mASE: 0.2554
+mAOE: 0.2881
+mAVE: 0.2622
+mAAE: 0.1862
+NDS: 0.7092
+Eval time: 14.7s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.894 	0.170 	0.150 	0.060 	0.261 	0.186 
+truck               	0.657 	0.313 	0.182 	0.092 	0.225 	0.228 
+bus                 	0.754 	0.350 	0.186 	0.082 	0.441 	0.235 
+trailer             	0.489 	0.544 	0.211 	0.513 	0.179 	0.158 
+construction_vehicle	0.263 	0.697 	0.440 	0.838 	0.131 	0.302 
+pedestrian          	0.880 	0.129 	0.290 	0.379 	0.222 	0.113 
+motorcycle          	0.716 	0.181 	0.228 	0.305 	0.399 	0.265 
+bicycle             	0.594 	0.151 	0.258 	0.268 	0.239 	0.003 
+traffic_cone        	0.769 	0.133 	0.329 	nan   	nan   	nan   
+barrier             	0.720 	0.168 	0.281 	0.056 	nan   	nan   
+{
+  "condition": "blur_sigma1",
+  "mAP_x100": 67.35719304761687,
+  "NDS_x100": 70.92212535881173,
+  "delta_mAP_points": -0.7446378171609425,
+  "delta_NDS_points": -0.35457700502266043,
+  "drive_metrics_verified": true
+}
+
+EVALUATING CONDITION: blur_sigma2
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/blur_sigma2/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 10%|█         | 62/600 [00:00<00:00, 603.85it/s]
+ 20%|██        | 123/600 [00:00<00:01, 424.75it/s]
+ 28%|██▊       | 169/600 [00:00<00:01, 416.88it/s]
+ 36%|███▌      | 213/600 [00:00<00:00, 404.95it/s]
+ 43%|████▎     | 259/600 [00:00<00:00, 419.29it/s]
+ 52%|█████▏    | 309/600 [00:00<00:00, 439.71it/s]
+ 59%|█████▉    | 354/600 [00:00<00:00, 435.10it/s]
+ 66%|██████▋   | 398/600 [00:00<00:00, 401.83it/s]
+ 73%|███████▎  | 440/600 [00:01<00:00, 402.94it/s]
+ 81%|████████  | 486/600 [00:01<00:00, 418.60it/s]
+ 89%|████████▉ | 535/600 [00:01<00:00, 436.16it/s]
+ 99%|█████████▊| 592/600 [00:01<00:00, 472.60it/s]
+100%|██████████| 600/600 [00:01<00:00, 430.72it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 81756
+=> After distance based filtering: 81736
+=> After LIDAR and RADAR points based filtering: 81736
+=> After bike rack filtering: 81717
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/blur_sigma2
+mAP: 0.6588
+mATE: 0.2875
+mASE: 0.2573
+mAOE: 0.3053
+mAVE: 0.2670
+mAAE: 0.1839
+NDS: 0.6993
+Eval time: 14.8s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.887 	0.171 	0.150 	0.071 	0.259 	0.189 
+truck               	0.632 	0.315 	0.180 	0.097 	0.219 	0.228 
+bus                 	0.730 	0.371 	0.187 	0.077 	0.446 	0.213 
+trailer             	0.474 	0.543 	0.219 	0.562 	0.183 	0.167 
+construction_vehicle	0.258 	0.706 	0.445 	0.888 	0.124 	0.298 
+pedestrian          	0.871 	0.129 	0.289 	0.384 	0.222 	0.114 
+motorcycle          	0.711 	0.178 	0.229 	0.300 	0.424 	0.256 
+bicycle             	0.556 	0.158 	0.261 	0.311 	0.258 	0.006 
+traffic_cone        	0.764 	0.131 	0.331 	nan   	nan   	nan   
+barrier             	0.705 	0.174 	0.281 	0.058 	nan   	nan   
+{
+  "condition": "blur_sigma2",
+  "mAP_x100": 65.88199928213945,
+  "NDS_x100": 69.9316145056291,
+  "delta_mAP_points": -2.219831582638365,
+  "delta_NDS_points": -1.345087858205285,
+  "drive_metrics_verified": true
+}
+
+EVALUATING CONDITION: noise_std10
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/noise_std10/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 10%|█         | 62/600 [00:00<00:00, 593.33it/s]
+ 20%|██        | 122/600 [00:00<00:01, 432.19it/s]
+ 28%|██▊       | 168/600 [00:00<00:00, 432.35it/s]
+ 36%|███▌      | 213/600 [00:00<00:00, 417.67it/s]
+ 43%|████▎     | 257/600 [00:00<00:00, 416.73it/s]
+ 50%|█████     | 300/600 [00:00<00:00, 349.60it/s]
+ 56%|█████▌    | 337/600 [00:00<00:00, 318.92it/s]
+ 62%|██████▏   | 371/600 [00:01<00:00, 302.83it/s]
+ 67%|██████▋   | 403/600 [00:01<00:00, 265.22it/s]
+ 72%|███████▏  | 431/600 [00:01<00:00, 254.44it/s]
+ 76%|███████▋  | 458/600 [00:01<00:00, 245.54it/s]
+ 81%|████████  | 484/600 [00:01<00:00, 246.73it/s]
+ 86%|████████▌ | 515/600 [00:01<00:00, 262.65it/s]
+ 90%|█████████ | 542/600 [00:01<00:00, 254.82it/s]
+ 97%|█████████▋| 581/600 [00:01<00:00, 290.25it/s]
+100%|██████████| 600/600 [00:01<00:00, 305.74it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 77522
+=> After distance based filtering: 77499
+=> After LIDAR and RADAR points based filtering: 77499
+=> After bike rack filtering: 77481
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/noise_std10
+mAP: 0.6619
+mATE: 0.2861
+mASE: 0.2561
+mAOE: 0.2947
+mAVE: 0.2650
+mAAE: 0.1908
+NDS: 0.7017
+Eval time: 15.2s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.888 	0.170 	0.150 	0.074 	0.258 	0.185 
+truck               	0.611 	0.325 	0.184 	0.089 	0.227 	0.234 
+bus                 	0.753 	0.346 	0.184 	0.092 	0.458 	0.243 
+trailer             	0.448 	0.542 	0.210 	0.561 	0.191 	0.180 
+construction_vehicle	0.253 	0.709 	0.440 	0.850 	0.133 	0.309 
+pedestrian          	0.873 	0.129 	0.291 	0.379 	0.224 	0.111 
+motorcycle          	0.717 	0.183 	0.231 	0.281 	0.393 	0.262 
+bicycle             	0.601 	0.153 	0.260 	0.273 	0.236 	0.003 
+traffic_cone        	0.767 	0.127 	0.328 	nan   	nan   	nan   
+barrier             	0.708 	0.177 	0.281 	0.055 	nan   	nan   
+{
+  "condition": "noise_std10",
+  "mAP_x100": 66.1922286875704,
+  "NDS_x100": 70.16807332498477,
+  "delta_mAP_points": -1.9096021772074034,
+  "delta_NDS_points": -1.1086290388496067,
+  "drive_metrics_verified": true
+}
+
+EVALUATING CONDITION: noise_std25
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/noise_std25/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+ 10%|▉         | 57/600 [00:00<00:00, 559.17it/s]
+ 19%|█▉        | 113/600 [00:00<00:01, 372.97it/s]
+ 26%|██▌       | 154/600 [00:00<00:01, 364.43it/s]
+ 33%|███▎      | 200/600 [00:00<00:01, 394.11it/s]
+ 40%|████      | 242/600 [00:00<00:00, 392.74it/s]
+ 48%|████▊     | 285/600 [00:00<00:00, 403.84it/s]
+ 56%|█████▌    | 334/600 [00:00<00:00, 428.46it/s]
+ 63%|██████▎   | 378/600 [00:00<00:00, 428.45it/s]
+ 70%|███████   | 422/600 [00:01<00:00, 428.42it/s]
+ 78%|███████▊  | 466/600 [00:01<00:00, 395.70it/s]
+ 86%|████████▌ | 515/600 [00:01<00:00, 418.95it/s]
+ 94%|█████████▎| 562/600 [00:01<00:00, 433.08it/s]
+100%|██████████| 600/600 [00:01<00:00, 414.48it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 78669
+=> After distance based filtering: 78643
+=> After LIDAR and RADAR points based filtering: 78643
+=> After bike rack filtering: 78625
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/noise_std25
+mAP: 0.6314
+mATE: 0.2908
+mASE: 0.2563
+mAOE: 0.3007
+mAVE: 0.2618
+mAAE: 0.1879
+NDS: 0.6859
+Eval time: 15.8s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.871 	0.173 	0.152 	0.083 	0.258 	0.186 
+truck               	0.558 	0.322 	0.183 	0.069 	0.206 	0.237 
+bus                 	0.725 	0.345 	0.184 	0.087 	0.448 	0.226 
+trailer             	0.375 	0.530 	0.214 	0.534 	0.211 	0.159 
+construction_vehicle	0.257 	0.752 	0.449 	0.885 	0.112 	0.312 
+pedestrian          	0.861 	0.130 	0.286 	0.368 	0.224 	0.106 
+motorcycle          	0.682 	0.183 	0.233 	0.306 	0.386 	0.272 
+bicycle             	0.570 	0.161 	0.255 	0.313 	0.250 	0.005 
+traffic_cone        	0.733 	0.128 	0.326 	nan   	nan   	nan   
+barrier             	0.681 	0.184 	0.280 	0.062 	nan   	nan   
+{
+  "condition": "noise_std25",
+  "mAP_x100": 63.13548810781715,
+  "NDS_x100": 68.59229373992594,
+  "delta_mAP_points": -4.966342756960662,
+  "delta_NDS_points": -2.684408623908452,
+  "drive_metrics_verified": true
+}
+
+EVALUATING CONDITION: calibration_yaw1
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/calibration_yaw1/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+  8%|▊         | 45/600 [00:00<00:01, 442.56it/s]
+ 15%|█▌        | 90/600 [00:00<00:01, 284.94it/s]
+ 20%|██        | 122/600 [00:00<00:01, 239.35it/s]
+ 25%|██▌       | 150/600 [00:00<00:01, 249.16it/s]
+ 30%|███       | 180/600 [00:00<00:01, 261.79it/s]
+ 35%|███▍      | 208/600 [00:00<00:01, 249.25it/s]
+ 39%|███▉      | 234/600 [00:00<00:01, 246.53it/s]
+ 43%|████▎     | 260/600 [00:01<00:01, 245.15it/s]
+ 48%|████▊     | 287/600 [00:01<00:01, 250.42it/s]
+ 53%|█████▎    | 316/600 [00:01<00:01, 257.35it/s]
+ 58%|█████▊    | 349/600 [00:01<00:00, 276.67it/s]
+ 63%|██████▎   | 377/600 [00:01<00:00, 262.57it/s]
+ 67%|██████▋   | 404/600 [00:01<00:00, 244.26it/s]
+ 72%|███████▏  | 430/600 [00:01<00:00, 247.36it/s]
+ 76%|███████▌  | 456/600 [00:01<00:00, 236.69it/s]
+ 81%|████████  | 485/600 [00:01<00:00, 250.02it/s]
+ 86%|████████▌ | 516/600 [00:01<00:00, 266.35it/s]
+ 90%|█████████ | 543/600 [00:02<00:00, 257.42it/s]
+ 97%|█████████▋| 580/600 [00:02<00:00, 287.10it/s]
+100%|██████████| 600/600 [00:02<00:00, 258.55it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 78189
+=> After distance based filtering: 78164
+=> After LIDAR and RADAR points based filtering: 78164
+=> After bike rack filtering: 78148
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/calibration_yaw1
+mAP: 0.6743
+mATE: 0.2885
+mASE: 0.2550
+mAOE: 0.2957
+mAVE: 0.2633
+mAAE: 0.1874
+NDS: 0.7082
+Eval time: 23.3s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.883 	0.184 	0.150 	0.060 	0.266 	0.185 
+truck               	0.655 	0.313 	0.180 	0.102 	0.227 	0.228 
+bus                 	0.751 	0.355 	0.185 	0.083 	0.438 	0.234 
+trailer             	0.493 	0.538 	0.208 	0.514 	0.167 	0.162 
+construction_vehicle	0.282 	0.707 	0.440 	0.846 	0.147 	0.323 
+pedestrian          	0.877 	0.132 	0.291 	0.376 	0.221 	0.109 
+motorcycle          	0.701 	0.187 	0.230 	0.308 	0.405 	0.256 
+bicycle             	0.615 	0.160 	0.258 	0.318 	0.236 	0.002 
+traffic_cone        	0.764 	0.136 	0.329 	nan   	nan   	nan   
+barrier             	0.722 	0.173 	0.280 	0.055 	nan   	nan   
+{
+  "condition": "calibration_yaw1",
+  "mAP_x100": 67.42873860436521,
+  "NDS_x100": 70.81526108660523,
+  "delta_mAP_points": -0.673092260412611,
+  "delta_NDS_points": -0.4614412772291576,
+  "drive_metrics_verified": true
+}
+
+EVALUATING CONDITION: calibration_yaw3
+Initializing nuScenes detection evaluation
+Loaded results from /content/camera_challenges600_evaluation/study/inference/calibration_yaw3/results_nusc.json. Found detections for 600 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/600 [00:00<?, ?it/s]
+  5%|▍         | 28/600 [00:00<00:02, 272.64it/s]
+ 10%|█         | 62/600 [00:00<00:01, 296.64it/s]
+ 15%|█▌        | 92/600 [00:00<00:01, 280.50it/s]
+ 20%|██        | 121/600 [00:00<00:01, 243.28it/s]
+ 24%|██▍       | 146/600 [00:00<00:01, 242.08it/s]
+ 29%|██▉       | 175/600 [00:00<00:01, 254.42it/s]
+ 34%|███▎      | 202/600 [00:00<00:01, 254.24it/s]
+ 38%|███▊      | 228/600 [00:00<00:01, 234.42it/s]
+ 43%|████▎     | 258/600 [00:01<00:01, 252.68it/s]
+ 47%|████▋     | 284/600 [00:01<00:01, 253.31it/s]
+ 52%|█████▏    | 311/600 [00:01<00:01, 254.33it/s]
+ 57%|█████▋    | 343/600 [00:01<00:00, 273.02it/s]
+ 62%|██████▏   | 373/600 [00:01<00:00, 277.24it/s]
+ 67%|██████▋   | 401/600 [00:01<00:00, 249.91it/s]
+ 72%|███████▏  | 429/600 [00:01<00:00, 254.72it/s]
+ 76%|███████▌  | 455/600 [00:01<00:00, 242.98it/s]
+ 81%|████████  | 484/600 [00:01<00:00, 252.42it/s]
+ 86%|████████▌ | 516/600 [00:01<00:00, 268.50it/s]
+ 91%|█████████ | 544/600 [00:02<00:00, 270.45it/s]
+ 97%|█████████▋| 583/600 [00:02<00:00, 304.10it/s]
+100%|██████████| 600/600 [00:02<00:00, 260.22it/s]
+Loaded ground truth annotations for 600 samples.
+Filtering predictions
+=> Original number of boxes: 78462
+=> After distance based filtering: 78433
+=> After LIDAR and RADAR points based filtering: 78433
+=> After bike rack filtering: 78418
+Filtering ground truth annotations
+=> Original number of boxes: 19338
+=> After distance based filtering: 13759
+=> After LIDAR and RADAR points based filtering: 12319
+=> After bike rack filtering: 12318
+Accumulating metric data...
+Calculating metrics...
+Rendering PR and TP curves
+Saving metrics to: /content/camera_challenges600_evaluation/evaluation/calibration_yaw3
+mAP: 0.6463
+mATE: 0.2912
+mASE: 0.2542
+mAOE: 0.3051
+mAVE: 0.2645
+mAAE: 0.1849
+NDS: 0.6932
+Eval time: 15.4s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.846 	0.189 	0.151 	0.089 	0.254 	0.190 
+truck               	0.630 	0.315 	0.180 	0.097 	0.225 	0.229 
+bus                 	0.734 	0.361 	0.187 	0.090 	0.438 	0.226 
+trailer             	0.494 	0.534 	0.207 	0.547 	0.177 	0.169 
+construction_vehicle	0.269 	0.678 	0.425 	0.850 	0.127 	0.319 
+pedestrian          	0.865 	0.133 	0.291 	0.383 	0.221 	0.110 
+motorcycle          	0.632 	0.195 	0.233 	0.313 	0.438 	0.230 
+bicycle             	0.559 	0.162 	0.259 	0.328 	0.236 	0.007 
+traffic_cone        	0.725 	0.147 	0.329 	nan   	nan   	nan   
+barrier             	0.710 	0.199 	0.281 	0.049 	nan   	nan   
+{
+  "condition": "calibration_yaw3",
+  "mAP_x100": 64.63385832997005,
+  "NDS_x100": 69.3172113720756,
+  "delta_mAP_points": -3.4679725348077617,
+  "delta_NDS_points": -1.9594909917587833,
+  "drive_metrics_verified": true
+}
+
+SEVEN_CONDITION_SUBSET_EVALUATION_AND_DRIVE_COPY_PASS

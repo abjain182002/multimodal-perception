@@ -1,0 +1,89 @@
+{
+  "status": "CAMERA_CHALLENGES_CPU_EVALUATION_SETUP_PASS",
+  "python": "/content/camera_challenges_cpu310/bin/python",
+  "data_root": "/content/camera_challenges600_evaluation/dataset",
+  "version": "v1.0-trainval",
+  "metadata_scenes": 850,
+  "metadata_samples": 34149,
+  "metadata_archive_sha256": "db48746b10e3544d5ef619eaa3d687e3960626fe1b4422ed856711da5aa7325b",
+  "source_backup_sha256": "c89bc342a240d0bde22ef8b9200ebaf6de5b5f91c8a399073c4057d866f39c3a",
+  "members": {
+    "maps/93406b464a165eaba6d9de76ca09f5da.png": {
+      "bytes": 1784272,
+      "sha256": "0f125aa902db06fd2ba17cbddd10c602124f59991b9b4061c13e281f2e476373"
+    },
+    "maps/53992ee3023e5494b90c316c183be829.png": {
+      "bytes": 1060975,
+      "sha256": "bbbd05286eea0835844548922834781309e0542a75a12f38bf247b04a04c85f3"
+    },
+    "maps/37819e65e09e5547b8a3ceaefba56bb2.png": {
+      "bytes": 1410125,
+      "sha256": "55de71c4a70289eba0cbf2c75f8d2f81580e94c422d8d9a7e6b0740ca2f7a289"
+    },
+    "maps/36092f0b03a857c6a3403e25b4b7aab3.png": {
+      "bytes": 1537492,
+      "sha256": "05ca03d0ba4bba61d84b4bdb6144abb93ec8923554fe116af4aa859f21af5652"
+    },
+    "v1.0-trainval/ego_pose.json": {
+      "bytes": 645746265,
+      "sha256": "be12bd501f694b344628ba0680a37d6e1ec83e62b37f310c205c1dbe41cd09ff"
+    },
+    "v1.0-trainval/instance.json": {
+      "bytes": 16012833,
+      "sha256": "8f8b19496ce45353874714ce23a9df7f47f48cb6203df2dd456ea0247d146461"
+    },
+    "v1.0-trainval/category.json": {
+      "bytes": 4747,
+      "sha256": "30f64fb175e5bd7db99892d90f9034481bca491f26600c5c0d1a56106b198dfe"
+    },
+    "v1.0-trainval/attribute.json": {
+      "bytes": 1147,
+      "sha256": "dc01438363e29188f25785884bb2431a7aa27ba0debbc359cb21cf1f00652210"
+    },
+    "v1.0-trainval/calibrated_sensor.json": {
+      "bytes": 3268133,
+      "sha256": "67781a5dd7b2504b046ef89d6dcb267b12d1cc91af21f1ec5758624588e99865"
+    },
+    "v1.0-trainval/scene.json": {
+      "bytes": 285132,
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b"
+    },
+    "v1.0-trainval/log.json": {
+      "bytes": 11968,
+      "sha256": "774c8256554a5569f64660e5f450394ce7e3a82168edfab530edab81f9ae7edc"
+    },
+    "v1.0-trainval/map.json": {
+      "bytes": 3606,
+      "sha256": "6b1d504987d0630e7e32affb7ae0d99fe9b427c757a315ec2f56fb09ebd1bfce"
+    },
+    "v1.0-trainval/sample_data.json": {
+      "bytes": 1345678379,
+      "sha256": "6dcad49f0b9bd7b1cef04e2a0ff2ac2879b46b938e8d48153f00693cebb4de21"
+    },
+    "v1.0-trainval/sample_annotation.json": {
+      "bytes": 583417244,
+      "sha256": "1f4f3835cb86f4efe49ccad3ae6f5f6a2d068422696de564c5892b5b06bea2a9"
+    },
+    "v1.0-trainval/sensor.json": {
+      "bytes": 1185,
+      "sha256": "4d5c96570e2d8b09b88ce4c605e40ee43c4909f97bea5741185f18f92eb491ae"
+    },
+    "v1.0-trainval/sample.json": {
+      "bytes": 7424233,
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d"
+    },
+    "v1.0-trainval/visibility.json": {
+      "bytes": 418,
+      "sha256": "87088bf2c78d070e1e215ff108f9c5c0958d124a14cce8f72bfb5d9651295749"
+    },
+    ".v1.0-trainval_meta.txt": {
+      "bytes": 142,
+      "sha256": "8aa6ea653821fadeef5c6da495c01997451436696ea17b972dca54ca4959c775"
+    },
+    "LICENSE": {
+      "bytes": 25319,
+      "sha256": "1a218286e733f6d6135fc5698d614cda2be94ea096f6eee280278458e570636a"
+    }
+  },
+  "scope": "CPU evaluator imports and ground-truth metadata verified. Seven-condition accuracy evaluation remains pending."
+}
