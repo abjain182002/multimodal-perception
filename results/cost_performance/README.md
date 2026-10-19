@@ -37,6 +37,6 @@ Historical press-release prices and unrelated hobby-camera prices must not be mi
 
 - Agree the deployment scenario with the supervisor: mobile robot, research vehicle or another specified application.
 - Select comparable sensor products and record dated region/currency, quantity, taxes, included lenses, cables, interfaces and synchronization requirements.
-- Obtain current prices or quotes; state missing values rather than inventing them. No supplier contact has been made by this project assistant.
+- Obtain current prices or quotes; state missing values rather than inventing them. Supplier quotations remain to be obtained.
 - Add compute and integration costs with explicit assumptions and sensitivity ranges.
 - Report runtime/accuracy and hardware-accounting scenarios as distinct evidence. No energy efficiency or optimum physical sensor configuration has been demonstrated.
