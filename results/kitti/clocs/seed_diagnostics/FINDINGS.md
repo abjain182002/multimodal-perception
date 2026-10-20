@@ -30,3 +30,9 @@ Figure captions:
 - epoch12_to24_candidate_ap.svg: Development candidate AP during continuation.
   The truncated vertical axis is explicit; this measure is not detection AP40.
 
+
+
+## Follow-up audit — 20 October 2026
+
+The [bounded saved-record audit](../audit_20261020/README.md) checks equal recorded inputs/splits/settings, learning trajectories, development checkpoint selection, reload reports and baseline parity. Seed-29 and seed-30 differ by only 0.0209 development candidate-AP points but 7.2471 Easy 3D AP40 points, showing that the proxy does not guarantee matched downstream performance. The cause remains inconclusive. The executed Kaggle trainer hash differs from the current generic repository trainer; recover the original source before a faithful rerun. The earlier score-combination pilot is explicitly bounded as unfinished and does not provide a full AP40 remedy. No original seed metrics were changed.
+

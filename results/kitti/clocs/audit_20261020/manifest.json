@@ -1,0 +1,50 @@
+{
+  "status": "BOUNDED_AUDIT_DERIVED_OUTPUTS_VERIFIED",
+  "source_repository_commit": "a6ab95b2e116df94c427d7b8c091aedcb5f07e12",
+  "files": {
+    "DAILY_LOG.md": {
+      "bytes": 41873,
+      "sha256": "58ce840a6578026a3c65dc3c2d273f09417c3f373c88ee705a1cc93c5538ecf2"
+    },
+    "README.md": {
+      "bytes": 8370,
+      "sha256": "1f29e97a10b88a896e52a3a1300f23cb653b510995440a3ce36109b81f5614f8"
+    },
+    "docs/PROJECT_GUIDE.md": {
+      "bytes": 12085,
+      "sha256": "0e4a278a690e34c7bdf4c71e7a63976e0724bdca79c103401080a2b586085512"
+    },
+    "docs/report/EVIDENCE_GAP_STATUS_2026-10-20.md": {
+      "bytes": 3714,
+      "sha256": "287cfff44edb3489c829a29d481ad1acf266d954db4e8d6e7ced0584ec49ce30"
+    },
+    "results/kitti/clocs/audit_20261020/README.md": {
+      "bytes": 8543,
+      "sha256": "44a42df599ba00eb170bb799fe6c982acef8274dc7b1c9cee740b4c531dc93e1"
+    },
+    "results/kitti/clocs/audit_20261020/audit.json": {
+      "bytes": 1225,
+      "sha256": "9b218ac16ee43c82362ecb9cbafe6bdc1826516ac5ab01dcd6ff9a427bcc51ca"
+    },
+    "results/kitti/clocs/audit_20261020/epoch_audit_table.csv": {
+      "bytes": 2776,
+      "sha256": "4dfddc03e20a38b284a9792e9ea267ddb57bb6ab07f0a4fe17f7c3d9b14de3c4"
+    },
+    "results/kitti/clocs/audit_20261020/seed_audit_table.csv": {
+      "bytes": 2096,
+      "sha256": "eb7ad041f383c8af1275cb59822e55b282b926bba126b6a55db95e7632460f2e"
+    },
+    "results/kitti/clocs/audit_20261020/source_manifest.json": {
+      "bytes": 6522,
+      "sha256": "a4d713ced82e0a28a47026d3b683afbd3babc63607e3cb89862c108368347232"
+    },
+    "results/kitti/clocs/seed_diagnostics/FINDINGS.md": {
+      "bytes": 2585,
+      "sha256": "d832f08e32f07bd90db6377cac7d69fefde18bfc1f9db033d2ad07cdf663d176"
+    },
+    "scripts/audit_clocs_saved_seeds.py": {
+      "bytes": 7523,
+      "sha256": "c8fe6809625e52f610e76899b230a46aa219352ea2d9b048901bb7238fa88a1c"
+    }
+  }
+}

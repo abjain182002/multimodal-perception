@@ -1,0 +1,19 @@
+{
+  "status": "BOUNDED_CLOCS_SAVED_RECORD_AUDIT_COMPLETE_CAUSE_INCONCLUSIVE",
+  "recorded_protocol_input_split_equality": true,
+  "all_nine_baseline_metrics_exact_each_seed": true,
+  "best_epoch_and_reload_checks": true,
+  "matched_validation_manifest_record": true,
+  "seed29_easy_delta_ap_points": -7.78685195511504,
+  "seed29_vs_seed30_development_candidate_ap_difference": 0.00020918100634303993,
+  "seed29_vs_seed30_easy_ap40_difference": -7.247078465258255,
+  "blend_train_selected_parameter": 1.875,
+  "blend_four_frame_candidate_ap": 0.8432663565531509,
+  "blend_four_frame_baseline_candidate_ap": 0.7965761635217612,
+  "blend_full_ap40_status": "Unperformed; retain as unfinished exploratory pilot",
+  "recorded_executed_trainer_sha256": "23e798e098a639f70e582093a20a93e56bb2b7a8f1db7033c2de96f6a60f54db",
+  "current_repository_trainer_sha256": "7bb2cc59c3ea43448567bd74df9e102611fe7dee71736215fff780fc52a80bc6",
+  "current_trainer_matches_recorded_execution_source": false,
+  "cause": "Not identified from saved aggregate records",
+  "scope": "Audits recorded metadata, learning histories and stored AP40. No raw-candidate/checkpoint rehash, per-frame attribution, training, inference, or fresh AP40 evaluation."
+}

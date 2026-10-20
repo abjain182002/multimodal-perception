@@ -404,3 +404,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Imported all 23 source ZIP members unchanged under [full-validation replay](results/nuscenes/bevfusion/full_validation/replay_20261020/README.md). Archive: 833,241 bytes; SHA-256 95eb6f99c1a495533bf62d1358fe7edc8527b7065ad032a7e646c2ad354b5a7a. Import rechecked member hashes, original reference bytes and numeric comparisons.
 - This is same-evaluator reproduction, not independent cross-implementation verification. The repository import did not execute another evaluation. The checkpoint-linked upstream discrepancy and CLOCs root-cause analysis remain unresolved.
 
+
+
+## 20 October 2026 — bounded CLOCs record audit and blend scope
+
+- Audited 26 saved JSON records plus the current trainer against the repository snapshot. Equal recorded training inputs, fixed 96/32 split, source hashes and settings (except training seed/output folder), best-epoch/reload records and all nine paired baseline metrics pass.
+- Seed-29 reaches development candidate baseline later (epoch 6 versus 4/3). Its final development candidate AP is 0.0209 points above seed-30 while Easy 3D AP40 is 7.2471 points lower. Cause remains inconclusive; no per-frame attribution or new AP40 evaluation performed.
+- Identified a source reproduction gap: recorded Kaggle trainer SHA-256 23e798e0… differs from current generic repository trainer 7bb2cc59…. Exact executed source recovery remains required before a faithful rerun.
+- Reviewed exploratory holdout-grid selection separately from the train-selected blend coefficient 1.875 (four-frame candidate AP 0.843266 vs 0.796576 baseline). Explicitly retained blend as unfinished exploratory pilot, without full-AP40 validation or a claimed seed-29 remedy.
+- Saved [audit, two CSV tables, source hashes and discussion draft](results/kitti/clocs/audit_20261020/README.md) plus the standard-library reproduction script. Existing figures and original numerical records remain unchanged.
+

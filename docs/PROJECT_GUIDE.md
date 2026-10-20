@@ -34,7 +34,7 @@ PointPillars baseline parity in fresh CLOCs runs checks reproduction against fro
 
 The nuScenes subset summary and initial figures were transcribed from execution output. On 7 October, all 84 original archive members were hash-verified and compact original metrics, scripts, audits, split records and summary curves were imported. Prediction tokens and stored metric arithmetic were checked; a CPU ground-truth replay on 8 October reproduced both headline metrics exactly, with summary/detail differences below 1e-12. See [replay evidence](../results/nuscenes/bevfusion/validation_subset/replay_20261008/README.md). This verifies reproduction using the same evaluator, not independent evaluator agreement. Large prediction files remain in the verified source archive. Mini/subset scene overlap remains unchecked; do not describe them as independent or the availability-selected subset as representative.
 
-Seed 20260929's Easy-AP decline remains unexplained pending an existing-log audit. The score-blending pilot has not completed full AP40 validation. Any blend settings must be chosen on development data, with subsequent validation described as iterative. Larger-frame CLOCs training adequacy remains untested. These are open analyses, not established causes or completed experiments.
+The [20 October saved-record audit](../results/kitti/clocs/audit_20261020/README.md) is complete. Recorded input hashes, splits and settings agree across three seeds; checkpoint-selection/reload records and all nine baseline metrics pass. The cause of seed-20260929's Easy decline remains inconclusive. The recorded executed Kaggle trainer hash differs from the current generic repository trainer, so recover that exact source before a faithful rerun. The score blend is explicitly retained as an unfinished 16-frame candidate-ranking pilot, without full AP40 validation or a claimed seed-29 remedy. Larger-frame training adequacy and object-level failure attribution remain untested.
 
 ## Project Records
 
@@ -75,6 +75,7 @@ See [`results/README.md`](../results/README.md) for the artifact-storage policy.
 ## Storage Policy
 
 Datasets, virtual environments, model weights, and bulk generated `model_outputs/` are intentionally excluded from Git history. Source code, evaluation scripts, compact numerical results, dissertation-ready figures, and selected qualitative examples are version-controlled.
+
 
 
 

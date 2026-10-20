@@ -1,0 +1,137 @@
+{
+  "results/kitti/clocs/aligned_seed_study/study_protocol.json": {
+    "bytes": 2490,
+    "sha256": "cc0ee68fe193d9a00ab1b3d5079b29529d981a99796a31cf0aad844736bfb4c6",
+    "git_blob_sha": "5b2f3c87ea5af8ed4f44a6ef6edc9e1c37a783ac"
+  },
+  "results/kitti/clocs/aligned_seed_study/validation_selection.json": {
+    "bytes": 301,
+    "sha256": "c7ca9b376c3d28f153ea67e51ccfd4be03e71d603ce77d1cf8469b52b98a9b32",
+    "git_blob_sha": "a38ec4dd1610580ac5174a34650bb4d2e8c575d4"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260928/protocol.json": {
+    "bytes": 2005,
+    "sha256": "398d4550eed424f1e5106e32e1ff5270a9d94556986b8887cd01a67f0bf19015",
+    "git_blob_sha": "a596a388a7d4fa09ab35caa056ce0ad28581e2df"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260928/report.json": {
+    "bytes": 5173,
+    "sha256": "0faa3eedab617dc5fda8705e4f383ad85a1984eebc489934176a29708d51d52c",
+    "git_blob_sha": "c896629958d9b721a4174c07d407bf19cc73debd"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260928/history.json": {
+    "bytes": 5038,
+    "sha256": "30261df8149d6d4f2e757f17f056a8f1dbcde30433c2607d5e750e72a5e7c5bb",
+    "git_blob_sha": "111f436ae514a7afa5a0cfa8c50f16d4a2f050f6"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260928/split.json": {
+    "bytes": 2025,
+    "sha256": "1b4824522a49cf888a3c2b0ccaed32c48aa88552385fd3ba023561667993ff63",
+    "git_blob_sha": "94dc92286121dc9cfc3c635b2320c5aff4f324f5"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260928/input_audit.json": {
+    "bytes": 35278,
+    "sha256": "9050d6eda5b89c4e3b05bfc5e5e3217acb3683a161d6397a6a4b8a665533c2a9",
+    "git_blob_sha": "695a5f6f03802c139ea12bdaa8be1818d4202aaf"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260928/before_dev.json": {
+    "bytes": 228,
+    "sha256": "c4f063094d70c660ff60aad686030798bff58b28fdd0747354d8c3eb7589b5c3",
+    "git_blob_sha": "85922d242426ce1605d68068960a27c763b6bc8a"
+  },
+  "results/kitti/clocs/seed_diagnostics/seed_20260928_ap40.json": {
+    "bytes": 1856,
+    "sha256": "765ae2246e9585d96085accbef18dc97748a68a77f2e2fd1a331390165351008",
+    "git_blob_sha": "32e837b89510de9c5b9dfaa571adc6aae968c1b6"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260929/protocol.json": {
+    "bytes": 2005,
+    "sha256": "b0f0fbf19c1b5989ffd0cae10da8d5d1df728f03de42ed4094c72255fb1ae990",
+    "git_blob_sha": "17b12487a52f9a64fdb204fbb57449e7d952582c"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260929/report.json": {
+    "bytes": 5175,
+    "sha256": "40fb1c0a9b71b31796d7cefa41a99e81a87d7423646efb1095b52c733943330c",
+    "git_blob_sha": "3eb78b0f701aef6f3e37d3ef90941a9220aa4598"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260929/history.json": {
+    "bytes": 5041,
+    "sha256": "18ef7604b73c884c1938c9477e7f005782b73e0012e977b3a110fa1bd349943e",
+    "git_blob_sha": "b474641a0f09639c934db91ae128dc9dc4968ecb"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260929/split.json": {
+    "bytes": 2025,
+    "sha256": "1b4824522a49cf888a3c2b0ccaed32c48aa88552385fd3ba023561667993ff63",
+    "git_blob_sha": "94dc92286121dc9cfc3c635b2320c5aff4f324f5"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260929/input_audit.json": {
+    "bytes": 35278,
+    "sha256": "9050d6eda5b89c4e3b05bfc5e5e3217acb3683a161d6397a6a4b8a665533c2a9",
+    "git_blob_sha": "695a5f6f03802c139ea12bdaa8be1818d4202aaf"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260929/before_dev.json": {
+    "bytes": 230,
+    "sha256": "9000e5c10aa9fefb8a7977e9545f7ee4790ebb9aebf4e372e4530e66bec933dd",
+    "git_blob_sha": "e970ecec5786b32c5e5befa48056015e6eab80ee"
+  },
+  "results/kitti/clocs/seed_diagnostics/seed_20260929_ap40.json": {
+    "bytes": 1857,
+    "sha256": "1b00ab19e6bbf827029344fed41d9c9a23cde4453d4e3aa24d0dec28809c8d5d",
+    "git_blob_sha": "647252e740434c728d42e3484d4f6b6dc70024a6"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260930/protocol.json": {
+    "bytes": 2005,
+    "sha256": "95aac5c244c3545d5ab8498a8841fedc258d6a66358c097a415a5338c52098ee",
+    "git_blob_sha": "072a06f1358f3a0a7ee4cadb5d041f23229e78e5"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260930/report.json": {
+    "bytes": 5177,
+    "sha256": "7589ab3d4fbdc8532e72e3cdb9d05b30556b661b807e73125ae590bccc39aeb5",
+    "git_blob_sha": "244a98adc78155f2fc76dd7d86d2d8c01ac938fb"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260930/history.json": {
+    "bytes": 5042,
+    "sha256": "ca398fc4d5d501f8a1227f64ae09950c159292eded02018bd15fc69c1d78d708",
+    "git_blob_sha": "27a0d782abec153f2f63ce4a8474f148563f0ba8"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260930/split.json": {
+    "bytes": 2025,
+    "sha256": "1b4824522a49cf888a3c2b0ccaed32c48aa88552385fd3ba023561667993ff63",
+    "git_blob_sha": "94dc92286121dc9cfc3c635b2320c5aff4f324f5"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260930/input_audit.json": {
+    "bytes": 35278,
+    "sha256": "9050d6eda5b89c4e3b05bfc5e5e3217acb3683a161d6397a6a4b8a665533c2a9",
+    "git_blob_sha": "695a5f6f03802c139ea12bdaa8be1818d4202aaf"
+  },
+  "results/kitti/clocs/aligned_seed_study/seed_20260930/before_dev.json": {
+    "bytes": 232,
+    "sha256": "081ea22cf54eb518c8c30fbaa77573877c08da145b32038885f5e0181d75ce9a",
+    "git_blob_sha": "2f8e897182625ec8b1122c6289291e6529f3fbee"
+  },
+  "results/kitti/clocs/seed_diagnostics/seed_20260930_ap40.json": {
+    "bytes": 1860,
+    "sha256": "e8eecf18d8e358c55c3c4627ee361bb724e8139d7fce59a882daec8a8f6081e6",
+    "git_blob_sha": "d8c30b0fd238bd4b077600cb1a82921b23a9f01c"
+  },
+  "results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_score_calibration.json": {
+    "bytes": 5928,
+    "sha256": "6270e9c786227f9506db370dc3313b3f71ab98435bbd221a70b4c0be5a52c4de",
+    "git_blob_sha": "2d4b56009228496fbd00a15ca30c22c4b9143029"
+  },
+  "results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_calibration_split.json": {
+    "bytes": 6212,
+    "sha256": "ac02455e866a35edcbf6837fddb4710d544bf44ca25bca688c9039666736a5fb",
+    "git_blob_sha": "f072d38ebc14784dbabe6ff25a7afe164f49bde9"
+  },
+  "results/kitti/clocs/pilot_calibration/clocs_yolo26_pilot_report.json": {
+    "bytes": 14903,
+    "sha256": "94ac6e9436526c46744f09a54740f187dc9a10ee191b166b925c9b146a961a07",
+    "git_blob_sha": "2a379af52c1c0f968f1f0c541530af039fcc9374"
+  },
+  "scripts/train_clocs_128.py": {
+    "bytes": 12697,
+    "sha256": "7bb2cc59c3ea43448567bd74df9e102611fe7dee71736215fff780fc52a80bc6",
+    "git_blob_sha": "3c64390fdd757ab66548e8820c21b9466fbe0a89"
+  }
+}
