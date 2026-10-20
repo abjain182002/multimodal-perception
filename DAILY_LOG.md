@@ -384,3 +384,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Produced one three-panel main-report figure, a supporting class heatmap, vector exports and three CSV tables with a reproducible script.
 - Planned corruption studies complete; literature/failure synthesis, monetary scenarios and camera-only/multi-LiDAR scope remain pending. Report target remains 40–50 pages with combined figures.
 
+
+
+## 20 October 2026 — quantitative nuScenes case analysis
+
+- Hash-verified the preserved six-case input ZIP against its existing repository record; replayed all 12 model–case matching/FP/FN records exactly at score 0.30.
+- Added exploratory 0.10/0.50 threshold checks across six frames (36 model–frame–threshold rows), plus class, shared-localisation and object-level ledgers for scene-0332/scene-0562.
+- Seventeen of 18 discordant objects have no score-eligible same-class candidate within 2 m in the model that misses them; the remaining object has an eligible candidate assigned to neighbouring GT. All six highlighted misses recover at threshold 0.10. This diagnoses matching outcomes, not causes of learned score differences.
+- Preserved one composite figure (PDF/PNG), CPU reproduction scripts, [methods/discussion draft](docs/report/CASE_ANALYSIS_DRAFT_2026-10-20.md), and [bounded evidence-gap status](docs/report/EVIDENCE_GAP_STATUS_2026-10-20.md).
+- No inference, fresh SDK filtering or full-validation replay was run. Full replay, CLOCs root-cause investigation, wider literature review and sourced financial analysis remain open.
+

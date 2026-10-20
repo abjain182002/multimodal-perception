@@ -65,6 +65,8 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 
 ## Annotated nuScenes cases
 
+[Quantitative case analysis — 20 October](results/nuscenes/bevfusion/case_analysis/20261020/README.md) replays all six saved cases at three confidence thresholds and diagnoses two contrasting frames. All 12 original model–case matching records reproduce exactly. A [single composite figure](results/nuscenes/bevfusion/case_analysis/20261020/case_diagnostics.png) and [methods/discussion draft](docs/report/CASE_ANALYSIS_DRAFT_2026-10-20.md) distinguish score eligibility and assignment from missing nearby candidates; no new inference or full-validation replay is claimed.
+
 [Six case studies with camera crops and paired bird's-eye views](results/nuscenes/bevfusion/case_studies/20261013/README.md) illustrate benefits, regressions and shared failures. Captions separate observations from untested causal explanations.
 
 ## Camera availability experiment
@@ -75,6 +77,7 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## Runtime, memory and architecture
 
 [Three-session T4 benchmark](results/nuscenes/bevfusion/runtime/20261015/README.md): median-of-session-medians latency is 287.81 ms (LiDAR) versus 544.98 ms (fusion); maximum allocated GPU memory is 609.82 versus 2,231.80 MiB. Same 150-frame runtime subset; file loading excluded. [Architecture diagrams](docs/architecture/README.md) identify reused model components and project orchestration. [Hardware cost framework](results/cost_performance/README.md) records initial sources and unresolved price assumptions.
+
 
 
 

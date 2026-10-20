@@ -1,0 +1,24 @@
+{
+  "status": "SAVED_CASE_DIAGNOSTIC_REPLAY_PASS",
+  "input_archive_sha256": "574a5ea93c4fc455317562caaa82a30f25ce3f8b20715ddbf2e05c0cff0b9bdd",
+  "input_hashes": {
+    "candidate_contexts.json": "817152f468b267daab003fad9606ce1d660cff3c4de893d45f9c9a46f1bc6e6d",
+    "selection.json": "7f2f0ed27faf0cbaf4ccaa46a9a6e9f55c101aea6b0fdfa869d28e436aceccf3",
+    "selection_protocol.json": "ef137790209075b8a183cc16cec1f84be1b8b2c0f014344e51e77d5fd7ccb05d",
+    "case_candidates.json": "0608a35122495a8c02220359c99e893c470b0e0d6f43bdcd68f6d999816b88b0"
+  },
+  "scenes": 6,
+  "thresholds": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "saved_model_case_matches_reproduced_exactly": 12,
+  "summary_rows": 36,
+  "highlight_rows": 12,
+  "source_prediction_hashes": {
+    "lidar": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+    "lidar_camera": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd"
+  },
+  "scope": "Replayed matching on six preserved, already SDK-filtered case contexts. No new inference, fresh SDK filtering, full-split evaluation, confidence intervals or causal tests."
+}

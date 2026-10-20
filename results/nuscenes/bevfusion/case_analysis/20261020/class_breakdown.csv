@@ -1,0 +1,10 @@
+scene,class_name,gt,lidar_tp,fusion_tp,fusion_only,lidar_only
+scene-0332,bicycle,1,1,1,0,0
+scene-0332,car,31,17,22,5,0
+scene-0332,pedestrian,9,4,8,4,0
+scene-0332,truck,5,0,2,2,0
+scene-0562,barrier,15,4,0,0,4
+scene-0562,car,9,8,7,0,1
+scene-0562,pedestrian,6,3,1,0,2
+scene-0562,traffic_cone,6,5,5,0,0
+scene-0562,truck,2,1,1,0,0

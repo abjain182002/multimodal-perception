@@ -1,0 +1,62 @@
+{
+  "status": "CASE_ANALYSIS_DERIVED_OUTPUTS_VERIFIED",
+  "date": "2026-10-20",
+  "python": "3.12.14",
+  "matplotlib": "3.10.8",
+  "figure_visual_review": "PNG inspected at rendered resolution; titles, labels and legend readable",
+  "files": {
+    "docs/report/CASE_ANALYSIS_DRAFT_2026-10-20.md": {
+      "bytes": 8253,
+      "sha256": "4deecdccf4307990b040d9452c04b6d502d51972fd6a4d6e67e2c84599fe26be"
+    },
+    "docs/report/EVIDENCE_GAP_STATUS_2026-10-20.md": {
+      "bytes": 3285,
+      "sha256": "22adaf4af323acceb12ec6bff703a0cd586fc728c934c98a50230ac62044739a"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/README.md": {
+      "bytes": 8090,
+      "sha256": "05a432641477fef302ac0c110630b79b225c6959a19b35dc58018c1011b53005"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/case_diagnostics.pdf": {
+      "bytes": 18600,
+      "sha256": "1d6a667bb6e97db23f08d87067e1a3496ee4d4d24c1864fbec8bca0de93af836"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/case_diagnostics.png": {
+      "bytes": 186882,
+      "sha256": "d40b2c50f8935d29bd4c518583964ed9e4ceb6f385c95537cc7189bdec7692c0"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/class_breakdown.csv": {
+      "bytes": 336,
+      "sha256": "becfcfecde1ccde382216db10ac3d7aff03100f211d5e855c19bd96ba449e8eb"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/discordant_objects.csv": {
+      "bytes": 6987,
+      "sha256": "1474e65047b1d5784bd7f8e08d776b2310beb349f54a32ae7c6ed4353c12850c"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/highlighted_objects.csv": {
+      "bytes": 2504,
+      "sha256": "8c2f76845dd58ab97eb2c326e30e9467d8efbbe7f44e9ff7bf162843aed78ec5"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/replay_audit.json": {
+      "bytes": 1108,
+      "sha256": "e766e7f863a83754940d89dddd302f9dd5df50364fe72c8bc0a767d9c8d61892"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/shared_match_localisation.csv": {
+      "bytes": 4231,
+      "sha256": "991a1a93caf44a111e399b87f7398bdcdf4bd5a09cbd7f94c20ff4e6f7d6167e"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261020/threshold_sensitivity.csv": {
+      "bytes": 4829,
+      "sha256": "46bf8c83d60cfc7853ebc2619c1fd58932ff7195f48a8879a4ec08ce1f33de2e"
+    },
+    "scripts/analyse_saved_nuscenes_cases.py": {
+      "bytes": 9305,
+      "sha256": "3a88a63dbb6c925751aa742febb2d73337b38bbc33abda570e48778b36840ec9"
+    },
+    "scripts/plot_saved_nuscenes_cases.py": {
+      "bytes": 2636,
+      "sha256": "0a5af36b574cf65e21acf34f02cd01aa29350ec639f06f48ac50d6a3f4423195"
+    }
+  },
+  "scope": "Derived case diagnostics and draft text; full-split replay and broader review remain pending."
+}
