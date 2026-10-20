@@ -63,3 +63,9 @@ Translation and velocity errors decrease; scale, orientation and attribute error
 - Class support: ground-truth box counts after the official distance, sensor-point and bike-rack filters.
 
 
+
+
+## Upstream-reference audit — 20 October 2026
+
+The [bounded reference audit](../reference_audit_20261020/README.md) confirms full published checkpoint hashes and equality of all six saved model dictionaries/test pipelines with the pinned reference. The linked validation logs report LiDAR mAP/NDS ×100 64.85/69.56 (epoch 20) and fusion 68.58/71.39 (epoch 5), consistent with the rounded model-table context. Project differences against those printed values are approximately −0.42/−0.32 and −0.27/−0.25 points. The logs record historical runtime/configuration differences, but none has been isolated as the cause. Upstream SDK-version/annotation equivalence and checkpoint metadata-to-log-row identity remain unverified. The discrepancy remains unexplained; the project's full-validation replay and within-project paired comparison remain valid at their stated scope.
+

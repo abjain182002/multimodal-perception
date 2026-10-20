@@ -1,0 +1,167 @@
+[
+  {
+    "model": "lidar",
+    "path": "model.pts_backbone.norm_cfg.type",
+    "logged_reference": "SyncBN",
+    "project": "BN"
+  },
+  {
+    "model": "lidar",
+    "path": "model.pts_middle_encoder.norm_cfg.type",
+    "logged_reference": "SyncBN",
+    "project": "BN1d"
+  },
+  {
+    "model": "lidar",
+    "path": "model.pts_neck.norm_cfg.type",
+    "logged_reference": "SyncBN",
+    "project": "BN"
+  },
+  {
+    "model": "lidar",
+    "path": "test_pipeline[3].meta_keys",
+    "logged_reference": [
+      "cam2img",
+      "ori_cam2img",
+      "lidar2cam",
+      "lidar2img",
+      "cam2lidar",
+      "ori_lidar2img",
+      "img_aug_matrix",
+      "box_type_3d",
+      "sample_idx",
+      "lidar_path",
+      "img_path"
+    ],
+    "project": [
+      "cam2img",
+      "ori_cam2img",
+      "lidar2cam",
+      "lidar2img",
+      "cam2lidar",
+      "ori_lidar2img",
+      "img_aug_matrix",
+      "box_type_3d",
+      "sample_idx",
+      "lidar_path",
+      "img_path",
+      "num_pts_feats",
+      "num_views"
+    ]
+  },
+  {
+    "model": "lidar_camera",
+    "path": "model.img_backbone.init_cfg.checkpoint",
+    "logged_reference": "../mmdetection3d/checkpoints/swint-nuimages-pretrained.pth",
+    "project": "https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth"
+  },
+  {
+    "model": "lidar_camera",
+    "path": "model.view_transform",
+    "logged_reference": "<ABSENT>",
+    "project": {
+      "dbound": [
+        1.0,
+        60.0,
+        0.5
+      ],
+      "downsample": 2,
+      "feature_size": [
+        32,
+        88
+      ],
+      "image_size": [
+        256,
+        704
+      ],
+      "in_channels": 256,
+      "out_channels": 80,
+      "type": "DepthLSSTransform",
+      "xbound": [
+        -54.0,
+        54.0,
+        0.3
+      ],
+      "ybound": [
+        -54.0,
+        54.0,
+        0.3
+      ],
+      "zbound": [
+        -10.0,
+        10.0,
+        20.0
+      ]
+    }
+  },
+  {
+    "model": "lidar_camera",
+    "path": "model.vtransform",
+    "logged_reference": {
+      "type": "DepthLSSTransform",
+      "in_channels": 256,
+      "out_channels": 80,
+      "image_size": [
+        256,
+        704
+      ],
+      "feature_size": [
+        32,
+        88
+      ],
+      "xbound": [
+        -54.0,
+        54.0,
+        0.3
+      ],
+      "ybound": [
+        -54.0,
+        54.0,
+        0.3
+      ],
+      "zbound": [
+        -10.0,
+        10.0,
+        20.0
+      ],
+      "dbound": [
+        1.0,
+        60.0,
+        0.5
+      ],
+      "downsample": 2
+    },
+    "project": "<ABSENT>"
+  },
+  {
+    "model": "lidar_camera",
+    "path": "test_pipeline[5].meta_keys",
+    "logged_reference": [
+      "cam2img",
+      "ori_cam2img",
+      "lidar2cam",
+      "lidar2img",
+      "cam2lidar",
+      "ori_lidar2img",
+      "img_aug_matrix",
+      "box_type_3d",
+      "sample_idx",
+      "lidar_path",
+      "img_path"
+    ],
+    "project": [
+      "cam2img",
+      "ori_cam2img",
+      "lidar2cam",
+      "lidar2img",
+      "cam2lidar",
+      "ori_lidar2img",
+      "img_aug_matrix",
+      "box_type_3d",
+      "sample_idx",
+      "lidar_path",
+      "img_path",
+      "num_pts_feats"
+    ]
+  }
+]

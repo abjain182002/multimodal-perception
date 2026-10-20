@@ -1,0 +1,128 @@
+[
+  {
+    "model": "lidar",
+    "batch": 1,
+    "path": "test_dataloader.dataset.ann_file",
+    "upstream": "nuscenes_infos_val.pkl",
+    "project": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch01_infos_val.pkl"
+  },
+  {
+    "model": "lidar",
+    "batch": 1,
+    "path": "test_dataloader.dataset.data_root",
+    "upstream": "data/nuscenes/",
+    "project": "/content/datasets/nuscenes_full/"
+  },
+  {
+    "model": "lidar",
+    "batch": 1,
+    "path": "test_dataloader.dataset.metainfo.version",
+    "upstream": "<ABSENT>",
+    "project": "v1.0-trainval"
+  },
+  {
+    "model": "lidar",
+    "batch": 2,
+    "path": "test_dataloader.dataset.ann_file",
+    "upstream": "nuscenes_infos_val.pkl",
+    "project": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch02_infos_val.pkl"
+  },
+  {
+    "model": "lidar",
+    "batch": 2,
+    "path": "test_dataloader.dataset.data_root",
+    "upstream": "data/nuscenes/",
+    "project": "/content/datasets/nuscenes_full/"
+  },
+  {
+    "model": "lidar",
+    "batch": 2,
+    "path": "test_dataloader.dataset.metainfo.version",
+    "upstream": "<ABSENT>",
+    "project": "v1.0-trainval"
+  },
+  {
+    "model": "lidar",
+    "batch": 3,
+    "path": "test_dataloader.dataset.ann_file",
+    "upstream": "nuscenes_infos_val.pkl",
+    "project": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch03_infos_val.pkl"
+  },
+  {
+    "model": "lidar",
+    "batch": 3,
+    "path": "test_dataloader.dataset.data_root",
+    "upstream": "data/nuscenes/",
+    "project": "/content/datasets/nuscenes_full/"
+  },
+  {
+    "model": "lidar",
+    "batch": 3,
+    "path": "test_dataloader.dataset.metainfo.version",
+    "upstream": "<ABSENT>",
+    "project": "v1.0-trainval"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 1,
+    "path": "test_dataloader.dataset.ann_file",
+    "upstream": "nuscenes_infos_val.pkl",
+    "project": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch01_infos_val.pkl"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 1,
+    "path": "test_dataloader.dataset.data_root",
+    "upstream": "data/nuscenes/",
+    "project": "/content/datasets/nuscenes_full/"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 1,
+    "path": "test_dataloader.dataset.metainfo.version",
+    "upstream": "<ABSENT>",
+    "project": "v1.0-trainval"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 2,
+    "path": "test_dataloader.dataset.ann_file",
+    "upstream": "nuscenes_infos_val.pkl",
+    "project": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch02_infos_val.pkl"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 2,
+    "path": "test_dataloader.dataset.data_root",
+    "upstream": "data/nuscenes/",
+    "project": "/content/datasets/nuscenes_full/"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 2,
+    "path": "test_dataloader.dataset.metainfo.version",
+    "upstream": "<ABSENT>",
+    "project": "v1.0-trainval"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 3,
+    "path": "test_dataloader.dataset.ann_file",
+    "upstream": "nuscenes_infos_val.pkl",
+    "project": "/content/datasets/nuscenes_full/mmdet3d_infos/nuscenes_batch03_infos_val.pkl"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 3,
+    "path": "test_dataloader.dataset.data_root",
+    "upstream": "data/nuscenes/",
+    "project": "/content/datasets/nuscenes_full/"
+  },
+  {
+    "model": "lidar_camera",
+    "batch": 3,
+    "path": "test_dataloader.dataset.metainfo.version",
+    "upstream": "<ABSENT>",
+    "project": "v1.0-trainval"
+  }
+]

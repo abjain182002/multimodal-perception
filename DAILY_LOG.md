@@ -414,3 +414,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Reviewed exploratory holdout-grid selection separately from the train-selected blend coefficient 1.875 (four-frame candidate AP 0.843266 vs 0.796576 baseline). Explicitly retained blend as unfinished exploratory pilot, without full-AP40 validation or a claimed seed-29 remedy.
 - Saved [audit, two CSV tables, source hashes and discussion draft](results/kitti/clocs/audit_20261020/README.md) plus the standard-library reproduction script. Existing figures and original numerical records remain unchanged.
 
+
+
+## 20 October 2026 — bounded nuScenes upstream-reference audit
+
+- Streamed both published checkpoint URLs and computed complete SHA-256 values; sizes/hashes match all six saved inference protocols. No bulk weights added to Git.
+- Compared both model dictionaries and test pipelines across three saved storage batches with the inherited pinned MMDetection3D configs: exact matches. Loader differences are data root, per-batch annotation path and explicit dataset version. Nine preceding sweeps and fusion image settings agree.
+- Inspected linked upstream logs: LiDAR epoch-20 mAP/NDS ×100 64.85/69.56; fusion epoch-5 68.58/71.39. Recorded every logged validation row and contextualized the rounded model-table comparison. Both logs report 6,019 validation samples.
+- Documented historical runtime/configuration differences and unresolved upstream SDK-version/annotation/checkpoint-log provenance. No cause established, no inference rerun and no attribution to hardware or randomness.
+- Preserved [audit, field differences, source hashes, checkpoint download record and discussion](results/nuscenes/bevfusion/reference_audit_20261020/README.md), with a restricted-AST standard-library reproduction script. Original results remain unchanged.
+

@@ -21,6 +21,8 @@ The reference values are the rounded MMDetection3D model-table results, not scor
 
 **Interpretation:** Measured scores are lower than the checkpoint-linked reference by approximately 0.47/0.36 points (LiDAR mAP/NDS) and 0.29/0.26 points (camera–LiDAR). The reason is unresolved; do not attribute it to hardware, devkit versions, preprocessing or nondeterminism without investigation. Archive hashes and stored arithmetic were checked. A fresh same-evaluator full-split CPU replay completed on 20 October and reproduced all compared values within 1e-12; [replay evidence](../nuscenes/bevfusion/full_validation/replay_20261020/README.md). This closes the replay gap but does not explain the upstream discrepancy.
 
+**Reference audit update — 20 October 2026:** [Bounded audit](../nuscenes/bevfusion/reference_audit_20261020/README.md) confirms both published checkpoint SHA-256 values match recorded project inference, and all six saved model dictionaries/test pipelines match the pinned configurations. The linked LiDAR log reports mAP/NDS ×100 64.85/69.56 at epoch 20; the fusion log reports 68.58/71.39 at epoch 5. Against those printed log values, the project's differences are approximately −0.42/−0.32 and −0.27/−0.25 points respectively. These remain rounded log references, not exact upstream metric JSONs, and checkpoint metadata-to-epoch identity is unverified. Historical runtime/configuration differences are recorded without causal attribution; the remaining score discrepancy is unresolved. The original rounded-table comparison above is retained at its stated precision.
+
 Within this project, camera–LiDAR exceeds LiDAR-only by **3.8798 mAP points** and **1.8998 NDS points**. This compares two pretrained pipelines, not a controlled camera ablation or equal-training-budget experiment.
 
 ## 2. KITTI: measured, same-split AP40 comparison
@@ -73,4 +75,5 @@ Existing PointPillars diagnostic frames 002744 (distant success), 004096 (locali
 ## Supervisor takeaway
 
 The completed full-validation BEVFusion comparison shows a positive aggregate camera–LiDAR advantage while remaining slightly below its checkpoint-linked reference scores. KITTI shows a stronger LiDAR backbone outperforming this small-data fusion implementation. These observations motivate case studies and diagnostic analysis; they do not isolate a dataset effect, establish statistical significance, or demonstrate robot deployment.
+
 

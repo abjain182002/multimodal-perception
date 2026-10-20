@@ -1,0 +1,128 @@
+{
+  "status": "REFERENCE_AUDIT_COMPLETE_CAUSE_UNRESOLVED",
+  "checks": [
+    {
+      "model": "lidar",
+      "batch": 1,
+      "model_config_equal": true,
+      "test_pipeline_equal": true,
+      "checkpoint_hash_matches_download_record": true,
+      "preceding_sweeps": 9
+    },
+    {
+      "model": "lidar",
+      "batch": 2,
+      "model_config_equal": true,
+      "test_pipeline_equal": true,
+      "checkpoint_hash_matches_download_record": true,
+      "preceding_sweeps": 9
+    },
+    {
+      "model": "lidar",
+      "batch": 3,
+      "model_config_equal": true,
+      "test_pipeline_equal": true,
+      "checkpoint_hash_matches_download_record": true,
+      "preceding_sweeps": 9
+    },
+    {
+      "model": "lidar_camera",
+      "batch": 1,
+      "model_config_equal": true,
+      "test_pipeline_equal": true,
+      "checkpoint_hash_matches_download_record": true,
+      "preceding_sweeps": 9
+    },
+    {
+      "model": "lidar_camera",
+      "batch": 2,
+      "model_config_equal": true,
+      "test_pipeline_equal": true,
+      "checkpoint_hash_matches_download_record": true,
+      "preceding_sweeps": 9
+    },
+    {
+      "model": "lidar_camera",
+      "batch": 3,
+      "model_config_equal": true,
+      "test_pipeline_equal": true,
+      "checkpoint_hash_matches_download_record": true,
+      "preceding_sweeps": 9
+    }
+  ],
+  "project_evaluator_environment": {
+    "python": "3.10.22",
+    "packages": {
+      "nuscenes-devkit": "1.2.0",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "matplotlib": "3.8.4",
+      "scikit-learn": "1.7.2",
+      "shapely": "2.0.7"
+    },
+    "evaluator_source_sha256": {
+      "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+      "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+      "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+      "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+    }
+  },
+  "upstream_logged_environment": {
+    "lidar": {
+      "Python": "3.8.13 (default, Oct 21 2022, 23:50:54) [GCC 11.2.0]",
+      "PyTorch": "1.11.0+cu113",
+      "MMEngine": "0.7.0",
+      "CUDA_HOME": "/mnt/petrelfs/share/cuda-11.3",
+      "gpu_line": "GPU 0,1,2,3,4,5,6,7: NVIDIA A100-SXM4-80GB",
+      "upstream_nuscenes_devkit_version": "Not specified in inspected linked log"
+    },
+    "fusion": {
+      "Python": "3.8.13 (default, Oct 21 2022, 23:50:54) [GCC 11.2.0]",
+      "PyTorch": "1.11.0+cu113",
+      "MMEngine": "0.7.2",
+      "CUDA_HOME": "/mnt/petrelfs/share/cuda-11.3",
+      "gpu_line": "GPU 0,1,2,3,4,5,6,7: NVIDIA A100-SXM4-80GB",
+      "upstream_nuscenes_devkit_version": "Not specified in inspected linked log"
+    }
+  },
+  "checkpoint_hashes": {
+    "lidar": {
+      "url": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-2628f933.pth",
+      "bytes": 46332893,
+      "sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e"
+    },
+    "lidar_camera": {
+      "url": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d-5239b1af.pth",
+      "bytes": 167113973,
+      "sha256": "e68c6c084d8971f4f879751b0ed3981f575c24ee3cf385a1e39197c26a9bb3ab"
+    }
+  },
+  "detection_config": {
+    "class_range": {
+      "car": 50,
+      "truck": 50,
+      "bus": 50,
+      "trailer": 50,
+      "construction_vehicle": 50,
+      "pedestrian": 40,
+      "motorcycle": 40,
+      "bicycle": 40,
+      "traffic_cone": 30,
+      "barrier": 30
+    },
+    "dist_fcn": "center_distance",
+    "dist_ths": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "dist_th_tp": 2.0,
+    "min_recall": 0.1,
+    "min_precision": 0.1,
+    "max_boxes_per_sample": 500,
+    "mean_ap_weight": 5
+  },
+  "cause": "No cause established; recorded core configs and pipelines match pinned reference",
+  "scope": "Static reference/provenance audit; no inference, upstream-environment rerun or upstream prediction replay."
+}

@@ -1,0 +1,11 @@
+epoch,logged_NDS,logged_mAP,model,project_NDS,project_mAP,project_minus_logged_NDS_points,project_minus_logged_mAP_points
+5,0.6056,0.5192,lidar,,,,
+10,0.6331,0.5629,lidar,,,,
+15,0.661,0.5878,lidar,,,,
+20,0.6956,0.6485,lidar,0.6923533233234365,0.6443012674636525,-0.32466766765635313,-0.4198732536347505
+1,0.6902,0.6481,lidar_camera,,,,
+2,0.6995,0.665,lidar_camera,,,,
+3,0.7038,0.6701,lidar_camera,,,,
+4,0.7118,0.683,lidar_camera,,,,
+5,0.7139,0.6858,lidar_camera,0.7113516737651924,0.6830990666994801,-0.25483262348076074,-0.2700933300519903
+6,0.6971,0.6609,lidar_camera,,,,

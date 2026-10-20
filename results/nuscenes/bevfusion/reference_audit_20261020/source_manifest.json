@@ -1,0 +1,108 @@
+{
+  "upstream_lidar.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection3d/fe25f7a51d36e3702f961e198894580d83c4387b/projects/BEVFusion/configs/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d.py",
+    "bytes": 12676,
+    "sha256": "a08b4a124f1b71bf63f81199f7f5c4f0478c9e2b3eed4bca618495dda887873f"
+  },
+  "upstream_fusion.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection3d/fe25f7a51d36e3702f961e198894580d83c4387b/projects/BEVFusion/configs/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d.py",
+    "bytes": 7040,
+    "sha256": "57cf5ef7230ba2180a1ef893baaa2558fa162e722da4c505899c7e7e82ac6e1a"
+  },
+  "upstream_lidar.log": {
+    "url": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d_20230322_053447.log",
+    "bytes": 509735,
+    "sha256": "e170d0c080c8b1dfd3be99365bb3e68a7b260ed4cb07a7a02971d3ff57e218d2"
+  },
+  "upstream_fusion.log": {
+    "url": "https://download.openmmlab.com/mmdetection3d/v1.1.0_models/bevfusion/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_nus-3d_20230524_001539.log",
+    "bytes": 216325,
+    "sha256": "3513b4eec646af1bb896d7f88ee279383ec03246a9cb01dd0d16b5b1410c41c0"
+  },
+  "nuscenes_metric.py": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection3d/fe25f7a51d36e3702f961e198894580d83c4387b/mmdet3d/evaluation/metrics/nuscenes_metric.py",
+    "bytes": 32405,
+    "sha256": "39d15be04e1055fbf195eeac2163a37d6b338ecb31a2b9ef0269e43d2e7700c7"
+  },
+  "upstream_readme.md": {
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmdetection3d/fe25f7a51d36e3702f961e198894580d83c4387b/projects/BEVFusion/README.md",
+    "bytes": 10527,
+    "sha256": "81f1d4b65dcd0c6c6653bcbdb0bfd56faf017f25b5c790babea8f8cebb5147cd"
+  },
+  "project:evaluation/environment_audit.json": {
+    "bytes": 628,
+    "sha256": "9efc5e8fa8b63c089982856e2d47919f2c4ea5909ed03286db75d3faca16d281"
+  },
+  "project:evaluation/detection_config.json": {
+    "bytes": 439,
+    "sha256": "85648bcef19182a72def0039942cb2e6077142610f7bd503a71433864737986e"
+  },
+  "project:inference/batch_01/lidar/protocol.json": {
+    "bytes": 583,
+    "sha256": "53de7f0c65a9127e81637148b87013a2e526373071f1d88cc4ad289ae06621cb"
+  },
+  "project:inference/batch_01/lidar/resolved_config.py": {
+    "bytes": 28239,
+    "sha256": "984ce8f4ec7d9f0163a4444be8900b6cbf9c36293ecb8039c52f4910bd9ad92f"
+  },
+  "project:inference/batch_02/lidar/protocol.json": {
+    "bytes": 583,
+    "sha256": "e29a16894f023fcc3b43e393bef0371bc45a39e38056f44d2a7f88c5a58abe2a"
+  },
+  "project:inference/batch_02/lidar/resolved_config.py": {
+    "bytes": 28239,
+    "sha256": "bcb52cb54bf6b6f797724c3bd03cbce038ec7019c2c8ccbe4ee1cff19d050436"
+  },
+  "project:inference/batch_03/lidar/protocol.json": {
+    "bytes": 583,
+    "sha256": "f4a45d797b41f5b88c67413fed7b033bdc5e4eff0f8db97b8e0706afd5eab1b6"
+  },
+  "project:inference/batch_03/lidar/resolved_config.py": {
+    "bytes": 28239,
+    "sha256": "4bc79dff82c979c1d6754f920dc9729b6200c4cc8e55c43861ea9e2691b87041"
+  },
+  "project:inference/batch_01/inference.py": {
+    "bytes": 9112,
+    "sha256": "752f9260c1adc658c8f2c12346e20dd138c8595fe4bba88f784e29fba72e2967"
+  },
+  "project:inference/batch_02/inference.py": {
+    "bytes": 9112,
+    "sha256": "6d78b054ac128fe06249632d64684e11d4d785dd113cf2e1e1e0537852d2af78"
+  },
+  "project:inference/batch_03/inference.py": {
+    "bytes": 9112,
+    "sha256": "604b2750f9ad829d5ea1208eb3eda84c06378707c85dc4b95d71d3a463e53e37"
+  },
+  "project:evaluation/lidar/metrics_summary.json": {
+    "bytes": 5205,
+    "sha256": "9892bf4cdeb0f599838eb3ac90cb8bd4cc896e096afc379faed9c7053da2c500"
+  },
+  "project:inference/batch_01/lidar_camera/protocol.json": {
+    "bytes": 590,
+    "sha256": "7f50d106fe56106e9864a09c9e8b21f96f675f3f175ec46af4fbed693ee0db41"
+  },
+  "project:inference/batch_01/lidar_camera/resolved_config.py": {
+    "bytes": 29887,
+    "sha256": "e8b28019db32c77ebc0078321324da3dc06e3352851e7aee03d4d789a1d894a1"
+  },
+  "project:inference/batch_02/lidar_camera/protocol.json": {
+    "bytes": 590,
+    "sha256": "eba7c0f6a05992a1bf6acff8e1413c34486cb4722c7f0b0eeaeccf3fc27bc24d"
+  },
+  "project:inference/batch_02/lidar_camera/resolved_config.py": {
+    "bytes": 29887,
+    "sha256": "b05b0568a8fe6b085d75de2ca753bc5e072e2f87c796155fbf3d0f64a850aeff"
+  },
+  "project:inference/batch_03/lidar_camera/protocol.json": {
+    "bytes": 590,
+    "sha256": "bbf2a0af99da24ac8ce5784b6bbd92b1bb4bc3bf4fcb3e45c7facf04d0ec586f"
+  },
+  "project:inference/batch_03/lidar_camera/resolved_config.py": {
+    "bytes": 29887,
+    "sha256": "ae1dcd48e15d644edc40e0b5441cab9b81a53bb047fc14141e5b232e960eec13"
+  },
+  "project:evaluation/lidar_camera/metrics_summary.json": {
+    "bytes": 5204,
+    "sha256": "0c0754a74a6c1dc8fde2bd8d8878894a5956d1ba93406f0ec0c6e592feb6fcf9"
+  }
+}

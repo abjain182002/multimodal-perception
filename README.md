@@ -84,3 +84,9 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 
 
 
+
+
+## nuScenes reference audit — 20 October 2026
+
+[Checkpoint/configuration reference audit](results/nuscenes/bevfusion/reference_audit_20261020/README.md): both published checkpoint downloads match recorded inference hashes; all six saved model configurations and test pipelines match the pinned reference. Linked validation logs provide more precise score context than the rounded model table. Historical runtime/configuration differences are documented; the cause of the remaining discrepancy is unresolved. The full-validation same-evaluator replay is complete.
+

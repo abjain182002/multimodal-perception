@@ -81,3 +81,9 @@ Datasets, virtual environments, model weights, and bulk generated `model_outputs
 
 
 
+
+
+## Reference comparison audit — 20 October 2026
+
+The [nuScenes upstream-reference audit](../results/nuscenes/bevfusion/reference_audit_20261020/README.md) verifies both live published checkpoint hashes and equality of the saved model dictionaries/test pipelines with the pinned reference for all three storage batches. Linked logs refine the score comparison and record historical configuration/runtime differences. Upstream nuScenes-devkit version, exact annotation equivalence and checkpoint metadata-to-log-row identity remain unverified. The cause of the remaining gap is unresolved; no causal attribution or further GPU rerun is claimed.
+

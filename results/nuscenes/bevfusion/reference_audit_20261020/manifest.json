@@ -1,0 +1,62 @@
+{
+  "status": "BOUNDED_REFERENCE_AUDIT_OUTPUTS_VERIFIED",
+  "date": "2026-10-20",
+  "files": {
+    "DAILY_LOG.md": {
+      "bytes": 43118,
+      "sha256": "76d6f6a42355fe0cc36cfd743fec05bbe40c6d9bfc358be109d1401844e6d956"
+    },
+    "README.md": {
+      "bytes": 8938,
+      "sha256": "736d2d44eac53f38b6572e9c61cfc94e5aaefd6dd4e6204ac6b8ab0ddc9c87ee"
+    },
+    "docs/PROJECT_GUIDE.md": {
+      "bytes": 12733,
+      "sha256": "113e4c9c1b6e5cd1d395c54e4fbbd5765894b133744c1730e9387b03d30fc4da"
+    },
+    "docs/report/EVIDENCE_GAP_STATUS_2026-10-20.md": {
+      "bytes": 4017,
+      "sha256": "bd4926a9f9912d9ed606334b38f1401439c09a460fd15051d1aafb86e0ce6697"
+    },
+    "results/benchmarks/BENCHMARK_COMPARISONS.md": {
+      "bytes": 9856,
+      "sha256": "d80b7a386e54a68dc02e5e297f85de3f20dcbc73a07ae3f072815be6086c5585"
+    },
+    "results/nuscenes/bevfusion/full_validation/FINDINGS.md": {
+      "bytes": 6193,
+      "sha256": "999fb940b4c6955d49e572c1f633e354b1764b40d6fa47135db41ce8f322a24d"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/README.md": {
+      "bytes": 10125,
+      "sha256": "9c994677323b960c67119e76b570ac0124f130f4841c86129f834fbfb4a05752"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/audit.json": {
+      "bytes": 4132,
+      "sha256": "83fc9b55f7de19d9c969b36fbb1ad14df814a5e7f4f94fc03c4c594900c608c5"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/checkpoint_hash_audit.json": {
+      "bytes": 577,
+      "sha256": "8026f37ef916a89601459a50dda0dcccf2f5831a0ee44d27e8858e8b92714bd5"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/config_differences.json": {
+      "bytes": 3504,
+      "sha256": "b2126e98b070c028bc8bccba7857c26f929d6393c16a92591077f3ff80c1db8b"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/logged_config_differences.json": {
+      "bytes": 3158,
+      "sha256": "3df16acb76423e34134bd34eebaf1b0c61b1f3496569162dff4a4c8cbe2e52b7"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/source_manifest.json": {
+      "bytes": 4917,
+      "sha256": "3ca15d2350438bc427b2010d1b3184f149b5c3eb7f96079b41640d7a91cc3e02"
+    },
+    "results/nuscenes/bevfusion/reference_audit_20261020/upstream_validation_rows.csv": {
+      "bytes": 585,
+      "sha256": "209814328168f9bba01a1bf162a5a85f606e4ae5d0f7f2629cc71110ba7a51d7"
+    },
+    "scripts/audit_nuscenes_reference.py": {
+      "bytes": 10181,
+      "sha256": "b4fa87b2ab257982c7ac5397c5f91822d12a97ab1883715fb04433468ed631eb"
+    }
+  }
+}
