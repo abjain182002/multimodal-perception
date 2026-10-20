@@ -1,0 +1,37 @@
+{
+  "status": "FULL_VALIDATION_SAME_EVALUATOR_REPLAY_PASS",
+  "model": "lidar",
+  "samples": 6019,
+  "scenes": 150,
+  "official_prediction_gt_token_match": true,
+  "filtered_gt_counts": {
+    "car": 53043,
+    "pedestrian": 23500,
+    "traffic_cone": 10570,
+    "bicycle": 1824,
+    "bus": 2062,
+    "truck": 9260,
+    "construction_vehicle": 1513,
+    "barrier": 15903,
+    "motorcycle": 1855,
+    "trailer": 2331
+  },
+  "prediction_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "mAP": 0.6443012674636525,
+  "NDS": 0.6923533233234365,
+  "comparison_tolerance": 1e-12,
+  "maximum_absolute_error": 8.881784197001252e-16,
+  "numeric_values_checked": 32451,
+  "difference_count": 0,
+  "first_differences": [],
+  "excluded_from_comparison": [
+    "eval_time"
+  ],
+  "scope": "Fresh ground-truth evaluation of the preserved full-validation predictions using the same evaluator. Not independent cross-implementation verification."
+}

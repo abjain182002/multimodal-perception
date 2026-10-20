@@ -8,7 +8,7 @@ The bounded blur/noise/calibration study is complete and preserved: [one compact
 
 Full-validation accuracy, six annotated visual cases, a 600-frame camera-availability study, image-darkening study, matched point-reduction study and paired 150-frame/three-repeat runtime study are now complete and preserved. See the [results index](../results/README.md), [architecture](architecture/README.md), [point-reduction study](../results/nuscenes/bevfusion/point_reduction/20261015/README.md) and [report evidence/page plan](report/EVIDENCE_AND_PAGE_PLAN.md). Older dated sections below preserve earlier context. Comparable runtime is no longer pending for the evaluated BEVFusion LiDAR/fusion pair. Case studies are no longer pending.
 
-Blur, noise and calibration challenges are planned; monetary hardware analysis remains a framework rather than a measured bill of materials. Camera-only 3D and physical multi-LiDAR scope is unresolved. Existing camera 2D/depth pilots are not a comparable camera-only nuScenes 3D benchmark. Fresh full-validation replay remains unperformed; no new detector architecture or physical robot deployment is claimed.
+Blur, noise and calibration challenges are planned; monetary hardware analysis remains a framework rather than a measured bill of materials. Camera-only 3D and physical multi-LiDAR scope is unresolved. Existing camera 2D/depth pilots are not a comparable camera-only nuScenes 3D benchmark. Fresh full-validation CPU replay completed on 20 October: all compared summary/detail values reproduce within 1e-12 (maximum error 8.881784197001252e-16). See [replay evidence](../results/nuscenes/bevfusion/full_validation/replay_20261020/README.md). This is same-evaluator reproduction; no new detector architecture or physical robot deployment is claimed.
 
 MSc Major Project: Software-only deep learning pipeline for multi-modal object detection and robotic perception using camera and LiDAR fusion.
 
@@ -75,6 +75,7 @@ See [`results/README.md`](../results/README.md) for the artifact-storage policy.
 ## Storage Policy
 
 Datasets, virtual environments, model weights, and bulk generated `model_outputs/` are intentionally excluded from Git history. Source code, evaluation scripts, compact numerical results, dissertation-ready figures, and selected qualitative examples are version-controlled.
+
 
 
 

@@ -20,6 +20,7 @@ Evaluated 10 October 2026: **6,019 samples / 150 official validation scenes**, t
 
 Recreate figures from the repository root with `python scripts/plot_bevfusion_full_results.py`.
 
-This is full validation, not the historical availability-selected subset. It compares pretrained pipelines, not a controlled camera ablation. No fresh independent evaluator or full ground-truth replay is claimed by this archive import.
+This is full validation, not the historical availability-selected subset. It compares pretrained pipelines, not a controlled camera ablation. A fresh full ground-truth CPU replay completed on 20 October, reproducing both models' summary/detail values within 1e-12; [replay evidence and execution records](replay_20261020/README.md). This is same-evaluator reproduction. Independent cross-implementation verification remains unperformed.
 
 The 9.35 MB sensor-filename batch plan remains in the verified source ZIP; the committed manifest records its hash. All three ordered sample-token lists and the compact merge audit are committed.
+

@@ -1,0 +1,53 @@
+{
+  "status": "FULL_REPLAY_DRIVE_BACKUP_VERIFIED",
+  "files": {
+    "lidar/detection_config.json": {
+      "bytes": 439,
+      "sha256": "85648bcef19182a72def0039942cb2e6077142610f7bd503a71433864737986e"
+    },
+    "lidar/metrics_details.json": {
+      "bytes": 774267,
+      "sha256": "edd2c0c911d000a1b651248f56c72f5bdb236e8d8b30f59f06f160ea9cc8c2a2"
+    },
+    "lidar/metrics_summary.json": {
+      "bytes": 5203,
+      "sha256": "330044ac543f8e6324e3015b6451b4bdcb37af565b73f8b875d987b51ffebd4f"
+    },
+    "lidar/replay_audit.json": {
+      "bytes": 1384,
+      "sha256": "114617b9290c80184a297fa175a5eb8fa273b5913a3a8a6becbbc1259c956945"
+    },
+    "lidar_camera/detection_config.json": {
+      "bytes": 439,
+      "sha256": "85648bcef19182a72def0039942cb2e6077142610f7bd503a71433864737986e"
+    },
+    "lidar_camera/metrics_details.json": {
+      "bytes": 775071,
+      "sha256": "bd2abac62e8999b3a6e68af9b0a7516f6404a9169694d8dd9ad23e0fd63b65b3"
+    },
+    "lidar_camera/metrics_summary.json": {
+      "bytes": 5204,
+      "sha256": "2a2a99b0f4184299684e4ec74607f0e6aa81a3473a3276f8e92b0078206ccf41"
+    },
+    "lidar_camera/replay_audit.json": {
+      "bytes": 1391,
+      "sha256": "07cd8657d33e62709da02b389c05d0f696ddd0ceea923107edf1a0596abf15ca"
+    },
+    "lidar_camera_replay.log": {
+      "bytes": 8339,
+      "sha256": "b2464d0b8c139f570c61db81fb1259673827ee90842201b77a264df947377896"
+    },
+    "lidar_replay.log": {
+      "bytes": 8394,
+      "sha256": "fa0793d66e4ef90d0906487ca1b0ee70c684716e7abe280ac0795cccd3fdb373"
+    },
+    "paired_replay_audit.json": {
+      "bytes": 3418,
+      "sha256": "00f354ab8de2a3c6f8809edf32d858970d45fc13e38f0c076ab6f8b32d1b849e"
+    },
+    "replay_full.py": {
+      "bytes": 7600,
+      "sha256": "8a5fb609b07f73c2ebf02f89d655da87be8dc06e34d15c7dfd8466f7316cbb7f"
+    }
+  }
+}

@@ -19,7 +19,7 @@ The reference values are the rounded MMDetection3D model-table results, not scor
 
 **Measured evidence:** [Full-validation findings](../nuscenes/bevfusion/full_validation/FINDINGS.md) and original metrics linked there. The reference has one-decimal precision; four-decimal differences are arithmetic against rounded reference values, not four-decimal estimates of upstream reproduction error.
 
-**Interpretation:** Measured scores are lower than the checkpoint-linked reference by approximately 0.47/0.36 points (LiDAR mAP/NDS) and 0.29/0.26 points (camera–LiDAR). The reason is unresolved; do not attribute it to hardware, devkit versions, preprocessing or nondeterminism without investigation. Archive hashes and stored arithmetic were checked, but a fresh full-split ground-truth replay remains pending.
+**Interpretation:** Measured scores are lower than the checkpoint-linked reference by approximately 0.47/0.36 points (LiDAR mAP/NDS) and 0.29/0.26 points (camera–LiDAR). The reason is unresolved; do not attribute it to hardware, devkit versions, preprocessing or nondeterminism without investigation. Archive hashes and stored arithmetic were checked. A fresh same-evaluator full-split CPU replay completed on 20 October and reproduced all compared values within 1e-12; [replay evidence](../nuscenes/bevfusion/full_validation/replay_20261020/README.md). This closes the replay gap but does not explain the upstream discrepancy.
 
 Within this project, camera–LiDAR exceeds LiDAR-only by **3.8798 mAP points** and **1.8998 NDS points**. This compares two pretrained pipelines, not a controlled camera ablation or equal-training-budget experiment.
 
@@ -73,3 +73,4 @@ Existing PointPillars diagnostic frames 002744 (distant success), 004096 (locali
 ## Supervisor takeaway
 
 The completed full-validation BEVFusion comparison shows a positive aggregate camera–LiDAR advantage while remaining slightly below its checkpoint-linked reference scores. KITTI shows a stronger LiDAR backbone outperforming this small-data fusion implementation. These observations motivate case studies and diagnostic analysis; they do not isolate a dataset effect, establish statistical significance, or demonstrate robot deployment.
+

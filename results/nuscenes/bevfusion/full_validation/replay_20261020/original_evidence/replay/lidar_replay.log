@@ -1,0 +1,177 @@
+VERIFYING RESTORED METADATA: lidar
+VERIFYING SAVED PREDICTIONS: lidar
+LOADING OFFICIAL METADATA: lidar
+======
+Loading NuScenes tables for version v1.0-trainval...
+23 category,
+8 attribute,
+4 visibility,
+64386 instance,
+12 sensor,
+10200 calibrated_sensor,
+2631083 ego_pose,
+68 log,
+850 scene,
+34149 sample,
+2631083 sample_data,
+1166187 sample_annotation,
+4 map,
+Done loading in 58.870 seconds.
+======
+Reverse indexing ...
+Done reverse indexing in 12.6 seconds.
+======
+STARTING FULL CPU EVALUATION: lidar
+Initializing nuScenes detection evaluation
+Loaded results from /content/drive/MyDrive/Major_Project/nuscenes_full_validation/full_validation_merged/lidar/results_nusc.json. Found detections for 6019 samples.
+Loading annotations for val split from nuScenes version: v1.0-trainval
+
+  0%|          | 0/6019 [00:00<?, ?it/s]
+  2%|▏         | 144/6019 [00:00<00:04, 1416.46it/s]
+  5%|▍         | 286/6019 [00:00<00:06, 876.09it/s] 
+  6%|▋         | 385/6019 [00:00<00:08, 652.35it/s]
+  9%|▊         | 515/6019 [00:00<00:06, 818.08it/s]
+ 10%|█         | 612/6019 [00:00<00:06, 775.24it/s]
+ 12%|█▏        | 699/6019 [00:00<00:07, 666.32it/s]
+ 13%|█▎        | 773/6019 [00:01<00:07, 682.85it/s]
+ 14%|█▍        | 847/6019 [00:01<00:08, 610.64it/s]
+ 15%|█▌        | 913/6019 [00:01<00:09, 558.70it/s]
+ 16%|█▌        | 972/6019 [00:01<00:09, 534.01it/s]
+ 17%|█▋        | 1028/6019 [00:01<00:10, 460.14it/s]
+ 18%|█▊        | 1077/6019 [00:01<00:12, 409.63it/s]
+ 19%|█▊        | 1124/6019 [00:01<00:11, 422.68it/s]
+ 19%|█▉        | 1172/6019 [00:02<00:11, 436.10it/s]
+ 20%|██        | 1231/6019 [00:02<00:10, 474.69it/s]
+ 22%|██▏       | 1343/6019 [00:02<00:07, 645.92it/s]
+ 24%|██▍       | 1464/6019 [00:02<00:05, 800.70it/s]
+ 26%|██▌       | 1548/6019 [00:02<00:06, 683.38it/s]
+ 27%|██▋       | 1622/6019 [00:02<00:08, 534.92it/s]
+ 28%|██▊       | 1684/6019 [00:02<00:07, 547.86it/s]
+ 29%|██▉       | 1745/6019 [00:02<00:08, 531.68it/s]
+ 30%|███       | 1817/6019 [00:03<00:07, 575.91it/s]
+ 31%|███       | 1879/6019 [00:03<00:07, 539.41it/s]
+ 32%|███▏      | 1936/6019 [00:03<00:09, 434.87it/s]
+ 33%|███▎      | 2012/6019 [00:03<00:07, 506.62it/s]
+ 34%|███▍      | 2069/6019 [00:03<00:07, 501.51it/s]
+ 35%|███▌      | 2125/6019 [00:03<00:07, 513.18it/s]
+ 36%|███▌      | 2180/6019 [00:03<00:08, 472.39it/s]
+ 37%|███▋      | 2230/6019 [00:03<00:08, 460.60it/s]
+ 38%|███▊      | 2294/6019 [00:04<00:07, 506.39it/s]
+ 39%|███▉      | 2347/6019 [00:04<00:07, 489.29it/s]
+ 40%|███▉      | 2398/6019 [00:04<00:07, 471.42it/s]
+ 42%|████▏     | 2498/6019 [00:04<00:05, 612.25it/s]
+ 43%|████▎     | 2579/6019 [00:04<00:05, 666.79it/s]
+ 44%|████▍     | 2648/6019 [00:04<00:05, 614.01it/s]
+ 45%|████▌     | 2712/6019 [00:04<00:05, 551.39it/s]
+ 46%|████▌     | 2770/6019 [00:04<00:07, 411.67it/s]
+ 47%|████▋     | 2818/6019 [00:05<00:07, 414.54it/s]
+ 48%|████▊     | 2865/6019 [00:05<00:07, 397.63it/s]
+ 49%|████▊     | 2925/6019 [00:05<00:07, 441.53it/s]
+ 49%|████▉     | 2973/6019 [00:05<00:07, 415.61it/s]
+ 51%|█████     | 3073/6019 [00:05<00:05, 557.63it/s]
+ 52%|█████▏    | 3134/6019 [00:05<00:07, 385.75it/s]
+ 53%|█████▎    | 3183/6019 [00:05<00:07, 397.92it/s]
+ 54%|█████▎    | 3231/6019 [00:06<00:07, 393.59it/s]
+ 55%|█████▍    | 3287/6019 [00:06<00:06, 430.78it/s]
+ 55%|█████▌    | 3335/6019 [00:06<00:06, 438.93it/s]
+ 56%|█████▌    | 3383/6019 [00:06<00:05, 446.00it/s]
+ 57%|█████▋    | 3441/6019 [00:06<00:05, 481.57it/s]
+ 58%|█████▊    | 3504/6019 [00:06<00:04, 520.93it/s]
+ 59%|█████▉    | 3558/6019 [00:06<00:04, 497.61it/s]
+ 60%|█████▉    | 3610/6019 [00:06<00:04, 499.02it/s]
+ 61%|██████    | 3661/6019 [00:07<00:05, 424.45it/s]
+ 62%|██████▏   | 3706/6019 [00:07<00:05, 413.04it/s]
+ 62%|██████▏   | 3749/6019 [00:07<00:05, 381.98it/s]
+ 63%|██████▎   | 3810/6019 [00:07<00:05, 438.81it/s]
+ 65%|██████▍   | 3888/6019 [00:07<00:04, 528.34it/s]
+ 66%|██████▋   | 4000/6019 [00:07<00:02, 690.29it/s]
+ 68%|██████▊   | 4073/6019 [00:07<00:03, 647.07it/s]
+ 69%|██████▉   | 4141/6019 [00:07<00:02, 633.60it/s]
+ 70%|███████   | 4233/6019 [00:07<00:02, 711.30it/s]
+ 72%|███████▏  | 4307/6019 [00:08<00:02, 682.08it/s]
+ 73%|███████▎  | 4377/6019 [00:08<00:02, 621.73it/s]
+ 74%|███████▍  | 4442/6019 [00:08<00:02, 564.51it/s]
+ 75%|███████▍  | 4501/6019 [00:08<00:02, 554.57it/s]
+ 76%|███████▌  | 4568/6019 [00:08<00:02, 584.19it/s]
+ 80%|████████  | 4825/6019 [00:08<00:01, 1118.28it/s]
+ 82%|████████▏ | 4945/6019 [00:08<00:00, 1137.01it/s]
+ 84%|████████▍ | 5064/6019 [00:08<00:00, 1122.83it/s]
+ 86%|████████▌ | 5180/6019 [00:09<00:00, 911.13it/s] 
+ 88%|████████▊ | 5280/6019 [00:09<00:00, 783.07it/s]
+ 89%|████████▉ | 5367/6019 [00:09<00:00, 673.42it/s]
+ 93%|█████████▎| 5603/6019 [00:09<00:00, 1034.16it/s]
+ 97%|█████████▋| 5868/6019 [00:09<00:00, 1410.42it/s]
+100%|██████████| 6019/6019 [00:09<00:00, 624.35it/s] 
+Loaded ground truth annotations for 6019 samples.
+Filtering predictions
+=> Original number of boxes: 746703
+=> After distance based filtering: 746458
+=> After LIDAR and RADAR points based filtering: 746458
+=> After bike rack filtering: 746293
+Filtering ground truth annotations
+=> Original number of boxes: 187528
+=> After distance based filtering: 134565
+=> After LIDAR and RADAR points based filtering: 121871
+=> After bike rack filtering: 121861
+OFFICIAL TOKENS AND FILTERED GT COUNTS PASS
+Accumulating metric data...
+Calculating metrics...
+Saving metrics to: /content/full_validation_replay_20261020/runs/20261020T103156Z/lidar
+mAP: 0.6443
+mATE: 0.2837
+mASE: 0.2524
+mAOE: 0.2950
+mAVE: 0.2803
+mAAE: 0.1866
+NDS: 0.6924
+Eval time: 110.8s
+
+Per-class results:
+Object Class        	AP    	ATE   	ASE   	AOE   	AVE   	AAE   
+car                 	0.870 	0.172 	0.152 	0.088 	0.292 	0.192 
+truck               	0.596 	0.320 	0.183 	0.094 	0.247 	0.226 
+bus                 	0.730 	0.332 	0.186 	0.052 	0.467 	0.236 
+trailer             	0.446 	0.528 	0.216 	0.555 	0.188 	0.160 
+construction_vehicle	0.255 	0.691 	0.410 	0.859 	0.127 	0.322 
+pedestrian          	0.864 	0.131 	0.285 	0.387 	0.226 	0.098 
+motorcycle          	0.695 	0.184 	0.237 	0.210 	0.471 	0.250 
+bicycle             	0.549 	0.154 	0.250 	0.349 	0.224 	0.010 
+traffic_cone        	0.740 	0.126 	0.322 	nan   	nan   	nan   
+barrier             	0.698 	0.197 	0.283 	0.059 	nan   	nan   
+{
+  "status": "FULL_VALIDATION_SAME_EVALUATOR_REPLAY_PASS",
+  "model": "lidar",
+  "samples": 6019,
+  "scenes": 150,
+  "official_prediction_gt_token_match": true,
+  "filtered_gt_counts": {
+    "car": 53043,
+    "pedestrian": 23500,
+    "traffic_cone": 10570,
+    "bicycle": 1824,
+    "bus": 2062,
+    "truck": 9260,
+    "construction_vehicle": 1513,
+    "barrier": 15903,
+    "motorcycle": 1855,
+    "trailer": 2331
+  },
+  "prediction_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+  "evaluator_source_sha256": {
+    "eval/detection/evaluate.py": "1547188122d60ce0bc8600cb27861b10f624e3d38dbfb08e5569ffebb6cbba6e",
+    "eval/detection/algo.py": "460e1691c1391e01fe7c6f4576add6054b29cc280687513a9f9737b7363f4f38",
+    "eval/common/loaders.py": "9853cb47dd898c85e2032507e6bb419460f173e6b9a3e069675efe0839e72fe7",
+    "utils/splits.py": "eab6fa5e2536a2a85bd9451fb35771833e262b4b96319a6b26fee1dce8f4e2cd"
+  },
+  "mAP": 0.6443012674636525,
+  "NDS": 0.6923533233234365,
+  "comparison_tolerance": 1e-12,
+  "maximum_absolute_error": 8.881784197001252e-16,
+  "numeric_values_checked": 32451,
+  "difference_count": 0,
+  "first_differences": [],
+  "excluded_from_comparison": [
+    "eval_time"
+  ],
+  "scope": "Fresh ground-truth evaluation of the preserved full-validation predictions using the same evaluator. Not independent cross-implementation verification."
+}

@@ -394,3 +394,13 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Preserved one composite figure (PDF/PNG), CPU reproduction scripts, [methods/discussion draft](docs/report/CASE_ANALYSIS_DRAFT_2026-10-20.md), and [bounded evidence-gap status](docs/report/EVIDENCE_GAP_STATUS_2026-10-20.md).
 - No inference, fresh SDK filtering or full-validation replay was run. Full replay, CLOCs root-cause investigation, wider literature review and sourced financial analysis remain open.
 
+
+
+## 20 October 2026 — fresh full-validation ground-truth replay
+
+- Rebuilt the Python 3.10.22 CPU evaluator environment and checked nuScenes-devkit 1.2.0 plus four evaluator source hashes against the original full evaluation.
+- Rehashed both full prediction files; verified the original metadata backup and restored 19 metadata files. Replayed the official 6,019 samples / 150 scenes in separate model processes; exact official prediction/GT token equality and all filtered class counts passed.
+- Both models reproduced all 32,451 compared numeric summary/detail values per model within absolute tolerance 1e-12, excluding evaluation time. Maximum absolute difference: 8.881784197001252e-16; zero comparison failures.
+- Imported all 23 source ZIP members unchanged under [full-validation replay](results/nuscenes/bevfusion/full_validation/replay_20261020/README.md). Archive: 833,241 bytes; SHA-256 95eb6f99c1a495533bf62d1358fe7edc8527b7065ad032a7e646c2ad354b5a7a. Import rechecked member hashes, original reference bytes and numeric comparisons.
+- This is same-evaluator reproduction, not independent cross-implementation verification. The repository import did not execute another evaluation. The checkpoint-linked upstream discrepancy and CLOCs root-cause analysis remain unresolved.
+

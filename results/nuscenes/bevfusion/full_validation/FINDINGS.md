@@ -1,6 +1,6 @@
 # Full-validation findings
 
-> **Analysis status update, 15 October 2026:** Six annotated case studies and controlled camera-availability, image-darkening and LiDAR point-reduction studies are now preserved. A separate paired T4 runtime protocol is complete. These later studies do not change the original full-validation metrics or turn inference-loop wall time into model latency. See the [results index](../../../README.md) for links. A fresh full-split replay remains unperformed.
+> **Analysis status update, 15 October 2026:** Six annotated case studies and controlled camera-availability, image-darkening and LiDAR point-reduction studies are now preserved. A separate paired T4 runtime protocol is complete. These later studies do not change the original full-validation metrics or turn inference-loop wall time into model latency. See the [results index](../../../README.md) for links. A fresh full-split replay subsequently completed on 20 October; see the update below.
 
 ## Result and scope
 
@@ -52,7 +52,7 @@ Translation and velocity errors decrease; scale, orientation and attribute error
 - Official validation has been inspected iteratively; it is not an untouched final test split. Statistical significance and robustness under corruption have not been tested.
 - This full-validation result removes the earlier subset coverage restriction. Mini/subset/full results overlap and are not independent replicates. Full validation does not demonstrate performance on other domains or a deployed robot.
 - Inference-loop wall time includes I/O, backup and formatting; it is not a synchronized model latency benchmark.
-- The original full evaluation has completed. A separate fresh full-split replay or cross-implementation evaluator check remains unperformed.
+- The original full evaluation and a fresh same-evaluator full-split CPU replay have completed. All compared summary/detail values reproduce within 1e-12, excluding evaluation time; [20 October replay](replay_20261020/README.md). Independent cross-implementation verification remains unperformed.
 - Six selected nuScenes visual case studies were preserved on 13 October, including successes and failures. Selected cases do not establish population-level robustness. Keep sensor backups while planned robustness work remains.
 
 ## Figure captions
@@ -61,4 +61,5 @@ Translation and velocity errors decrease; scale, orientation and attribute error
 - Class AP: official class AP ×100 and point differences for identical validation samples.
 - TP errors: native metric units on separate axes; lower is better. L denotes LiDAR, L+C camera–LiDAR.
 - Class support: ground-truth box counts after the official distance, sensor-point and bike-rack filters.
+
 

@@ -1,0 +1,11 @@
+{
+  "status": "FULL_REPLAY_EVIDENCE_IMPORT_VERIFIED",
+  "archive": "full_validation_replay_evidence_20261020.zip",
+  "bytes": 833241,
+  "sha256": "95eb6f99c1a495533bf62d1358fe7edc8527b7065ad032a7e646c2ad354b5a7a",
+  "verified_members": 23,
+  "numeric_values_compared_per_model": 32451,
+  "maximum_absolute_error": 8.881784197001252e-16,
+  "reference_files_match_original_20261010_archive": true,
+  "scope": "Archive integrity and metric comparisons rechecked on import. Replay execution occurred in Colab, with original script, logs and audits preserved. This import did not run another ground-truth evaluation."
+}
