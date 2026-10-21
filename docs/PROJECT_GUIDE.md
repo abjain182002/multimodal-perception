@@ -1,5 +1,9 @@
 # Multimodal Perception
 
+## Cost/performance scenarios — 21 October 2026
+
+The [dated analysis](../results/cost_performance/20261021/README.md) now includes sourced camera/interface prices and a qualified LiDAR retailer reference price, 22 component scenarios and 162 explicit planning-sensitivity rows. The reproduction script recalculates prices, measured accuracy deltas and T4 latency/memory ratios. [Draft discussion](report/COST_PERFORMANCE_DISCUSSION_2026-10-21.md) connects the results while preserving their different sample/protocol scopes. No priced-product accuracy, complete installed-system cost, financial optimum or supervisor-approved deployment design is claimed. This supersedes the earlier statement that financial analysis consists only of an unsourced framework.
+
 ## Sensor-configuration assessment — 21 October 2026
 
 The [source-backed assessment](SENSOR_CONFIGURATION_ASSESSMENT_2026-10-21.md) now maps 11 single-/multiple-camera and LiDAR configurations to their actual evidence. One camera plus one LiDAR is already measured by KITTI CLOCs; a camera-only 3D result is still missing. ImVoxelNet KITTI is the preferred conditional preflight, with FCOS3D/BEVDepth as six-camera alternatives. Physical multi-LiDAR work is deferred until data, compatible weights and a measured resource budget are verified. The documented recommendation is not a completed new experiment or recorded supervisor agreement. Current supplier prices and monetary scenarios remain pending. [Decision/source records](../results/sensor_configuration/20261021/README.md) and [compact discussion draft](report/SENSOR_CONFIGURATION_DISCUSSION_2026-10-21.md).
@@ -90,5 +94,6 @@ Datasets, virtual environments, model weights, and bulk generated `model_outputs
 ## Reference comparison audit — 20 October 2026
 
 The [nuScenes upstream-reference audit](../results/nuscenes/bevfusion/reference_audit_20261020/README.md) verifies both live published checkpoint hashes and equality of the saved model dictionaries/test pipelines with the pinned reference for all three storage batches. Linked logs refine the score comparison and record historical configuration/runtime differences. Upstream nuScenes-devkit version, exact annotation equivalence and checkpoint metadata-to-log-row identity remain unverified. The cause of the remaining gap is unresolved; no causal attribution or further GPU rerun is claimed.
+
 
 

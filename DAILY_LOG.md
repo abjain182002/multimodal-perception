@@ -1,5 +1,12 @@
 # Daily Project Log
 
+## 21 October 2026 — sourced cost/performance scenarios
+
+- Recorded dated USD prices for OAK-1/PoE cameras, separately listed interfaces and a qualified Mid-360 retailer reference offer; retained backorder, tax/shipping and confirmation caveats. Excluded inaccessible DJI pricing, quote-only Ouster, an unreconciled sold-out high-price listing and historical launch prices from the current arithmetic.
+- Generated 22 component scenarios for 11 sensor-count configurations and two camera product options. Added 162 explicitly assumed contingency/LiDAR-price sensitivity rows; unpriced compute, integration, power, tax and other items remain additive unknowns.
+- Recomputed the preserved 600-frame accuracy-context differences (+3.8242 mAP / +1.8484 NDS points) and separate 150-frame three-session T4 latency/memory ratios (1.8935 / 3.6598). Neither measured point dominates the other on NDS versus latency; no global or financial frontier is inferred.
+- Preserved standard-library reproduction code, inputs/source records, tables and a report discussion draft. Reused existing figure guidance to limit report space. No new inference, purchase, formal quotation request, hardware validation or original metric modification performed.
+
 ## 21 October 2026 — sensor configurations and bounded feasibility decisions
 
 - Mapped 11 physical-input/availability scenarios, including one camera, one LiDAR, their combination, reduced camera availability, six-camera fusion, and two-/three-/multiple-LiDAR options.
@@ -432,5 +439,6 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Inspected linked upstream logs: LiDAR epoch-20 mAP/NDS ×100 64.85/69.56; fusion epoch-5 68.58/71.39. Recorded every logged validation row and contextualized the rounded model-table comparison. Both logs report 6,019 validation samples.
 - Documented historical runtime/configuration differences and unresolved upstream SDK-version/annotation/checkpoint-log provenance. No cause established, no inference rerun and no attribution to hardware or randomness.
 - Preserved [audit, field differences, source hashes, checkpoint download record and discussion](results/nuscenes/bevfusion/reference_audit_20261020/README.md), with a restricted-AST standard-library reproduction script. Original results remain unchanged.
+
 
 

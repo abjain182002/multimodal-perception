@@ -1,5 +1,11 @@
 # Cost versus performance — evidence and remaining gaps
 
+## Dated scenario analysis — 21 October 2026
+
+The [sourced component analysis](20261021/README.md) now provides USD list-price observations, 22 component scenarios, 162 assumption-sensitivity rows and a standard-library reproduction script. It connects these accounting scenarios to the existing measured T4 accuracy/latency/memory trade-off without assigning dataset accuracy to replacement hardware. The [report discussion draft](../../docs/report/COST_PERFORMANCE_DISCUSSION_2026-10-21.md) uses one compact table and the existing runtime figure. A complete installed bill of materials, delivered UK quotations and monetary/energy efficiency remain unestablished. The dated framework below records the earlier starting point.
+
+## Original framework and initial source register
+
 This is a source register and analysis framework, started on 15 October 2026. The compute comparison is measured; a matched sensor bill of materials is not yet established. Do not present this document as a completed monetary cost/performance benchmark.
 
 Update, 21 October 2026: the [sensor-configuration assessment](../../docs/SENSOR_CONFIGURATION_ASSESSMENT_2026-10-21.md) documents existing one-camera-plus-one-LiDAR KITTI evidence, candidate camera-only 3D paths and a deferred physical multi-LiDAR protocol. These scope recommendations do not complete financial sourcing or establish supervisor acceptance.
@@ -47,4 +53,5 @@ Historical press-release prices and unrelated hobby-camera prices must not be mi
 - Obtain current prices or quotes; state missing values rather than inventing them. Supplier quotations remain to be obtained.
 - Add compute and integration costs with explicit assumptions and sensitivity ranges.
 - Report runtime/accuracy and hardware-accounting scenarios as distinct evidence. No energy efficiency or optimum physical sensor configuration has been demonstrated.
+
 

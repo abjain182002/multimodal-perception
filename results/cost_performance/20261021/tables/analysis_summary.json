@@ -1,0 +1,25 @@
+{
+  "status": "DATED_SCENARIO_ARITHMETIC_AND_MEASURED_CONTEXT_PASS",
+  "source_date": "2026-10-21",
+  "base_rows": 22,
+  "sensitivity_rows": 162,
+  "accuracy_points": {
+    "mAP_points": "3.8241995910406000",
+    "NDS_points": "1.8483654338412000"
+  },
+  "latency_ratio": "1.893525367753610826191691400",
+  "peak_allocated_memory_ratio": "3.659774779247150310511262639",
+  "dominated_by_other_in_two_pipeline_nds_latency_context": {
+    "lidar": false,
+    "lidar_camera": false
+  },
+  "pareto_scope": "Two pipeline points with separately disclosed accuracy/timing samples; no global or financial frontier",
+  "financial_accuracy_join_permitted": false,
+  "complete_installed_cost_available": false,
+  "assumption_intervals_are_supplier_quotes": false,
+  "sources": {
+    "measured_input_sha256": "4a2e3f87869d6b6276cb93e75faecf9fa4041945db4d4a282ea3cb9d24edfc5b",
+    "price_input_sha256": "d6bef9c28877ca461a6fea8fdd942de7e6a57a8675d6f3dcddbafcc215d2de9e",
+    "source_register_sha256": "9c3e4f82073ca0e8c66cc253ac2a4dbe4f94931a606461e8cb2214407a375f1e"
+  }
+}

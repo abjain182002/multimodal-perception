@@ -22,6 +22,7 @@ A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KIT
 | Figures and selected case studies | [Figure gallery](docs/FIGURE_GALLERY.md) |
 | Measured results and limitations | [Validated results](results/VALIDATED_RESULTS.md) |
 | One/multiple camera–LiDAR configurations and experiment decisions | [Sensor-configuration assessment](docs/SENSOR_CONFIGURATION_ASSESSMENT_2026-10-21.md) |
+| Dated sensor costs, assumptions and measured compute trade-off | [Cost/performance scenario analysis](results/cost_performance/20261021/README.md) |
 | Technical setup and detailed project status | [Project guide](docs/PROJECT_GUIDE.md) |
 | Code entry points | [Scripts guide](scripts/README.md) |
 | Environment versions and external sources | [Requirements](requirements/ENVIRONMENTS.md), [external repositories](requirements/EXTERNAL_REPOSITORIES.md) |
@@ -90,5 +91,6 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## nuScenes reference audit — 20 October 2026
 
 [Checkpoint/configuration reference audit](results/nuscenes/bevfusion/reference_audit_20261020/README.md): both published checkpoint downloads match recorded inference hashes; all six saved model configurations and test pipelines match the pinned reference. Linked validation logs provide more precise score context than the rounded model table. Historical runtime/configuration differences are documented; the cause of the remaining discrepancy is unresolved. The full-validation same-evaluator replay is complete.
+
 
 

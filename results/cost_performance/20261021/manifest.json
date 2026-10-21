@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-21",
+  "verification": {
+    "csv_value_copy_equal": true,
+    "generated_outputs_reproduce": true,
+    "base_scenarios": 22,
+    "sensitivity_rows": 162,
+    "relative_links_checked": 10
+  },
+  "files": [
+    {
+      "path": "docs/report/COST_PERFORMANCE_DISCUSSION_2026-10-21.md",
+      "bytes": 3500,
+      "sha256": "4fcc9a52dfba2a00eabbdbfee6048440ed4cd749dfd9f5bc53a90565a16b478a",
+      "git_blob_sha": "fdc1a2f784acea811b846e01a098799360ec9b0e"
+    },
+    {
+      "path": "results/cost_performance/20261021/README.md",
+      "bytes": 10753,
+      "sha256": "7ee3f8f1fee1121fa57e6ac998277f7db6e07f71551ebed318a8a5da57166a19",
+      "git_blob_sha": "cc4e62c46a646361de3944198796bd427610875d"
+    },
+    {
+      "path": "results/cost_performance/20261021/inputs/measured_accuracy_compute.csv",
+      "bytes": 547,
+      "sha256": "4a2e3f87869d6b6276cb93e75faecf9fa4041945db4d4a282ea3cb9d24edfc5b",
+      "git_blob_sha": "5662766cab0c07db947b55eb5ef1e6c5e55f76e7"
+    },
+    {
+      "path": "results/cost_performance/20261021/inputs/prices.json",
+      "bytes": 4198,
+      "sha256": "d6bef9c28877ca461a6fea8fdd942de7e6a57a8675d6f3dcddbafcc215d2de9e",
+      "git_blob_sha": "c72c8d9f1b17fc37d7a49c01dbcdc0fd390a7864"
+    },
+    {
+      "path": "results/cost_performance/20261021/source_register.json",
+      "bytes": 4316,
+      "sha256": "9c3e4f82073ca0e8c66cc253ac2a4dbe4f94931a606461e8cb2214407a375f1e",
+      "git_blob_sha": "010ca62a6bc7a8b4099c31f432abf76e2e8b8449"
+    },
+    {
+      "path": "results/cost_performance/20261021/tables/analysis_summary.json",
+      "bytes": 1062,
+      "sha256": "1205b9931233149493fb0e045710ace13247c6b10fdee13aaae6d566b2c2d8b3",
+      "git_blob_sha": "9d4bd3288817f7a71d8e4937f09c7f264b96b45f"
+    },
+    {
+      "path": "results/cost_performance/20261021/tables/assumption_sensitivity.csv",
+      "bytes": 16128,
+      "sha256": "5710871fe6b950e4380875fad37c2761784ab47f5f939540d657eaac310a47a4",
+      "git_blob_sha": "d2ef702d68d4b7864b86d0deccba87e662f2e086"
+    },
+    {
+      "path": "results/cost_performance/20261021/tables/component_scenarios.csv",
+      "bytes": 1825,
+      "sha256": "f762b0b97d3f39d682e8efc69ca41bef47956f557ccb56f62170b3dda3ea37f2",
+      "git_blob_sha": "c8652e9183c94ec6fde37e87c7276c7b6b573e57"
+    },
+    {
+      "path": "results/cost_performance/20261021/tables/component_table.md",
+      "bytes": 818,
+      "sha256": "8dc60b32ae58d5f1c32bbb36ff48db97657bb3ab65e7a5b2507d5888f83c4c1d",
+      "git_blob_sha": "33d3414387dc1e964d28cbdf639f981631f90097"
+    },
+    {
+      "path": "scripts/build_cost_scenarios.py",
+      "bytes": 7033,
+      "sha256": "cd7edc201b0318b47ccd6fa53b0b68dd7227bd2c1115bd5051240bc04c45100c",
+      "git_blob_sha": "5361f8740d0e7aee715784c5087c2384b744a9f2"
+    }
+  ]
+}

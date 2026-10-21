@@ -1,0 +1,30 @@
+{
+  "access_date": "2026-10-21",
+  "currency": "USD",
+  "scenario": "Illustrative research mobile-robot components; not a priced replica of KITTI or nuScenes equipment",
+  "prices": {
+    "camera_usb": {"product": "Luxonis OAK-1 standard", "sku": "A00109", "amount": "269.00", "source_id": "C1", "source_kind": "manufacturer_store_listing", "included": "Camera device with onboard processor; standard base listing", "exclusions": "USB cable offered separately; host compute and multi-camera connectivity not priced", "availability": "No checkout or shipping availability verified"},
+    "camera_poe": {"product": "Luxonis OAK-1 PoE standard", "sku": "A00124", "amount": "379.00", "source_id": "C2", "source_kind": "manufacturer_store_listing", "included": "PoE camera device with enclosure and onboard processor; standard base listing", "exclusions": "Injector offered separately; Ethernet cabling host and network/synchronisation not priced", "availability": "No checkout or shipping availability verified"},
+    "usb_cable": {"product": "Luxonis USB 3 C/A screw-locking cable", "sku": "USB-CA-1m-1S", "amount": "14.99", "source_id": "C3", "source_kind": "manufacturer_store_listing", "included": "One cable", "exclusions": "Host ports and hubs not priced", "availability": "No delivery estimate relied upon"},
+    "poe_injector": {"product": "Luxonis-listed Ubiquiti PoE injector", "sku": "U-POE", "amount": "24.99", "source_id": "C4", "source_kind": "manufacturer_store_listing", "included": "One injector; US/EU variants listed", "exclusions": "Ethernet cabling and a battery-powered/mobile implementation not priced", "availability": "No checkout or plug-region suitability verified"},
+    "lidar": {"product": "Livox Mid-360", "amount": "899.00", "source_id": "C5", "source_kind": "retailer_reference_listing", "included": "Listed merchandise amount; full package contents not itemised in this assessment", "exclusions": "Shipping tax LiDAR cable power integration and host compute not included in scenario", "availability": "Backorder; seller says confirmed price is final and displayed prices are for reference"}
+  },
+  "assumptions": {
+    "same_unit_price_for_each_identical_sensor": true,
+    "bulk_discount": "None assumed",
+    "interface_count": "One USB cable per USB camera, or one injector per PoE camera; alternative switch/hub layouts not modelled",
+    "sensor_price_lidar_multipliers": ["0.75", "1.00", "1.25"],
+    "subtotal_contingency_fractions": ["0.00", "0.15", "0.30"],
+    "sensitivity_interpretation": "Assumed planning stress tests, not supplier quote ranges, confidence intervals or installed-system estimates",
+    "tax_and_shipping": "Excluded from arithmetic; regional checkout basis not established for Luxonis; Mid-360 listing explicitly separates tax/shipping",
+    "currency_conversion": "None; USD listings retained without a GBP/EUR exchange-rate assumption",
+    "onboard_processor": "Included in camera product price but not credited with running the project's detectors"
+  },
+  "unpriced_additive_items": ["Host GPU/CPU compute", "USB hubs or Ethernet switches and their power", "Ethernet and LiDAR power/data cables where not priced", "Time synchronisation and triggering", "Mounting and protective housings", "Calibration and software integration labour", "Mobile power conversion and battery", "Storage", "Shipping duties and tax", "Maintenance and energy"],
+  "excluded_price_observations": [
+    {"source_id": "C6", "product": "Ouster OS1", "reason": "Manufacturer requires a configuration-specific quote; no numeric current amount established"},
+    {"source_id": "C7", "product": "Livox Mid-360 DJI regional store", "reason": "UK URL redirected to another region and no price was exposed"},
+    {"source_id": "C8", "product": "Livox Mid-360 RoboStore listing", "observed_usd": "3800.00", "reason": "Sold out and far above the selected reference listing; package/terms not reconciled, so not used as a comparable range endpoint"},
+    {"source_id": "C9", "product": "Livox Mid-360 launch announcement", "observed_usd": "749.00", "publication_date": "2023-01-10", "reason": "Historical trial-sample launch price; not a verified current price"}
+  ]
+}

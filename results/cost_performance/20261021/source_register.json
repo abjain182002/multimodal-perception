@@ -1,0 +1,22 @@
+{
+  "access_date": "2026-10-21",
+  "method": "Public page text retrieved and inspected; no checkout, purchase or quotation request made. Records preserve extracted facts and URLs, not a full archived page.",
+  "sources": [
+    {"id": "C1", "source": "Luxonis manufacturer store", "url": "https://shop.luxonis.com/products/oak-1", "facts_used": ["OAK-1 SKU A00109", "US$269 base listing", "USB interface and optional separately priced cable", "Onboard processing included"], "claim_limit": "Price observation only; no project model deployment or sensor equivalence inferred"},
+    {"id": "C2", "source": "Luxonis manufacturer store", "url": "https://shop.luxonis.com/products/oak-1-poe", "facts_used": ["OAK-1 PoE SKU A00124", "US$379 base listing", "PoE interface and IP67 enclosure", "Injector offered separately"], "claim_limit": "Distinct product from USB OAK-1; its price is not an uncertainty bound on an identical camera"},
+    {"id": "C3", "source": "Luxonis manufacturer store", "url": "https://shop.luxonis.com/products/usb-3-cable-c-a-with-dual-screw-locking-mechanism-copy", "facts_used": ["SKU USB-CA-1m-1S", "US$14.99", "OAK-1 compatibility stated"], "claim_limit": "No delivery estimate or host/hub compatibility guarantee used"},
+    {"id": "C4", "source": "Luxonis manufacturer store", "url": "https://shop.luxonis.com/products/poe-injector", "facts_used": ["SKU U-POE", "US$24.99", "US/EU plug variants listed"], "claim_limit": "An interface-cost scenario; mains-powered injector does not establish a complete mobile power solution"},
+    {"id": "C5", "source": "Robotics Center retailer", "url": "https://www.roboticscenter.ai/store/product/livox-dji-livox-mid-360", "facts_used": ["Mid-360 merchandise US$899", "Backorder", "Shipping and tax additional", "Displayed prices are reference prices subject to seller confirmation"], "claim_limit": "Not a manufacturer quote, immediate stock confirmation or guaranteed delivered price. Technical specifications are not taken from this retailer page."},
+    {"id": "C6", "source": "Ouster manufacturer", "url": "https://ouster.com/products/hardware/os1", "facts_used": ["Configuration-specific quote requested by manufacturer"], "claim_limit": "No numeric OS1 price included"},
+    {"id": "C7", "source": "DJI store", "url": "https://store.dji.com/uk/product/livox-mid-360", "resolved_url": "https://store.dji.com/de/product/livox-mid-360", "facts_used": ["Regional unavailability; no price exposed"], "claim_limit": "No inference that this is a UK price or a worldwide purchasing restriction"},
+    {"id": "C8", "source": "RoboStore retailer", "url": "https://robostore.com/products/livox-mid-360-lidar", "facts_used": ["US$3800 listed", "Sold out"], "claim_limit": "Excluded from scenario arithmetic; exact package and terms not reconciled with C5"},
+    {"id": "C9", "source": "Livox manufacturer launch announcement", "url": "https://www.livoxtech.com/mobile/de/news/mid360_launch", "publication_date": "2023-01-10", "facts_used": ["Historical US$749 trial-sample price"], "claim_limit": "Historical context only, excluded from current price arithmetic"},
+    {"id": "C10", "source": "Livox manufacturer", "url": "https://www.livoxtech.com/mid-360", "facts_used": ["Product positioned for low-speed robotics", "Its sensing geometry differs from the dataset's scanner"], "claim_limit": "No quantified project detection accuracy, weather immunity or sensor substitution guarantee inferred"}
+  ],
+  "project_sources": [
+    {"path": "results/nuscenes/bevfusion/runtime/20261015/tables/accuracy_compute_matrix.csv", "commit": "655a1b794ccdc837d5767245bccd58808b7180dc", "use": "Measured 600-frame accuracy context and separate 150-frame three-session timing/memory"},
+    {"path": "results/nuscenes/bevfusion/runtime/20261015/analysis_summary.json", "commit": "655a1b794ccdc837d5767245bccd58808b7180dc", "use": "Unrounded runtime and memory ratios"},
+    {"path": "results/nuscenes/bevfusion/runtime/20261015/FINDINGS.md", "commit": "655a1b794ccdc837d5767245bccd58808b7180dc", "use": "Timing boundary, precision, sample and hardware limitations"},
+    {"path": "docs/SENSOR_CONFIGURATION_ASSESSMENT_2026-10-21.md", "commit": "655a1b794ccdc837d5767245bccd58808b7180dc", "use": "Physical configuration evidence and conditional experiment decisions"}
+  ]
+}
