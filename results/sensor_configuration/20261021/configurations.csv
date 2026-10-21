@@ -1,0 +1,12 @@
+configuration_id,cameras,lidars,evidence_kind,dataset,model_or_intervention,decision,next_requirement
+camera_one,1,0,partial,KITTI,Existing 2D pilots; ImVoxelNet 3D candidate,Prioritise bounded monocular preflight,Verify images calibration checkpoint strict load and common AP40 before new inference
+camera_two,2,0,unmeasured,Not fixed,Stereo pair or distinct-view system,Retain as proposed configuration,Define geometry and compatible model
+camera_six,6,0,unmeasured,nuScenes,FCOS3D six-view aggregation or BEVDepth,Alternative camera-only path,Verify checkpoint environment conversion and temporal inputs where applicable
+lidar_one,0,1,measured,KITTI and nuScenes,PointPillars or PV-RCNN; nuScenes LiDAR baseline,Reuse preserved evidence,Keep dataset and protocol distinctions
+camera_one_lidar_one,1,1,measured,KITTI,YOLO26x image candidates plus PointPillars CLOCs,Reuse with seed and small-training-set limitations,Exact executed trainer source recovery remains open
+camera_two_available_lidar_one,2,1,availability_intervention,nuScenes,Front and back retained; six view slots executed,Report only missing-view sensitivity,Purpose-trained two-camera and compute results absent
+camera_five_available_lidar_one,5,1,availability_intervention,nuScenes,Front camera masked; six view slots executed,Report specified missing-view sensitivity,Optimal placement and physical compute savings unmeasured
+camera_six_lidar_one,6,1,measured,nuScenes,Official pretrained BEVFusion,Reuse full validation and separately scoped T4 timing,Source monetary scenarios separately
+lidar_two,0,2,proposed,Waymo Perception candidate,Top plus front in fixed-checkpoint sensor-subset study,Defer pending access and resource gates,Lawful data accessible compatible weights preparation audit and pilot budget
+lidar_three,0,3,proposed,Waymo Perception candidate,Top plus front plus rear in fixed-checkpoint sensor-subset study,Defer pending access and resource gates,Same GT and returns protocol across all configurations
+camera_multiple_lidar_multiple,multiple,multiple,proposed,Waymo Perception candidate,Explicit multimodal rig,Future protocol,Verify separate sensor identities model fusion path and matched costs

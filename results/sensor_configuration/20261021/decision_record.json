@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-21",
+  "status": "SOURCE_ASSESSMENT_AND_PROJECT_RECOMMENDATIONS_COMPLETE",
+  "new_inference_performed": false,
+  "financial_analysis_complete": false,
+  "supervisor_scope_agreement_recorded": false,
+  "decisions": [
+    {
+      "configuration": "one_camera_one_lidar",
+      "status": "ALREADY_MEASURED_KITTI_CLOCS",
+      "interpretation": "Use the existing mixed three-seed AP40 results with training-size and source-recovery limitations."
+    },
+    {
+      "configuration": "one_camera_camera_only_3d",
+      "status": "PREFERRED_CONDITIONAL_PREFLIGHT",
+      "candidate": "Pinned MMDetection3D ImVoxelNet KITTI Car",
+      "checkpoint_header_check_pass": true,
+      "checkpoint_full_hash_checked": false,
+      "strict_model_load_checked": false,
+      "current_sensor_inventory_checked": false,
+      "memory_and_runtime_measured": false,
+      "new_experiment_complete": false
+    },
+    {
+      "configuration": "six_camera_camera_only_3d",
+      "status": "ALTERNATIVE_DOCUMENTED_PATH",
+      "candidates": ["FCOS3D six-view aggregation", "BEVDepth temporal six-camera"],
+      "new_experiment_complete": false,
+      "reason_not_automatic_commitment": "Extra data adaptation, different image/temporal protocols and runtime compatibility remain unverified."
+    },
+    {
+      "configuration": "reduced_camera_plus_lidar",
+      "status": "EXISTING_AVAILABILITY_INTERVENTION_ONLY",
+      "purpose_trained_configuration_measured": false,
+      "physical_compute_savings_measured": false
+    },
+    {
+      "configuration": "two_or_three_physical_lidars",
+      "status": "DEFERRED_PENDING_DATA_WEIGHTS_AND_RESOURCE_GATES",
+      "data_candidate": "Waymo Perception",
+      "geometric_merge_supported_by_inspected_source": true,
+      "compatible_accessible_checkpoint_verified": false,
+      "current_data_access_and_inventory_verified": false,
+      "measured_resource_budget_available": false,
+      "new_experiment_complete": false,
+      "limitations": "OpenPCDet's inspected README does not distribute Waymo weights; this does not establish that no checkpoints exist elsewhere."
+    }
+  ],
+  "next_steps": [
+    "Complete sourced financial scenarios with explicit product and integration assumptions.",
+    "If an additional camera-only run is selected, begin with KITTI input/checkpoint/runtime preflight before a full evaluation.",
+    "Review scope recommendations with the supervisor; do not describe recommendations as supervisor-approved."
+  ]
+}

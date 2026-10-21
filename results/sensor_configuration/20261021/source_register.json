@@ -1,0 +1,189 @@
+{
+  "assessment_date": "2026-10-21",
+  "project_commit": "5f5c3931afffda42abf381170be6592eec005d4e",
+  "external_git_sources": [
+    {
+      "id": "S3",
+      "repository": "open-mmlab/mmdetection3d",
+      "path": "configs/imvoxelnet/README.md",
+      "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "git_blob_sha": "56c2b55ec28a0bf4f9580b1923123ff031486451",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/configs/imvoxelnet/README.md",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S4",
+      "repository": "open-mmlab/mmdetection3d",
+      "path": "configs/imvoxelnet/imvoxelnet_8xb4_kitti-3d-car.py",
+      "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "git_blob_sha": "df1e9d69ca12b2d0fa99a8e680807ed521a1e091",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/configs/imvoxelnet/imvoxelnet_8xb4_kitti-3d-car.py",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S5",
+      "repository": "open-mmlab/mmdetection3d",
+      "path": "configs/fcos3d/README.md",
+      "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "git_blob_sha": "3f27b5ea5f0e245ff46b2cb14a6f5fc56cc413fc",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/configs/fcos3d/README.md",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S6a",
+      "repository": "open-mmlab/mmdetection3d",
+      "path": "configs/_base_/datasets/nus-mono3d.py",
+      "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "git_blob_sha": "9a1d22650718ed287216c69a1156c31fcfb9897b",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/configs/_base_/datasets/nus-mono3d.py",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S6b",
+      "repository": "open-mmlab/mmdetection3d",
+      "path": "mmdet3d/datasets/nuscenes_dataset.py",
+      "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "git_blob_sha": "553480a588920b4885e60803aa2b7556f8f28d83",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/mmdet3d/datasets/nuscenes_dataset.py",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S6c",
+      "repository": "open-mmlab/mmdetection3d",
+      "path": "mmdet3d/evaluation/metrics/nuscenes_metric.py",
+      "commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+      "git_blob_sha": "e30c0bcd9609702543b3255e28cc077ce254eac8",
+      "url": "https://github.com/open-mmlab/mmdetection3d/blob/fe25f7a51d36e3702f961e198894580d83c4387b/mmdet3d/evaluation/metrics/nuscenes_metric.py",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S7",
+      "repository": "Megvii-BaseDetection/BEVDepth",
+      "path": "README.md",
+      "commit": "d78c7b58b10b9ada940462ba83ab24d99cae5833",
+      "git_blob_sha": "db0a62a9cdd6d87bffac39600e8b8886b0b0c804",
+      "url": "https://github.com/Megvii-BaseDetection/BEVDepth/blob/d78c7b58b10b9ada940462ba83ab24d99cae5833/README.md",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S8",
+      "repository": "Megvii-BaseDetection/BEVDepth",
+      "path": "bevdepth/exps/nuscenes/mv/bev_depth_lss_r50_256x704_128x128_24e_2key.py",
+      "commit": "d78c7b58b10b9ada940462ba83ab24d99cae5833",
+      "git_blob_sha": "de598ff42a09346f902581533d0e422133d141bd",
+      "url": "https://github.com/Megvii-BaseDetection/BEVDepth/blob/d78c7b58b10b9ada940462ba83ab24d99cae5833/bevdepth/exps/nuscenes/mv/bev_depth_lss_r50_256x704_128x128_24e_2key.py",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S10",
+      "repository": "open-mmlab/OpenPCDet",
+      "path": "pcdet/datasets/waymo/waymo_utils.py",
+      "commit": "233f849829b6ac19afb8af8837a0246890908755",
+      "git_blob_sha": "9bdcfe7b2d9e547cbaeca2aa1eeb93d4fe46d7af",
+      "url": "https://github.com/open-mmlab/OpenPCDet/blob/233f849829b6ac19afb8af8837a0246890908755/pcdet/datasets/waymo/waymo_utils.py",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    },
+    {
+      "id": "S11",
+      "repository": "open-mmlab/OpenPCDet",
+      "path": "README.md",
+      "commit": "233f849829b6ac19afb8af8837a0246890908755",
+      "git_blob_sha": "779571acb6e02ccf94549a67fc4be5fccd9bc1c8",
+      "url": "https://github.com/open-mmlab/OpenPCDet/blob/233f849829b6ac19afb8af8837a0246890908755/README.md",
+      "verification": "Full file text read through GitHub connector at the stated revision; commit identity recorded."
+    }
+  ],
+  "primary_dataset_sources": [
+    {
+      "id": "S1",
+      "url": "https://www.cvlibs.net/projects/autonomous_vision_survey/literature/Geiger2012CVPR.pdf",
+      "verification": "Primary-paper sensor specification retrieved through web search; not downloaded or hashed."
+    },
+    {
+      "id": "S2",
+      "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Caesar_nuScenes_A_Multimodal_Dataset_for_Autonomous_Driving_CVPR_2020_paper.html",
+      "verification": "Primary-paper dataset description retrieved through web search; not downloaded or hashed."
+    },
+    {
+      "id": "S9",
+      "url": "https://waymo.com/open/data/perception/",
+      "retrieved_url": "https://waymo.com/intl/it/open/data/perception/",
+      "verification": "Official sensor description retrieved through web search; not downloaded or hashed."
+    }
+  ],
+  "project_sources": [
+    {
+      "path": "README.md",
+      "git_blob_sha": "8ceeb270f73d6775d349a9bbd9116affac332657"
+    },
+    {
+      "path": "docs/PROJECT_GUIDE.md",
+      "git_blob_sha": "bcb1bf43f8166f4b3f43567a194d676e0d62069f"
+    },
+    {
+      "path": "results/kitti/clocs/aligned_seed_study/FINDINGS.md",
+      "git_blob_sha": "9de3c63facf186f08d942979309f3da9f6d573f7"
+    },
+    {
+      "path": "results/kitti/clocs/seed_diagnostics/FINDINGS.md",
+      "git_blob_sha": "4802eef15cf69e82f1252d7a438676374747ec3f"
+    },
+    {
+      "path": "results/kitti/clocs/aligned_seed_study/study_protocol.json",
+      "git_blob_sha": "5b2f3c87ea5af8ed4f44a6ef6edc9e1c37a783ac"
+    },
+    {
+      "path": "results/kitti/clocs/aligned_seed_study/seed_20260928/input_audit.json",
+      "git_blob_sha": "695a5f6f03802c139ea12bdaa8be1818d4202aaf"
+    },
+    {
+      "path": "scripts/run_clocs_full_validation.py",
+      "git_blob_sha": "8c7c2d0d5b670729816feeee1027d76f7d5d8c13"
+    },
+    {
+      "path": "results/nuscenes/bevfusion/camera_availability/20261014/FINDINGS.md",
+      "git_blob_sha": "4f489de78b45980139333d808171fea3084c17b6"
+    },
+    {
+      "path": "results/nuscenes/bevfusion/runtime/20261015/FINDINGS.md",
+      "git_blob_sha": "91645721212b0251b44be8cb71a41999f3a91008"
+    },
+    {
+      "path": "results/nuscenes/bevfusion/full_validation/FINDINGS.md",
+      "git_blob_sha": "244466eecd9549376bcd08c9c5d6c219125a9f83"
+    },
+    {
+      "path": "results/cost_performance/README.md",
+      "git_blob_sha": "6c03450ddc958e9b9a8f558c626bc2411fe8481d"
+    }
+  ],
+  "checkpoint_reachability_checks": [
+    {
+      "candidate": "ImVoxelNet KITTI",
+      "url": "https://download.openmmlab.com/mmdetection3d/v1.0.0_models/imvoxelnet/imvoxelnet_4x8_kitti-3d-car/imvoxelnet_4x8_kitti-3d-car_20210830_003014-3d0ffdf4.pth",
+      "method": "HTTP HEAD with redirects",
+      "http_status": 200,
+      "content_length": 126018456,
+      "response_date": "Wed, 21 Oct 2026 09:36:24 GMT",
+      "checkpoint_bytes_downloaded": false,
+      "sha256": null,
+      "model_loaded": false
+    },
+    {
+      "candidate": "BEVDepth two-keyframe",
+      "release_api": "https://api.github.com/repos/Megvii-BaseDetection/BEVDepth/releases/tags/v0.0.2",
+      "asset_name": "bev_depth_lss_r50_256x704_128x128_24e_2key.pth",
+      "asset_state": "uploaded",
+      "asset_bytes": 307451655,
+      "verification": "Release API metadata inspected; asset bytes and runtime load not checked.",
+      "checkpoint_bytes_downloaded": false,
+      "sha256": null,
+      "model_loaded": false
+    }
+  ],
+  "limits": [
+    "Source feasibility is not runtime compatibility or completed inference.",
+    "Existing pipeline training histories differ.",
+    "No new GPU experiment, Drive file audit or financial quote collection was performed."
+  ]
+}

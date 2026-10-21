@@ -1,5 +1,14 @@
 # Daily Project Log
 
+## 21 October 2026 — sensor configurations and bounded feasibility decisions
+
+- Mapped 11 physical-input/availability scenarios, including one camera, one LiDAR, their combination, reduced camera availability, six-camera fusion, and two-/three-/multiple-LiDAR options.
+- Corrected the scope inventory: one camera plus one LiDAR is already measured by KITTI CLOCs. Its mixed seed outcomes and training/source-recovery limits remain explicit.
+- Inspected pinned ImVoxelNet and FCOS3D configurations and official BEVDepth code/model links. ImVoxelNet's checkpoint returned HTTP 200 and a 126,018,456-byte content length; no weight download, strict load or inference was performed. Verified that default nuScenes FCOS3D aggregates six physical views despite one-image forward passes.
+- Verified Waymo's separate LiDAR suite and OpenPCDet's geometric merge, plus its explicit lack of distributed Waymo weights. Deferred a physical multi-LiDAR run until actual data/weights/resource gates pass; no universal claim that retraining or a new encoder is mandatory.
+- Preserved the source-backed assessment, 11-row configuration CSV, decision/source records and a compact report table/discussion draft. Preferred next camera-only step is a bounded KITTI ImVoxelNet preflight, conditional on data and model checks. Supervisor acceptance and monetary sourcing remain pending; no new GPU experiment or original-metric change.
+
+
 This file records work chronologically. `PROJECT_HISTORY.md` remains the synthesized master dissertation/technical record; this log preserves session-level details so that nothing important is lost between larger consolidations.
 
 ---
@@ -423,4 +432,5 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Inspected linked upstream logs: LiDAR epoch-20 mAP/NDS ×100 64.85/69.56; fusion epoch-5 68.58/71.39. Recorded every logged validation row and contextualized the rounded model-table comparison. Both logs report 6,019 validation samples.
 - Documented historical runtime/configuration differences and unresolved upstream SDK-version/annotation/checkpoint-log provenance. No cause established, no inference rerun and no attribution to hardware or randomness.
 - Preserved [audit, field differences, source hashes, checkpoint download record and discussion](results/nuscenes/bevfusion/reference_audit_20261020/README.md), with a restricted-AST standard-library reproduction script. Original results remain unchanged.
+
 

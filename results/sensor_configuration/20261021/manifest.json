@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21",
+  "scope": "New assessment/supporting-file integrity; original metric evidence not modified.",
+  "configuration_rows": 11,
+  "relative_markdown_links_checked": 17,
+  "files": [
+    {
+      "path": "docs/SENSOR_CONFIGURATION_ASSESSMENT_2026-10-21.md",
+      "bytes": 18108,
+      "sha256": "d30cd0e2e269496e9617324233d83dd145df498767c5fb76848c3407bf607aea",
+      "git_blob_sha": "7e0501a65dc6186ca937412bf1c1c881cac8beff"
+    },
+    {
+      "path": "docs/report/SENSOR_CONFIGURATION_DISCUSSION_2026-10-21.md",
+      "bytes": 4021,
+      "sha256": "989357c746a60449db0095dedd99741dddb8a0736e646bc4c88411e44ba365cf",
+      "git_blob_sha": "6e8eff86300f84ae8a835c85cddf1eaf003c9406"
+    },
+    {
+      "path": "results/sensor_configuration/20261021/README.md",
+      "bytes": 2516,
+      "sha256": "4ed233dfa079f626cf52fbea54396311efbfd71aa5b5c7ab82eb73403889ac4b",
+      "git_blob_sha": "36de626047719ba05dee699077def632bdc96890"
+    },
+    {
+      "path": "results/sensor_configuration/20261021/configurations.csv",
+      "bytes": 2190,
+      "sha256": "d73d0ccc10f2fbdf344cfd763bbfa5ef346027d9a5900f3368f31388f8d61bb5",
+      "git_blob_sha": "199cd44b2e5dd66fefb9e14d5728c737cd001d7d"
+    },
+    {
+      "path": "results/sensor_configuration/20261021/decision_record.json",
+      "bytes": 2487,
+      "sha256": "183e35096032cdc1191022b7cd0018208e018a9e042f21163952f9784fec5d16",
+      "git_blob_sha": "4b93267c8c7b6fd5eec6f3084bb4751b0cd68789"
+    },
+    {
+      "path": "results/sensor_configuration/20261021/source_register.json",
+      "bytes": 9003,
+      "sha256": "d9cdd16c1a2c4bf07a8bdbf62dbeb4d5ce7662893715da32184158f1a59765db",
+      "git_blob_sha": "1589fca30a74703a9b9fe5e0a4847a25c7cb52d2"
+    }
+  ]
+}
