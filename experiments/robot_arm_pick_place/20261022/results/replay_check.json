@@ -1,0 +1,8 @@
+{
+  "status": "SELECTED_TRIAL_REPLAY_PASS",
+  "profile": "heavy_component",
+  "policy": "slip_feedback",
+  "seed": 1,
+  "maximum_numeric_difference": 0.0,
+  "scope": "One selected trial repeated in a fresh process; same simulator, not independent physics validation."
+}

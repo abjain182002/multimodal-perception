@@ -1,6 +1,6 @@
 # Application to factory mobile robots and manipulation
 
-Status: discussion draft, 22 October 2026. Intended allocation: approximately 3–4 dissertation pages after formatting, including one compact table and an optional combined architecture figure. Page count is not yet typeset or verified. This section interprets preserved experiments; it reports no robot deployment, grasping experiment or new obstacle-zone evaluation.
+Status: discussion draft, 22 October 2026. Intended allocation: approximately 3–4 dissertation pages after formatting, including one compact table and an optional combined architecture figure. Page count is not yet typeset or verified. This section interprets preserved perception experiments. A separate [simulated robotic-arm pilot](ROBOT_ARM_PILOT_2026-10-22.md) now adds handling-control evidence; it does not use the perception model. No physical robot deployment or new obstacle-zone evaluation has been completed.
 
 ## 1. What the project contributes to a robot
 
@@ -50,7 +50,7 @@ The current road-scene detector has not been trained or evaluated for eggs, pens
 
 ## 5. Scope and contribution
 
-The factory-robot discussion strengthens the dissertation by connecting measured perception behaviour to application requirements without claiming untested capabilities. The present contribution remains reproducible detection evaluation and critical analysis. Mobile-robot integration and manipulation are proposed extensions. A short application section, one compact table and a clearly labelled architecture diagram are sufficient; adding unsupported robot-performance numbers or a large new experimental programme would weaken the evidence boundary.
+The factory-robot discussion connects measured perception behaviour to application requirements. The separate robotic-arm pilot adds a bounded simulation example of handling control, while mobile-robot integration and physical manipulation remain proposed extensions. The discussion and pilot should share the existing 3–4-page allocation, using a single composite figure and compact table. The simulation does not establish end-to-end performance of the project's perception pipeline.
 
 ## Evidence and references
 

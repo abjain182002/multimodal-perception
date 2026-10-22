@@ -1,0 +1,2 @@
+profile,policy,seed,offset_x_m,offset_y_m,stable_lift,placed,xy_error_m,peak_object_z_m,peak_normal_sum_N,mean_normal_sum_N,final_motor_limit_N,final_z_m,final_speed_m_s
+development,fixed_high,0,0.0020665311091502886,0.0015477264176418145,True,True,0.014079126258602375,0.24498284805158674,45.27335707337796,38.61884048227224,20.0,0.029988385162265995,1.284067445739977e-05

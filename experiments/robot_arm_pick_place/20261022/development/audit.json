@@ -1,0 +1,12 @@
+{
+  "mode": "smoke",
+  "python": "3.11.17",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "pybullet": "3.2.7",
+  "numpy": "1.26.4",
+  "script_sha256": "586d076a056223703ea17a9af78e237c4356b01da6edf7a50a6caf9f97a45b9f",
+  "panda_urdf_sha256": "9c27cf846302e26a1d3a44ccfd4dd2dbba89cccc9f17b96b6bd1f8bceedd1ff0",
+  "trials": 1,
+  "no_object_attachment_constraints": true,
+  "scope": "Rigid-body simulation with ideal simulator-state pose/slip inputs; no detector, tactile sensor, physical damage or hardware validation."
+}

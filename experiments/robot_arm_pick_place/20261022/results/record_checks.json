@@ -1,0 +1,9 @@
+{
+  "status": "PAIRED_SIMULATION_RECORDS_CHECKED",
+  "trial_count": 45,
+  "complete_protocol_keys": true,
+  "paired_initial_offsets": true,
+  "trace_duration_and_finiteness": true,
+  "motor_limits_checked": true,
+  "scope": "Record checks, not physical validation or verification of a perception pipeline."
+}

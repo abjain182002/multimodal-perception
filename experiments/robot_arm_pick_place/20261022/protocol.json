@@ -1,0 +1,38 @@
+{
+  "study": "Exploratory rigid-body factory-component pick-and-place pilot",
+  "date": "2026-10-22",
+  "status_at_freeze": "Development-profile high-grip lift and place passed; evaluation profiles not yet run",
+  "script_sha256": "421d1f66cefbec1ef2f114f7ef27cfa77e54d59363d5f058f5c0f7d9e4b2f7d9",
+  "question": "Can ideal slip-responsive grip retain components with less contact loading than a high fixed motor limit, and how does it compare with a low fixed limit?",
+  "profiles": ["light_component", "heavy_component", "narrow_component"],
+  "profile_parameters": {
+    "light_component": {"mass_kg": 0.08, "dimensions_m": [0.05, 0.05, 0.06], "lateral_friction": 0.8},
+    "heavy_component": {"mass_kg": 0.5, "dimensions_m": [0.05, 0.05, 0.06], "lateral_friction": 0.4},
+    "narrow_component": {"mass_kg": 0.12, "dimensions_m": [0.024, 0.024, 0.08], "lateral_friction": 0.5}
+  },
+  "seeds": [1, 2, 3, 4, 5],
+  "policies": ["fixed_low", "fixed_high", "slip_feedback"],
+  "expected_trials": 45,
+  "pairing": "Same initial XY offsets for all three policies per profile and seed; offset uniform +/-3 mm around nominal grasp pose",
+  "fixed_low_motor_limit_N_per_finger": 3.0,
+  "fixed_high_motor_limit_N_per_finger": 20.0,
+  "feedback": "Start at 3 N per finger. At 20 Hz during lift/hold/transfer, increase motor limit by 2 N (cap 20 N) when object-minus-grasp-link world Z falls by more than 0.2 mm since preceding observation. No decrease rule. No object mass or friction input to policy.",
+  "feedback_sensor": "Ideal simulator-state relative-height proxy; no tactile sensor/noise/latency model",
+  "physics": {"engine": "PyBullet 3.2.7", "dt_s": 0.004166666666666667, "solver_iterations": 100, "gravity_m_s2": -9.81, "finger_lateral_friction": 1.0},
+  "trajectory": "Identical smoothstep Cartesian waypoints and IK/position control for all policies; nominal 15 s simulated duration; finger position target zero during grip",
+  "primary_metrics": {
+    "stable_lift": "Object centre stays at least 0.12 m above its initial nominal half-height throughout hold AND transfer",
+    "placed": "Stable lift AND final XY error <0.03 m from (0.5,0.22) AND final centre Z within 0.01 m of half-height AND final linear speed <0.02 m/s",
+    "contact_load": "Sum of finger-object normal contact forces sampled every physics step during close/lift/hold/transfer/lower; peak and mean reported separately from motor limits"
+  },
+  "render_selection": "Seed 1 fixed in advance; close, hold, transfer and settle snapshots",
+  "interpretation_limits": [
+    "Rigid boxes are abstract component surrogates, not validated materials or a factory dataset",
+    "No deformation/fracture or damage threshold is modelled",
+    "Profiles jointly vary properties and cannot isolate causal effects of mass or friction",
+    "No object attachment constraint or teleported object movement after initialisation",
+    "No KITTI/nuScenes model or learned detector is used",
+    "Five position perturbations per profile are a small exploratory sample, not industrial reliability estimates",
+    "No physical robot or sim-to-real validation"
+  ]
+}

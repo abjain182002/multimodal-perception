@@ -1,0 +1,90 @@
+{
+  "status": "PRESERVED_SIMULATION_ARTIFACTS",
+  "files": {
+    "README.md": {
+      "bytes": 9698,
+      "sha256": "34d3fda3768b1a04eb7475d41a72a3d84348e3789d9b8c414536ae404b606dc1"
+    },
+    "protocol.json": {
+      "bytes": 3119,
+      "sha256": "32419bfaafb444896ce17695d8f44ad1a6524862a975b99550991c018ed56d43"
+    },
+    "requirements.txt": {
+      "bytes": 63,
+      "sha256": "909c3854a9d33383ecd41672e9852e2dca635bc42e4b7c149bc6dbe36ce3158d"
+    },
+    "environment.txt": {
+      "bytes": 214,
+      "sha256": "60aaa0379ef7adc108dc771cc9be04ec68e7d8e0ffec7b3f1e0f711bb153ad2b"
+    },
+    "PANDA_ASSET_LICENSE.txt": {
+      "bytes": 10172,
+      "sha256": "59899c6091b540582ed617e8eeaac4919dc985ccfc35459ee9752b699be5205b"
+    },
+    "scripts/run_arm_study.py": {
+      "bytes": 8298,
+      "sha256": "421d1f66cefbec1ef2f114f7ef27cfa77e54d59363d5f058f5c0f7d9e4b2f7d9"
+    },
+    "scripts/summarise_arm_study.py": {
+      "bytes": 6374,
+      "sha256": "cec2e86190ef4db07ad5e92988a88cdb9316c2ccd5706277ac9178bf89af61c3"
+    },
+    "results/trials.csv": {
+      "bytes": 9572,
+      "sha256": "5ec2bc42352aecb9c1ea3c6dbeffbef98f73ed35e58785f9721ed336fcda41ca"
+    },
+    "results/summary.csv": {
+      "bytes": 975,
+      "sha256": "aa3e6d0f21300d2a18d314cbc58119099120c0bc7e66e9b5750f41b907359ef3"
+    },
+    "results/summary.md": {
+      "bytes": 862,
+      "sha256": "8f28f28f4270e3a6a37a734a147f362513a112f85054d27c6d27e6332565c0a6"
+    },
+    "results/endpoint_tolerance.csv": {
+      "bytes": 2426,
+      "sha256": "360284f8a1627c313f8e190a2979d89fa6203b2fb4433c8ddfd13d245aa2bd41"
+    },
+    "results/audit.json": {
+      "bytes": 622,
+      "sha256": "eecac2d552bfecd593ad41ebcbe1eb35a26703e06c6084a643a5c58743da794f"
+    },
+    "results/record_checks.json": {
+      "bytes": 309,
+      "sha256": "649b6f1dedbf9fccd62ca2fb5734a2f74e86fa1aae198f52673319902184d0e3"
+    },
+    "results/replay_check.json": {
+      "bytes": 270,
+      "sha256": "998065e53e3c2765a4850e818826d12c10bd80fbab4d7ce6293d54454ed98668"
+    },
+    "results/trace_manifest.json": {
+      "bytes": 7040,
+      "sha256": "e479293542446a2a3649fa5028a8614ad65fdb1cd5ca7ee0fdeed0f1f274d22c"
+    },
+    "results/diagnostic_traces.zip": {
+      "bytes": 356773,
+      "sha256": "dd02737f6a2c2f6b57af25b7ae6ec70710e3661454758049ef9bb66ba75b5dd5"
+    },
+    "results/arm_study_composite.png": {
+      "bytes": 198269,
+      "sha256": "a023e4031e8a1ef300788fcb89d94532971a62485fc95694a42e6d827cdcaa91"
+    },
+    "results/arm_study_composite.pdf": {
+      "bytes": 44390,
+      "sha256": "87cd688ba3a4d39e5463de12a3838ff8208b5078b29fc51db23d55ad590357f1"
+    },
+    "development/audit.json": {
+      "bytes": 529,
+      "sha256": "8394bd29b4eb52c27a5766eea60f35e1b2e67a0434e23389179c6f2d3e88f9cf"
+    },
+    "development/trials.csv": {
+      "bytes": 376,
+      "sha256": "1b82242b29e6274628e2cbaabb88852543682f538ec16011ead9ef83839d9805"
+    },
+    "development/run_arm_study_smoke.py": {
+      "bytes": 8294,
+      "sha256": "586d076a056223703ea17a9af78e237c4356b01da6edf7a50a6caf9f97a45b9f"
+    }
+  },
+  "scope": "Exploratory simulation; figures derived from recorded outcomes, no real robot or perception integration."
+}
