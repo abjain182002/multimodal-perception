@@ -1,0 +1,48 @@
+[
+  {
+    "sample_token": "3c39b000dc2d42338f2a4567f65b2ae7",
+    "model": "lidar",
+    "gt_indices": [
+      8,
+      18
+    ],
+    "prediction_indices": []
+  },
+  {
+    "sample_token": "3c39b000dc2d42338f2a4567f65b2ae7",
+    "model": "fusion",
+    "gt_indices": [
+      8,
+      18
+    ],
+    "prediction_indices": []
+  },
+  {
+    "sample_token": "5eeaeb688f274b839865198f96968bb5",
+    "model": "lidar",
+    "gt_indices": [
+      0
+    ],
+    "prediction_indices": [
+      19
+    ]
+  },
+  {
+    "sample_token": "5eeaeb688f274b839865198f96968bb5",
+    "model": "fusion",
+    "gt_indices": [
+      0
+    ],
+    "prediction_indices": [
+      9
+    ]
+  },
+  {
+    "sample_token": "3954febdb9e84232a17173654dd728a4",
+    "model": "fusion",
+    "gt_indices": [],
+    "prediction_indices": [
+      15
+    ]
+  }
+]

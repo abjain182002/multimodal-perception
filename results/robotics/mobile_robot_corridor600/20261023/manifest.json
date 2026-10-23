@@ -1,0 +1,57 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 9649,
+      "sha256": "e62de9c995189a01f99a335cac99c2637dc7d3d839b03fc5e83497c90bb61f64"
+    },
+    "protocol.json": {
+      "bytes": 1831,
+      "sha256": "51577b436bdcc22196f02f8df52e9d88983f909484800ae17ce3c6f58e1ca0bc"
+    },
+    "requirements.txt": {
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    "results/audit.json": {
+      "bytes": 1539,
+      "sha256": "90afa2fbe1300fc35466310c2b795df8b1fd63fe4224a7543dc7fd35f5cc748d"
+    },
+    "results/comparison.pdf": {
+      "bytes": 19062,
+      "sha256": "313c1bc346bf25f197a291cd8843df707fbd0bb797a2022f2987a2abf6719943"
+    },
+    "results/comparison.png": {
+      "bytes": 130631,
+      "sha256": "5841525303f963511e204441cad3947eea4ab9e4b5da7f2ca1a2544a66dcf3ae"
+    },
+    "results/frame_results.csv": {
+      "bytes": 1110720,
+      "sha256": "e18194ae7fc553942945b2319a1d3eba0798b74dac3e1de65db2bf5457376ce4"
+    },
+    "results/primary_alert_indices.json": {
+      "bytes": 809,
+      "sha256": "e37ecf67e49f975a18935417021f1a3f5883f6aee981bd410d1bba77c878a120"
+    },
+    "results/primary_results.json": {
+      "bytes": 632,
+      "sha256": "497f2e537761dc91cf2139fd6b6e0f5eccaecf160684b7cbbde4b6b9f43fdb89"
+    },
+    "results/scene_bootstrap.csv": {
+      "bytes": 2855,
+      "sha256": "5fac5b74a3f06998069c6a160d54a799bd4b703a6af9bb1dc36b3b77677cf610"
+    },
+    "results/summary.csv": {
+      "bytes": 1075,
+      "sha256": "aa6a0f4b6847373dd3252af945636000e1b1588b13c861d852c26ca0ccd8a118"
+    },
+    "run_analysis.py": {
+      "bytes": 9568,
+      "sha256": "25e5d7039c4b037b095886397b388374211eff4f233528e590410ba215b61695"
+    },
+    "scene_selection.json": {
+      "bytes": 72067,
+      "sha256": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9"
+    }
+  },
+  "scope": "Annotation-based offline corridor analysis; not official SDK metrics."
+}

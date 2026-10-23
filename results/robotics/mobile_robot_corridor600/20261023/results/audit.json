@@ -1,0 +1,35 @@
+{
+  "status": "ANNOTATION_BASED_600_FRAME_CORRIDOR_PASS",
+  "samples": 600,
+  "scenes": 150,
+  "rows": 10800,
+  "hashes": {
+    "lidar_predictions.json": "886fd8b825382e38f3d594c1306d20b9c2ce512a00ee4315bdb36a5b31f79342",
+    "fusion_predictions.json": "4c6ed44c980e839bf256d611efa0bdc184b5c2f262cb9e5391ad4836eba3a876",
+    "annotations.pkl": "ff6dd3c63e8c3de23b9754947db326d0549bb376271cb7e235a3d54b0c365c44",
+    "sample_tokens.txt": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f"
+  },
+  "input_zip_sha256": "6565e5002bb8fad8d812ad88b30711e42db899ac5fa90b23e173c3fb9d44df56",
+  "protocol_sha256": "51577b436bdcc22196f02f8df52e9d88983f909484800ae17ce3c6f58e1ca0bc",
+  "script_sha256": "25e5d7039c4b037b095886397b388374211eff4f233528e590410ba215b61695",
+  "scene_selection_sha256": "e0cd17262a9370897b4272cfe2919cfe91ae043ab6935cbb725866fa800760f9",
+  "gt_counts": {
+    "car": 5326,
+    "truck": 922,
+    "trailer": 237,
+    "bus": 208,
+    "construction_vehicle": 155,
+    "bicycle": 196,
+    "motorcycle": 184,
+    "pedestrian": 2428,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "max_rotation_orthogonality_error": 8.12288780682735e-08,
+  "max_global_roundtrip_error_m": 1.3642420526593924e-12,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "scope": "Offline annotation-based diagnostic; not exact SDK replay, robot navigation, safety certification or factory validation. Full quaternion GT and bike-rack metadata unavailable. Six-case pilot is not pooled."
+}

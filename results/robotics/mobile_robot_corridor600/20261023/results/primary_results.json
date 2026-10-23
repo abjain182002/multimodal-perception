@@ -1,0 +1,30 @@
+[
+  {
+    "length_m": 5,
+    "threshold": 0.3,
+    "model": "lidar",
+    "frames": 600,
+    "positive_frames": 2,
+    "negative_frames": 598,
+    "correct_alerts": 1,
+    "missed_alerts": 1,
+    "unreferenced_alerts": 0,
+    "negative_no_alert": 598,
+    "miss_rate": 0.5,
+    "unreferenced_rate": 0.0
+  },
+  {
+    "length_m": 5,
+    "threshold": 0.3,
+    "model": "fusion",
+    "frames": 600,
+    "positive_frames": 2,
+    "negative_frames": 598,
+    "correct_alerts": 1,
+    "missed_alerts": 1,
+    "unreferenced_alerts": 1,
+    "negative_no_alert": 597,
+    "miss_rate": 0.5,
+    "unreferenced_rate": 0.0016722408026755853
+  }
+]

@@ -1,0 +1,16 @@
+{
+ "date":"2026-10-23",
+ "status":"FROZEN_BEFORE_600_FRAME_CORRIDOR_OUTCOMES",
+ "input_zip_sha256":"6565e5002bb8fad8d812ad88b30711e42db899ac5fa90b23e173c3fb9d44df56",
+ "samples":600,"scenes":150,
+ "robot_length_m":1.0,"robot_width_m":0.8,"lateral_margin_m":0.1,
+ "corridor_start_m":0.5,"lengths_m":[2,5,10],"primary_length_m":5,
+ "thresholds":[0.1,0.3,0.5],"primary_threshold":0.3,
+ "gt_policy":"Known ten detection classes, lidar+radar points >0, class-centre range (50m vehicles,40m pedestrian/bicycle/motorcycle,30m barrier/cone). No bike-rack exclusion: unavailable. Use stored LiDAR-frame centre/length/width/height/yaw transformed by lidar2ego.",
+ "prediction_policy":"Global quaternion boxes transformed by inverse ego2global; same class-centre range; score >= threshold. No bike-rack exclusion.",
+ "geometry":"Convex hull of all eight transformed corners projected to ego XY; touching intersects. Robot centred on ego origin. No vertical filter, motion or stopping model.",
+ "outcome":"At least one box intersects corridor; compare predicted alert to annotation-derived alert. Report missed alerts among positive frames and unreferenced alerts among negative frames. Annotation-negative is not verified free space.",
+ "uncertainty":"2000 paired scene bootstrap resamples, seed 20261023; resample 150 scenes with replacement preserving four frames and both models. Percentile 95% intervals. Sampling variation only, conditional on frozen frames and annotations. Undefined ratios excluded and counted.",
+ "figures":"One composite. No post-result corridor tuning or frame selection for headline analysis.",
+ "scope":"Offline annotation-based diagnostic; not exact SDK replay, robot navigation, safety certification or factory validation. Full quaternion GT and bike-rack metadata unavailable. Six-case pilot is not pooled."
+}
