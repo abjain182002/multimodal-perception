@@ -1,3 +1,5 @@
+> **Report integration update (23 October 2026):** Use the [four-page robotics section](ROBOTIC_PERCEPTION_SECTION_2026-10-23.md) and [PDF](ROBOTIC_PERCEPTION_SECTION_2026-10-23.pdf), which incorporate the completed 600-frame study. This earlier draft is retained as project history.
+
 # Application to factory mobile robots and manipulation
 
 Status: discussion draft, 22 October 2026. Intended allocation: approximately 3–4 dissertation pages after formatting, including one compact table and an optional combined architecture figure. Page count is not yet typeset or verified. This section interprets preserved perception experiments. A separate [simulated robotic-arm pilot](ROBOT_ARM_PILOT_2026-10-22.md) now adds handling-control evidence; it does not use the perception model. No physical robot deployment or new obstacle-zone evaluation has been completed.

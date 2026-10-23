@@ -1,0 +1,13 @@
+{
+  "status": "REPORT_SECTION_LAYOUT_AND_TABLE_CHECK_PASS",
+  "pages": 4,
+  "figures": 1,
+  "tables": 1,
+  "source_commit": "a9cdd68490dd22b70290d081113c823b8f529dfe",
+  "scope": "Report table checked against preserved summary CSV; four rendered pages inspected. No new inference.",
+  "sha256": {
+    "build_section_pdf.py": "1bf51caf24eaed1e49fd5048879b649677390a955e982ad1f68172b053b527ce",
+    "ROBOTIC_PERCEPTION_SECTION.pdf": "71b710d767aa1cdced6cd7aad0f34198d315790867d5c815b0b47baccc8f7e9b",
+    "ROBOTIC_PERCEPTION_SECTION.md": "de47459ee6ec5b8d3b56e068c7d59300f0ccf8bfd89e42f753d046f55a90c468"
+  }
+}
