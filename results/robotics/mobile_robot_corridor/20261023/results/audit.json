@@ -1,0 +1,15 @@
+{
+  "status": "SIX_CASE_OFFLINE_CORRIDOR_REPLAY_PASS",
+  "samples": 6,
+  "rows": 108,
+  "geometry_fixtures_pass": true,
+  "all_box_global_ego_roundtrips_below_1e_9_m": true,
+  "saved_matching_replayed": true,
+  "protocol_sha256": "43781047b0b3a0c57eb5dee03fff3c3e6f1ff9b45ec70d274683fcf11e5aa7f3",
+  "script_sha256": "030be83e28a861e343bc574b245becc0de6a24b0540cc7729cfa90dcf305c5b6",
+  "input_sha256": "574a5ea93c4fc455317562caaa82a30f25ce3f8b20715ddbf2e05c0cff0b9bdd",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "scope": "Static road-scene replay, not navigation, factory validation, free-space certification or stopping-distance calculation. Annotation absence does not prove free space. Existing SDK filters exclude some obstacles. No new inference. Sensitivity settings fixed before outcomes."
+}

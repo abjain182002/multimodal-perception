@@ -60,3 +60,8 @@ The factory-robot discussion connects measured perception behaviour to applicati
 - [2] Franka Robotics, [libfranka 0.20.2 Gripper API](https://frankarobotics.github.io/libfranka/0.20.2/classfranka_1_1Gripper.html). Command-interface evidence, not an egg-handling validation; checked 22 October 2026.
 - [3] Yuan et al., [Measurement of Shear and Slip with a GelSight Tactile Sensor](https://people.csail.mit.edu/yuan_wz/GelSight1/ICRA15_2740_FI.pdf), ICRA 2015. Primary paper; retrieved 22 October 2026.
 - [4] Lynch and Park, *Modern Robotics*, [Chapter 11: Robot Control](https://modernrobotics.northwestern.edu/chapters/chapter11/). Authors' textbook resources on motion, force and impedance control; checked 22 October 2026.
+
+
+## Mobile-robot follow-up — 23 October 2026
+
+The direct camera–LiDAR robotics connection has now been implemented as an [offline corridor-alert replay](../../results/robotics/mobile_robot_corridor/20261023/README.md) using the six preserved nuScenes cases and their recorded ego poses. The fixed 5 m corridor contains no filtered annotated obstacle in any of these frames; at the predeclared 10 m sensitivity setting, one frame contains an obstacle and both models alert. This establishes the coordinate/decision interface but does not demonstrate a fusion benefit, navigation performance or factory deployment. The six outcome-selected cases are inadequate for a reliability comparison. A broader saved-prediction evaluation remains pending. The separate arm pilot is supplementary and does not use this detector.

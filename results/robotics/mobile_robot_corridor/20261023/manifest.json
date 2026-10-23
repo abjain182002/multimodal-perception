@@ -1,0 +1,49 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 6291,
+      "sha256": "9c1f8256cda699d18c3571849ac6e3682fb68871b70dd6bb8c83a3c4e12498e2"
+    },
+    "protocol.json": {
+      "bytes": 1460,
+      "sha256": "43781047b0b3a0c57eb5dee03fff3c3e6f1ff9b45ec70d274683fcf11e5aa7f3"
+    },
+    "requirements.txt": {
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    "results/all_conditions.csv": {
+      "bytes": 11713,
+      "sha256": "3f2b5a87045483a782d4be606b9c715b4d4a335467cd4dde58bbde2806ad0e09"
+    },
+    "results/audit.json": {
+      "bytes": 829,
+      "sha256": "ad7f12c7864af7bd1762655f6ab833d16c0008392079c8359f5760a36d86ed6e"
+    },
+    "results/corridor_cases.pdf": {
+      "bytes": 44302,
+      "sha256": "130b57d5066a7ab6c1a3e4ff2867a876e14329cc4ee052f46bc5ed8fd2ecd501"
+    },
+    "results/corridor_cases.png": {
+      "bytes": 158595,
+      "sha256": "6e1e626e6bb6bf842f087c10ecf130ce8c3a8e3e4e5d53388891abdde8a8d765"
+    },
+    "results/ego_footprints.json": {
+      "bytes": 468040,
+      "sha256": "530fa94e5c69f489dcdf62a65ad7cf970511250d145e7f51aa08e4da62f8bc95"
+    },
+    "results/pose_records.json": {
+      "bytes": 2904,
+      "sha256": "80bf7f7cda0b7e21c88b17cd8965e4866cb4fbb07887387c40f2360a9e703cc0"
+    },
+    "results/primary_results.json": {
+      "bytes": 4473,
+      "sha256": "9ed1e5b1bcdfff330d0fa07578a542d272824ef36726bb5900440913e1077996"
+    },
+    "run_study.py": {
+      "bytes": 7695,
+      "sha256": "030be83e28a861e343bc574b245becc0de6a24b0540cc7729cfa90dcf305c5b6"
+    }
+  },
+  "scope": "Offline six-case corridor replay; no physical robot validation."
+}

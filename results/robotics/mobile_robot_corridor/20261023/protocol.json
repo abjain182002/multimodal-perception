@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_BEFORE_CORRIDOR_OUTCOME_CALCULATION",
+  "date": "2026-10-23",
+  "input_archive_sha256": "574a5ea93c4fc455317562caaa82a30f25ce3f8b20715ddbf2e05c0cff0b9bdd",
+  "sample_scope": "All six previously outcome-selected cases; illustrative only",
+  "robot_length_m": 1.0,
+  "robot_width_m": 0.8,
+  "lateral_margin_each_side_m": 0.1,
+  "corridor_start_x_m": 0.5,
+  "primary_forward_length_m": 5.0,
+  "forward_lengths_m": [2.0, 5.0, 10.0],
+  "primary_score_threshold": 0.3,
+  "score_thresholds": [0.1, 0.3, 0.5],
+  "frame": "Recorded LIDAR_TOP keyframe ego pose; x forward, y left, z up. Hypothetical robot centred at recorded ego origin.",
+  "geometry": "Transform all eight oriented-box corners global to ego using full quaternion rotation; convex hull of XY projection; boundary-touch counts as intersection; no vertical exclusion.",
+  "alert": "At least one eligible predicted footprint intersects corridor. GT reference uses all already SDK-filtered boxes.",
+  "object_diagnostic": "Existing same-class descending-score greedy matching at global XY distance strictly below 2m. A zone GT is covered only if its assigned prediction also intersects zone.",
+  "limits": "Static road-scene replay, not navigation, factory validation, free-space certification or stopping-distance calculation. Annotation absence does not prove free space. Existing SDK filters exclude some obstacles. No new inference. Sensitivity settings fixed before outcomes."
+}
