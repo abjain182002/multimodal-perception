@@ -1,0 +1,14 @@
+scene,sample_token,gt_index,class_name,model,matched,assigned_prediction_index,assigned_score,assigned_distance_m,nearest_same_class_index,nearest_same_class_distance_m,nearest_same_class_score,same_class_within_2m,eligible_same_class_within_2m,eligible_nearby_assignments,matched_at_0.1,matched_at_0.5
+scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,22,truck,lidar,False,,,,25,0.07985640686584257,0.23963752388954163,1,0,[],True,False
+scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,22,truck,lidar_camera,True,13,0.6553162932395935,0.1768657132928445,13,0.1768657132928445,0.6553162932395935,1,1,"[{""prediction_index"":13,""assigned_gt_index"":22}]",True,True
+scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,31,pedestrian,lidar,False,,,,49,0.19752467736282486,0.12183360755443573,1,0,[],True,False
+scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,31,pedestrian,lidar_camera,True,27,0.4529886543750763,0.15374724319688457,27,0.15374724319688457,0.4529886543750763,7,1,"[{""prediction_index"":27,""assigned_gt_index"":31}]",True,False
+scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,33,car,lidar,False,,,,65,0.49143458867290213,0.1091684028506279,1,0,[],True,False
+scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,33,car,lidar_camera,True,38,0.31690868735313416,0.24259070219160872,38,0.24259070219160872,0.31690868735313416,1,1,"[{""prediction_index"":38,""assigned_gt_index"":33}]",True,False
+scene-0562,0f483d8f22694132946c831f5d644cd7,26,car,lidar,True,24,0.30919504165649414,0.07737156729791432,24,0.07737156729791432,0.30919504165649414,1,1,"[{""prediction_index"":24,""assigned_gt_index"":26}]",True,False
+scene-0562,0f483d8f22694132946c831f5d644cd7,26,car,lidar_camera,False,,,,24,0.09508381630710065,0.286566823720932,1,0,[],True,False
+scene-0562,0f483d8f22694132946c831f5d644cd7,34,pedestrian,lidar,True,18,0.34026041626930237,0.10096382569710842,18,0.10096382569710842,0.34026041626930237,5,2,"[{""prediction_index"":13,""assigned_gt_index"":10},{""prediction_index"":18,""assigned_gt_index"":34}]",True,False
+scene-0562,0f483d8f22694132946c831f5d644cd7,34,pedestrian,lidar_camera,False,,,,20,0.16220211658370315,0.25085172057151794,4,0,[],True,False
+scene-0562,0f483d8f22694132946c831f5d644cd7,36,barrier,lidar,True,27,0.3174946904182434,0.1061442140205231,27,0.1061442140205231,0.3174946904182434,2,1,"[{""prediction_index"":27,""assigned_gt_index"":36}]",True,False
+scene-0562,0f483d8f22694132946c831f5d644cd7,36,barrier,lidar_camera,False,,,,26,0.12313239757171267,0.1528576910495758,2,0,[],True,False
+

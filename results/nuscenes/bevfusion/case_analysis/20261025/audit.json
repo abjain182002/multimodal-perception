@@ -1,0 +1,10 @@
+{
+  "status": "FOUR_CASE_DIAGNOSTIC_REPLAY_PASS",
+  "original_frames_replayed": 6,
+  "model_threshold_summaries_verified": 36,
+  "selected_frames": 4,
+  "selected_objects": 4,
+  "selected_sensor_hashes_verified": 4,
+  "original_archive_sha256": "574a5ea93c4fc455317562caaa82a30f25ce3f8b20715ddbf2e05c0cff0b9bdd",
+  "scope": "Saved filtered inputs; no new inference or SDK filtering. Camera projection has no object-motion compensation or occlusion test."
+}

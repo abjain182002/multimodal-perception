@@ -1,0 +1,41 @@
+{
+  "selection": "Four of six previously outcome-selected cases; one previously highlighted object per frame. Editorial selection, not a representative sample.",
+  "cases": [
+    {
+      "panel": "A",
+      "original_case": 2,
+      "scene": "scene-0332",
+      "sample_token": "b92ee1ed90c242d18bce9a8fdbbeb8d8",
+      "gt_index": 22,
+      "camera": "CAM_BACK_LEFT",
+      "sensor_sha256": "6bb1325237776e597111588e0ed75469dcdb0849acbf8f78606f5f8f7f32d703"
+    },
+    {
+      "panel": "B",
+      "original_case": 3,
+      "scene": "scene-0562",
+      "sample_token": "0f483d8f22694132946c831f5d644cd7",
+      "gt_index": 26,
+      "camera": "CAM_FRONT_LEFT",
+      "sensor_sha256": "3516f67916ccfc7ad5b39afd8d757de2f856bc142f7b45bf1a3642d76397ca41"
+    },
+    {
+      "panel": "C",
+      "original_case": 5,
+      "scene": "scene-0913",
+      "sample_token": "3b156a6793924c4497f394a3e34ddbf0",
+      "gt_index": 23,
+      "camera": "CAM_FRONT_RIGHT",
+      "sensor_sha256": "74a1b6ec8c4940c6c59635e16eb5501f5ec830d9f03c59813dfd4c61c3ed5160"
+    },
+    {
+      "panel": "D",
+      "original_case": 6,
+      "scene": "scene-0092",
+      "sample_token": "e13ec49d20974a01942b83317fcbfa46",
+      "gt_index": 7,
+      "camera": "CAM_FRONT_LEFT",
+      "sensor_sha256": "3b92607536b624d377df227b6e70b8e0c263eac0674a8b911036c2f27150a2d6"
+    }
+  ]
+}

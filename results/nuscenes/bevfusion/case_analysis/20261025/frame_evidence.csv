@@ -1,0 +1,5 @@
+panel,scene,sample_token,filtered_gt,lidar_tp,lidar_fp,lidar_fn,lidar_camera_tp,lidar_camera_fp,lidar_camera_fn,fusion_only,lidar_only,shared_matches,shared_misses
+A,scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,46,22,2,24,33,3,13,11,0,22,13
+B,scene-0562,0f483d8f22694132946c831f5d644cd7,38,21,2,17,14,3,24,0,7,14,17
+C,scene-0913,3b156a6793924c4497f394a3e34ddbf0,79,71,1,8,72,1,7,1,0,71,7
+D,scene-0092,e13ec49d20974a01942b83317fcbfa46,45,10,3,35,11,1,34,2,1,9,33

@@ -1,0 +1,9 @@
+panel,scene,sample_token,gt_index,class_name,camera,model,nearest_prediction_index,nearest_score,nearest_xy_error_m,matched_at_0.1,matched_at_0.3,matched_at_0.5
+A,scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,22,truck,CAM_BACK_LEFT,lidar,25,0.23963752388954163,0.07985640686584257,True,False,False
+A,scene-0332,b92ee1ed90c242d18bce9a8fdbbeb8d8,22,truck,CAM_BACK_LEFT,lidar_camera,13,0.6553162932395935,0.1768657132928445,True,True,True
+B,scene-0562,0f483d8f22694132946c831f5d644cd7,26,car,CAM_FRONT_LEFT,lidar,24,0.30919504165649414,0.07737156729791432,True,True,False
+B,scene-0562,0f483d8f22694132946c831f5d644cd7,26,car,CAM_FRONT_LEFT,lidar_camera,24,0.286566823720932,0.09508381630710065,True,False,False
+C,scene-0913,3b156a6793924c4497f394a3e34ddbf0,23,bus,CAM_FRONT_RIGHT,lidar,0,0.8745433688163757,0.5820701965048323,True,True,True
+C,scene-0913,3b156a6793924c4497f394a3e34ddbf0,23,bus,CAM_FRONT_RIGHT,lidar_camera,0,0.8844824433326721,0.4989604440805895,True,True,True
+D,scene-0092,e13ec49d20974a01942b83317fcbfa46,7,traffic_cone,CAM_FRONT_LEFT,lidar,23,0.1467360109090805,0.12062014711126474,True,False,False
+D,scene-0092,e13ec49d20974a01942b83317fcbfa46,7,traffic_cone,CAM_FRONT_LEFT,lidar_camera,13,0.2236667424440384,0.09326290770827796,True,False,False

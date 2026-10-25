@@ -1,0 +1,68 @@
+{
+  "source_repository_commit": "a888fdaf4b87c3f599af2dac7b721d44f4afe868",
+  "date": "2026-10-25",
+  "pdf_pages": 3,
+  "visual_review": "Three brief pages and the composite figure checked; one figure and one table.",
+  "files": {
+    "CRITICAL_CASE_DISCUSSION.md": {
+      "bytes": 8856,
+      "sha256": "b47d4e5fb067d73a5582de96a3da27ff96dea523c93852e681233e94489b63d9"
+    },
+    "README.md": {
+      "bytes": 5053,
+      "sha256": "10b23520d587db92eeae06d95dc2a1ad85fc91adb96d65e6034b5d4a7dbbec90"
+    },
+    "audit.json": {
+      "bytes": 457,
+      "sha256": "4438c3548001fcd44c6b07c795c755e73d585f7f06442e1c97f9da84da570953"
+    },
+    "build_brief_pdf.py": {
+      "bytes": 4506,
+      "sha256": "99944ffa9252b507e805892b504506bf337de0bbc5a17b7c4ccdc7cf11c832c2"
+    },
+    "build_case_review.py": {
+      "bytes": 8325,
+      "sha256": "ac270da84d77dc2fddf141b02260ee8f1fefd53af9eabfa7b0ef15940b3dfa55"
+    },
+    "four_case_comparison.pdf": {
+      "bytes": 259838,
+      "sha256": "621960d0bb6a5cd7985530cb46d84e7ed3ab3a2b3a08a5afdec9147abeee2d25"
+    },
+    "four_case_comparison.png": {
+      "bytes": 966427,
+      "sha256": "4eef896eeb4e77db68d13acac3eb54e5d36117d998125f51561e259fb7833b0f"
+    },
+    "frame_evidence.csv": {
+      "bytes": 466,
+      "sha256": "60381e325978313a38dfabd174c2e8c425ca40926440a3da5626cb8038b2d058"
+    },
+    "object_evidence.csv": {
+      "bytes": 1271,
+      "sha256": "64bd90fff776863132cd234e2a93ab3cad39dba0349ebb05ba8625b79763b3b0"
+    },
+    "requirements.txt": {
+      "bytes": 92,
+      "sha256": "e3020cc67dca19c72ea16a22a81c828f693d258cb3b2d7917d0a975b26c7105f"
+    },
+    "selection.json": {
+      "bytes": 1347,
+      "sha256": "bfb9ad68e5ebc188a47323d559add3f1bd8e6a1c9e1fcc936bb585e3d5b3e066"
+    },
+    "sources/annotation_records.json": {
+      "bytes": 7649,
+      "sha256": "8757d6f832e2865af6bb7e1136ea202a0fb88f8161c4f4304968dd575f9e56d7"
+    },
+    "sources/highlighted_objects.csv": {
+      "bytes": 2505,
+      "sha256": "47426e0c2d88b4403772e616e554f8e041fa1942b66d404bb2d3468e5bc8ff41"
+    },
+    "sources/threshold_sensitivity.csv": {
+      "bytes": 4830,
+      "sha256": "8404d8d6172ca5b3ac8d302b01a5363d32e467dc59a0268faa98a9cd7b12b679"
+    },
+    "supervisor_case_brief.pdf": {
+      "bytes": 1505043,
+      "sha256": "60826ece58bd4f0a6430363313e51b592d921675857b6b55e3d43309972ba33e"
+    }
+  }
+}

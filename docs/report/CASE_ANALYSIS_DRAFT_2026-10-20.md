@@ -1,3 +1,5 @@
+> **25 October update:** The [three-page supervisor brief](../../results/nuscenes/bevfusion/case_analysis/20261025/supervisor_case_brief.pdf) consolidates four contrasting cases with one combined figure, an evidence table and critical discussion. [Editable text, source tables and reproduction code](../../results/nuscenes/bevfusion/case_analysis/20261025/README.md). This earlier diagnostic draft remains as the detailed methodological record.
+
 # Case-analysis methods and discussion draft — 20 October 2026
 
 Status: report-ready draft grounded in a new diagnostic replay of preserved case inputs. Numerical claims below are traceable to the [analysis tables and audit](../../results/nuscenes/bevfusion/case_analysis/20261020/README.md). Literature connections identify relevant design ideas; no mitigation has been implemented or evaluated here.
