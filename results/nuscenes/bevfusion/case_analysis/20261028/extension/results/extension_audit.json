@@ -1,0 +1,11 @@
+{
+  "status": "CPU_EXTENSION_COMPLETE_WITH_EXPLICIT_SCOPE_LIMITS",
+  "geometry_records": 16,
+  "eight_class_threshold_records": 48,
+  "point_recounts_equal_annotation_counts": 4,
+  "rain_case_object_records": 4,
+  "new_gpu_inference": false,
+  "all_class_frame_evaluation": "pending original bicycle-rack metadata",
+  "visibility_tokens": "unavailable",
+  "night_cases": "not yet selected"
+}

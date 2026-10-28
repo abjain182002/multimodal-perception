@@ -1,0 +1,30 @@
+[
+  {
+    "case": "A",
+    "annotation_instance_index": 22,
+    "xy_correspondence_error_m": 8.881784197001252e-15,
+    "annotation_num_lidar_pts": 73,
+    "recount_matches_annotation": true
+  },
+  {
+    "case": "B",
+    "annotation_instance_index": 43,
+    "xy_correspondence_error_m": 1.5888218580782548e-14,
+    "annotation_num_lidar_pts": 2,
+    "recount_matches_annotation": true
+  },
+  {
+    "case": "C",
+    "annotation_instance_index": 32,
+    "xy_correspondence_error_m": 4.521866281009272e-14,
+    "annotation_num_lidar_pts": 65,
+    "recount_matches_annotation": true
+  },
+  {
+    "case": "D",
+    "annotation_instance_index": 12,
+    "xy_correspondence_error_m": 6.4047456679787536e-15,
+    "annotation_num_lidar_pts": 1,
+    "recount_matches_annotation": true
+  }
+]

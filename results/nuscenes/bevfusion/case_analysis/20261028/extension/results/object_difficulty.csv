@@ -1,0 +1,5 @@
+case,sample_token,class_name,ego_xy_distance_m,keyframe_points_in_oriented_gt_box,projected_box_width_px,projected_box_height_px,visibility_annotation,point_support_scope
+A,b92ee1ed90c242d18bce9a8fdbbeb8d8,truck,22.440138718824453,73,359.6241570902944,164.40785698800113,unavailable in transferred records,single raw keyframe; model also uses nine preceding sweeps
+B,0f483d8f22694132946c831f5d644cd7,car,32.04297304640924,2,205.2292500160445,89.26238284855708,unavailable in transferred records,single raw keyframe; model also uses nine preceding sweeps
+C,3b156a6793924c4497f394a3e34ddbf0,bus,35.07465200983056,65,366.99128098097486,132.17936961044842,unavailable in transferred records,single raw keyframe; model also uses nine preceding sweeps
+D,e13ec49d20974a01942b83317fcbfa46,traffic_cone,19.494891493602427,1,40.85287765160251,92.9992938918424,unavailable in transferred records,single raw keyframe; model also uses nine preceding sweeps

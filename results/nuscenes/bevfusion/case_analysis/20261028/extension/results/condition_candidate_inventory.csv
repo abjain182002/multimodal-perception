@@ -1,0 +1,21 @@
+category,sample_token,scene,scene_description,rain_in_description,night_in_description,preserved_detailed_context
+fusion_helps,148acc8b5751400c84ae272a96bf2bf7,scene-0634,"Rain, industrial, parking lot, semi backing up",True,False,False
+fusion_helps,4b0caf61a82e4b45836f796845cd1860,scene-0555,"Cross intersection, construction, big truck",False,False,True
+fusion_helps,b92ee1ed90c242d18bce9a8fdbbeb8d8,scene-0332,"Peds crossing, parked cars",False,False,True
+fusion_helps,113bdf9278314c72b7f8988a67f0dff9,scene-0105,"Parking lots, peds, parked cars, cars on elevated bridge, truck",False,False,False
+fusion_helps,35e0ba93fe9d48f386b97d62bd78fbf7,scene-0629,"Rain, industrial, turn twice",True,False,False
+fusion_regresses,28d07d72b06a4355acbac00bf541d3d3,scene-0565,"Turning right, pedestrian with suitcase, pedestrian, construction zone, parked car",False,False,False
+fusion_regresses,bbf1d23e80b84da798c56cbac090f7d9,scene-0626,"Rain, construction, bendy bus, roundabout",True,False,True
+fusion_regresses,0f483d8f22694132946c831f5d644cd7,scene-0562,"Parked cars, pedestrians, pedestrians on flyover, parked bicycles on bikeracks, barricades, passing below flyover",False,False,True
+fusion_regresses,3c5fe22946dc4d12954375abc464d6b1,scene-0522,"Parked bicycle, pedestrian, parked cars, cyclist, construction zone",False,False,False
+fusion_regresses,be8d80abd39640f3855c62885d2130ff,scene-0108,"Construction zone, waiting for car to pass, turn right",False,False,False
+shared_success,3b156a6793924c4497f394a3e34ddbf0,scene-0913,"Rain, parked cars, semi trailers, barriers, construction vehicle, parking lot, parked buses",True,False,True
+shared_success,72fb9a53ac6f4222ac623a6b39c9404d,scene-0276,"Intersection, peds, cars, scooter, parked bicycle",False,False,False
+shared_success,fd612e8660e74196af7da7e6487e5d53,scene-0101,"Concrete mixer spinning, traffic cones, wait at red light, move onto bridge, lane change",False,False,False
+shared_success,06cc9133c0684cf2b676cf5f7c49e88b,scene-0018,"Merge left, turn into unloading zone",False,False,False
+shared_success,7a80523f99c3434ba5f65a3ddad2b2ea,scene-0345,"Cross the intersection, construction, scooter, turn right, parked buses, navigated through traffic cones",False,False,False
+shared_miss,68cc30fac5f043d09cf991e05c47c75e,scene-0345,"Cross the intersection, construction, scooter, turn right, parked buses, navigated through traffic cones",False,False,False
+shared_miss,e13ec49d20974a01942b83317fcbfa46,scene-0092,"Drive through passage, peds walking alongside lane",False,False,True
+shared_miss,269601cc1e4d45a3a36fbf291d45a447,scene-0329,"Parked trucks, parked cars, avoid parked truck, ped, turn right",False,False,False
+shared_miss,4070ae6b1ce047b5b0a3a5868f2dbd19,scene-0276,"Intersection, peds, cars, scooter, parked bicycle",False,False,False
+shared_miss,93ca32c6f20745cd9d6010c66a2721c8,scene-0634,"Rain, industrial, parking lot, semi backing up",True,False,False

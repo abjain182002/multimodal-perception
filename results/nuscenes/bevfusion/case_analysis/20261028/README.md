@@ -1,5 +1,7 @@
 # Four-case darkening follow-up — 28 October 2026
 
+**Diagnostic extension:** [eight-class threshold trade-offs, box errors, verified point support and an additional rain-labelled regression](extension/README.md). Exact all-class counts and verified night cases remain pending.
+
 This CPU analysis uses the preserved 16 predictions: four LiDAR clean references and four fusion frames at each of image gains 1, 0.5 and 0.25. No new inference was performed during this analysis. The exported archive and its 46 payload members, plus the nested 75 input payload members, were hash-verified. Recorded point, metadata and raw-image hashes remain identical across fusion conditions. These checks verify recorded invariants, not a second execution of the transforms.
 
 ![Four-case darkening comparison](results/four_case_darkening_composite.png)
