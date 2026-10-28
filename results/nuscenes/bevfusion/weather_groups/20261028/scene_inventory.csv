@@ -1,0 +1,151 @@
+scene_name,scene_token,log_token,description,group,rain_mentioned,night_mentioned,negative_mention_review,samples
+scene-0003,e7ef871f77f44331aefdebc24ec034b7,92af2609d31445e5a71b2d895376fed6,"Parking lot, barrier, exit parking lot",neither_mentioned,False,False,False,40
+scene-0012,265f002f02d447ad9074813292eef75e,d31dc715d1c34b99bd5afb0e3aea26ed,"Nature, bus stop, parked cars, bus exits from the intersection",neither_mentioned,False,False,False,40
+scene-0013,41fde20fedcd4d22ab26811688612870,d31dc715d1c34b99bd5afb0e3aea26ed,"Follow bus, parked cars, trash cans, parked bicycles, nature",neither_mentioned,False,False,False,40
+scene-0014,d1e57234fd6a463d963670938f9f556e,d31dc715d1c34b99bd5afb0e3aea26ed,"Follow bus, cross intersection, nature",neither_mentioned,False,False,False,40
+scene-0015,813213458a214a39a1d1fc77fa52fa34,d31dc715d1c34b99bd5afb0e3aea26ed,"Narrow road, following bus, bus on opposite lane, parked cars",neither_mentioned,False,False,False,40
+scene-0016,efa5c96f05594f41a2498eb9f2e7ad99,d31dc715d1c34b99bd5afb0e3aea26ed,"Turn left, people on both sides, parked vans",neither_mentioned,False,False,False,40
+scene-0017,3dd9ad3f963e4f588d75c112cbf07f56,d31dc715d1c34b99bd5afb0e3aea26ed,"Barriers, peds, arriving at busy intersection",neither_mentioned,False,False,False,40
+scene-0018,b51869782c0e464b8021eb798609f35f,d31dc715d1c34b99bd5afb0e3aea26ed,"Merge left, turn into unloading zone",neither_mentioned,False,False,False,40
+scene-0035,3dd2be428534403ba150a0b60abc6a0a,783683d957054175bda1b326453a13f4,"Parking lots, trash can, bump, scooter, peds, potential jaywalkers, bus stop, oncoming bus",neither_mentioned,False,False,False,40
+scene-0036,5a0dd8908a3a459b83ec5eb6ac7d0f82,783683d957054175bda1b326453a13f4,"Parked bicycle, construction, peds, workers, construction vehicle, bike racks",neither_mentioned,False,False,False,40
+scene-0038,2f56eb47c64f43df8902d9f88aa8a019,783683d957054175bda1b326453a13f4,"Parked construction vehicles, peds, garbage",neither_mentioned,False,False,False,40
+scene-0039,8edbc31083ab4fb187626e5b3c0411f7,783683d957054175bda1b326453a13f4,"Busy street, parked cars, parking lot, ped sitting at bus stop, motorcycle driving",neither_mentioned,False,False,False,40
+scene-0092,7365495b74464629813b41eacdb711af,53cf9c55dd8644bea67b9f009fc1ee38,"Drive through passage, peds walking alongside lane",neither_mentioned,False,False,False,40
+scene-0093,cba3ddd5c3664a43b6a08e586e094900,53cf9c55dd8644bea67b9f009fc1ee38,"Turn right, parking lots, cross intersection",neither_mentioned,False,False,False,39
+scene-0094,91c071bcc1ad4fa1b555399e1cfbab79,53cf9c55dd8644bea67b9f009fc1ee38,"Oncoming cyclist, cars, wait at intersection",neither_mentioned,False,False,False,40
+scene-0095,b4b82c4d338a4b6d86835388ce076345,53cf9c55dd8644bea67b9f009fc1ee38,"Wait at intersection, peds occluded, start driving",neither_mentioned,False,False,False,39
+scene-0096,68e79a88244f447f993a72da444b29ba,53cf9c55dd8644bea67b9f009fc1ee38,"Cross busy intersection, cyclist nearby, construction barriers and cones",neither_mentioned,False,False,False,39
+scene-0097,2eb4d7f00e584a548aa0b899638bfb0a,53cf9c55dd8644bea67b9f009fc1ee38,"Wait at red light, turns green, cross intersection",neither_mentioned,False,False,False,39
+scene-0098,c65c4acf86954f8cbd53a3541a3bfa3a,53cf9c55dd8644bea67b9f009fc1ee38,"Parked cars, peds, bus stop, bicycle rack, sign trailer, bicyclist, ped carrying object, bridge",neither_mentioned,False,False,False,39
+scene-0099,5af9c7f124d84e7e9ac729fafa40ea01,53cf9c55dd8644bea67b9f009fc1ee38,"Parked vans, switch lane, construction zone in the right, bike following in rear, passed by active motorcycle",neither_mentioned,False,False,False,39
+scene-0100,afd73f70ff7d46d6b772d341c08e31a5,53cf9c55dd8644bea67b9f009fc1ee38,"Wait at red light, oncoming cyclist, peds, parked bicycle, parked construction car",neither_mentioned,False,False,False,40
+scene-0101,01452fbfbf4543af8acdfd3e8a1ee806,53cf9c55dd8644bea67b9f009fc1ee38,"Concrete mixer spinning, traffic cones, wait at red light, move onto bridge, lane change",neither_mentioned,False,False,False,40
+scene-0102,ddb615d9bb22484cabc6545b632a1025,53cf9c55dd8644bea67b9f009fc1ee38,"Turn right at intersection, cross bridge, many peds",neither_mentioned,False,False,False,40
+scene-0103,fcbccedd61424f1b85dcbf8f897f9754,53cf9c55dd8644bea67b9f009fc1ee38,"Many peds right, wait for turning car, long bike rack left, cyclist",neither_mentioned,False,False,False,40
+scene-0104,c525507ee2ef4c6d8bb64b0e0cf0dd32,53cf9c55dd8644bea67b9f009fc1ee38,"Start car, cross intersection, skyscraper occluded by traffic light, parked bicycles, parked cars, cross intersection",neither_mentioned,False,False,False,39
+scene-0105,2ed0fcbfc214478ca3b3ce013e7723ba,53cf9c55dd8644bea67b9f009fc1ee38,"Parking lots, peds, parked cars, cars on elevated bridge, truck",neither_mentioned,False,False,False,39
+scene-0106,bed67ef03c4a4066a74f6c0117d512ee,53cf9c55dd8644bea67b9f009fc1ee38,"Drive between buildings under construction, slow down at intersection, several traffic cones and temporary barriers",neither_mentioned,False,False,False,40
+scene-0107,3b2ee26cb8484f77895bc336663df502,53cf9c55dd8644bea67b9f009fc1ee38,"Cross busy intersection, bendy bus changing lane",neither_mentioned,False,False,False,40
+scene-0108,a178a1b5415f45c08d179bd2cacdf284,53cf9c55dd8644bea67b9f009fc1ee38,"Construction zone, waiting for car to pass, turn right",neither_mentioned,False,False,False,39
+scene-0109,fb73d1a6c16147ee9416faf6b310fadb,53cf9c55dd8644bea67b9f009fc1ee38,"Cross roundabout, construction vehicle, ped walking along the road side",neither_mentioned,False,False,False,40
+scene-0110,d87ec0461e3f4c4ea29b0f0c0ede5167,53cf9c55dd8644bea67b9f009fc1ee38,"Parked car with open bonnet, parked cars, oncoming truck, oncoming cyclists",neither_mentioned,False,False,False,40
+scene-0221,acc29386502047339e1ec6b9c7e512d2,e60234ec7c324789ac7c8441a5e49731,"Pedestrian crossing, stopped vehicle",neither_mentioned,False,False,False,39
+scene-0268,c3ab8ee2c1a54068a72d7eb4cf22e43d,a5bb7f9dd1884f1ea0de299caefe7ef4,"Construction zone, stopped at red light, parked cars",neither_mentioned,False,False,False,39
+scene-0269,9f1f69646d644e35be4fe0122a8b91ef,a5bb7f9dd1884f1ea0de299caefe7ef4,"Parked bicycles, peds sitting outside the restaurant, parked scooter",neither_mentioned,False,False,False,40
+scene-0270,2ca15f59d656489a8b1a0be4d9bead4e,a5bb7f9dd1884f1ea0de299caefe7ef4,"Peds, pedestrian walk on the roadside, motorcycles",neither_mentioned,False,False,False,40
+scene-0271,8180a1dbbba3479bb0c7f4ff6e9a3f0e,a5bb7f9dd1884f1ea0de299caefe7ef4,"Overtake parked car, parked bicycle",neither_mentioned,False,False,False,39
+scene-0272,080a52cb8f59489b9cddc7b721808088,a5bb7f9dd1884f1ea0de299caefe7ef4,"Stopped for oncoming car, motorcycle",neither_mentioned,False,False,False,39
+scene-0273,1aa633b683174280b243e0a9a7ad9171,a5bb7f9dd1884f1ea0de299caefe7ef4,"Barriers, peds loading car trunk, luggage on sidewalk, parked bicycles, lane change",neither_mentioned,False,False,False,39
+scene-0274,9709626638f5406f9f773348150d02fd,a5bb7f9dd1884f1ea0de299caefe7ef4,"Peds, construction zone, construction workers, barriers, cars, jaywalker",neither_mentioned,False,False,False,40
+scene-0275,8377abf77f464a9cb62eacf63f383422,a5bb7f9dd1884f1ea0de299caefe7ef4,"Peds, bus, barriers, stopped at intersection",neither_mentioned,False,False,False,40
+scene-0276,201b7c65a61f4bc1a2333ea90ba9a932,a5bb7f9dd1884f1ea0de299caefe7ef4,"Intersection, peds, cars, scooter, parked bicycle",neither_mentioned,False,False,False,40
+scene-0277,848ac962547c4508b8f3b0fcc8d53270,a5bb7f9dd1884f1ea0de299caefe7ef4,"Jaywalker, peds, parked bike",neither_mentioned,False,False,False,40
+scene-0278,91f797db8fb34ae5b32ba85eecae47c9,a5bb7f9dd1884f1ea0de299caefe7ef4,"Motorcycle suddenly rushes out, truck, peds",neither_mentioned,False,False,False,40
+scene-0329,5eaff323af5b4df4b864dbd433aeb75c,485a0831e0964529b0b45d476139c68b,"Parked trucks, parked cars, avoid parked truck, ped, turn right",neither_mentioned,False,False,False,39
+scene-0330,3927699fa562451a98bb13bf8405361d,485a0831e0964529b0b45d476139c68b,"Ped walking along the road, bus stops with waiting passenger, dense parked cars at the left",neither_mentioned,False,False,False,39
+scene-0331,9d1307e95c524ca4a51e03087bd57c29,485a0831e0964529b0b45d476139c68b,"Heavy truck, container, turn left",neither_mentioned,False,False,False,39
+scene-0332,93608f0d57794ba6b014314c488e2b4a,485a0831e0964529b0b45d476139c68b,"Peds crossing, parked cars",neither_mentioned,False,False,False,40
+scene-0344,6d872d1448814fd189e631b1187c3771,92af2609d31445e5a71b2d895376fed6,"Wait at intersection, construction, bus, scooter",neither_mentioned,False,False,False,40
+scene-0345,fcc020250f884397965ba00c1d9ad9e6,92af2609d31445e5a71b2d895376fed6,"Cross the intersection, construction, scooter, turn right, parked buses, navigated through traffic cones",neither_mentioned,False,False,False,39
+scene-0346,a499ee875da34e2b9655afb999edb8a9,92af2609d31445e5a71b2d895376fed6,"Cross intersection, scooter, nature, peds crossing",neither_mentioned,False,False,False,40
+scene-0519,b07358651c604e2d83da7c4d4755de73,ca6d14b008ed4e0bb6b1eaaedadbd6c1,"Passing under flyover, oncoming truck, pedestrians, parked cars",neither_mentioned,False,False,False,41
+scene-0520,26a6b03c8e2f4e6692f174a7074e54ff,ca6d14b008ed4e0bb6b1eaaedadbd6c1,"Pedestrian, parked vehicles",neither_mentioned,False,False,False,41
+scene-0521,4962cb207a824e57bd10a2af49354b16,ca6d14b008ed4e0bb6b1eaaedadbd6c1,"Parking lot, ped, parked bicycle, peds crossing crosswalk",neither_mentioned,False,False,False,40
+scene-0522,2abb3f3517c64446a5768df5665da49d,ca6d14b008ed4e0bb6b1eaaedadbd6c1,"Parked bicycle, pedestrian, parked cars, cyclist, construction zone",neither_mentioned,False,False,False,40
+scene-0523,d7bacba9119840f78f3c804134ceece0,ca6d14b008ed4e0bb6b1eaaedadbd6c1,"Oncoming bus, parked car on center divider, pedestrian, roundabout, parked trucks",neither_mentioned,False,False,False,40
+scene-0524,6a24a80e2ea3493c81f5fdb9fe78c28a,ca6d14b008ed4e0bb6b1eaaedadbd6c1,"Parking lot, parked truck, pedestrian, oncoming truck",neither_mentioned,False,False,False,41
+scene-0552,16e50a63b809463099cb4c378fe0641e,881dd2f8aaec49b681eb54be5bf3b3e2,"Bendy bus, school bus, parking lot, turn left, parked bus, overtake truck",neither_mentioned,False,False,False,41
+scene-0553,6f83169d067343658251f72e1dd17dbc,881dd2f8aaec49b681eb54be5bf3b3e2,"Wait at intersection, bicycle, large truck, peds crossing crosswalk, ped with stroller",neither_mentioned,False,False,False,41
+scene-0554,f2541977a00a448db9b46a32187d9059,881dd2f8aaec49b681eb54be5bf3b3e2,"Wait at intersection, ped crossing, ped with stroller, cyclist, barriers",neither_mentioned,False,False,False,41
+scene-0555,3363f396bb43405fbdd17d65dc123d4e,881dd2f8aaec49b681eb54be5bf3b3e2,"Cross intersection, construction, big truck",neither_mentioned,False,False,False,40
+scene-0556,b94fbf78579f4ff5ab5dbd897d5e3199,0d68b81100a640129a185cca5aa1edd7,"Turn left, oncoming vehicle, pedestrian, parked truck, passengers exiting car",neither_mentioned,False,False,False,40
+scene-0557,3f90afe9f7dc49399347ae1626502aed,0d68b81100a640129a185cca5aa1edd7,"Parked cars, pedestrian, stopped at intersection, oncoming vehicle",neither_mentioned,False,False,False,40
+scene-0558,952cb0bcd89b4ca4b904cdcbbf595523,0d68b81100a640129a185cca5aa1edd7,"Turning right, parked cars, peds, parked bicycle",neither_mentioned,False,False,False,41
+scene-0559,0e7ede02718341558414865d5c604745,0d68b81100a640129a185cca5aa1edd7,"Passing intersection, pedestrian, parked cars, construction zone, construction vehicles",neither_mentioned,False,False,False,41
+scene-0560,44c9089913db4d4ab839a2fcb35989ed,0d68b81100a640129a185cca5aa1edd7,"Arrive at intersection, parked cars, statue, peds, ped with stroller, flag, bendy bus",neither_mentioned,False,False,False,40
+scene-0561,ed242d80ccb34b139aaf9ab89859332e,0d68b81100a640129a185cca5aa1edd7,"Wait at intersection, turning left, cars turning together, parking lot",neither_mentioned,False,False,False,40
+scene-0562,30a1a4ccd60047b4a22ee3bf0645f3ad,0d68b81100a640129a185cca5aa1edd7,"Parked cars, pedestrians, pedestrians on flyover, parked bicycles on bikeracks, barricades, passing below flyover",neither_mentioned,False,False,False,40
+scene-0563,8e3364691ee94c698458e0913a29af78,0d68b81100a640129a185cca5aa1edd7,"Change lane and stop, slight traffic congestion due to traffic light, ped on overpass, parked cars, cyclist",neither_mentioned,False,False,False,40
+scene-0564,84e056bd8e994362a37cba45c0f75558,0d68b81100a640129a185cca5aa1edd7,"Parked car, pedestrian, turning right, construction zone",neither_mentioned,False,False,False,40
+scene-0565,54f56f80350b4c07af598ee87cf3886a,0d68b81100a640129a185cca5aa1edd7,"Turning right, pedestrian with suitcase, pedestrian, construction zone, parked car",neither_mentioned,False,False,False,40
+scene-0625,0ac05652a4c44374998be876ba5cd6fd,01ebe4444f624b4699ec6bf58837b153,"Rain, peds, construction",rain_only_mentioned,True,False,False,40
+scene-0626,3ada261efee347cba2e7557794f1aec8,01ebe4444f624b4699ec6bf58837b153,"Rain, construction, bendy bus, roundabout",rain_only_mentioned,True,False,False,40
+scene-0627,5301151d8b6a42b0b252e95634bd3995,01ebe4444f624b4699ec6bf58837b153,"Rain, industrial",rain_only_mentioned,True,False,False,41
+scene-0629,991d65cab952449a821deb32e971ff19,01ebe4444f624b4699ec6bf58837b153,"Rain, industrial, turn twice",rain_only_mentioned,True,False,False,40
+scene-0630,9068766ee9374872a380fe75fcfb299e,01ebe4444f624b4699ec6bf58837b153,"Rain, construction, fence, special construction vehicle, nature, crane, wait at intersection, parking lot, cross intersection",rain_only_mentioned,True,False,False,41
+scene-0632,b789de07180846cc972118ee6d1fb027,01ebe4444f624b4699ec6bf58837b153,"Rain, industrial, turn right, turn right, parked cars",rain_only_mentioned,True,False,False,40
+scene-0633,9088db17416043e5880a53178bfa461c,01ebe4444f624b4699ec6bf58837b153,"Rain, industrial, parked trucks at parking lot",rain_only_mentioned,True,False,False,40
+scene-0634,7210f928860043b5a7e0d3dd4b3e80ff,01ebe4444f624b4699ec6bf58837b153,"Rain, industrial, parking lot, semi backing up",rain_only_mentioned,True,False,False,40
+scene-0635,7bd098ac88cb4221addd19202a7ea5de,01ebe4444f624b4699ec6bf58837b153,"Stationary in rain, semi backing up",rain_only_mentioned,True,False,False,40
+scene-0636,19d97841d6f64eba9f6eb9b6e8c257dc,01ebe4444f624b4699ec6bf58837b153,"Rain, turn right, parked trucks",rain_only_mentioned,True,False,False,40
+scene-0637,3045ed93c2534ec2a5cabea89b186bd9,01ebe4444f624b4699ec6bf58837b153,"Rain, parked cars, peds, jaywalker, water reflections, parked bicycle, ped with umbrella, cross intersection",rain_only_mentioned,True,False,False,40
+scene-0638,f5b29a1e09d04355adcd60ab72de006b,01ebe4444f624b4699ec6bf58837b153,"Rain, turn left, water reflections, jaywalker, parked cars",rain_only_mentioned,True,False,False,41
+scene-0770,aedcd3cf7c4a49d7a4a43ab7443a9eb1,bd38be48fba140f1941bf7c84a33255d,"Stationary ego vehicle, parking lot, ped on road",neither_mentioned,False,False,False,40
+scene-0771,21a7ba093614493b83838b9656b3558d,bd38be48fba140f1941bf7c84a33255d,"Stationary ego vehicle, person getting out of ego vehicle, parking lot, peds",neither_mentioned,False,False,False,41
+scene-0775,96e5f1f0944946f391b4ef33ad623008,bd38be48fba140f1941bf7c84a33255d,"Stationary ego vehicle, parking lot, peds, truck, cars pass by",neither_mentioned,False,False,False,41
+scene-0777,4bb9626f13184da7a67ba1b241c19558,bd38be48fba140f1941bf7c84a33255d,"Stationary ego vehicle, parking lot, person getting inside ego vehicle",neither_mentioned,False,False,False,40
+scene-0778,ca6e45c25d954dc4af6e12dd7b23454d,bd38be48fba140f1941bf7c84a33255d,"Parking lot, U turn, parked cars, peds",neither_mentioned,False,False,False,40
+scene-0780,656bb27689dc4e9b8e4559e3f6a7e534,bd38be48fba140f1941bf7c84a33255d,"Parked cars, stop at red light, jaywalker, peds, bus",neither_mentioned,False,False,False,41
+scene-0781,57dc3221a3d845b5ab17ff0f98ce336f,bd38be48fba140f1941bf7c84a33255d,"Stop at red light, bus, low traffic, peds, ped crossing crosswalk",neither_mentioned,False,False,False,40
+scene-0782,7061c08f7eec4495979a0cf68ab6bb79,bd38be48fba140f1941bf7c84a33255d,"Parked cars, peds, crossing intersection, bus, trailer, cones",neither_mentioned,False,False,False,41
+scene-0783,40209c4e465d4b4e8341ebd52be0d842,bd38be48fba140f1941bf7c84a33255d,"Cars, parked cars, overtaking a bus, peds, parked scooter, truck, arrive at intersection, cones",neither_mentioned,False,False,False,41
+scene-0784,50ff554b3ecb4d208849d042b7643715,bd38be48fba140f1941bf7c84a33255d,"Waiting at intersection, parked cars, bus, peds, flags",neither_mentioned,False,False,False,41
+scene-0794,905cfed4f0fc46679e8df8890cca4141,8ff48ad1df8e4966a2151730c92b7f3c,"Wait at intersection, many vehicles, motorcycles, light turns green",neither_mentioned,False,False,False,40
+scene-0795,36f27b26ef4c423c9b79ac984dc33bae,8ff48ad1df8e4966a2151730c92b7f3c,"Motorcycle, cars, trucks, bus, cross intersection, stopped bus, cones, peds on sidewalk",neither_mentioned,False,False,False,40
+scene-0796,c5224b9b454b4ded9b5d2d2634bbda8a,8ff48ad1df8e4966a2151730c92b7f3c,"Scooter, peds on sidewalk, bus, cars, truck, fake construction worker, bicycle, cross intersection, car overtaking us",neither_mentioned,False,False,False,40
+scene-0797,f24b4682fbb9482aba149534deed1cc9,8ff48ad1df8e4966a2151730c92b7f3c,"Cars, bus passing by, car overtaking us, wait",neither_mentioned,False,False,False,40
+scene-0798,380ff00ec86447e3b986edc8e82ffba7,8ff48ad1df8e4966a2151730c92b7f3c,"Start at intersection, dense traffic, stopped scooter, parked bicycles, cross intersection, truck, bus, peds",neither_mentioned,False,False,False,40
+scene-0799,ec7b7459461e4da1a236ba23e22377c9,8ff48ad1df8e4966a2151730c92b7f3c,"Cars, cross intersection, motorcycle overtaking us, parking lot, truck, arrive at intersection",neither_mentioned,False,False,False,40
+scene-0800,07aed9dae37340a997535ad99138e243,8ff48ad1df8e4966a2151730c92b7f3c,"Peds on sidewalk, cones, bus, cross intersection, parked bicycle",neither_mentioned,False,False,False,40
+scene-0802,6741d407b1b44511853e5ec7aaee2992,8ff48ad1df8e4966a2151730c92b7f3c,"Cones, cross intersection, peds on sidewalk, parking lot, parked bicycle",neither_mentioned,False,False,False,41
+scene-0904,c164a8e8e8b8489f964f711f472789be,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, bus, peds, barriers, cross intersection, ped crossing crosswalk, construction site, cones, scooter, arrive at intersection",rain_only_mentioned,True,False,False,41
+scene-0905,d3b86ca0a17840109e9e049b3dd40037,8c66d9d518c54aed98dce7e3095501bc,"Rain, construction site, barriers, cones, peds crossing crosswalk, ship, parked cars, truck, peds, large truck",rain_only_mentioned,True,False,False,40
+scene-0906,dce6f3f2bf6b4859abcf3268581969d3,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, parked bicycle, peds, cones, cross intersection, parking lot, turning right",rain_only_mentioned,True,False,False,41
+scene-0907,01e4fcbe6e49483293ce45727152b36e,8c66d9d518c54aed98dce7e3095501bc,"Rain, turn right, parked cars, parking lot, peds, bus, truck, waiting",rain_only_mentioned,True,False,False,40
+scene-0908,d01e7279da2649ef896dc42f6b9ee7ab,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, truck, parked scooter, cones, ped",rain_only_mentioned,True,False,False,41
+scene-0909,7e8ff24069ff4023ac699669b2c920de,8c66d9d518c54aed98dce7e3095501bc,"Rain, ped, cones, parked cars, construction site, construction vehicle, parking lot, barriers",rain_only_mentioned,True,False,False,40
+scene-0910,a7d073bc435b4356a0a9a5ebfb61f229,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, sign trailer, construction, construction vehicle, crane, cones, truck, ped with umbrella, cross intersection, bicycle, peds crossing crosswalk, bicyclist, potential jaywalkers",rain_only_mentioned,True,False,False,40
+scene-0911,85651af9c04945c3a394cf845cb480a6,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, trucks, peds crossing crosswalk, peds, parked bicycles, bicycle rack",rain_only_mentioned,True,False,False,40
+scene-0912,197a7e4d3de84e57af17b3d65fcb3893,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, trucks, parking lot, construction vehicle",rain_only_mentioned,True,False,False,40
+scene-0913,55b3a17359014f398b6bbd90e94a8e1b,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, semi trailers, barriers, construction vehicle, parking lot, parked buses",rain_only_mentioned,True,False,False,40
+scene-0914,a2b005c4dd654af48194ada18662c8ca,8c66d9d518c54aed98dce7e3095501bc,"Rain, parking lot, bicycle rack, buses, jaywalker, parked scooter, arrive at intersection",rain_only_mentioned,True,False,False,41
+scene-0915,3a2d9bf6115f40898005d1c1df2b7282,8c66d9d518c54aed98dce7e3095501bc,"Rain, parked cars, turn left, peds, bus, truck, ped crossing crosswalk, suitcase, cones",rain_only_mentioned,True,False,False,41
+scene-0916,325cef682f064c55a255f2625c533b75,5bd40b613ac740cd9dbacdfbc3d68201,"Parking lot, bicycle rack, parked bicycles, bus, many peds, parked scooters, parked motorcycle",neither_mentioned,False,False,False,41
+scene-0917,223096a415cc45bf8ecd4c3a42251fd7,5bd40b613ac740cd9dbacdfbc3d68201,"Peds, jaywalkers, nature, parking lot, bus, turn left",neither_mentioned,False,False,False,41
+scene-0919,76ceedbcc6a54b158eba9945a160a7bc,5bd40b613ac740cd9dbacdfbc3d68201,"Greeneries, parking lot, parked car, ped, motorcycle",neither_mentioned,False,False,False,41
+scene-0920,955ff42a1990442d868cdfc0c01583d4,5bd40b613ac740cd9dbacdfbc3d68201,"Motorcycle, parked cars, peds, truck",neither_mentioned,False,False,False,41
+scene-0921,112ca771e318478a88cfa692f61ffcac,5bd40b613ac740cd9dbacdfbc3d68201,"Bus, peds, truck, turn left",neither_mentioned,False,False,False,41
+scene-0922,04219bfdc9004ba2af16d3079ecc4353,5bd40b613ac740cd9dbacdfbc3d68201,"Buses, peds",neither_mentioned,False,False,False,41
+scene-0923,ee48ee50025e40b4ae27dbdf84d92825,f61e86a4241b484484da143725dce8fc,"Parked cars, peds on sidewalk, peds, trees, pole, intersection",neither_mentioned,False,False,False,40
+scene-0924,32185f91e68f4069ab3cdd2f4f1a4ff1,f61e86a4241b484484da143725dce8fc,"Cleaner cleaning street, nature, parked car, trash can, parked vehicles, parked bicycle, parking lot, bump, parked bicycle",neither_mentioned,False,False,False,40
+scene-0925,696a45dbd11346b794fdce43fa0a1770,f61e86a4241b484484da143725dce8fc,"Wait, peds crossing crosswalk, bus",neither_mentioned,False,False,False,40
+scene-0926,c4df079d260241ff8015218e29b42ea7,f61e86a4241b484484da143725dce8fc,"Intersection, turn right, ped on the sidewalk, cars, stopped car, parked vehicles",neither_mentioned,False,False,False,41
+scene-0927,5521cd85ed0e441f8d23938ed09099dd,f61e86a4241b484484da143725dce8fc,"Parked cars, peds on sidewalk, peds, trees, intersection",neither_mentioned,False,False,False,40
+scene-0928,e036014a715945aa965f4ec24e8639c9,f61e86a4241b484484da143725dce8fc,"Peds on sidewalk, parked cars, intersection, peds on sidewalk, turn right, motorcycle, parked vehicles, tree",neither_mentioned,False,False,False,40
+scene-0929,cb3e964697d448b3bc04a9bc06c9e131,f61e86a4241b484484da143725dce8fc,"Ped, car, turn right, peds on sidewalk, pole, signboard, intersection",neither_mentioned,False,False,False,40
+scene-0930,a04daf2d0f194b2ab2ff2a47dfebc1d7,f61e86a4241b484484da143725dce8fc,"Intersection, ped on sidewalk, motorcycle, parked cars, bushes",neither_mentioned,False,False,False,40
+scene-0931,e60ef590e3614187b7800db3e5284e1a,f61e86a4241b484484da143725dce8fc,"Turn right, parked scooters, nature, parking lot, peds, bump, arrive at parking bay",neither_mentioned,False,False,False,40
+scene-0962,2086743226764f268fe8d4b0b7c19590,ee155e99938a4c2698fed50fc5b5d16a,"Bus, many peds, changing lane, parked van, cones, low traffic",neither_mentioned,False,False,False,41
+scene-0963,4efbf4c0b77f467385fc2e19da45c989,ee155e99938a4c2698fed50fc5b5d16a,"Motorcycle, wait at intersection, cones, cars, bus",neither_mentioned,False,False,False,40
+scene-0966,c92fdd793fbb4401b12782a9b8d4a499,ee155e99938a4c2698fed50fc5b5d16a,"Many peds, construction, peds unloading trucks, narrow road, avoidance, parked scooter, parking lot, parked bicycles",neither_mentioned,False,False,False,41
+scene-0967,6776b91389394ff18e57b269863b4dbf,ee155e99938a4c2698fed50fc5b5d16a,"Peds on sidewalk, parked cars, parked motorcycle",neither_mentioned,False,False,False,41
+scene-0968,931c5c57011944459bba3825ab8777a9,ee155e99938a4c2698fed50fc5b5d16a,"Wait at intersection, peds on sidewalk, turn right, cones, cross intersection",neither_mentioned,False,False,False,41
+scene-0969,aacd6706a091407fb1b0e5343d27da7e,ee155e99938a4c2698fed50fc5b5d16a,"Cones, cars, many peds, changing lane, parking lot, parked cars, parked motorcycles",neither_mentioned,False,False,False,40
+scene-0971,64bfc5edd71147858ce7446892d7f864,ee155e99938a4c2698fed50fc5b5d16a,"Cross T junction, peds, parked motorcycles, turn right, jaywalker",neither_mentioned,False,False,False,40
+scene-0972,e005041f659c47e194cd5b18ea6fc346,ee155e99938a4c2698fed50fc5b5d16a,"Parked bicycles, peds, ped walk along the road, parked cars, motorcycle, bus",neither_mentioned,False,False,False,41
+scene-1059,034dee1695304630b0692da8c1f153fc,e55205b1f2894b49957905d7ddfdb96d,"Night, residential, car turning",night_only_mentioned,False,True,False,40
+scene-1060,7052d21b95fc4bae8761b8d9524f3e42,e55205b1f2894b49957905d7ddfdb96d,"Night, rain, turn, ped in dark",night_and_rain_mentioned,True,True,False,40
+scene-1061,e8099a6136804f3bb9b38ff94d98eb64,e55205b1f2894b49957905d7ddfdb96d,"Night, turn, trash can, residential",night_only_mentioned,False,True,False,41
+scene-1062,e6f1a7e6218a4737bfedc6af90926b3e,e55205b1f2894b49957905d7ddfdb96d,"Night, difficult lighting, parked bicycle, wait at intersection, construction",night_only_mentioned,False,True,False,40
+scene-1063,6af9b75e439e4811ad3b04dc2220657a,e55205b1f2894b49957905d7ddfdb96d,"Night, bump, ped, difficult lighting, trash bins, residential area",night_only_mentioned,False,True,False,40
+scene-1064,f97bf749746c4c3a8ad9f1c11eab6444,e55205b1f2894b49957905d7ddfdb96d,"Night, trash cans, wait for scooter, turn right, parking lot",night_only_mentioned,False,True,False,40
+scene-1065,bd338b912ce9434995b29b6dac9fbf1d,e55205b1f2894b49957905d7ddfdb96d,"Rain, Night, bump, motorcycle, difficult lighting, overtake parked car",night_and_rain_mentioned,True,True,False,40
+scene-1066,afbc2583cc324938b2e8931d42c83e6b,e55205b1f2894b49957905d7ddfdb96d,"Night, bump, scooter, difficult lighting",night_only_mentioned,False,True,False,40
+scene-1067,16be583c31a2403caa6c158bb55ae616,e55205b1f2894b49957905d7ddfdb96d,"Night, rain, bump, ped in dark, arrive at intersection",night_and_rain_mentioned,True,True,False,40
+scene-1068,e8834785d9ff4783a5950281a4579943,e55205b1f2894b49957905d7ddfdb96d,"Night, wait at intersection, motorcycle, turn left",night_only_mentioned,False,True,False,40
+scene-1069,d29527ec841045d18d04a933e7a0afd2,e55205b1f2894b49957905d7ddfdb96d,"Night, truck, congestion, parked bicycle",night_only_mentioned,False,True,False,40
+scene-1070,85889db3628342a482c5c0255e5347e9,e55205b1f2894b49957905d7ddfdb96d,"Night, congestion, peds, motorcycle",night_only_mentioned,False,True,False,41
+scene-1071,0dae482684ce4cd69a7258f55bc98d73,e55205b1f2894b49957905d7ddfdb96d,"Night, scooters, peds, parked bicycle, bus stop, cross intersection,  ped with bag near road",night_only_mentioned,False,True,False,40
+scene-1072,82cabcf15a1a48aca6bbf082f8710e39,e55205b1f2894b49957905d7ddfdb96d,"Night, bus stop, scooter, trash can pushable / pullables, residential",night_only_mentioned,False,True,False,40
+scene-1073,6498fce2f38645fc9bf9d4464b159230,e55205b1f2894b49957905d7ddfdb96d,"Night, scooters, turn left, dense traffic",night_only_mentioned,False,True,False,40

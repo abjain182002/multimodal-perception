@@ -1,5 +1,13 @@
 # Daily Project Log
 
+## 28 October 2026 — real weather inventory reviewed; CPU evaluator ready
+
+- Verified uploaded preparation ZIP SHA-256 d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0 (184,365 bytes) and all five manifest-listed payloads. Reclassified all descriptions locally and checked all 6,019 sample memberships against 150 scene records.
+- Reviewed all descriptions before subgroup metrics. Literal groups remain 111/24/12/3 scenes and 4,449/968/482/120 frames. There are 18 unique acquisition logs; all 15 night scenes share one log. No negated condition mentions; no automatic dry/daylight interpretation.
+- Prepared CPU stage 2 with isolated Python 3.10.22, resolved dependency pins, original evaluator source hashes, verified metadata restoration and an evaluation-only sensor/pose derivative. Full annotation/velocity links remain intact. Each model must reproduce full summary and detailed metrics within 1e-12 before any subgroup scores are accepted.
+- Pooled four-group evaluation reports per-class GT counts, absent/sparse classes, official ten-class scores and separately labelled class-coverage sensitivity AP. Descriptive point estimates only; no significance or weather-causality claims.
+- Four SDK-backed local checks pass in the pinned environment, including synthetic original-versus-derived metadata evaluation, temporal velocity support, empty-frame/order preservation and report generation. Actual full-data subgroup evaluation and output Drive receipt remain pending user-run Colab execution; no GPU inference performed.
+
 ## 28 October 2026 — CPU weather-group preparation ready
 
 - Added a metadata-only, standard-library preparation script for the full 6,019-sample / 150-scene population. Preserve protocol before grouping and do not open prediction contents in stage 1.

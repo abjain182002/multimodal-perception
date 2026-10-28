@@ -1,0 +1,57 @@
+{
+  "status": "UPLOADED_WEATHER_PREPARATION_IMPORT_AND_MEMBERSHIP_CHECK_PASS",
+  "archive": "weather_group_preparation_20261028T213135530171Z.zip",
+  "bytes": 184365,
+  "sha256": "d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0",
+  "payload_members_verified": 5,
+  "manifest": {
+    "prepare_weather_groups.py": {
+      "bytes": 13510,
+      "sha256": "56554c246f01631c888a22625cf6a7757d8382080a5b68aa3b0e59751db7c209"
+    },
+    "sample_membership.csv": {
+      "bytes": 883059,
+      "sha256": "086f248a7c3484f0e7b34233850ce3c6f20b51fe3669d5e960370369b7f56ef4"
+    },
+    "protocol.json": {
+      "bytes": 2270,
+      "sha256": "b9af15508f5e0f6cf9320b38a866e5e0da297264aee8183e4a5878e2a1ce15b4"
+    },
+    "preparation_audit.json": {
+      "bytes": 3292,
+      "sha256": "4dbeb733e70c9a584fd83d9ae7c424cee12d9d8f7e3b01267ac75bded88cb636"
+    },
+    "scene_inventory.csv": {
+      "bytes": 27992,
+      "sha256": "483d99c89dc117c1caf4f16fe8bad24b53b3f74a9925ab8d1992cf456ef92356"
+    }
+  },
+  "scenes": 150,
+  "samples": 6019,
+  "groups": {
+    "neither_mentioned": {
+      "scenes": 111,
+      "samples": 4449,
+      "logs": 15
+    },
+    "rain_only_mentioned": {
+      "scenes": 24,
+      "samples": 968,
+      "logs": 2
+    },
+    "night_only_mentioned": {
+      "scenes": 12,
+      "samples": 482,
+      "logs": 1
+    },
+    "night_and_rain_mentioned": {
+      "scenes": 3,
+      "samples": 120,
+      "logs": 1
+    }
+  },
+  "unique_logs": 18,
+  "reclassification_from_descriptions_pass": true,
+  "scene_sample_membership_consistency_pass": true,
+  "scope": "Uploaded evidence verified and descriptions reviewed; no model predictions available locally, no real subgroup evaluation yet."
+}

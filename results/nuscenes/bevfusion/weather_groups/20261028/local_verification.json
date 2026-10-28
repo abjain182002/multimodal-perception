@@ -1,0 +1,26 @@
+{
+  "status": "WEATHER_GROUP_STAGE2_LOCAL_CHECKS_PASS",
+  "python": "3.10.22",
+  "core_packages": {
+    "nuscenes-devkit": "1.2.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "matplotlib": "3.8.4",
+    "scikit-learn": "1.7.2",
+    "shapely": "2.0.7"
+  },
+  "SDK_evaluator_source_hash_checks": 4,
+  "unittest_checks_passed": 4,
+  "checks": [
+    "Pinned environment and original evaluator source hashes",
+    "Recursive comparison detects changed values, mismatched NaNs and list lengths",
+    "Subset preserves empty frames and original token order",
+    "Synthetic SDK full-versus-derived metadata replay, unchanged temporal annotations, verified archive restoration, corrupt-table rejection, class-coverage report and figure generation"
+  ],
+  "synthetic_figure_visually_reviewed": true,
+  "real_preparation_zip_verified": "d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0",
+  "real_subgroup_evaluation_performed_locally": false,
+  "worker_sha256": "e1787b690cd7639b85489b438487849d23c110e4f0daf9ed187bca615b5fea08",
+  "requirements_sha256": "e7689e47d16cf5b5f5ddd8c4d743d9c527ed9d3f0c0b1806c41a6174b69961e6",
+  "scope": "Local synthetic and pinned-source checks only. Actual full-validation replay, subgroup scores and derived-output Drive copy await Colab execution."
+}

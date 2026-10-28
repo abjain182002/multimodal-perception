@@ -2,7 +2,16 @@
 
 ## Status
 
-Stage 1 preparation is implemented and checked locally on synthetic metadata. Actual 150-scene group counts, description review and CPU subgroup evaluation are pending user-run Colab access to preserved metadata/predictions. No measured weather-group result is claimed yet. Fog and optional snow are separate future experiments.
+Stage 1 has passed on the real preserved data. The uploaded ZIP is 184,365 bytes, SHA-256 `d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0`; all five manifest-listed payloads pass size/hash checks. All 150 scene descriptions have been reviewed before new subgroup metrics and the original literal groups are retained. See [import receipt](preparation_import_receipt.json), [description review](description_review.json) and [scene inventory](scene_inventory.csv). Stage 2 CPU evaluation is implemented and locally checked, but real subgroup scores remain pending Colab execution. Fog and optional snow are separate future experiments.
+
+| Description group | Scenes | Frames | Logs |
+|---|---:|---:|---:|
+| Neither mentioned | 111 | 4,449 | 15 |
+| Rain only mentioned | 24 | 968 | 2 |
+| Night only mentioned | 12 | 482 | 1 |
+| Night and rain mentioned | 3 | 120 | 1 |
+
+There are **18 unique logs** overall. All 15 night-mentioned scenes share one log, which spans both night strata. Group log counts therefore cannot be summed as independent acquisition counts. The description review found no negations or alternative condition wording requiring a group amendment; this does not verify weather in individual images.
 
 ## Question and scope
 
@@ -25,15 +34,27 @@ Run the pinned script with Drive mounted. It uses only the Python standard libra
 
 Optional arguments: `--base` (existing preserved project folder), `--root` (restored nuScenes root), `--work` (local preparation parent). New UTC timestamps prevent overwriting earlier runs. If a hash or population check fails, stop rather than selecting a smaller subset.
 
-## Stage 2: pending description review and evaluator preparation
+## Stage 2: ready for CPU Colab execution
 
-Review the complete inventory before reading new subgroup metrics. Then verify full saved prediction hashes, recreate the pinned CPU evaluator and GT filtering, and compare full-split results to the saved reference before interpreting group metrics. Report pooled group mAP/NDS, per-class AP and filtered GT counts. Explicitly disclose absent or sparse classes and limitations of macro averages. Do not derive group AP by averaging frame or scene AP. Any uncertainty computation must resample scenes, preserve paired pipeline membership, and record its method/seed/repetitions before execution; scene intervals still do not remove shared-log or dataset selection limitations.
+Run [run_weather_groups_colab.py](run_weather_groups_colab.py) with `--code-commit` set to its full published commit SHA. The launcher re-verifies the frozen preparation ZIP and preserves the description review on Drive before metric access. It fetches the worker and [resolved package pins](requirements-cpu310.txt) with SHA-256 checks, then creates an isolated Python 3.10.22 environment using uv 0.13.4. Core scientific packages and all four evaluator source hashes match the prior replay; remaining resolved dependencies and the runtime package freeze are preserved.
+
+Only metadata is restored from the original ZIP; each of the 19 files is checked against its preserved size/SHA-256. No images or detector dependencies are installed and the entire multi-GB source ZIP is not rehashed. An **evaluation-only** derivative retains all annotations, temporal annotation links, samples and scenes unchanged, while streaming only validation keyframe `sample_data` rows and their referenced ego poses into smaller tables. This reduces memory use without discarding the annotations needed for velocity calculation. The derivative is not suitable for inference, sweeps or training.
+
+The [worker](evaluate_weather_groups.py) runs each model in a fresh process, verifies its full prediction hash, requires exact official validation membership, and first replays the full split. Both summary and detailed metrics must match the preserved original results within **1e-12**, excluding only `eval_time`. A mismatch stops subgroup analysis. The full-replay check also guards the metadata derivative against changed evaluation behaviour.
+
+Four subgroup evaluations per model select from the official already-filtered GT/predictions, including empty frames and preserving original token order for score ties. Outputs include pooled SDK ten-class mAP/NDS, per-class AP, GT/prediction counts, absent classes, and classes with fewer than 20 GT instances (a disclosure marker, not a validity threshold). Separately labelled represented-class and common-GT-class macro AP provide sensitivity summaries; these do not replace official mAP. Do not derive group AP by averaging scene AP.
+
+Before metrics, the reviewed protocol elects **descriptive point estimates only**, with no confidence intervals or significance tests. One night log and two rain-only logs do not support broad between-log weather generalisation; scene bootstrap would not resolve that limitation. If inferential analysis is later added, document its estimand, clustering assumptions, algorithm and settings before execution.
+
+After both model runs pass, the launcher produces paired CSV/JSON summaries and a compact PNG/PDF figure, copies each completed model's evidence to Drive, and creates a manifest-verified ZIP with a hash-verified Drive copy and receipt. Raw predictions and restored/derived GT metadata are excluded from the evidence ZIP. Original data remain unchanged. A new timestamp is used for each execution; a failure preserves local logs without claiming completion.
 
 Interpret pipeline differences within each group first. Differences between natural groups confound weather with location, class composition, distance, visibility, point support and other scene properties. They do not isolate rain/night causality or the causal contribution of cameras.
 
 ## Local verification
 
-Run `python check_preparation.py`. Checks cover word boundaries/negative mention flags; rejection of incomplete scenes and duplicate metadata; timestamp ordering; a synthetic 6,019-frame / 150-scene ZIP/TGZ recovery; pinned token-file verification; manifest and Drive-copy hash checks; prediction non-parsing; and the restored-metadata alternative. Real data remain to be executed and reviewed.
+Run `python check_preparation.py`. Checks cover word boundaries/negative mention flags; rejection of incomplete scenes and duplicate metadata; timestamp ordering; a synthetic 6,019-frame / 150-scene ZIP/TGZ recovery; pinned token-file verification; manifest and Drive-copy hash checks; prediction non-parsing; and the restored-metadata alternative. These three checks passed before real preparation; the actual preparation and description review have now passed as recorded above.
+
+Stage 2: run `check_evaluation.py` in the pinned Python 3.10.22 environment. Four checks cover exact core package versions and evaluator source hashes; recursive replay comparison including NaN handling and changed-value rejection; empty-frame/order retention; and synthetic full-versus-derived metadata evaluation through the actual SDK. The synthetic fixture includes a GT velocity link to an annotation outside the selected sensor population. Checks also exercise ZIP/TGZ restoration, rejection of corrupted restored tables, absent-class reporting and figure generation. The synthetic figure was visually inspected locally and is not published as a real result. Local checks pass; real 6,019-frame subgroup evaluation remains pending.
 
 ## Dissertation boundary
 
