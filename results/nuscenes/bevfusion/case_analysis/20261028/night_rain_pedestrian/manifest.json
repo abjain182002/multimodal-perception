@@ -1,0 +1,98 @@
+{
+  "input_archive_sha256": "1dcdef345a25febf7352cc393e06629e65c7935d4b4fd0fa3a47cd46b3a8ca97",
+  "files": {
+    "docs/report/CASE_COVERAGE_AND_STRUCTURE_2026-10-28.md": {
+      "bytes": 4935,
+      "sha256": "49bf294a1df15eda3eacc3f3e52f6a2aec8c02f01143112c13262b05625f35f7"
+    },
+    "docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md": {
+      "bytes": 14027,
+      "sha256": "97be5584204e2a11ecd52053eadd1cdfa6d9f2ec51ed7717a4e62d35025ba721"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/README.md": {
+      "bytes": 11841,
+      "sha256": "8bc184c643f0e0ccc6b9f07b373c8571810d8840e591e5dfb69b7ee6dd9710ed"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/analyse_case.py": {
+      "bytes": 17161,
+      "sha256": "849ff2d963714fbdb9d2677eb07b56663a0d692cc6a0d65b10279cd1109633e3"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/frozen_selection.json": {
+      "bytes": 3234,
+      "sha256": "8fcf6ffbbc87a2cf67d04a1aace5d6eb3bc161992833b79e7abddbc86a0209e3"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/import_audit.json": {
+      "bytes": 627,
+      "sha256": "5162f0579f373b68a187697d4e206c16d25c8a24b04b336812a198615f9219de"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/input_manifest.json": {
+      "bytes": 3256,
+      "sha256": "fce868946e3ee8a1e127541b2c5cc6aca10b6278decf7bbe8644f64c93e482c3"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/inventory_repair_checks.json": {
+      "bytes": 438,
+      "sha256": "84ad091acc2036814e027d60500554d551fb552a12c9b6e9e658aa38da98dcb6"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/inventory_resolution_repair.json": {
+      "bytes": 526,
+      "sha256": "83b8abfe435d5535df98c0591dba07e2f1086178dd28d5435d1f953ccddeff0f"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/preparation_checks.json": {
+      "bytes": 563,
+      "sha256": "189936e48b19664bd2b70a9bf4a490ae30b6d30d15659c886d43c66589d10f7a"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/prepare_inputs_colab.py": {
+      "bytes": 21708,
+      "sha256": "85df6eb4e7334c6ed2fbb2da97f525470b832c34d5c27029c5b6e83b19236d0a"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/publication_review.json": {
+      "bytes": 667,
+      "sha256": "0c8196bafa95897bfc01423485d7deaba47c8b0880f293b32dd06497dd6fde14"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/requirements.txt": {
+      "bytes": 61,
+      "sha256": "80c5df9e89bb929e64721b61a5491ad84850cb3ef933d155e0dfcad418f9bb93"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/analysis_audit.json": {
+      "bytes": 869,
+      "sha256": "9346ccbae428687746865bf66b85e7fe0916d0811b66f7ec0b5f99b0af2cfb40"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/focal_selection.json": {
+      "bytes": 647,
+      "sha256": "77e15d514f8bfc8874ce8dfa65d6199d7699bd9e703406cb20650582f8b50c0a"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/frame_threshold_diagnostics.csv": {
+      "bytes": 890,
+      "sha256": "2038c4a50eda3609f45eb4ff6b214d20ca4d5fc77c116b91f003418d0ac935ed"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/matching_details.json": {
+      "bytes": 7855,
+      "sha256": "0383ea617f3bce339f6c84f4e08ae46247e40dee39cddd73030e47c3001e4d02"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/pedestrian_comparison.pdf": {
+      "bytes": 1808434,
+      "sha256": "3c97792d7fc0814d1cd35a90ac58829ff83f212f72734dd1f45471d8ea0dae89"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/pedestrian_comparison.png": {
+      "bytes": 1174056,
+      "sha256": "01ea959e968df2f29eb9cbc831f89a88f2bb4b0770bf757d72feb0b812abe4c1"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/results/pedestrian_threshold_diagnostics.csv": {
+      "bytes": 1021,
+      "sha256": "658f8f87a19ba1206d3f3fc067f0449aaa89c1fe512eee96c820c560b2ffe32f"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/selection_audit.json": {
+      "bytes": 39129,
+      "sha256": "998233f1cf65ee2230e4a92f6412f74207c53f51af6ba0df06b670a1b02ca2af"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/selection_protocol.json": {
+      "bytes": 1796,
+      "sha256": "579924fae4002a60c6ea4eb6cb586bb35305673c1435c94d06ac141846e4205e"
+    },
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/source_verification.json": {
+      "bytes": 1264,
+      "sha256": "5ab910b4a6fb613a80850e5309d1706bff5efb1f30250c959adfcd616cc8de44"
+    }
+  },
+  "scope": "Public derived files and preparation/selection records; original raw input archive excluded."
+}

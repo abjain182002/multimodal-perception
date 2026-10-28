@@ -1,0 +1,9 @@
+{
+  "status": "UPLOADED_ARCHIVE_AND_ALL_PAYLOAD_HASHES_PASS",
+  "archive": "night_rain_pedestrian_inputs_20261028T202614418379Z.zip",
+  "bytes": 1728550,
+  "sha256": "1dcdef345a25febf7352cc393e06629e65c7935d4b4fd0fa3a47cd46b3a8ca97",
+  "verified_payload_members": 18,
+  "sensor_payloads_published": false,
+  "scope": "Uploaded compact ZIP integrity and member hashes checked locally. Full original archive checks were completed in the prior Colab run and reused on recovery; not freshly repeated here. Public files contain derived figures/tables and provenance, excluding original sensor files and full prediction payloads."
+}

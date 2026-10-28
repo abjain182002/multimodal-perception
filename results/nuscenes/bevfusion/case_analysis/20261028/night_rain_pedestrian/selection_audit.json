@@ -1,0 +1,1226 @@
+{
+  "protocol_sha256": "579924fae4002a60c6ea4eb6cb586bb35305673c1435c94d06ac141846e4205e",
+  "candidate_scenes": [
+    {
+      "token": "7052d21b95fc4bae8761b8d9524f3e42",
+      "log_token": "e55205b1f2894b49957905d7ddfdb96d",
+      "nbr_samples": 40,
+      "first_sample_token": "e74b8ce0b1824e0c8167f2534d8d4f7d",
+      "last_sample_token": "2deffe9affa24bb2ae3f6f440cb8a01e",
+      "name": "scene-1060",
+      "description": "Night, rain, turn, ped in dark"
+    },
+    {
+      "token": "bd338b912ce9434995b29b6dac9fbf1d",
+      "log_token": "e55205b1f2894b49957905d7ddfdb96d",
+      "nbr_samples": 40,
+      "first_sample_token": "dc2def2a7bc94693b67eba2ffbe13a56",
+      "last_sample_token": "0888060b915444b592ab9ae2527b9d80",
+      "name": "scene-1065",
+      "description": "Rain, Night, bump, motorcycle, difficult lighting, overtake parked car"
+    },
+    {
+      "token": "16be583c31a2403caa6c158bb55ae616",
+      "log_token": "e55205b1f2894b49957905d7ddfdb96d",
+      "nbr_samples": 40,
+      "first_sample_token": "b6a9d120895e4207a0527ad4b3284d42",
+      "last_sample_token": "ff729b4a16a74350a0faa2b094ebfb2a",
+      "name": "scene-1067",
+      "description": "Night, rain, bump, ped in dark, arrive at intersection"
+    }
+  ],
+  "checked_frames": [
+    {
+      "scene": "scene-1060",
+      "sample_token": "e74b8ce0b1824e0c8167f2534d8d4f7d",
+      "timestamp": 1542799342148091,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 10000292
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "e06c4c64a1bc4e8a8d2a6d31a9cb5638",
+      "timestamp": 1542799342698277,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9450106
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "e7e330644fcf4526bde068fe637a3bc3",
+      "timestamp": 1542799343198148,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8950235
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "0660df67866547b09bf286b9fe0b05f2",
+      "timestamp": 1542799343698038,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8450345
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "ffced1bcacb046af9928fe92d99fdb23",
+      "timestamp": 1542799344197916,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7950467
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "ce3718b3d5a4404c80b724e1b15cf7bf",
+      "timestamp": 1542799344697219,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7451164
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "f868336acfca41f6b3b7a3d1b6518691",
+      "timestamp": 1542799345197128,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6951255
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "a5f8715674ad4460b583cf6067096e5b",
+      "timestamp": 1542799345696426,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6451957
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "5961c01ec5e04ee48959a30d2b337c57",
+      "timestamp": 1542799346196297,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5952086
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "6a572eb7bc84490487b6fad4266bc0d4",
+      "timestamp": 1542799346697289,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5451094
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "2f51a63b389c4a42afa5b546e4f90166",
+      "timestamp": 1542799347197711,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4950672
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "2b92bd1ee0d042fc982e0f2d9e118fb2",
+      "timestamp": 1542799347698152,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4450231
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "a1314158808d4881a31159a8bda55eed",
+      "timestamp": 1542799348149388,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3998995
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "75095aa9246548d3828c49560503ac6a",
+      "timestamp": 1542799348649809,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3498574
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "2fd7d4c5a1c14f2baceb354cc049866c",
+      "timestamp": 1542799349150252,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2998131
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "d6297a6fb5da4257935e7792c5ac2ad1",
+      "timestamp": 1542799349649556,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2498827
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "93e406fbff494e06b31110c723ea6210",
+      "timestamp": 1542799350148879,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1999504
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "6260ad08aebf4f62acdbf6adbaa3a6e2",
+      "timestamp": 1542799350648763,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1499620
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "590dfd438d7349b5923a49b9d71a952a",
+      "timestamp": 1542799351148077,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1000306
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "8df260afcbab491f8d9700612a30bc74",
+      "timestamp": 1542799351647969,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 500414
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "e0e5ebc17c73465181cab1383606e5f5",
+      "timestamp": 1542799352148383,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 0
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "8918ed33ecf84cafa54eb42ff7845e1e",
+      "timestamp": 1542799352698030,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 549647
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "15f61a56df7a4ecab63dda6cff25e7a0",
+      "timestamp": 1542799353197886,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1049503
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "f9788629ad6e4b508c8658b69b4fa1ed",
+      "timestamp": 1542799353697765,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1549382
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "84eb0d4946ea4990b8e9b9997e2173f2",
+      "timestamp": 1542799354197651,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2049268
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "263f230e546b4d9ea35dc69ab9efc0a0",
+      "timestamp": 1542799354697510,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2549127
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "f0bf8b395d01433da06265e5aa284e22",
+      "timestamp": 1542799355197946,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3049563
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "9701ec85619741c8a2d5cf31c5e7d78c",
+      "timestamp": 1542799355697831,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3549448
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "b62301d314354c24a5112e796ee19d59",
+      "timestamp": 1542799356197135,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4048752
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "fb43e7b654544445b20bdaae68038689",
+      "timestamp": 1542799356697571,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4549188
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "5510e4b6d7f4430fbcc77cf660d9fbb6",
+      "timestamp": 1542799357198102,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5049719
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "d07d3e06ab6147dfae7a00c90cac266d",
+      "timestamp": 1542799357698425,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5550042
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "e12ae352f31d4268a7f71c4d27aa0886",
+      "timestamp": 1542799358198359,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6049976
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "463599ceb9a1454a90b192c29878a5f4",
+      "timestamp": 1542799358698739,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6550356
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "0b0e7d27f48442e4960e836e8936a3b7",
+      "timestamp": 1542799359198619,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7050236
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "3f9e2573dc57495a90c5a350f648dc93",
+      "timestamp": 1542799359699037,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7550654
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "302fb03cf733449986066a416428f2c7",
+      "timestamp": 1542799360198364,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8049981
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "e0d414b60892482bb1c6b5d3a93e6648",
+      "timestamp": 1542799360698253,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8549870
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "a142fabdc9624bba92782f8b3200202d",
+      "timestamp": 1542799361198664,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9050281
+    },
+    {
+      "scene": "scene-1060",
+      "sample_token": "2deffe9affa24bb2ae3f6f440cb8a01e",
+      "timestamp": 1542799361698558,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9550175
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "dc2def2a7bc94693b67eba2ffbe13a56",
+      "timestamp": 1542799542148297,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 10050051
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "d528a32b7367451e84f119068d4568a0",
+      "timestamp": 1542799542648730,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9549618
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "6350cb22be8c458792dee63332f31617",
+      "timestamp": 1542799543148073,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9050275
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "7aac5fbd9a7348ce9f85890881ec0dfb",
+      "timestamp": 1542799543647403,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8550945
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "cc4e11cedcc84ec9add244318e24367e",
+      "timestamp": 1542799544147259,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8051089
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "32e623d951244e09a4ae29f2d0bcf901",
+      "timestamp": 1542799544647181,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7551167
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "e504fa8b548f4ae48bf687918ef001b4",
+      "timestamp": 1542799545197404,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7000944
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "9e6eb8eefe2f4facabe681aca09cea2d",
+      "timestamp": 1542799545697753,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6500595
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "c2848cc504144003a6e1eac71a6918b9",
+      "timestamp": 1542799546198732,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5999616
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "f7a93963d6cc431099c3e6943cda4d72",
+      "timestamp": 1542799546699165,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5499183
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "0acd18a285544d33a6bbb11fe37af5bd",
+      "timestamp": 1542799547198488,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4999860
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "092eac44a74545b39d53c642a06eaa2e",
+      "timestamp": 1542799547698941,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4499407
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "ccc19df4b0784fb28d67f76645641bc7",
+      "timestamp": 1542799548199342,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3999006
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "35631dcce7344b718daeb946b5f93885",
+      "timestamp": 1542799548698670,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3499678
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "f3fc850f424f44ae866df4abf31f8061",
+      "timestamp": 1542799549198546,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2999802
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "d9288fbf3bfc4385882d8d370ed76bd5",
+      "timestamp": 1542799549698418,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2499930
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "528cb559920149d3b30c850fc7e27797",
+      "timestamp": 1542799550198849,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1999499
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "219b015962a64430a81777d8befc808d",
+      "timestamp": 1542799550698746,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1499602
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "08b54e0c4d5646fab4eff5781bf8b717",
+      "timestamp": 1542799551198613,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 999735
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "62c42fb649fa4219a5798e454fafcf58",
+      "timestamp": 1542799551698494,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 499854
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "eb921f246e03450eb33e1653429ee60b",
+      "timestamp": 1542799552198348,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 0
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "45022789b1ee454da83a147a87960f94",
+      "timestamp": 1542799552698272,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 499924
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "3adfe1171bb448f9a639e4bc3bc3dc11",
+      "timestamp": 1542799553198097,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 999749
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "957fae2cf2444a1b96034143dc2a5ca9",
+      "timestamp": 1542799553697985,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1499637
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "90c191b41e6641c9bd4a66b3cb90bf74",
+      "timestamp": 1542799554197850,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 1999502
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "41664d45adc8443cb32b2020b37dbbf1",
+      "timestamp": 1542799554697729,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2499381
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "e837c2061aa14c56bc2b1969f56dc372",
+      "timestamp": 1542799555197603,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2999255
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "b1193640cf1f41e5b5baa193e241d92b",
+      "timestamp": 1542799555697482,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3499134
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "67ecfc106e28417a85c3279ed4bcfedf",
+      "timestamp": 1542799556197382,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3999034
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "0b356d1230cc4cf9b50580c6b432576f",
+      "timestamp": 1542799556697237,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4498889
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "6b2940c61a9840fe85adff941ad9830f",
+      "timestamp": 1542799557197659,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4999311
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "a1f3ed12220f4c10995f180ba3a34d21",
+      "timestamp": 1542799557698096,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5499748
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "935ddd79f2cc4b6a81395cde46290fff",
+      "timestamp": 1542799558198533,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6000185
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "b6d6b3c2d1844f239791f7ca22ba5e8a",
+      "timestamp": 1542799558698960,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6500612
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "4cf91043db79443a9dc39dd00dfb7be9",
+      "timestamp": 1542799559198837,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7000489
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "f03bb2a5eda24b828a35c5608cf2da4f",
+      "timestamp": 1542799559648383,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7450035
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "6890e9da1f984d18bc94cfb83711c4af",
+      "timestamp": 1542799560148300,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7949952
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "dee33589ca94410dad99c70165ad9a98",
+      "timestamp": 1542799560648143,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8449795
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "74c1ef82713c44199e83c20ad6312637",
+      "timestamp": 1542799561148033,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8949685
+    },
+    {
+      "scene": "scene-1065",
+      "sample_token": "0888060b915444b592ab9ae2527b9d80",
+      "timestamp": 1542799561647941,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9449593
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "b6a9d120895e4207a0527ad4b3284d42",
+      "timestamp": 1542799582398280,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 10049512
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "15abe67860824b53876918fa681b1b38",
+      "timestamp": 1542799582898159,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "858683faaf384e6682acaed2dbe96e32",
+          "ego_xy_distance_m": 35.81545434870769,
+          "visibility_token": "1",
+          "num_lidar_pts": 1,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 9549633
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "3f21669491dd40ce91c7329d3ffc7630",
+      "timestamp": 1542799583398600,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9049192
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "5c7520cf0a4e4162909f2103b83f66b5",
+      "timestamp": 1542799583897918,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8549874
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "243788e0c44d494cb214f84237ef8a62",
+      "timestamp": 1542799584448104,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "3ae9d1e7d55c47439ec043b1333758dd",
+          "ego_xy_distance_m": 23.61605443810852,
+          "visibility_token": "4",
+          "num_lidar_pts": 3,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 7999688
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "5f816fe155674223a737d717160dc1cc",
+      "timestamp": 1542799584947997,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "a044fa89a82b4f038cc3c7e5dee049cb",
+          "ego_xy_distance_m": 20.124993675300896,
+          "visibility_token": "4",
+          "num_lidar_pts": 4,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 7499795
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "37950315c49b49e5892ad44449401452",
+      "timestamp": 1542799585448413,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "d42f958737634ef5a0a0afe15e1668a6",
+          "ego_xy_distance_m": 16.734580289348493,
+          "visibility_token": "4",
+          "num_lidar_pts": 5,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 6999379
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "a29674e62b0b4cdbb20ae86eca8d3356",
+      "timestamp": 1542799585948283,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "aebacb927a7d481f8fb0244109b7cc81",
+          "ego_xy_distance_m": 13.717591447981963,
+          "visibility_token": "4",
+          "num_lidar_pts": 20,
+          "num_radar_pts": 1
+        }
+      ],
+      "distance_from_middle_timestamp": 6499509
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "205a77495c02441193752562fab8d06e",
+      "timestamp": 1542799586447647,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "8e5b8f11cf6d4da9ab4135eaf8071516",
+          "ego_xy_distance_m": 11.130399505096818,
+          "visibility_token": "4",
+          "num_lidar_pts": 28,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 6000145
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "6e1f02cb4e2747c6970b2d9b2e834852",
+      "timestamp": 1542799586947509,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "3496f494f6574879be387f19a5127f9c",
+          "ego_xy_distance_m": 9.023348019030639,
+          "visibility_token": "4",
+          "num_lidar_pts": 43,
+          "num_radar_pts": 1
+        }
+      ],
+      "distance_from_middle_timestamp": 5500283
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "dd29902d904d4bd1a68e5e6926cd6dfc",
+      "timestamp": 1542799587447376,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "cd0f23c6fa694c13a175fd0a9550a424",
+          "ego_xy_distance_m": 7.181712542691471,
+          "visibility_token": "4",
+          "num_lidar_pts": 64,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 5000416
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "4b0405ae89164fbfb3638a5dde6e374c",
+      "timestamp": 1542799587948357,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "e5062492f428404ba62ff1c7f0fa0107",
+          "ego_xy_distance_m": 5.592032211676424,
+          "visibility_token": "4",
+          "num_lidar_pts": 151,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 4499435
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "f5ecb76a1902447c8226bd1514547329",
+      "timestamp": 1542799588448216,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "111d02709dc84e22b69ce8d2e4a7edac",
+          "ego_xy_distance_m": 4.922367799884338,
+          "visibility_token": "4",
+          "num_lidar_pts": 163,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 3999576
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "09fe2cbdc02043d19b00e195ef5d647d",
+      "timestamp": 1542799588948088,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "1786ff2d89544da89e6078ee07f6604c",
+          "ego_xy_distance_m": 5.990928344274086,
+          "visibility_token": "4",
+          "num_lidar_pts": 68,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 3499704
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "f975cc2c458b4337b682ad21650345d3",
+      "timestamp": 1542799589447999,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "ac6dcfd3da9f4f9380e6466f3c966ab9",
+          "ego_xy_distance_m": 8.271355003060547,
+          "visibility_token": "4",
+          "num_lidar_pts": 20,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 2999793
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "f9cb1bb0d3404b5da0779811146b3924",
+      "timestamp": 1542799589898077,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "931fb39996674ee6a6b729a790175e1e",
+          "ego_xy_distance_m": 11.16268274588065,
+          "visibility_token": "4",
+          "num_lidar_pts": 11,
+          "num_radar_pts": 2
+        }
+      ],
+      "distance_from_middle_timestamp": 2549715
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "492564515fd64974a7794710e7676c84",
+      "timestamp": 1542799590447734,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "96715cad666444ba88cad9555285b991",
+          "ego_xy_distance_m": 14.871351679935453,
+          "visibility_token": "4",
+          "num_lidar_pts": 3,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 2000058
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "440691c43b2649e397b8d34543514b3b",
+      "timestamp": 1542799590948177,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "14d695c8ad024a81a0ffcd6da21f2472",
+          "ego_xy_distance_m": 18.238094422025735,
+          "visibility_token": "4",
+          "num_lidar_pts": 3,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 1499615
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "e8e05e6d6cc64308abec64e1d5fbbf24",
+      "timestamp": 1542799591448027,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "15faab5d55344bc5b7e21799212983d0",
+          "ego_xy_distance_m": 21.44433115987869,
+          "visibility_token": "4",
+          "num_lidar_pts": 3,
+          "num_radar_pts": 1
+        }
+      ],
+      "distance_from_middle_timestamp": 999765
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "c30d133fc18d476e80f8df6e63ce5dc4",
+      "timestamp": 1542799591947897,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "b48507370b664a9d81be180621e6c956",
+          "ego_xy_distance_m": 24.459344399624985,
+          "visibility_token": "4",
+          "num_lidar_pts": 3,
+          "num_radar_pts": 1
+        }
+      ],
+      "distance_from_middle_timestamp": 499895
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "5cd3757b44b44db6819d1cf0092d38cc",
+      "timestamp": 1542799592447792,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 0
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+      "timestamp": 1542799592947113,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "2700343d897a4c858eedbc50e201434f",
+          "ego_xy_distance_m": 30.059541709329523,
+          "visibility_token": "4",
+          "num_lidar_pts": 1,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 499321
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "65e91e3a03fe4fbba79fd17c886638e7",
+      "timestamp": 1542799593447547,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "f63082e407b2473a92d80de804c71590",
+          "ego_xy_distance_m": 32.636284797120766,
+          "visibility_token": "1",
+          "num_lidar_pts": 2,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 999755
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "03bfef5ffadf4203ba4ca4a239ee620f",
+      "timestamp": 1542799593947993,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "f5eaa13318a742848c76942070776144",
+          "ego_xy_distance_m": 34.86455914344447,
+          "visibility_token": "1",
+          "num_lidar_pts": 1,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 1500201
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "165cc8e66a074fbfb489437c04a7315a",
+      "timestamp": 1542799594448390,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "a39431dc09494cfb99fa4e605636b36b",
+          "ego_xy_distance_m": 36.81410999871895,
+          "visibility_token": "1",
+          "num_lidar_pts": 2,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 2000598
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "08461b5c6f364b1aa0549f44f84ac3be",
+      "timestamp": 1542799594948263,
+      "eligible": true,
+      "eligible_pedestrians": [
+        {
+          "annotation_token": "11683f6e502d48dfa48f31f07b44c452",
+          "ego_xy_distance_m": 38.40267105732441,
+          "visibility_token": "1",
+          "num_lidar_pts": 2,
+          "num_radar_pts": 0
+        }
+      ],
+      "distance_from_middle_timestamp": 2500471
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "7c07e754d1e243ce82fcc01ef1ee292f",
+      "timestamp": 1542799595447611,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 2999819
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "80d67201a7a84308803bc9ddf73b6fe5",
+      "timestamp": 1542799595947503,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 3499711
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "b4068a122d9b4c0ba96aa0bc580ab0d1",
+      "timestamp": 1542799596447923,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4000131
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "c6749814a54341b19d882ef6fbd5cf86",
+      "timestamp": 1542799596947794,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 4500002
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "c80fdd925e874e828ee04f38a543748a",
+      "timestamp": 1542799597448203,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5000411
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "5bb66ba3ca5c49ce8aea4eb1b0fcc5db",
+      "timestamp": 1542799597948124,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 5500332
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "120276372380404b9a45ffa6a5bd4559",
+      "timestamp": 1542799598447950,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6000158
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "66eaa9cb4bfd43d2a80be2fd894ef935",
+      "timestamp": 1542799598947857,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6500065
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "e604c860ed1b4f1082cdee769fa77c60",
+      "timestamp": 1542799599447722,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 6999930
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "589b79f60b334f0ea1c877438471b60f",
+      "timestamp": 1542799599948165,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7500373
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "ac4b1d99334240af84cbf2d4da16fbb1",
+      "timestamp": 1542799600447455,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 7999663
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "99e7ddd4e7e244338c2c7799619d7161",
+      "timestamp": 1542799600947940,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8500148
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "a9490c46303347deb6001995ce6ac8be",
+      "timestamp": 1542799601447790,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 8999998
+    },
+    {
+      "scene": "scene-1067",
+      "sample_token": "ff729b4a16a74350a0faa2b094ebfb2a",
+      "timestamp": 1542799601947636,
+      "eligible": false,
+      "eligible_pedestrians": [],
+      "distance_from_middle_timestamp": 9499844
+    }
+  ],
+  "selected": {
+    "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+    "scene_name": "scene-1067",
+    "scene_description": "Night, rain, bump, ped in dark, arrive at intersection",
+    "scene_token": "16be583c31a2403caa6c158bb55ae616",
+    "selection": "First scene by (scene name, scene token) containing at least one eligible frame. Eligible frame nearest the middle timestamped validation frame of that scene; ties by sample token.",
+    "sensor_inventory": {
+      "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+      "scene_token": "16be583c31a2403caa6c158bb55ae616",
+      "camera_files": [
+        "samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799592912460.jpg",
+        "samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799592904844.jpg",
+        "samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799592920339.jpg",
+        "samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799592937525.jpg",
+        "samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799592947423.jpg",
+        "samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799592927893.jpg"
+      ],
+      "lidar_files": [
+        "samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592947113.pcd.bin"
+      ]
+    },
+    "original_sensor_inventory": {
+      "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+      "scene_token": "16be583c31a2403caa6c158bb55ae616",
+      "camera_files": [
+        "samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799592912460.jpg",
+        "samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799592904844.jpg",
+        "samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799592920339.jpg",
+        "samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799592937525.jpg",
+        "samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799592947423.jpg",
+        "samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799592927893.jpg"
+      ],
+      "lidar_files": [
+        "samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592947113.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592897334.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592847023.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592797252.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592747498.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592697197.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592647394.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592597647.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592547355.pcd.bin",
+        "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592497556.pcd.bin"
+      ]
+    },
+    "eligible_pedestrians": [
+      {
+        "annotation_token": "2700343d897a4c858eedbc50e201434f",
+        "ego_xy_distance_m": 30.059541709329523,
+        "visibility_token": "4",
+        "num_lidar_pts": 1,
+        "num_radar_pts": 0
+      }
+    ]
+  },
+  "prediction_files_opened": false
+}

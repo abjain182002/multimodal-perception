@@ -1,0 +1,26 @@
+{
+  "archive_sha256": {
+    "nuscenes_validation_parts_01_02_verified.zip": "c89bc342a240d0bde22ef8b9200ebaf6de5b5f91c8a399073c4057d866f39c3a",
+    "queue_v1.0-trainval10_keyframes_verified.zip": "c1645861b3da66d638387731830393f0e06185c8396719b3f58ec38118a6381f"
+  },
+  "protocol_sha256": "579924fae4002a60c6ea4eb6cb586bb35305673c1435c94d06ac141846e4205e",
+  "frozen_selection_sha256": "8fcf6ffbbc87a2cf67d04a1aace5d6eb3bc161992833b79e7abddbc86a0209e3",
+  "models": {
+    "lidar": {
+      "full_results_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+      "full_tokens": 6019,
+      "selected_tokens": [
+        "28e33ad25c0943b49b57f8f1346d5bd2"
+      ]
+    },
+    "lidar_camera": {
+      "full_results_sha256": "dcd86893985366881b27d3841b64b93a85988158b518f0c9edfa274c291596dd",
+      "full_tokens": 6019,
+      "selected_tokens": [
+        "28e33ad25c0943b49b57f8f1346d5bd2"
+      ]
+    }
+  },
+  "preparation_script_sha256": "85df6eb4e7334c6ed2fbb2da97f525470b832c34d5c27029c5b6e83b19236d0a",
+  "preparation_script_url": "https://raw.githubusercontent.com/abjain182002/multimodal-perception/9377923c81285dc9576cbe38ff12096638527b93/results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/prepare_inputs_colab.py"
+}

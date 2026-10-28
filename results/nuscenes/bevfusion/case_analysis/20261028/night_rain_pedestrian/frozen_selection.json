@@ -1,0 +1,55 @@
+{
+  "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+  "scene_name": "scene-1067",
+  "scene_description": "Night, rain, bump, ped in dark, arrive at intersection",
+  "scene_token": "16be583c31a2403caa6c158bb55ae616",
+  "selection": "First scene by (scene name, scene token) containing at least one eligible frame. Eligible frame nearest the middle timestamped validation frame of that scene; ties by sample token.",
+  "sensor_inventory": {
+    "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+    "scene_token": "16be583c31a2403caa6c158bb55ae616",
+    "camera_files": [
+      "samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799592912460.jpg",
+      "samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799592904844.jpg",
+      "samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799592920339.jpg",
+      "samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799592937525.jpg",
+      "samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799592947423.jpg",
+      "samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799592927893.jpg"
+    ],
+    "lidar_files": [
+      "samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592947113.pcd.bin"
+    ]
+  },
+  "original_sensor_inventory": {
+    "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+    "scene_token": "16be583c31a2403caa6c158bb55ae616",
+    "camera_files": [
+      "samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799592912460.jpg",
+      "samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799592904844.jpg",
+      "samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799592920339.jpg",
+      "samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799592937525.jpg",
+      "samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799592947423.jpg",
+      "samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799592927893.jpg"
+    ],
+    "lidar_files": [
+      "samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592947113.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592897334.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592847023.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592797252.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592747498.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592697197.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592647394.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592597647.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592547355.pcd.bin",
+      "sweeps/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592497556.pcd.bin"
+    ]
+  },
+  "eligible_pedestrians": [
+    {
+      "annotation_token": "2700343d897a4c858eedbc50e201434f",
+      "ego_xy_distance_m": 30.059541709329523,
+      "visibility_token": "4",
+      "num_lidar_pts": 1,
+      "num_radar_pts": 0
+    }
+  ]
+}

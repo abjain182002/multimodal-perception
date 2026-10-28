@@ -1,0 +1,7 @@
+scene,sample_token,model,threshold,gt,tp,fp,fn,precision,recall,scope
+scene-1067,28e33ad25c0943b49b57f8f1346d5bd2,lidar,0.1,7,4,1,3,0.8,0.5714285714285714,Ten-class local XY <2 m diagnostic; not AP/NDS
+scene-1067,28e33ad25c0943b49b57f8f1346d5bd2,lidar,0.3,7,4,0,3,1.0,0.5714285714285714,Ten-class local XY <2 m diagnostic; not AP/NDS
+scene-1067,28e33ad25c0943b49b57f8f1346d5bd2,lidar,0.5,7,4,0,3,1.0,0.5714285714285714,Ten-class local XY <2 m diagnostic; not AP/NDS
+scene-1067,28e33ad25c0943b49b57f8f1346d5bd2,lidar_camera,0.1,7,4,0,3,1.0,0.5714285714285714,Ten-class local XY <2 m diagnostic; not AP/NDS
+scene-1067,28e33ad25c0943b49b57f8f1346d5bd2,lidar_camera,0.3,7,4,0,3,1.0,0.5714285714285714,Ten-class local XY <2 m diagnostic; not AP/NDS
+scene-1067,28e33ad25c0943b49b57f8f1346d5bd2,lidar_camera,0.5,7,4,0,3,1.0,0.5714285714285714,Ten-class local XY <2 m diagnostic; not AP/NDS

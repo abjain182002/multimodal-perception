@@ -1,0 +1,12 @@
+{
+  "status": "ADDITIONAL_CASE_PUBLICATION_REVIEW_PASS",
+  "relative_document_links_checked": 124,
+  "missing_link_targets": 0,
+  "annotated_and_unannotated_crop_visually_inspected": true,
+  "original_image_brightness_unchanged": true,
+  "all_nearby_pedestrian_candidates_below_010": true,
+  "identical_primary_matched_GT_sets": true,
+  "preservation_utility_updated_fixture": "pass; includes nine-case coverage document",
+  "derived_drive_copy": "pending",
+  "scope": "Local input integrity, diagnostic calculation, raw current-scan support, saved-audit ranking, document links and visual review. No new inference, official AP/NDS or full-source metadata replay."
+}

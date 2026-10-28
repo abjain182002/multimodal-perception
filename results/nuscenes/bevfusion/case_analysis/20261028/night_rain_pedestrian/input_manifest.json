@@ -1,0 +1,77 @@
+{
+  "members": {
+    "calibrated_sensor.json": {
+      "bytes": 3890,
+      "sha256": "df6de9207919cb0371a4889d406ba83566b5bf2fd6306ccc6cd130af5902c9c8"
+    },
+    "case_metadata_and_night_candidates.json": {
+      "bytes": 13107,
+      "sha256": "7626f393d3dfa17443b546f0ade5b2ec940a660786f3e6c638ed43de2639fb5c"
+    },
+    "dataset/samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799592937525.jpg": {
+      "bytes": 204549,
+      "sha256": "fe943236435d41bbac37bed4bc692780eaf2eef2a171816691ceba75e21851d4"
+    },
+    "dataset/samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799592947423.jpg": {
+      "bytes": 173901,
+      "sha256": "29d244f2400424692eb29b9be26d96cf160b30923653e968a73fb6a24fa313cf"
+    },
+    "dataset/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799592927893.jpg": {
+      "bytes": 201854,
+      "sha256": "15cba093be35ca28967947c28283a266a87bb19e97339f7cd3dce2d4452b7202"
+    },
+    "dataset/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799592912460.jpg": {
+      "bytes": 278829,
+      "sha256": "b269ce0996ef1269959296cb622fd3e3ef9f763c2863bb4fb91c596ea2ed3751"
+    },
+    "dataset/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799592904844.jpg": {
+      "bytes": 156205,
+      "sha256": "6cfcbb106e574f169f7232d31f78dcf5e4d7aa6aa93bb67f4d19b001a2f00ec7"
+    },
+    "dataset/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799592920339.jpg": {
+      "bytes": 224916,
+      "sha256": "f85c91be056d3041d78e942a115b4e5626323c56eff6b8f72dd15db8bf9798ac"
+    },
+    "dataset/samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799592947113.pcd.bin": {
+      "bytes": 694400,
+      "sha256": "c5b18d17d1d3fd163273fea5e8930a79512790b939c30278a8b4be990e6e5805"
+    },
+    "ego_pose.json": {
+      "bytes": 2213,
+      "sha256": "7da6ce0f93108302e1b8e1be521f7fff72c7a243b893fde09199f7792ee47f5a"
+    },
+    "frozen_selection.json": {
+      "bytes": 3234,
+      "sha256": "8fcf6ffbbc87a2cf67d04a1aace5d6eb3bc161992833b79e7abddbc86a0209e3"
+    },
+    "inventory_resolution_repair.json": {
+      "bytes": 526,
+      "sha256": "83b8abfe435d5535df98c0591dba07e2f1086178dd28d5435d1f953ccddeff0f"
+    },
+    "predictions/lidar.json": {
+      "bytes": 83559,
+      "sha256": "0522f4a23ca40dd0616491795aa57988c60eace3bae988c0724cbd608e6920db"
+    },
+    "predictions/lidar_camera.json": {
+      "bytes": 83168,
+      "sha256": "c5974fa87fe6059baf5406452425315bc5a5d0ba613a949285d73fd145bfdd2f"
+    },
+    "sample_data.json": {
+      "bytes": 3946,
+      "sha256": "34eaf3c1d6db3e045ca18f954b6575e9da13b31d3ccadcc52796cbbb006f332f"
+    },
+    "selection_audit.json": {
+      "bytes": 39129,
+      "sha256": "998233f1cf65ee2230e4a92f6412f74207c53f51af6ba0df06b670a1b02ca2af"
+    },
+    "selection_protocol.json": {
+      "bytes": 1796,
+      "sha256": "579924fae4002a60c6ea4eb6cb586bb35305673c1435c94d06ac141846e4205e"
+    },
+    "source_verification.json": {
+      "bytes": 1264,
+      "sha256": "5ab910b4a6fb613a80850e5309d1706bff5efb1f30250c959adfcd616cc8de44"
+    }
+  },
+  "scope": "One added annotation-selected positive night/rain frame; visual analysis and diagnostic matching pending."
+}

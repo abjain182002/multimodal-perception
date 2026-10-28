@@ -18,7 +18,8 @@ REPO = "abjain182002/multimodal-perception"
 PREFIXES = ("results/nuscenes/bevfusion/case_analysis/20261028/",
             "results/supervisor_followup/20261028/",
             "experiments/robot_arm_pick_place/20261022/")
-EXTRA = {"docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md",
+EXTRA = {"docs/report/CASE_COVERAGE_AND_STRUCTURE_2026-10-28.md",
+         "docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md",
          "docs/report/ROBOT_ARM_PILOT_2026-10-22.md",
          "docs/report/FOLLOWUP_PRESERVATION_2026-10-28.md",
          "scripts/build_supervisor_followup.py", "scripts/preserve_supervisor_followup.py"}

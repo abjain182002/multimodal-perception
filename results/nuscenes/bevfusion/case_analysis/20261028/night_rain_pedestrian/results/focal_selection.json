@@ -1,0 +1,22 @@
+{
+  "scene": "scene-1067",
+  "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+  "annotation_token": "2700343d897a4c858eedbc50e201434f",
+  "camera": "CAM_BACK",
+  "ego_xy_distance_m": 30.059541709329523,
+  "visibility_token": "4",
+  "num_lidar_pts": 1,
+  "num_radar_pts": 0,
+  "projected_box_extent_px": [
+    23.888739272155703,
+    48.79644533267157
+  ],
+  "clipped_projection_area_px2": 1165.6855599601902,
+  "crop_xy_limits": [
+    840.2180477312425,
+    1080.2180477312425,
+    589.0593667112497,
+    439.0593667112497
+  ],
+  "rule": "Nearest eligible projectable GT pedestrian, then largest clipped GT projection; no prediction access."
+}

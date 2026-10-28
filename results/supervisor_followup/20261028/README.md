@@ -6,7 +6,7 @@ The synthesis of the completed case studies and the robotic-arm explanation is n
 
 | Supervisor request | Completed evidence | Limit that must accompany it |
 |---|---|---|
-| Different illumination | Controlled 600-frame darkening study, A–D follow-up and two original night frames | Darkening is synthetic; the two night frames are illustrative |
+| Different illumination | Controlled 600-frame darkening study, A–D follow-up and two original night frames plus the added annotated night/rain pedestrian | Darkening is synthetic; the two night frames are illustrative |
 | Atmospheric conditions / common weather | Rain-labelled bus success, barrier regression and combined night/rain frame | No isolated rain effect, measured intensity or representative weather-specific accuracy |
 | Clear single-case comparisons | Individual A–D figures plus paired rain/night composites | Camera crops show selected views; full-frame counts cover all directions |
 | Failures, limitations and challenges | Ten-class threshold counts, box errors, visibility and point support | Diagnoses score/matching outcomes; network failure causes remain unproven |
@@ -48,4 +48,8 @@ The CPU preservation utility `scripts/preserve_supervisor_followup.py` downloads
 
 ## Key takeaway
 
-The bounded discussion and arm clarification are complete. The next submission work is chapter integration, literature synthesis and poster preparation. Broader weather evaluation and a positive annotated night/rain pedestrian case remain possible extensions, not results established by this package.
+The bounded discussion and arm clarification are complete. The next submission work is chapter integration, literature synthesis and poster preparation. The [additional annotation-positive night/rain pedestrian case](../../nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/README.md) is complete: both models miss the target at all three predeclared thresholds. Broader representative weather evaluation remains future work. The [nine-case coverage map](../../../docs/report/CASE_COVERAGE_AND_STRUCTURE_2026-10-28.md) shows how every selected frame can contribute to the dissertation.
+
+## Final bounded case addition
+
+Scene-1067 supplies one eligible pedestrian at 30.06 m with one current-scan LiDAR point and visibility 80–100%. Nearby candidate scores are 0.029148 (LiDAR) and 0.008018 (fusion); both miss at 0.10, 0.30 and 0.50. At 0.30 each pipeline matches the same four of seven frame GT objects, with zero FPs. The paired figure, exact tables and discussion are complete. Input preservation is verified; the later derived-output Drive copy remains separate. This is a labelled positive frame, not detection success or proof of weather causality.

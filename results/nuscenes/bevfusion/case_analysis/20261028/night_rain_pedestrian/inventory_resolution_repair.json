@@ -1,0 +1,7 @@
+{
+  "reason": "Earlier keyframes can occur as historical sweep inputs under samples/LIDAR_TOP/. Prefix count does not identify the current scan.",
+  "resolution": "Match sample_data.sample_token to the inventory sample token and require is_key_frame=True. Keep the original inventory separately.",
+  "selection_protocol_changed": false,
+  "source_archive_checks": "Reused completed checks from retained failed-run state; not freshly rehashed.",
+  "scope": "Inventory repair before prediction access; no outcomes inspected."
+}

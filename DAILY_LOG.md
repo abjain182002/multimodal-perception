@@ -456,3 +456,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Prepared standard-library CPU recovery of metadata, seven sensor keyframes and verified saved full-validation predictions. Protocol and selection must be saved on Drive before predictions are read.
 - Local synthetic checks passed for condition words, range/support exclusion, availability, selection tie-breaking and 7,000 Unicode records through a multi-chunk streaming TAR reader. No real frame has yet been selected or analysed.
 - Actual Colab recovery and ZIP handoff remain pending. [Protocol and preparation](results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/README.md). No new GPU inference is planned.
+
+## 28 October 2026 — additional annotation-positive night/rain pedestrian completed
+
+- Verified uploaded ZIP SHA-256 1dcdef345a25febf7352cc393e06629e65c7935d4b4fd0fa3a47cd46b3a8ca97 and all 18 payload sizes/hashes. Inputs/prediction-subset preservation had already passed in Colab; original source archives were not freshly rehashed locally.
+- Replayed the declared ranking from the preserved 120-frame candidate audit: scenes 1060/1065 have no eligible pedestrian frame; 1067 has 22. Frame 28e33ad25c0943b49b57f8f1346d5bd2 was selected before prediction access. GT-only projection selects CAM_BACK.
+- Confirmed one eligible pedestrian at 30.0595 m, annotated visibility 80–100%, one current LiDAR point; raw-scan recomputation agrees. Both models miss at 0.10/0.30/0.50. Nearest scores 0.029148/0.008018; XY errors 0.212734/0.214623 m. At 0.30 both have 4 TP / 0 FP / 3 FN with identical matched GT identities.
+- Added original-image paired figure (PNG/PDF), exact threshold tables, assignments/filter ledger, reproducible CPU script and bounded critical discussion. No inference or official AP/NDS replay. Retained both earlier night cases.
+- Added a nine-unique-frame discussion map so all cases can be covered thematically without duplicate counts. Derived Drive copy remains separate from the verified input transfer; dissertation chapter integration is next.

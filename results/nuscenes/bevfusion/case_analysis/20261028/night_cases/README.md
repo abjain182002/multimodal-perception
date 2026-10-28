@@ -1,5 +1,7 @@
 # Two preselected night cases — 28 October 2026
 
+**Later amendment:** the [additional annotation-positive night/rain pedestrian case](../night_rain_pedestrian/README.md) is complete. It retains the two original cases below and records a shared pedestrian miss at all predeclared thresholds. The original two-frame scope and annotation-negative result remain unchanged.
+
 This CPU study adds real night-labelled cases to the earlier controlled synthetic-darkening analysis. The two frames were selected from scene metadata before inspecting their predictions: the middle timestamped validation frame in each of the first two alphabetically ordered night-labelled scenes. They were not selected for a gain or a regression. Focal objects and camera crops follow the documented rules below. No new inference was performed.
 
 ![Paired night-case comparison](results/night_case_comparison.png)

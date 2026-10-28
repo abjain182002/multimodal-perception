@@ -16,7 +16,7 @@ A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KIT
 
 ## Supervisor follow-up — 28 October 2026
 
-[Combined findings and completion status](results/supervisor_followup/20261028/README.md) now connect A–D darkening, exact ten-class frame counts, original visibility and real rain/night examples. The [report discussion](docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md) separates measured effects from unproven causes. The robotic-arm clarification makes shared dimensions/motion, failed placements and contact-load differences explicit. Public derived-evidence preservation to the user's Drive remains pending; [CPU procedure](docs/report/FOLLOWUP_PRESERVATION_2026-10-28.md).
+[Combined findings and completion status](results/supervisor_followup/20261028/README.md) now connect A–D darkening, exact ten-class frame counts, original visibility and real rain/night examples. The [report discussion](docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md) separates measured effects from unproven causes. The robotic-arm clarification makes shared dimensions/motion, failed placements and contact-load differences explicit. The [additional night/rain pedestrian case](results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/README.md) is complete, documenting a shared miss at all predeclared thresholds. A [nine-case coverage map](docs/report/CASE_COVERAGE_AND_STRUCTURE_2026-10-28.md) supports the dissertation discussion. Public derived-evidence preservation to the user's Drive remains pending; [CPU procedure](docs/report/FOLLOWUP_PRESERVATION_2026-10-28.md).
 
 ## Start here
 

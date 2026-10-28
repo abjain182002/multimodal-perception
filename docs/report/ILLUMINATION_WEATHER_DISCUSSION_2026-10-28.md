@@ -1,6 +1,6 @@
 # Illumination, rain and diagnostic limitations
 
-This section integrates the four-case darkening follow-up, completed ten-class diagnostics, real rain-labelled examples and two preselected night frames. It is a report draft based on preserved project evidence, not a new inference experiment. Numerical sources are linked below; literature-based mechanisms and mitigation claims require separate primary-paper attribution when integrated into the dissertation.
+This section integrates the four-case darkening follow-up, completed ten-class diagnostics, real rain-labelled examples and two initial night frames plus an additional annotation-positive night/rain pedestrian frame. It is a report draft based on preserved project evidence, not a new inference experiment. Numerical sources are linked below; literature-based mechanisms and mitigation claims require separate primary-paper attribution when integrated into the dissertation.
 
 ## Question and evaluation design
 
@@ -9,6 +9,10 @@ The investigation asks how selected detection outcomes respond to reduced image 
 The four frames were originally chosen to illustrate fusion gain, fusion regression, shared success and shared failure. They are outside the predefined 600-frame challenge subset. Their highlighted clean outcomes reproduce, but fresh clean predictions are not numerically identical to the earlier preserved predictions. The rain comparison uses its own original records; those values must not be substituted for the fresh four-case clean outputs. These selected cases explain particular behaviours and cannot estimate their prevalence.
 
 Local diagnostic matching requires class agreement, score at or above the selected threshold, and a score-ordered one-to-one assignment at XY centre distance strictly below 2 m. Thresholds 0.10, 0.30 and 0.50 were inspected; 0.30 is the primary operating point. Ten-class frame tables use recovered original annotations and range, zero-GT-point and bicycle-rack filtering. This local filtering/matching implementation is distinct from the official nuScenes AP/NDS evaluator and from independent evaluator validation. Counts cover the complete frame, while each displayed crop shows one camera view. [S1–S3]
+
+## Gains depend on the selected class composition
+
+The original scene-0555 example supplies a useful contrast to A's multi-class fusion gain: matches rise from 7 to 18, but nine of its eleven fusion-only matches are barriers and two are pedestrians, with one FP for each pipeline. A's eleven fusion-only matches instead comprise five cars, four pedestrians and two trucks. Thus, similar total gains can arise from different class compositions. These deliberately selected frames should not be used to estimate which classes benefit most across the dataset. Together with B's regression, they motivate reporting class mix and selection history alongside attractive aggregate counts. [S8]
 
 ## Controlled illumination sensitivity: selected objects and complete frames
 
@@ -39,11 +43,21 @@ The two real-night frames were selected using metadata before inspecting predict
 
 Scene-1060 combines night and rain, but its chosen frame contains no ground truth in the ten detection classes. Each model produces one unmatched pedestrian candidate at 0.30. Recall is undefined for this frame. A scene description mentioning a pedestrian does not supply a pedestrian annotation for every frame, and an unmatched prediction under this protocol does not prove physical absence of a person or a hallucination mechanism. This case exposes an annotation-interpretation limit; it is not a positive night/rain pedestrian test. The two selected frames are from related acquisition-log prefixes and are not independent representative recording environments. [S5]
 
+## Additional annotation-positive night/rain pedestrian
+
+The final bounded addition supplies the positive labelled target absent from the selected scene-1060 frame. A rule fixed before viewing predictions selected scene-1067 from three explicitly night/rain-labelled validation scenes with preserved keyframes. The two alphabetically earlier scenes contain no eligible pedestrian frame under the declared support/range criteria; scene-1067 contains 22. The chosen eligible frame is nearest its scene's middle timestamped validation frame. This is deterministic, availability-restricted sampling, not a representative prevalence study. The ranking was checked against the preserved candidate audit rather than independently rescanning the complete source metadata locally. [S7]
+
+The pedestrian is 30.0595 m away, with annotated visibility 80–100%, one annotated current LiDAR point and no current radar points. Raw-scan recomputation confirms the one-point count; preceding model sweeps are not included in it. GT-only projection selects CAM_BACK, where the box spans approximately 23.9 × 48.8 pixels. The original crop is very dark, so the supplied annotation and geometric projection must not be described as independently establishing clear visual identity. [S7]
+
+At score 0.30, LiDAR and fusion both match four of seven eligible frame objects, with zero unmatched predictions and three misses. The highlighted pedestrian is a shared miss: nearest same-class candidate scores are 0.029148 and 0.008018, with XY errors 0.212734 and 0.214623 m. Neither pipeline has any same-class candidate within 2 m eligible at even 0.10, and the pedestrian remains missed at all three predeclared thresholds. Thus the evidence identifies a score-exclusion outcome despite nearby candidates. It does not identify why the learned scores are low. No post-hoc lower threshold was searched. [S7]
+
+This additional case demonstrates that high annotated visibility and a geometrically close candidate do not guarantee an eligible detection in the tested operating range. Low image brightness, distance, point support and model differences remain competing explanations; rain and darkness co-occur. The added frame shares the acquisition-log prefix of the original night cases, and adds no independent environment-level replication. Preserve the earlier annotation-negative scene-1060 case alongside it: the pair distinguishes annotation availability from detection success. [S7]
+
 ## Implications, limitations and completion boundary
 
 The combined evidence supports three conclusions: selected fusion outcomes can improve or regress; confidence and localisation can change differently; and object-level success can hide substantial frame-wide losses. Rain and night images add recorded environmental context to the controlled darkening test. They do not establish representative common-weather accuracy, isolate illumination/weather effects, or demonstrate physical robotics safety.
 
-For the dissertation, retain the A–D composite, the existing rain/night comparisons and the compact evidence table. Explain each result through its question, measurement, alternative explanations and implication rather than expanding the number of illustrations. Broader weather-stratified evaluation would require verified frame/scene labels, a declared selection and aggregation protocol, adequate support and uncertainty analysis. If a positive night/rain pedestrian example is essential to the supervisor's question, preselect one by an annotation-based rule before inspecting model outcomes and reuse verified predictions. That extension is optional and remains unperformed.
+For the dissertation, retain the A–D composite, the existing rain/night comparisons and the compact evidence table. Explain each result through its question, measurement, alternative explanations and implication rather than expanding the number of illustrations. Broader weather-stratified evaluation would require verified frame/scene labels, a declared selection and aggregation protocol, adequate support and uncertainty analysis. The added positive annotated pedestrian example is now complete, with its shared failure retained. Broader weather-stratified evaluation remains future work.
 
 The case-analysis synthesis is complete within the above scope. Report-wide literature integration, final formatting and poster work remain separate. The latest derived bundles still require verified preservation on the user's Drive; Git publication does not establish that copy.
 
@@ -55,3 +69,9 @@ The case-analysis synthesis is complete within the above scope. Report-wide lite
 - **S4:** [Rain comparison and box diagnostics](../../results/nuscenes/bevfusion/case_analysis/20261028/extension/README.md).
 - **S5:** [Real night cases, original-image comparisons and limitations](../../results/nuscenes/bevfusion/case_analysis/20261028/night_cases/README.md).
 - **S6:** [Predefined 600-frame darkening study](../../results/nuscenes/bevfusion/image_darkening/20261015/README.md).
+
+- **S7:** [Added annotation-positive night/rain pedestrian: selection, figures and diagnostics](../../results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/README.md).
+
+For coverage of every unique selected frame, use the [nine-case discussion map](CASE_COVERAGE_AND_STRUCTURE_2026-10-28.md); repeated A–D analyses do not create additional independent scenes.
+
+- **S8:** [All original six-case captions and selection limitations](../../results/nuscenes/bevfusion/case_studies/20261013/annotated_cases/README.md).

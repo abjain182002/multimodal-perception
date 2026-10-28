@@ -1,0 +1,20 @@
+{
+  "status": "ADDITIONAL_POSITIVE_NIGHT_RAIN_DIAGNOSTICS_PASS",
+  "archive_sha256": "1dcdef345a25febf7352cc393e06629e65c7935d4b4fd0fa3a47cd46b3a8ca97",
+  "verified_payload_members": 18,
+  "scene": "scene-1067",
+  "sample_token": "28e33ad25c0943b49b57f8f1346d5bd2",
+  "filtered_gt_count": 7,
+  "eligible_pedestrians": 1,
+  "selection_rule_replayed_from_preserved_candidate_audit": true,
+  "focal_selection_before_prediction_access": true,
+  "current_scan_points_recomputed": 1,
+  "annotated_current_scan_points": 1,
+  "threshold_rows_per_table": 6,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "Pillow": "12.3.0",
+  "scope": "One additional preselected positive frame; local filtering/matching and point-support check. No inference, official AP/NDS or physical weather-causality validation. Derived Drive copy pending."
+}
