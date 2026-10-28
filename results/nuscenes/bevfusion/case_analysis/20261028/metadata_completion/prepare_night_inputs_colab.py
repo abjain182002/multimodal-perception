@@ -21,7 +21,8 @@ def sha(path,progress=False):
 
 def array_rows(stream):
  """Stream a top-level JSON array with bounded buffering; standard library only."""
- text=io.TextIOWrapper(stream,encoding='utf-8');decoder=json.JSONDecoder();buf='';pos=0;started=False;done=False
+ import codecs
+ text=codecs.getreader('utf-8')(stream);decoder=json.JSONDecoder();buf='';pos=0;started=False;done=False
  while not done:
   while True:
    while pos<len(buf) and buf[pos].isspace():pos+=1
