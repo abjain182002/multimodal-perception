@@ -18,6 +18,7 @@ A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KIT
 
 | What you need | Where to go |
 |---|---|
+| Four-case darkening follow-up: visual comparisons and critical analysis | [28 October case analysis](results/nuscenes/bevfusion/case_analysis/20261028/README.md) |
 | Benchmark results and experiment folders | [Results overview](results/README.md) |
 | Figures and selected case studies | [Figure gallery](docs/FIGURE_GALLERY.md) |
 | Measured results and limitations | [Validated results](results/VALIDATED_RESULTS.md) |

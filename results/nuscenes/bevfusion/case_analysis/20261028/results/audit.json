@@ -1,0 +1,13 @@
+{
+  "status": "FOUR_CASE_FOCAL_OBJECT_ANALYSIS_PASS",
+  "objects": 4,
+  "condition_object_records": 16,
+  "thresholds": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "matching": "Score-ordered one-to-one same-class greedy match; XY distance <2 m; score >= threshold",
+  "clean_highlighted_outcomes_reproduced": 8,
+  "scope": "Focal objects only. No full-frame mAP/NDS; no bitwise clean prediction equivalence claimed."
+}
