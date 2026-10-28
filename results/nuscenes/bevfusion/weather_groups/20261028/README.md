@@ -2,7 +2,7 @@
 
 ## Status
 
-Stage 1 has passed on the real preserved data. The uploaded ZIP is 184,365 bytes, SHA-256 `d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0`; all five manifest-listed payloads pass size/hash checks. All 150 scene descriptions have been reviewed before new subgroup metrics and the original literal groups are retained. See [import receipt](preparation_import_receipt.json), [description review](description_review.json) and [scene inventory](scene_inventory.csv). Stage 2 CPU evaluation is implemented and locally checked, but real subgroup scores remain pending Colab execution. Fog and optional snow are separate future experiments.
+Stages 1 and 2 have passed on real preserved data. The preparation ZIP is 184,365 bytes, SHA-256 `d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0`; all five payloads pass checks. All 150 descriptions were reviewed before subgroup metrics and literal groups were retained. See [preparation receipt](preparation_import_receipt.json), [description review](description_review.json) and [scene inventory](scene_inventory.csv). The [completed CPU analysis](completed/README.md) now preserves the final source ZIP, exact tables, audits and coverage-aware figure; the [report discussion](../../../../../docs/report/NATURAL_WEATHER_GROUPS_2026-10-28.md) separates aggregate gains, absent classes, pedestrian difficulty and log correlation. Fog and optional snow remain separate future experiments.
 
 | Description group | Scenes | Frames | Logs |
 |---|---:|---:|---:|
@@ -34,7 +34,7 @@ Run the pinned script with Drive mounted. It uses only the Python standard libra
 
 Optional arguments: `--base` (existing preserved project folder), `--root` (restored nuScenes root), `--work` (local preparation parent). New UTC timestamps prevent overwriting earlier runs. If a hash or population check fails, stop rather than selecting a smaller subset.
 
-## Stage 2: ready for CPU Colab execution
+## Stage 2: completed; reproduction procedure
 
 Run [run_weather_groups_colab.py](run_weather_groups_colab.py) with `--code-commit` set to its full published commit SHA. The launcher re-verifies the frozen preparation ZIP and preserves the description review on Drive before metric access. It fetches the worker and [resolved package pins](requirements-cpu310.txt) with SHA-256 checks, then creates an isolated Python 3.10.22 environment using uv 0.13.4. Core scientific packages and all four evaluator source hashes match the prior replay; remaining resolved dependencies and the runtime package freeze are preserved.
 
@@ -54,7 +54,7 @@ Interpret pipeline differences within each group first. Differences between natu
 
 Run `python check_preparation.py`. Checks cover word boundaries/negative mention flags; rejection of incomplete scenes and duplicate metadata; timestamp ordering; a synthetic 6,019-frame / 150-scene ZIP/TGZ recovery; pinned token-file verification; manifest and Drive-copy hash checks; prediction non-parsing; and the restored-metadata alternative. These three checks passed before real preparation; the actual preparation and description review have now passed as recorded above.
 
-Stage 2: run `check_evaluation.py` in the pinned Python 3.10.22 environment. Four checks cover exact core package versions and evaluator source hashes; recursive replay comparison including NaN handling and changed-value rejection; empty-frame/order retention; and synthetic full-versus-derived metadata evaluation through the actual SDK. The synthetic fixture includes a GT velocity link to an annotation outside the selected sensor population. Checks also exercise ZIP/TGZ restoration, rejection of corrupted restored tables, absent-class reporting and figure generation. The synthetic figure was visually inspected locally and is not published as a real result. Local checks pass; real 6,019-frame subgroup evaluation remains pending.
+Stage 2: run `check_evaluation.py` in the pinned Python 3.10.22 environment. Four checks cover exact core package versions and evaluator source hashes; recursive replay comparison including NaN handling and changed-value rejection; empty-frame/order retention; and synthetic full-versus-derived metadata evaluation through the actual SDK. The synthetic fixture includes a GT velocity link to an annotation outside the selected sensor population. Checks also exercise ZIP/TGZ restoration, rejection of corrupted restored tables, absent-class reporting and figure generation. The synthetic figure was visually inspected locally and is not published as a real result. Local checks and the real 6,019-frame subgroup execution have passed; see completed evidence above.
 
 ## Dissertation boundary
 

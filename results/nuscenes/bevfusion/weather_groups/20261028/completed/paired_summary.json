@@ -1,0 +1,37 @@
+{
+  "status": "PAIRED_WEATHER_GROUP_CPU_EVALUATION_PASS",
+  "groups": [
+    "neither_mentioned",
+    "rain_only_mentioned",
+    "night_only_mentioned",
+    "night_and_rain_mentioned"
+  ],
+  "common_GT_classes": [
+    "car",
+    "truck",
+    "pedestrian",
+    "motorcycle"
+  ],
+  "paired_fusion_minus_lidar_points": {
+    "neither_mentioned": {
+      "mean_ap": 3.5748975136735806,
+      "nd_score": 1.7842043157638154
+    },
+    "rain_only_mentioned": {
+      "mean_ap": 6.262708404037265,
+      "nd_score": 2.942718185645632
+    },
+    "night_only_mentioned": {
+      "mean_ap": 1.2303566197957916,
+      "nd_score": 1.030390646886542
+    },
+    "night_and_rain_mentioned": {
+      "mean_ap": 0.9257808236605658,
+      "nd_score": 2.494393759387581
+    }
+  },
+  "inference_performed": false,
+  "full_replay_pass_both_models": true,
+  "uncertainty": "Descriptive point estimates only. No confidence intervals, p-values or significance claims. All night scenes share one acquisition log; scene resampling would not establish between-log environmental generalisation.",
+  "interpretation": "Official ten-class mAP/NDS are descriptive subgroup metrics, not official full-val benchmark scores. Absent classes retain SDK handling. Represented/common-class AP are separately labelled sensitivity summaries, not replacements for official mAP. Natural strata do not isolate weather causality or camera contribution."
+}

@@ -1,0 +1,280 @@
+{
+  "files": {
+    "class_metrics.csv": {
+      "bytes": 6155,
+      "sha256": "205f5d8d5e84d592e4dd32f2ebe613c5bc06cc6c9ea41db3f74fab687f97708f"
+    },
+    "cpu_package_freeze.txt": {
+      "bytes": 555,
+      "sha256": "879e3358749ce1e68f4aba34316b827f95855048b1cb1297c89578f4c3f5a996"
+    },
+    "create_cpu_env.log": {
+      "bytes": 295,
+      "sha256": "f13c8a5159802e56c3193d0c346bac34cffc63d5ea1992f1aecd1c8757d18d21"
+    },
+    "description_review.json": {
+      "bytes": 1720,
+      "sha256": "1555ad5763b921990442368ed5f09cf024e094534453f7f033dc0610d1ee7479"
+    },
+    "evaluate_weather_groups.py": {
+      "bytes": 15012,
+      "sha256": "e1787b690cd7639b85489b438487849d23c110e4f0daf9ed187bca615b5fea08"
+    },
+    "evaluation_metadata_derivation.json": {
+      "bytes": 3699,
+      "sha256": "338056c47c3a0fb57428d378153decaa87cc32ba303b421f4497f08f5e09ace5"
+    },
+    "group_metrics.csv": {
+      "bytes": 1277,
+      "sha256": "a9aa41d24f947221c2dcb45a3d41baa97ace357379fcb2eab05ced5e9fa2fca1"
+    },
+    "install_cpu_packages.log": {
+      "bytes": 730,
+      "sha256": "f0df603db6fb2255da413d798802bee4114b565564a3d6613314a68c6396ff57"
+    },
+    "install_uv.log": {
+      "bytes": 430,
+      "sha256": "ffbad8c0b64eafd7767c3e09b317671e8a5f246ed0c2c483e235a8a436fab20b"
+    },
+    "lidar/completion.json": {
+      "bytes": 281,
+      "sha256": "230bf53180cacaa3661866193a194534ab939693cb2fbc025b14d3c83388c83e"
+    },
+    "lidar/full_replay_check.json": {
+      "bytes": 430,
+      "sha256": "feece0eba10e83410e77e6e44581ed9e0c1a35a928b04a7baae86c625f87b980"
+    },
+    "lidar/full_validation/coverage.json": {
+      "bytes": 620,
+      "sha256": "771b85aff85a5a442c68eee8165a38621177d6361733084a3a4e1701b0ac506e"
+    },
+    "lidar/full_validation/metrics_details.json": {
+      "bytes": 774268,
+      "sha256": "8976ad3b8379468ed5d8269a8c47442078b2c33ae09178be4448500c00655896"
+    },
+    "lidar/full_validation/metrics_summary.json": {
+      "bytes": 5204,
+      "sha256": "9b689b8d5a99dd0c961ec537315c6215fe3870c94b73f7a19cb2d5f5b7e7d689"
+    },
+    "lidar/neither_mentioned/coverage.json": {
+      "bytes": 616,
+      "sha256": "cb58c6e8988c2b66e62d3a5325d11d6170f179355a2b0b57853bdfc757695d35"
+    },
+    "lidar/neither_mentioned/metrics_details.json": {
+      "bytes": 772417,
+      "sha256": "f7bb27fab30a800f2c2d58615104124837a42221235f870379449f79a69ae3bd"
+    },
+    "lidar/neither_mentioned/metrics_summary.json": {
+      "bytes": 5196,
+      "sha256": "c258a2102b414124b7d5e2c6cb41eb0530d7cfbd2f61b429d81b796b6a478161"
+    },
+    "lidar/night_and_rain_mentioned/coverage.json": {
+      "bytes": 710,
+      "sha256": "461befd808ea8e1f346d3192fcf41d3b573d21626b14704a7d482e1c8a2502d1"
+    },
+    "lidar/night_and_rain_mentioned/metrics_details.json": {
+      "bytes": 523064,
+      "sha256": "cfb83fa418e6a8815959ff4dc1310f5ba016a19f2bcf937243eee180867f633f"
+    },
+    "lidar/night_and_rain_mentioned/metrics_summary.json": {
+      "bytes": 4355,
+      "sha256": "cf36a145197e44c296bb613ac5e590dcd05489bab31131f858497c49a4bc3574"
+    },
+    "lidar/night_only_mentioned/coverage.json": {
+      "bytes": 642,
+      "sha256": "e3657e404c65ca1c19f4309a72be2d8208b584832b486c67fdf0af1fc55ee119"
+    },
+    "lidar/night_only_mentioned/metrics_details.json": {
+      "bytes": 647846,
+      "sha256": "cf85603beb4cf948d9c351e6c21ae355f1296750641ed2b7814fe1fd0043ae1f"
+    },
+    "lidar/night_only_mentioned/metrics_summary.json": {
+      "bytes": 4720,
+      "sha256": "0aa70ba4d7fbb944d918f5af246c82f0ce4e2b6d840260897088fb231a03d533"
+    },
+    "lidar/rain_only_mentioned/coverage.json": {
+      "bytes": 601,
+      "sha256": "8087ee74ddae8ac62f16113b39b48c5e39c42238ac8d410defea6e93be6ce595"
+    },
+    "lidar/rain_only_mentioned/metrics_details.json": {
+      "bytes": 761101,
+      "sha256": "e1ec94196a1239a8fff84a5e7cbd6792f7b2244b8d485d7ca5f3c26f3fabea38"
+    },
+    "lidar/rain_only_mentioned/metrics_summary.json": {
+      "bytes": 5197,
+      "sha256": "91ff87d3442b9d34571eecbb002085345767618f87e5c13239f979831e0bd9cf"
+    },
+    "lidar_camera/completion.json": {
+      "bytes": 288,
+      "sha256": "3589a324db574c703158bbcc03c369face3139c490ee7a71312c5e594ba299c1"
+    },
+    "lidar_camera/full_replay_check.json": {
+      "bytes": 430,
+      "sha256": "3690a6cb597df0fc3ab466bc8d936caa079731af9524de1eb7aba4f2c6090b9a"
+    },
+    "lidar_camera/full_validation/coverage.json": {
+      "bytes": 620,
+      "sha256": "9ffbacd4d152773b360e89251579d71889ee18ff2ed5c0a1b9382b11ed3af66d"
+    },
+    "lidar_camera/full_validation/metrics_details.json": {
+      "bytes": 775072,
+      "sha256": "d676ba271a7d0a749555744fa2ff386fc1e27bf3f90dc9bc1c9d95dd4c3f1d9f"
+    },
+    "lidar_camera/full_validation/metrics_summary.json": {
+      "bytes": 5204,
+      "sha256": "eaa3b10998df5b5ed88ecc3547b7c9a77bf1d2ccc76681c97ce7fbc85dd00b86"
+    },
+    "lidar_camera/neither_mentioned/coverage.json": {
+      "bytes": 615,
+      "sha256": "d3ec5a1f93db14d358bdcc3a9649deecf28e5779c4a0ab7b98595ee1857d7e09"
+    },
+    "lidar_camera/neither_mentioned/metrics_details.json": {
+      "bytes": 772976,
+      "sha256": "5af55ca6fad6a846f1d17ff5a1e4fd1a179e1e45a0fc1ea81b53548503301dda"
+    },
+    "lidar_camera/neither_mentioned/metrics_summary.json": {
+      "bytes": 5205,
+      "sha256": "ffc799191164f80752d419b34df5ddcd583e15f17e057b22514e171d8e654f62"
+    },
+    "lidar_camera/night_and_rain_mentioned/coverage.json": {
+      "bytes": 709,
+      "sha256": "d9155b0baa2cc6b1a938a51e5fb5fcd5c1485464cc15095cf2320aa40093f018"
+    },
+    "lidar_camera/night_and_rain_mentioned/metrics_details.json": {
+      "bytes": 523075,
+      "sha256": "7ae628df3aef638166ffc88e03ec9a3087446d9d23f3189a3157908407925048"
+    },
+    "lidar_camera/night_and_rain_mentioned/metrics_summary.json": {
+      "bytes": 4352,
+      "sha256": "d1cde60879b58caa992044faf0d51816bbc6cbf8c3a3b17b83105c06fdcb6587"
+    },
+    "lidar_camera/night_only_mentioned/coverage.json": {
+      "bytes": 640,
+      "sha256": "cc908692100242fa9455491cc672347cd52658334f3ed041d949a5e1dee81573"
+    },
+    "lidar_camera/night_only_mentioned/metrics_details.json": {
+      "bytes": 643916,
+      "sha256": "ea319a289666f756efb2201b5ff4f9129fc448e07be901a7f16f37e690d7c0bb"
+    },
+    "lidar_camera/night_only_mentioned/metrics_summary.json": {
+      "bytes": 4722,
+      "sha256": "fef9dc0965ce32125ba4cb069c459b4e12d5e8f367418a4236b388c4b42b6259"
+    },
+    "lidar_camera/rain_only_mentioned/coverage.json": {
+      "bytes": 602,
+      "sha256": "aebc444fddccfa9f05478c46973b7d3de6739a0eb1665d7d6781c479d568afde"
+    },
+    "lidar_camera/rain_only_mentioned/metrics_details.json": {
+      "bytes": 761659,
+      "sha256": "e39eca15eb3428f52edca37cbe3c7e4422dc492e7233f35d3ba26b86a1b62398"
+    },
+    "lidar_camera/rain_only_mentioned/metrics_summary.json": {
+      "bytes": 5192,
+      "sha256": "cf253197cad663a884be2b1f395647f0f495ce1fcdd65ba019d088e44fa68b70"
+    },
+    "lidar_camera_environment.json": {
+      "bytes": 749,
+      "sha256": "cc0fe1bb35f8fb56d20b9aad6570bcc5d39ccd33f5ea54834575c1456b9d5270"
+    },
+    "lidar_camera_evaluation.log": {
+      "bytes": 10489,
+      "sha256": "c756be8b3d6ce6ced52e8e7dd87b6cd2b0386d47a11dd1dece15a1174ad37d7f"
+    },
+    "lidar_environment.json": {
+      "bytes": 749,
+      "sha256": "cc0fe1bb35f8fb56d20b9aad6570bcc5d39ccd33f5ea54834575c1456b9d5270"
+    },
+    "lidar_evaluation.log": {
+      "bytes": 9301,
+      "sha256": "6d0061a499e9df77fc1142a58c186df7214d5aab2293f53834b457f863806161"
+    },
+    "paired_summary.json": {
+      "bytes": 1411,
+      "sha256": "f9e7fb9ea798c65c575573a683c583ba275847397e40e70d9e7b7611433e07ff"
+    },
+    "preparation/manifest.json": {
+      "bytes": 729,
+      "sha256": "079d7771a2e8d225273c2f1b40b7aa3595764b52905a8b6aa5fef9c4b5af6a07"
+    },
+    "preparation/preparation_audit.json": {
+      "bytes": 3292,
+      "sha256": "4dbeb733e70c9a584fd83d9ae7c424cee12d9d8f7e3b01267ac75bded88cb636"
+    },
+    "preparation/prepare_weather_groups.py": {
+      "bytes": 13510,
+      "sha256": "56554c246f01631c888a22625cf6a7757d8382080a5b68aa3b0e59751db7c209"
+    },
+    "preparation/protocol.json": {
+      "bytes": 2270,
+      "sha256": "b9af15508f5e0f6cf9320b38a866e5e0da297264aee8183e4a5878e2a1ce15b4"
+    },
+    "preparation/sample_membership.csv": {
+      "bytes": 883059,
+      "sha256": "086f248a7c3484f0e7b34233850ce3c6f20b51fe3669d5e960370369b7f56ef4"
+    },
+    "preparation/scene_inventory.csv": {
+      "bytes": 27992,
+      "sha256": "483d99c89dc117c1caf4f16fe8bad24b53b3f74a9925ab8d1992cf456ef92356"
+    },
+    "reference/detection_config.json": {
+      "bytes": 439,
+      "sha256": "85648bcef19182a72def0039942cb2e6077142610f7bd503a71433864737986e"
+    },
+    "reference/environment_audit.json": {
+      "bytes": 762,
+      "sha256": "ed90ec18b871bd61734c566153e729a99e7ca491cfa5f7b57707227e8605fd91"
+    },
+    "reference/lidar/evaluation_audit.json": {
+      "bytes": 1902,
+      "sha256": "4162e578df2670e95aa63f14d7a54cfbbcd4e0d8e01148d08932d24e149bd0ea"
+    },
+    "reference/lidar/metrics_details.json": {
+      "bytes": 774293,
+      "sha256": "1b1c8ef97978c9c223dbd55887e49d9d3cb68c51b5a8eea10b3d31b6efe369b7"
+    },
+    "reference/lidar/metrics_summary.json": {
+      "bytes": 5205,
+      "sha256": "9892bf4cdeb0f599838eb3ac90cb8bd4cc896e096afc379faed9c7053da2c500"
+    },
+    "reference/lidar_camera/evaluation_audit.json": {
+      "bytes": 1906,
+      "sha256": "293b76c554b9c4140223d32512aca8b263350e7953f2318e23399dfdcc162543"
+    },
+    "reference/lidar_camera/metrics_details.json": {
+      "bytes": 775044,
+      "sha256": "e2de25334352dbe870d4e1e01ecfb3817db42336db24e0f5dded87a668c8fb46"
+    },
+    "reference/lidar_camera/metrics_summary.json": {
+      "bytes": 5204,
+      "sha256": "0c0754a74a6c1dc8fde2bd8d8878894a5956d1ba93406f0ec0c6e592feb6fcf9"
+    },
+    "reference/metadata_restoration_audit.json": {
+      "bytes": 3502,
+      "sha256": "d9a6108ffd884d2fe9341085d6559ab5255da3981d2f01d76efc3b57eb22a8ce"
+    },
+    "reference_downloads.json": {
+      "bytes": 2781,
+      "sha256": "2cfbcddb79718bcbcda178951932ff340fd3bd498d92dc15ed17a2f18cc2a27a"
+    },
+    "report_generation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "requirements-cpu310.txt": {
+      "bytes": 551,
+      "sha256": "e7689e47d16cf5b5f5ddd8c4d743d9c527ed9d3f0c0b1806c41a6174b69961e6"
+    },
+    "run_weather_groups_colab.py": {
+      "bytes": 17296,
+      "sha256": "9bcc402c745b41e808ebb4ba22e815312d44abe5c8c0f5c87926c68b8e892571"
+    },
+    "weather_group_comparison.pdf": {
+      "bytes": 19293,
+      "sha256": "68d6ad3e6ae1327fa6a2952085b4b058d0184e248a391eb3687c7efb7c3cf74c"
+    },
+    "weather_group_comparison.png": {
+      "bytes": 123214,
+      "sha256": "6512ac0aa7f389240eb14849d5ddac7a11715ff834d02ef3ae66fe04bde58e51"
+    }
+  }
+}

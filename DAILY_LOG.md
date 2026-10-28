@@ -1,5 +1,13 @@
 # Daily Project Log
 
+## 28 October 2026 — CPU natural-weather analysis complete and imported
+
+- Uploaded final ZIP: 2,156,223 bytes, SHA-256 75126afda2354f95f9402fccfa37100fb45d3f956cb1d5600cfb6fdf2c289227. All 69 manifest-listed payload sizes/hashes pass; uploaded bytes match the Colab-reported verified Drive copy.
+- Both full replay checks pass: 32,451 numeric values each, maximum error 8.881784197001252e-16 at tolerance 1e-12. Local reconciliation repeats these recorded comparisons; no fresh local GT evaluation or inference.
+- Four group ten-class mAP gains: +3.57/+6.26/+1.23/+0.93 points. Night-only and night/rain have 3/6 absent GT classes. Same-four-class AP and pedestrian results are separately reported; night/rain pedestrian AP 17.28/20.59 on 22 instances across frames. All night scenes share one log.
+- Recomputed 400 AP values from saved PR curves; checked eight group rows, 80 class rows, NDS/mAP arithmetic, class-coverage sensitivity summaries and GT partition totals. Retained three class-specific regressions despite aggregate gains.
+- Preserved complete unchanged source ZIP, readable CSV/audits, a visually checked three-panel coverage-aware figure and report discussion. New local figure/report are on GitHub; original Colab Drive receipt covers source outputs only. CPU stage complete; fog remains pending as a separate experiment.
+
 ## 28 October 2026 — real weather inventory reviewed; CPU evaluator ready
 
 - Verified uploaded preparation ZIP SHA-256 d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0 (184,365 bytes) and all five manifest-listed payloads. Reclassified all descriptions locally and checked all 6,019 sample memberships against 150 scene records.

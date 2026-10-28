@@ -1,0 +1,42 @@
+{
+  "status": "WEATHER_GROUP_COMPLETED_EVIDENCE_IMPORT_AND_ARITHMETIC_PASS",
+  "archive": "weather_group_evaluation_20261028T214858551297Z.zip",
+  "bytes": 2156223,
+  "sha256": "75126afda2354f95f9402fccfa37100fb45d3f956cb1d5600cfb6fdf2c289227",
+  "verified_payload_members": 69,
+  "full_replay_numeric_values_reconciled": 64902,
+  "maximum_full_replay_absolute_error": 8.881784197001252e-16,
+  "AP_values_recomputed_from_saved_PR_curves": 400,
+  "group_rows_checked": 8,
+  "per_class_rows_checked": 80,
+  "group_GT_counts_partition_full_validation": true,
+  "same_GT_counts_both_models": true,
+  "common_classes": [
+    "car",
+    "truck",
+    "pedestrian",
+    "motorcycle"
+  ],
+  "represented_class_regressions": [
+    {
+      "group": "rain_only_mentioned",
+      "class": "barrier",
+      "GT_instances": 3637,
+      "fusion_minus_lidar_AP_points": -0.3213519847249824
+    },
+    {
+      "group": "night_only_mentioned",
+      "class": "motorcycle",
+      "GT_instances": 241,
+      "fusion_minus_lidar_AP_points": -2.3578606313875206
+    },
+    {
+      "group": "night_only_mentioned",
+      "class": "barrier",
+      "GT_instances": 91,
+      "fusion_minus_lidar_AP_points": -1.0134757831607555
+    }
+  ],
+  "Drive_provenance": "Colab final receipt reports verified Drive copy; uploaded ZIP matches that reported SHA-256. Drive was not directly accessed during local import.",
+  "scope": "Archive verification, recorded replay/reference JSON reconciliation, curve-to-AP arithmetic and CSV consistency. No fresh inference or local GT evaluation."
+}

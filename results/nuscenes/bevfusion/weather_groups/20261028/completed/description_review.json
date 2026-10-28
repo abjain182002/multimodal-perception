@@ -1,0 +1,36 @@
+{
+  "status": "ALL_150_SCENE_DESCRIPTIONS_REVIEWED_LITERAL_GROUPS_RETAINED",
+  "preparation_zip_sha256": "d9aa5377247df83162cbfd8126638e4ded39e6459f036e378cf4f35cc47ad1a0",
+  "review_scope": "All 150 supplied scene descriptions inspected before new subgroup metrics. No negated rain/night mentions or alternative condition wording requiring amendment found. No image-level weather verification.",
+  "groups": {
+    "neither_mentioned": {
+      "scenes": 111,
+      "samples": 4449,
+      "logs": 15
+    },
+    "rain_only_mentioned": {
+      "scenes": 24,
+      "samples": 968,
+      "logs": 2
+    },
+    "night_only_mentioned": {
+      "scenes": 12,
+      "samples": 482,
+      "logs": 1
+    },
+    "night_and_rain_mentioned": {
+      "scenes": 3,
+      "samples": 120,
+      "logs": 1
+    }
+  },
+  "unique_logs": 18,
+  "night_log": "e55205b1f2894b49957905d7ddfdb96d",
+  "night_log_shares_groups": [
+    "night_only_mentioned",
+    "night_and_rain_mentioned"
+  ],
+  "interpretation": "No mention is not verified dry/daylight. Scene descriptions do not establish rain throughout every frame. All 15 night scenes are from one log; natural groups are observational and confounded.",
+  "uncertainty_decision_before_metrics": "Report descriptive point estimates and coverage, no inferential confidence intervals or significance tests. Scene bootstrap would not capture between-log generalisation with one night log or two rain-only logs.",
+  "reporting_amendment_before_metrics": "Retain ten-class SDK mAP/NDS, explicitly show absent/sparse classes, and provide separately labelled represented-class and common-GT-class macro-AP sensitivity summaries. The common class set depends only on GT coverage, not model outcomes."
+}

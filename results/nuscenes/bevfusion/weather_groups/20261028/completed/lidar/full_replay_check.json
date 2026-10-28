@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "tolerance": 1e-12,
+  "maximum_absolute_error": 8.881784197001252e-16,
+  "numeric_values_checked": 32451,
+  "differences": [],
+  "difference_count": 0,
+  "excluded": [
+    "eval_time"
+  ],
+  "prediction_sha256": "15667405cb1af580e6f8082dcc50366560e45335c36f7122ec490f377cd86c63",
+  "scope": "Same-evaluator full-split replay, also validating evaluation-only metadata against preserved original metrics."
+}
