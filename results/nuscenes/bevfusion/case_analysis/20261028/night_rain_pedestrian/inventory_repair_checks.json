@@ -1,0 +1,10 @@
+{
+  "status": "METADATA_SCAN_RESOLUTION_AND_RECOVERY_FIXTURES_PASS",
+  "historical_samples_path_regression": "pass",
+  "filename_order_not_used": true,
+  "missing_and_ambiguous_metadata_rejected": true,
+  "streaming_tar_unicode_rows": 7000,
+  "full_retained_state_recovery_fixture": "pass",
+  "selection_protocol_changed": false,
+  "scope": "Synthetic checks only; actual Colab resume and real pedestrian case analysis remain pending."
+}

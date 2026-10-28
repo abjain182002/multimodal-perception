@@ -97,10 +97,22 @@ def tables(archive, selectors):
     return out
 
 
-def keyframes(inventory):
+def keyframes(inventory, sample_data):
+    """Resolve current LiDAR by metadata, not path prefix, order or timestamp."""
     cameras = inventory['camera_files']
-    lidar = [x for x in inventory['lidar_files'] if x.startswith('samples/')]
-    assert len(cameras) == len(set(cameras)) == 6 and len(lidar) == 1
+    assert len(cameras) == len(set(cameras)) == 6, inventory['sample_token']
+    sd = sample_data if isinstance(sample_data, dict) else {r['filename']: r for r in sample_data}
+    expected_channels = {'CAM_FRONT', 'CAM_FRONT_LEFT', 'CAM_FRONT_RIGHT',
+                         'CAM_BACK', 'CAM_BACK_LEFT', 'CAM_BACK_RIGHT'}
+    assert {Path(name).parts[1] for name in cameras} == expected_channels
+    for name in cameras:
+        assert name in sd and sd[name]['sample_token'] == inventory['sample_token'], name
+        assert sd[name]['is_key_frame'] is True, name
+    lidar = [name for name in inventory['lidar_files']
+             if name.startswith('samples/LIDAR_TOP/') and name in sd
+             and sd[name]['sample_token'] == inventory['sample_token']
+             and sd[name]['is_key_frame'] is True]
+    assert len(lidar) == 1, {'sample_token': inventory['sample_token'], 'resolved_current_lidar': lidar}
     return set(cameras) | set(lidar)
 
 
@@ -124,7 +136,7 @@ def choose_frame(scene_rows, samples, inventory, annotations, sample_data, poses
         center_time = frames[len(frames) // 2]['timestamp']; eligible = []
         for frame in frames:
             token = frame['token']; inv = inventory_by_token[token]
-            files = keyframes(inv)
+            files = keyframes(inv, sd)
             if not files <= available:
                 audit.append({'scene': scene['name'], 'sample_token': token, 'eligible': False, 'reason': 'keyframes unavailable in frozen backup'})
                 continue
@@ -148,7 +160,8 @@ def choose_frame(scene_rows, samples, inventory, annotations, sample_data, poses
             _, token, frame, peds = min(eligible, key=lambda x: (x[0], x[1]))
             return {'sample_token': token, 'scene_name': scene['name'], 'scene_description': scene['description'],
                     'scene_token': scene['token'], 'selection': PROTOCOL['scene_rule'] + ' ' + PROTOCOL['frame_rule'],
-                    'sensor_inventory': inventory_by_token[token], 'eligible_pedestrians': peds}, audit
+                    'sensor_inventory': {**inventory_by_token[token], 'lidar_files': [next(name for name in keyframes(inventory_by_token[token], sd) if name.startswith('samples/LIDAR_TOP/'))]},
+                    'original_sensor_inventory': inventory_by_token[token], 'eligible_pedestrians': peds}, audit
     return None, audit
 
 
@@ -158,31 +171,53 @@ def write_json(path, value):
     path.write_bytes(data); assert path.read_bytes() == data
 
 
-def main():
+def main(resume_state=None):
     started = time.monotonic()
     assert Path('/content/drive/MyDrive').is_dir(), 'Mount Drive first'
     for name in SOURCE_HASHES: assert (BASE / name).is_file(), f'Missing preserved archive: {name}'
     for model in PRED_HASHES:
         assert (BASE / 'full_validation_merged' / model / 'results_nusc.json').is_file(), f'Missing saved full predictions: {model}'
-    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
-    destination = BASE / 'night_rain_pedestrian_20261028' / stamp
-    destination.mkdir(parents=True, exist_ok=False)
-    write_json(destination / 'selection_protocol.json', PROTOCOL)
-    protocol_hash = sha(destination / 'selection_protocol.json')
-    print('ANNOTATION-BASED SELECTION PROTOCOL PRESERVED:', protocol_hash, flush=True)
-    for name, expected in SOURCE_HASHES.items():
-        print('VERIFYING SOURCE:', name, flush=True)
-        assert sha(BASE / name, True) == expected, name
-        print('SOURCE HASH PASS', flush=True)
-    with zipfile.ZipFile(BASE / ORIGINAL_NAME) as z:
-        inventory = json.loads(z.read('preparation/validation_input_manifest.json'))
+    if resume_state is None:
+        stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+        destination = BASE / 'night_rain_pedestrian_20261028' / stamp
+        destination.mkdir(parents=True, exist_ok=False)
+        write_json(destination / 'selection_protocol.json', PROTOCOL)
+        protocol_hash = sha(destination / 'selection_protocol.json')
+        print('ANNOTATION-BASED SELECTION PROTOCOL PRESERVED:', protocol_hash, flush=True)
+        for name, expected in SOURCE_HASHES.items():
+            print('VERIFYING SOURCE:', name, flush=True)
+            assert sha(BASE / name, True) == expected, name
+            print('SOURCE HASH PASS', flush=True)
+        with zipfile.ZipFile(BASE / ORIGINAL_NAME) as z:
+            inventory = json.loads(z.read('preparation/validation_input_manifest.json'))
+        with zipfile.ZipFile(BASE / KEYFRAMES_NAME) as z:
+            available = {n[len('dataset/'):] for n in z.namelist() if n.startswith('dataset/samples/') and not n.endswith('/')}
+        first = tables(BASE / ORIGINAL_NAME, {name: (lambda r: True) for name in
+                       ('scene.json', 'sample.json', 'category.json', 'instance.json', 'visibility.json')})
+    else:
+        required_state = {'stamp', 'destination', 'protocol_hash', 'inventory', 'available', 'first', 'candidates', 'candidate_tokens'}
+        assert required_state <= set(resume_state), 'Incomplete retained state: stop; do not skip source checks'
+        stamp = resume_state['stamp']; destination = Path(resume_state['destination'])
+        protocol_hash = resume_state['protocol_hash']; inventory = resume_state['inventory']
+        available = resume_state['available']; first = resume_state['first']
+        assert destination.parent == BASE / 'night_rain_pedestrian_20261028'
+        assert sha(destination / 'selection_protocol.json') == protocol_hash
+        assert json.loads((destination / 'selection_protocol.json').read_text()) == PROTOCOL
+        assert resume_state.get('name') == KEYFRAMES_NAME
+        assert resume_state.get('expected') == SOURCE_HASHES[KEYFRAMES_NAME]
+        assert not (destination / 'frozen_selection.json').exists(), 'Selection already exists; inspect before resuming'
+        assert {'scene.json', 'sample.json', 'category.json', 'instance.json', 'visibility.json'} <= set(first)
+        print('RETAINED PRE-SELECTION STATE AND PROTOCOL PASS', flush=True)
+        print('Reusing source hash checks completed before the inventory assertion; no fresh archive rehash.', flush=True)
     assert len(inventory) == len({r['sample_token'] for r in inventory}) == 6019
     validation_tokens = {r['sample_token'] for r in inventory}
-    with zipfile.ZipFile(BASE / KEYFRAMES_NAME) as z:
-        available = {n[len('dataset/'):] for n in z.namelist() if n.startswith('dataset/samples/') and not n.endswith('/')}
-
-    first = tables(BASE / ORIGINAL_NAME, {name: (lambda r: True) for name in
-                   ('scene.json', 'sample.json', 'category.json', 'instance.json', 'visibility.json')})
+    repair_record = {
+        'reason': 'Earlier keyframes can occur as historical sweep inputs under samples/LIDAR_TOP/. Prefix count does not identify the current scan.',
+        'resolution': 'Match sample_data.sample_token to the inventory sample token and require is_key_frame=True. Keep the original inventory separately.',
+        'selection_protocol_changed': False,
+        'source_archive_checks': 'Reused completed checks from retained failed-run state; not freshly rehashed.' if resume_state is not None else 'Fresh archive SHA-256 checks passed.',
+        'scope': 'Inventory repair before prediction access; no outcomes inspected.'}
+    write_json(destination / 'inventory_resolution_repair.json', repair_record)
     samples = {s['token']: s for s in first['sample.json']}
     assert validation_tokens <= set(samples)
     val_scenes = {samples[t]['scene_token'] for t in validation_tokens}
@@ -193,11 +228,13 @@ def main():
     cats = {c['token']: c['name'] for c in first['category.json']}
     instance_category = {i['token']: cats[i['category_token']] for i in first['instance.json']}
     candidates = [r for r in inventory if r['sample_token'] in candidate_tokens]
-    available_candidate_files = set().union(*(keyframes(r) for r in candidates if keyframes(r) <= available))
-    assert available_candidate_files, 'No candidate frame has all required keyframes in the frozen backup'
+    # Include historical samples/ entries here so metadata can disambiguate them.
+    candidate_metadata_files = set().union(*(set(r['camera_files']) |
+        {name for name in r['lidar_files'] if name.startswith('samples/LIDAR_TOP/')} for r in candidates))
+    assert candidate_metadata_files, 'No candidate keyframe filenames'
     second = tables(BASE / ORIGINAL_NAME, {
         'sample_annotation.json': lambda r: r['sample_token'] in candidate_tokens,
-        'sample_data.json': lambda r: r['filename'] in available_candidate_files,
+        'sample_data.json': lambda r: r['filename'] in candidate_metadata_files,
         'calibrated_sensor.json': lambda r: True,
     })
     annotations = [dict(a, category_name=instance_category[a['instance_token']]) for a in second['sample_annotation.json']]
@@ -216,7 +253,7 @@ def main():
 
     work = Path('/content/night_rain_pedestrian_transfer') / stamp
     work.mkdir(parents=True, exist_ok=False)
-    token = selected['sample_token']; required = keyframes(selected['sensor_inventory'])
+    token = selected['sample_token']; required = keyframes(selected['sensor_inventory'], second['sample_data.json'])
     sd = [s for s in second['sample_data.json'] if s['filename'] in required]
     assert len(sd) == 7 and {s['filename'] for s in sd} == required
     cs_tokens = {s['calibrated_sensor_token'] for s in sd}; ep_tokens = {s['ego_pose_token'] for s in sd}
@@ -229,7 +266,7 @@ def main():
                 'visibility_definitions': first['visibility.json'], 'scope': PROTOCOL['scope']}
     write_json(work / 'case_metadata_and_night_candidates.json', metadata)
     write_json(work / 'sample_data.json', sd); write_json(work / 'calibrated_sensor.json', cs); write_json(work / 'ego_pose.json', ep)
-    for name in ('selection_protocol.json', 'selection_audit.json', 'frozen_selection.json'):
+    for name in ('selection_protocol.json', 'selection_audit.json', 'frozen_selection.json', 'inventory_resolution_repair.json'):
         shutil.copy2(destination / name, work / name)
         assert sha(destination / name) == sha(work / name)
     with zipfile.ZipFile(BASE / KEYFRAMES_NAME) as z:

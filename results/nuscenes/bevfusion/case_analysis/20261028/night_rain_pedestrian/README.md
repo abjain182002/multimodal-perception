@@ -29,3 +29,13 @@ Expected preparation marker: `POSITIVE_NIGHT_RAIN_INPUTS_AND_DRIVE_COPY_PASS`. [
 The addition is complete only after source/input checks, original-image review, confirmation that a pedestrian is eligible/projectable, paired diagnostic matching, a compact figure/table, bounded discussion and preservation. Keep any failure or unexpected outcome; do not search for a more favourable prediction. If the selected inputs cannot support the planned pedestrian view, record that limitation before agreeing any amendment.
 
 One selected positive example will complement the existing cases. It cannot establish representative night/rain accuracy, independent recording conditions, weather causality or physical robot safety. After this bounded addition, the intended next work is dissertation integration rather than an expanded experiment list.
+
+## Inventory repair and same-runtime recovery
+
+A real inventory exposed an earlier LiDAR keyframe among historical sweep inputs under `samples/LIDAR_TOP/`. Five candidate inventories contained two `samples/` paths. The initial helper incorrectly required exactly one such path. This stopped preparation before predictions were accessed.
+
+The corrected helper resolves current keyframes from `sample_data`: sample token must match the inventory frame and `is_key_frame` must be true. It checks all six camera channels and exactly one current LiDAR record, irrespective of inventory order. The original inventory is retained separately; the compact transfer inventory includes only the resolved current LiDAR scan. The frozen annotation-based scene/frame criteria are unchanged.
+
+`main(resume_state=...)` accepts the retained pre-selection locals from the failed run, checks the preserved protocol and stage, and reuses the source-archive hash checks completed in that runtime. It does not present these as fresh archive rehashes. Metadata scanning resumes from the annotation/sensor-data stage, then verifies both full prediction hashes before extracting the selected results. A repair record is included in the transferred ZIP.
+
+[Repair checks](inventory_repair_checks.json) include a historical-keyframe regression, missing/ambiguous metadata rejection, Unicode streaming-TAR parsing and an end-to-end synthetic retained-state packaging run. These are local fixtures; actual Colab recovery and real-case analysis remain pending. If retained runtime state is missing, stop rather than skipping source validation.
