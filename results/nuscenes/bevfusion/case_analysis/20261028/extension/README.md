@@ -1,5 +1,7 @@
 # Diagnostic extension and real rain-labelled cases — 28 October 2026
 
+**Current status:** the later [metadata completion](../metadata_completion/README.md) supersedes this extension's eight-class filtering limitation, and [night comparisons](../night_cases/README.md) are complete. The original eight-class outputs remain historical evidence. Use the [combined discussion](../../../../../../docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md) for the current synthesis.
+
 This extension answers two distinct questions: whether selected-object recovery is accompanied by wider frame improvements, and whether fusion succeeds consistently in scenes described as rainy. All calculations use preserved predictions and inputs; no GPU inference was performed.
 
 ![Real rain-labelled case comparisons](results/real_rain_case_comparison.png)
@@ -27,7 +29,7 @@ For B's highlighted car, clean fusion -> gain 0.50 changes score 0.286743 -> 0.3
 | C / bus | 35.07 | 65 |
 | D / traffic cone | 19.49 | 1 |
 
-Point counts were recomputed from the raw current LiDAR scan using saved extrinsics and ego pose, then checked against the corresponding annotation's `num_lidar_pts`; all four agree. Model input also contains nine preceding sweeps, so these are not total model-input support counts. Sparse keyframe support is a plausible difficulty indicator, not an identified cause of failure. `object_difficulty.csv` also records projected box extent in pixels: geometric extent does not measure visible object area, segmentation area or actual occlusion. Visibility tokens are absent from this transfer and remain unreported.
+Point counts were recomputed from the raw current LiDAR scan using saved extrinsics and ego pose, then checked against the corresponding annotation's `num_lidar_pts`; all four agree. Model input also contains nine preceding sweeps, so these are not total model-input support counts. Sparse keyframe support is a plausible difficulty indicator, not an identified cause of failure. `object_difficulty.csv` also records projected box extent in pixels: geometric extent does not measure visible object area, segmentation area or actual occlusion. Visibility tokens were absent from this original transfer; they were subsequently recovered and reported in the metadata-completion follow-up.
 
 ### 4. Rain-labelled scenes contain both successes and regressions
 
@@ -35,7 +37,7 @@ The existing bus C in scene-0913 is matched by both models. A newly included bar
 
 E is **additional to the four-case follow-up**, but was among the six previously preserved illustrative cases. It is not a newly sampled or independent evaluation. Its first highlighted CAM_FRONT barrier (GT index 0) was already documented in the previous annotation records. This choice reuses an existing focal object rather than searching for a new dramatic failure.
 
-These scenes differ in class, distance, geometry and other context. They illustrate outcomes in rain-labelled scenes and cannot isolate a causal rain effect. Rain intensity is not quantified. Night-condition analysis remains pending: none of the saved 20 candidate descriptions is night-labelled. Absence of a night label is not evidence that a scene is daylight.
+These scenes differ in class, distance, geometry and other context. They illustrate outcomes in rain-labelled scenes and cannot isolate a causal rain effect. Rain intensity is not quantified. At this extension's original stage, none of the saved 20 candidate descriptions was night-labelled. The later full-metadata search and separate night-case analysis are now complete. Absence of a night label is not evidence that a scene is daylight.
 
 ### 5. Relation to the larger study
 
@@ -52,8 +54,8 @@ python extension/build_rain_comparison.py --reference reference --output extensi
 
 `extend_diagnostics.py` uses the trusted, previously hash-verified project annotation pickle. Do not substitute an untrusted pickle. Source provenance and archive hashes are in the parent analysis folder. Individual rain comparisons use the original preserved clean predictions; the four-case darkening tables use the fresh follow-up predictions. These sources must not be silently pooled as numerically identical.
 
-## Remaining essentials
+## Follow-up completion and remaining boundary
 
-- Recover the original sample annotations, visibility tokens and bicycle-rack boxes before exact all-class frame filtering.
-- Search the full validation scene metadata for suitable verified night/low-light cases, then check raw sensor availability and saved predictions. No new inference is justified until those checks identify a gap.
-- Preserve any new selection rule before running further comparisons. Case studies explain selected behaviour; they do not establish prevalence or weather causality.
+Original visibility annotations and bicycle-rack boxes were recovered, and exact ten-class frame diagnostics were completed in [metadata completion](../metadata_completion/README.md). Two frames were preselected from full-validation night metadata, verified against original images and saved predictions, and analysed in [night cases](../night_cases/README.md). No new inference was needed for those analyses.
+
+The ten-class tables supersede these eight-class tables for whole-frame interpretation; keep the older files as the record of the earlier scope. Additional representative weather evaluation and a positive annotated night/rain pedestrian example remain unperformed. Case studies do not establish prevalence or weather causality.

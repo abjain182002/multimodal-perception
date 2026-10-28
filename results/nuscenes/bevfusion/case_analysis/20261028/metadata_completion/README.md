@@ -45,7 +45,7 @@ This is a transparent local implementation of the filtering and existing score-o
 
 Recovery found 15 night-labelled validation scenes. Candidate selection took the middle timestamped validation frame in each of the first two scene names sorted alphabetically, before inspecting predictions. This is deterministic convenience selection, not random or representative sampling. Both inventories refer to the same acquisition-log prefix; do not treat them as independent recording environments. Scene-1060 combines night and rain, so their effects cannot be separated.
 
-Night image review and comparisons remain pending. Only 12 camera keyframes, two LiDAR keyframes, their camera/LiDAR calibration and ego poses, and the two models' saved full-validation predictions for these tokens are needed for the next visual analysis. No sweep restoration or inference is needed if existing predictions are verified and extracted.
+Night image review and comparisons were subsequently completed in [night cases](../night_cases/README.md). The following inventory records the inputs required at the original metadata-recovery stage; it is not a current pending-work instruction. Only 12 camera keyframes, two LiDAR keyframes, their camera/LiDAR calibration and ego poses, and the two models' saved full-validation predictions for these tokens are needed for the next visual analysis. No sweep restoration or inference is needed if existing predictions are verified and extracted.
 
 ## Reproduce
 

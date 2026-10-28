@@ -2,9 +2,9 @@
 
 **Night-case analysis:** [paired original-image comparisons, all-object diagnostics and critical interpretation](night_cases/README.md) are now complete for the two preselected frames: one positive-object frame and one annotation-negative night/rain frame. No labelled positive night/rain pedestrian test is claimed.
 
-**Metadata completion:** [ten-class frame counts, original visibility bands and the night-case input inventory](metadata_completion/README.md). Visibility and all-class filtering checks are now complete for A–D; night image review remains pending.
+**Metadata completion:** [ten-class frame counts, original visibility bands and the night-case input inventory](metadata_completion/README.md). Visibility and all-class filtering checks are complete for A–D. The later night-case analysis is also complete; see the link above.
 
-**Diagnostic extension:** [eight-class threshold trade-offs, box errors, verified point support and an additional rain-labelled regression](extension/README.md). Exact all-class counts and verified night cases remain pending.
+**Diagnostic extension:** [eight-class threshold trade-offs, box errors, verified point support and an additional rain-labelled regression](extension/README.md). Its original eight-class tables are historical; use the completed ten-class tables and night analysis linked above for the current scope.
 
 This CPU analysis uses the preserved 16 predictions: four LiDAR clean references and four fusion frames at each of image gains 1, 0.5 and 0.25. No new inference was performed during this analysis. The exported archive and its 46 payload members, plus the nested 75 input payload members, were hash-verified. Recorded point, metadata and raw-image hashes remain identical across fusion conditions. These checks verify recorded invariants, not a second execution of the transforms.
 
@@ -38,7 +38,7 @@ A match requires score >=0.30 and a score-ordered one-to-one same-class assignme
 ## Protocol and interpretation boundaries
 
 - Four outcome-selected frames and one preselected object per frame; no frequency, statistical superiority or population robustness claim.
-- Analysis uses preserved SDK-filtered ground truth. New predictions are filtered for the focal class and its ego-distance range: 50 m for truck/car/bus, 30 m for traffic cone. Bike-rack filtering is irrelevant to these four classes. No full-frame mAP/NDS or all-class counts are produced.
+- Analysis uses preserved SDK-filtered ground truth. New predictions are filtered for the focal class and its ego-distance range: 50 m for truck/car/bus, 30 m for traffic cone. Bike-rack filtering is irrelevant to these four classes. This initial focal analysis does not produce full-frame mAP/NDS. All-class fixed-threshold counts were subsequently completed in `metadata_completion/`; they remain distinct from AP/NDS.
 - Image-value gains are synthetic darkening, not real night, atmospheric attenuation, rain or fog. All six camera views were modified by inference; each figure shows one fixed relevant view.
 - Camera projections use saved sensor extrinsics and camera-time ego poses without object-motion compensation or occlusion tests. Pink is GT; cyan is the nearest same-class prediction. Dashed cyan is below 0.30.
 - Figure display crops apply gain to the original image, whereas model gains were applied after resize/crop before normalisation. They illustrate the intervention and are not exact packed model-input tensors.
@@ -61,6 +61,8 @@ python analyse.py --input input --output regenerated_results
 
 `object_evidence.csv` includes exact scores/errors and all three threshold outcomes. `clean_reproduction.csv` separates original and fresh clean values. `audit.json` states the limited validation scope. `manifest.json` records hashes of the public deliverables. Sensor images remain subject to the original dataset licence; possession of this bundle does not grant redistribution rights. Do not publish sensor payloads to a public repository automatically.
 
-## What remains for the supervisor feedback
+## Current follow-up status
 
-This completes the four-case synthetic-darkening analysis. Real atmospheric-condition comparisons remain a separate observational task; the rainy Case C alone does not complete that request. The robotic-arm mass/friction confound and force-policy explanation also require separate treatment. The original inference export is preserved on Drive. The derived analysis is recorded here; a Drive copy of the derived analysis bundle has not been verified.
+The four-case darkening study, additional rain comparison, original visibility/ten-class checks and two preselected real-night comparisons are complete. The [combined report discussion](../../../../../docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md) connects these results, and the [supervisor summary](../../../../supervisor_followup/20261028/README.md) states the exact completion boundary. The [robotic-arm clarification](../../../../../docs/report/ROBOT_ARM_PILOT_2026-10-22.md) explains shared geometry/motion, different loading and the mass/friction confound separately.
+
+The case set remains illustrative: representative common-weather accuracy, a causal weather effect and a positive labelled night/rain pedestrian test are not established. The original inference export is preserved separately; the latest derived public-evidence snapshot still needs verified Drive preservation using the [prepared procedure](../../../../../docs/report/FOLLOWUP_PRESERVATION_2026-10-28.md). Report integration and literature synthesis remain separate tasks.

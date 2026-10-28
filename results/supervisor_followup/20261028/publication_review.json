@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL_REVIEW_PASS",
+  "source_snapshot": "31557146b6926aa1f6ee7089a32823bd9e3992b8",
+  "relative_document_links_checked": 80,
+  "missing_link_targets": 0,
+  "original_numerical_csv_files_checked_unchanged": 8,
+  "arm_clarification_png_visually_inspected": true,
+  "preservation_utility_local_fixture": {
+    "download_and_git_blob_checks": "pass",
+    "zip_member_verification": "pass",
+    "destination_copy_verification": "pass",
+    "receipt_readback": "pass",
+    "existing_output_overwrite_guard": "pass"
+  },
+  "drive_execution": "pending",
+  "scope": "Document links, recorded numeric-input integrity, local figure inspection and preservation utility fixture. The fixture used synthetic files and a temporary local destination; it is not a Drive backup, inference run, physics rerun or official metric replay."
+}

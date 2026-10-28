@@ -14,6 +14,10 @@
 
 A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KITTI and nuScenes. The aim is to examine detection accuracy, depth estimation, failure cases and computational cost relevant to robotic perception. Robot navigation or hardware deployment has not been demonstrated.
 
+## Supervisor follow-up — 28 October 2026
+
+[Combined findings and completion status](results/supervisor_followup/20261028/README.md) now connect A–D darkening, exact ten-class frame counts, original visibility and real rain/night examples. The [report discussion](docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md) separates measured effects from unproven causes. The robotic-arm clarification makes shared dimensions/motion, failed placements and contact-load differences explicit. Public derived-evidence preservation to the user's Drive remains pending; [CPU procedure](docs/report/FOLLOWUP_PRESERVATION_2026-10-28.md).
+
 ## Start here
 
 | What you need | Where to go |

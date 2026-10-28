@@ -1,0 +1,53 @@
+{
+  "source_snapshot": "31557146b6926aa1f6ee7089a32823bd9e3992b8",
+  "files": {
+    "docs/report/FOLLOWUP_PRESERVATION_2026-10-28.md": {
+      "bytes": 2664,
+      "sha256": "3584df4041e57f5d0f1979466e4f978a33ed3f391519cad5d7b761eddced66a1"
+    },
+    "docs/report/ILLUMINATION_WEATHER_DISCUSSION_2026-10-28.md": {
+      "bytes": 10368,
+      "sha256": "2a1721da21dc32af9f4688682b72b961a213f61bfcfb043651867b1648e519a1"
+    },
+    "docs/report/ROBOT_ARM_PILOT_2026-10-22.md": {
+      "bytes": 5073,
+      "sha256": "2397317479382a26dd3ec11b9cb08452dc0f1bcac43c571e580637d246155b1a"
+    },
+    "results/supervisor_followup/20261028/README.md": {
+      "bytes": 5781,
+      "sha256": "5cc0e75fbf2c3d1f81231c72d9680a8f7a52296c0a7f5d2cfcf5acc549e15889"
+    },
+    "results/supervisor_followup/20261028/arm_feedback_clarification.pdf": {
+      "bytes": 24998,
+      "sha256": "c3cb977d60c9b976d238b4241ff2a8cb9880225d9ddc4314d05940bafc68fcf7"
+    },
+    "results/supervisor_followup/20261028/arm_feedback_clarification.png": {
+      "bytes": 192357,
+      "sha256": "7083f861644ad3036c403836c8a12f792df8009af47cfd80b0c9439f1948663a"
+    },
+    "results/supervisor_followup/20261028/arm_feedback_clarification.svg": {
+      "bytes": 42218,
+      "sha256": "ef491230523493cb31000b4bd0d5c926153221758581f1748526cd999412fba8"
+    },
+    "results/supervisor_followup/20261028/case_evidence.csv": {
+      "bytes": 2662,
+      "sha256": "c36933f1e20d967f70c7850cf785a07308644e1e3980f1f365b1f24ec070641e"
+    },
+    "results/supervisor_followup/20261028/publication_review.json": {
+      "bytes": 835,
+      "sha256": "c2bce3621eb34b7b3f560695a590405b378c6effb0df37fc0c5e06ad41da7013"
+    },
+    "results/supervisor_followup/20261028/verification.json": {
+      "bytes": 1982,
+      "sha256": "99e183a61831b685212e85d6d3aa31f563a21f69853e1d4ee719a769cb1f12c9"
+    },
+    "scripts/build_supervisor_followup.py": {
+      "bytes": 9900,
+      "sha256": "2471c239b71b319fb623cd40666735d420a7f93f94f1d678a24d05d7b3fe04b6"
+    },
+    "scripts/preserve_supervisor_followup.py": {
+      "bytes": 5458,
+      "sha256": "710558e622ebe7b6444cf37dbb32dcba71b7e05f95e4d030c4ea339fccc33eb0"
+    }
+  }
+}

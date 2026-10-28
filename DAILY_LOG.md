@@ -440,5 +440,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Documented historical runtime/configuration differences and unresolved upstream SDK-version/annotation/checkpoint-log provenance. No cause established, no inference rerun and no attribution to hardware or randomness.
 - Preserved [audit, field differences, source hashes, checkpoint download record and discussion](results/nuscenes/bevfusion/reference_audit_20261020/README.md), with a restricted-AST standard-library reproduction script. Original results remain unchanged.
 
+## 28 October 2026 — completed case synthesis and arm clarification
 
-
+- Consolidated A–D, original visibility/ten-class filtering, rainy success/regression and two preselected night frames into a supervisor summary and report discussion, with exact source links and a compact CSV.
+- Rechecked arithmetic for all 48 A–D and 12 night threshold rows. Reaggregated all 45 preserved arm trial rows against nine summary groups and checked paired initial offsets. No inference, raw matching replay, official AP/NDS evaluation or physics rerun.
+- Clarified the arm's identical light/heavy dimensions, common commanded path and mass/friction confound. Added one profile/placement/loading composite with explicit 0/5 heavy low-grip outcome; heavy feedback/high-fixed mean load comparison remains 16.08/38.63 N.
+- Reconciled outdated pending-status statements in the case documentation. Ten-class counts and night analysis are complete; representative weather accuracy and positive annotated night/rain pedestrian evidence remain unestablished.
+- Prepared a pinned-commit CPU utility that verifies downloaded public Git blobs, ZIP payloads and a destination copy. The user's Drive execution/receipt remains pending; no Drive completion is claimed.
+- Outputs and reproduction: [supervisor follow-up](results/supervisor_followup/20261028/README.md). Report-wide chapter/literature integration and poster remain separate.

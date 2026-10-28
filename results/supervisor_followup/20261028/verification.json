@@ -1,0 +1,21 @@
+{
+  "status": "PRESERVED_TABLE_CHECKS_PASS",
+  "source_snapshot": "31557146b6926aa1f6ee7089a32823bd9e3992b8",
+  "case_threshold_rows_checked": 48,
+  "night_threshold_rows_checked": 12,
+  "arm_trial_rows_reaggregated": 45,
+  "arm_summary_groups_checked": 9,
+  "heavy_feedback_mean_contact_reduction_percent": 58.35892494395301,
+  "source_sha256": {
+    "results/nuscenes/bevfusion/case_analysis/20261028/metadata_completion/results/ten_class_threshold_tradeoffs.csv": "f2ce383a83b08933acb309db0fff4fb762ccb37b3357523bf374190b819f0a14",
+    "results/nuscenes/bevfusion/case_analysis/20261028/results/object_evidence.csv": "8fab61c4799e5a3e3672fc6174b530652bd02968dd6af868aa15094db596f8f4",
+    "results/nuscenes/bevfusion/case_analysis/20261028/night_cases/results/frame_threshold_diagnostics.csv": "1507bf6b45d7523ccba1c566ea45796c2e7bcf8e96a5bad9bea905f8c5c40086",
+    "results/nuscenes/bevfusion/case_analysis/20261028/extension/results/real_rain_object_evidence.csv": "d385c8228789526ec042796d37a81d679539d2cc357a9be2cc8111a099279450",
+    "results/nuscenes/bevfusion/case_analysis/20261028/metadata_completion/results/focal_visibility.csv": "7889610489c838951bdd7285546b54dc30c506a6f65c8485717232961ac9fd9c",
+    "results/nuscenes/bevfusion/case_analysis/20261028/metadata_completion/results/completion_audit.json": "f264ecff25cd98185d7784c9d83151e6d8e6759eadb3d87fd13cb2da376819f6",
+    "experiments/robot_arm_pick_place/20261022/results/summary.csv": "aa3e6d0f21300d2a18d314cbc58119099120c0bc7e66e9b5750f41b907359ef3",
+    "experiments/robot_arm_pick_place/20261022/results/trials.csv": "5ec2bc42352aecb9c1ea3c6dbeffbef98f73ed35e58785f9721ed336fcda41ca",
+    "experiments/robot_arm_pick_place/20261022/protocol.json": "32419bfaafb444896ce17695d8f44ad1a6524862a975b99550991c018ed56d43"
+  },
+  "scope": "Preserved table consistency, pairing and arithmetic only. No inference, raw-prediction matching replay, official AP/NDS evaluation or physics rerun. Drive copy unverified."
+}
