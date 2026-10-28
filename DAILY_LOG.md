@@ -448,3 +448,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Reconciled outdated pending-status statements in the case documentation. Ten-class counts and night analysis are complete; representative weather accuracy and positive annotated night/rain pedestrian evidence remain unestablished.
 - Prepared a pinned-commit CPU utility that verifies downloaded public Git blobs, ZIP payloads and a destination copy. The user's Drive execution/receipt remains pending; no Drive completion is claimed.
 - Outputs and reproduction: [supervisor follow-up](results/supervisor_followup/20261028/README.md). Report-wide chapter/literature integration and poster remain separate.
+
+## 28 October 2026 — bounded additional night/rain pedestrian protocol
+
+- Agreed one final annotation-positive pedestrian example from an explicitly night/rain-labelled scene before concentrating on dissertation writing. Existing two night cases remain intact.
+- Froze scene/frame eligibility and alphabetical/midpoint selection independently of model outcomes, including official pedestrian categories, nonzero annotated point support, strict <40 m range and preserved part-10 keyframe availability.
+- Prepared standard-library CPU recovery of metadata, seven sensor keyframes and verified saved full-validation predictions. Protocol and selection must be saved on Drive before predictions are read.
+- Local synthetic checks passed for condition words, range/support exclusion, availability, selection tie-breaking and 7,000 Unicode records through a multi-chunk streaming TAR reader. No real frame has yet been selected or analysed.
+- Actual Colab recovery and ZIP handoff remain pending. [Protocol and preparation](results/nuscenes/bevfusion/case_analysis/20261028/night_rain_pedestrian/README.md). No new GPU inference is planned.

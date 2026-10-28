@@ -1,0 +1,16 @@
+{
+  "status": "PREPARATION_LOGIC_FIXTURES_PASS",
+  "utf8_streaming_tar_rows": 7000,
+  "utf8_payload_bytes": 2735890,
+  "selection_checks": [
+    "word-bounded night/rain labels",
+    "40m boundary excluded",
+    "zero point support excluded",
+    "alphabetical eligible scene",
+    "middle-time tie broken by token",
+    "missing sensors stop selection"
+  ],
+  "prediction_files_read": false,
+  "real_frame_selected": false,
+  "scope": "Synthetic preparation checks only. Actual source recovery, selection, predictions, images and diagnostic analysis pending."
+}

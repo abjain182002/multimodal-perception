@@ -1,0 +1,14 @@
+{
+  "question": "Add one frame with eligible annotated pedestrians to the existing illustrative night/rain case study.",
+  "metadata_condition": "Scene description matches night/nighttime AND rain/rainy/raining as words, case insensitive.",
+  "population": "Official validation frames whose six camera keyframes and current LiDAR keyframe are preserved in the hash-verified part-10 keyframe backup.",
+  "pedestrian_eligibility": "One of four official pedestrian categories; combined annotated current LiDAR/radar points >0; ego XY distance strictly <40 m at current LiDAR pose.",
+  "scene_rule": "First scene by (scene name, scene token) containing at least one eligible frame.",
+  "frame_rule": "Eligible frame nearest the middle timestamped validation frame of that scene; ties by sample token.",
+  "focal_rule": "For later visual analysis: nearest eligible pedestrian with a valid camera projection; annotation token breaks distance ties. Choose camera by largest clipped GT projection area, never model outcome.",
+  "matching_plan": "Retain prior ten-class local filters and score-ordered one-to-one XY <2 m matching at 0.10, 0.30 and 0.50; 0.30 primary. No threshold tuning.",
+  "amendment": "Keep original scene-1059 and scene-1060 results. This is an additional annotation-selected positive case, not replacement of a negative result.",
+  "no_candidate_rule": "Stop and report no eligible frame. Do not relax labels, range, support or archive availability automatically.",
+  "prediction_access": "Neither model prediction file is opened until protocol and annotation-based selection have been saved and verified on Drive.",
+  "scope": "Deterministic availability-restricted illustrative selection, not random sampling, representative weather accuracy or a causal night/rain comparison."
+}
