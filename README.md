@@ -20,6 +20,10 @@ A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KIT
 
 ## Start here
 
+### Weather-group extension — preparation ready
+
+[CPU preparation and protocol](results/nuscenes/bevfusion/weather_groups/20261028/README.md) freeze four scene-description strata across the existing 6,019-frame / 150-scene validation population before new subgroup metrics. Synthetic checks pass; real membership counts, description review and CPU evaluation remain pending. Absence of rain/night words is not verified dry/daylight weather. Fog is the next bounded experiment; snow remains optional.
+
 | What you need | Where to go |
 |---|---|
 | Four-case darkening follow-up: visual comparisons and critical analysis | [28 October case analysis](results/nuscenes/bevfusion/case_analysis/20261028/README.md) |

@@ -1,5 +1,13 @@
 # Daily Project Log
 
+## 28 October 2026 — CPU weather-group preparation ready
+
+- Added a metadata-only, standard-library preparation script for the full 6,019-sample / 150-scene population. Preserve protocol before grouping and do not open prediction contents in stage 1.
+- Four disjoint strata use literal rain/night mentions; descriptions, negation flags and acquisition-log counts are retained for review. No automatic dry/daylight or causal-weather claims.
+- Verify preserved validation token Git blobs and metadata table SHA-256 values; avoid full multi-GB ZIP rehash or image extraction. Produce manifest-verified ZIP and check Drive-copy hash.
+- Three local synthetic checks pass, including full-size membership fixture, ZIP/TGZ and restored-metadata paths, incomplete-scene rejection, and invalid prediction bytes left unparsed. These are not real weather-group results.
+- Real Colab execution, all-description review and stage-2 CPU evaluation remain pending. Fog is planned after natural-stratum analysis; snow optional, extreme conditions discussed as literature-supported limitations.
+
 ## 21 October 2026 — sourced cost/performance scenarios
 
 - Recorded dated USD prices for OAK-1/PoE cameras, separately listed interfaces and a qualified Mid-360 retailer reference offer; retained backorder, tax/shipping and confirmation caveats. Excluded inaccessible DJI pricing, quote-only Ouster, an unreconciled sold-out high-price listing and historical launch prices from the current arithmetic.
