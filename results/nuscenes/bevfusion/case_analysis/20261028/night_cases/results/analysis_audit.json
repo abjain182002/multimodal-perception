@@ -1,0 +1,8 @@
+{
+  "status": "TWO_PRESELECTED_NIGHT_FRAME_DIAGNOSTICS_PASS",
+  "frames": 2,
+  "positive_frames": 1,
+  "negative_frames": 1,
+  "model_threshold_rows": 12,
+  "scope": "Original paired pretrained predictions; illustrative diagnostic study, no causal weather inference or AP/NDS."
+}

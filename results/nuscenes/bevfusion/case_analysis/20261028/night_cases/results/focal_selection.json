@@ -1,0 +1,23 @@
+[
+  {
+    "scene": "scene-1059",
+    "sample_token": "eb82a835419149aeae82c5e8ea64377b",
+    "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e",
+    "class_name": "car",
+    "ego_xy_distance_m": 9.54226240884872,
+    "visibility_token": "4",
+    "num_lidar_pts": 147,
+    "num_radar_pts": 2,
+    "camera": "CAM_BACK",
+    "rule": "Nearest eligible pedestrian, else car, else other class; largest clipped GT projection selects camera. No predictions used."
+  },
+  {
+    "scene": "scene-1060",
+    "sample_token": "e0e5ebc17c73465181cab1383606e5f5",
+    "annotation_token": null,
+    "class_name": null,
+    "camera": "CAM_BACK",
+    "view_rule": "Camera and crop selected to show highest-score LiDAR unmatched candidate, then shared by both models; outcome-informed visualisation only.",
+    "scope": "No evaluable ten-class GT: negative-frame check only. Scene text does not prove a pedestrian is in this frame."
+  }
+]

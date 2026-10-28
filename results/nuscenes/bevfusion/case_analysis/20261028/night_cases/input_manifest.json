@@ -1,0 +1,89 @@
+{
+  "members": {
+    "calibrated_sensor.json": {
+      "bytes": 7777,
+      "sha256": "ed2d5d2c2504b0774b397195c7f9cf2fe83b1fa8a4149a60a60c76b720c2450a"
+    },
+    "case_metadata_and_night_candidates.json": {
+      "bytes": 253955,
+      "sha256": "40ebf900154cf8656b0b87c55e9ca3b875908bf972453b0f48e3ddbea7d040c1"
+    },
+    "dataset/samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799332187525.jpg": {
+      "bytes": 241480,
+      "sha256": "b5f2911dd89c70a88eabea7f573a6a66c65567baecc87e451ad4fffcf59408fb"
+    },
+    "dataset/samples/CAM_BACK/n015-2018-11-21-19-21-35+0800__CAM_BACK__1542799352137525.jpg": {
+      "bytes": 194454,
+      "sha256": "4f701bfda820459514e5ef3575fec3444ace9991effa930806bc0e79b3548ab7"
+    },
+    "dataset/samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799332197423.jpg": {
+      "bytes": 200277,
+      "sha256": "ac977b0aae4497ea05520933b5e594acfa89db63e4c0e3a06cfc00b81b3b8209"
+    },
+    "dataset/samples/CAM_BACK_LEFT/n015-2018-11-21-19-21-35+0800__CAM_BACK_LEFT__1542799352147448.jpg": {
+      "bytes": 159371,
+      "sha256": "de14572a2378994ec82b7165a1dc3f768f3c94ccd237f7c930cd6bafd56be0f8"
+    },
+    "dataset/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799332177985.jpg": {
+      "bytes": 210699,
+      "sha256": "53c1f979ed82b4c392cf3996dc06012d9e5f82ef12f57ddf731149383c403254"
+    },
+    "dataset/samples/CAM_BACK_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_BACK_RIGHT__1542799352128071.jpg": {
+      "bytes": 174328,
+      "sha256": "189cb0d1edaa6fb957b4eae5630b2e8b4036ab35d2bb082b54ba32e1d1f4de94"
+    },
+    "dataset/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799332162460.jpg": {
+      "bytes": 237514,
+      "sha256": "e31bc38860242c2e54a520bdb07d44c79bd98d1cc065c5a9352d516223cbdb51"
+    },
+    "dataset/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799352112460.jpg": {
+      "bytes": 242171,
+      "sha256": "caa01b8d5a461b82291bed4e5d9c1d9bca9f2da109e01fc274f67aa725889e1c"
+    },
+    "dataset/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799332154844.jpg": {
+      "bytes": 195587,
+      "sha256": "6b7ba5058b0132b3b2eb43d5198aab1472975bcc80a0c1707af41bc7404c3415"
+    },
+    "dataset/samples/CAM_FRONT_LEFT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_LEFT__1542799352104844.jpg": {
+      "bytes": 197404,
+      "sha256": "073a34579b21d49002e97da292b270f30fede316d2866d19a4c47ee87f3d58f2"
+    },
+    "dataset/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799332170339.jpg": {
+      "bytes": 268262,
+      "sha256": "2eb016ada796cea630f3757513cca64f5a1fa22c230a5e324c6c1dc1495fb22a"
+    },
+    "dataset/samples/CAM_FRONT_RIGHT/n015-2018-11-21-19-21-35+0800__CAM_FRONT_RIGHT__1542799352120419.jpg": {
+      "bytes": 224895,
+      "sha256": "6f6b2cd723ef300588465b9a01de34b3fb59962bbbe8a92e9f352bff9e5ad564"
+    },
+    "dataset/samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799332199210.pcd.bin": {
+      "bytes": 694400,
+      "sha256": "9888416844ab4c69ee87f1c0abb4137d86c305da13f55bbaa10e29e679d8c9a9"
+    },
+    "dataset/samples/LIDAR_TOP/n015-2018-11-21-19-21-35+0800__LIDAR_TOP__1542799352148383.pcd.bin": {
+      "bytes": 695040,
+      "sha256": "a9b18961e3ad1e1075d25079274a56148173f11829212f9fde01152f58822738"
+    },
+    "ego_pose.json": {
+      "bytes": 4418,
+      "sha256": "a4408c1005851579cf2dda481810757f3353f2f34a7ac86b23e39599310a029b"
+    },
+    "predictions/lidar.json": {
+      "bytes": 195303,
+      "sha256": "de3080de18ace4437df32bae11b963812072f177364494eab5f87deeb0b5f725"
+    },
+    "predictions/lidar_camera.json": {
+      "bytes": 206994,
+      "sha256": "174afd01f0a3d6a6348222c5ac1fe654ff345f62c939f54e58624f6c2b40d8a4"
+    },
+    "sample_data.json": {
+      "bytes": 7889,
+      "sha256": "1b6ac3760ae92cacdc4c26634575e1e4ac1f15a993d4733a3695c31956c455ea"
+    },
+    "source_verification.json": {
+      "bytes": 1409,
+      "sha256": "8c4471be5a58b43a9828a8b49e4091e1d5b2bdb71d87520ca9119ccbe7a4cf7c"
+    }
+  },
+  "scope": "Two outcome-blind night candidates; image review and diagnostic matching pending."
+}

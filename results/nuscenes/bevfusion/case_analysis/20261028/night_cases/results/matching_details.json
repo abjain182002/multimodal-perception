@@ -1,0 +1,464 @@
+[
+  {
+    "scene": "scene-1059",
+    "model": "lidar",
+    "threshold": 0.1,
+    "matches": [
+      {
+        "prediction_index": 0,
+        "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e"
+      },
+      {
+        "prediction_index": 1,
+        "annotation_token": "0fa3e6a86eca48ee8c8a691559a4b887"
+      },
+      {
+        "prediction_index": 2,
+        "annotation_token": "26549a67d1e64106a59d359c5c8e8f79"
+      },
+      {
+        "prediction_index": 5,
+        "annotation_token": "fae28cfa3f564ec3a464ac0fa178db6e"
+      }
+    ],
+    "false_positive_boxes": [
+      {
+        "sample_token": "eb82a835419149aeae82c5e8ea64377b",
+        "translation": [
+          2452.6318236262737,
+          2027.6415837307006,
+          0.17978234813775076
+        ],
+        "size": [
+          0.7657040953636169,
+          2.211071252822876,
+          1.331878662109375
+        ],
+        "rotation": [
+          0.5730004590836708,
+          -0.009916931192082964,
+          -0.005951414396170631,
+          0.8194734340003457
+        ],
+        "velocity": [
+          0.00016177817869841545,
+          0.00012699071152847828
+        ],
+        "detection_name": "motorcycle",
+        "detection_score": 0.1071503683924675,
+        "attribute_name": "cycle.without_rider",
+        "score": 0.1071503683924675,
+        "class": "motorcycle"
+      }
+    ],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 5,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 142,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1059",
+    "model": "lidar",
+    "threshold": 0.3,
+    "matches": [
+      {
+        "prediction_index": 0,
+        "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e"
+      },
+      {
+        "prediction_index": 1,
+        "annotation_token": "0fa3e6a86eca48ee8c8a691559a4b887"
+      }
+    ],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [
+      "fae28cfa3f564ec3a464ac0fa178db6e",
+      "26549a67d1e64106a59d359c5c8e8f79"
+    ],
+    "gt_filter": {
+      "original": 5,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 142,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1059",
+    "model": "lidar",
+    "threshold": 0.5,
+    "matches": [
+      {
+        "prediction_index": 0,
+        "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e"
+      }
+    ],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [
+      "fae28cfa3f564ec3a464ac0fa178db6e",
+      "26549a67d1e64106a59d359c5c8e8f79",
+      "0fa3e6a86eca48ee8c8a691559a4b887"
+    ],
+    "gt_filter": {
+      "original": 5,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 142,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1059",
+    "model": "lidar_camera",
+    "threshold": 0.1,
+    "matches": [
+      {
+        "prediction_index": 0,
+        "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e"
+      },
+      {
+        "prediction_index": 1,
+        "annotation_token": "0fa3e6a86eca48ee8c8a691559a4b887"
+      },
+      {
+        "prediction_index": 4,
+        "annotation_token": "fae28cfa3f564ec3a464ac0fa178db6e"
+      }
+    ],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [
+      "26549a67d1e64106a59d359c5c8e8f79"
+    ],
+    "gt_filter": {
+      "original": 5,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 155,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1059",
+    "model": "lidar_camera",
+    "threshold": 0.3,
+    "matches": [
+      {
+        "prediction_index": 0,
+        "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e"
+      },
+      {
+        "prediction_index": 1,
+        "annotation_token": "0fa3e6a86eca48ee8c8a691559a4b887"
+      }
+    ],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [
+      "fae28cfa3f564ec3a464ac0fa178db6e",
+      "26549a67d1e64106a59d359c5c8e8f79"
+    ],
+    "gt_filter": {
+      "original": 5,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 155,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1059",
+    "model": "lidar_camera",
+    "threshold": 0.5,
+    "matches": [
+      {
+        "prediction_index": 0,
+        "annotation_token": "8956363c477e43c3bd4efc0eb6a28e2e"
+      },
+      {
+        "prediction_index": 1,
+        "annotation_token": "0fa3e6a86eca48ee8c8a691559a4b887"
+      }
+    ],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [
+      "fae28cfa3f564ec3a464ac0fa178db6e",
+      "26549a67d1e64106a59d359c5c8e8f79"
+    ],
+    "gt_filter": {
+      "original": 5,
+      "range_removed": 1,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 155,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1060",
+    "model": "lidar",
+    "threshold": 0.1,
+    "matches": [],
+    "false_positive_boxes": [
+      {
+        "sample_token": "e0e5ebc17c73465181cab1383606e5f5",
+        "translation": [
+          2445.234973950184,
+          2136.101330976965,
+          0.5933439137532007
+        ],
+        "size": [
+          0.6905966401100159,
+          0.7661381959915161,
+          1.7682499885559082
+        ],
+        "rotation": [
+          0.9405323509854551,
+          -0.006234885350555809,
+          0.012253618276341345,
+          -0.33942579718338484
+        ],
+        "velocity": [
+          1.0321283472933427,
+          -0.6569848341909257
+        ],
+        "detection_name": "pedestrian",
+        "detection_score": 0.4893230199813843,
+        "attribute_name": "pedestrian.moving",
+        "score": 0.4893230199813843,
+        "class": "pedestrian"
+      }
+    ],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 0,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 135,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1060",
+    "model": "lidar",
+    "threshold": 0.3,
+    "matches": [],
+    "false_positive_boxes": [
+      {
+        "sample_token": "e0e5ebc17c73465181cab1383606e5f5",
+        "translation": [
+          2445.234973950184,
+          2136.101330976965,
+          0.5933439137532007
+        ],
+        "size": [
+          0.6905966401100159,
+          0.7661381959915161,
+          1.7682499885559082
+        ],
+        "rotation": [
+          0.9405323509854551,
+          -0.006234885350555809,
+          0.012253618276341345,
+          -0.33942579718338484
+        ],
+        "velocity": [
+          1.0321283472933427,
+          -0.6569848341909257
+        ],
+        "detection_name": "pedestrian",
+        "detection_score": 0.4893230199813843,
+        "attribute_name": "pedestrian.moving",
+        "score": 0.4893230199813843,
+        "class": "pedestrian"
+      }
+    ],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 0,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 135,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1060",
+    "model": "lidar",
+    "threshold": 0.5,
+    "matches": [],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 0,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 135,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1060",
+    "model": "lidar_camera",
+    "threshold": 0.1,
+    "matches": [],
+    "false_positive_boxes": [
+      {
+        "sample_token": "e0e5ebc17c73465181cab1383606e5f5",
+        "translation": [
+          2445.218891809349,
+          2136.0918906134425,
+          0.6101584956569862
+        ],
+        "size": [
+          0.672268271446228,
+          0.7488558292388916,
+          1.7252123355865479
+        ],
+        "rotation": [
+          0.9464271149953103,
+          -0.006015706661519529,
+          0.012362695076697947,
+          -0.32262469069409005
+        ],
+        "velocity": [
+          1.03438571422907,
+          -0.6285791102337958
+        ],
+        "detection_name": "pedestrian",
+        "detection_score": 0.47634953260421753,
+        "attribute_name": "pedestrian.moving",
+        "score": 0.47634953260421753,
+        "class": "pedestrian"
+      }
+    ],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 0,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 139,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1060",
+    "model": "lidar_camera",
+    "threshold": 0.3,
+    "matches": [],
+    "false_positive_boxes": [
+      {
+        "sample_token": "e0e5ebc17c73465181cab1383606e5f5",
+        "translation": [
+          2445.218891809349,
+          2136.0918906134425,
+          0.6101584956569862
+        ],
+        "size": [
+          0.672268271446228,
+          0.7488558292388916,
+          1.7252123355865479
+        ],
+        "rotation": [
+          0.9464271149953103,
+          -0.006015706661519529,
+          0.012362695076697947,
+          -0.32262469069409005
+        ],
+        "velocity": [
+          1.03438571422907,
+          -0.6285791102337958
+        ],
+        "detection_name": "pedestrian",
+        "detection_score": 0.47634953260421753,
+        "attribute_name": "pedestrian.moving",
+        "score": 0.47634953260421753,
+        "class": "pedestrian"
+      }
+    ],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 0,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 139,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  },
+  {
+    "scene": "scene-1060",
+    "model": "lidar_camera",
+    "threshold": 0.5,
+    "matches": [],
+    "false_positive_boxes": [],
+    "missed_annotation_tokens": [],
+    "gt_filter": {
+      "original": 0,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    },
+    "pred_filter": {
+      "original": 139,
+      "range_removed": 0,
+      "zero_points_removed": 0,
+      "rack_removed": 0
+    }
+  }
+]

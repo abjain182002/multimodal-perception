@@ -1,5 +1,7 @@
 # Four-case darkening follow-up — 28 October 2026
 
+**Night-case analysis:** [paired original-image comparisons, all-object diagnostics and critical interpretation](night_cases/README.md) are now complete for the two preselected frames: one positive-object frame and one annotation-negative night/rain frame. No labelled positive night/rain pedestrian test is claimed.
+
 **Metadata completion:** [ten-class frame counts, original visibility bands and the night-case input inventory](metadata_completion/README.md). Visibility and all-class filtering checks are now complete for A–D; night image review remains pending.
 
 **Diagnostic extension:** [eight-class threshold trade-offs, box errors, verified point support and an additional rain-labelled regression](extension/README.md). Exact all-class counts and verified night cases remain pending.

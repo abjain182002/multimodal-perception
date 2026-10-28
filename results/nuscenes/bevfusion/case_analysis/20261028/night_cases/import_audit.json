@@ -1,0 +1,8 @@
+{
+  "status": "NIGHT_TRANSFER_IMPORT_PASS",
+  "archive": "night_case_inputs_20261028T165312048804Z.zip",
+  "bytes": 3569237,
+  "sha256": "e09b902bc7be114021d435c9720c5223947fd9d4b9c74c016c320f5fe3d20f3d",
+  "verified_payload_members": 21,
+  "scope": "Uploaded container and all payload hashes checked; source full predictions were verified in Colab, not recomputed here."
+}

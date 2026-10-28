@@ -1,0 +1,3 @@
+scene,sample_token,annotation_token,class_name,model,nearest_score,nearest_xy_error_m,matched_030,nearest_is_assigned
+scene-1059,eb82a835419149aeae82c5e8ea64377b,8956363c477e43c3bd4efc0eb6a28e2e,car,lidar,0.743353009223938,0.060766046783453036,True,True
+scene-1059,eb82a835419149aeae82c5e8ea64377b,8956363c477e43c3bd4efc0eb6a28e2e,car,lidar_camera,0.7575228810310364,0.07134950844867984,True,True

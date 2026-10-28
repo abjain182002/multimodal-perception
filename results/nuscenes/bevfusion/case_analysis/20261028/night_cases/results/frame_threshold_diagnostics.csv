@@ -1,0 +1,13 @@
+scene,sample_token,model,threshold,gt,tp,fp,fn,precision,recall,scope
+scene-1059,eb82a835419149aeae82c5e8ea64377b,lidar,0.1,4,4,1,0,0.8,1.0,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1059,eb82a835419149aeae82c5e8ea64377b,lidar,0.3,4,2,0,2,1.0,0.5,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1059,eb82a835419149aeae82c5e8ea64377b,lidar,0.5,4,1,0,3,1.0,0.25,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1059,eb82a835419149aeae82c5e8ea64377b,lidar_camera,0.1,4,3,0,1,1.0,0.75,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1059,eb82a835419149aeae82c5e8ea64377b,lidar_camera,0.3,4,2,0,2,1.0,0.5,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1059,eb82a835419149aeae82c5e8ea64377b,lidar_camera,0.5,4,2,0,2,1.0,0.5,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1060,e0e5ebc17c73465181cab1383606e5f5,lidar,0.1,0,0,1,0,0.0,,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1060,e0e5ebc17c73465181cab1383606e5f5,lidar,0.3,0,0,1,0,0.0,,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1060,e0e5ebc17c73465181cab1383606e5f5,lidar,0.5,0,0,0,0,,,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1060,e0e5ebc17c73465181cab1383606e5f5,lidar_camera,0.1,0,0,1,0,0.0,,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1060,e0e5ebc17c73465181cab1383606e5f5,lidar_camera,0.3,0,0,1,0,0.0,,ten-class diagnostic at XY <2 m; not AP/NDS
+scene-1060,e0e5ebc17c73465181cab1383606e5f5,lidar_camera,0.5,0,0,0,0,,,ten-class diagnostic at XY <2 m; not AP/NDS

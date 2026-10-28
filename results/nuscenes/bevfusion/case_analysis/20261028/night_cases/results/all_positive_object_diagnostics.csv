@@ -1,0 +1,9 @@
+scene,model,annotation_token,class_name,visibility_token,num_lidar_pts,ego_xy_distance_m,nearest_same_class_score,matched_010,matched_030,matched_050
+scene-1059,lidar,fae28cfa3f564ec3a464ac0fa178db6e,car,1,4,28.44572990369332,0.1456187516450882,True,False,False
+scene-1059,lidar,26549a67d1e64106a59d359c5c8e8f79,car,1,7,33.432252498825406,0.29624730348587036,True,False,False
+scene-1059,lidar,0fa3e6a86eca48ee8c8a691559a4b887,car,4,110,15.87056257018094,0.43613824248313904,True,True,False
+scene-1059,lidar,8956363c477e43c3bd4efc0eb6a28e2e,car,4,147,9.54226240884872,0.743353009223938,True,True,True
+scene-1059,lidar_camera,fae28cfa3f564ec3a464ac0fa178db6e,car,1,4,28.44572990369332,0.10572714358568192,True,False,False
+scene-1059,lidar_camera,26549a67d1e64106a59d359c5c8e8f79,car,1,7,33.432252498825406,0.08023367822170258,False,False,False
+scene-1059,lidar_camera,0fa3e6a86eca48ee8c8a691559a4b887,car,4,110,15.87056257018094,0.516825258731842,True,True,True
+scene-1059,lidar_camera,8956363c477e43c3bd4efc0eb6a28e2e,car,4,147,9.54226240884872,0.7575228810310364,True,True,True
