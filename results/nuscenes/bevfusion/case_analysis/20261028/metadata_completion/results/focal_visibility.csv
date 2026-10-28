@@ -1,0 +1,5 @@
+case,class_name,sample_token,annotation_token,visibility_token,visibility_description,annotation_lidar_points,annotation_radar_points
+A,truck,b92ee1ed90c242d18bce9a8fdbbeb8d8,bb9bb83d2efc4810b70e37ffe39d77af,4,visibility of whole object is between 80 and 100%,73,1
+B,car,0f483d8f22694132946c831f5d644cd7,752010f1049c4daaae49d15a96e7efe6,4,visibility of whole object is between 80 and 100%,2,0
+C,bus,3b156a6793924c4497f394a3e34ddbf0,c75b0b048b92413e8ea2a49a84846a0c,3,visibility of whole object is between 60 and 80%,65,0
+D,traffic_cone,e13ec49d20974a01942b83317fcbfa46,e43273b97a674907b60f9af7cef5dc4a,4,visibility of whole object is between 80 and 100%,1,0

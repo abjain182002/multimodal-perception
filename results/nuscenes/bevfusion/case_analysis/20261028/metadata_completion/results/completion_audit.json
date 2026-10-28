@@ -1,0 +1,74 @@
+{
+  "status": "TEN_CLASS_DIAGNOSTICS_AND_VISIBILITY_PASS",
+  "metadata_sha256": "40ebf900154cf8656b0b87c55e9ca3b875908bf972453b0f48e3ddbea7d040c1",
+  "ground_truth_checks": [
+    {
+      "case": "A",
+      "ground_truth_filter_counts": {
+        "original": 48,
+        "range_removed": 2,
+        "zero_points_removed": 0,
+        "rack_removed": 0
+      },
+      "filtered_ground_truth_matches_preserved": true,
+      "bicycle_racks": 0
+    },
+    {
+      "case": "B",
+      "ground_truth_filter_counts": {
+        "original": 58,
+        "range_removed": 14,
+        "zero_points_removed": 6,
+        "rack_removed": 0
+      },
+      "filtered_ground_truth_matches_preserved": true,
+      "bicycle_racks": 1
+    },
+    {
+      "case": "C",
+      "ground_truth_filter_counts": {
+        "original": 106,
+        "range_removed": 25,
+        "zero_points_removed": 2,
+        "rack_removed": 0
+      },
+      "filtered_ground_truth_matches_preserved": true,
+      "bicycle_racks": 0
+    },
+    {
+      "case": "D",
+      "ground_truth_filter_counts": {
+        "original": 59,
+        "range_removed": 12,
+        "zero_points_removed": 2,
+        "rack_removed": 0
+      },
+      "filtered_ground_truth_matches_preserved": true,
+      "bicycle_racks": 0
+    }
+  ],
+  "threshold_records": 48,
+  "B_half_vs_clean": {
+    "gained_gt_indices": [
+      26
+    ],
+    "lost_gt_indices": [],
+    "unchanged_matched_gt_indices": [
+      4,
+      5,
+      8,
+      12,
+      16,
+      17,
+      19,
+      21,
+      22,
+      24,
+      27,
+      28,
+      29,
+      31
+    ]
+  },
+  "scope": "Local fixed-threshold matching diagnostics; not official nuScenes AP/NDS or an independent evaluator validation."
+}
