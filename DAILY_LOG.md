@@ -531,3 +531,10 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Checked exact 600-token / 150-scene / 9,600-path identity and all recorded sensor hashes/sizes/sources against immutable provenance. Colab restored 4,700,293,684 bytes in 1,100.47 seconds and recorded 48,689,233,920 free bytes. No local-host raw sensor rehash claim.
 - Prepared eight strict-deterministic inference runs with shared condition caches, full annotation invariance, accepted pilot gates, per-frame records, pinned upstream NuScenes JSON export and paired 600-frame point checks. Drive model artifacts are verified before only temporary caches are removed.
 - Added progress streaming, retained-session cache/frame/artifact reuse, interrupted-receipt recovery and partial-failure preservation. CPU helper checks/syntax pass; full GPU execution, CPU AP/NDS evaluation and figures remain pending.
+
+## 29 October 2026 — all eight fog inference runs completed and summary verified
+
+- Accepted complete summary ZIP (4,301,146 bytes, SHA-256 `197843a404229dd12443af13b271e941a6f89f75c97a47bfb8a4a7a1e5dc065f`), all 31 payloads/CRC/exact member set. Published complete summary and local review.
+- Verified all eight combinations and 600-token orders, 2,400 paired point hashes, 38,400 raw-file/condition audit identities and deployed source hashes. All recorded pilot/strict execution/cache/annotation gates pass. Eight complete Drive artifact receipts are present; full prediction archives still require fresh CPU-stage verification.
+- Prepared self-contained CPU evaluation for a fresh runtime: verify all eight artifacts/frame identities; preserve pre-metric protocol; restore hash-verified metadata identical to the prior successful replay root; use the same source-checked SDK/GT filters on exact 600-token subsets; generate metrics, coverage, tables, changes and PNG/PDF curves.
+- Synthetic integrity/padding/report checks pass. No second full-split replay, GPU inference or actual fog accuracy computation was performed in this review. CPU scoring and final interpretation remain pending.

@@ -119,3 +119,5 @@ Fog repeat diagnostic: identical-input default execution varied at projected dep
 Fog pilot milestone: **strict-deterministic paired smoke accepted** for both models at baseline and all three fog levels, with unchanged repeat tolerances and equal packed point hashes. [Verified evidence and full-input restoration step](results/nuscenes/bevfusion/fog/20261029/README.md#strict-paired-pilot-accepted-full-input-restoration-next). Full 600-frame fog accuracy remains pending.
 
 Full fog inputs: **all 9,600 sensor files restored and verified** for the unchanged 600 frames / 150 scenes. [Restoration evidence and eight-run launcher](results/nuscenes/bevfusion/fog/20261029/README.md#full-600-frame-inputs-accepted-eight-run-inference-launcher-prepared). Full inference and accuracy evaluation remain pending.
+
+Fog inference milestone: **all eight 600-frame runs completed**, with saved summary hashes and paired-input audits verified. [Completed evidence and CPU evaluation](results/nuscenes/bevfusion/fog/20261029/README.md#full-inference-completed-cpu-accuracy-evaluation-prepared). GPU work is complete according to the verified records; CPU accuracy scoring remains pending.

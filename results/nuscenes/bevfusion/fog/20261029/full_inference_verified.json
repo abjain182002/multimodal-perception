@@ -1,0 +1,20 @@
+{
+  "status": "UPLOADED_FULL_FOG_INFERENCE_SUMMARY_REVIEW_PASS",
+  "summary_sha256": "197843a404229dd12443af13b271e941a6f89f75c97a47bfb8a4a7a1e5dc065f",
+  "bytes": 4301146,
+  "verified_payload_members": 31,
+  "runs": 8,
+  "unique_frames": 600,
+  "scenes": 150,
+  "paired_point_hash_checks": 2400,
+  "raw_file_condition_hash_records_checked": 38400,
+  "all_exact_frozen_tokens": true,
+  "all_recorded_pilot_gates_pass": true,
+  "all_recorded_annotation_invariance_checks_pass": true,
+  "all_run_backup_receipts_present": true,
+  "drive_model_archives_freshly_opened_on_local_host": false,
+  "accuracy_evaluated": false,
+  "scope": "Summary payloads and all cache/input audit identities verified. Eight full prediction archives remain on Drive; the CPU stage must verify them before evaluation. No mAP/NDS claim.",
+  "model_frame_inferences": 4800,
+  "deployed_worker_and_coordinator_hashes_match_pinned_source": true
+}

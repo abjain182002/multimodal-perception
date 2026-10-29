@@ -1,0 +1,14 @@
+{
+  "status": "FOG_CPU_EVALUATION_HELPER_CHECKS_PASS",
+  "checks": [
+    "constructor-only padding preserves input order/content and rejects invalid populations",
+    "raw prediction validation rejects NaNs, invalid scores and noninteger classes",
+    "archive hash/member roundtrip and rejection",
+    "synthetic eight-row/80-class report, own-baseline changes, PNG/PDF rendering",
+    "Python syntax"
+  ],
+  "worker_sha256": "8a9e596abd0a46ca9da0cbe50645f00682ebc211c77860bfd5d5f212d4e39162",
+  "coordinator_sha256": "79e5b7e98d519067636844f0f5546af711903f74f2d225d741a780e81b349b5b",
+  "real_CPU_evaluation_performed": false,
+  "scope": "Synthetic handoff checks; real SDK input/source checks and real accuracy execution remain in Colab."
+}
