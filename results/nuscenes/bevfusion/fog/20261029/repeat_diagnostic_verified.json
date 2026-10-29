@@ -1,0 +1,352 @@
+{
+  "status": "FUSION_REPEAT_DIAGNOSTIC_LOCAL_REVIEW_PASS",
+  "archive_sha256": "4ef30b9a808cabd729edc9ada7116a800ac52b7832a94def2d7ce6d4f51565b2",
+  "archive_bytes": 176119,
+  "verified_payload_members": 23,
+  "modes": {
+    "default": {
+      "recomputed_prediction_comparisons": [
+        {
+          "label_position_mismatches": 6,
+          "bitwise_values_equal": false,
+          "original_positional_check_pass": false,
+          "unmatched_under_original_tolerances": 200
+        },
+        {
+          "label_position_mismatches": 8,
+          "bitwise_values_equal": false,
+          "original_positional_check_pass": false,
+          "unmatched_under_original_tolerances": 200
+        }
+      ],
+      "dataset_reloads_identical": true,
+      "packed_inputs_identical": true,
+      "recorded_intermediate_comparisons": [
+        {
+          "projected_depth_before_dtransform": {
+            "shape": [
+              6,
+              1,
+              256,
+              704
+            ],
+            "sha256": "78e5bdaf352cd57889cc9c227a053f741e51880ec00db01df4e1693bfc01088b",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "view_transform": {
+            "shape": [
+              1,
+              80,
+              180,
+              180
+            ],
+            "sha256": "5b1cc74ca6ac84465f334f949c8065fea9d05895337e0af0183b2bc40a5b398f",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "pts_middle_encoder": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "402a8161282a25c0a82b4abe30d78a1daf9550d610036c414556a523e91de450",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "fusion_layer": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "3cc3aba149ac910bfe0cdaf2542c6a18aeb4b4f16e101fd1f5713510a673070b",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          }
+        },
+        {
+          "projected_depth_before_dtransform": {
+            "shape": [
+              6,
+              1,
+              256,
+              704
+            ],
+            "sha256": "dca11c46f5c52477e368b0eb67e07cb136105ca0aa849434845718823c25a44e",
+            "exact_to_first": false,
+            "different_elements_to_first": 5410,
+            "max_abs_difference_to_first": 37.668131828308105
+          },
+          "view_transform": {
+            "shape": [
+              1,
+              80,
+              180,
+              180
+            ],
+            "sha256": "484fa44a8b5850485a5ff95edecbdcb0643d822ef4a054720304f77ffb115107",
+            "exact_to_first": false,
+            "different_elements_to_first": 1552495,
+            "max_abs_difference_to_first": 0.025578167289495468
+          },
+          "pts_middle_encoder": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "402a8161282a25c0a82b4abe30d78a1daf9550d610036c414556a523e91de450",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "fusion_layer": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "8f94851f7be0b47308c532e4303d52492d2631b38603c63485d697760ed50412",
+            "exact_to_first": false,
+            "different_elements_to_first": 3196485,
+            "max_abs_difference_to_first": 0.04964776523411274
+          }
+        },
+        {
+          "projected_depth_before_dtransform": {
+            "shape": [
+              6,
+              1,
+              256,
+              704
+            ],
+            "sha256": "4fe5361a8413212b55b18b78a344fce8ccdc39aae7b667cb1f60749396a169b9",
+            "exact_to_first": false,
+            "different_elements_to_first": 5124,
+            "max_abs_difference_to_first": 37.69944190979004
+          },
+          "view_transform": {
+            "shape": [
+              1,
+              80,
+              180,
+              180
+            ],
+            "sha256": "36222a4020aecabb355d60a440af147bdb8a1ed6a38aed8b7145cd5ce457fb28",
+            "exact_to_first": false,
+            "different_elements_to_first": 1552765,
+            "max_abs_difference_to_first": 0.035135865211486816
+          },
+          "pts_middle_encoder": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "402a8161282a25c0a82b4abe30d78a1daf9550d610036c414556a523e91de450",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "fusion_layer": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "30dcdbf6d048ca9e7da6d6df30b31f8fc60ffcdde1433bdb3c6aa626c6f38a77",
+            "exact_to_first": false,
+            "different_elements_to_first": 3196795,
+            "max_abs_difference_to_first": 0.04645109176635742
+          }
+        }
+      ],
+      "intermediate_arrays_exported": false
+    },
+    "deterministic": {
+      "recomputed_prediction_comparisons": [
+        {
+          "label_position_mismatches": 0,
+          "bitwise_values_equal": true,
+          "original_positional_check_pass": true,
+          "unmatched_under_original_tolerances": 0
+        },
+        {
+          "label_position_mismatches": 0,
+          "bitwise_values_equal": true,
+          "original_positional_check_pass": true,
+          "unmatched_under_original_tolerances": 0
+        }
+      ],
+      "dataset_reloads_identical": true,
+      "packed_inputs_identical": true,
+      "recorded_intermediate_comparisons": [
+        {
+          "projected_depth_before_dtransform": {
+            "shape": [
+              6,
+              1,
+              256,
+              704
+            ],
+            "sha256": "bd7e3ac9480624ca3ac270f7f3f09e8ebe4de843ffeee91beb32ced00d5f32f4",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "view_transform": {
+            "shape": [
+              1,
+              80,
+              180,
+              180
+            ],
+            "sha256": "697b57aff7d129d25e6afb757fbafa8ddd9239cd099aaf76b501d4c5cba0c360",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "pts_middle_encoder": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "d86ea7cf2bd05a9248acd1ec805644cf4dbce190092f88cc76b65df36f86433b",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "fusion_layer": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "1825c9d63c438bb0aedf1718106c836daf87dd2437fecebc2265b74fed8b15b6",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          }
+        },
+        {
+          "projected_depth_before_dtransform": {
+            "shape": [
+              6,
+              1,
+              256,
+              704
+            ],
+            "sha256": "bd7e3ac9480624ca3ac270f7f3f09e8ebe4de843ffeee91beb32ced00d5f32f4",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "view_transform": {
+            "shape": [
+              1,
+              80,
+              180,
+              180
+            ],
+            "sha256": "697b57aff7d129d25e6afb757fbafa8ddd9239cd099aaf76b501d4c5cba0c360",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "pts_middle_encoder": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "d86ea7cf2bd05a9248acd1ec805644cf4dbce190092f88cc76b65df36f86433b",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "fusion_layer": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "1825c9d63c438bb0aedf1718106c836daf87dd2437fecebc2265b74fed8b15b6",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          }
+        },
+        {
+          "projected_depth_before_dtransform": {
+            "shape": [
+              6,
+              1,
+              256,
+              704
+            ],
+            "sha256": "bd7e3ac9480624ca3ac270f7f3f09e8ebe4de843ffeee91beb32ced00d5f32f4",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "view_transform": {
+            "shape": [
+              1,
+              80,
+              180,
+              180
+            ],
+            "sha256": "697b57aff7d129d25e6afb757fbafa8ddd9239cd099aaf76b501d4c5cba0c360",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "pts_middle_encoder": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "d86ea7cf2bd05a9248acd1ec805644cf4dbce190092f88cc76b65df36f86433b",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          },
+          "fusion_layer": {
+            "shape": [
+              1,
+              256,
+              180,
+              180
+            ],
+            "sha256": "1825c9d63c438bb0aedf1718106c836daf87dd2437fecebc2265b74fed8b15b6",
+            "exact_to_first": true,
+            "different_elements_to_first": 0,
+            "max_abs_difference_to_first": 0.0
+          }
+        }
+      ],
+      "intermediate_arrays_exported": false
+    }
+  },
+  "interpretation": "Variation was observed at projected depth with identical inputs under default execution; strict PyTorch determinism removed all observed intermediate/prediction variation in three baseline forwards on this T4 pilot. Ordering alone does not explain the default outputs.",
+  "limitations": "Intermediate comparisons are recorded GPU summaries, not recomputed depth arrays. Exact CUDA-kernel attribution and cross-hardware reproducibility are not established. No fog-level or full-study accuracy conclusion."
+}

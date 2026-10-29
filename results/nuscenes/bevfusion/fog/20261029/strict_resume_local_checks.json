@@ -1,0 +1,11 @@
+{
+  "status": "STRICT_RESUME_LOCAL_HELPER_CHECKS_PASS",
+  "checks": [
+    "manifest/hash round trip",
+    "wrong archive hash rejected",
+    "unexpected member rejected",
+    "Python syntax compilation"
+  ],
+  "gpu_execution_performed": false,
+  "script_sha256": "5ea98a7e1a0280c13d8cb0643f976e19033d0311a201c0f25b49a87435fe16f0"
+}
