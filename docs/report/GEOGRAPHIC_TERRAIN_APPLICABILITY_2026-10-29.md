@@ -4,7 +4,7 @@
 
 The project evaluates object detection on specified benchmark data and controlled corruptions; it does not validate operation in every city, terrain or weather condition. A pipeline may accept correctly formatted inputs from a new region and produce boxes without preserving detection accuracy. Detection results also do not establish safe navigation, braking or manipulation.
 
-The official nuScenes documentation identifies Boston Seaport and Singapore's One North, Queenstown and Holland Village as collection locations [1]. Neither Delhi nor Glasgow nor a dedicated mountainous deployment was evaluated here. This does not imply that every benchmark road is flat. No terrain-gradient strata or mountain-route performance measurements were constructed.
+The official nuScenes documentation identifies Boston Seaport and Singapore's One North, Queenstown and Holland Village as collection locations [1]. Transfer to new target regions or a dedicated mountainous deployment was not evaluated here. This does not imply that every benchmark road is flat. No terrain-gradient strata or mountain-route performance measurements were constructed.
 
 ## Region and terrain discussion matrix
 
@@ -14,7 +14,7 @@ The following are prospective failure mechanisms and validation needs, not measu
 |---|---|---|
 | Hills, steep gradients and banked roads | Changed road/vehicle orientation, visibility at crests and bends, and objects at different elevations may change the inputs and detection geometry. | No controlled terrain study. Camera yaw perturbations test miscalibration; they do not simulate road gradients. |
 | Rural or mountain routes | Different scenery, road layout, vegetation, object frequencies and potentially unfamiliar hazards may differ from the benchmark distribution. | Urban benchmark results do not establish rural or mountain-route accuracy. |
-| New city or country | Traffic mix, object appearance, road markings, layouts and acquisition conditions can differ. | Natural rain/night groups describe conditions within the evaluated dataset; they are not Delhi/Glasgow transfer tests. |
+| New city or country | Traffic mix, object appearance, road markings, layouts and acquisition conditions can differ. | Natural rain/night groups describe conditions within the evaluated dataset; they are not tests of transfer to new regions. |
 | New weather or combinations | Visibility and measurement degradation may differ from the tested effects and severity scales. | Rain/night observations and synthetic fog support bounded claims. Real fog, glare, snow, wind, dust and disaster performance remain unvalidated. |
 | Different vehicle, robot or sensor rig | Camera intrinsics, sensor placement, point characteristics, timing and platform movement may differ. | Exact sensor formatting, calibration, synchronization and coordinate transforms must be checked before model use. Existing corruption studies do not validate a replacement rig. |
 | Unfamiliar objects and terrain hazards | Fixed detection taxonomies do not cover every obstacle or surface hazard. | Object detection alone does not establish pothole, cliff-edge, landslide, flood-depth or traversability estimation. |
