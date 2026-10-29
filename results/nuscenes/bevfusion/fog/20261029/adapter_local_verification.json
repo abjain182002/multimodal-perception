@@ -1,0 +1,18 @@
+{
+  "status": "FOG_ADAPTER_AND_GPU_HELPERS_CPU_CHECKS_PASS",
+  "python": "3.10.22",
+  "numpy": "1.26.4",
+  "opencv": "4.11.0",
+  "unittest_checks": 4,
+  "real_camera_reference_cases": 18,
+  "real_raw_lidar_reference_cases": 30,
+  "synthetic_boundary_cases": 3,
+  "local_GPU_execution": false,
+  "checks": [
+    "Caller RNG preservation, identity and deterministic file seeds",
+    "Raw feature type validation and numeric-only table loader",
+    "Ambiguous annotation-path rejection",
+    "Four-condition pilot cache with real inputs and synthetic 600-row annotation; non-path geometry preserved"
+  ],
+  "GPU_setup_provenance": "Adapted previously exercised project stack; current scripts statically compiled, actual fog-session GPU setup/forward still pending."
+}

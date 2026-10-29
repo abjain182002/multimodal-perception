@@ -1,5 +1,13 @@
 # Daily Project Log
 
+## 29 October 2026 — real fog CPU pilot validated; GPU smoke prepared
+
+- Verified uploaded 5,161,010-byte preflight ZIP SHA-256 9fd0f95619b8e4d19ef9a4c6432e332a90d75281c3a303159e76581bdb6a8126 and all 31 payload hashes. All 9,600 filenames are available, but full input-content verification remains separate. Six pilot cameras and ten raw scans remain private.
+- Accelerated adapter matches pinned source exactly for 18 full-resolution RGB uint8 outputs and 30 raw float32 scan outputs. Three synthetic radius-boundary cases, deterministic repeats, identity, finite values, fifth-feature retention and lossless PNG round-trips pass.
+- Recorded per-file RNG mapping and PNG encoding amendment before inference. No extra clipping of the source fog intensity/noise behaviour. Created a visually checked input-only camera/BEV composite; no detector outcomes shown.
+- Four CPU helper tests pass, including path ambiguity handling and preservation of non-path annotation geometry in a synthetic 600-row-to-pilot cache preparation. GPU scripts compile but have not executed locally.
+- Prepared isolated previously exercised PyTorch/CUDA stack restoration, original-source/pilot re-verification, strict two-checkpoint loading and fixed four-condition one-frame GPU smoke. Success/failure evidence is copied and hash-verified on Drive. Real GPU execution, full-study input validation, 600-frame fog inference and accuracy evaluation remain pending.
+
 ## 29 October 2026 — bounded fog extension started
 
 - Reviewed pinned MultiCorrupt camera/LiDAR fog implementations and converters. Raw-scan coordinate processing and all historical sweeps are required; camera and LiDAR benchmark severities are not one calibrated physical visibility distance.

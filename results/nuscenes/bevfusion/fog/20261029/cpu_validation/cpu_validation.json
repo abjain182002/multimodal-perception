@@ -1,0 +1,30 @@
+{
+  "status": "FOG_REAL_PILOT_CPU_SOURCE_EQUIVALENCE_PASS",
+  "preflight_zip_sha256": "9fd0f95619b8e4d19ef9a4c6432e332a90d75281c3a303159e76581bdb6a8126",
+  "payload_hashes_verified": 31,
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "source_camera_equivalence_checks": 18,
+  "source_raw_lidar_equivalence_checks": 30,
+  "synthetic_boundary_checks": 3,
+  "output_comparison": "Exact RGB uint8 and raw float32 output equality, not merely approximate float closeness.",
+  "deterministic_repeat_pass": true,
+  "unperturbed_identity_pass": true,
+  "camera_clean_and_fog_PNG_roundtrip_pass": true,
+  "input_immutability_pass": true,
+  "raw_fifth_feature_preserved": true,
+  "finite_output_pass": true,
+  "method_seed": "SHA-256 of UTF-8 '20261029:fog:{camera|lidar}:{severity}:{relative_path}', first 8 bytes unsigned big endian; camera uses this modulo 2^32 with legacy NumPy MT19937, LiDAR uses Generator(PCG64). Independently seeded severities. Same raw file/level shared across models.",
+  "encoding_amendment": "Decode original JPEG with pinned OpenCV, fog in RGB, cast uint8 as upstream. Use lossless PNG for both unperturbed and fog caches. Unlike upstream JPEG output, this adds no JPEG re-encoding confound; not a bitwise reproduction of the released dataset.",
+  "arithmetic_amendment": "Vectorise final camera pixel loop and LiDAR response loop; preserve source noise generation, lookup bins, RNG draw sequence and output dtypes. Equality demonstrated on this pilot and listed boundary cases, not proven for every possible input.",
+  "reference_loading": "Reviewed AST definitions from hash-verified source, numeric-only lookup unpickler; no monolithic snow dependency import or pickle5 requirement.",
+  "upstream_behaviour_retained": "No extra clipping of fog intensities or v1 range-noise factors; preserve upstream numerical behaviour, not a calibrated physical sensor model.",
+  "packages": {
+    "numpy": "1.26.4",
+    "opencv": "4.11.0"
+  },
+  "python": "3.10.22",
+  "elapsed_seconds": 137.11,
+  "adapter_sha256": "495a2027eb108cda21ac736a460b478c844f5064e216cab9e9b27b9832693be2",
+  "validation_script_sha256": "ad199a08b7f050225d1030b3ee6cc57f72ee4c13c609ce4ef02c0b15151c0f1e",
+  "scope": "CPU corruption compatibility only. One preselected real frame, no detector inference or accuracy. Timing is local pilot preparation timing, not model runtime or a measured full-study duration."
+}

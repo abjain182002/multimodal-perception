@@ -2,7 +2,21 @@
 
 ## Status
 
-Source review and the CPU preflight/pilot transfer are implemented. Four local standard-library checks cover full-size population validation and a synthetic end-to-end private handoff. Actual source availability, raw-image/point compatibility, corruption timing, GPU smoke and 600-frame inference remain pending. No fog results exist yet.
+Real preflight and CPU corruption compatibility are complete. All 9,600 required sensor paths are available by filename and all 16 preselected pilot files were recovered. Uploaded ZIP SHA-256 `9fd0f95619b8e4d19ef9a4c6432e332a90d75281c3a303159e76581bdb6a8126` (5,161,010 bytes) and all 31 payload hashes pass. Raw inputs remain private. GPU setup/smoke scripts are ready, but no fog detector inference or 600-frame fog accuracy result exists yet.
+
+## Completed CPU compatibility checks
+
+[CPU validation](cpu_validation/cpu_validation.json) and [all 48 real-input checks](cpu_validation/pilot_checks.csv) compare the adapter against hash-verified upstream function definitions on the fixed first frame. All 18 full-resolution camera cases match exactly after uint8 conversion; all 30 raw LiDAR cases match exactly after float32 conversion. Three synthetic range-boundary/zero-radius cases also match. Repeatability, unperturbed identity, caller RNG preservation, source-input immutability, finite output, fifth raw-feature preservation and clean/fog PNG round-trips pass. Four additional helper checks include annotation-path ambiguity rejection and a synthetic 600-row annotation reduced to the same pilot without changing non-path geometry.
+
+The adapter vectorises the final camera pixel loop and LiDAR response loop; source fractal generation, lookup bins, numerical operations and RNG draw sequence are retained. Exact equality is demonstrated on these inputs, not proved universally. Deterministic seeds are SHA-256 of UTF-8 `20261029:fog:{camera|lidar}:{severity}:{relative_path}`, first eight bytes unsigned big endian; camera uses this modulo 2^32 with legacy NumPy MT19937, LiDAR uses PCG64. Severities are independently seeded; each raw file/level is shared between pipelines.
+
+Both unperturbed and fog camera caches use lossless PNG after pinned OpenCV decode. This preserves the RGB uint8 arrays and avoids an additional JPEG re-encoding confound. The upstream converter stores JPEG for these filenames, so this is an explicitly documented benchmark-inspired implementation, not a bitwise reproduction of the released MultiCorrupt dataset. Original image geometry and downstream augmentation remain fixed.
+
+Local median per-image reference/adapter times were 5.975/0.611 seconds; raw-scan times were 0.259/0.00389 seconds. These are local pilot preparation timings, not GPU model latency, full-study wall time or a reproducible hardware benchmark. Upstream numerical behaviour is retained: maximum observed pilot fog intensity is 520.528 (no extra 255 clipping), and up to three output points per tested scan/condition lie beyond 200 m. Finite-output checks pass; these observations reinforce the synthetic-model limitation. Display colours alone are clipped for the figure.
+
+![Fixed camera and raw-scan fog pilot](cpu_validation/pilot_fog_comparison.png)
+
+[Figure PDF](cpu_validation/pilot_fog_comparison.pdf). This shows CAM_FRONT and the first listed raw scan, not accumulated sweeps or detection outcomes. Figure layout was visually reviewed.
 
 The preceding [natural-weather CPU study](../../weather_groups/20261028/completed/README.md) is complete. This is a separate controlled synthetic intervention on the previously frozen 600-frame / 150-scene challenge subset, not another natural-weather stratum.
 
@@ -14,14 +28,14 @@ Planned conditions are unperturbed plus fog severities 1/2/3 for each pipeline: 
 
 ## Published method and implementation boundary
 
-Source: [MultiCorrupt, official author repository](https://github.com/ika-rwth-aachen/MultiCorrupt/tree/39652e35d10dd7c2aed0b71df8c8c7effe9e6349), pinned commit `39652e35d10dd7c2aed0b71df8c8c7effe9e6349`. Preserve its MIT licence with the supplied code. The preflight downloads four source files, three lookup tables and the licence, verifying their exact Git blob hashes. Assets are not executed/deserialised in this stage.
+Source: [MultiCorrupt, official author repository](https://github.com/ika-rwth-aachen/MultiCorrupt/tree/39652e35d10dd7c2aed0b71df8c8c7effe9e6349), pinned commit `39652e35d10dd7c2aed0b71df8c8c7effe9e6349`. Its [MIT licence is retained with this adapter](MULTICORRUPT_LICENSE.txt). The preflight downloads four source files, three lookup tables and the licence, verifying their exact Git blob hashes. Assets are not executed/deserialised in this stage.
 
 - LiDAR source `simulate_fog` applies hard-target attenuation and soft fog responses using lookup tables. Severity alpha/beta pairs are (0.02, 0.008), (0.03, 0.008), (0.06, 0.05); converter calls use noise=10, default noise variant v1 and no gain. The converter loads raw float32 Nx5 scans, also corrupts all preceding sweeps when enabled, then stores float32 output. Apply this before scan-coordinate transformations, sweep aggregation, voxelisation and fusion depth construction. Preserve the fifth raw feature and subsequent loader time-lag construction.
 - Camera source `fog` combines fractal haze with a spatial distance heuristic, using beta 0.0005/0.001/0.002. The converter decodes raw-resolution BGR images, converts to RGB, then applies the effect before output encoding. It is not a depth-calibrated atmospheric reconstruction.
 - Camera and LiDAR severity indices are benchmark settings, not a shared physical visibility distance. Report a synthetic benchmark fog challenge rather than verified real-fog robustness or a physically calibrated joint atmosphere.
 - The upstream code uses legacy `np.float_` and `pickle5`, global RNG state and per-pixel/per-point loops. These are compatibility, reproducibility and preparation-time issues to test. Do not silently change arithmetic, coordinate frames, noise handling or intensities for speed. Any accelerated/adapted implementation must be checked against the pinned reference and documented before full inference.
 
-Exact RNG mapping/coupling, image encoding, any acceleration and implementation acceptance checks will be frozen in a follow-on implementation protocol after compatibility tests. The population, pilot-selection rule and intended published severity levels are fixed now. This distinction prevents calling an unvalidated implementation a completed frozen experiment.
+RNG mapping, lossless encoding and acceleration have now passed the bounded CPU checks above. The GPU launcher preserves a follow-on implementation protocol on Drive before inference, including those choices and fixed smoke acceptance rules. Population, pilot-selection rule and published severity levels remain unchanged.
 
 ## CPU preflight procedure
 
@@ -41,4 +55,14 @@ Arguments: `--base` preserved project directory, `--work` local work parent, rep
 
 Run `python check_preflight.py`. Four checks cover complete populations, historical keyframes under `samples/`, malformed sensor counts, safe/ambiguous ZIP indexing, bounded project catalogue, and a synthetic 600-frame / 150-scene transfer with 16 recovered pilot files, pinned opaque assets, no deserialisation and verified output members. These are handoff checks, not fog arithmetic validation.
 
-Next: CPU source-equivalence and determinism tests, real pilot decode/feature checks and timing; final implementation protocol; verified full input restoration; GPU clean/fog smoke; then the eight bounded inference runs and unchanged CPU evaluator. Snow and natural disasters remain outside this measured extension unless explicitly added later.
+The real CPU validation is reproducible with `validate_fog_pilot.py PREFLIGHT_ZIP --output NEW_DIRECTORY` in NumPy 1.26.4 / OpenCV 4.11.0 / Python 3.10.22; the report records source hashes. Run `check_fog_adapter.py --pilot EXTRACTED_PRIVATE_PILOT_DIRECTORY` for the four state/path/annotation preparation checks. Those additional checks use real pilot pixels/scans with synthetic annotation geometry and do not evaluate a detector.
+
+## Next: one-frame GPU smoke
+
+[run_fog_gpu_smoke_colab.py](run_fog_gpu_smoke_colab.py) requires a Colab GPU runtime (T4 is the previously used GPU) and mounted project Drive. Pass its full published `--code-commit`. It verifies the exact pilot ZIP and published source blobs, preserves the implementation protocol before inference, freshly hashes the original pilot source archive against its known SHA-256, and rechecks the 16 source members. It restores the exact 600-row Kaggle annotation export (SHA-256 `4f11db818b8d5504fc2bb432fcd51a28b09fec8d0b9c4063f2a017413fbfa99d`) and constructs only a one-frame derivative for each smoke condition. Other annotation fields are recursively checked unchanged.
+
+[setup_fog_gpu.py](setup_fog_gpu.py) adapts the project's previously exercised isolated stack: Python 3.10.22, PyTorch 2.1.2+cu121, MMCV 2.1.0, MMDetection 3.2.0, MMEngine 0.10.7, spconv-cu120 2.3.6, cumm-cu120 0.4.11 and detector source commit `fe25f7a51d36e3702f961e198894580d83c4387b`. It installs GCC/G++ 11 if missing, selects them through local compiler aliases, downloads the hash-verified CUDA 12.1 toolkit installer into the isolated folder, builds BEVFusion operations, and executes the preserved CUDA NMS/pooling/voxel checks. Only the toolkit is installed; no GPU-driver installer option is used. [NVIDIA documents the custom toolkit installation option](https://docs.nvidia.com/cuda/archive/12.1.0/cuda-installation-guide-linux/#runfile-installation); this does not establish official support for every future Colab host. Actual build/operation checks must pass in the user's GPU session.
+
+The [smoke worker](fog_gpu_smoke.py) prepares all six lossless camera inputs and all ten raw scans at levels 0/1/2/3; retains nine historical sweep records and current scan identity from the original annotation; strictly loads both hash-verified checkpoints; and forwards each condition. It checks valid finite boxes/scores/labels, clean repeat agreement and equal packed point tensors between models per condition. There are eight distinct one-frame model/condition forwards plus a clean repeat for each model. No GT AP/NDS is computed and output counts are not a performance acceptance criterion.
+
+GPU setup downloads/builds can take substantially longer than the actual one-frame forward passes. Setup scripts compile locally and the CPU annotation/cache helpers pass, but the fog-session GPU setup and smoke have not yet run. Any failure stops the workflow and preserves logs in a manifest-verified Drive ZIP. Success similarly preserves only code/configuration, audits and pilot predictions; raw sensors, annotation pickles, environments and checkpoints are excluded from the evidence ZIP. Full 600-frame input-content verification, eight full inference runs and unchanged CPU evaluation follow after smoke evidence review. Snow and natural disasters remain outside this measured extension unless explicitly added later.
