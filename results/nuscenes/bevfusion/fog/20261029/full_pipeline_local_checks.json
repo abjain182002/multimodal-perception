@@ -1,0 +1,13 @@
+{
+  "status": "FULL_FOG_PIPELINE_CPU_HELPER_CHECKS_PASS",
+  "checks": [
+    "baseline PNG/raw cache roundtrip, reusable cache and wrong source hash rejection",
+    "multi-row annotation path-only rewrite, NaNs/calibration preserved and source immutable",
+    "immutable artifact roundtrip and partial-file exclusion; extra member rejected",
+    "600-token completed-artifact recovery/pair check; changed protocol rejected",
+    "both scripts compile"
+  ],
+  "worker_sha256": "912a7ae4d50787f500f6e18734b8354876ca8b791eb3ff14b0167de5bb76b8df",
+  "coordinator_sha256": "5be938afc09bf61ba3b6e6531337fba183e35dc2895816ce657a2ee0ed32892c",
+  "scope": "Synthetic helper checks only; no full-study GPU execution or new fog numerical equivalence claim."
+}

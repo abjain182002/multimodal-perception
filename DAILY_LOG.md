@@ -524,3 +524,10 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Both models passed baseline plus three fog conditions, original baseline positional repeats and strict execution checks. Rechecked all eight saved prediction arrays for finite/valid values and equal packed point hashes per level; fusion baseline exactly matches the earlier deterministic diagnostic.
 - Accepted only the one-frame implementation gate. No full 600-frame inference or fog mAP/NDS exists yet; old default-execution results remain retained separately.
 - Found immutable prior SHA-256 records for exactly the same 9,600 frozen sensor paths (4,700,293,684 bytes across 15 archives). Prepared an interruption-reusable selected-input restoration script with pinned provenance, fresh per-payload hashes, local write/reuse checks and Drive audit preservation. No fresh whole-archive hash claim, installation or inference. Six local helper/syntax checks passed; real full restoration pending.
+
+## 29 October 2026 — all frozen fog inputs restored; bounded full inference prepared
+
+- Verified restoration ZIP SHA-256 `725a06181884d0af1eb43646e43bdb472562ca2f9737402de83a6661c54e5402`, 1,123,825 bytes, all 21 payloads, exact member set and CRC. Published complete derived evidence and local review.
+- Checked exact 600-token / 150-scene / 9,600-path identity and all recorded sensor hashes/sizes/sources against immutable provenance. Colab restored 4,700,293,684 bytes in 1,100.47 seconds and recorded 48,689,233,920 free bytes. No local-host raw sensor rehash claim.
+- Prepared eight strict-deterministic inference runs with shared condition caches, full annotation invariance, accepted pilot gates, per-frame records, pinned upstream NuScenes JSON export and paired 600-frame point checks. Drive model artifacts are verified before only temporary caches are removed.
+- Added progress streaming, retained-session cache/frame/artifact reuse, interrupted-receipt recovery and partial-failure preservation. CPU helper checks/syntax pass; full GPU execution, CPU AP/NDS evaluation and figures remain pending.

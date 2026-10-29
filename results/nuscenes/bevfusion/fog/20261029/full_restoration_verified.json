@@ -1,0 +1,18 @@
+{
+  "status": "UPLOADED_FULL_FOG_RESTORATION_REVIEW_PASS",
+  "archive": "fog_full_input_restoration_20261029T090602713295Z.zip",
+  "bytes": 1123825,
+  "sha256": "725a06181884d0af1eb43646e43bdb472562ca2f9737402de83a6661c54e5402",
+  "verified_payload_members": 21,
+  "samples": 600,
+  "scenes": 150,
+  "exact_frozen_sensor_paths": 9600,
+  "sensor_bytes": 4700293684,
+  "all_saved_sensor_hashes_match_pinned_prior_audit": true,
+  "source_archives": 15,
+  "elapsed_seconds_recorded": 1100.47,
+  "free_local_bytes_recorded": 48689233920,
+  "full_inference_performed": false,
+  "local_raw_sensor_contents_available": false,
+  "scope": "Local review validates evidence, frozen identities and all recorded payload hashes against pinned provenance. Fresh raw sensor-byte checks occurred in Colab, not on this local host."
+}
