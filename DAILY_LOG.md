@@ -546,3 +546,8 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Checked common GT fingerprint, 600 tokens/150 scenes, 12,318 supported annotation instances across all ten classes, worker/launcher source identity, 19 reused metadata hashes, all eight prediction hashes against accepted inference evidence, metric arithmetic and table consistency. Reviewed PNG/PDF plot output.
 - Fresh-baseline mAP (x100) 64.3074 LiDAR / 68.1406 fusion; Fog 1 52.5824/57.1558; Fog 2 43.0942/47.2098; Fog 3 11.1064/12.1456. Both deteriorate substantially; the fusion advantage narrows at Fog 3 and is not universal per class or for own-baseline losses.
 - Preserved the complete CPU ZIP, selected readable metrics, figures, review and critical interpretation in [completed_cpu](results/nuscenes/bevfusion/fog/20261029/completed_cpu/README.md). Real fog, snow, glare, wind and disasters remain unvalidated. No further GPU run is needed to close this bounded study; dissertation synthesis, references, formatting and poster remain.
+
+
+## 29 October 2026 — report discussion matrix for environmental and geographic applicability
+
+Added a linked [writing guide](docs/report/CHALLENGES_LIMITATIONS_MITIGATIONS_2026-10-29.md) organising completed weather/sensor evidence, hilly terrain, regional transfer, deployment limitations, untested weather and candidate mitigations. Explicitly distinguishes measured findings from plausible risks and unvalidated future proposals. Linked it from the terrain applicability notes. No new experiment, performance result or implemented mitigation is claimed; snow/brightness proposals remain unexecuted.

@@ -53,3 +53,8 @@ The completed fog study and natural weather analysis remain unchanged. Synthetic
 [2] Zhou et al., *Monocular 3D Object Detection: An Extrinsic Parameter Free Approach*, CVPR 2021, pp. 7556–7566: https://openaccess.thecvf.com/content/CVPR2021/html/Zhou_Monocular_3D_Object_Detection_An_Extrinsic_Parameter_Free_Approach_CVPR_2021_paper.html . Terrain/pose motivation is specific to that paper's monocular setting.
 
 Project evidence: [completed fog results](../../results/nuscenes/bevfusion/fog/20261029/completed_cpu/README.md), [natural weather groups](NATURAL_WEATHER_GROUPS_2026-10-28.md), and [camera challenges](../../results/nuscenes/bevfusion/camera_challenges/20261016/README.md).
+
+
+## Companion writing guide
+
+Use the [challenges, limitations and candidate mitigations matrix](CHALLENGES_LIMITATIONS_MITIGATIONS_2026-10-29.md) when allocating these arguments across Methods, Discussion, Limitations and Future Work. Mitigations in that guide are proposals requiring validation, not completed project results.
