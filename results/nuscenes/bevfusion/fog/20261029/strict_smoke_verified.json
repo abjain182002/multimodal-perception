@@ -1,0 +1,66 @@
+{
+  "status": "UPLOADED_PAIRED_STRICT_FOG_SMOKE_REVIEW_PASS",
+  "archive": "fog_gpu_smoke_deterministic_20261029T085752261528Z.zip",
+  "bytes": 206111,
+  "sha256": "a3127d6776fd175d5466a3d7272234efcdf3cd3df0aa60cff12d5ec739b3ba6d",
+  "verified_payload_members": 31,
+  "payload_sizes_sha256_crc_exact_membership_pass": true,
+  "prediction_array_checks": [
+    {
+      "model": "lidar",
+      "level": 0,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar",
+      "level": 1,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar",
+      "level": 2,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar",
+      "level": 3,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar_camera",
+      "level": 0,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar_camera",
+      "level": 1,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar_camera",
+      "level": 2,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    },
+    {
+      "model": "lidar_camera",
+      "level": 3,
+      "predictions": 200,
+      "finite_valid_arrays": true
+    }
+  ],
+  "same_packed_lidar_sha256_per_condition": true,
+  "strict_execution_audits_pass": true,
+  "original_positional_baseline_repeat_pass_each_model_recorded": true,
+  "baseline_repeat_arrays_exported": false,
+  "fusion_baseline_exactly_matches_previous_strict_diagnostic": true,
+  "original_worker_and_resume_script_hashes_pass": true,
+  "full_600_frame_inference_performed": false,
+  "scope": "One fixed pilot; finite valid output and recorded clean repeats. No official AP/NDS, accuracy or full-study robustness conclusion. Local review validates saved predictions and audits; baseline repeat arrays were not exported by the original worker."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "FULL_FOG_INPUT_RESTORATION_HELPERS_PASS",
+  "checks": [
+    "new selected payload CRC/SHA verification",
+    "valid existing file reused after hashing",
+    "wrong source hash rejected",
+    "wrong existing file rejected",
+    "ambiguous archive members rejected",
+    "Python syntax"
+  ],
+  "script_sha256": "67ffeff6a7512082643c96453361ba5b19ca108044c737c4fd9a66d0b3705200",
+  "real_full_restoration_performed_locally": false
+}
