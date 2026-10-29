@@ -1,0 +1,83 @@
+{
+  "status": "ALL_PREPARED_METADATA_FILES_HASH_PASS",
+  "root": "/content/fog_cpu_evaluation_20261029/20261029T155657310519Z/metadata_evaluation_only",
+  "files": {
+    "maps/93406b464a165eaba6d9de76ca09f5da.png": {
+      "sha256": "0f125aa902db06fd2ba17cbddd10c602124f59991b9b4061c13e281f2e476373",
+      "bytes": 1784272
+    },
+    "maps/53992ee3023e5494b90c316c183be829.png": {
+      "sha256": "bbbd05286eea0835844548922834781309e0542a75a12f38bf247b04a04c85f3",
+      "bytes": 1060975
+    },
+    "maps/37819e65e09e5547b8a3ceaefba56bb2.png": {
+      "sha256": "55de71c4a70289eba0cbf2c75f8d2f81580e94c422d8d9a7e6b0740ca2f7a289",
+      "bytes": 1410125
+    },
+    "maps/36092f0b03a857c6a3403e25b4b7aab3.png": {
+      "sha256": "05ca03d0ba4bba61d84b4bdb6144abb93ec8923554fe116af4aa859f21af5652",
+      "bytes": 1537492
+    },
+    "v1.0-trainval/ego_pose.json": {
+      "sha256": "3a63a037a71ef508cb7598c3f1eb00512682b4b953a123751b8da4146ed61f5a",
+      "bytes": 16361364
+    },
+    "v1.0-trainval/instance.json": {
+      "sha256": "8f8b19496ce45353874714ce23a9df7f47f48cb6203df2dd456ea0247d146461",
+      "bytes": 16012833
+    },
+    "v1.0-trainval/category.json": {
+      "sha256": "30f64fb175e5bd7db99892d90f9034481bca491f26600c5c0d1a56106b198dfe",
+      "bytes": 4747
+    },
+    "v1.0-trainval/attribute.json": {
+      "sha256": "dc01438363e29188f25785884bb2431a7aa27ba0debbc359cb21cf1f00652210",
+      "bytes": 1147
+    },
+    "v1.0-trainval/calibrated_sensor.json": {
+      "sha256": "67781a5dd7b2504b046ef89d6dcb267b12d1cc91af21f1ec5758624588e99865",
+      "bytes": 3268133
+    },
+    "v1.0-trainval/scene.json": {
+      "sha256": "bdc3211bfbfda652d5e9dab73c45c7132925ca84f869bf45e8e14edeafb1d20b",
+      "bytes": 285132
+    },
+    "v1.0-trainval/log.json": {
+      "sha256": "774c8256554a5569f64660e5f450394ce7e3a82168edfab530edab81f9ae7edc",
+      "bytes": 11968
+    },
+    "v1.0-trainval/map.json": {
+      "sha256": "6b1d504987d0630e7e32affb7ae0d99fe9b427c757a315ec2f56fb09ebd1bfce",
+      "bytes": 3606
+    },
+    "v1.0-trainval/sample_data.json": {
+      "sha256": "37dee97a690dd5424b0bd5a1a091dd08ade3cf3d4393d194d34ee3eeb414aa6d",
+      "bytes": 34987610
+    },
+    "v1.0-trainval/sample_annotation.json": {
+      "sha256": "1f4f3835cb86f4efe49ccad3ae6f5f6a2d068422696de564c5892b5b06bea2a9",
+      "bytes": 583417244
+    },
+    "v1.0-trainval/sensor.json": {
+      "sha256": "4d5c96570e2d8b09b88ce4c605e40ee43c4909f97bea5741185f18f92eb491ae",
+      "bytes": 1185
+    },
+    "v1.0-trainval/sample.json": {
+      "sha256": "6035ac58b6e971622be2bb1be15b917e7cb4e05ae984d6b339c27c1699c4ad9d",
+      "bytes": 7424233
+    },
+    "v1.0-trainval/visibility.json": {
+      "sha256": "87088bf2c78d070e1e215ff108f9c5c0958d124a14cce8f72bfb5d9651295749",
+      "bytes": 418
+    },
+    ".v1.0-trainval_meta.txt": {
+      "sha256": "8aa6ea653821fadeef5c6da495c01997451436696ea17b972dca54ca4959c775",
+      "bytes": 142
+    },
+    "LICENSE": {
+      "sha256": "1a218286e733f6d6135fc5698d614cda2be94ea096f6eee280278458e570636a",
+      "bytes": 25319
+    }
+  },
+  "scope": "Fresh hashes of existing evaluation-only files against the verified prior weather reference; no archive restoration or metadata derivation repeated."
+}

@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETED_FOG_CPU_EVIDENCE_REVIEW_PASS",
+  "archive": "fog_cpu_evaluation_20261029T160939790622Z.zip",
+  "archive_bytes": 1275838,
+  "archive_sha256": "f799b3272e6c914c66aae0332984e7bbd73fc89e74b546a0620511737b3636ea",
+  "payload_members_verified": 53,
+  "runs": 8,
+  "samples": 600,
+  "scenes": 150,
+  "GT_annotation_instances": 12318,
+  "same_GT_fingerprint_all_runs": true,
+  "no_absent_GT_classes": true,
+  "worker_and_launcher_match_published_fix": true,
+  "all_prediction_hashes_match_accepted_inference_summary": true,
+  "all_19_reused_metadata_hashes_match_prior_reference": true,
+  "class_AP_macro_mAP_NDS_and_csv_consistency_checks_pass": true,
+  "plot_visually_reviewed": true,
+  "results": [
+    {
+      "level": 0,
+      "model": "lidar",
+      "mAP_x100": 64.30735031190056,
+      "NDS_x100": 69.44268096558088,
+      "pedestrian_AP_x100": 86.9300553732733
+    },
+    {
+      "level": 0,
+      "model": "lidar_camera",
+      "mAP_x100": 68.1406043963617,
+      "NDS_x100": 71.29400058306362,
+      "pedestrian_AP_x100": 87.92150378129551
+    },
+    {
+      "level": 1,
+      "model": "lidar",
+      "mAP_x100": 52.58235305782396,
+      "NDS_x100": 63.25940386055707,
+      "pedestrian_AP_x100": 78.01884951709626
+    },
+    {
+      "level": 1,
+      "model": "lidar_camera",
+      "mAP_x100": 57.155798481368066,
+      "NDS_x100": 65.27558706220734,
+      "pedestrian_AP_x100": 80.73549406689219
+    },
+    {
+      "level": 2,
+      "model": "lidar",
+      "mAP_x100": 43.0942470260867,
+      "NDS_x100": 58.29043704101504,
+      "pedestrian_AP_x100": 66.35609922106931
+    },
+    {
+      "level": 2,
+      "model": "lidar_camera",
+      "mAP_x100": 47.209777577922466,
+      "NDS_x100": 59.84499249656041,
+      "pedestrian_AP_x100": 69.08444749650691
+    },
+    {
+      "level": 3,
+      "model": "lidar",
+      "mAP_x100": 11.10643590886725,
+      "NDS_x100": 34.63702959761768,
+      "pedestrian_AP_x100": 23.457014684998697
+    },
+    {
+      "level": 3,
+      "model": "lidar_camera",
+      "mAP_x100": 12.145570359879114,
+      "NDS_x100": 35.31771119453657,
+      "pedestrian_AP_x100": 24.303859599308613
+    }
+  ],
+  "scope": "Independent local artifact/hash/arithmetic review of executed Colab metrics. No local metric rerun, raw-sensor rehash or statistical significance test. Full predictions remain in eight referenced Drive archives; all evaluation details are in the preserved CPU ZIP."
+}

@@ -1,3 +1,5 @@
+> **29 October 2026 update:** The historical case discussion below is retained. Subsequent [natural rain/night group analysis](NATURAL_WEATHER_GROUPS_2026-10-28.md) and [synthetic fog study](SYNTHETIC_FOG_RESULTS_2026-10-29.md) are now complete. Earlier statements that broader group evaluation remains future work are superseded by those reports within their stated scope; representative real-weather causal evaluation remains unestablished.
+
 # Illumination, rain and diagnostic limitations
 
 This section integrates the four-case darkening follow-up, completed ten-class diagnostics, real rain-labelled examples and two initial night frames plus an additional annotation-positive night/rain pedestrian frame. It is a report draft based on preserved project evidence, not a new inference experiment. Numerical sources are linked below; literature-based mechanisms and mitigation claims require separate primary-paper attribution when integrated into the dissertation.

@@ -1,0 +1,29 @@
+{
+  "samples": 600,
+  "filtered_gt_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "filtered_prediction_counts": {
+    "car": 15288,
+    "truck": 7223,
+    "bus": 1343,
+    "trailer": 1816,
+    "construction_vehicle": 875,
+    "pedestrian": 66821,
+    "motorcycle": 2829,
+    "bicycle": 2089,
+    "traffic_cone": 16012,
+    "barrier": 3751
+  },
+  "absent_gt_classes": [],
+  "gt_classes_below_20_instances": []
+}

@@ -1,0 +1,17 @@
+{
+  "status": "FOG_CPU_EVALUATION_PROTOCOL_PRESERVED_BEFORE_METRICS",
+  "code_commit": "aa3dc48f5251c6a78006d1fb9c011ec694b08792",
+  "worker_sha256": "ff7b635acaf2bb9c31bca8da14db34f9f898f38294451ff23afeaf0966af1410",
+  "inference_summary_sha256": "197843a404229dd12443af13b271e941a6f89f75c97a47bfb8a4a7a1e5dc065f",
+  "weather_reference_sha256": "75126afda2354f95f9402fccfa37100fb45d3f956cb1d5600cfb6fdf2c289227",
+  "samples": 600,
+  "scenes": 150,
+  "runs": 8,
+  "sample_tokens_sha256": "ffda09ad54f1381f8bd56d0d204ef72ce66d58a08563dcb4bbe8ca589c89164f",
+  "evaluation": "Unchanged detection_cvpr_2019 configuration, SDK 1.2.0 and source hashes from the successful weather CPU full-split replay. All original GT/annotation velocity links preserved. Load/filter through stock full-val SDK, then exact 600-token GT and prediction subsets before evaluation.",
+  "constructor_padding": "Append empty outside-subset predictions solely for stock full-val initialization; remove all outside tokens before scoring. Preserve original 600 prediction iteration order.",
+  "reporting": "mAP, NDS, per-class AP, TP errors, own-fresh-baseline changes and fusion-minus-LiDAR differences. Same GT coverage asserted. Descriptive point estimates; no new confidence intervals or significance tests.",
+  "limits": "Synthetic fog, one realisation, correlated scenes/logs and separately pretrained pipelines. Not a calibrated shared visibility distance or controlled camera-component ablation.",
+  "no_inference": true,
+  "no_gpu_required": true
+}

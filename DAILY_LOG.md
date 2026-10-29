@@ -538,3 +538,11 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Verified all eight combinations and 600-token orders, 2,400 paired point hashes, 38,400 raw-file/condition audit identities and deployed source hashes. All recorded pilot/strict execution/cache/annotation gates pass. Eight complete Drive artifact receipts are present; full prediction archives still require fresh CPU-stage verification.
 - Prepared self-contained CPU evaluation for a fresh runtime: verify all eight artifacts/frame identities; preserve pre-metric protocol; restore hash-verified metadata identical to the prior successful replay root; use the same source-checked SDK/GT filters on exact 600-token subsets; generate metrics, coverage, tables, changes and PNG/PDF curves.
 - Synthetic integrity/padding/report checks pass. No second full-split replay, GPU inference or actual fog accuracy computation was performed in this review. CPU scoring and final interpretation remain pending.
+
+
+## 29 October 2026 — synthetic fog accuracy study complete
+
+- Verified executed CPU ZIP (1,275,838 bytes, SHA256 `f799b3272e6c914c66aae0332984e7bbd73fc89e74b546a0620511737b3636ea`), all 53 payloads, exact members and CRC; all eight metrics runs pass.
+- Checked common GT fingerprint, 600 tokens/150 scenes, 12,318 supported annotation instances across all ten classes, worker/launcher source identity, 19 reused metadata hashes, all eight prediction hashes against accepted inference evidence, metric arithmetic and table consistency. Reviewed PNG/PDF plot output.
+- Fresh-baseline mAP (x100) 64.3074 LiDAR / 68.1406 fusion; Fog 1 52.5824/57.1558; Fog 2 43.0942/47.2098; Fog 3 11.1064/12.1456. Both deteriorate substantially; the fusion advantage narrows at Fog 3 and is not universal per class or for own-baseline losses.
+- Preserved the complete CPU ZIP, selected readable metrics, figures, review and critical interpretation in [completed_cpu](results/nuscenes/bevfusion/fog/20261029/completed_cpu/README.md). Real fog, snow, glare, wind and disasters remain unvalidated. No further GPU run is needed to close this bounded study; dissertation synthesis, references, formatting and poster remain.

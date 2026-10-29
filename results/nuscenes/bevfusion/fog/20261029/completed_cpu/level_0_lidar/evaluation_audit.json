@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_FOG_CONDITION_CPU_EVALUATION_PASS",
+  "model": "lidar",
+  "level": 0,
+  "samples": 600,
+  "filtered_gt_sha256": "6889a80dfe2e9a5e1abf0d049351e34c82d00a214dd8a1fa40236fce6646a84b",
+  "prediction_sha256": "b9163af4a1ebad35c77efe7f689694d118327031859a93d7af5710118e21797e",
+  "source_archive_sha256": "91243b677661b45be488fb18b3778c16bfde23a9bea27fbb1e4d393cd3f18f0e",
+  "padding": 5419,
+  "padding_removed_before_evaluate": true,
+  "input_token_order_preserved": true,
+  "metrics_summary_sha256": "44199ae4177d3785a525159a4edb5e7c15897bac15ec0c98d134a86fb18160ce",
+  "metrics_details_sha256": "41e61b50156ea26b06c5b6d095e488f7b1c78e9be88299e1ce93b840e59f8a9c",
+  "scope": "Stock SDK full-val loading/filtering, then exact 600-token subset before evaluation. No outside-frame scores, changed GT filters or inference."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "ALL_EIGHT_FOG_CPU_EVALUATIONS_PASS",
+  "samples": 600,
+  "scenes": 150,
+  "same_filtered_GT_all_conditions": true,
+  "filtered_GT_counts": {
+    "car": 5327,
+    "truck": 922,
+    "bus": 208,
+    "trailer": 237,
+    "construction_vehicle": 155,
+    "pedestrian": 2427,
+    "motorcycle": 184,
+    "bicycle": 195,
+    "traffic_cone": 1059,
+    "barrier": 1604
+  },
+  "absent_gt_classes": [],
+  "fusion_minus_lidar_points": {
+    "0": {
+      "mean_ap": 3.833254084461135,
+      "nd_score": 1.8513196174827384
+    },
+    "1": {
+      "mean_ap": 4.5734454235441095,
+      "nd_score": 2.0161832016502568
+    },
+    "2": {
+      "mean_ap": 4.115530551835766,
+      "nd_score": 1.55455545554537
+    },
+    "3": {
+      "mean_ap": 1.0391344510118652,
+      "nd_score": 0.6806815969188862
+    }
+  },
+  "uncertainty": "Descriptive point estimates, one seeded corruption realisation, correlated frames/scenes/logs. No confidence intervals, significance or deployment-safety claims.",
+  "interpretation": "Synthetic paired input challenge for separately pretrained pipelines. Use fresh strict baselines. Not real fog, shared physical visibility distance, or controlled camera-component ablation."
+}
