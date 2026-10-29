@@ -1,0 +1,14 @@
+{
+  "status": "FOG_PREFLIGHT_LOCAL_CHECKS_PASS",
+  "unittest_checks": 4,
+  "checks": [
+    "Frozen population counts and six-camera/ten-LiDAR inventory including historical samples/ paths",
+    "Safe and ambiguous ZIP-member indexing",
+    "Bounded project-only archive catalogue",
+    "Synthetic 600-frame / 150-scene end-to-end pilot recovery, asset hash checks, private manifest and Drive-copy verification"
+  ],
+  "actual_fog_transformation_tested": false,
+  "actual_user_inputs_recovered_locally": false,
+  "model_inference_performed": false,
+  "scope": "Source review and preflight handoff checks only; real pilot/runtime audit and fog implementation validation pending."
+}

@@ -24,6 +24,10 @@ A software-only MSc project evaluating camera, LiDAR and fusion pipelines on KIT
 
 [Completed CPU analysis](results/nuscenes/bevfusion/weather_groups/20261028/completed/README.md) covers all 6,019 frames / 150 scenes. Fusion gains ten-class mAP by +3.57/+6.26/+1.23/+0.93 points across neither/rain-only/night-only/night-and-rain description strata. Night groups have absent classes and share one log; the [coverage-aware figure and report](docs/report/NATURAL_WEATHER_GROUPS_2026-10-28.md) prevent interpreting raw macro-score differences as weather causality. Full replays, all source payload hashes and AP arithmetic pass. Fog is next; snow remains optional.
 
+### Fog extension — CPU preflight ready
+
+[Fog design and source audit](results/nuscenes/bevfusion/fog/20261029/README.md) fix the existing 600-frame population and first-token pilot rule. A standard-library preflight inventories sources/runtime, verifies pinned MultiCorrupt code/assets and recovers private pilot inputs. Four synthetic handoff checks pass; real compatibility tests and inference remain pending. Planned scope is two fresh baselines plus six fog runs, with all six cameras and every consumed LiDAR sweep covered.
+
 | What you need | Where to go |
 |---|---|
 | Four-case darkening follow-up: visual comparisons and critical analysis | [28 October case analysis](results/nuscenes/bevfusion/case_analysis/20261028/README.md) |

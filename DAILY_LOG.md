@@ -1,5 +1,12 @@
 # Daily Project Log
 
+## 29 October 2026 — bounded fog extension started
+
+- Reviewed pinned MultiCorrupt camera/LiDAR fog implementations and converters. Raw-scan coordinate processing and all historical sweeps are required; camera and LiDAR benchmark severities are not one calibrated physical visibility distance.
+- Prepared a standard-library CPU preflight that fixes the original 600-frame population and first-token pilot rule, pins source/lookup-table Git hashes, inventories available sensor sources/runtime, and recovers a private six-camera/ten-LiDAR-file pilot where available.
+- No prediction contents, GT outcome selection, package installation, GPU inference, fog corruption or source pickle execution in this stage. Exact implementation/RNG/encoding and any acceleration remain to be validated and frozen before full inference.
+- Planned scope is two fresh unperturbed baselines plus six severity/model fog runs. Snow remains optional; broader extreme-weather discussion remains literature/limitations work.
+
 ## 28 October 2026 — CPU natural-weather analysis complete and imported
 
 - Uploaded final ZIP: 2,156,223 bytes, SHA-256 75126afda2354f95f9402fccfa37100fb45d3f956cb1d5600cfb6fdf2c289227. All 69 manifest-listed payload sizes/hashes pass; uploaded bytes match the Colab-reported verified Drive copy.
