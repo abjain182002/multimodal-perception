@@ -1,0 +1,15 @@
+{
+  "status": "DIAGNOSTIC_HELPER_CPU_CHECKS_PASS",
+  "cases": 6,
+  "script_sha256": "f2f6b4cf21a33e4f05abd761448d2e76ef299928782d64752328e7c1e8ad12ca",
+  "checks": [
+    "identity",
+    "permutation with original tolerances",
+    "outside box tolerance rejected",
+    "changed class rejected",
+    "empty outputs",
+    "different counts"
+  ],
+  "gpu_execution_performed": false,
+  "numpy": "2.3.5"
+}

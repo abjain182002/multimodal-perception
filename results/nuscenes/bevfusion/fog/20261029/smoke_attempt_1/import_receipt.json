@@ -1,0 +1,23 @@
+{
+  "status": "UPLOADED_FAILED_SMOKE_EVIDENCE_VERIFIED",
+  "archive": "fog_gpu_smoke_20261029T080852328937Z.zip",
+  "bytes": 169178,
+  "sha256": "5891509e3160a49f052bfed701a24ccc99e82bd6bd7150da9c14478438fbf189",
+  "payload_members_verified": 31,
+  "all_payload_sizes_and_sha256_pass": true,
+  "exact_member_set_pass": true,
+  "gpu": "Tesla T4",
+  "lidar_conditions_passed": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "fusion_clean_repeat_pass": false,
+  "fusion_positional_label_mismatches": 4,
+  "predictions_in_repeat": 200,
+  "fusion_repeated_prediction_arrays_preserved_by_original_worker": false,
+  "cause_confirmed": false,
+  "full_600_frame_fog_accuracy_available": false,
+  "scope": "Original ZIP remains preserved on user Drive and as the uploaded source. Selected derived audit/log files accompany this receipt; upstream source and checkpoint loading succeeded but paired smoke did not pass."
+}

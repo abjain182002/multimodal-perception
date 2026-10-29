@@ -503,3 +503,10 @@ Finish repository documentation and checkpoint this experiment before moving to 
 - Confirmed one eligible pedestrian at 30.0595 m, annotated visibility 80–100%, one current LiDAR point; raw-scan recomputation agrees. Both models miss at 0.10/0.30/0.50. Nearest scores 0.029148/0.008018; XY errors 0.212734/0.214623 m. At 0.30 both have 4 TP / 0 FP / 3 FN with identical matched GT identities.
 - Added original-image paired figure (PNG/PDF), exact threshold tables, assignments/filter ledger, reproducible CPU script and bounded critical discussion. No inference or official AP/NDS replay. Retained both earlier night cases.
 - Added a nine-unique-frame discussion map so all cases can be covered thematically without duplicate counts. Derived Drive copy remains separate from the verified input transfer; dissertation chapter integration is next.
+
+## 29 October 2026 — first T4 fog smoke reviewed; fusion repeat diagnostic prepared
+
+- Verified the uploaded first GPU attempt ZIP SHA-256 `5891509e3160a49f052bfed701a24ccc99e82bd6bd7150da9c14478438fbf189`, exact member set, CRC and all 31 payload sizes/hashes.
+- Actual isolated setup/build and CUDA operation checks succeeded. LiDAR passed baseline and three fog conditions on the fixed pilot, including its original positional clean-repeat check.
+- Fusion strictly loaded its checkpoint but stopped at baseline repeat agreement: 4/200 label positions differed. Original worker did not preserve the two fusion arrays before asserting, so root cause and permutation-only equivalence are not established. Full fog accuracy remains pending.
+- Added bounded, environment-reusing diagnostic with input/cache/source/checkpoint verification, three baseline repeats per separate default/strict-deterministic subprocess, depth/branch feature hooks and complete prediction preservation. Original tolerance and smoke acceptance rules remain unchanged. Six local CPU comparison-helper checks pass; GPU diagnostic execution pending.

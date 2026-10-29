@@ -1,0 +1,52 @@
+{
+  "status": "FOG_FOUR_CONDITION_GPU_SMOKE_PASS",
+  "model": "lidar",
+  "sample_token": "a7795dcadad44c1c85fa27eef18366f6",
+  "checkpoint_sha256": "2628f933277774e194932815ea1a5d66a0bd9f69ebc8d9040e8c92760bb6652e",
+  "gpu": "Tesla T4",
+  "conditions": [
+    {
+      "level": 0,
+      "prediction_count": 200,
+      "packed_points": [
+        256096,
+        5
+      ],
+      "packed_points_sha256": "cb927e10d69dbf8efa1d71e559a18a6fd19cf5943d779ac45ae223e5487fd48a",
+      "finite_predictions": true
+    },
+    {
+      "level": 1,
+      "prediction_count": 200,
+      "packed_points": [
+        262721,
+        5
+      ],
+      "packed_points_sha256": "44e8cf3c0555fff9591c488b2d45ebf8dc0d027539e7a227e7c90e45ee5ac686",
+      "finite_predictions": true
+    },
+    {
+      "level": 2,
+      "prediction_count": 200,
+      "packed_points": [
+        264213,
+        5
+      ],
+      "packed_points_sha256": "476f3c91c27f727777b3d529c5474a461e122d94d2986b23e174dc215c72ea17",
+      "finite_predictions": true
+    },
+    {
+      "level": 3,
+      "prediction_count": 200,
+      "packed_points": [
+        273370,
+        5
+      ],
+      "packed_points_sha256": "87c097afd6491c6dcff1c5849365f36e3e12302ce77be81628fb84f6f19ae216",
+      "finite_predictions": true
+    }
+  ],
+  "clean_repeat_pass": true,
+  "source_commit": "fe25f7a51d36e3702f961e198894580d83c4387b",
+  "scope": "One predetermined frame; strict checkpoint load, valid finite predictions and clean repeat. No AP/NDS, runtime benchmark or robustness claim."
+}

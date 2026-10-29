@@ -1,0 +1,5 @@
+{
+  "status": "FOG_GPU_SMOKE_FAILED",
+  "error": "Command failed (1); log: /content/fog_gpu_smoke_20261029/20261029T080852328937Z/evidence/lidar_camera_smoke.log",
+  "traceback": "Traceback (most recent call last):\n  File \"/content/run_fog_gpu_smoke_colab.py\", line 196, in main\n    run([python, '-u', worker, '--prepared', prepared, '--repo', repo,\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n         '--checkpoints', checkpoints, '--output', out / 'predictions', '--model', model],\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        out / (model + '_smoke.log'), cwd=repo, env=env)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/content/run_fog_gpu_smoke_colab.py\", line 53, in run\n    assert code == 0, f'Command failed ({code}); log: {log}'\n           ^^^^^^^^^\nAssertionError: Command failed (1); log: /content/fog_gpu_smoke_20261029/20261029T080852328937Z/evidence/lidar_camera_smoke.log\n"
+}

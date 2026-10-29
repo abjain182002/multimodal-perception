@@ -1,0 +1,128 @@
+{
+  "files": {
+    "annotation_source.json": {
+      "bytes": 319,
+      "sha256": "44f8178bf7a60f2e7d17fc141da52331103c4772e91942dd4f7a4cfbf39803d6"
+    },
+    "code/__pycache__/fog_transforms.cpython-310.pyc": {
+      "bytes": 7097,
+      "sha256": "fe32d64906b5a6993f29bba22e9aa3c18f9160824a12d0ea08adc06010c2e366"
+    },
+    "code/__pycache__/preflight_fog_colab.cpython-310.pyc": {
+      "bytes": 17103,
+      "sha256": "017332e28057099f602dcaacc8717f150c1119ed2433658faba6e0d235528177"
+    },
+    "code/cpu_validation.json": {
+      "bytes": 2409,
+      "sha256": "8d9dfcf68814c3d8dc4883802172e02735041b3070fc2ff9cd9ccc13a97a9ad7"
+    },
+    "code/fog_gpu_smoke.py": {
+      "bytes": 11007,
+      "sha256": "acc79d1f2cc1433d1b44fdd6f99805b39891b9e7d965ec615682e2edfd8962b6"
+    },
+    "code/fog_transforms.py": {
+      "bytes": 7151,
+      "sha256": "495a2027eb108cda21ac736a460b478c844f5064e216cab9e9b27b9832693be2"
+    },
+    "code/preflight_fog_colab.py": {
+      "bytes": 17886,
+      "sha256": "c919c0f36579d6026315a302909593076b69a19e6b64274039a0228fb9cd5bf7"
+    },
+    "code/run_fog_gpu_smoke_colab.py": {
+      "bytes": 13832,
+      "sha256": "b8954092ce39f38d850d39f69dca95568ebb4ab99fe4dd4a5a1053a9ebb6defa"
+    },
+    "code/setup_fog_gpu.py": {
+      "bytes": 11736,
+      "sha256": "670a0d63f407a4bbd0efd7ca1b236e12c22204f9628f9d711c06140f90d6be3f"
+    },
+    "failure.json": {
+      "bytes": 1009,
+      "sha256": "1bf05e31436b3f4de597c986a6cec9f22ad499771554e0d94cc309e1ddc158c9"
+    },
+    "gpu_setup.log": {
+      "bytes": 112763,
+      "sha256": "e83542db42e7ac2fab6a78ede86339b6f58232c4ee05195508b75721722af385"
+    },
+    "implementation_protocol.json": {
+      "bytes": 2796,
+      "sha256": "738d46e1454184899a3c585f6a48fdf714fa454b6c558b4cd23d3a6f353c4516"
+    },
+    "initial_nvidia_smi.txt": {
+      "bytes": 1689,
+      "sha256": "f6a737d44f2cdab66c646a41473b514a90a1930eea1c118ec845ce922da149a3"
+    },
+    "lidar_camera_smoke.log": {
+      "bytes": 3865,
+      "sha256": "96c0c44e27a3f5d209b838e1b8de4663b18a5d4e267fa3253ea9c4559c7668d1"
+    },
+    "lidar_smoke.log": {
+      "bytes": 4607,
+      "sha256": "ec4e48709eda880ba666d151ae8486f59bbeacfa6bec08eabfb3c9a4ed328c40"
+    },
+    "pilot_input_audit.json": {
+      "bytes": 28082,
+      "sha256": "b69401ed28a9c4efbd49f0006d5b584c00d3c588c27d75fc5711fffda8eb1489"
+    },
+    "pilot_original_source_verification.json": {
+      "bytes": 214,
+      "sha256": "3af5318cfa10f609ba99a99be943425a2f0ed97f455bc11721f4ee1d6770232a"
+    },
+    "pilot_preparation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pinned_upstream_source_audit.json": {
+      "bytes": 4228,
+      "sha256": "b747aabbd20c0355a9efd45be6482e190e5953bbf69f4103560b93f55346b6d2"
+    },
+    "predictions/lidar_camera_level_0_dataset_config.py": {
+      "bytes": 2545,
+      "sha256": "4bb5c6acd5acadbc797818038fb78c1691ce02a325c105fe73b19ec2f3973e11"
+    },
+    "predictions/lidar_camera_resolved_config.py": {
+      "bytes": 29540,
+      "sha256": "68940aa66ead7a1cdf2b2babdfde80b8356d7063f3e828f94853f1baa1398bd7"
+    },
+    "predictions/lidar_level_0_dataset_config.py": {
+      "bytes": 1987,
+      "sha256": "023b17dff6cc6b7c7abfdf46c722ca8f78165124c82c993aa6165547d4acaaba"
+    },
+    "predictions/lidar_level_0_predictions.json": {
+      "bytes": 56893,
+      "sha256": "24b60cff8a8770a525f38ca037a77381dad0eeef539bc5167b8d87cebcb524d5"
+    },
+    "predictions/lidar_level_1_dataset_config.py": {
+      "bytes": 1987,
+      "sha256": "60e55c25eb5ab54bfdbf71dc268d3d26798f2321157ae10bcca93e057a2baa70"
+    },
+    "predictions/lidar_level_1_predictions.json": {
+      "bytes": 56962,
+      "sha256": "05d0bce5e3140575bd3ec6126e46679d0785dde65fe5baa21bf2525a2855c135"
+    },
+    "predictions/lidar_level_2_dataset_config.py": {
+      "bytes": 1987,
+      "sha256": "ee2e494eb9f927a4804e9cd282711a84b250f06e345038fb803ac4b51d3125a8"
+    },
+    "predictions/lidar_level_2_predictions.json": {
+      "bytes": 57042,
+      "sha256": "f0c774b4cd47fead278ab7eb45e0f7f12e1589743a65395f994af54a0ff5115e"
+    },
+    "predictions/lidar_level_3_dataset_config.py": {
+      "bytes": 1987,
+      "sha256": "fc09a7e49e80af8e02525405d2af5ffd54a6e8578489681a940bd5539e547129"
+    },
+    "predictions/lidar_level_3_predictions.json": {
+      "bytes": 56908,
+      "sha256": "eac5520248d4be2ce5496adfd1e8d1b83b9575e202cde8b957b179d12f0ca4eb"
+    },
+    "predictions/lidar_resolved_config.py": {
+      "bytes": 28064,
+      "sha256": "ecc8fbaac44b736b333d04a4870e6f686703341b867892bebc4c42a633989735"
+    },
+    "predictions/lidar_smoke_audit.json": {
+      "bytes": 1520,
+      "sha256": "786e060e1410592ae331349de1d50eaa7648098e4ab5ad07402c943bd94ff839"
+    }
+  }
+}

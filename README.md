@@ -111,3 +111,5 @@ Datasets, model checkpoints, virtual environments and bulk predictions are store
 ## Mobile-robot perception analysis — 23 October 2026
 
 [600-frame offline corridor study](results/robotics/mobile_robot_corridor600/20261023/README.md) connects saved detections to a hypothetical mobile-robot alert rule. At the primary 5 m corridor, only two frames are annotation-positive; both models miss one. At the predeclared 10 m setting, LiDAR misses 7/57 positive frames and fusion 5/57; the paired scene-bootstrap difference interval includes zero. Code, all settings, one composite figure and annotation limitations are preserved. This is annotation-based road-scene replay, not physical navigation or factory validation.
+
+Fog GPU follow-up (29 October): real T4 setup and LiDAR pilot at all four conditions passed; fusion baseline repeat stopped the paired smoke. [Verified attempt and diagnostic](results/nuscenes/bevfusion/fog/20261029/README.md#fusion-repeat-diagnostic-after-first-gpu-attempt). Full fog accuracy remains pending.
