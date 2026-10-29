@@ -1,14 +1,16 @@
 {
   "status": "FOG_CPU_EVALUATION_HELPER_CHECKS_PASS",
   "checks": [
+    "GT fingerprint supports NumPy arrays/scalars and valid NaN velocities without mutation; detects changed values",
+    "metadata reuse verifies all unchanged/derived file hashes and rejects tampering",
     "constructor-only padding preserves input order/content and rejects invalid populations",
     "raw prediction validation rejects NaNs, invalid scores and noninteger classes",
     "archive hash/member roundtrip and rejection",
     "synthetic eight-row/80-class report, own-baseline changes, PNG/PDF rendering",
     "Python syntax"
   ],
-  "worker_sha256": "8a9e596abd0a46ca9da0cbe50645f00682ebc211c77860bfd5d5f212d4e39162",
-  "coordinator_sha256": "79e5b7e98d519067636844f0f5546af711903f74f2d225d741a780e81b349b5b",
+  "worker_sha256": "ff7b635acaf2bb9c31bca8da14db34f9f898f38294451ff23afeaf0966af1410",
+  "coordinator_sha256": "5e96b99f1062cbaf47e7e6cf7599fed410e3d593fe96231dfb27c6d5bbda1b21",
   "real_CPU_evaluation_performed": false,
   "scope": "Synthetic handoff checks; real SDK input/source checks and real accuracy execution remain in Colab."
 }

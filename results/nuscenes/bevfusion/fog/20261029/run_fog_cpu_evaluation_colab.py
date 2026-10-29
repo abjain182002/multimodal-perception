@@ -22,7 +22,7 @@ BASE=Path('/content/drive/MyDrive/Major_Project/nuscenes_full_validation')
 FOLDER='results/nuscenes/bevfusion/fog/20261029/'
 SUMMARY_SHA='197843a404229dd12443af13b271e941a6f89f75c97a47bfb8a4a7a1e5dc065f'
 WEATHER_SHA='75126afda2354f95f9402fccfa37100fb45d3f956cb1d5600cfb6fdf2c289227'
-WORKER_SHA='8a9e596abd0a46ca9da0cbe50645f00682ebc211c77860bfd5d5f212d4e39162'
+WORKER_SHA='ff7b635acaf2bb9c31bca8da14db34f9f898f38294451ff23afeaf0966af1410'
 
 
 def sha(path):
@@ -88,8 +88,20 @@ def backup(out,dest,stamp,success):
     write(dest/'backup_receipt.json',receipt);print(json.dumps(receipt,indent=2),flush=True);print('UPLOAD THIS ZIP:',target,flush=True)
 
 
+def verify_reusable_metadata(root, prior):
+    checked={}
+    for name,record in prior['source_files'].items():
+        path=root/name
+        digest=prior['derived_sha256'].get(name,record['sha256'])
+        assert path.is_file() and sha(path)==digest,'Prepared metadata mismatch: '+name
+        if name not in prior['derived_sha256']:assert path.stat().st_size==record['bytes']
+        checked[name]={'sha256':digest,'bytes':path.stat().st_size}
+    return checked
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--code-commit',required=True);p.add_argument('--base',type=Path,default=BASE)
+    p.add_argument('--reuse-metadata',type=Path,help='Reuse an existing evaluation-only root after checking every file against the pinned reference.')
     args=p.parse_args();base=args.base
     assert base.is_dir(),'Mount the project Drive first'
     assert len(args.code_commit)==40 and all(c in '0123456789abcdef' for c in args.code_commit)
@@ -157,16 +169,24 @@ def main():
         spec=importlib.util.spec_from_file_location('previous_weather_launcher',helper);previous=importlib.util.module_from_spec(spec);spec.loader.exec_module(previous)
         shutil.copyfile(ref/'requirements-cpu310.txt',out/'requirements-cpu310.txt')
         python=previous.setup_environment(out)
-        source=work/'source_metadata';source.mkdir()
-        expected=json.loads((ref/'reference/metadata_restoration_audit.json').read_text())['metadata_files']
-        previous.restore_metadata(source,base/'nuscenes_validation_parts_01_02_verified.zip',expected)
-        with (ref/'preparation/sample_membership.csv').open() as f:full_tokens={r['sample_token'] for r in csv.DictReader(f)}
-        assert len(full_tokens)==6019
-        derived=work/'metadata_evaluation_only'
-        derivation=previous.derive_evaluation_metadata(source,derived,full_tokens,expected)
         prior=json.loads((ref/'evaluation_metadata_derivation.json').read_text())
-        assert derivation['derived_sha256']==prior['derived_sha256']
-        assert derivation['source_files']==prior['source_files']
+        if args.reuse_metadata is not None and args.reuse_metadata.is_dir():
+            derived=args.reuse_metadata
+            print('RECHECKING PREPARED METADATA; SKIPPING ARCHIVE RESTORATION',flush=True)
+            checked=verify_reusable_metadata(derived,prior)
+            derivation=prior
+            write(out/'metadata_reuse_audit.json',{'status':'ALL_PREPARED_METADATA_FILES_HASH_PASS','root':str(derived),'files':checked,
+                'scope':'Fresh hashes of existing evaluation-only files against the verified prior weather reference; no archive restoration or metadata derivation repeated.'})
+        else:
+            source=work/'source_metadata';source.mkdir()
+            expected=json.loads((ref/'reference/metadata_restoration_audit.json').read_text())['metadata_files']
+            previous.restore_metadata(source,base/'nuscenes_validation_parts_01_02_verified.zip',expected)
+            with (ref/'preparation/sample_membership.csv').open() as f:full_tokens={r['sample_token'] for r in csv.DictReader(f)}
+            assert len(full_tokens)==6019
+            derived=work/'metadata_evaluation_only'
+            derivation=previous.derive_evaluation_metadata(source,derived,full_tokens,expected)
+            assert derivation['derived_sha256']==prior['derived_sha256']
+            assert derivation['source_files']==prior['source_files']
         write(out/'evaluation_metadata_derivation.json',derivation)
         write(out/'metadata_replay_provenance.json',{'status':'METADATA_IDENTICAL_TO_PREVIOUS_SUCCESSFUL_FULL_REPLAY_ROOT',
             'source_files_hash_checked':True,'derived_keyframe_pose_hashes_match':True,'prior_weather_archive_sha256':WEATHER_SHA,

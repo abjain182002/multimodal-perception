@@ -28,6 +28,23 @@ def write(path, data):
     with path.open('x') as f: json.dump(data, f, indent=2); f.write('\n')
 
 
+def gt_fingerprint(boxes):
+    """Hash SDK serialization without changing its NumPy-backed GT objects."""
+    import numpy as np
+
+    def numpy_value(value):
+        if isinstance(value, np.ndarray):
+            return value.tolist()
+        if isinstance(value, np.generic):
+            return value.item()
+        raise TypeError(f'Unsupported GT audit type: {type(value).__name__}')
+
+    # SDK velocities can legitimately be NaN; retain those audit values. This
+    # fingerprint never changes the SDK boxes or the metric calculation.
+    raw = json.dumps(boxes.serialize(), sort_keys=True, default=numpy_value)
+    return hashlib.sha256(raw.encode()).hexdigest()
+
+
 def pad_prediction(data, full_tokens, chosen):
     assert len(chosen) == len(set(chosen)) and set(data['results']) == set(chosen)
     assert set(chosen) <= set(full_tokens) and len(full_tokens) == len(set(full_tokens))
@@ -90,7 +107,7 @@ def evaluate(args):
                 output_dir=str(work/'sdk_initialization'),verbose=True)
             assert set(evaluator.gt_boxes.sample_tokens)==set(full_tokens)
             frozen_gt=previous.subset_boxes(evaluator.gt_boxes,set(chosen))
-            gt_hash=hashlib.sha256(json.dumps(frozen_gt.serialize(),sort_keys=True).encode()).hexdigest()
+            gt_hash=gt_fingerprint(frozen_gt)
         else:
             boxes,meta=load_prediction(str(augmented),cfg.max_boxes_per_sample,DetectionBox,verbose=True)
             evaluator.pred_boxes=filter_eval_boxes(nusc,add_center_dist(nusc,boxes),cfg.class_range,verbose=True)
@@ -102,7 +119,7 @@ def evaluate(args):
         directory=out/f'level_{level}_{model}'
         print('EVALUATING SAVED FOG PREDICTIONS:',level,model,'600 frames',flush=True)
         summary,coverage=previous.save_evaluation(evaluator,directory)
-        assert hashlib.sha256(json.dumps(frozen_gt.serialize(),sort_keys=True).encode()).hexdigest()==gt_hash
+        assert gt_fingerprint(frozen_gt)==gt_hash
         audit={'status':'FROZEN_FOG_CONDITION_CPU_EVALUATION_PASS','model':model,'level':level,'samples':600,
             'filtered_gt_sha256':gt_hash,'prediction_sha256':sha(source),'source_archive_sha256':run['source_archive_sha256'],
             'padding':len(full_tokens)-len(chosen),'padding_removed_before_evaluate':True,

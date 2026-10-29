@@ -1,0 +1,14 @@
+{
+  "status": "SDK_1_2_0_GT_FINGERPRINT_REGRESSION_PASS",
+  "source": "Official nuscenes-devkit 1.2.0 wheel; unmodified class AST definitions executed with required dependencies. No dataset or metrics execution.",
+  "source_sha256": {
+    "nuscenes/eval/common/data_classes.py": "0a499ec3fc863786467844e37a37456cb10d61050acb8b5b6e38bc9f5ddc1b9f",
+    "nuscenes/eval/detection/data_classes.py": "0b5cb2d6614913c9f02a4fdcc3991eb3845b246f92b1eadba6047443a1cb5b72"
+  },
+  "original_TypeError_reproduced": true,
+  "fixed_fingerprint_repeatable": true,
+  "GT_arrays_not_mutated": true,
+  "changed_value_detected": true,
+  "empty_frame_and_NaN_velocity_supported": true,
+  "real_accuracy_evaluation_performed": false
+}
